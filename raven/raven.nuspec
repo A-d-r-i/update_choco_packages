@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>raven</id>
+    <version>1.0.65</version>
+    <title>Raven Reader</title>
+    <authors>Hello Efficiency Inc. (and contributors)</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/hello-efficiency-inc/raven-reader/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://ravenreader.app/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/hello-efficiency-inc/raven-reader@master/public/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Raven is a open source desktop news reader with flexible settings to optimize your experience. No login is required, and no personal data is collected. Just select the websites you want to curate articles from and enjoy!</description>
+    <summary>📖 All your articles in one place. Beautiful.</summary>
+    <releaseNotes>https://github.com/hello-efficiency-inc/raven-reader/releases/</releaseNotes>
+    <tags>raven reader rss blog article</tags>
+    <projectSourceUrl>https://github.com/hello-efficiency-inc/raven-reader</projectSourceUrl>
+    <packageSourceUrl>https://github.com/hello-efficiency-inc/raven-reader/</packageSourceUrl>
+    <docsUrl>https://github.com/hello-efficiency-inc/raven-reader</docsUrl>
+    <bugTrackerUrl>https://github.com/hello-efficiency-inc/raven-reader/issues</bugTrackerUrl>
+  </metadata>
+</package>
