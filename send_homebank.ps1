@@ -24,7 +24,6 @@ $content = "`$packageName = 'homebank'
 Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./homebank/tools/chocolateyinstall.ps1
 
 Remove-Item homebank.exe
-Remove-Item HOMEBANK.html
 
 choco pack ./homebank/homebank.nuspec --outputdirectory .\homebank
 
