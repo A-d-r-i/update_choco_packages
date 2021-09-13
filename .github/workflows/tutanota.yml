@@ -1,8 +1,8 @@
-name: TUTANOTA-UPDATE
+name: TUTANOTA-AUTO-UPDATE
 
 on:
   schedule:
-    - cron:  '0 1 * * *'
+    - cron:  '0 */6 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -12,6 +12,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACTIONS_TOKEN }}
       - shell: pwsh
         env:
           CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
@@ -23,18 +25,24 @@ jobs:
         with:
           args: upgrade chocolatey
 
-      - name: Run scripts
+      - name: Run scripts and commit
         run:  |
+          $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
+          echo $Version
+          echo $tag
+          Start-Sleep -Seconds 5
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
           ./send_tutanota.ps1
-          
-      - name: Commit files
-        run: |
           git config --local user.email "a-d-r-i@outlook.fr"
-          git config --local user.name "A-d-r-i[Bot]"
+          git config --local user.name "A-d-r-i"
           git add .
-          git commit -m "[Bot] Update files" --allow-empty
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.ACTIONS_TOKEN }}
-          force: true
+          git commit -m "[Bot] Update files - Tutanota" --allow-empty
+          git tag -a tutanota-v$tag -m "Tutanota - version $tag"
+          git push -f && git push --tags
+          }
