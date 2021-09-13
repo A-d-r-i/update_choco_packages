@@ -1,0 +1,40 @@
+name: TUTANOTA-UPDATE
+
+on:
+  schedule:
+    - cron:  '0 1 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - shell: pwsh
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: |
+          choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+          
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: upgrade chocolatey
+
+      - name: Run scripts
+        run:  |
+          ./send_tutanota.ps1
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "a-d-r-i@outlook.fr"
+          git config --local user.name "A-d-r-i[Bot]"
+          git add .
+          git commit -m "[Bot] Update files" --allow-empty
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          force: true
