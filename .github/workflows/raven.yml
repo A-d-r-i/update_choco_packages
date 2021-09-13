@@ -44,6 +44,6 @@ jobs:
           git config --local user.name "A-d-r-i"
           git add .
           git commit -m "[Bot] Update files - Raven" --allow-empty
-          git tag -a v$tag -m "version $tag"
+          git tag -a raven-v$tag -m "Raven - version $tag"
           git push -f && git push --tags
           }
