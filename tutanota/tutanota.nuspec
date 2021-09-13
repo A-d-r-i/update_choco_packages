@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tutanota</id>
+    <version>19.8.8</version>
+    <title>Tutanota</title>
+    <authors>Tutao GmbH</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/tutao/tutanota/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://tutanota.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tutao/tutanota@master/resources/desktop-icons/icon/512.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tutanota is the world's most secure email service, easy to use and private by design. Sign up for free encrypted email now.
+
+With end-to-end encryption and 2FA, your emails have never been more secure. The built-in encryption guarantees that your mailbox belongs to you: Nobody can decrypt or read your data.</description>
+    <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
+    <releaseNotes>https://github.com/tutao/tutanota/releases</releaseNotes>
+    <tags>tutanota email calendar secure private encryption</tags>
+    <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tutao/tutanota</packageSourceUrl>
+  </metadata>
+</package>
