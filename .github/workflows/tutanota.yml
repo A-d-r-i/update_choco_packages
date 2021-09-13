@@ -1,4 +1,4 @@
-name: TUTANOTA-AUTO-UPDATE
+name: TUTANOTA
 
 on:
   schedule:
