@@ -7,8 +7,8 @@ $xml.Load($file)
 $xml.package.metadata.version = $tag
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "http://tartube.free.fr/public/tartube-$tag-setup.exe" -OutFile "tartube64.exe"
-Invoke-WebRequest -Uri "http://tartube.free.fr/public/tartube-$tag-setup.exe" -OutFile "tartube32.exe"
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "tartube64.exe"
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "tartube32.exe"
 
 $TABLE64 = Get-FileHash tartube64.exe -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
