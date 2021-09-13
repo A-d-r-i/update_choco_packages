@@ -17,10 +17,10 @@ Here are deposited:
 ---
 ## Process by package :
 
-* Audiomoth Config App : check every 6 hours at minute 0
-* Audiomoth Flash App : check every 6 hours at minute 10
-* Audiomoth Time App : check every 6 hours at minute 20
-* Mendeley Reference Manager : check every 6 hours at minute 30
-* Raven : check every 6 hours at minute 40
-* Tartube : check every 6 hours at minute 50
-* Tutanota : check every 6 hours at minute 59
+* **Audiomoth Config App** : check every 6 hours at minute 0
+* **Audiomoth Flash App** : check every 6 hours at minute 10
+* **Audiomoth Time App** : check every 6 hours at minute 20
+* **Mendeley Reference Manager** : check every 6 hours at minute 30
+* **Raven** : check every 6 hours at minute 40
+* **Tartube** : check every 6 hours at minute 50
+* **Tutanota** : check every 6 hours at minute 59
