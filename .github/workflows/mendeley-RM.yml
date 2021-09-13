@@ -1,4 +1,4 @@
-name: MENDELEY-RM-AUTO-UPDATE
+name: MENDELEY-RM
 
 on:
   schedule:
