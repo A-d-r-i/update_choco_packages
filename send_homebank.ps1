@@ -1,5 +1,5 @@
-Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "./homebank/HOMEBANK.html"
-$Source = Get-Content -path "./homebank/HOMEBANK.html" -raw
+Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"
+$Source = Get-Content -path "HOMEBANK.html" -raw
 $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
 $tag = $matches[1]
 
@@ -24,6 +24,7 @@ $content = "`$packageName = 'homebank'
 Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./homebank/tools/chocolateyinstall.ps1
 
 Remove-Item homebank.exe
+Remove-Item HOMEBANK.html
 
 choco pack ./homebank/homebank.nuspec --outputdirectory .\homebank
 
@@ -32,7 +33,5 @@ If ($LastExitCode -eq 0) {
 } else {
  'Error'
 }
-
-Remove-Item ./homebank/HOMEBANK.html
 
 Start-Sleep -Seconds 10
