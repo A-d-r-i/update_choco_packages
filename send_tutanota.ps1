@@ -8,10 +8,7 @@ $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe" -OutFile "./tutanota/tools/tutanota-desktop-win.exe"
 
-
 choco pack ./tutanota/tutanota.nuspec --outputdirectory .\tutanota
-
-
 
 If ($LastExitCode -eq 0) {
 	choco push ./tutanota/tutanota.$tag.nupkg --source https://push.chocolatey.org/
