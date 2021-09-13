@@ -6,8 +6,6 @@ $xml.Load($file)
 $xml.package.metadata.version = $tag
 $xml.Save($file)
 
-$Version = ([xml](Get-Content ./audiomoth-flash/audiomoth-flash.nuspec)).package.metadata.version
-
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/releases/download/$tag/AudioMothFlashAppSetup$tag.exe" -OutFile "./audiomoth-flash/tools/AudioMothFlashAppSetup.exe"
 
 choco pack ./audiomoth-flash/audiomoth-flash.nuspec --outputdirectory .\audiomoth-flash
