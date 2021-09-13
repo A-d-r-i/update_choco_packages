@@ -28,6 +28,7 @@ jobs:
       - name: Run scripts and commit
         run:  |
           $Version = ([xml](Get-Content ./homebank/homebank.nuspec)).package.metadata.version
+          Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"          
           $Source = Get-Content -path "HOMEBANK.html" -raw
           $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
           $tag = $matches[1]
