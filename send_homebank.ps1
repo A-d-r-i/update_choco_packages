@@ -1,5 +1,5 @@
-Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "./HOMEBANK.html"
-$Source = Get-Content -path "./HOMEBANK.html" -raw
+Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "./homebank/HOMEBANK.html"
+$Source = Get-Content -path "./homebank/HOMEBANK.html" -raw
 $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
 $tag = $matches[1]
 
@@ -33,6 +33,6 @@ If ($LastExitCode -eq 0) {
  'Error'
 }
 
-Remove-Item HOMEBANK.html
+Remove-Item ./homebank/HOMEBANK.html
 
 Start-Sleep -Seconds 10
