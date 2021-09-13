@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>audiomoth-flash</id>
-    <version>1.4.1</version>
-    <title>AudioMoth Flash App</title>
+    <id>audiomoth-config</id>
+    <version>1.5.1</version>
+    <title>AudioMoth Configuration App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
     <licenseUrl>https://www.openacousticdevices.info/license</licenseUrl>
     <projectUrl>https://www.openacousticdevices.info/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Flash-App/master/icon-256.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The AudioMoth Flash App is used to easily flash your AudioMoth with new firmware. Keep your AudioMoth up to date by downloading and applying firmware through this app.
-	It can also be used to flash devices with your own custom firmware.</description>
-    <summary>An Electron-based application designed to flash the AudioMoth recording device with new firmware.</summary>
-    <tags>audiomoth-flash audiomoth flash-app openacousticdevices</tags>
+    <description>The AudioMoth Configuration App is an easy to use tool for customising your AudioMoth devices.
+	Using it you can schedule recording periods, customise recording gain and sample rates as well as calculate approximate device lifespans given a configuration.</description>
+    <summary>An Electron-based application capable of configuring the functionality of the AudioMoth recording device and setting the onboard clock.</summary>
+    <releaseNotes>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases</releaseNotes>
+    <tags>audiomoth-config audiomoth config-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App</packageSourceUrl>
   </metadata>
 </package>
