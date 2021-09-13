@@ -41,7 +41,7 @@ jobs:
           ./send_tutanota.ps1
           git config --local user.email "a-d-r-i@outlook.fr"
           git config --local user.name "A-d-r-i"
-          git add .
+          git add ./audiomoth-config/
           git commit -m "[Bot] Update files - audiomoth-config" --allow-empty
           git tag -a audiomoth-config-v$tag -m "Audiomoth Config - version $tag"
           git push -f && git push --tags
