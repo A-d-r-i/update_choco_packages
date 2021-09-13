@@ -1,5 +1,5 @@
 Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"
-$Source = Get-Content -path "HOMEBANK.html" -raw
+$Source = Get-Content -path HOMEBANK.html -raw
 $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
 $tag = $matches[1]
 
