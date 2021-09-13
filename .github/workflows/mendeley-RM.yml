@@ -38,10 +38,12 @@ jobs:
           if ( $tag -eq $Version )
           {
           echo 'Last version already exist'
+          Remove-Item MRM.html
           }
           else
           {
           ./send_mendeley-reference-manager.ps1
+          Remove-Item MRM.html
           git config --local user.email "a-d-r-i@outlook.fr"
           git config --local user.name "A-d-r-i"
           git add .
