@@ -30,7 +30,7 @@ Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`"
 Remove-Item tartube64.exe
 Remove-Item tartube32.exe
 
-cpack ./tartube/tartube.nuspec --outputdirectory .\tartube
+choco pack ./tartube/tartube.nuspec --outputdirectory .\tartube
 
 If ($LastExitCode -eq 0) {
 	choco push ./tartube/tartube.$tag.nupkg --source https://push.chocolatey.org/
