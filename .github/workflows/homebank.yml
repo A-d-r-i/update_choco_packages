@@ -28,7 +28,7 @@ jobs:
       - name: Run scripts and commit
         run:  |
           $Version = ([xml](Get-Content ./homebank/homebank.nuspec)).package.metadata.version
-          $Source = Get-Content -path HOMEBANK.html -raw
+          $Source = Get-Content -path "./homebank/HOMEBANK.html" -raw
           $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
           $tag = $matches[1]
           echo $Version
@@ -37,12 +37,12 @@ jobs:
           if ( $tag -eq $Version )
           {
           echo 'Last version already exist'
-          Remove-Item HOMEBANK.html
+          Remove-Item "./homebank/HOMEBANK.html"
           }
           else
           {
           ./send_homebank.ps1
-          Remove-Item HOMEBANK.html
+          Remove-Item "./homebank/HOMEBANK.html"
           git config --local user.email "a-d-r-i@outlook.fr"
           git config --local user.name "A-d-r-i"
           git add .
