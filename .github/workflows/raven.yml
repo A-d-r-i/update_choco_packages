@@ -1,4 +1,4 @@
-name: RAVEN-AUTO-UPDATE
+name: RAVEN
 
 on:
   schedule:
