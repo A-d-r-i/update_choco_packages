@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>audiomoth-flash</id>
-    <version>1.4.0</version>
-    <title>AudioMoth Flash App</title>
+    <id>audiomoth-time</id>
+    <version>1.1.0</version>
+    <title>AudioMoth Time App (Install)</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
     <licenseUrl>https://www.openacousticdevices.info/license</licenseUrl>
     <projectUrl>https://www.openacousticdevices.info/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Flash-App/master/icon-256.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Time-App/master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The AudioMoth Flash App is used to easily flash your AudioMoth with new firmware. Keep your AudioMoth up to date by downloading and applying firmware through this app.
-	It can also be used to flash devices with your own custom firmware.</description>
-    <summary>An Electron-based application designed to flash the AudioMoth recording device with new firmware.</summary>
-    <tags>audiomoth-flash audiomoth flash-app openacousticdevices</tags>
+    <description>The AudioMoth Time App is a simple tool for setting the onboard clock of your device.
+	It will also display the unique ID, current battery level, firmware version and a brief description of the firmware installed on the attached AudioMoth.</description>
+    <summary>An Electron-based application capable of setting the on-board clock of the AudioMoth recording device.</summary>
+    <tags>audiomoth-time audiomoth time-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App/</packageSourceUrl>
   </metadata>
 </package>
