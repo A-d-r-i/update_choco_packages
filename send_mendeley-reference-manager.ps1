@@ -19,6 +19,4 @@ If ($LastExitCode -eq 0) {
  'Error'
 }
 
-Remove-Item MRM.html
-
 Start-Sleep -Seconds 10
