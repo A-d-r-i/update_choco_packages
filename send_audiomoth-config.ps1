@@ -9,6 +9,10 @@ $xml.Save($file)
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases/download/$tag/AudioMothConfigurationAppSetup$tag.exe" -OutFile "./audiomoth-config/tools/AudioMothConfigurationAppSetup.exe"
 
 choco pack ./audiomoth-config/audiomoth-config.nuspec --outputdirectory .\audiomoth-config
+cd audiomoth-config
+ls
+Start-Sleep -Seconds 10
+cd ../
 
 If ($LastExitCode -eq 0) {
 	choco push ./audiomoth-config/audiomoth-config.$tag.nupkg --source https://push.chocolatey.org/
