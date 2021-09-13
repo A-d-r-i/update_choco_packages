@@ -1,8 +1,6 @@
-$ie = New-Object -comObject InternetExplorer.Application
-$ie.navigate('https://www.mendeley.com/release-notes-reference-manager')
-while ($ie.ReadyState -ne 4) { Start-Sleep -Seconds 1 }
-$null = $ie.Document.body.innerhtml -match '<div class="views-field views-field-title"><span class="field-content"><a href="/release-notes-reference-manager/v([0-9]+(\.[0-9]+)+)">Reference Manager'
-$ie.Quit()
+Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager" -OutFile "MRM.html"
+$Source = Get-Content -path MRM.html -raw
+$Source -match '<div class="views-field views-field-title"><span class="field-content"><a href="/release-notes-reference-manager/v([0-9]+(\.[0-9]+)+)">Reference Manager'
 $tag = $matches[1]
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
