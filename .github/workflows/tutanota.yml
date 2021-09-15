@@ -43,8 +43,11 @@ jobs:
           git config --local user.name "A-d-r-i"
           git add .
           git commit -m "[Bot] Update files - Tutanota" --allow-empty
-          git tag -a tutanota-v$tag -m "Tutanota - version $tag - https://community.chocolatey.org/packages/tutanota/$tag"
+          git tag -a tutanota-v$tag -m "Tutanota - version $tag - community.chocolatey.org/packages/tutanota/$tag"
           git push -f && git push --tags
+          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+          if ( $twitter -eq "y" )
+          {
           Install-Module PSTwitterAPI -Force
           Import-Module PSTwitterAPI
           $OAuthSettings = @{
@@ -60,4 +63,5 @@ jobs:
           @TutanotaTeam
           #tutanota #release #opensource
           "
+          }
           }
