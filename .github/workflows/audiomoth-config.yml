@@ -43,7 +43,7 @@ jobs:
           git config --local user.name "A-d-r-i"
           git add .
           git commit -m "[Bot] Update files - audiomoth-config" --allow-empty
-          git tag -a audiomoth-config-v$tag -m "Audiomoth Config - version $tag - community.chocolatey.org/packages/audiomoth-config/$tag"
+          git tag -a audiomoth-config-v$tag -m "Audiomoth Config - version $tag"
           git push -f && git push --tags
           $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
           if ( $twitter -eq "y" )
