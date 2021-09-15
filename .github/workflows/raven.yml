@@ -44,8 +44,11 @@ jobs:
           git config --local user.name "A-d-r-i"
           git add .
           git commit -m "[Bot] Update files - Raven" --allow-empty
-          git tag -a raven-v$tag -m "Raven - version $tag - https://community.chocolatey.org/packages/raven/$tag"
+          git tag -a raven-v$tag -m "Raven - version $tag"
           git push -f && git push --tags
+          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+          if ( $twitter -eq "y" )
+          {
           Install-Module PSTwitterAPI -Force
           Import-Module PSTwitterAPI
           $OAuthSettings = @{
@@ -61,4 +64,5 @@ jobs:
           @helloefficiency @mrgodhani
           #raven #release #opensource
           "
+          }
           }
