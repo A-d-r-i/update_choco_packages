@@ -45,6 +45,9 @@ jobs:
           git commit -m "[Bot] Update files - audiomoth-flash" --allow-empty
           git tag -a audiomoth-flash-v$tag -m "Audiomoth Flash - version $tag - https://community.chocolatey.org/packages/audiomoth-flash/$tag"
           git push -f && git push --tags
+          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+          if ( $twitter -eq "y" )
+          {
           Install-Module PSTwitterAPI -Force
           Import-Module PSTwitterAPI
           $OAuthSettings = @{
@@ -60,4 +63,5 @@ jobs:
           @AudioMoth @OpenAcoustics
           #audiomoth #release #opensource
           "
+          }
           }
