@@ -1,10 +1,12 @@
 $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
 $tag = $tag -replace 'v'
+$release = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].body
 
 $file = "./tartube/tartube.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
+$xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "tartube64.exe"
