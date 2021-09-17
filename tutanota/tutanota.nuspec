@@ -2,27 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version># What's new
- - Update authenticode codesigning certificate for windows #3475
- - Update oxmsg to 0.0.8 #3463
- - Better template search results #3462
- - CalendarEventPopup should preview if event is repeated #3434 
- - Dev build improvements #3442, #3441, #3440, #3426
-- update keytar to v7.7.0 #3467
-
-# Bugfixes
- - NotFoundError when viewing event as external recipient. #3420
- - Unhandled error when U2F request is cancelled #3419
- - NotFoundError from DraftService #3416
- - newMailtoUrlMailEditor doesn't check the attachment size #3376
- - Email template list is scrolled to bottom #3229
- - Cannot open broken invites #2649
- - Search results are duplicated #1972
-
-# Milestone
-https://github.com/tutao/tutanota/milestone/178?closed=1
-
-</version>
+    <version>3.87.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
