@@ -37,7 +37,5 @@ choco pack ./tartube/tartube.nuspec --outputdirectory .\tartube
 If ($LastExitCode -eq 0) {
 	choco push ./tartube/tartube.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
