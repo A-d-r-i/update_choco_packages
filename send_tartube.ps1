@@ -1,6 +1,17 @@
 $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
 $tag = $tag -replace 'v'
-$release = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].body
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/CHANGES" -OutFile "release.txt"
+$text = Get-Content -path release.txt
+
+$pattern = '-------------------------------------------------------------------------------(.*?)v([0-9]+(\.[0-9]+)+)'
+$result = [regex]::match($text, $pattern).Groups[1].Value
+
+$release = $result -replace ' - ', "`n- "
+$release = $release -replace '     ', ' '
+$release = $release -replace '  ', "`n# "
+$regex = '([0-9]{3,})'
+$release = $release -replace $regex, '[${1}](https://github.com/axcore/tartube/issues/${1})'
+$release = -join($release, "`n**Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)");
 
 $file = "./tartube/tartube.nuspec"
 $xml = New-Object XML
@@ -31,6 +42,7 @@ Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`"
 
 Remove-Item tartube64.exe
 Remove-Item tartube32.exe
+Remove-Item release.txt
 
 choco pack ./tartube/tartube.nuspec --outputdirectory .\tartube
 
