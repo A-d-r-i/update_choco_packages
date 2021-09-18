@@ -31,7 +31,5 @@ choco pack ./raven/raven.nuspec --outputdirectory .\raven
 If ($LastExitCode -eq 0) {
 	choco push ./raven/raven.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
