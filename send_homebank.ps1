@@ -15,7 +15,7 @@ $release = $release -replace '   *', "`n"
 $release = $release -replace '  ', "`n"
 $regex = '([0-9]{7,})'
 $release = $release -replace $regex, '[${1}](https://bugs.launchpad.net/bugs/${1})'
-$release = -join($release, "`nFull changelog: [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)");
+$release = -join($release, "`n**Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)");
 
 
 $file = "./homebank/homebank.nuspec"
