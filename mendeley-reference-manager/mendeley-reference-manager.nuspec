@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.56.0</version>
+    <version>2.57.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,8 +19,9 @@
 * Copy a reference as a BibTeX entry by right clicking on a reference whilst in your personal library or group and selecting the Copy BibTeX Entry option
 # We fixed an issue where:
 * If you are on a slow connection, the sync would interrupt keystrokes when adding/editing a sticky note or adding/editing a Notebook page
-*Screen readers were incorrectly reading out the smart collections 
-Full changelog: [https://www.mendeley.com/release-notes-reference-manager/v2.57.0](https://www.mendeley.com/release-notes-reference-manager/v2.57.0)</releaseNotes>
+* Screen readers were incorrectly reading out the smart collections 
+
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.57.0](https://www.mendeley.com/release-notes-reference-manager/v2.57.0)</releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
   </metadata>
