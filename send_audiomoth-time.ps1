@@ -15,7 +15,5 @@ choco pack ./audiomoth-time/audiomoth-time.nuspec --outputdirectory .\audiomoth-
 If ($LastExitCode -eq 0) {
 	choco push ./audiomoth-time/audiomoth-time.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
