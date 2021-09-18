@@ -15,7 +15,5 @@ choco pack ./audiomoth-flash/audiomoth-flash.nuspec --outputdirectory .\audiomot
 If ($LastExitCode -eq 0) {
 	choco push ./audiomoth-flash/audiomoth-flash.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
