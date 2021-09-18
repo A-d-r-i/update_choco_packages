@@ -13,10 +13,10 @@ $release = $release -replace '> <', '><'
 $release = $release -replace '<p>', '# '
 $release = $release -replace '</p>', "`n"
 $release = $release -replace '</ul>', "`n"
-$release = $release -replace '<ul><li>', '*'
+$release = $release -replace '<ul><li>', '* '
 $release = $release -replace '</li>', ''
 $release = $release -replace '<li>', "`n*"
-$release = -join($release, "`nFull changelog: [https://www.mendeley.com/release-notes-reference-manager/v$tag(https://www.mendeley.com/release-notes-reference-manager/v$tag)");
+$release = -join($release, "`nFull changelog: [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag)");
 
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
