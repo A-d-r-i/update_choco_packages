@@ -21,7 +21,7 @@ Here are deposited:
 |**Audiomoth Flash App**|every 6 hours at minute 10|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-flash)|
 |**Audiomoth Time App**|every 6 hours at minute 20|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-time)|
 |**Homebank**|every 6 hours at minute 25|✅|✅|[Link](homebank.free.fr)|[Link](https://community.chocolatey.org/packages/homebank)|
-|**Mendeley Reference Manager**|every 6 hours at minute 30|✅|❌|[Link](https://www.mendeley.com/reference-management/reference-manager)|[Link](https://community.chocolatey.org/packages/mendeley-reference-manager)|
+|**Mendeley Reference Manager**|every 6 hours at minute 30|✅|✅|[Link](https://www.mendeley.com/reference-management/reference-manager)|[Link](https://community.chocolatey.org/packages/mendeley-reference-manager)|
 |**Raven**|every 6 hours at minute 40|✅|✅|[Link](https://ravenreader.app/)|[Link](https://community.chocolatey.org/packages/raven)|
 |**Tartube**|every 6 hours at minute 50|✅|✅|[Link](https://tartube.sourceforge.io/)|[Link](https://community.chocolatey.org/packages/tartube)|
 |**Tutanota**|every 6 hours at minute 59|✅|✅|[Link](https://tutanota.com/)|[Link](https://community.chocolatey.org/packages/tutanota)|
