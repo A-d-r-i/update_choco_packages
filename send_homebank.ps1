@@ -47,7 +47,5 @@ choco pack ./homebank/homebank.nuspec --outputdirectory .\homebank
 If ($LastExitCode -eq 0) {
 	choco push ./homebank/homebank.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
