@@ -18,7 +18,5 @@ choco pack ./tutanota/tutanota.nuspec --outputdirectory .\tutanota
 If ($LastExitCode -eq 0) {
 	choco push ./tutanota/tutanota.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
