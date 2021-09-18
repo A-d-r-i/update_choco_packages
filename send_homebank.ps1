@@ -13,7 +13,7 @@ $release = $result -replace '   :', ':'
 $release = $release -replace '  :', ':'
 $release = $release -replace '   *', "`n"
 $release = $release -replace '  ', "`n"
-$regex = '(#[0-9]{1,})'
+$regex = '([0-9]{1,})'
 $release = $release -replace $regex, '[${1}](https://bugs.launchpad.net/bugs/${1})'
 $release = -join($release, "`nFull changelog: [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)");
 
