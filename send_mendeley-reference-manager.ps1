@@ -35,7 +35,5 @@ choco pack ./mendeley-reference-manager/mendeley-reference-manager.nuspec --outp
 If ($LastExitCode -eq 0) {
 	choco push ./mendeley-reference-manager/mendeley-reference-manager.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error'
+ 'Error - Exit code: $LastExitCode'
 }
-
-Start-Sleep -Seconds 10
