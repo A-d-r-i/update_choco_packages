@@ -1,0 +1,27 @@
+name: TWEET
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Run scripts and commit
+        run:  |
+          Install-Module PSTwitterAPI -Force
+          Import-Module PSTwitterAPI
+          $OAuthSettings = @{
+          ApiKey = "${{ secrets.PST_KEY }}"
+          ApiSecret = "${{ secrets.PST_SECRET }}"
+          AccessToken = "${{ secrets.PST_TOKEN }}"
+          AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
+          }
+          Set-TwitterOAuthSettings @OAuthSettings
+          Send-TwitterStatuses_Update -status "At last! The twitter app update_choco_package was released by @Twitter !
+          
+          It will finally be possible to publish the updates of the packages sent to @chocolateynuget! Good news!
+          
+          (I will especially be able to stop tweeting the push of packages manually)
+          #twitter #chocolatey #github #powershell
+          "
