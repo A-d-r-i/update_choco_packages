@@ -13,14 +13,14 @@ Invoke-WebRequest -Uri "https://github.com/standardnotes/desktop/releases/downlo
 $TABLE = Get-FileHash standardnotes.exe -Algorithm SHA256
 $SHA = $TABLE.Hash
 
-$content = "`$packageName = 'standardnotes'
+$content = "`$packageName = 'standardnotes-desktop'
 `$installerType = 'EXE'
 `$url = 'https://github.com/standardnotes/desktop/releases/download/v$tag/standard-notes-$tag-win.exe'
 `$checksum = '$SHA'
 `$checkumType = 'sha256'
 `$silentArgs = '/S'
 `$validExitCodes = @(0)
-Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./raven/tools/chocolateyinstall.ps1
+Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./standardnotes/tools/chocolateyinstall.ps1
 
 Remove-Item standardnotes.exe
 
