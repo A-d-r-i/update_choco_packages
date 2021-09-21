@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>standardnotes</id>
-    <version>3.8.20</version>
+    <version>3.8.21</version>
     <title>Standard Notes</title>
     <authors>Standard Notes Ltd. (and contributors)</authors>
     <owners>Adri</owners>
@@ -29,7 +29,10 @@ Compose any kind of note, from rich text, to Markdown and code. Change the mood 
 Our apps are built carefully to optimize overall lifetime and long-term survivability.
 [Learn More](https://standardnotes.com/longevity)</description>
     <summary>Standard Notes is a private notes app that features unmatched simplicity, end-to-end encryption, powerful extensions, and open-source applications.</summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>- Pressing Alt key when note options menu is open now toggles ???Move to trash??? option to ???Delete permanently???.
+- Fixed: Sign out not occurring when uninstalling the app.
+- Fixed: Clicking on ???View note??? button when attempting to view a protected note without a passcode/password set up would not dismiss the warning.
+- Fixed: Note actions would sometimes display actions for the previous note instead of the current one.</releaseNotes>
     <tags>standardnotes privacy app notes simple</tags>
     <projectSourceUrl>https://github.com/standardnotes/</projectSourceUrl>
     <packageSourceUrl>https://github.com/standardnotes/desktop</packageSourceUrl>
