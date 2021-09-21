@@ -21,7 +21,5 @@ jobs:
           Send-TwitterStatuses_Update -status "At last! The twitter app update_choco_package was released by @Twitter !
           
           It will finally be possible to publish the updates of the packages sent to @chocolateynuget! Good news!
-          
-          (I will especially be able to stop tweeting the push of packages manually)
           #twitter #chocolatey #github #powershell
           "
