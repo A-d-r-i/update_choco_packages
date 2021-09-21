@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>standardnotes</id>
+    <version>3.8.20</version>
+    <title>Standard Notes</title>
+    <authors>Standard Notes Ltd. (and contributors)</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/standardnotes/desktop/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://standardnotes.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/standardnotes/desktop@develop/app/icon/Icon-256x256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>## 100% Private.
+
+Your notes are encrypted and secured so only you can decrypt them. No one but you can read your notes (not even us).
+[Learn More](https://standardnotes.com/privacy)
+
+## Simple.
+
+Keeping our app simple means you'll spend less time fighting and more time writing. It's faster and lighter than most notes apps.
+
+## Powerful Extensions.
+
+Compose any kind of note, from rich text, to Markdown and code. Change the mood and find new inspiration with beautiful themes.
+[Learn More](https://standardnotes.com/features)
+
+## Long-lasting.
+
+Our apps are built carefully to optimize overall lifetime and long-term survivability.
+[Learn More](https://standardnotes.com/longevity)</description>
+    <summary>Standard Notes is a private notes app that features unmatched simplicity, end-to-end encryption, powerful extensions, and open-source applications.</summary>
+    <releaseNotes></releaseNotes>
+    <tags>standardnotes privacy app notes simple</tags>
+    <projectSourceUrl>https://github.com/standardnotes/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/standardnotes/desktop</packageSourceUrl>
+    <docsUrl>https://docs.standardnotes.com/</docsUrl>
+    <bugTrackerUrl>https://github.com/standardnotes/desktop/issues</bugTrackerUrl>
+  </metadata>
+</package>
