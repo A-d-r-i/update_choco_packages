@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>standardnotes-desktop</id>
-    <version>3.8.20</version>
+    <version>3.8.21</version>
     <title>Standard Notes</title>
     <authors>Standard Notes Ltd. (and contributors)</authors>
     <owners>Adri</owners>
