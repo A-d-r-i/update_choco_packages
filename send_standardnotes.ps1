@@ -13,7 +13,7 @@ Invoke-WebRequest -Uri "https://github.com/standardnotes/desktop/releases/downlo
 $TABLE = Get-FileHash standardnotes.exe -Algorithm SHA256
 $SHA = $TABLE.Hash
 
-$content = "`$packageName = 'standardnotes-desktop'
+$content = "`$packageName = 'standardnotes'
 `$installerType = 'EXE'
 `$url = 'https://github.com/standardnotes/desktop/releases/download/v$tag/standard-notes-$tag-win.exe'
 `$checksum = '$SHA'
