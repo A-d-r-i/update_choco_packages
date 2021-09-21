@@ -58,7 +58,7 @@ jobs:
           AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
           }
           Set-TwitterOAuthSettings @OAuthSettings
-          Send-TwitterStatuses_Update -status "Tartube v$tag push now on @chocolateynuget ! 
+          Send-TwitterStatuses_Update -status "Tartube v$tag push now on @chocolateynuget! 
           
           Link: https://community.chocolatey.org/packages/tartube/$tag
           #tartube #release #opensource
