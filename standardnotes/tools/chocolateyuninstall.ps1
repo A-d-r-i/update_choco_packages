@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'standardnotes*'
+  softwareName  = 'standardnotes-desktop*'
   fileType      = 'EXE'
   silentArgs    = "/qn /norestart"
   validExitCodes= @(0)
