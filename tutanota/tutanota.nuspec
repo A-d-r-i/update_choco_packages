@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.88.0</version>
+    <version>3.88.3</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -15,24 +15,14 @@
 With end-to-end encryption and 2FA, your emails have never been more secure. The built-in encryption guarantees that your mailbox belongs to you: Nobody can decrypt or read your data.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Update authenticode codesigning certificate for windows #3475
- - Update oxmsg to 0.0.8 #3463
- - Better template search results #3462
- - CalendarEventPopup should preview if event is repeated #3434 
- - Dev build improvements #3442, #3441, #3440, #3426
-- update keytar to v7.7.0 #3467
+ - Refactor worker communication #[3405](https://github.com/tutao/tutanota/issues/3405)
 
 # Bugfixes
- - NotFoundError when viewing event as external recipient. #3420
- - Unhandled error when U2F request is cancelled #3419
- - NotFoundError from DraftService #3416
- - newMailtoUrlMailEditor doesn't check the attachment size #3376
- - Email template list is scrolled to bottom #3229
- - Cannot open broken invites #2649
- - Search results are duplicated #1972
+ - Calendar importer errors for dates with leading whitespace #[3403](https://github.com/tutao/tutanota/issues/3403)
+ - Native colors don't update when custom theme definition changes #[3373](https://github.com/tutao/tutanota/issues/3373)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/178?closed=1
+https://github.com/tutao/tutanota/milestone/179?closed=1
 
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
