@@ -27,7 +27,9 @@ Compose any kind of note, from rich text, to Markdown and code. Change the mood 
 ## Long-lasting.
 
 Our apps are built carefully to optimize overall lifetime and long-term survivability.
-[Learn More](https://standardnotes.com/longevity)</description>
+[Learn More](https://standardnotes.com/longevity)
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Standard Notes is a private notes app that features unmatched simplicity, end-to-end encryption, powerful extensions, and open-source applications.</summary>
     <releaseNotes>- Pressing Alt key when note options menu is open now toggles ???Move to trash??? option to ???Delete permanently???.
 - Fixed: Sign out not occurring when uninstalling the app.
