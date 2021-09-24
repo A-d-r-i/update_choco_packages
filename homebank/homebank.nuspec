@@ -12,7 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>HomeBank is a free software (as in "free speech" and also as in "free beer") that will assist you to manage your personal accounting.
 It is designed to easy to use and be able to analyse your personal finance and budget in detail using powerful filtering tools and beautiful charts.
-If you are looking for a completely free and easy application to manage your personal accounting, budget, finance then HomeBank should be the software of choice.</description>
+If you are looking for a completely free and easy application to manage your personal accounting, budget, finance then HomeBank should be the software of choice.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
 Made 5.5.3 release
