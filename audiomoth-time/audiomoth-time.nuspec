@@ -11,7 +11,9 @@
     <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Time-App/master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The AudioMoth Time App is a simple tool for setting the onboard clock of your device.
-	It will also display the unique ID, current battery level, firmware version and a brief description of the firmware installed on the attached AudioMoth.</description>
+	It will also display the unique ID, current battery level, firmware version and a brief description of the firmware installed on the attached AudioMoth.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of setting the on-board clock of the AudioMoth recording device.</summary>
     <tags>audiomoth-time audiomoth time-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
