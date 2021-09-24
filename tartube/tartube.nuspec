@@ -12,7 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Tartube is a GUI front-end for youtube-dlc, youtube-dl and other compatible video downloaders.
 
-It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube runs on MS Windows, Linux, BSD and MacOS.</description>
+It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube runs on MS Windows, Linux, BSD and MacOS.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>https://github.com/axcore/tartube/releases/</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
