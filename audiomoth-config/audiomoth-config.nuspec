@@ -11,7 +11,9 @@
     <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The AudioMoth Configuration App is an easy to use tool for customising your AudioMoth devices.
-	Using it you can schedule recording periods, customise recording gain and sample rates as well as calculate approximate device lifespans given a configuration.</description>
+	Using it you can schedule recording periods, customise recording gain and sample rates as well as calculate approximate device lifespans given a configuration.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth recording device and setting the onboard clock.</summary>
     <releaseNotes>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases</releaseNotes>
     <tags>audiomoth-config audiomoth config-app openacousticdevices</tags>
