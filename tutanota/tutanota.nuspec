@@ -12,7 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Tutanota is the world's most secure email service, easy to use and private by design. Sign up for free encrypted email now.
 
-With end-to-end encryption and 2FA, your emails have never been more secure. The built-in encryption guarantees that your mailbox belongs to you: Nobody can decrypt or read your data.</description>
+With end-to-end encryption and 2FA, your emails have never been more secure. The built-in encryption guarantees that your mailbox belongs to you: Nobody can decrypt or read your data.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
  - Refactor worker communication #[3405](https://github.com/tutao/tutanota/issues/3405)
