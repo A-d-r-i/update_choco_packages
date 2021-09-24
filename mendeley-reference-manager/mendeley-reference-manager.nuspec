@@ -13,7 +13,9 @@
     <description>Get ready for a new and improved reference management experience.  
 	- **Manage your references efficiently**: Your library now automatically syncs when you add references or make changes  
 	- **Keep all your thoughts together** : Mendeley Notebook helps you collate all your highlights and notes from multiple PDFs  
-	- **Cite seamlessly** : Also available: Mendeley Cite, the new citation add-in for Microsoft Word, takes the time out of referencing</description>
+	- **Cite seamlessly** : Also available: Mendeley Cite, the new citation add-in for Microsoft Word, takes the time out of referencing
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes># You can now:
 * Copy a reference as a BibTeX entry by right clicking on a reference whilst in your personal library or group and selecting the Copy BibTeX Entry option
