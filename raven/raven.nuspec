@@ -10,7 +10,9 @@
     <projectUrl>https://ravenreader.app/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/hello-efficiency-inc/raven-reader@master/public/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Raven is a open source desktop news reader with flexible settings to optimize your experience. No login is required, and no personal data is collected. Just select the websites you want to curate articles from and enjoy!</description>
+    <description>Raven is a open source desktop news reader with flexible settings to optimize your experience. No login is required, and no personal data is collected. Just select the websites you want to curate articles from and enjoy!
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>📖 All your articles in one place. Beautiful.</summary>
     <releaseNotes>https://github.com/hello-efficiency-inc/raven-reader/releases/</releaseNotes>
     <tags>raven reader rss blog article</tags>
