@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tenacity</id>
+    <version>3.0.4-beta</version>
+    <title>Tenacity Audio Editor</title>
+    <authors>Tenacity Team (and contributors)</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://tenacityaudio.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tenacityteam/tenacity@master/images/icons/48x48/tenacity.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tenacity is an easy-to-use, cross-platform multi-track audio editor/recorder for Windows, MacOS, GNU/Linux and other operating systems and is developed by a group of volunteers as open source software.
+		
+		## Beta version here</description>
+    <summary>An easy-to-use, cross-platform multi-track audio editor/recorder</summary>
+    <releaseNotes>https://github.com/axcore/tartube/releases/</releaseNotes>
+    <tags>tenacity editor audio recorder foss cross-platform</tags>
+    <projectSourceUrl>https://github.com/tenacityteam</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tenacityteam/tenacity</packageSourceUrl>
+    <docsUrl>https://github.com/tenacityteam/tenacity</docsUrl>
+    <bugTrackerUrl>https://github.com/tenacityteam/tenacity/issues</bugTrackerUrl>
+  </metadata>
+</package>
