@@ -1,14 +1,14 @@
 # $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].name
 # $release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].body
 
-# $file = "./tenacity/tenacity.nuspec"
-# $xml = New-Object XML
-# $xml.Load($file)
-# $xml.package.metadata.version = $tag
-# $xml.package.metadata.releaseNotes = $release
-# $xml.Save($file)
-
 $tag = "3.0.4-beta"
+
+$file = "./tenacity/tenacity.nuspec"
+$xml = New-Object XML
+$xml.Load($file)
+$xml.package.metadata.version = $tag
+# $xml.package.metadata.releaseNotes = $release
+$xml.Save($file)
 
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja_1277022950_.zip" -OutFile "tenacity64.zip"
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja_1277022950_.zip" -OutFile "tenacity32.zip"
