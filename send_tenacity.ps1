@@ -21,13 +21,13 @@ $content = "`$ErrorActionPreference = 'Stop'
 `$packageArgs = @{
   packageName    = 'tenacity'
   fileType       = 'exe'
-  file           = `"$toolsDir\tenacity-win-3.0.4-x86.exe`"
-  file64         = `"$toolsDir\tenacity-win-3.0.4-x64.exe`"
+  file           = `"`$toolsDir\tenacity-win-3.0.4-x86.exe`"
+  file64         = `"`$toolsDir\tenacity-win-3.0.4-x64.exe`"
   silentArgs     = '/VERYSILENT'
   validExitCodes = @(0, 1223)
 }
 Install-ChocolateyInstallPackage @packageArgs
-Get-ChildItem `"$toolsDir\*.`$(`$packageArgs.fileType)`" | ForEach-Object {
+Get-ChildItem `"`$toolsDir\*.`$(`$packageArgs.fileType)`" | ForEach-Object {
   Remove-Item `$_ -ea 0
   if (Test-Path `$_) {
     Set-Content `"$_.ignore`"
