@@ -1,7 +1,7 @@
 # $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].name
 # $release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].body
 
-$tag = "3.0.4-beta"
+$tag = "0.1.0-beta"
 
 $file = "./tenacity/tenacity.nuspec"
 $xml = New-Object XML
