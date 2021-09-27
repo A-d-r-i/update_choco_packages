@@ -1,7 +1,5 @@
 $ErrorActionPreference = 'Stop'
-
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
-
 $packageArgs = @{
   packageName    = 'tenacity'
   fileType       = 'exe'
@@ -14,10 +12,9 @@ Install-ChocolateyInstallPackage @packageArgs
 Get-ChildItem "$toolsDir\*.$($packageArgs.fileType)" | ForEach-Object {
   Remove-Item $_ -ea 0
   if (Test-Path $_) {
-    Set-Content "$_.ignore"
+    Set-Content ".ignore"
   }
 }
-
 $packageName = $packageArgs.packageName
 $installLocation = Get-AppInstallLocation $packageName
 if ($installLocation) {
@@ -25,4 +22,4 @@ if ($installLocation) {
   Register-Application "$installLocation\$packageName.exe"
   Write-Host "$packageName registered as $packageName"
 }
-else { Write-Warning "Can't find $PackageName install location" }
+else { Write-Warning "Can't find $PackageName install location" } 
