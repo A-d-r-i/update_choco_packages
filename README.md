@@ -25,5 +25,6 @@ Here are deposited:
 |**Raven Reader**|every 6 hours at minute 40|✅|✅|[Link](https://ravenreader.app/)|[Link](https://community.chocolatey.org/packages/raven)|
 |**Tartube**|every 6 hours at minute 50|✅|✅|[Link](https://tartube.sourceforge.io/)|[Link](https://community.chocolatey.org/packages/tartube)|
 |**Tutanota**|every 6 hours at minute 59|✅|✅|[Link](https://tutanota.com/)|[Link](https://community.chocolatey.org/packages/tutanota)|
+|**Tenacity Audio Editor**|Manually|❌|❌|[Link](https://tenacityaudio.org/)|[Link](https://community.chocolatey.org/packages/tenacity/)|
 
 ![update_choco_packages-3](https://user-images.githubusercontent.com/27277698/134149155-45a89285-542a-4bc8-a9d3-83ce57dc5fe9.png)
