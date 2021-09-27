@@ -23,7 +23,7 @@ jobs:
       - name: Chocolatey
         uses: crazy-max/ghaction-chocolatey@v1
         with:
-          args: choco
+          args: -h
 
       - name: Run scripts and commit
         run:  |
