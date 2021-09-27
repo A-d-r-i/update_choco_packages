@@ -1,5 +1,9 @@
 # $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].name
 # $release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].body
+Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master" -OutFile "tenacity.html"
+$Source = Get-Content -path tenacity.html -raw
+$Source -match 'Tenacity_windows-server-2019-amd64-x64_windows-ninja(_[0-9]+_)'
+$run = $matches[1]
 
 $tag = "0.1.0-alpha"
 
@@ -10,19 +14,21 @@ $xml.package.metadata.version = $tag
 # $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja_1278776428_.zip" -OutFile "tenacity64.zip"
-Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja_1278776428_.zip" -OutFile "tenacity32.zip"
+Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja$run.zip" -OutFile "tenacity64.zip"
+Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja$run.zip" -OutFile "tenacity32.zip"
 
 Expand-Archive tenacity64.zip -DestinationPath .\tenacity\tools\ -Force
 Expand-Archive tenacity32.zip -DestinationPath .\tenacity\tools\ -Force
+Rename-Item -Path ".\tenacity\tools\*x64.exe" -NewName "tenacity64.exe"
+Rename-Item -Path ".\tenacity\tools\*x64.exe" -NewName "tenacity32.exe"
 
 $content = "`$ErrorActionPreference = 'Stop'
 `$toolsDir = Split-Path `$MyInvocation.MyCommand.Definition
 `$packageArgs = @{
   packageName    = 'tenacity'
   fileType       = 'exe'
-  file           = `"`$toolsDir\tenacity-win-3.0.4-x86.exe`"
-  file64         = `"`$toolsDir\tenacity-win-3.0.4-x64.exe`"
+  file           = `"`$toolsDir\tenacity32.exe`"
+  file64         = `"`$toolsDir\tenacity64.exe`"
   silentArgs     = '/VERYSILENT'
   validExitCodes = @(0, 1223)
 }
