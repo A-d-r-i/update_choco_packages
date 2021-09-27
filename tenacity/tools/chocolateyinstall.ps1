@@ -12,7 +12,7 @@ Install-ChocolateyInstallPackage @packageArgs
 Get-ChildItem "$toolsDir\*.$($packageArgs.fileType)" | ForEach-Object {
   Remove-Item $_ -ea 0
   if (Test-Path $_) {
-    Set-Content ".ignore"
+    Set-Content "$_.ignore"
   }
 }
 $packageName = $packageArgs.packageName
