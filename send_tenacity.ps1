@@ -10,8 +10,8 @@ $xml.package.metadata.version = $tag
 # $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja_1277022950_.zip" -OutFile "tenacity64.zip"
-Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja_1277022950_.zip" -OutFile "tenacity32.zip"
+Invoke-WebRequest -Uri "https://github.com/tenacityteam/tenacity/suites/3884630669/artifacts/96764478" -OutFile "tenacity64.zip"
+Invoke-WebRequest -Uri "https://github.com/tenacityteam/tenacity/suites/3884630669/artifacts/96764480" -OutFile "tenacity32.zip"
 
 Expand-Archive tenacity64.zip -DestinationPath .\tenacity\tools\ -Force
 Expand-Archive tenacity32.zip -DestinationPath .\tenacity\tools\ -Force
