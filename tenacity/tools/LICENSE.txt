@@ -1,0 +1,14 @@
+﻿
+From: https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt
+
+LICENSE
+
+		    GNU GENERAL PUBLIC LICENSE
+		       Version 2, June 1991
+Tenacity is distributed under the terms of the GNU GPL Version 2.
+This includes everything in the source code distribution
+except code in the lib-src directory.  Code in the lib-src
+directory may be released under a different license
+(which is GPL-compatible).  For a summary, see the
+3RDPARTY.txt file, and for specific details, see the license
+information inside each subdirectory of lib-src.
