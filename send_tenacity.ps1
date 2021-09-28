@@ -19,8 +19,8 @@ Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cma
 
 Expand-Archive tenacity64.zip -DestinationPath .\tenacity\tools\ -Force
 Expand-Archive tenacity32.zip -DestinationPath .\tenacity\tools\ -Force
-Rename-Item -Path ".\tenacity\tools\*x64.exe" -NewName "tenacity64.exe"
-Rename-Item -Path ".\tenacity\tools\*x64.exe" -NewName "tenacity32.exe"
+Rename-Item -Path ".\tenacity\tools\.*x64.exe" -NewName "tenacity64.exe"
+Rename-Item -Path ".\tenacity\tools\.*x64.exe" -NewName "tenacity32.exe"
 
 $content = "`$ErrorActionPreference = 'Stop'
 `$toolsDir = Split-Path `$MyInvocation.MyCommand.Definition
