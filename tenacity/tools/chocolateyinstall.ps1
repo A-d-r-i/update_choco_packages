@@ -3,8 +3,8 @@ $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName    = 'tenacity'
   fileType       = 'exe'
-  file           = "$toolsDir\tenacity-win-3.0.4-x86.exe"
-  file64         = "$toolsDir\tenacity-win-3.0.4-x64.exe"
+  file           = "$toolsDir\tenacity32.exe"
+  file64         = "$toolsDir\tenacity64.exe"
   silentArgs     = '/VERYSILENT'
   validExitCodes = @(0, 1223)
 }
