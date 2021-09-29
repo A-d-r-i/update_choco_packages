@@ -31,7 +31,7 @@ jobs:
           # $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].tag_name
           #$tag = $tag -replace 'v'
           
-          $tag = "0.1.0-alpha"
+          $tag = "0.1.0.001-alpha"
           
           #echo $Version
           #echo $tag
