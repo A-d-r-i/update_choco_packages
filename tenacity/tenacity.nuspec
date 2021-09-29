@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>0.1.0-alpha</version>
+    <version>0.1.0.001-alpha</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Tenacity is an easy-to-use, cross-platform multi-track audio editor/recorder for Windows, MacOS, GNU/Linux and other operating systems and is developed by a group of volunteers as open source software.
 	   
-	    **Alpha version here**</description>
+	    **Alpha version here + corrections of dependencies**</description>
     <summary>An easy-to-use, cross-platform multi-track audio editor/recorder</summary>
     <releaseNotes>https://github.com/axcore/tartube/releases/</releaseNotes>
     <tags>tenacity editor audio recorder foss cross-platform</tags>
