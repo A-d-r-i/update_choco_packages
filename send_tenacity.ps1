@@ -5,7 +5,7 @@ $Source = Get-Content -path tenacity.html -raw
 $Source -match 'Tenacity_windows-server-2019-amd64-x64_windows-ninja(_[0-9]+_)'
 $run = $matches[1]
 
-$tag = "0.1.0-alpha"
+$tag = "0.1.0.001-alpha"
 
 $file = "./tenacity/tenacity.nuspec"
 $xml = New-Object XML
