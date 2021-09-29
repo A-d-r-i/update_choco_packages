@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ctemplar</id>
+    <version>2.5.50</version>
+    <title>CTemplar</title>
+    <authors>Templar Software Systems Ltd.</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/CTemplar/webclient/blob/master/LICENCE</licenseUrl>
+    <projectUrl>https://ctemplar.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/CTemplar/webclient@master/src/assets/icons/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Inspired in the ways of the medieval Knights Templar, this service was created to provide an anonymous and end-to-end encrypted email to anyone who needs their communications shielded from prying eyes. We at CTemplar recognize the value in cryptography and cryptocurrency, hence the name "CTemplar" or "Crypto Templar".
+
+Our mission is to provide an anonymous E2EE (End to End Encrypted) email. No one except you and your recipient can read the contents of your emails, not even us.
+
+We are independently owned, funded, and the key parts of our codebase are publicly released under a permissive open-source license. The government and corporate grants and investment proposals we have seen have always been designed to violate our user’s privacy. Therefore, we actively refuse all investments or grants from governments and corporations.
+
+Our team is passionate about privacy and security. It is what we believe in and respect. With this, we welcome and invite you to be a part of the CTemplar email service for the best email protection you can access.
+
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>Armored Email. Because privacy is a human right worth fighting for!</summary>
+    <releaseNotes>https://github.com/CTemplar/webclient/releases</releaseNotes>
+    <tags>ctemplar mail security e2ee anonymous</tags>
+    <projectSourceUrl>https://github.com/CTemplar</projectSourceUrl>
+    <packageSourceUrl>https://github.com/CTemplar/webclient</packageSourceUrl>
+  </metadata>
+</package>
