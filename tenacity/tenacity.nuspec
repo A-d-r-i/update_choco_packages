@@ -12,9 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Tenacity is an easy-to-use, cross-platform multi-track audio editor/recorder for Windows, MacOS, GNU/Linux and other operating systems and is developed by a group of volunteers as open source software.
 	   
-	    **Alpha version here + corrections of dependencies**</description>
+	    **Alpha version here + correction of dependencies**</description>
     <summary>An easy-to-use, cross-platform multi-track audio editor/recorder</summary>
-    <releaseNotes>https://github.com/axcore/tartube/releases/</releaseNotes>
+    <releaseNotes>See project: https://github.com/tenacityteam/tenacity</releaseNotes>
     <tags>tenacity editor audio recorder foss cross-platform</tags>
     <projectSourceUrl>https://github.com/tenacityteam</projectSourceUrl>
     <packageSourceUrl>https://github.com/tenacityteam/tenacity</packageSourceUrl>
