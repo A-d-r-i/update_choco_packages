@@ -1,0 +1,67 @@
+name: CTEMPLAR
+
+on:
+  schedule:
+    - cron:  '15 */6 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACTIONS_TOKEN }}
+      - shell: pwsh
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: |
+          choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+          
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: -h
+
+      - name: Run scripts and commit
+        run:  |
+          $Version = ([xml](Get-Content ./ctemplar/ctemplar.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/CTemplar/webclient/releases/latest" | ConvertFrom-Json)[0].name
+          echo $Version
+          echo $tag
+          Start-Sleep -Seconds 5
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_ctemplar.ps1
+          git config --local user.email "a-d-r-i@outlook.fr"
+          git config --local user.name "A-d-r-i"
+          git add .
+          git commit -m "[Bot] Update files - ctemplar" --allow-empty
+          git tag -a ctemplar-v$tag -m "CTemplar - version $tag"
+          git push -f && git push --tags
+          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+          if ( $twitter -eq "y" )
+          {
+          Install-Module PSTwitterAPI -Force
+          Import-Module PSTwitterAPI
+          $OAuthSettings = @{
+          ApiKey = "${{ secrets.PST_KEY }}"
+          ApiSecret = "${{ secrets.PST_SECRET }}"
+          AccessToken = "${{ secrets.PST_TOKEN }}"
+          AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
+          }
+          Set-TwitterOAuthSettings @OAuthSettings
+          Send-TwitterStatuses_Update -status "CTemplar v$tag push now on @chocolateynuget! 
+          
+          Link: https://community.chocolatey.org/packages/ctemplar/$tag
+          @RealCTemplar
+          #ctemplar #release #opensource
+          "
+          }
+          }
