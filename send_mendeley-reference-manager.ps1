@@ -16,14 +16,14 @@ $release = $release -replace '</ul>', "`n"
 $release = $release -replace '<ul><li>', '* '
 $release = $release -replace '</li>', ''
 $release = $release -replace '<li>', "`n* "
-$releasechoco = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
+$release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
 
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
-$xml.package.metadata.releaseNotes = $releasechoco
+$xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./mendeley-reference-manager/tools/mendeley-reference-manager.exe"
@@ -55,7 +55,7 @@ GitHubRepositoryName = "update_choco_package"
 GitHubAccessToken = "$env:ACTIONS_TOKEN"
 ReleaseName = "Mendeley-Reference-Manager v$tag"
 TagName = "mendeley-rm-v$tag"
-ReleaseNotes = "$release"
+ReleaseNotes = "Release: $release"
 AssetFilePaths = ".\mendeley-reference-manager\mendeley-reference-manager.$tag.nupkg"
 IsPreRelease = $false
 IsDraft = $false
