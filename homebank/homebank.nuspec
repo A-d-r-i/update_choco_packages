@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.5.2</version>
+    <version>5.5.3</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -31,7 +31,7 @@ Made 5.5.3 release
 * bugfix: #[1928147](https://bugs.launchpad.net/bugs/1928147) account column don't sort in scheduled dialog
 * bugfix: #[1919936](https://bugs.launchpad.net/bugs/1919936) document what the account maximum balance limit does in practice
 
-Full changelog: [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
+**Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
     <tags>admin homebank finance accounting</tags>
     <projectSourceUrl>https://code.launchpad.net/homebank</projectSourceUrl>
