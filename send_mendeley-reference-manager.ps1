@@ -16,7 +16,7 @@ $release = $release -replace '</ul>', "`n"
 $release = $release -replace '<ul><li>', '* '
 $release = $release -replace '</li>', ''
 $release = $release -replace '<li>', "`n* "
-$release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag)");
+$release = -join($release, "`n`n**Full changelog:** https://www.mendeley.com/release-notes-reference-manager/v$tag ");
 
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
@@ -55,7 +55,7 @@ GitHubRepositoryName = "update_choco_package"
 GitHubAccessToken = "$env:ACTIONS_TOKEN"
 ReleaseName = "Mendeley-Reference-Manager v$tag"
 TagName = "mendeley-rm-v$tag"
-ReleaseNotes = "New release"
+ReleaseNotes = "$release"
 AssetFilePaths = ".\mendeley-reference-manager\mendeley-reference-manager.$tag.nupkg"
 IsPreRelease = $false
 IsDraft = $false
