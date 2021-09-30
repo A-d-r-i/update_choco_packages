@@ -37,7 +37,6 @@ jobs:
           
           echo $Version
           echo $tag
-          Start-Sleep -Seconds 5
           
           if ( $tag -eq $Version )
           {
