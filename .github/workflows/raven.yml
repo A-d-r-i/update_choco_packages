@@ -12,8 +12,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.ACTIONS_TOKEN }}
       - shell: pwsh
         env:
           CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
@@ -25,7 +23,14 @@ jobs:
         with:
           args: upgrade chocolatey
 
-      - name: Run scripts and commit
+      - name: Script
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          PST_KEY: ${{ secrets.PST_KEY }}
+          PST_SECRET: ${{ secrets.PST_SECRET }}
+          PST_TOKEN: ${{ secrets.PST_TOKEN }}
+          PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
         run:  |
           $Version = ([xml](Get-Content ./raven/raven.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
