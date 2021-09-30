@@ -15,6 +15,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of setting the on-board clock of the AudioMoth recording device.</summary>
+    <releaseNotes></releaseNotes>
     <tags>audiomoth-time audiomoth time-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
     <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App/</packageSourceUrl>
