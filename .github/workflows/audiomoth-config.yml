@@ -21,7 +21,7 @@ jobs:
       - name: Chocolatey
         uses: crazy-max/ghaction-chocolatey@v1
         with:
-          args: upgrade chocolatey
+          args: -h
 
       - name: Script
         env:
