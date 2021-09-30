@@ -16,7 +16,6 @@ $release = $release -replace '</ul>', "`n"
 $release = $release -replace '<ul><li>', '* '
 $release = $release -replace '</li>', ''
 $release = $release -replace '<li>', "`n* "
-$release = $release -replace '/', " "
 $release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
@@ -61,3 +60,23 @@ IsPreRelease = $false
 IsDraft = $false
 }
 $resultrelease = New-GitHubRelease @newGitHubReleaseParameters
+
+#post tweet
+$twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+if ( $twitter -eq "y" )
+{
+Install-Module PSTwitterAPI -Force
+Import-Module PSTwitterAPI
+$OAuthSettings = @{
+ApiKey = "$env:PST_KEY"
+ApiSecret = "$env:PST_SECRET"
+AccessToken = "$env:PST_TOKEN"
+AccessTokenSecret = "$env:PST_TOKEN_SECRET"
+}
+Set-TwitterOAuthSettings @OAuthSettings
+Send-TwitterStatuses_Update -status "Mendeley-Reference-Manager v$tag push now on @chocolateynuget! 
+Link: https://community.chocolatey.org/packages/mendeley-reference-manager/$tag
+@mendeley_com @MendeleyApp @MendeleyTips
+#mendeley #release #opensource
+"
+}
