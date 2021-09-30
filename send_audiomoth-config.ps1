@@ -13,7 +13,7 @@ Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Configu
 choco pack ./audiomoth-config/audiomoth-config.nuspec --outputdirectory .\audiomoth-config
 
 If ($LastExitCode -eq 0) {
-	#choco push ./audiomoth-config/audiomoth-config.$tag.nupkg --source https://push.chocolatey.org/
+	choco push ./audiomoth-config/audiomoth-config.$tag.nupkg --source https://push.chocolatey.org/
 } else {
  'Error - Exit code: $LastExitCode'
 }
