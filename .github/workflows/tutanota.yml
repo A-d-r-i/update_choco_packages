@@ -34,9 +34,10 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
+          
           echo $Version
           echo $tag
-          Start-Sleep -Seconds 5
+          
           if ( $tag -eq $Version )
           {
           echo 'Last version already exist'
@@ -44,29 +45,4 @@ jobs:
           else
           {
           ./send_tutanota.ps1
-          git config --local user.email "a-d-r-i@outlook.fr"
-          git config --local user.name "A-d-r-i"
-          git add .
-          git commit -m "[Bot] Update files - Tutanota" --allow-empty
-          git tag -a tutanota-v$tag -m "Tutanota - version $tag"
-          git push -f && git push --tags
-          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
-          if ( $twitter -eq "y" )
-          {
-          Install-Module PSTwitterAPI -Force
-          Import-Module PSTwitterAPI
-          $OAuthSettings = @{
-          ApiKey = "${{ secrets.PST_KEY }}"
-          ApiSecret = "${{ secrets.PST_SECRET }}"
-          AccessToken = "${{ secrets.PST_TOKEN }}"
-          AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
-          }
-          Set-TwitterOAuthSettings @OAuthSettings
-          Send-TwitterStatuses_Update -status "Tutanota v$tag push now on @chocolateynuget! 
-          
-          Link: https://community.chocolatey.org/packages/tutanota/$tag
-          @TutanotaTeam
-          #tutanota #release #opensource
-          "
-          }
           }
