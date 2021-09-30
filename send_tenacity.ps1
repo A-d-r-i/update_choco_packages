@@ -90,10 +90,10 @@ if ( $twitter -eq "y" )
 Install-Module PSTwitterAPI -Force
 Import-Module PSTwitterAPI
 $OAuthSettings = @{
-ApiKey = "${{ secrets.PST_KEY }}"
-ApiSecret = "${{ secrets.PST_SECRET }}"
-AccessToken = "${{ secrets.PST_TOKEN }}"
-AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
+ApiKey = "$env:PST_KEY"
+ApiSecret = "$env:PST_SECRET"
+AccessToken = "$env:PST_TOKEN"
+AccessTokenSecret = "$env:PST_TOKEN_SECRET"
 }
 Set-TwitterOAuthSettings @OAuthSettings
 Send-TwitterStatuses_Update -status "Tenacity v$tag push now on @chocolateynuget! 
