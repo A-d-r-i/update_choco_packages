@@ -40,7 +40,7 @@ jobs:
           
           #echo $Version
           #echo $tag
-          #Start-Sleep -Seconds 5
+          
           #if ( $tag -eq $Version )
           #{
           #echo 'Last version already exist'
@@ -48,29 +48,4 @@ jobs:
           #else
           #{
           ./send_tenacity.ps1
-          git config --local user.email "a-d-r-i@outlook.fr"
-          git config --local user.name "A-d-r-i"
-          git add .
-          git commit -m "[Bot] Update files - Tenacity" --allow-empty
-          git tag -a tenacity-v$tag -m "Tenacity - version $tag"
-          git push -f && git push --tags
-          $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
-          if ( $twitter -eq "y" )
-          {
-          Install-Module PSTwitterAPI -Force
-          Import-Module PSTwitterAPI
-          $OAuthSettings = @{
-          ApiKey = "${{ secrets.PST_KEY }}"
-          ApiSecret = "${{ secrets.PST_SECRET }}"
-          AccessToken = "${{ secrets.PST_TOKEN }}"
-          AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
-          }
-          Set-TwitterOAuthSettings @OAuthSettings
-          Send-TwitterStatuses_Update -status "Tenacity v$tag push now on @chocolateynuget! 
-          
-          Link: https://community.chocolatey.org/packages/tenacity/$tag
-          @TenacityAudio
-          #tenacity #release #opensource
-          "
-          }
           #}
