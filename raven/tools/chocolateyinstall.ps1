@@ -1,7 +1,7 @@
-$packageName = 'standardnotes'
+$packageName = 'raven'
 $installerType = 'EXE'
-$url = 'https://github.com/standardnotes/desktop/releases/download/v3.8.21/standard-notes-3.8.21-win.exe'
-$checksum = 'E3B2AA6F1F181469A79F4681EC6DB74BCA84F8D85699CD5199A00A8DD22B4C59'
+$url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.66/Raven-Reader-Setup-1.0.66.exe'
+$checksum = '2ABE0E179AD2D66D52566FD6F82C8C6FF58E5ED2B360B9CEB30655E02806B13E'
 $checkumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
