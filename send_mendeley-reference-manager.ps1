@@ -16,14 +16,14 @@ $release = $release -replace '</ul>', "`n"
 $release = $release -replace '<ul><li>', '* '
 $release = $release -replace '</li>', ''
 $release = $release -replace '<li>', "`n* "
-$release = -join($release, "`n`n**Full changelog:** https://www.mendeley.com/release-notes-reference-manager/v$tag ");
+$releasechoco = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
 
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
-$xml.package.metadata.releaseNotes = $release
+$xml.package.metadata.releaseNotes = $releasechoco
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./mendeley-reference-manager/tools/mendeley-reference-manager.exe"
