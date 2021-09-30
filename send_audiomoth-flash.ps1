@@ -13,7 +13,7 @@ Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Flash-A
 choco pack ./audiomoth-flash/audiomoth-flash.nuspec --outputdirectory .\audiomoth-flash
 
 If ($LastExitCode -eq 0) {
-	choco push ./audiomoth-flash/audiomoth-flash.$tag.nupkg --source https://push.chocolatey.org/
+	#choco push ./audiomoth-flash/audiomoth-flash.$tag.nupkg --source https://push.chocolatey.org/
 } else {
  'Error - Exit code: $LastExitCode'
 }
