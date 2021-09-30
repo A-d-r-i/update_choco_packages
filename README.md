@@ -15,6 +15,10 @@ Here are deposited:
 * the scripts (*.yml*) of github actions allowing the regular checking of updates and the launching of the scripts of packaging/sending
 
 ---
+
+✔ It is possible to **directly download the .nupkg packages** from the [releases](https://github.com/A-d-r-i/update_choco_package/releases) if needed! Of course it is always better to install the packages from chocolatey (the packages are tested and verified).
+
+---
 | Name | Cycle | Automatic version | Automatic changelog | Official link | Chocolatey link |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**Audiomoth Config App**|every 6 hours at minute 0|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-config)|
