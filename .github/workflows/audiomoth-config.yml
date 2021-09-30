@@ -34,7 +34,6 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-config/audiomoth-config.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" | ConvertFrom-Json)[0].name
-          $release = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" | ConvertFrom-Json)[0].body
           
           echo $Version
           echo $tag
