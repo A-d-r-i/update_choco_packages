@@ -15,6 +15,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application designed to flash the AudioMoth recording device with new firmware.</summary>
+    <releaseNotes></releaseNotes>
     <tags>audiomoth-flash audiomoth flash-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
     <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</packageSourceUrl>
