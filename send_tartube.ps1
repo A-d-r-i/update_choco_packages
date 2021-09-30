@@ -51,3 +51,47 @@ If ($LastExitCode -eq 0) {
 } else {
  'Error - Exit code: $LastExitCode'
 }
+
+#git and create tag
+git config --local user.email "a-d-r-i@outlook.fr"
+git config --local user.name "A-d-r-i"
+git add .
+git commit -m "[Bot] Update files - Tartube" --allow-empty
+git tag -a tartube-v$tag -m "Tartube - version $tag"
+git push -f && git push --tags
+
+#create release
+Install-Module -Name New-GitHubRelease -Force
+Import-Module -Name New-GitHubRelease
+$newGitHubReleaseParameters = @{
+GitHubUsername = "A-d-r-i"
+GitHubRepositoryName = "update_choco_package"
+GitHubAccessToken = "$env:ACTIONS_TOKEN"
+ReleaseName = "Tartube v$tag"
+TagName = "tartube-v$tag"
+ReleaseNotes = "$release"
+AssetFilePaths = ".\tartube\tartube.$tag.nupkg"
+IsPreRelease = $false
+IsDraft = $false
+}
+$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
+
+#post tweet
+$twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+if ( $twitter -eq "y" )
+{
+Install-Module PSTwitterAPI -Force
+Import-Module PSTwitterAPI
+$OAuthSettings = @{
+ApiKey = "${{ secrets.PST_KEY }}"
+ApiSecret = "${{ secrets.PST_SECRET }}"
+AccessToken = "${{ secrets.PST_TOKEN }}"
+AccessTokenSecret = "${{ secrets.PST_TOKEN_SECRET }}"
+}
+Set-TwitterOAuthSettings @OAuthSettings
+Send-TwitterStatuses_Update -status "Tartube v$tag push now on @chocolateynuget! 
+
+Link: https://community.chocolatey.org/packages/tartube/$tag
+#tartube #release #opensource
+"
+}
