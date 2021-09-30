@@ -13,7 +13,7 @@ Invoke-WebRequest -Uri "https://github.com/CTemplar/webclient/releases/download/
 choco pack ./ctemplar/ctemplar.nuspec --outputdirectory .\ctemplar
 
 If ($LastExitCode -eq 0) {
-	#choco push ./ctemplar/ctemplar.$tag.nupkg --source https://push.chocolatey.org/
+	choco push ./ctemplar/ctemplar.$tag.nupkg --source https://push.chocolatey.org/
 } else {
  'Error - Exit code: $LastExitCode'
 }
