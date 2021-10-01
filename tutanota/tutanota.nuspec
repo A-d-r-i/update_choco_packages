@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.88.3</version>
+    <version>3.88.4</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,15 +16,11 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Refactor worker communication #[3405](https://github.com/tutao/tutanota/issues/3405)
-
-# Bugfixes
- - Calendar importer errors for dates with leading whitespace #[3403](https://github.com/tutao/tutanota/issues/3403)
- - Native colors don't update when custom theme definition changes #[3373](https://github.com/tutao/tutanota/issues/3373)
+    <releaseNotes># Bugfixes
+ - Fix downloading attachments in desktop client. #[3526](https://github.com/tutao/tutanota/issues/3526)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/179?closed=1
+https://github.com/tutao/tutanota/milestone/180?closed=1
 
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
