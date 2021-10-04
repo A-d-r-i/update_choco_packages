@@ -2,8 +2,8 @@ $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/rav
 $tag = $tag -replace 'v'
 $release = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].body
 
-$regex = '([0-9]{3,})'
-$release = $release -replace $regex, '[${1}](https://github.com/hello-efficiency-inc/raven-reader/issues/${1})'
+# $regex = '([0-9]{3,})'
+# $release = $release -replace $regex, '[${1}](https://github.com/hello-efficiency-inc/raven-reader/issues/${1})'
 
 $file = "./raven/raven.nuspec"
 $xml = New-Object XML
