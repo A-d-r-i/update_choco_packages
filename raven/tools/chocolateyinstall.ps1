@@ -1,7 +1,7 @@
 $packageName = 'raven'
 $installerType = 'EXE'
-$url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.66/Raven-Reader-Setup-1.0.66.exe'
-$checksum = '2ABE0E179AD2D66D52566FD6F82C8C6FF58E5ED2B360B9CEB30655E02806B13E'
+$url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.67/Raven-Reader-Setup-1.0.67.exe'
+$checksum = '8BC2C1DE1BA35F4C4445D04729BE0E785E93E4EBF1E6057096BB1F9361C3DF47'
 $checkumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
