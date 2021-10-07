@@ -43,8 +43,10 @@ jobs:
           if ( $tag -eq $Version )
           {
           echo 'Last version already exist'
+          Remove-Item DDG.html
           }
           else
           {
           ./send_dotdotgoose.ps1
+          Remove-Item DDG.html
           }
