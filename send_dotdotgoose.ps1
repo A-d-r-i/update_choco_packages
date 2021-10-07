@@ -1,5 +1,5 @@
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/" -OutFile "DDG.html"
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/" -OutFile "release.html"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "release.html"
 $Source = Get-Content -path DDG.html
 $text = Get-Content -path release.html
 $Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
@@ -28,6 +28,7 @@ Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dot
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 
 Remove-Item dotdotgoose.zip
+
 
 choco pack ./dotdotgoose/dotdotgoose.nuspec --outputdirectory .\dotdotgoose
 
