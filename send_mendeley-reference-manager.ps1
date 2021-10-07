@@ -26,8 +26,6 @@ $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./mendeley-reference-manager/tools/mendeley-reference-manager.exe"
 
-Remove-Item release.html
-
 choco pack ./mendeley-reference-manager/mendeley-reference-manager.nuspec --outputdirectory .\mendeley-reference-manager
 
 If ($LastExitCode -eq 0) {
