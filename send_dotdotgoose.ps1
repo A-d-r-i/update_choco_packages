@@ -36,3 +36,46 @@ If ($LastExitCode -eq 0) {
 } else {
  'Error - Exit code: $LastExitCode'
 }
+
+#git and create tag
+git config --local user.email "a-d-r-i@outlook.fr"
+git config --local user.name "A-d-r-i"
+git add .
+git commit -m "[Bot] Update files - dotdotgoose" --allow-empty
+git tag -a dotdotgoose-v$tag -m "DotDotGoose - version $tag"
+git push -f && git push --tags
+
+#create release
+Install-Module -Name New-GitHubRelease -Force
+Import-Module -Name New-GitHubRelease
+$newGitHubReleaseParameters = @{
+GitHubUsername = "A-d-r-i"
+GitHubRepositoryName = "update_choco_package"
+GitHubAccessToken = "$env:ACTIONS_TOKEN"
+ReleaseName = "DotDotGoose v$tag"
+TagName = "dotdotgoose-v$tag"
+ReleaseNotes = "$release"
+AssetFilePaths = ".\dotdotgoose\dotdotgoose.$tag.nupkg"
+IsPreRelease = $false
+IsDraft = $false
+}
+$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
+
+#post tweet
+$twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
+if ( $twitter -eq "y" )
+{
+Install-Module PSTwitterAPI -Force
+Import-Module PSTwitterAPI
+$OAuthSettings = @{
+ApiKey = "$env:PST_KEY"
+ApiSecret = "$env:PST_SECRET"
+AccessToken = "$env:PST_TOKEN"
+AccessTokenSecret = "$env:PST_TOKEN_SECRET"
+}
+Set-TwitterOAuthSettings @OAuthSettings
+Send-TwitterStatuses_Update -status "DotDotGoose v$tag push now on @chocolateynuget! 
+Link: https://community.chocolatey.org/packages/dotdotgoose/$tag
+#dotdotgoose #release #opensource
+"
+}
