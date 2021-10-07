@@ -32,6 +32,7 @@ Here are deposited:
 |**Tartube**|every 6 hours at minute 50|✅|✅|[Link](https://tartube.sourceforge.io)|[Link](https://community.chocolatey.org/packages/tartube)|
 |**Tutanota**|every 6 hours at minute 59|✅|✅|[Link](https://tutanota.com)|[Link](https://community.chocolatey.org/packages/tutanota)|
 |**Tenacity Audio Editor**|Manually \*|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
+|**DotDotGoose**|Manually|❌|❌|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|Still not on chocolatey ([# 10](https://github.com/A-d-r-i/update_choco_package/issues/10))|
 
 *\* Tenacity is still under development without release. So the update must be done manually.*
 
