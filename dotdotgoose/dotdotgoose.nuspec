@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotdotgoose</id>
-    <version>1.5.1</version>
+    <version>1.5.2</version>
     <title>DotDotGoose</title>
     <authors>Peter Ersts</authors>
     <owners>Adri</owners>
@@ -19,7 +19,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>DotDotGoose is a free, open source tool to assist with manually counting objects in images </summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes> https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ </releaseNotes>
     <tags>dotdotgoose tool counting object image</tags>
     <projectSourceUrl>https://github.com/persts/DotDotGoose</projectSourceUrl>
     <packageSourceUrl>https://github.com/persts/DotDotGoose</packageSourceUrl>
