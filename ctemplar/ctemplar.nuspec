@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ctemplar</id>
-    <version>2.5.50</version>
+    <version>2.5.51</version>
     <title>CTemplar</title>
     <authors>Templar Software Systems Ltd.</authors>
     <owners>Adri</owners>
