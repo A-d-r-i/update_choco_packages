@@ -1,18 +1,7 @@
-﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'ctemplar.exe'
+$packageName= 'ctemplar'
 
-
-$packageArgs = @{
-  packageName   = 'ctemplar'
-  unzipLocation = $toolsDir
-  file           = $fileLocation
-  fileType      = 'EXE'
-  silentArgs     = '/S'
-  softwareName  = 'ctemplar*'
-  validExitCodes= @(0)
-}
-
-Install-ChocolateyInstallPackage @packageArgs
-Remove-Item $toolsDir\*.exe -ea 0 -force
+Install-BinFile -Name ctemplar -Path "$($env:ChocolateyInstall)\bin"
+Install-ChocolateyShortcut -ShortcutFilePath "$($env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\ctemplar.lnk" -TargetPath "$($env:ChocolateyInstall)\bin\ctemplar.exe"
+Install-ChocolateyShortcut -ShortcutFilePath "$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\ctemplar.lnk" -TargetPath "$($env:ChocolateyInstall)\bin\ctemplar.exe"
