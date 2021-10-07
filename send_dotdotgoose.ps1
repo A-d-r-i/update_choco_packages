@@ -25,7 +25,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = " https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ " # $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -OutFile "dotdotgoose.zip"
+Invoke-WebRequest -Uri "https://adri-server.ddns.net/CDN/A-D-R-I/dotdotgoose-win.zip" -OutFile "dotdotgoose.zip"
 
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 
