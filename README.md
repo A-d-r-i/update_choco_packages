@@ -31,9 +31,10 @@ Here are deposited:
 |**Sengi**|every 6 hours at minute 45|✅|✅|[Link](https://nicolasconstant.github.io/sengi)|[Link](https://community.chocolatey.org/packages/sengi)|
 |**Tartube**|every 6 hours at minute 50|✅|✅|[Link](https://tartube.sourceforge.io)|[Link](https://community.chocolatey.org/packages/tartube)|
 |**Tutanota**|every 6 hours at minute 59|✅|✅|[Link](https://tutanota.com)|[Link](https://community.chocolatey.org/packages/tutanota)|
-|**Tenacity Audio Editor**|Manually \*|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
-|**DotDotGoose**|Manually|❌|❌|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|Still not on chocolatey ([#10](https://github.com/A-d-r-i/update_choco_package/issues/10))|
+|**Tenacity Audio Editor**|Manually [^1]|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
+|**DotDotGoose**|Manually [^2]|❌|❌|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|[Link](https://community.chocolatey.org/packages/dotdotgoose)|
 
-*\* Tenacity is still under development without release. So the update must be done manually.*
+[^1]: *Tenacity is still under development without release. So the update must be done manually.*  
+[^2]: *DotDotGoose - [Issue 10](https://github.com/A-d-r-i/update_choco_package/issues/10)*
 
 ![update_choco_packages-3](https://user-images.githubusercontent.com/27277698/134149155-45a89285-542a-4bc8-a9d3-83ce57dc5fe9.png)
