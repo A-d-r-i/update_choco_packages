@@ -15,7 +15,7 @@ choco pack ./ctemplar/ctemplar.nuspec --outputdirectory .\ctemplar
 If ($LastExitCode -eq 0) {
 	choco push ./ctemplar/ctemplar.$tag.nupkg --source https://push.chocolatey.org/
 } else {
-	echo 'Error in introduction - Exit code: $LastExitCode'
+	echo $LastExitCode
 }
 
 If ($LastExitCode -eq 0) {
