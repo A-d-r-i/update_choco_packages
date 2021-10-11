@@ -64,5 +64,5 @@ Link: https://community.chocolatey.org/packages/ctemplar/$tag
 "
 }
 } else {
-	echo 'Error in choco push - Exit code: $LastExitCode'
+	echo $LastExitCode
 }
