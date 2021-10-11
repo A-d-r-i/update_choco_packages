@@ -15,9 +15,10 @@ choco pack ./ctemplar/ctemplar.nuspec --outputdirectory .\ctemplar
 If ($LastExitCode -eq 0) {
 	choco push ./ctemplar/ctemplar.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+ 'Error in introduction - Exit code: $LastExitCode'
 }
 
+If ($LastExitCode -eq 0) {
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
 git config --local user.name "A-d-r-i"
@@ -61,4 +62,7 @@ Link: https://community.chocolatey.org/packages/ctemplar/$tag
 @RealCTemplar
 #ctemplar #release #opensource
 "
+}
+} else {
+ 'Error in choco push - Exit code: $LastExitCode'
 }
