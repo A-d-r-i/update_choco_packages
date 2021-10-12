@@ -56,8 +56,10 @@ choco pack ./tenacity/tenacity.nuspec --outputdirectory .\tenacity
 If ($LastExitCode -eq 0) {
 	choco push ./tenacity/tenacity.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
+
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
@@ -102,4 +104,7 @@ Link: https://community.chocolatey.org/packages/tenacity/$tag
 @TenacityAudio
 #tenacity #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
