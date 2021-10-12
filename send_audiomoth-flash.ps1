@@ -15,9 +15,10 @@ choco pack ./audiomoth-flash/audiomoth-flash.nuspec --outputdirectory .\audiomot
 If ($LastExitCode -eq 0) {
 	choco push ./audiomoth-flash/audiomoth-flash.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
 
+If ($LastExitCode -eq 0) {
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
 git config --local user.name "A-d-r-i"
@@ -61,4 +62,7 @@ Link: https://community.chocolatey.org/packages/audiomoth-flash/$tag
 @AudioMoth @OpenAcoustics
 #audiomoth #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
