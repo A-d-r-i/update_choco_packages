@@ -15,8 +15,10 @@ choco pack ./audiomoth-time/audiomoth-time.nuspec --outputdirectory .\audiomoth-
 If ($LastExitCode -eq 0) {
 	choco push ./audiomoth-time/audiomoth-time.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
+
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
@@ -61,4 +63,7 @@ Link: https://community.chocolatey.org/packages/audiomoth-time/$tag
 @AudioMoth @OpenAcoustics
 #audiomoth #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
