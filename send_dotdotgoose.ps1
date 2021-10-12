@@ -36,8 +36,10 @@ choco pack ./dotdotgoose/dotdotgoose.nuspec --outputdirectory .\dotdotgoose
 If ($LastExitCode -eq 0) {
 	choco push ./dotdotgoose/dotdotgoose.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
+
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
@@ -80,4 +82,7 @@ Send-TwitterStatuses_Update -status "DotDotGoose v$tag push now on @chocolateynu
 Link: https://community.chocolatey.org/packages/dotdotgoose/$tag
 #dotdotgoose #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
