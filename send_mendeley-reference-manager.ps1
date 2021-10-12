@@ -31,8 +31,10 @@ choco pack ./mendeley-reference-manager/mendeley-reference-manager.nuspec --outp
 If ($LastExitCode -eq 0) {
 	#choco push ./mendeley-reference-manager/mendeley-reference-manager.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
+
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
@@ -76,4 +78,7 @@ Link: https://community.chocolatey.org/packages/mendeley-reference-manager/$tag
 @mendeley_com @MendeleyApp @MendeleyTips
 #mendeley #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
