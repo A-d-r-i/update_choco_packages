@@ -15,8 +15,10 @@ choco pack ./sengi/sengi.nuspec --outputdirectory .\sengi
 If ($LastExitCode -eq 0) {
 	choco push ./sengi/sengi.$tag.nupkg --source https://push.chocolatey.org/
 } else {
- 'Error - Exit code: $LastExitCode'
+	echo "Error in introduction - Exit code: $LastExitCode "
 }
+
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
@@ -60,4 +62,7 @@ Send-TwitterStatuses_Update -status "Sengi v$tag push now on @chocolateynuget!
 Link: https://community.chocolatey.org/packages/sengi/$tag
 #sengi #release #opensource
 "
+}
+} else {
+	echo "Error in choco push - Exit code: $LastExitCode "
 }
