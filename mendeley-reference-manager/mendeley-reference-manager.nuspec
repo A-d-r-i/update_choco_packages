@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.58.0</version>
+    <version>2.59.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -17,11 +17,11 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
-    <releaseNotes># We have:
-* Added a visual indicator when hovering over your personal collections
-* Fixed an issue with private groups where some users encountered errors with receiving accepting invitations and or carrying out group related actions such as deleting a group 
+    <releaseNotes># We have fixed an issue where
+* Grey highlights created on PDFs were showing up as transparent
+* Copying a PDF from a group to a personal collection and then logging out, would cause the removal of the newly copied PDF 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.58.0](https://www.mendeley.com/release-notes-reference-manager/v2.58.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.59.0](https://www.mendeley.com/release-notes-reference-manager/v2.59.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
   </metadata>
