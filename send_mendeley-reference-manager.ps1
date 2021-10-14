@@ -34,7 +34,7 @@ If ($LastExitCode -eq 0) {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
 
-If ($LastExitCode -eq 1) {
+If ($LastExitCode -eq 0) {
 
 #git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
