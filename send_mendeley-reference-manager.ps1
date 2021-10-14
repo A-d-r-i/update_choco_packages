@@ -29,7 +29,7 @@ Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-referen
 choco pack ./mendeley-reference-manager/mendeley-reference-manager.nuspec --outputdirectory .\mendeley-reference-manager
 
 If ($LastExitCode -eq 0) {
-	#choco push ./mendeley-reference-manager/mendeley-reference-manager.$tag.nupkg --source https://push.chocolatey.org/
+	choco push ./mendeley-reference-manager/mendeley-reference-manager.$tag.nupkg --source https://push.chocolatey.org/
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
