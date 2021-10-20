@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>l0phtcrack</id>
+    <version>7.2.0</version>
+    <title>L0phtCrack</title>
+    <authors>Christien Rioux, Chris Wysopal, Peiter Zatko</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://gitlab.com/l0phtcrack/l0phtcrack/-/blob/main/tools/releasetool/installer/license.txt</licenseUrl>
+    <projectUrl>https://l0phtcrack.gitlab.io/</projectUrl>
+    <iconUrl>https://gitlab.com/l0phtcrack/l0phtcrack/-/blob/main/artwork/lc7logo_512.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>L0phtCrack is a password auditing and recovery application originally produced by Mudge from L0pht Heavy Industries. It is used to test password strength and sometimes to recover lost Microsoft Windows passwords, by using dictionary, brute-force, hybrid attacks, and rainbow tables. On October 17, 2021 L0phtCrack version 7.2.0 was released open-source.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>L0phtCrack Password Auditor</summary>
+    <releaseNotes>L0phtCrack v7.2.0 Release Notes
+-------------------------------
+
+* Open source release
+* Replaced commercial libraries with OpenSSL and LibSSH2
+* Improved SSH importing to support IPV6</releaseNotes>
+    <tags>L0phtCrack password audit security crack</tags>
+    <projectSourceUrl>https://gitlab.com/l0phtcrack/</projectSourceUrl>
+    <packageSourceUrl>https://gitlab.com/l0phtcrack/l0phtcrack/</packageSourceUrl>
+  </metadata>
+</package>
