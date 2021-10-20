@@ -1,6 +1,7 @@
 $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].tag_name
 $release = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].body
 
+$tagalpha = $tag -replace '([0-9]*\.[0-9]+)-([0-9]{4})-([0-9]{2})-([0-9]{2})', '$1.$2$3$4'
 $tagalpha = -join($tag,"-alpha");
 
 $file = "./dotbrowser/dotbrowser.nuspec"
