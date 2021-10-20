@@ -28,6 +28,7 @@ Here are deposited:
 |**L0phtCrack**|every 6 hours at minute 20|✅|✅|[Link](https://l0phtcrack.gitlab.io/)|[Link](https://community.chocolatey.org/packages/l0phtcrack)|
 |**HomeBank**|every 6 hours at minute 25|✅|✅|[Link](homebank.free.fr)|[Link](https://community.chocolatey.org/packages/homebank)|
 |**Mendeley Reference Manager**|every 6 hours at minute 30|✅|✅|[Link](https://www.mendeley.com/reference-management/reference-manager)|[Link](https://community.chocolatey.org/packages/mendeley-reference-manager)|
+|**FluffyChat**|every 6 hours at minute 32|✅|✅|[Link](https://fluffychat.im/)|[Link](https://community.chocolatey.org/packages/fluffychat)|
 |**CTemplar**|every 6 hours at minute 35|✅|✅|[Link](https://ctemplar.com)|[Link](https://community.chocolatey.org/packages/ctemplar)|
 |**Raven Reader**|every 6 hours at minute 40|✅|✅|[Link](https://ravenreader.app)|[Link](https://community.chocolatey.org/packages/raven)|
 |**Sengi**|every 6 hours at minute 45|✅|✅|[Link](https://nicolasconstant.github.io/sengi)|[Link](https://community.chocolatey.org/packages/sengi)|
