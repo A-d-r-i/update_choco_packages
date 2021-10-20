@@ -8,7 +8,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/download/$tag/AudioMothUSBMicrophoneAppSetup$tag.exe" -OutFile "./audiomoth-usb/tools/AudioMothUSBMicrophoneAppSetup$tag.exe"
+Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/download/$tag/AudioMothUSBMicrophoneAppSetup$tag.exe" -OutFile "./audiomoth-usb/tools/AudioMothUSBMicrophoneAppSetup.exe"
 
 choco pack ./audiomoth-usb/audiomoth-usb.nuspec --outputdirectory .\audiomoth-usb
 
