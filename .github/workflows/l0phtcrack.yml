@@ -1,0 +1,49 @@
+name: L0PHTCRACK
+
+on:
+  schedule:
+    - cron:  '20 */6 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - shell: pwsh
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: |
+          choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+          
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: -h
+
+      - name: Script
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          PST_KEY: ${{ secrets.PST_KEY }}
+          PST_SECRET: ${{ secrets.PST_SECRET }}
+          PST_TOKEN: ${{ secrets.PST_TOKEN }}
+          PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+        run:  |
+          $Version = ([xml](Get-Content ./l0phtcrack/l0phtcrack.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/28508791/releases" | ConvertFrom-Json)[0].tag_name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_l0phtcrack.ps1
+          }
