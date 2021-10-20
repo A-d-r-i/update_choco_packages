@@ -8,7 +8,7 @@
     <owners>Adri</owners>
     <licenseUrl>https://www.openacousticdevices.info/license</licenseUrl>
     <projectUrl>https://www.openacousticdevices.info/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/icon-256.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/OpenAcousticDevices/AudioMoth-Configuration-App@master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The AudioMoth Configuration App is an easy to use tool for customising your AudioMoth devices.
 	Using it you can schedule recording periods, customise recording gain and sample rates as well as calculate approximate device lifespans given a configuration.
