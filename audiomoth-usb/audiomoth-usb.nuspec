@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>audiomoth-usb</id>
+    <version>0.0.1</version>
+    <title>AudioMoth USB Microphone App</title>
+    <authors>OpenAcousticDevices</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://www.openacousticdevices.info/license</licenseUrl>
+    <projectUrl>https://www.openacousticdevices.info/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/OpenAcousticDevices/AudioMoth-USB-Microphone-App@main/icon-256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The AudioMoth USB Microphone App is an easy to use tool for customising your AudioMoth devices.
+	Using it you can implement a streaming USB microphone.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>An Electron-based application capable of configuring the functionality of the AudioMoth-USB-Microphone firmware.</summary>
+    <releaseNotes>* Added ability to treat custom firmware as equivalent to an official release
+* Fixed progress bar for splitting and expanding utility
+* Allowed user to change installation location
+* Updated filter UI to only rescale values if filter has been enabled that session</releaseNotes>
+    <tags>audiomoth-usb audiomoth usb-microphone-app microphone openacousticdevices</tags>
+    <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</packageSourceUrl>
+  </metadata>
+</package>
