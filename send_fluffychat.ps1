@@ -17,7 +17,16 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://github.com/dothq/browser-desktop/releases/download/$tag/dot-87.0.exe" -OutFile "./fluffychat/tools/fluffychat.exe"
+$content = "`$ErrorActionPreference = 'Stop';
+`$toolsDir   = `"`$(Split-Path -parent `$MyInvocation.MyCommand.Definition)`"
+`$packageName = 'fluffychat'
+
+Install-ChocolateyZipPackage -PackageName `$packageName`
+ -Url 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/`$tag/fluffychat-windows.zip' `
+ -UnzipLocation `$toolsDir
+
+Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\FluffyChat.lnk`" -TargetPath `"$toolsDir\fluffychat.exe`"
+Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FluffyChat.lnk`" -TargetPath `"`$toolsDir\fluffychat.exe`" " | out-file -filepath ./fluffychat/tools/chocolateyinstall.ps1
 
 choco pack ./fluffychat/fluffychat.nuspec --outputdirectory .\fluffychat
 
