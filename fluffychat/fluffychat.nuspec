@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>fluffychat</id>
+    <version>0.41.0</version>
+    <title>FluffyChat</title>
+    <authors>Famedly</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://gitlab.com/famedly/fluffychat/-/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://fluffychat.im/</projectUrl>
+    <iconUrl>https://gitlab.com/famedly/fluffychat/-/raw/main/web/icons/Icon-512.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FluffyChat is a multi-platform Matrix client written in Dart/Flutter. It compiles to native code on Android, iOS, macOS, Windows and Linux and renders with Skia on the web. FluffyChat is just a hobby project from the developers of Famedly and licensed under AGPLv3. It follows a design philosophy to be minimalistic, inclusive and easy to use.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
+    <releaseNotes>* Added ability to treat custom firmware as equivalent to an official release
+* Fixed progress bar for splitting and expanding utility
+* Allowed user to change installation location
+* Updated filter UI to only rescale values if filter has been enabled that session</releaseNotes>
+    <tags>fluffychat chat flutter matrix</tags>
+    <projectSourceUrl>https://gitlab.com/famedly/fluffychat/</projectSourceUrl>
+    <packageSourceUrl>https://gitlab.com/famedly/fluffychat/</packageSourceUrl>
+  </metadata>
+</package>
