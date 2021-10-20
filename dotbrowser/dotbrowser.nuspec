@@ -10,7 +10,7 @@
     <projectUrl>https://www.dothq.co/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dothq/browser-desktop@nightly/src/dot/branding/content/about-logo%402x.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><strong>Dot Browser is alpha software, and you will most likely experience bugs and issues!</strong></br></br>
+    <description>**Dot Browser is alpha software, and you will most likely experience bugs and issues!**
   
 <img src="https://github.com/dothq/browser-ff/blob/nightly/src/dot/branding/default256.png" height="80" length="80">
 
@@ -27,15 +27,11 @@ Dot Browser is a privacy-conscious web browser with smarts built-in for protecti
 | 📫 | **Keep your mailbox shut** with the built-in email mask |
 | 🔒 | **No tracking or telemetry** data is collected from you |
 | ✨ | **Stylish and customisable interface** |
-| 🦊 | **Firefox based*** to give more competition in the browser space. [Learn more](https://github.com/dothq/browser-ff#-foreword) |
-| 📱 | **Multiplatform** with versions of Dot on Windows, macOS and Linux** |
+| 🦊 | **Firefox based** to give more competition in the browser space. [Learn more](https://github.com/dothq/browser-ff#-foreword) |
+| 📱 | **Multiplatform** with versions of Dot on Windows, macOS and Linux |
 | 🤝 | **Sync your data** securely and easily with Dot IDs |
 | 🆓 | **Always free** |
 | 💻 | **Open-source** and open for contributions |
-
-**desktop version is based on Firefox*
-<br />
-***mobile version coming soon*
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>🌍 Dot Browser is a privacy-conscious web browser based on Firefox, developed for Windows, macOS, and Linux.</summary>
