@@ -22,6 +22,7 @@ Here are deposited:
 | Name | Cycle | Automatic version | Automatic changelog | Official link | Chocolatey link |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**Audiomoth Config App**|every 6 hours at minute 0|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-config)|
+|**Audiomoth USB Microphone App**|every 6 hours at minute 5|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-usb)|
 |**Audiomoth Flash App**|every 6 hours at minute 10|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-flash)|
 |**Audiomoth Time App**|every 6 hours at minute 20|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-time)|
 |**HomeBank**|every 6 hours at minute 25|✅|✅|[Link](homebank.free.fr)|[Link](https://community.chocolatey.org/packages/homebank)|
