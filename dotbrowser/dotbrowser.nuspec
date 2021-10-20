@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotbrowser</id>
-    <version>87.0.20210724-alpha</version>
+    <version>87.0.20210723-alpha</version>
     <title>Dot Browser</title>
     <authors>Dot HQ</authors>
     <owners>Adri</owners>
@@ -10,11 +10,35 @@
     <projectUrl>https://www.dothq.co/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dothq/browser-desktop@nightly/src/dot/branding/content/about-logo%402x.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Dot Browser is proud to be powered by Gecko.
+    <description><div align="center">
+<strong>Dot Browser is alpha software, and you will most likely experience bugs and issues!</strong></br></br>
+  
+<img src="https://github.com/dothq/browser-ff/blob/nightly/src/dot/branding/default256.png" height="80" length="80">
 
-There are a plethora of Chromium based browsers available and introducing competition is unique, healthy, and necessary in the browser space.
+# Dot Browser
+Dot Browser is a privacy-conscious web browser with smarts built-in for protection against trackers and advertisments online.
 
-We chose Gecko due to its position as the best competitor to Chromium, and because it’s developed by Mozilla, who are best known for their privacy efforts in the community.
+<img src="https://i.imgur.com/yxXDgmJ.png" />
+
+</div>
+
+## 🚀 Features
+
+|  | Dot Browser |
+| - | ------------ |
+| 🚫 | **Built-in adblocker** that blocks thousands of advertisments and trackers |
+| 📫 | **Keep your mailbox shut** with the built-in email mask |
+| 🔒 | **No tracking or telemetry** data is collected from you |
+| ✨ | **Stylish and customisable interface** |
+| 🦊 | **Firefox based*** to give more competition in the browser space. [Learn more](https://github.com/dothq/browser-ff#-foreword) |
+| 📱 | **Multiplatform** with versions of Dot on Windows, macOS and Linux** |
+| 🤝 | **Sync your data** securely and easily with Dot IDs |
+| 🆓 | **Always free** |
+| 💻 | **Open-source** and open for contributions |
+
+**desktop version is based on Firefox*
+<br />
+***mobile version coming soon*
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>🌍 Dot Browser is a privacy-conscious web browser based on Firefox, developed for Windows, macOS, and Linux.</summary>
