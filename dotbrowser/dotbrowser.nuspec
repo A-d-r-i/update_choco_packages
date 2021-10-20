@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotbrowser</id>
-    <version>87.0.20210723-alpha</version>
+    <version>87.0.20210724-alpha</version>
     <title>Dot Browser</title>
     <authors>Dot HQ</authors>
     <owners>Adri</owners>
