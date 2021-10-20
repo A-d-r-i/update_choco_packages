@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotbrowser</id>
-    <version>87.0-2021-07-23</version>
+    <version>87.0.20210724-alpha</version>
     <title>Dot Browser</title>
     <authors>Dot HQ</authors>
     <owners>Adri</owners>
@@ -18,10 +18,51 @@ We chose Gecko due to its position as the best competitor to Chromium, and becau
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>🌍 Dot Browser is a privacy-conscious web browser based on Firefox, developed for Windows, macOS, and Linux.</summary>
-    <releaseNotes>* Added ability to treat custom firmware as equivalent to an official release
-* Fixed progress bar for splitting and expanding utility
-* Allowed user to change installation location
-* Updated filter UI to only rescale values if filter has been enabled that session</releaseNotes>
+    <releaseNotes># This build contains known UI bugs. Please read the information below before installing
+
+## ???? Welcome
+You may be a little confused as to why this is the latest build. Dot Browser is currently undergoing a complete rewrite of the frontend. Keeping up with updating patches for newer Firefox versions became near to impossible, so we've decided to rewrite the whole frontend of the browser. Because of this, we've paused builds until we have something a little more stable. 
+
+We hope you understand, and we are hoping to get some builds released very shortly!
+
+## ???? Information
+
+This is a Nightly build meaning you will encounter bugs and things that don't seem right. If you ever come across a bug in a nightly build, please [open an issue on our bug tracker](https://github.com/dothq/browser/issues/new).
+
+## ???? Installation
+
+### Windows
+
+Run the `Install.Dot.Browser.*.exe` to start installing Dot Browser onto your computer.
+
+### macOS
+
+1. Download the `Dot.Browser.*.dmg` image file and mount it by double clicking it.
+2. Drag `Dot Browser.app` to the Applications Shortcut.
+3. Run Dot Browser, you will encounter a security error.
+4. Go to System Preferences &gt; Security &amp; Privacy and click Open Anyway.
+
+If you need more help, you can visit the [Dot Browser macOS Help Center.](https://www.notion.so/Dot-Browser-macOS-Help-1be7c9944f484d9ab632fd87b98f1889)
+You will find more detailed instructions, including screenshots as well as instructions for changing the icon to fit the rest if you use Big Sur or later.
+
+The reason this message appears is because Apple requires software on macOS to be notarized by them, and Dot Browser does not currently have this notarization.
+
+### Linux
+
+#### Requirements
+
+-   **GTK+** - 3.14 or higher
+-   **X.Org** - 1.0 or higher
+-   **libstdc++** - 4.8.1 or higher
+-   **glibc** - 2.17 or higher
+
+#### Steps
+
+1. Download `dot-*.tar.bz2`
+2. Go to your home directory and run `tar xjf dot-*.tar.bz2`
+3. You can now start Dot Browser by typing `~/dot/dot`
+    - You can also add `~/dot` to your PATH if you want to type `dot` to launch Dot Browser instead.
+</releaseNotes>
     <tags>dotbrowser browser privacy firefox</tags>
     <projectSourceUrl>https://github.com/dothq</projectSourceUrl>
     <packageSourceUrl>https://github.com/dothq/browser-desktop</packageSourceUrl>
