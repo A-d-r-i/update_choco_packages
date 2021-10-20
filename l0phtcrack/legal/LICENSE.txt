@@ -1,0 +1,6 @@
+From: https://gitlab.com/l0phtcrack/l0phtcrack/-/blob/main/tools/releasetool/installer/license.txt
+
+LICENSE
+
+
+Portions are MIT, Apache, BSD, and GPLv2 Licensed and copyright by their respective owners.
