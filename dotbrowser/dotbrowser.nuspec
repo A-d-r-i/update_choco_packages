@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>dotbrowser</id>
+    <version>87.0-2021-07-23</version>
+    <title>Dot Browser</title>
+    <authors>Dot HQ</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/dothq/browser-desktop/blob/nightly/LICENSE</licenseUrl>
+    <projectUrl>https://www.dothq.co/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dothq/browser-desktop@nightly/src/dot/branding/content/about-logo%402x.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dot Browser is proud to be powered by Gecko.
+
+There are a plethora of Chromium based browsers available and introducing competition is unique, healthy, and necessary in the browser space.
+
+We chose Gecko due to its position as the best competitor to Chromium, and because it’s developed by Mozilla, who are best known for their privacy efforts in the community.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>🌍 Dot Browser is a privacy-conscious web browser based on Firefox, developed for Windows, macOS, and Linux.</summary>
+    <releaseNotes>* Added ability to treat custom firmware as equivalent to an official release
+* Fixed progress bar for splitting and expanding utility
+* Allowed user to change installation location
+* Updated filter UI to only rescale values if filter has been enabled that session</releaseNotes>
+    <tags>dotbrowser browser privacy firefox</tags>
+    <projectSourceUrl>https://github.com/dothq</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dothq/browser-desktop</packageSourceUrl>
+  </metadata>
+</package>
