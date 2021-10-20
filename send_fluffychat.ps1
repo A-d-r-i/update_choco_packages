@@ -28,6 +28,8 @@ Install-ChocolateyZipPackage -PackageName `$packageName`
 Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\FluffyChat.lnk`" -TargetPath `"$toolsDir\fluffychat.exe`"
 Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FluffyChat.lnk`" -TargetPath `"`$toolsDir\fluffychat.exe`" " | out-file -filepath ./fluffychat/tools/chocolateyinstall.ps1
 
+Remove-Item FC.md
+
 choco pack ./fluffychat/fluffychat.nuspec --outputdirectory .\fluffychat
 
 If ($LastExitCode -eq 0) {
