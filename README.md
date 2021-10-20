@@ -25,6 +25,7 @@ Here are deposited:
 |**Audiomoth USB Microphone App**|every 6 hours at minute 5|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-usb)|
 |**Audiomoth Flash App**|every 6 hours at minute 10|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-flash)|
 |**Audiomoth Time App**|every 6 hours at minute 15|✅|✅|[Link](https://www.openacousticdevices.info/applications)|[Link](https://community.chocolatey.org/packages/audiomoth-time)|
+|**L0phtCrack**|every 6 hours at minute 20|✅|✅|[Link](https://l0phtcrack.gitlab.io/)|[Link](https://community.chocolatey.org/packages/l0phtcrack)|
 |**HomeBank**|every 6 hours at minute 25|✅|✅|[Link](homebank.free.fr)|[Link](https://community.chocolatey.org/packages/homebank)|
 |**Mendeley Reference Manager**|every 6 hours at minute 30|✅|✅|[Link](https://www.mendeley.com/reference-management/reference-manager)|[Link](https://community.chocolatey.org/packages/mendeley-reference-manager)|
 |**CTemplar**|every 6 hours at minute 35|✅|✅|[Link](https://ctemplar.com)|[Link](https://community.chocolatey.org/packages/ctemplar)|
