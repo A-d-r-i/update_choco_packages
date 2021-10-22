@@ -7,4 +7,6 @@ $checksum64 = 'B52EDCD72F4D7B14D59456641821810860F19BD0B21D73CC2E7165C2270D55A9'
 $checkumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64" -checksum $checksum $checksum64 -checksumType $checkumType -validExitCodes $validExitCodes 
