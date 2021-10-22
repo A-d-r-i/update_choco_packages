@@ -11,7 +11,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-wget "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe" -outfile "./tutanota/tools/tutanota-desktop-win.exe"
+Invoke-WebRequest -Uri "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe" -OutFile "./tutanota/tools/tutanota-desktop-win.exe"
 
 choco pack ./tutanota/tutanota.nuspec --outputdirectory .\tutanota
 
