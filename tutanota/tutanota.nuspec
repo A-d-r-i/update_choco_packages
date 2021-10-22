@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.88.4</version>
+    <version>3.89.5</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,11 +16,18 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Fix downloading attachments in desktop client. #[3526](https://github.com/tutao/tutanota/issues/3526)
+    <releaseNotes># What's new
+ - Report spam false positives to improve metrics #[3478](https://github.com/tutao/tutanota/issues/3478)
+ - Add proper MAPI support to Tutanota Desktop #[2968](https://github.com/tutao/tutanota/issues/2968)
+ - Calendar UI improvements #[2162](https://github.com/tutao/tutanota/issues/2162)
+
+# Bugfixes
+ - Meta tag description contains old year. #[3529](https://github.com/tutao/tutanota/issues/3529)
+ - Email aliases not shown in user management #[3501](https://github.com/tutao/tutanota/issues/3501)
+ - Direct replies to sent emails sent to Spam. #[1807](https://github.com/tutao/tutanota/issues/1807)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/180?closed=1
+https://github.com/tutao/tutanota/milestone/181?closed=1
 
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
