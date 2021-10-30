@@ -10,10 +10,8 @@
     <projectUrl>https://github.com/firedm/FireDM</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/firedm/FireDM@master/icons/48x48.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![logo](https://github.com/firedm/FireDM/blob/master/icons/48x48.png)
-FireDM is a python open source (Internet Download Manager) 
-with multi-connections, high speed engine, 
-it downloads general files and videos from youtube and tons of other streaming websites . <br>
+    <description>![logo](https://github.com/firedm/FireDM/blob/master/icons/48x48.png) FireDM is a python open source (Internet Download Manager) with multi-connections, high speed engine, 
+it downloads general files and videos from youtube and tons of other streaming websites.  
 Developed in Python, based on "LibCurl", and "youtube_dl".
 
 [**Download Latest version!!**](https://github.com/firedm/FireDM/releases/latest)
