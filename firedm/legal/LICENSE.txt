@@ -1,0 +1,14 @@
+﻿
+From: https://github.com/firedm/FireDM/blob/master/LICENSE
+
+LICENSE
+
+# License   GNU LGPLv3                                                                                              #
+# ###################################################################################################################
+# This software can be used under "GNU LGPLv3" License, this means:                                                 #
+# you have permission for: Commercial use, Distribution, Modification,  Patent use, Private use                     #
+# subject to the following conditions:                                                                              #
+#  - Source code must be made available when the software is distributed.                                           #
+#  - Changes made to the code must be documented                                                                    #
+#  - A copy of this license and above copyright notice must be included with the software.                          #
+# ###################################################################################################################
