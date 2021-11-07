@@ -8,14 +8,22 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
+Invoke-WebRequest -Uri "https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip" -OutFile "firedm.zip"
+$TABLE = Get-FileHash firedm.zip -Algorithm SHA256
+$SHA = $TABLE.Hash
+
 $content = "`$ErrorActionPreference = 'Stop';
 `$toolsDir   = `"`$(Split-Path -parent `$MyInvocation.MyCommand.Definition)`"
 `$packageName = 'firedm'
+`$checksum = '$SHA'
+`$checkumType = 'sha256'
 
-Install-ChocolateyZipPackage -PackageName `$packageName -Url 'https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip' -UnzipLocation `$toolsDir
+Install-ChocolateyZipPackage -PackageName `$packageName -checksum `$checksum -checksumType `$checkumType -Url 'https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip' -UnzipLocation `$toolsDir
 
 Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\FireDM.lnk`" -TargetPath `"`$toolsDir\FireDM\firedm.exe`"
 Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FireDM.lnk`" -TargetPath `"`$toolsDir\FireDM\firedm.exe`" " | out-file -filepath ./firedm/tools/chocolateyinstall.ps1
+
+Remove-Item firedm.zip
 
 choco pack ./firedm/firedm.nuspec --outputdirectory .\firedm
 
