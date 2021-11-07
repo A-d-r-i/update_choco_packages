@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>firedm</id>
-    <version>2021.9.27</version>
+    <version>2021.9.28</version>
     <title>FireDM</title>
     <authors>Mahmoud Elshahat (and contributors)</authors>
     <owners>Adri</owners>
@@ -51,7 +51,8 @@ Developed in Python, based on "LibCurl", and "youtube_dl".
     <summary>python open source (Internet Download Manager) with multi-connections, high speed engine, based on python, LibCurl, and youtube_dl</summary>
     <releaseNotes># Release info:
 **Windows: [.zip file]**
-- Portable version for windows 32bit and 64bit, no installation needed, just extract to any folder and run FireDM.exe file
+- Portable version for windows 32bit and 64bit, no installation needed, just extract to any folder and double click FireDM-GUI.exe file.
+- if you need to run firedm in command line mode you can run FireDM.exe from command line terminal, to show available options type command `firedm --help` .
 - ffmpeg.exe included, you can download latest version [here](https://ffmpeg.org/)
 - The binary version ".exe" prepared by "cx_freeze" on python 3.8, windows8x32bit
 ---
@@ -64,20 +65,36 @@ Developed in Python, based on "LibCurl", and "youtube_dl".
 
 **changelog:**
 
-2021.9.28:
-- [GUI][new feature] add compact view and filter for DItems in downloads tab, issue #274
-- [gui] add new option to store website authentication user/pass, issue #282
-- fix "prefer_mp4" option.
-- add more themes, issues #273, #279, thanks to @ahmed-tasaly and @Mr-Personality.
-- [cmdline] add more options.
-- [cmdline] fix for windows portable version.
-- [gui] add button to select dash audio in main tab, and playlist window issue #276
-- fix download from "my.mail.ru", issue #280
-- [gui] easily share a theme thru "share" button in settings tab.
-- [gui] fix selected videos and estimated size in playlist window.
-- [gui] fix side-frame collapse/expand behaviour
-- [gui] add cut-copy-past context menu to log window
-- multiple fixes and improvements.
+2021.11.4:
+- fix resume support identification for missing "accept-ranges" header, issue #143.
+- add helper button to set proxy scheme/prefix, issue #285.
+- fix name extraction from url for percent-encoded strings.
+- fix some problems for arabic words in download folder path.
+- add new theme "Black_Grey", issue #287, by @tazihad.
+- fix "server timestamp" option not saved, issue #286.
+- fix "server timestamp" creation date on windows, issue #286
+- fix version number for windows executable files, issue #286
+- fix subtitles download problem, issue #304
+- fix playlist window layout when maximize, issue #308
+- fix keyring error, issue #307.
+- manual theme(s) entry, issue #287.
+- fix fake file download (zero size shown as completed), issue #306.
+- fix video stream selection after refreshing url if previous stream has zero size.
+- fix downloading zero byte video stream, issue #306.
+- fix segment merge error, issue #315.
+- fix cmdline parser
+- remember "Custom user agent" field after the program is closed #292.
+- default download folder to current working folder of cmdline terminal.
+- add more options to filter downloads tab, close issue #297.
+- item status renamed, "cancelled to Paused and error to Failed", issue #298.
+- set clear marks for Failed download items, close issue #298.
+- set default view="mix" for downloads tab to handle higher numbers of items smoothly, fix #295
+- mark active options in view, and filter menus.
+- select only shown download items with "Select All" button.
+- modify "mix" view mode to show only active items in "bulk view", and the rest in "compact view", issue #295
+- [playlist window]add dropbox for quick selecting page number, close #324
+- add option to reverse playlist auto-numbering, issue #316
+- use yt-dlp as default extractor since youtube-dl seems inactive for months.
 </releaseNotes>
     <tags>firedm download manager youtube_dl</tags>
     <projectSourceUrl>https://github.com/firedm/FireDM</projectSourceUrl>
