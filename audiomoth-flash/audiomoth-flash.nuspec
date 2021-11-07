@@ -20,7 +20,9 @@
 * Locked bootloader overwriting behind menu option
 * Reworded text</releaseNotes>
     <tags>audiomoth-flash audiomoth flash-app openacousticdevices</tags>
-    <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</packageSourceUrl>
+    <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</projectSourceUrl>
+	<packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-flash</packageSourceUrl>
+ <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/issues</bugTrackerUrl>
   </metadata>
 </package>

@@ -22,6 +22,8 @@
     <releaseNotes> https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ </releaseNotes>
     <tags>dotdotgoose tool counting object image</tags>
     <projectSourceUrl>https://github.com/persts/DotDotGoose</projectSourceUrl>
-    <packageSourceUrl>https://github.com/persts/DotDotGoose</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/dotdotgoose</packageSourceUrl>
+    <docsUrl>https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/DotDotGoose.pdf</docsUrl>
+    <bugTrackerUrl>https://github.com/persts/DotDotGoose/issues</bugTrackerUrl>
   </metadata>
 </package>

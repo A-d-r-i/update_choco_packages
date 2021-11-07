@@ -17,7 +17,10 @@
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth-USB-Microphone firmware.</summary>
     <releaseNotes>* Initial release</releaseNotes>
     <tags>audiomoth-usb audiomoth usb-microphone-app microphone openacousticdevices</tags>
-    <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</packageSourceUrl>
+    <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</projectSourceUrl>
+    <packageSourceUrl></packageSourceUrl>
+	<packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-usb</packageSourceUrl>
+ <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/issues</bugTrackerUrl>
   </metadata>
 </package>

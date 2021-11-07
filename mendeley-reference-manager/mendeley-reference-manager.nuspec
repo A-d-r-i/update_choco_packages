@@ -24,5 +24,8 @@
 **Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.59.0](https://www.mendeley.com/release-notes-reference-manager/v2.59.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
+    <docsUrl>https://p.widencdn.net/cwxrju/Mendeley-Reference-Manager---Quick-User-Guide---April-2019</docsUrl>
+<!-- <bugTrackerUrl></bugTrackerUrl> -->
   </metadata>
 </package>

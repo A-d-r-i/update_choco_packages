@@ -79,7 +79,9 @@ The reason this message appears is because Apple requires software on macOS to b
     - You can also add `~/dot` to your PATH if you want to type `dot` to launch Dot Browser instead.
 </releaseNotes>
     <tags>dotbrowser browser privacy firefox</tags>
-    <projectSourceUrl>https://github.com/dothq</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dothq/browser-desktop</packageSourceUrl>
+    <projectSourceUrl>https://github.com/dothq/browser-desktop</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/dotbrowser</packageSourceUrl>
+    <docsUrl>https://docs.dothq.co/</docsUrl>
+    <bugTrackerUrl>https://github.com/dothq/browser/issues</bugTrackerUrl>
   </metadata>
 </package>

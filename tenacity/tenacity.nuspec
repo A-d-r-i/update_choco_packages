@@ -16,8 +16,8 @@
     <summary>An easy-to-use, cross-platform multi-track audio editor/recorder</summary>
     <releaseNotes>See project: https://github.com/tenacityteam/tenacity</releaseNotes>
     <tags>tenacity editor audio recorder foss cross-platform</tags>
-    <projectSourceUrl>https://github.com/tenacityteam</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tenacityteam/tenacity</packageSourceUrl>
+    <projectSourceUrl>https://github.com/tenacityteam/tenacity</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tenacity</packageSourceUrl>
     <docsUrl>https://github.com/tenacityteam/tenacity</docsUrl>
     <bugTrackerUrl>https://github.com/tenacityteam/tenacity/issues</bugTrackerUrl>
     <dependencies>

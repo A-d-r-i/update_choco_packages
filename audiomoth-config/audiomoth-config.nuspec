@@ -20,7 +20,9 @@
 * Allowed user to change installation location
 * Updated filter UI to only rescale values if filter has been enabled that session</releaseNotes>
     <tags>audiomoth-config audiomoth config-app openacousticdevices</tags>
-    <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App</packageSourceUrl>
+    <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App</projectSourceUrl>
+	<packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-config</packageSourceUrl>
+ <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/issues</bugTrackerUrl>
   </metadata>
 </package>
