@@ -21,7 +21,9 @@
 * Replaced commercial libraries with OpenSSL and LibSSH2
 * Improved SSH importing to support IPV6</releaseNotes>
     <tags>L0phtCrack password audit security crack</tags>
-    <projectSourceUrl>https://gitlab.com/l0phtcrack/</projectSourceUrl>
-    <packageSourceUrl>https://gitlab.com/l0phtcrack/l0phtcrack/</packageSourceUrl>
+    <projectSourceUrl>https://gitlab.com/l0phtcrack/l0phtcrack</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/l0phtcrack</packageSourceUrl>
+<!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://gitlab.com/l0phtcrack/l0phtcrack/-/issues</bugTrackerUrl>
   </metadata>
 </package>

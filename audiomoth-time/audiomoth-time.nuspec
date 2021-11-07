@@ -21,7 +21,10 @@
 * Removed ripple effect on UI on startup
 * Increased clock update frequency</releaseNotes>
     <tags>audiomoth-time audiomoth time-app openacousticdevices</tags>
-    <projectSourceUrl>https://github.com/OpenAcousticDevices/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App/</packageSourceUrl>
+    <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App</projectSourceUrl>
+    <packageSourceUrl></packageSourceUrl>
+	<packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-time</packageSourceUrl>
+ <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App/issues</bugTrackerUrl>
   </metadata>
 </package>

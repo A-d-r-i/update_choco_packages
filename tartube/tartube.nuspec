@@ -36,7 +36,7 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
     <projectSourceUrl>https://github.com/axcore/tartube</projectSourceUrl>
-    <packageSourceUrl>https://github.com/axcore/tartube</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tartube</packageSourceUrl>
     <docsUrl>https://tartube.sourceforge.io/</docsUrl>
     <bugTrackerUrl>https://github.com/axcore/tartube/issues</bugTrackerUrl>
   </metadata>

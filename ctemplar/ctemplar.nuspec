@@ -23,7 +23,9 @@ Our team is passionate about privacy and security. It is what we believe in and 
     <summary>Armored Email. Because privacy is a human right worth fighting for!</summary>
     <releaseNotes>`index.html` SHA-256 CHECKSUM: 1549cfdb96c0031d9b36afec928a28e392ffe426e66d41593082b7145cf9aad0</releaseNotes>
     <tags>ctemplar mail security e2ee anonymous</tags>
-    <projectSourceUrl>https://github.com/CTemplar</projectSourceUrl>
-    <packageSourceUrl>https://github.com/CTemplar/webclient</packageSourceUrl>
+    <projectSourceUrl>https://github.com/CTemplar/webclient</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/ctemplar</packageSourceUrl>
+ <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/CTemplar/webclient/issues</bugTrackerUrl>
   </metadata>
 </package>

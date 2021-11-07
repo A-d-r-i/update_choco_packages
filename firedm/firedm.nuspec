@@ -14,8 +14,6 @@
 it downloads general files and videos from youtube and tons of other streaming websites.  
 Developed in Python, based on "LibCurl", and "youtube_dl".
 
-[**Download Latest version!!**](https://github.com/firedm/FireDM/releases/latest)
-
 ![screenshot](https://user-images.githubusercontent.com/58998813/134947539-0bec3cf4-fd02-47d4-b9be-e370c645d648.png)
 
 [more screenshots ...](https://github.com/firedm/FireDM/issues/13#issuecomment-928043472)
@@ -83,6 +81,8 @@ Developed in Python, based on "LibCurl", and "youtube_dl".
 </releaseNotes>
     <tags>firedm download manager youtube_dl</tags>
     <projectSourceUrl>https://github.com/firedm/FireDM</projectSourceUrl>
-    <packageSourceUrl>https://github.com/firedm/FireDM</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/firedm</packageSourceUrl>
+    <docsUrl>https://github.com/firedm/FireDM/blob/master/docs/user_guide.md</docsUrl>
+    <bugTrackerUrl>https://github.com/firedm/FireDM/issues</bugTrackerUrl>
   </metadata>
 </package>

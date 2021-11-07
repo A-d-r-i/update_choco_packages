@@ -31,6 +31,8 @@ This release fixes several bugs and makes E2EE enabled by default.
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
     <projectSourceUrl>https://gitlab.com/famedly/fluffychat/</projectSourceUrl>
-    <packageSourceUrl>https://gitlab.com/famedly/fluffychat/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/fluffychat</packageSourceUrl>
+<!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://gitlab.com/famedly/fluffychat/-/issues</bugTrackerUrl>
   </metadata>
 </package>
