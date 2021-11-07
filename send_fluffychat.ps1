@@ -1,5 +1,6 @@
-$tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
-$tag = $tag -replace 'v'
+#$tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
+#$tag = $tag -replace 'v'
+$tag = '0.42.0'
 
 Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/CHANGELOG.md" -OutFile "FC.md"
 $text = Get-Content -path FC.md
