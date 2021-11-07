@@ -18,9 +18,8 @@
     <releaseNotes>* Initial release</releaseNotes>
     <tags>audiomoth-usb audiomoth usb-microphone-app microphone openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</projectSourceUrl>
-    <packageSourceUrl></packageSourceUrl>
-	<packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-usb</packageSourceUrl>
- <!-- <docsUrl></docsUrl> -->
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-usb</packageSourceUrl>
+<!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/issues</bugTrackerUrl>
   </metadata>
 </package>

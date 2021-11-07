@@ -38,7 +38,7 @@ SHA256: [66995](https://github.com/tutao/tutanota/issues/66995)da6c1bea072a0b5c5
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
- <!-- <docsUrl></docsUrl> -->
+<!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/tutao/tutanota/issues</bugTrackerUrl>
   </metadata>
 </package>
