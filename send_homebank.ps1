@@ -30,14 +30,19 @@ Invoke-WebRequest -Uri "http://homebank.free.fr/public/HomeBank-$tag-setup.exe" 
 $TABLE = Get-FileHash homebank.exe -Algorithm SHA256
 $SHA = $TABLE.Hash
 
-$content = "`$packageName = 'homebank'
-`$installerType = 'EXE'
-`$url = 'http://homebank.free.fr/public/HomeBank-$tag-setup.exe'
-`$checksum = '$SHA'
-`$checkumType = 'sha256'
-`$silentArgs = '/verysilent /allusers'
-`$validExitCodes = @(0)
-Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./homebank/tools/chocolateyinstall.ps1
+$content = "`$ErrorActionPreference = 'Stop';
+
+`$packageArgs = @{
+  packageName = 'homebank'
+  installerType = 'EXE'
+  url = 'http://homebank.free.fr/public/HomeBank-$tag-setup.exe'
+  checksum = '$SHA'
+  checkumType = 'sha256'
+  silentArgs = '/verysilent /allusers'
+  validExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./homebank/tools/chocolateyinstall.ps1
 
 Remove-Item homebank.exe
 Remove-Item release.txt
