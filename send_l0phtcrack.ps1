@@ -20,16 +20,21 @@ $SHA64 = $TABLE64.Hash
 $TABLE32 = Get-FileHash l0phtcrack32.exe -Algorithm SHA256
 $SHA32 = $TABLE32.Hash
 
-$content = "`$packageName = 'l0phtcrack'
-`$installerType = 'EXE'
-`$url = 'https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag32.exe'
-`$checksum = '$SHA32'
-`$url64 = 'https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag64.exe'
-`$checksum64 = '$SHA64'
-`$checkumType = 'sha256'
-`$silentArgs = '/S'
-`$validExitCodes = @(0)
-Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" `"`$url64`" -checksum `$checksum `$checksum64 -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./l0phtcrack/tools/chocolateyinstall.ps1
+$content = "`$ErrorActionPreference = 'Stop';
+
+`$packageArgs = @{
+  packageName = 'l0phtcrack'
+  installerType = 'EXE'
+  url = 'https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag32.exe'
+  checksum = '$SHA32'
+  url64 = 'https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag64.exe'
+  checksum64 = '$SHA64'
+  checkumType = 'sha256'
+  silentArgs = '/S'
+  validExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./l0phtcrack/tools/chocolateyinstall.ps1
 
 Remove-Item l0phtcrack64.exe
 Remove-Item l0phtcrack32.exe

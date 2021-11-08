@@ -17,14 +17,19 @@ Invoke-WebRequest -Uri "https://github.com/hello-efficiency-inc/raven-reader/rel
 $TABLE = Get-FileHash raven.exe -Algorithm SHA256
 $SHA = $TABLE.Hash
 
-$content = "`$packageName = 'raven'
-`$installerType = 'EXE'
-`$url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe'
-`$checksum = '$SHA'
-`$checkumType = 'sha256'
-`$silentArgs = '/S'
-`$validExitCodes = @(0)
-Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" -checksum `$checksum -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./raven/tools/chocolateyinstall.ps1
+$content = "`$ErrorActionPreference = 'Stop';
+
+`$packageArgs = @{
+  packageName = 'raven'
+  installerType = 'EXE'
+  url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe'
+  checksum = '$SHA'
+  checkumType = 'sha256'
+  silentArgs = '/S'
+  validExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./raven/tools/chocolateyinstall.ps1
 
 Remove-Item raven.exe
 

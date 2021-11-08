@@ -29,16 +29,21 @@ $SHA64 = $TABLE64.Hash
 $TABLE32 = Get-FileHash tartube32.exe -Algorithm SHA256
 $SHA32 = $TABLE32.Hash
 
-$content = "`$packageName = 'tartube'
-`$installerType = 'EXE'
-`$url = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe'
-`$checksum = '$SHA32'
-`$url64 = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe'
-`$checksum64 = '$SHA64'
-`$checkumType = 'sha256'
-`$silentArgs = '/S'
-`$validExitCodes = @(0)
-Install-ChocolateyPackage `"`$packageName`" `"`$installerType`" `"`$silentArgs`" `"`$url`" `"`$url64`" -checksum `$checksum `$checksum64 -checksumType `$checkumType -validExitCodes `$validExitCodes " | out-file -filepath ./tartube/tools/chocolateyinstall.ps1
+$content = "`$ErrorActionPreference = 'Stop';
+
+`$packageArgs = @{
+  packageName = 'tartube'
+  installerType = 'EXE'
+  url = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe'
+  checksum = '$SHA32'
+  url64 = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe'
+  checksum64 = '$SHA64'
+  checkumType = 'sha256'
+  silentArgs = '/S'
+  validExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./tartube/tools/chocolateyinstall.ps1
 
 Remove-Item tartube64.exe
 Remove-Item tartube32.exe
