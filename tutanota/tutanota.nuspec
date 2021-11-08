@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.89.9</version>
+    <version>3.89.12</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,28 +17,25 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># Bugfixes
- - "Sort by" for contact sorting is not translated #[3545](https://github.com/tutao/tutanota/issues/3545)
- - Unexpected error: MembershipRemovedError after login #[3517](https://github.com/tutao/tutanota/issues/3517)
- - Emails wider than the mail client do not save to PDF properly #[3511](https://github.com/tutao/tutanota/issues/3511)
- - Calendar long events are duplicated in view when reducing end time #[3502](https://github.com/tutao/tutanota/issues/3502)
- - Calendar event in email is not shown as answered if the email had been forwarded before #[3500](https://github.com/tutao/tutanota/issues/3500)
- - Adding attachments with mailto failures #[3496](https://github.com/tutao/tutanota/issues/3496)
- - Organizer is not displayed in calendar event #[3465](https://github.com/tutao/tutanota/issues/3465)
- - Content  of calendar event preview overlflows. #[3453](https://github.com/tutao/tutanota/issues/3453)
- - Only ask to send updates to attendees if the event was actually changed #[3492](https://github.com/tutao/tutanota/issues/3492)
- - Prevent duplicate subscription selection at signup #[3089](https://github.com/tutao/tutanota/issues/3089)
- -  Expander menus do not open on older iOS version #[3608](https://github.com/tutao/tutanota/issues/3608) 
+Promotion codes are not considered at signup #[3593](https://github.com/tutao/tutanota/issues/3593)
+Desktop: Cannot read property 'getUTCHours' of undefined #[3295](https://github.com/tutao/tutanota/issues/3295)
+conf.json gets corrupted due to concurrent writes #[3628](https://github.com/tutao/tutanota/issues/3628)
+Each update clears the color theme setting #[3316](https://github.com/tutao/tutanota/issues/3316)
+Duplicate Calendars Created #[3272](https://github.com/tutao/tutanota/issues/3272)
+Scrollbar in calendar event edit dialog overlays date picker #[3452](https://github.com/tutao/tutanota/issues/3452)
+Calendar events display at wrong time #[3603](https://github.com/tutao/tutanota/issues/3603)
+Time picker always shows 24hr time #[3604](https://github.com/tutao/tutanota/issues/3604) 
 
-# Milestone
-https://github.com/tutao/tutanota/milestone/182?closed=1
+ 
+# Improvements
+ Simple mode for whitelabel color chooser #[3124](https://github.com/tutao/tutanota/issues/3124) 
 
 # TAR Checksum
-SHA256: [66995](https://github.com/tutao/tutanota/issues/66995)da6c1bea072a0b5c572d[03681286](https://github.com/tutao/tutanota/issues/03681286)fd025e29dcd601a[38486](https://github.com/tutao/tutanota/issues/38486)e889cc234a2
-</releaseNotes>
+SHA256: b[01404](https://github.com/tutao/tutanota/issues/01404)e[8624304](https://github.com/tutao/tutanota/issues/8624304)f4bcb5dfded3b2fb931b[4374](https://github.com/tutao/tutanota/issues/4374)bc62f4dd80d045dcfd[1037](https://github.com/tutao/tutanota/issues/1037)e0a4</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
-<!-- <docsUrl></docsUrl> -->
+    <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/tutao/tutanota/issues</bugTrackerUrl>
   </metadata>
 </package>
