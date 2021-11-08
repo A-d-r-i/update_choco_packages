@@ -23,11 +23,16 @@ $SHA = $TABLE.Hash
 
 $content = "`$ErrorActionPreference = 'Stop';
 `$toolsDir   = `"`$(Split-Path -parent `$MyInvocation.MyCommand.Definition)`"
-`$packageName = 'fluffychat'
-`$checksum = '$SHA'
-`$checkumType = 'sha256'
 
-Install-ChocolateyZipPackage -PackageName `$packageName -checksum `$checksum -checksumType `$checkumType -Url 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip' -UnzipLocation `$toolsDir
+`$packageArgs = @{
+  packageName   = 'fluffychat'
+  checksum = '`$SHA'
+  checksumType = 'sha256'
+  Url = 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip'
+  UnzipLocation = `$toolsDir
+}
+
+Install-ChocolateyZipPackage @packageArgs
 
 Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\FluffyChat.lnk`" -TargetPath `"`$toolsDir\fluffychat.exe`"
 Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FluffyChat.lnk`" -TargetPath `"`$toolsDir\fluffychat.exe`" " | out-file -filepath ./fluffychat/tools/chocolateyinstall.ps1

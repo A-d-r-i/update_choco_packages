@@ -14,11 +14,16 @@ $SHA = $TABLE.Hash
 
 $content = "`$ErrorActionPreference = 'Stop';
 `$toolsDir   = `"`$(Split-Path -parent `$MyInvocation.MyCommand.Definition)`"
-`$packageName = 'firedm'
-`$checksum = '$SHA'
-`$checkumType = 'sha256'
 
-Install-ChocolateyZipPackage -PackageName `$packageName -checksum `$checksum -checksumType `$checkumType -Url 'https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip' -UnzipLocation `$toolsDir
+`$packageArgs = @{
+  packageName   = 'firedm'
+  checksum = '`$SHA'
+  checksumType = 'sha256'
+  Url = 'https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip'
+  UnzipLocation = `$toolsDir
+}
+
+Install-ChocolateyZipPackage @packageArgs
 
 Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData\Microsoft\Windows\Start Menu\Programs\FireDM.lnk`" -TargetPath `"`$toolsDir\FireDM\firedm.exe`"
 Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FireDM.lnk`" -TargetPath `"`$toolsDir\FireDM\firedm.exe`" " | out-file -filepath ./firedm/tools/chocolateyinstall.ps1
