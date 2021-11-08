@@ -17,7 +17,7 @@ $content = "`$ErrorActionPreference = 'Stop';
 
 `$packageArgs = @{
   packageName   = 'firedm'
-  checksum = '`$SHA'
+  checksum = '$SHA'
   checksumType = 'sha256'
   Url = 'https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip'
   UnzipLocation = `$toolsDir

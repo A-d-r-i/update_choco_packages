@@ -26,7 +26,7 @@ $content = "`$ErrorActionPreference = 'Stop';
 
 `$packageArgs = @{
   packageName   = 'fluffychat'
-  checksum = '`$SHA'
+  checksum = '$SHA'
   checksumType = 'sha256'
   Url = 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip'
   UnzipLocation = `$toolsDir
