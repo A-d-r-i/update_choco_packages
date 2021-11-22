@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.89.12</version>
+    <version>3.89.20</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
-Promotion codes are not considered at signup #[3593](https://github.com/tutao/tutanota/issues/3593)
-Desktop: Cannot read property 'getUTCHours' of undefined #[3295](https://github.com/tutao/tutanota/issues/3295)
-conf.json gets corrupted due to concurrent writes #[3628](https://github.com/tutao/tutanota/issues/3628)
-Each update clears the color theme setting #[3316](https://github.com/tutao/tutanota/issues/3316)
-Duplicate Calendars Created #[3272](https://github.com/tutao/tutanota/issues/3272)
-Scrollbar in calendar event edit dialog overlays date picker #[3452](https://github.com/tutao/tutanota/issues/3452)
-Calendar events display at wrong time #[3603](https://github.com/tutao/tutanota/issues/3603)
-Time picker always shows 24hr time #[3604](https://github.com/tutao/tutanota/issues/3604) 
+    <releaseNotes># What's new
+ - more metadata in application desktop file #[3590](https://github.com/tutao/tutanota/issues/3590)
 
- 
-# Improvements
- Simple mode for whitelabel color chooser #[3124](https://github.com/tutao/tutanota/issues/3124) 
+# Bugfixes
+ - Calendar invitation message is wrong #[3682](https://github.com/tutao/tutanota/issues/3682)
+ - Headers are not formatted correctly anymore #[3625](https://github.com/tutao/tutanota/issues/3625)
+ - Gift card display after purchase does not show a qr code #[3516](https://github.com/tutao/tutanota/issues/3516)
+ - Desktop: Cannot read property 'getUTCHours' of undefined #[3295](https://github.com/tutao/tutanota/issues/3295)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/187?closed=1
 
 # TAR Checksum
-SHA256: b[01404](https://github.com/tutao/tutanota/issues/01404)e[8624304](https://github.com/tutao/tutanota/issues/8624304)f4bcb5dfded3b2fb931b[4374](https://github.com/tutao/tutanota/issues/4374)bc62f4dd80d045dcfd[1037](https://github.com/tutao/tutanota/issues/1037)e0a4</releaseNotes>
+SHA256: 603b[6880258307480](https://github.com/tutao/tutanota/issues/6880258307480)f7ef38b25b[35325763943](https://github.com/tutao/tutanota/issues/35325763943)d[2761419570](https://github.com/tutao/tutanota/issues/2761419570)e0f239fab0a0a40
+</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
