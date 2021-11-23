@@ -1,6 +1,9 @@
 $tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name
 $release = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].body
 
+$regex = '#([0-9]{3,})'
+$release = $release -replace $regex, '[#${1}](https://github.com/firedm/FireDM/issues/${1})'
+
 $file = "./firedm/firedm.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
