@@ -31,6 +31,8 @@ jobs:
           PST_SECRET: ${{ secrets.PST_SECRET }}
           PST_TOKEN: ${{ secrets.PST_TOKEN }}
           PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+          TELEGRAM: ${{ secrets.TELEGRAM }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run:  |
           $Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
           # Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
