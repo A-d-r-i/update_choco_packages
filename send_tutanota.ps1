@@ -1,8 +1,8 @@
 $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
 $release = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].body
 
-$regex = '([0-9]{4,})'
-$release = $release -replace $regex, '[${1}](https://github.com/tutao/tutanota/issues/${1})'
+$regex = '#([0-9]{4,})'
+$release = $release -replace $regex, '[#${1}](https://github.com/tutao/tutanota/issues/${1})'
 
 $file = "./tutanota/tutanota.nuspec"
 $xml = New-Object XML
