@@ -31,6 +31,8 @@ jobs:
           PST_SECRET: ${{ secrets.PST_SECRET }}
           PST_TOKEN: ${{ secrets.PST_TOKEN }}
           PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+          TELEGRAM: ${{ secrets.TELEGRAM }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-flash/audiomoth-flash.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Flash-App/releases/latest" | ConvertFrom-Json)[0].name

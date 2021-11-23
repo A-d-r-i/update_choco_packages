@@ -64,6 +64,17 @@ Link: https://community.chocolatey.org/packages/audiomoth-usb/$tag
 #audiomoth #release #opensource
 "
 }
+
+#send telegram notification
+Function Send-Telegram {
+Param([Parameter(Mandatory=$true)][String]$Message)
+$Telegramtoken = "$env:TELEGRAM"
+$Telegramchatid = "$env:CHAT_ID"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
+
+Send-Telegram -Message "[UCP] New update of Audiomoth-USB-Microphone-App : $tag"
+
 } else {
 	echo "Error in choco push - Exit code: $LastExitCode "
 }
