@@ -1,20 +1,18 @@
-Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager" -OutFile "MRM.html"
-$Source = Get-Content -path MRM.html -raw
-$text = Get-Content -path MRM.html
-$Source -match '<div class="views-field views-field-title"><span class="field-content"><a href="/release-notes-reference-manager/v([0-9]+(\.[0-9]+)+)">Reference Manager'
+Invoke-WebRequest -Uri "https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.d7c30a83.js" -OutFile "MRM.txt"
+$Source = Get-Content -path MRM.txt -raw
+$Source -match 'Mendeley Reference Manager v([0-9]+(\.[0-9]+)+)",page:require'
 $tag = $matches[1]
 
-$pattern = '<div class="views-field views-field-body"><div class="field-content">(.*?)</ul></div></div><div class="views-field views-field-field-content-items">'
-$result = [regex]::match($text, $pattern).Groups[1].Value
+$Sourcerelease = Get-Content -path MRM.txt -raw
+$Sourcerelease -match "([0-9]+)_v$tag.([a-zA-Z0-9]+).html"
+$daterelease = $matches[1]
+$daterelease = -join($daterelease, "_v");
+$idrelease = $matches[2]
+$URLrelease = "https://static.mendeley.com/md-stitch/releases/live/$daterelease$tag.$idrelease.html"
 
-$release = $result -replace 'Â', ''
-$release = $release -replace '> <', '><'
-$release = $release -replace '<p>', '# '
-$release = $release -replace '</p>', "`n"
-$release = $release -replace '</ul>', "`n"
-$release = $release -replace '<ul><li>', '* '
-$release = $release -replace '</li>', ''
-$release = $release -replace '<li>', "`n* "
+Invoke-WebRequest -Uri "$URLrelease" -OutFile "MRM.html"
+$release = Get-Content -path MRM.html -raw
+$release = $release -replace '<div class="content_item">', ''
 $release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
 
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
@@ -53,7 +51,7 @@ GitHubRepositoryName = "update_choco_package"
 GitHubAccessToken = "$env:ACTIONS_TOKEN"
 ReleaseName = "Mendeley-Reference-Manager v$tag"
 TagName = "mendeley-rm-v$tag"
-ReleaseNotes = " **Full changelog:** https://www.mendeley.com/release-notes-reference-manager/v$tag "
+ReleaseNotes = "$release"
 AssetFilePaths = ".\mendeley-reference-manager\mendeley-reference-manager.$tag.nupkg"
 IsPreRelease = $false
 IsDraft = $false
