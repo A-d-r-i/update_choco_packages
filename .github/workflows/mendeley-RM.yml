@@ -51,6 +51,4 @@ jobs:
           else
           {
           ./send_mendeley-reference-manager.ps1
-          Remove-Item MRM.txt
-          Remove-Item MRM.html
           }
