@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.61.0</version>
+    <version>2.61.1</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -17,15 +17,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
-    <releaseNotes># We have added
-* The ability to use the DEL or Backspace key to delete a collection
-* Partial matching to the table search
-# We have fixed an issue where
-* After importing a bibtex file, the data for the pages field was missing when attempting to edit
-* Exporting references as a bibtex file included empty general notes as a field in the exported file
-* Inconsistent font colours when editing metadata 
+    <releaseNotes>&lt;h2&gt;Mendeley Reference Manager v2.61.1&lt;/h2&gt; &lt;p&gt;We have improved the way the application detects whether you are online or offline&lt;/p&gt; &lt;h2&gt;Support&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;If you encounter any problems using Mendeley or have questions to ask please &lt;a href="https://www.mendeley.com/contact-support/" title="Contact support"&gt;contact our support team&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;For news and updates about Mendeley see &lt;a href="http://blog.mendeley.com/"&gt;our blog&lt;/a&gt;.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Released: 19 November 2021&lt;/p&gt; &lt;/div&gt;
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.61.0](https://www.mendeley.com/release-notes-reference-manager/v2.61.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.61.1](https://www.mendeley.com/release-notes-reference-manager/v2.61.1) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
