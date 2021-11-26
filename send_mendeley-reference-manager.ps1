@@ -1,4 +1,9 @@
-Invoke-WebRequest -Uri "https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.d7c30a83.js" -OutFile "MRM.txt"
+Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
+$Source = Get-Content -path MRM.html -raw
+$Source -match 'https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.([0-9]+([a-zA-Z]+[0-9]+)+).js'
+$Sourceurl = $matches[1]
+
+Invoke-WebRequest -Uri "https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.$Sourceurl.js" -OutFile "MRM.txt"
 $Source = Get-Content -path MRM.txt -raw
 $Source -match 'Mendeley Reference Manager v([0-9]+(\.[0-9]+)+)",page:require'
 $tag = $matches[1]
