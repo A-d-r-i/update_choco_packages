@@ -34,8 +34,9 @@ jobs:
           TELEGRAM: ${{ secrets.TELEGRAM }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
         run:  |
+          $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
           $Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
-          Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
+          Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "DDG.html"
           $Source = Get-Content -path DDG.html
           $Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
           $tag = $matches[1]
