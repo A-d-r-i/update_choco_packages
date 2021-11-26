@@ -1,5 +1,7 @@
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "release.html"
+$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
+
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "DDG.html"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "release.html"
 $Source = Get-Content -path DDG.html
 $text = Get-Content -path release.html
 $Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
@@ -25,7 +27,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = "$release"# https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ " # $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -OutFile "dotdotgoose.zip"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -UserAgent $userAgent -OutFile "dotdotgoose.zip"
 
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 
