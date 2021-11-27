@@ -34,6 +34,7 @@ jobs:
           TELEGRAM: ${{ secrets.TELEGRAM }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
         run:  |
+          $Version = ([xml](Get-Content ./mendeley-reference-manager/mendeley-reference-manager.nuspec)).package.metadata.version
           Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
           $Source = Get-Content -path MRM.html -raw
           $Source -match 'https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.([0-9]+([a-zA-Z]+[0-9]+)+).js'
