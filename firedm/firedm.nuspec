@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>firedm</id>
-    <version>2021.11.18</version>
+    <version>2021.12.2</version>
     <title>FireDM</title>
     <authors>Mahmoud Elshahat (and contributors)</authors>
     <owners>Adri</owners>
@@ -59,35 +59,35 @@ Developed in Python, based on "LibCurl", and "youtube_dl".
 
 **Linux: [.AppImage file]**
 - AppImage file, portable, no installation needed, download and make file executable by right clicking the file&gt;Properties&gt;Permissions&gt;Allow executing file as a program, or from terminal by `chmod +x FireDM_xxx.AppImage`
-- ffmpeg is not included in this image and must be available on your system, to install ffmpeg you can `sudo apt install ffmpeg` on debian based or ` sudo pacman -S ffmpeg` on Arch based, or check one of these builds at [yt-dlp](https://github.com/yt-dlp/FFmpeg-Builds/releases)
+- ffmpeg is not included in this image and must be available on your system, to install ffmpeg you can `sudo apt install ffmpeg` on debian based or ` sudo pacman -S ffmpeg` on Arch based
 - The binary version ".AppImage" is prepared by "appimage-builder" on linuxmint, and tested on ubuntu 20.04 and Manjaro kde
 ---
 
 **changelog:**
 
-2021.11.18:
-- dynamic view filter, issue #333
-- fix video stuck at 99%, issue  #336
-- fix os notification on windows, to originate from App icon instead of a side blank icon, issue #330.
-- respect original filename case, issue #330
-- create timezone aware server timestamp, issue #286
-- fix AppImage doesn't update to newer FireDM version, issue #334.
-- fix log tab expand.
-- prevent downloading an item which already in progress #350 - e.g. press download button twice
-- CMD blinking on screen while retrieving information from the given link #344, #330
-- choose download folder in playlist window, issue #316
-- set playlist window to match main window size.
-- add Paste &amp; Clear buttons for link bar #341 and #349
-- replace button's zoom on mouse hover by highlight rectangle
-- set FireDM window minimum width and height #340
-- included updated and fixed ffmpeg version in windows release.
-- save dlist on every change. #295.
-- fix last update check closes #339.
-- [install updates] ask user to run App with admin privilege, in case of permission error, closes #302
-- add video/audio duration to home tab, closes #296, thanks to @fidele000
-- remove max size limit for popup and fix widgets expand
-- [downloads tab] add download item preview and remove bulk view for better performance
-- fix log tab expand
+2021.12.2:
+- new playlist window design, with presets, lighter, faster, and can handle heavy playlists.
+- add auto-numbering presets to playlist window.
+- fix playlist download in order.
+- customize video title template, issues [#316](https://github.com/firedm/FireDM/issues/316), [#373](https://github.com/firedm/FireDM/issues/373).
+- extra audio formats (opus, flac, and wav), issue [#362](https://github.com/firedm/FireDM/issues/362)
+- customize temp folder, to enhance performance while downloading on usb flash drive, closes [#284](https://github.com/firedm/FireDM/issues/284).
+- fix hls slow metadata fetching, closes [#345](https://github.com/firedm/FireDM/issues/345).
+- fix auto refresh url to select correct file extension issues [#369](https://github.com/firedm/FireDM/issues/369), and [#372](https://github.com/firedm/FireDM/issues/372)
+- use [shift-delete] to delete download items and target file on disk.
+- fix "Resume" doesn't respect concurrent downloads limit [#320](https://github.com/firedm/FireDM/issues/320),
+- add ability to cancel pending state.
+- ignore fraction of second in displayed video duration.
+- fix ffmpeg fail if "comma" found in video file name.
+- fix ditem font and response to keyboard shortcuts.
+- switch focus to firedm after parsing url issue [#376](https://github.com/firedm/FireDM/issues/376).
+- re-enable bulk view (with thumbnails).
+- fix font color calculation for new themes.
+- show total size of selected items in "Downloads tab"
+- show total eta under total speed
+- limit gui log messages to level-1 messages only, other log messages will stay intact in terminal window.
+- fix AppImage update, closes [#378](https://github.com/firedm/FireDM/issues/378)
+- multiple fixes and tweaks.
 </releaseNotes>
     <tags>firedm download manager youtube_dl</tags>
     <projectSourceUrl>https://github.com/firedm/FireDM</projectSourceUrl>
