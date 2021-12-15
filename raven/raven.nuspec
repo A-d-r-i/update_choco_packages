@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>raven</id>
-    <version>1.0.67</version>
+    <version>1.0.68</version>
     <title>Raven Reader</title>
     <authors>Hello Efficiency Inc. (and contributors)</authors>
     <owners>Adri</owners>
@@ -14,7 +14,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>📖 All your articles in one place. Beautiful.</summary>
-    <releaseNotes>- https://github.com/hello-efficiency-inc/raven-reader/pull/603 Brazillian Portuguese language support added. Thanks to @gabrielgomeso  </releaseNotes>
+    <releaseNotes>- Bug fixes and security updates
+- Support for Italian Language https://github.com/hello-efficiency-inc/raven-reader/pull/620 Thanks to @luverolla 
+- Support for German Language https://github.com/hello-efficiency-inc/raven-reader/pull/616 Thanks to @nebulon42 </releaseNotes>
     <tags>raven reader rss blog article</tags>
     <projectSourceUrl>https://github.com/hello-efficiency-inc/raven-reader</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/raven</packageSourceUrl>
