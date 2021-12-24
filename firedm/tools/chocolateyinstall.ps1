@@ -3,9 +3,9 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = 'firedm'
-  checksum = '9C76E0931A69D1F7D97EA81C6A504ABE87F8BA2CEB73D96EB5F6690B485029E9'
+  checksum = '750248911F5F7F7355FC7DD40F7AC316A6FD9D14B12D02237D323193AF9F3C5C'
   checksumType = 'sha256'
-  Url = 'https://github.com/firedm/FireDM/releases/download/2021.12.2/FireDM_2021.12.2.zip'
+  Url = 'https://github.com/firedm/FireDM/releases/download/2021.12.23/FireDM_2021.12.23.zip'
   UnzipLocation = $toolsDir
 }
 
