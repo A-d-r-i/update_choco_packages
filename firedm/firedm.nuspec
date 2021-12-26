@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>firedm</id>
-    <version>2021.12.23</version>
+    <version>2021.12.26</version>
     <title>FireDM</title>
     <authors>Mahmoud Elshahat (and contributors)</authors>
     <owners>Adri</owners>
@@ -65,28 +65,9 @@ Developed in Python, based on "LibCurl", and "youtube_dl".
 
 **changelog:**
 
-2021.12.23:
-- fix cmdline download closes [#386](https://github.com/firedm/FireDM/issues/386).
-- fix no subtitles.
-- new fluid progressbar for cmdline in linux, special thanks to Sajjad Hossan  @sajjadhossanshimanto
-- add [Ctrl-Shift-v] keyboard shortcut to paste link from anywhere in-app., closes [#388](https://github.com/firedm/FireDM/issues/388)
-- use upload-date as a timestamp for video files, closes [#301](https://github.com/firedm/FireDM/issues/301).
-- [auto refresh url] restore original name and folder.
-- [gui] add new icons for download, and download later buttons, issue [#373](https://github.com/firedm/FireDM/issues/373).
-- fix AppImage error, issue [#393](https://github.com/firedm/FireDM/issues/393).
-- fix ignore_errors decorator, issue [#399](https://github.com/firedm/FireDM/issues/399).
-- prevent ibus from intercepting tkinter GUI.
-- add option to exit FireDM when completing downloads [#382](https://github.com/firedm/FireDM/issues/382).
-- removed extra streams (repeated dash videos) from stream menu.
-- fix overwrite problem of links with same filenames in batch download.
-- fix Playlist download window - Typo and truncated path, closes [#402](https://github.com/firedm/FireDM/issues/402)
-- add more preset video qualities, e.g. 4k and 8k.
-- fix reported video resolution closes [#335](https://github.com/firedm/FireDM/issues/335).
-- fix download problems for active items when changing temp folder in settings.
-- enhance batch download.
-- add option to specify ffmpeg executable path.
-- fix frozen gui when press download button.
-- disable delete item warning for completed and failed download item.
+2021.12.26:
+- critical bug fix for quality selector in playlist window.
+- add filechooser button for ffmpeg path option, issue [#409](https://github.com/firedm/FireDM/issues/409).
 </releaseNotes>
     <tags>firedm download manager youtube_dl</tags>
     <projectSourceUrl>https://github.com/firedm/FireDM</projectSourceUrl>
