@@ -17,7 +17,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip" -OutFile "fluffychat.zip"
+Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip" -OutFile "fluffychat.zip"
 $TABLE = Get-FileHash fluffychat.zip -Algorithm SHA256
 $SHA = $TABLE.Hash
 
@@ -28,7 +28,7 @@ $content = "`$ErrorActionPreference = 'Stop';
   packageName   = 'fluffychat'
   checksum = '$SHA'
   checksumType = 'sha256'
-  Url = 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip'
+  Url = 'https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip'
   UnzipLocation = `$toolsDir
 }
 
