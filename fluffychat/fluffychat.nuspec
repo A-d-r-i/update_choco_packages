@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,63 +14,26 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.0.0 - 2021-11-29 
-
- - design: Chat backup dialog as a banner 
- - design: Encrypted by design, all users valid is normal not green 
- - design: Move video call button to menu 
- - design: Display edit marker in new bubbles 
- - design: Floating input bar 
- - design: Minor color changes 
- - design: Move device ID to menu 
- - design: Place share button under qr code 
- - design: Redesign and simplify bootstrap 
- - design: Remove cupertino icons 
- - feat: Display typing indicators with gif 
- - feat: Fancy chat list loading animation 
- - feat: New database backend with FluffyBox 
- - feat: Make the main color editable for users 
- - feat: Move styles one settings level up 
- - feat: Multiple mute, pin and mark unread 
- - feat: New chat design 
- - feat: New chat details design 
- - feat: New Public room bottom sheet 
- - feat: New settings design 
- - feat: Nicer images, stickers and videos 
- - feat: nicer loading bar 
- - feat: Open im.fluffychat uris 
- - feat: Redesign multiaccounts and spaces 
- - feat: Redesign start page 
- - feat: Send reactions to multiple events 
- - feat: Speed up app start 
- - feat: Use SalomonBottomBar 
- - feat: Drag&amp;Drop to send multiple files on desktop and web 
- - fix: Adjust color 
- - fix: Automatic key requests 
- - fix: Bootstrap loop 
- - fix: Chat background 
- - fix: Chat list flickering 
- - fix: Contrast in dark mode 
- - fix: Crash when there is no prev message 
- - fix: Do display error image widget 
- - fix: Do not display bottombar in selectmode 
- - fix: Dont enable encryption with bots 
- - fix: Dont loose selected events 
- - fix: Dont rerun server checks 
- - fix: download path for saving files 
- - fix: Hide FAB in new chat page if textfield has focus 
- - fix: Let bottom space bar scroll 
- - fix: Load spaces on app start 
- - fix: Only mark unread if actually marked 
- - fix: Public room design 
- - fix: Remove avatar from room 
- - fix: Remove broken docker job 
- - fix: Report sync status error 
- - fix: Self sign while bootstrap 
- - fix: Sender name prefix in DM rooms 
- - fix: Set room avatar 
- - fix: Various multiaccount fixes 
- - fix: Wrong version in snap packages  
+    <releaseNotes>## v1.1.0 
+ - Unreleased 
+ - CI: Add candidate release pipeline (Krille Fear) 
+ - Translated using Weblate (Dutch) (Jelv) 
+ - Translated using Weblate (Estonian) (Priit Jõerüüt) 
+ - Translated using Weblate (Finnish) (Mikaela Suomalainen) 
+ - Translated using Weblate (Finnish) (Mikaela Suomalainen) 
+ - Translated using Weblate (Indonesian) (Linerly) 
+ - Translated using Weblate (Korean) (Kim Tae Kyeong) 
+ - Translated using Weblate (Norwegian Bokmål) (Gigaa) 
+ - Translated using Weblate (Norwegian Bokmål) (Raatty) 
+ - change: Do not compress very small images (Krille Fear) 
+ - chore: Update Matrix SDK (Krille Fear) 
+ - design: Make not joined participants transparent in list (Krille Fear) 
+ - docs: Fix screenshots on website (Krille Fear) 
+ - fix: Update dependencies with flutter pub upgrade (Krille Fear) 
+ - fix: Well known lookup at login (Krille Fear) 
+ - refactor: Make most of the utils null safe (Krille Fear) 
+ - refactor: Make send file dialog null safe (Krille Fear) 
+ - refactor: Make user device list item null safe (Krille Fear)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
