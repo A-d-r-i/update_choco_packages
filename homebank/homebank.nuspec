@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.5.3</version>
+    <version>5.5.4</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,19 +17,18 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.5.3 release
-* new: added 4 report color themes: quicken2017, mint, material, nord
-* change: added 6 more colors to ynab report color theme
-* wish: #[1930395](https://bugs.launchpad.net/bugs/1930395) ability to copy certain amounts (sum, avg, balance)
-* bugfix: fixed some minor memory leak in post scheduled
-* bugfix: adding tags from manage tags dialog don't enable save
-* bugfix: #[1936806](https://bugs.launchpad.net/bugs/1936806) after editing a txn from detail list of report, the list is empty
-* bugfix: #[1934739](https://bugs.launchpad.net/bugs/1934739) today button text is not translated in date picker
-* bugfix: #[1932301](https://bugs.launchpad.net/bugs/1932301) main windows New and Save tooltip text remains in english
-* bugfix: #[1931816](https://bugs.launchpad.net/bugs/1931816) changing a date from 'show all transaction' don't sort by date
-* bugfix: #[1930924](https://bugs.launchpad.net/bugs/1930924) import back a csv reads categories as tags
-* bugfix: #[1928147](https://bugs.launchpad.net/bugs/1928147) account column don't sort in scheduled dialog
-* bugfix: #[1919936](https://bugs.launchpad.net/bugs/1919936) document what the account maximum balance limit does in practice
+Made 5.5.4 release
+* change: windows: upgraded to GTK 3.24.31
+* bugfix: #[1956185](https://bugs.launchpad.net/bugs/1956185) dates not accepting 2 digit year
+* bugfix: #[1955984](https://bugs.launchpad.net/bugs/1955984) homebank cannot import its own CSV exports
+* bugfix: #[1955046](https://bugs.launchpad.net/bugs/1955046) statistics time csv subcategory export fail
+* bugfix: #[1954017](https://bugs.launchpad.net/bugs/1954017) QIF import uncheck similar txn with different category
+* bugfix: #[1947931](https://bugs.launchpad.net/bugs/1947931) vehicle cost CSV output incorrect values in km/l column
+* bugfix: #[1945715](https://bugs.launchpad.net/bugs/1945715) windows: update currency return 'unaccaceptable TLS certificate'
+* bugfix: #[1942494](https://bugs.launchpad.net/bugs/1942494) statistics "total" percentage breakdown incorrect
+* bugfix: #[1940103](https://bugs.launchpad.net/bugs/1940103) (null) is shown in dialog when deleting a template/scheduled
+* bugfix: #[1919063](https://bugs.launchpad.net/bugs/1919063) windows: scaling in 'Top Spending' text too big in UHD 3840 x 2160
+* bugfix: #[1801655](https://bugs.launchpad.net/bugs/1801655) windows: button order for GtkAssistant import is confusing
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
