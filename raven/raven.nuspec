@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>raven</id>
-    <version>1.0.69</version>
+    <version>1.0.70</version>
     <title>Raven Reader</title>
     <authors>Hello Efficiency Inc. (and contributors)</authors>
     <owners>Adri</owners>
@@ -14,16 +14,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>📖 All your articles in one place. Beautiful.</summary>
-    <releaseNotes>## Raven for Web now available!
-
-[https://web.ravenreader.app](https://web.ravenreader.app)
-
-- Free trial for first 10 days and after that $15 USD/year (i.e $1.25/month).
-- All similar features available as desktop reader with brand new UI. And more features coming soon including support for API usage to sync with Raven Desktop app.
-- Apply LAUNCH2022 coupon code to get additional 20% off.
-
-## App Updates
--  Security fixes and package updates.</releaseNotes>
+    <releaseNotes>- Security Package updates
+- https://github.com/hello-efficiency-inc/raven-reader/issues/586, https://github.com/hello-efficiency-inc/raven-reader/issues/560, https://github.com/hello-efficiency-inc/raven-reader/issues/512 - Thanks @VladimirPal for your contribution!
+</releaseNotes>
     <tags>raven reader rss blog article</tags>
     <projectSourceUrl>https://github.com/hello-efficiency-inc/raven-reader</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/raven</packageSourceUrl>
