@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.89.25</version>
+    <version>3.91.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,16 +16,24 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - `Ctrl + 0` (reset zoom factor) doesn't work properly [#3717](https://github.com/tutao/tutanota/issues/3717)
- - Current day marker is not shown in month view [#3679](https://github.com/tutao/tutanota/issues/3679)
- - Language options for spellchecking displaying incorrect name [#3659](https://github.com/tutao/tutanota/issues/3659)
+    <releaseNotes># What's new
+ - Migrate to WebAuthn (WebAuthentication) for 2FA [#2140](https://github.com/tutao/tutanota/issues/2140)
+ - Migrate to TypeScript [#3746](https://github.com/tutao/tutanota/issues/3746)
+ - Refactor EntityRestInterface [#3483](https://github.com/tutao/tutanota/issues/3483)
+
+
+# Bugfixes
+ - Error handler loop in offline login [#3720](https://github.com/tutao/tutanota/issues/3720)
+ - Prevent missing german or english translations [#3693](https://github.com/tutao/tutanota/issues/3693)
+ - Notifications are not displayed in MailSettingsViewer [#3802](https://github.com/tutao/tutanota/issues/3802)
+ - About dialog shows whitelabel logo instead of Tutanota [#3666](https://github.com/tutao/tutanota/issues/3666)
+ - Spam rule editor doesn't fill in "Discard" for existing rule [#3345](https://github.com/tutao/tutanota/issues/3345)
+ - Broken `Settings -&gt; Payment` link in Tutanota invoice emails on Desktop client [#3333](https://github.com/tutao/tutanota/issues/3333)
+ - Mailbody flickering even when already loaded [#3120](https://github.com/tutao/tutanota/issues/3120)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/190?closed=1
+https://github.com/tutao/tutanota/milestone/192?closed=1
 
-# TAR Checksum
-SHA256: d23d2f2f8e64a5978105d5bb358f25bec7985215c63e809b39d52d4fdedf3222
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
