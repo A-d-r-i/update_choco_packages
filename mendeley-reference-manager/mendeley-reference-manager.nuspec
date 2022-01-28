@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.63.0</version>
+    <version>2.64.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -17,9 +17,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
-    <releaseNotes>&lt;h2&gt;Mendeley Reference Manager v2.63.0&lt;/h2&gt; &lt;p&gt;We have&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Added the Citation Key field to the library search&lt;/li&gt; &lt;li&gt;Altered the table search field to improve screen reader capabilities&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;Support&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;If you encounter any problems using Mendeley or have questions to ask please &lt;a href="https://www.mendeley.com/contact-support/" title="Contact support"&gt;contact our support team&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;For news and updates about Mendeley see &lt;a href="http://blog.mendeley.com/"&gt;our blog&lt;/a&gt;.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Released: 05 January 2022&lt;/p&gt; &lt;/div&gt;
+    <releaseNotes>&lt;h2&gt;Mendeley Reference Manager v2.64.0&lt;/h2&gt; &lt;p&gt;We have&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Altered the color used for checkboxes to meet accessibility standards&lt;/li&gt; &lt;li&gt;Removed the word “Private” from group related actions, such as adding references to a group&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;Support&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;If you encounter any problems using Mendeley or have questions to ask please &lt;a href="https://www.mendeley.com/contact-support/" title="Contact support"&gt;contact our support team&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;For news and updates about Mendeley see &lt;a href="http://blog.mendeley.com/"&gt;our blog&lt;/a&gt;.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Released: 19 January 2022&lt;/p&gt; &lt;/div&gt;
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.63.0](https://www.mendeley.com/release-notes-reference-manager/v2.63.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.64.0](https://www.mendeley.com/release-notes-reference-manager/v2.64.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
