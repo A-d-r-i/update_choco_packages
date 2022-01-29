@@ -1,0 +1,7 @@
+﻿
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+Any binaries will be identical to other package types published by the project, in particular
+the raven.exe file. It is directly downloaded from the project's github repository : https://github.com/hello-efficiency-inc/raven-reader
