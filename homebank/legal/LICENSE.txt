@@ -1,0 +1,6 @@
+﻿
+From: https://launchpad.net/homebank
+
+LICENSE
+
+GNU GPL v2
