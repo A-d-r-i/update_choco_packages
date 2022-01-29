@@ -12,26 +12,7 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe" -OutFile "raven.exe"
-
-$TABLE = Get-FileHash raven.exe -Algorithm SHA256
-$SHA = $TABLE.Hash
-
-$content = "`$ErrorActionPreference = 'Stop';
-
-`$packageArgs = @{
-  packageName = 'raven'
-  installerType = 'EXE'
-  url = 'https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe'
-  checksum = '$SHA'
-  checkumType = 'sha256'
-  silentArgs = '/S'
-  validExitCodes = @(0)
-}
-
-Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./raven/tools/chocolateyinstall.ps1
-
-Remove-Item raven.exe
+Invoke-WebRequest -Uri "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe" -OutFile "./raven/tools/raven.exe"
 
 choco pack ./raven/raven.nuspec --outputdirectory .\raven
 
