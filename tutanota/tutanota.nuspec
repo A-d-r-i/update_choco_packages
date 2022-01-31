@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.91.3</version>
+    <version>3.91.6</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,14 +16,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
+    <releaseNotes># What's new
+ - Migrate to WebAuthn (WebAuthentication) for 2FA [#2140](https://github.com/tutao/tutanota/issues/2140)
+ - Migrate to TypeScript [#3746](https://github.com/tutao/tutanota/issues/3746)
+ - Refactor EntityRestInterface [#3483](https://github.com/tutao/tutanota/issues/3483)
+
+# Bugfixes
+ - MAPI doesn't attach files from certain applications [#3847](https://github.com/tutao/tutanota/issues/3847)
+ - Open attachments fails in desktop client [#3827](https://github.com/tutao/tutanota/issues/3827)
+ - Not all apps recognise Tutanota as the default mailto application in windows [#3574](https://github.com/tutao/tutanota/issues/3574)
  - Log out button does not do anything on the first press [#3834](https://github.com/tutao/tutanota/issues/3834)
  - App does not load in environment without BigInt support [#3830](https://github.com/tutao/tutanota/issues/3830)
  - Download all does not work in MailViewer [#3822](https://github.com/tutao/tutanota/issues/3822)
+ - Error handler loop in offline login [#3720](https://github.com/tutao/tutanota/issues/3720)
+ - Prevent missing german or english translations [#3693](https://github.com/tutao/tutanota/issues/3693)
+ - Notifications are not displayed in MailSettingsViewer [#3802](https://github.com/tutao/tutanota/issues/3802)
+ - About dialog shows whitelabel logo instead of Tutanota [#3666](https://github.com/tutao/tutanota/issues/3666)
+ - Spam rule editor doesn't fill in "Discard" for existing rule [#3345](https://github.com/tutao/tutanota/issues/3345)
+ - Broken `Settings -&gt; Payment` link in Tutanota invoice emails on Desktop client [#3333](https://github.com/tutao/tutanota/issues/3333)
+ - Mailbody flickering even when already loaded [#3120](https://github.com/tutao/tutanota/issues/3120)
 
 # Milestone
+https://github.com/tutao/tutanota/milestone/195?closed=1
 https://github.com/tutao/tutanota/milestone/193?closed=1
+https://github.com/tutao/tutanota/milestone/192?closed=1
 
+# Tar Checksum
+SHA256: 444a182f153da7494408a3707031e274efa34c2292d72412cde77d1921d23462
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
