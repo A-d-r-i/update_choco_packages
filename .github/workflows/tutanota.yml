@@ -36,6 +36,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = $tag -replace ' \(Desktop\)'
           
           echo $Version
           echo $tag
