@@ -4,7 +4,7 @@
     <id>open-video-downloader</id>
     <version>2.3.0</version>
     <title>Open Video Downloader</title>
-    <authors>Jelle Glebbeek & contributors</authors>
+    <authors>Jelle Glebbeek (and contributors)</authors>
     <owners>Adri</owners>
     <licenseUrl>https://github.com/jely2002/youtube-dl-gui/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://jely2002.github.io/youtube-dl-gui/</projectUrl>
@@ -14,7 +14,7 @@
 
 ### Features:
 
-- Download from all kind of platforms: YouTube, vimeo, twitter & many more
+- Download from all kind of platforms: YouTube, vimeo, twitter and many more
 - Download multiple videos/playlists/channels in one go
 - Select the resolution and format you want to download in
 - Download private videos (currently only tested on YouTube)
