@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>open-video-downloader</id>
+    <version>2.4.0</version>
+    <title>Open Video Downloader</title>
+    <authors>Jelle Glebbeek & contributors</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/jely2002/youtube-dl-gui/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://jely2002.github.io/youtube-dl-gui/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jely2002/youtube-dl-gui@master/renderer/img/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A cross-platform GUI for youtube-dl made in Electron and node.js
+
+### Features:
+
+- Download from all kind of platforms: YouTube, vimeo, twitter & many more
+- Download multiple videos/playlists/channels in one go
+- Select the resolution and format you want to download in
+- Download private videos (currently only tested on YouTube)
+- Multithreaded, up to 32 videos can be downloaded synchronously
+- Shows how much size the download will use up on your system
+- The app automatically keeps ytdl up-to-date</description>
+    <summary>A cross-platform GUI for youtube-dl made in Electron and node.js</summary>
+    <releaseNotes></releaseNotes>
+    <tags>open-video-downloader youtube-dl youtube-dl-gui video</tags>
+    <projectSourceUrl>https://github.com/jely2002/youtube-dl-gui</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/open-video-downloader</packageSourceUrl>
+    <docsUrl>https://github.com/jely2002/youtube-dl-gui/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/jely2002/youtube-dl-gui/issues</bugTrackerUrl>
+  </metadata>
+</package>
