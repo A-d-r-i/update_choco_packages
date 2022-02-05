@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>open-video-downloader</id>
-    <version>2.3.0</version>
+    <version>2.4.0</version>
     <title>Open Video Downloader</title>
     <authors>Jelle Glebbeek (and contributors)</authors>
     <owners>Adri</owners>
@@ -22,7 +22,18 @@
 - Shows how much size the download will use up on your system
 - The app automatically keeps ytdl up-to-date</description>
     <summary>A cross-platform GUI for youtube-dl made in Electron and node.js</summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>### **Changelog:**
+
+**Features**
+-  Use yt-dlp instead of youtube-dl (#151)
+-  Sponsorblock support (#183)
+- Add option to use empty user-agent string for downloading certain VR videos. (#213)
+-  No longer ship with binaries, download them on first launch
+
+**Bugfixes**
+- Ignore youtube-dl config file (#190)
+- Only set the default format if there are any (#212, #197)
+- Fix chmod command on linux systems</releaseNotes>
     <tags>open-video-downloader youtube-dl youtube-dl-gui video</tags>
     <projectSourceUrl>https://github.com/jely2002/youtube-dl-gui</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/open-video-downloader</packageSourceUrl>
