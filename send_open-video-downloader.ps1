@@ -2,6 +2,9 @@ $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/
 $release = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].body
 $tag = $tag -replace 'v'
 
+$regex = '([0-9]{3,})'
+$release = $release -replace $regex, '[${1}](https://github.com/jely2002/youtube-dl-gui/issues/${1})
+
 $file = "./open-video-downloader/open-video-downloader.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
