@@ -33,6 +33,7 @@ Here are deposited:
 |**Raven Reader**|every 6 hours at minute 40|✅|✅|[Link](https://ravenreader.app)|[Link](https://community.chocolatey.org/packages/raven)|
 |**Sengi**|every 6 hours at minute 45|✅|✅|[Link](https://nicolasconstant.github.io/sengi)|[Link](https://community.chocolatey.org/packages/sengi)|
 |**Tartube**|every 6 hours at minute 50|✅|✅|[Link](https://tartube.sourceforge.io)|[Link](https://community.chocolatey.org/packages/tartube)|
+|**Open Video Downloader**|every 6 hours at minute 52|✅|✅|[Link](https://jely2002.github.io/youtube-dl-gui/)|[Link](https://community.chocolatey.org/packages/open-video-downloader)|
 |**Dot Browser** (*Alpha*)|every 6 hours at minute 55|✅|✅|[Link](https://www.dothq.co/)|[Link](https://community.chocolatey.org/packages/dotbrowser)|
 |**Tutanota**|every 6 hours at minute 59|✅|✅|[Link](https://tutanota.com)|[Link](https://community.chocolatey.org/packages/tutanota)|
 |**Tenacity Audio Editor**|Manually [^1]|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
