@@ -34,7 +34,7 @@
 - Ignore youtube-dl config file (#190)
 - Only set the default format if there are any (#212, #197)
 - Fix chmod command on linux systems</releaseNotes>
-    <tags>open-video-downloader youtube-dl youtube-dl-gui video</tags>
+    <tags>open-video-downloader youtube-dl youtube-dl-gui youtube-dlp youtube-dlp-gui video</tags>
     <projectSourceUrl>https://github.com/jely2002/youtube-dl-gui</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/open-video-downloader</packageSourceUrl>
     <docsUrl>https://github.com/jely2002/youtube-dl-gui/wiki</docsUrl>
