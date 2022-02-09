@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.91.9</version>
+    <version>3.91.10</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,18 +16,13 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Update Electron [#3858](https://github.com/tutao/tutanota/issues/3858)
- - [desktop/linux] fix &amp; upgrade keytar [#3809](https://github.com/tutao/tutanota/issues/3809)
- - [Desktop] Secure saved credentials. [#3733](https://github.com/tutao/tutanota/issues/3733)
+    <releaseNotes># Bugfixes
+ - Keychain errors on Linux [#3875](https://github.com/tutao/tutanota/issues/3875) 
 
-# Bugfixes
- - Error handling is broken [#3868](https://github.com/tutao/tutanota/issues/3868)
- - Web client test failures in FormatterTest (parseBirthdayGermanLocale, parseBirthdayUsLocale) [#3782](https://github.com/tutao/tutanota/issues/3782)
- - Calendar current day circle not centered [#3624](https://github.com/tutao/tutanota/issues/3624)
+Please take a note that this fix might clear your stored credentials if we couldn't decrypt them anymore.
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/196?closed=1
+https://github.com/tutao/tutanota/milestone/197?closed=1
 
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
