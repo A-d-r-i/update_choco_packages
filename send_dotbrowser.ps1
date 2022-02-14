@@ -1,9 +1,11 @@
+# extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].tag_name
 $release = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].body
 
 $tagalpha = $tag -replace '([0-9]*\.[0-9]+)-([0-9]{4})-([0-9]{2})-([0-9]{2})', '$1.$2$3$4'
 $tagalpha = -join($tagalpha,"-alpha");
 
+# write new version and release
 $file = "./dotbrowser/dotbrowser.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
@@ -11,9 +13,34 @@ $xml.package.metadata.version = $tagalpha
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
+# download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/dothq/browser-desktop/releases/download/$tag/dot-87.0.exe" -OutFile "./dotbrowser/tools/dotbrowser.exe"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dothq/browser-desktop/master/LICENSE" -OutFile "./dotbrowser/legal/LICENSE.txt"
 
+# calculation of checksum
+$TABLE = Get-FileHash "./dotbrowser/tools/dotbrowser.exe" -Algorithm SHA256
+$SHA = $TABLE.Hash
+
+# writing of VERIFICATION.txt
+$content = "VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official github repository listed on <https://github.com/dothq/browser-desktop/releases/>
+and can be verified like this:
+
+1. Download the following installer:
+  Version $tag : <https://github.com/dothq/browser-desktop/releases/download/$tag/dot-87.0.exe>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: 
+  checksum: $SHA
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/dothq/browser-desktop/master/LICENSE> " | out-file -filepath ./dotbrowser/legal/VERIFICATION.txt
+
+# packaging
 choco pack ./dotbrowser/dotbrowser.nuspec --outputdirectory .\dotbrowser
 
 If ($LastExitCode -eq 0) {
@@ -24,7 +51,7 @@ If ($LastExitCode -eq 0) {
 
 If ($LastExitCode -eq 0) {
 
-#git and create tag
+# git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
 git config --local user.name "A-d-r-i"
 git add .
@@ -32,7 +59,7 @@ git commit -m "[Bot] Update files - dotbrowser" --allow-empty
 git tag -a dotbrowser-v$tagalpha -m "Dot Browser  - version $tagalpha"
 git push -f && git push --tags
 
-#create release
+# create release
 Install-Module -Name New-GitHubRelease -Force
 Import-Module -Name New-GitHubRelease
 $newGitHubReleaseParameters = @{
@@ -48,7 +75,7 @@ IsDraft = $false
 }
 $resultrelease = New-GitHubRelease @newGitHubReleaseParameters
 
-#post tweet
+# post tweet
 $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
 if ( $twitter -eq "y" )
 {
@@ -69,7 +96,7 @@ Link: https://community.chocolatey.org/packages/dotbrowser/$tagalpha
 "
 }
 
-#send telegram notification
+# send telegram notification
 Function Send-Telegram {
 Param([Parameter(Mandatory=$true)][String]$Message)
 $Telegramtoken = "$env:TELEGRAM"
