@@ -20,33 +20,15 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "tartube64.exe"
-Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "tartube32.exe"
-
-$TABLE64 = Get-FileHash tartube64.exe -Algorithm SHA256
-$SHA64 = $TABLE64.Hash
-
-$TABLE32 = Get-FileHash tartube32.exe -Algorithm SHA256
-$SHA32 = $TABLE32.Hash
-
-$content = "`$ErrorActionPreference = 'Stop';
-
-`$packageArgs = @{
-  packageName = 'tartube'
-  installerType = 'EXE'
-  url = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe'
-  checksum = '$SHA32'
-  url64 = 'https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe'
-  checksum64 = '$SHA64'
-  checkumType = 'sha256'
-  silentArgs = '/S'
-  validExitCodes = @(0)
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./tartube/tools/tartube64.exe"
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
+if($?){
+	echo "32 bit URI is working"
+} else {
+	echo "32 bit URI does not work so we use previous version for 32 bit."
+	Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v2.3.332/install-tartube-2.3.332-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
 }
 
-Install-ChocolateyInstallPackage @packageArgs " | out-file -filepath ./tartube/tools/chocolateyinstall.ps1
-
-Remove-Item tartube64.exe
-Remove-Item tartube32.exe
 Remove-Item release.txt
 
 choco pack ./tartube/tartube.nuspec --outputdirectory .\tartube
