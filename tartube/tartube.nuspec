@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.3.332</version>
+    <version>2.3.367</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,22 +19,20 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
-# MAJOR NEW FEATURES
-- Tartube can extract a video's comments, and optionally store them in its own database. (In either case, comments are stored in the video's .info.json file). This feature is only available when using yt-dlp. To enable it, click 'Edit &gt; System preferences... &gt; Operations &gt; Comments', and select 'When checking/downloading videos, store comments in the metadata file', (Note that the download option in 'Edit &gt; General download options...' has been removed). To view comments for a video, right-click the video and select 'Show video &gt; Properties &gt; Comments'
 # MINOR NEW FEATURES
-- In the preferences window (Edit &gt; System preferences... &gt; Windows &gt; Main window), the 'Reset' button now resets the position of various sldiers, as well as the size of the main window
-- Added a few more video/audio formats to the list selectable in the download options window
-- In the video slices dialogue window (right-click a video and select 'Special &gt; Remove video slices...') the user can now opt to remove a slice, or to remove everything but a slice. The latter behaviour is slightly different to downloading a video clip, because downloading a clip will create a new entry in Tartube's database. The new button should clarify what the window is actually supposed to do (Git #[322](https://github.com/axcore/tartube/issues/322))
-- In the new-ish dialogue window that appears when nothing is downloaded, there is a new section remnnding Classic Mode users that they can't download a file that doesn't exist (and what to do about that) (Git #[326](https://github.com/axcore/tartube/issues/326))
-- The same dialogue window appeared after checking a single video that had previously been checked/downloaded. Fixed
-- The setup dialogue window now explains to users what the Classic Mode tab is for, and lets them specify that the main window should always open at that tab, if they want
+- MS Windows users have been reporting that FFmpeg cannot be installed any more; this release attempts to fix that issue (but I can't be sure that the fix will work)
+- In order to cope with yt-dlp spam, added some new ignorable warnings (see Edit &gt; System preferences... &gt; Windows &gt; Errors/Warnings)
+- In Edit &gt; System preferences &gt; Files &gt; URLs, there is a new button for opening a URL in your system's web browser. Also changed the layout of that tab to make it a little easier to understand
 # MAJOR FIXES
-- The button to set the media file in a video's edit window did not work on MS Windwos. Fixed (Git #[320](https://github.com/axcore/tartube/issues/320))
-- In the Progress tab, the 'Maximum downloads' setting was broken. Fixed
-- Fixed an error caused when a video's upload date (as returned by youtube-dl) was None
+- When the Tartube database was corrupted, on startup Tartube was unable to create temporary directories, so the application closes even before the main window is created. Fixed that, and also fixed the failure to show a dialogue window when a lock can't be placed on the database file
+- Fixed various issues when exporting/importing Tartube's database
+- Fixed inability to rename channels/playlists/folders under certain circumstances
 # MINOR FIXES
-- .webp thumbnails from Odysee (and perhaps other websites) were not converted into a displayable format; fixed
-# 
+- Fixed minor typos in various edit windows
+- When the downloader is yt-dlp and the user selects a custom executable, Tartube installs youtube-dl instead. Fixed (Git #[299](https://github.com/axcore/tartube/issues/299))
+- In the same situation (on MS Windows only), Tartube tries to execute an .exe file as if it were a Python script. Fixed (Git #[299](https://github.com/axcore/tartube/issues/299))
+- On MS Windows, user could not set an external download path for a channel or playlist. Fixed (Git #[329](https://github.com/axcore/tartube/issues/329))
+- Fixed inability to load databases from Tartrubr 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
     <projectSourceUrl>https://github.com/axcore/tartube</projectSourceUrl>
