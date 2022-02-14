@@ -1,6 +1,14 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'tartube32.exe'
+
+if (Test-Path "tartube32.exe") {
+	$fileLocation = Join-Path $toolsDir 'tartube32.exe'
+}
+else
+{
+	Write-Host "32 bit file doesn't exists"
+	$fileLocation = Join-Path $toolsDir ''
+}
 $fileLocation64 = Join-Path $toolsDir 'tartube64.exe'
 
 $packageArgs = @{

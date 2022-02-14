@@ -21,12 +21,11 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./tartube/tools/tartube64.exe"
-Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
+$32bit = Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
 if($?){
 	echo "32 bit URI is working"
 } else {
-	echo "32 bit URI does not work so we use previous version for 32 bit."
-	Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v2.3.332/install-tartube-2.3.332-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
+	echo "32 bit URI does not work so we don't use 32 bit."
 }
 
 Remove-Item release.txt
