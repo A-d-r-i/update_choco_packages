@@ -1,11 +1,6 @@
-﻿
-From: https://www.openacousticdevices.info/license
+﻿MIT License (MIT)
 
-LICENSE
-
-MIT License (MIT)
-
-Copyright © Open Acoustic Devices 2017
+Copyright © Open Acoustic Devices 2019
 
 ​
 

@@ -28,6 +28,7 @@ $xml.package.metadata.releaseNotes = "$release"# https://biodiversityinformatics
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -UserAgent $userAgent -OutFile "dotdotgoose.zip"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/persts/DotDotGoose/master/LICENSE" -OutFile "./dotdotgoose/legal/LICENCE.txt"
 
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 

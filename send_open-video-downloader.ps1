@@ -3,7 +3,7 @@ $release = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-
 $tag = $tag -replace 'v'
 
 $regex = '([0-9]{3,})'
-$release = $release -replace $regex, '[${1}](https://github.com/jely2002/youtube-dl-gui/issues/${1})
+$release = $release -replace $regex, '[${1}](https://github.com/jely2002/youtube-dl-gui/issues/${1})'
 
 $file = "./open-video-downloader/open-video-downloader.nuspec"
 $xml = New-Object XML
@@ -13,6 +13,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/jely2002/youtube-dl-gui/releases/download/v$tag/Open-Video-Downloader-Setup-$tag.exe" -OutFile "./open-video-downloader/tools/open-video-downloader.exe"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/jely2002/youtube-dl-gui/master/LICENSE" -OutFile "./open-video-downloader/legal/LICENCE.txt"
 
 choco pack ./open-video-downloader/open-video-downloader.nuspec --outputdirectory .\open-video-downloader
 

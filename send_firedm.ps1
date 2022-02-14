@@ -12,6 +12,8 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/firedm/FireDM/releases/download/$tag/FireDM_$tag.zip" -OutFile "firedm.zip"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/firedm/FireDM/master/LICENSE" -OutFile "./firedm/legal/LICENCE.txt"
+
 $TABLE = Get-FileHash firedm.zip -Algorithm SHA256
 $SHA = $TABLE.Hash
 
