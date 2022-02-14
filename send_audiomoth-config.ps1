@@ -10,9 +10,9 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-# download installer and LICENCE
+# download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases/download/$tag/AudioMothConfigurationAppSetup$tag.exe" -OutFile "./audiomoth-config/tools/AudioMothConfigurationAppSetup.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/LICENSE" -OutFile "./audiomoth-config/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/LICENSE" -OutFile "./audiomoth-config/legal/LICENSE.txt"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./audiomoth-config/tools/AudioMothConfigurationAppSetup.exe" -Algorithm SHA256

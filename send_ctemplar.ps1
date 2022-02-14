@@ -9,7 +9,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/CTemplar/webclient/releases/download/v$tag/CTemplar-$tag.exe" -OutFile "./ctemplar/tools/ctemplar.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CTemplar/webclient/master/LICENSE" -OutFile "./ctemplar/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CTemplar/webclient/master/LICENSE" -OutFile "./ctemplar/legal/LICENSE.txt"
 
 choco pack ./ctemplar/ctemplar.nuspec --outputdirectory .\ctemplar
 

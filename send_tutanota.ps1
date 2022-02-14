@@ -13,7 +13,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe" -OutFile "./tutanota/tools/tutanota-desktop-win.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tutao/tutanota/master/LICENSE.txt" -OutFile "./tutanota/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tutao/tutanota/master/LICENSE.txt" -OutFile "./tutanota/legal/LICENSE.txt"
 
 choco pack ./tutanota/tutanota.nuspec --outputdirectory .\tutanota
 

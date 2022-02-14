@@ -27,7 +27,7 @@ try {
 catch {
     $_.Exception.Message
 }
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./tartube/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./tartube/legal/LICENSE.txt"
 
 Remove-Item release.txt
 

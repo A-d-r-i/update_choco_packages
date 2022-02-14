@@ -13,7 +13,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v$tag/Raven-Reader-Setup-$tag.exe" -OutFile "./raven/tools/raven.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/hello-efficiency-inc/raven-reader/master/LICENSE" -OutFile "./raven/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/hello-efficiency-inc/raven-reader/master/LICENSE" -OutFile "./raven/legal/LICENSE.txt"
 
 choco pack ./raven/raven.nuspec --outputdirectory .\raven
 
