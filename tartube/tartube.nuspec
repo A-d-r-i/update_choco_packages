@@ -14,7 +14,7 @@
 
 It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube runs on MS Windows, Linux, BSD and MacOS.
 
-**32 bit users**: Due to an error (see issue: https://github.com/axcore/tartube#doesn-t-work-on-32-bit-windows), Tartube is no longer updated for the 32 bit version. The version installed by chocolatey is therefore the previous one: **2.3.332**
+**32 bit users**: Due to an error (see issue: https://github.com/axcore/tartube#doesn-t-work-on-32-bit-windows), Tartube is no longer updated for the 32 bit version. if you need 32bit please install version: **2.3.332**
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
