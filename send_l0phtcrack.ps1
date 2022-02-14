@@ -13,7 +13,7 @@ $tag64 = -join($tag,"_Win64");
 
 Invoke-WebRequest -Uri "https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag32.exe" -OutFile "l0phtcrack32.exe"
 Invoke-WebRequest -Uri "https://l0phtcrack.gitlab.io/releases/$tag/lc7setup_v$tag64.exe" -OutFile "l0phtcrack64.exe"
-Invoke-WebRequest -Uri "https://gitlab.com/l0phtcrack/l0phtcrack/-/raw/main/LICENSE.MIT" -OutFile "./l0phtcrack/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://gitlab.com/l0phtcrack/l0phtcrack/-/raw/main/LICENSE.MIT" -OutFile "./l0phtcrack/legal/LICENSE.txt"
 
 $TABLE64 = Get-FileHash l0phtcrack64.exe -Algorithm SHA256
 $SHA64 = $TABLE64.Hash

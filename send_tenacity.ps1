@@ -16,7 +16,7 @@ $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja$run.zip" -OutFile "tenacity64.zip"
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja$run.zip" -OutFile "tenacity32.zip"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt" -OutFile "./tenacity/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt" -OutFile "./tenacity/legal/LICENSE.txt"
 
 Expand-Archive tenacity64.zip -DestinationPath .\tenacity\tools\ -Force
 Expand-Archive tenacity32.zip -DestinationPath .\tenacity\tools\ -Force

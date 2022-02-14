@@ -18,7 +18,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip" -OutFile "fluffychat.zip"
-Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE" -OutFile "./fluffychat/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE" -OutFile "./fluffychat/legal/LICENSE.txt"
 
 $TABLE = Get-FileHash fluffychat.zip -Algorithm SHA256
 $SHA = $TABLE.Hash

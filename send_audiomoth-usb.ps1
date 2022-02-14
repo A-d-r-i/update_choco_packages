@@ -10,9 +10,9 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-# download installer and LICENCE
+# download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/download/$tag/AudioMothUSBMicrophoneAppSetup$tag.exe" -OutFile "./audiomoth-usb/tools/AudioMothUSBMicrophoneAppSetup.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/master/LICENSE" -OutFile "./audiomoth-usb/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/master/LICENSE" -OutFile "./audiomoth-usb/legal/LICENSE.txt"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./audiomoth-usb/tools/AudioMothUSBMicrophoneAppSetup.exe" -Algorithm SHA256

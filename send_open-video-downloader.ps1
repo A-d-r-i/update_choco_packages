@@ -14,9 +14,9 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
-# download installer and LICENCE
+# download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/jely2002/youtube-dl-gui/releases/download/v$tag/Open-Video-Downloader-Setup-$tag.exe" -OutFile "./open-video-downloader/tools/open-video-downloader.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/jely2002/youtube-dl-gui/master/LICENSE" -OutFile "./open-video-downloader/legal/LICENCE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/jely2002/youtube-dl-gui/master/LICENSE" -OutFile "./open-video-downloader/legal/LICENSE.txt"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./open-video-downloader/tools/open-video-downloader.exe" -Algorithm SHA256
