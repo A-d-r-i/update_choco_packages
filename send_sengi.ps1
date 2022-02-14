@@ -9,6 +9,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/NicolasConstant/sengi/releases/download/$tag/Sengi-$tag-win.exe" -OutFile "./sengi/tools/sengi.exe"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/NicolasConstant/sengi/master/LICENSE" -OutFile "./sengi/legal/LICENCE.txt"
 
 choco pack ./sengi/sengi.nuspec --outputdirectory .\sengi
 

@@ -12,6 +12,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/dothq/browser-desktop/releases/download/$tag/dot-87.0.exe" -OutFile "./dotbrowser/tools/dotbrowser.exe"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dothq/browser-desktop/master/LICENSE" -OutFile "./dotbrowser/legal/LICENCE.txt"
 
 choco pack ./dotbrowser/dotbrowser.nuspec --outputdirectory .\dotbrowser
 

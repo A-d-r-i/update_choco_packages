@@ -10,6 +10,8 @@ $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases/download/$tag/AudioMothConfigurationAppSetup$tag.exe" -OutFile "./audiomoth-config/tools/AudioMothConfigurationAppSetup.exe"
 
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/LICENSE" -OutFile "./audiomoth-config/legal/LICENCE.txt"
+
 choco pack ./audiomoth-config/audiomoth-config.nuspec --outputdirectory .\audiomoth-config
 
 If ($LastExitCode -eq 0) {

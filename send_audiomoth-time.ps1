@@ -9,6 +9,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 Invoke-WebRequest -Uri "https://github.com/OpenAcousticDevices/AudioMoth-Time-App/releases/download/$tag/AudioMothTimeAppSetup$tag.exe" -OutFile "./audiomoth-time/tools/AudioMothTimeAppSetup.exe"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Time-App/master/LICENSE" -OutFile "./audiomoth-time/legal/LICENCE.txt"
 
 choco pack ./audiomoth-time/audiomoth-time.nuspec --outputdirectory .\audiomoth-time
 
