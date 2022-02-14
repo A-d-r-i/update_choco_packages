@@ -1,3 +1,4 @@
+# extract latest version and release
 $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
 
 Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "DDG.html"
@@ -19,7 +20,7 @@ $release = $release -replace '(Bug Fix)', '**Bug Fix**'
 $release = $release -replace '(Bug Fixed)', '**Bug Fixed**'
 $release = -join($release, "`n`n**Full changelog:** [https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/) ");
 
-
+# write new version and release
 $file = "./dotdotgoose/dotdotgoose.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
@@ -27,13 +28,37 @@ $xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = "$release"# https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ " # $release
 $xml.Save($file)
 
+# download installer and LICENSE
 Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -UserAgent $userAgent -OutFile "dotdotgoose.zip"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/persts/DotDotGoose/master/LICENSE" -OutFile "./dotdotgoose/legal/LICENSE.txt"
 
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 
 Remove-Item dotdotgoose.zip
+# calculation of checksum
+#$TABLE = Get-FileHash "./dotdotgoose/tools/dotdotgoose.zip -Algorithm SHA256
+#$SHA = $TABLE.Hash
 
+# writing of VERIFICATION.txt
+$content = "VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official website listed on <https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win>
+and can be verified like this:
+
+1. Download the following installer:
+  Version $tag : <https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: 
+  checksum: $SHA
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/persts/DotDotGoose/master/LICENSE> " | out-file -filepath ./dotdotgoose/legal/VERIFICATION.txt
+
+# packaging
 choco pack ./dotdotgoose/dotdotgoose.nuspec --outputdirectory .\dotdotgoose
 
 If ($LastExitCode -eq 0) {
@@ -44,7 +69,7 @@ If ($LastExitCode -eq 0) {
 
 If ($LastExitCode -eq 0) {
 
-#git and create tag
+# git and create tag
 git config --local user.email "a-d-r-i@outlook.fr"
 git config --local user.name "A-d-r-i"
 git add .
@@ -52,7 +77,7 @@ git commit -m "[Bot] Update files - dotdotgoose" --allow-empty
 git tag -a dotdotgoose-v$tag -m "DotDotGoose - version $tag"
 git push -f && git push --tags
 
-#create release
+# create release
 Install-Module -Name New-GitHubRelease -Force
 Import-Module -Name New-GitHubRelease
 $newGitHubReleaseParameters = @{
@@ -68,7 +93,7 @@ IsDraft = $false
 }
 $resultrelease = New-GitHubRelease @newGitHubReleaseParameters
 
-#post tweet
+# post tweet
 $twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
 if ( $twitter -eq "y" )
 {
@@ -87,7 +112,7 @@ Link: https://community.chocolatey.org/packages/dotdotgoose/$tag
 "
 }
 
-#send telegram notification
+# send telegram notification
 Function Send-Telegram {
 Param([Parameter(Mandatory=$true)][String]$Message)
 $Telegramtoken = "$env:TELEGRAM"
