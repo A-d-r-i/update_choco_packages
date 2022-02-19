@@ -12,7 +12,7 @@ $xml.Save($file)
 
 # download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/CTemplar/webclient/releases/download/v$tag/CTemplar-$tag.exe" -OutFile "./ctemplar/tools/ctemplar.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CTemplar/webclient/master/LICENSE" -OutFile "./ctemplar/legal/LICENSE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/CTemplar/webclient/master/LICENCE" -OutFile "./ctemplar/legal/LICENSE.txt"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./ctemplar/tools/ctemplar.exe" -Algorithm SHA256
