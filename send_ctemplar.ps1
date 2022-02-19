@@ -35,7 +35,7 @@ and can be verified like this:
   checksum type: 
   checksum: $SHA
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/CTemplar/webclient/master/LICENSE> " | out-file -filepath ./ctemplar/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/CTemplar/webclient/master/LICENCE> " | out-file -filepath ./ctemplar/legal/VERIFICATION.txt
 
 # packaging
 choco pack ./ctemplar/ctemplar.nuspec --outputdirectory .\ctemplar
