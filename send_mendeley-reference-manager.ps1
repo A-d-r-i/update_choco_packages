@@ -10,16 +10,18 @@ $Source -match 'title:"Mendeley Reference Manager v([0-9]+(\.[0-9]+)+)"'
 $tag = $matches[1]
 
 $Sourcerelease = Get-Content -path MRM.txt -raw
-$Sourcerelease -match "([0-9]+)_v$tag.([a-zA-Z0-9]+).html"
+$Sourcerelease -match 'path:"/v([0-9]+(\.[0-9]+)+)"'
+$path = $matches[1]
+$Sourcerelease -match "([0-9]+)_v$path.([a-zA-Z0-9]+).html"
 $daterelease = $matches[1]
 $daterelease = -join($daterelease, "_v");
 $idrelease = $matches[2]
-$URLrelease = "https://static.mendeley.com/md-stitch/releases/live/$daterelease$tag.$idrelease.html"
+$URLrelease = "https://static.mendeley.com/md-stitch/releases/live/$daterelease$path.$idrelease.html"
 
 Invoke-WebRequest -Uri "$URLrelease" -OutFile "MRM.html"
 $release = Get-Content -path MRM.html -raw
 $release = $release -replace '<div class="content_item">', ''
-$release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$tag) ");
+$release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$path) ");
 
 # write new version and release
 $file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
