@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 2.5.68 : <https://github.com/CTemplar/webclient/releases/download/v2.5.68/CTemplar-2.5.68.exe>
+  Version 2.5.71 : <https://github.com/CTemplar/webclient/releases/download/v2.5.71/CTemplar-2.5.71.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: 
-  checksum: 5C3E2ABCAF7A64F8F51E14ECDCEB93313D3B0EE4DF8FE0386379AC90B5C0D143
+  checksum: C5C1A1C0DCD691AA254E31C7803E25AE5ED03B8C9BFFB1E2C0F079D8221410C6
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/CTemplar/webclient/master/LICENCE> 
