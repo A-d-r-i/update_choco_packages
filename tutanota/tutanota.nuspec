@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.93.5</version>
+    <version>3.93.6</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,23 +16,14 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Support FIDO U2F security key in desktop client [#2178](https://github.com/tutao/tutanota/issues/2178)
- -  Update Electron to 16.0.9 [#3906](https://github.com/tutao/tutanota/issues/3906) 
- - Subscription changes [#3918](https://github.com/tutao/tutanota/issues/3918)
+    <releaseNotes># Bugfixes
+ - Desktop and mobile apps loses connection to server [#3449](https://github.com/tutao/tutanota/issues/3449)
+ - Long user email address / name of mailbox above the mail folders is clipped  [#3283](https://github.com/tutao/tutanota/issues/3283)
 
-# Bugfixes
- - Incorrect price in confirmation dialog when adding a new user  [#3922](https://github.com/tutao/tutanota/issues/3922)
- - Attempting to log in with empty login form breaks login screen [#3846](https://github.com/tutao/tutanota/issues/3846)
- - Opening/closing minimized mail editor while file is uploading creates multiple drafts [#3726](https://github.com/tutao/tutanota/issues/3726)
- - Leap Year Birthdays Default to 3/1/???? and not 2/29/???? [#3684](https://github.com/tutao/tutanota/issues/3684)
+# Milestone
+https://github.com/tutao/tutanota/milestone/200?closed=1
 
-# Milestones
-https://github.com/tutao/tutanota/milestone/198?closed=1
-https://github.com/tutao/tutanota/milestone/199?closed=1
-
-# Tar Checksum
-SHA256: d7f928249c07d827ef9905dc5e23e215f8f43a0eb3b23418ba9653375a02e4d0</releaseNotes>
+</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
