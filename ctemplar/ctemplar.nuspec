@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ctemplar</id>
-    <version>2.5.71</version>
+    <version>2.5.72</version>
     <title>CTemplar</title>
     <authors>Templar Software Systems Ltd.</authors>
     <owners>Adri</owners>
@@ -21,7 +21,7 @@ Our team is passionate about privacy and security. It is what we believe in and 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Armored Email. Because privacy is a human right worth fighting for!</summary>
-    <releaseNotes>`index.html` v2.5.71 SHA-256 CHECKSUM: 67a32b3b023a74cc42cbda84644577790ad367a83c53fdda8903c6cef84b94e0</releaseNotes>
+    <releaseNotes>`index.html` v2.5.72 SHA-256 CHECKSUM: 08934aeccb589dc951163828af0a844196eceaa54e1bf86f38738e2bbcaba251</releaseNotes>
     <tags>ctemplar mail security e2ee anonymous</tags>
     <projectSourceUrl>https://github.com/CTemplar/webclient</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/ctemplar</packageSourceUrl>
