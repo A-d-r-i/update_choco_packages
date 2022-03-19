@@ -1,0 +1,17 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official gitlab repository listed on <https://gitlab.com/famedly/fluffychat/-/releases>
+and can be verified like this:
+
+1. Download the following installer:
+  Version 1.3.0 : <https://gitlab.com/famedly/fluffychat/-/archive/v1.3.0/fluffychat-v1.3.0.zip>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: 
+  checksum: 684FB57FA20F6DE7985EF97864E8EE78B5899C53C877C76BE115D7DB7A9764EA
+
+File 'LICENSE.txt' is obtained from <https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE> 

@@ -3,9 +3,9 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = 'fluffychat'
-  checksum = '0E2BDDB9C346DE6157E413ABD478F7C4D87C615E55C2761794A938BCE27B1B7E'
+  checksum = '684FB57FA20F6DE7985EF97864E8EE78B5899C53C877C76BE115D7DB7A9764EA'
   checksumType = 'sha256'
-  Url = 'https://gitlab.com/famedly/fluffychat/-/archive/v1.2.0/fluffychat-v1.2.0.zip'
+  Url = 'https://gitlab.com/famedly/fluffychat/-/archive/v1.3.0/fluffychat-v1.3.0.zip'
   UnzipLocation = $toolsDir
 }
 
