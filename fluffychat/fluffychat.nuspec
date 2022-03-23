@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,42 +14,44 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.3.0 - 2022-02-12 
-FluffyChat 1.3.0 makes it possible to report offensive users to server admins (not only messages). It fixes the video player, improves Linux desktop notifications, and the stories design.  The button to create a new story is now in the app bar of the main page so that users who don't want to use this feature no longer have a whole list item pinned at the top of the chat list.  FluffyChat 1.3.0 is the first release with full null safe dart code. While this is a huge change under the hood, it should improve the stability and performance of the app. It also builds now with Flutter 2.10.  Thanks to all contributors and translators!! &lt;3  
- - Translated using Weblate (Arabic) (abidin toumi) 
+    <releaseNotes>## v1.3.1 - 2022-03-20 
+
+ - Allow app to be moved to external storage (Marcel) 
+ - Translated using Weblate (Arabic) (Mads Louis) 
+ - Translated using Weblate (Basque) (Sorunome) 
+ - Translated using Weblate (Basque) (—X—) 
  - Translated using Weblate (Chinese (Simplified)) (Eric) 
- - Translated using Weblate (Croatian) (Milo Ivir) 
- - Translated using Weblate (Czech) (Milan Korecky) 
+ - Translated using Weblate (Czech) (Sorunome) 
  - Translated using Weblate (Dutch) (Jelv) 
- - Translated using Weblate (Estonian) (Priit Jõerüüt) 
+ - Translated using Weblate (English) (Raatty) 
  - Translated using Weblate (French) (Anne Onyme 017) 
  - Translated using Weblate (Galician) (Xosé M) 
- - Translated using Weblate (German) (Christian) 
+ - Translated using Weblate (German) (Maciej Krüger) 
  - Translated using Weblate (Indonesian) (Linerly) 
+ - Translated using Weblate (Irish) (Graeme Power) 
+ - Translated using Weblate (Persian) (Anastázius Darián) 
  - Translated using Weblate (Russian) (Nikita Epifanov) 
  - Translated using Weblate (Swedish) (Joaquim Homrighausen) 
  - Translated using Weblate (Turkish) (Oğuz Ersen) 
  - Translated using Weblate (Ukrainian) (Ihor Hordiichuk) 
- - chore: Add missing link (Krille Fear) 
- - chore: Hide FAB story buttons on focus (Christian Pauly) 
- - chore: Set compileSdkVersion to 31 (Krille Fear) 
- - chore: Update SDK (Christian Pauly) 
+ - Update proguard rules to a more modern setup (MTRNord) 
+ - chore: Minor story viewer fixes (Krille Fear) 
+ - chore: Remove story line count and make answering to stories online (Krille Fear) 
  - chore: Update dependencies (Dependency Update Bot) 
- - chore: Update privacy (Krille Fear) 
- - chore: Upgrade to Flutter 2.10 (Christian Pauly) 
- - ci: Update olm download link (Krille Fear) 
- - design: Improve create story page design (Christian Pauly) 
- - design: Improve story header design (Krille Fear) 
- - design: Use IconButton instead of listTile for first story (Christian Pauly) 
- - feat: Add button to report offensive users to server admins (Christian Pauly) 
- - feat: Open chat button from Linux notification (Christian Pauly) 
- - feat: implement retreiving widgets (TheOneWithTheBraid) 
- - fix: Set image width and height (Christian Pauly) 
- - fix: Videoplayer filenames (Christian Pauly) 
- - fix: cast error in html messages (Jayesh Nirve) 
- - fix: linux snap notification avatar (Krille Fear) 
- - fix: suggestions menu and use empty map in html messages null return (Jayesh Nirve) 
- - refactor: Migrate to null safety (Krille Fear)  
+ - design: Make pinned events use less vertical space (Krille Fear) 
+ - feat: Extended stories (Krille Fear) 
+ - feat: Restrict map zoom to tile server capabilities (Marcel) 
+ - feat: implement keyboard shortcuts (TheOneWithTheBraid) 
+ - fix: Build on macOS (Krille Fear) 
+ - fix: Emojipicker issues (Krille Fear) 
+ - fix: Hide redacted stories (Krille Fear) 
+ - fix: Mark story as read (Krille Fear) 
+ - fix: Open room from notification click produces errors (Krille Fear) 
+ - fix: SSO on Android 12 (Krille Fear) 
+ - fix: Send read receipts on all taps (Krille Fear) 
+ - fix: make fluffy usable at 720 px wide (Raatty) 
+ - fix: Add forgotten sendOnEnter (Krille Fear) 
+ - refactor: Switch to just audio for playing sounds (Krille Fear)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
