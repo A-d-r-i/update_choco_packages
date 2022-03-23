@@ -24,12 +24,6 @@ $xml.Save($file)
 
 # download installer and LICENSE
 Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./tartube/tools/tartube64.exe"
-try {
-    $R = Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe" -OutFile "./tartube/tools/tartube32.exe"
-}
-catch {
-    $_.Exception.Message
-}
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./tartube/legal/LICENSE.txt"
 
 Remove-Item release.txt
@@ -37,9 +31,6 @@ Remove-Item release.txt
 # calculation of checksum
 $TABLE64 = Get-FileHash "./tartube/tools/tartube64.exe" -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
-
-$TABLE32 = Get-FileHash "./tartube/tools/tartube32.exe" -Algorithm SHA256
-$SHA32 = $TABLE32.Hash
 
 # writing of VERIFICATION.txt
 $content = "VERIFICATION
@@ -50,14 +41,12 @@ The installer have been downloaded from their official gitlab repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag 32 bits : <https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-32bit.exe>
   Version $tag 64 bits : <https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: 
-  checksum 32 bits: $SHA32
   checksum 64 bits: $SHA64
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> " | out-file -filepath ./tartube/legal/VERIFICATION.txt
