@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.3.367</version>
+    <version>2.3.447</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,20 +19,33 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
+# INSTALLERS
+- The installer for 32bit Windows has been retired. See the README for more details
+# MAJOR NEW FEATURES
+- Gtk stability issues have been resolved (hopefully). This means that, when checking or download videos, the Videos tab is updated in real time (without the need to switch between channels/playlists/folders to update them). This was actually Tartube's oldest unresolved issue
+- Tartube can now scan a YouTube channel for its playlists, and optionally add some or all of those playlists to Tartube's database. See the README for details of how it works (Git #[102](https://github.com/axcore/tartube/issues/102))
+- In the toolbar at the bottom of the Videos tab, you can now search for comments and video descriptions, as well as video names. (Don't forget to click the 'Show more settings' button, so that the full toolbar is visible). You can also search for comments within a specific video by right-clicking it, and selecting Show video &gt; Properties... &gt; Comments. Also improved the layout of that tab a little
+- In the Video tab's list, users will now see an icon for any channel/playlist/ folder for which checking/downloading has been disabled. This replaces the old system of names with italics and underlines, and it should be much clearer. The old system still applies when small icons are used (Git #[385](https://github.com/axcore/tartube/issues/385) and others)
+- When the user fetches a video's list of formats (by right-clicking the video and selecting Fetch &gt; Available formats), they will now see a new dialogue window inviting them to set download options, so the video can be downloaded in one of the available formats. There is also a new dialogue window when fetching a video's list of subtitles (Git #[369](https://github.com/axcore/tartube/issues/369))
+- Custom downloads now have the ability to download only videos with subtitles. In the Videos tab, you can see a new icon next to videos for which subtitles are available. (The new icon does not mean that subtitles have been downloaded.) Live chat replay on YouTube videos are treated the same way as subtitles, and can be downloaded
+- Users with a YouTube account can now import their subscriptions directly into Tartube's database. Click Media &gt; Import YouTube subscriptions..., and then follow the window's instructions
+- There are several situations in which a channel/playlist may be added to Tartube's database with a generic name (for example, after clicking Media &gt; Add many channels/playlists...). Tartube can now reset channel/ playlist names automatically, as long as one video in each has been checked/downloaded: click Media &gt; Reset channel/playlist names...
 # MINOR NEW FEATURES
-- MS Windows users have been reporting that FFmpeg cannot be installed any more; this release attempts to fix that issue (but I can't be sure that the fix will work)
-- In order to cope with yt-dlp spam, added some new ignorable warnings (see Edit &gt; System preferences... &gt; Windows &gt; Errors/Warnings)
-- In Edit &gt; System preferences &gt; Files &gt; URLs, there is a new button for opening a URL in your system's web browser. Also changed the layout of that tab to make it a little easier to understand
-# MAJOR FIXES
-- When the Tartube database was corrupted, on startup Tartube was unable to create temporary directories, so the application closes even before the main window is created. Fixed that, and also fixed the failure to show a dialogue window when a lock can't be placed on the database file
-- Fixed various issues when exporting/importing Tartube's database
-- Fixed inability to rename channels/playlists/folders under certain circumstances
-# MINOR FIXES
-- Fixed minor typos in various edit windows
-- When the downloader is yt-dlp and the user selects a custom executable, Tartube installs youtube-dl instead. Fixed (Git #[299](https://github.com/axcore/tartube/issues/299))
-- In the same situation (on MS Windows only), Tartube tries to execute an .exe file as if it were a Python script. Fixed (Git #[299](https://github.com/axcore/tartube/issues/299))
-- On MS Windows, user could not set an external download path for a channel or playlist. Fixed (Git #[329](https://github.com/axcore/tartube/issues/329))
-- Fixed inability to load databases from Tartrubr 
+- The download options window has been reorganised to clarify, especially to new users, how to download and then convert videos from one media format to another. The Classic Mode tab's layout has also been updated with the same aim in mind (Git #[383](https://github.com/axcore/tartube/issues/383))
+- In the download options window, Formats tab, you can now click the new small button next to the Add format button, in which you can type a media format number (e.g. [397](https://github.com/axcore/tartube/issues/397)) instead of scrolling through the list to find it
+- In the download options window, added the '--no-cookies' option and other related options to the new yt-dlp &gt; Cookies tab (Git #[378](https://github.com/axcore/tartube/issues/378))
+- On MS Windows, advanced users who wish to tweak the environment in which Tartube runs can now open the MSYS2 terminal window directly from Tartube's main menu. Tartube's installation folders can also be opened for inspection. Open the new System menu column to use them
+- In the Classic Mode tab, the buttons at the bottom of the tab have been rearranged. A new 'open destination' button has been added. The popup menu displayed by right-clicking items in the progress list has been expanded to duplicate the actions of those buttons
+- On MS Windows, when using yt-dlp, the download option '--windows-filenames' is now automatically applied if '--restrict-filenames' has not been applied
+- Updates to the MS Windows installer to improve various issues
+- The location of the archive file used by youtube-dl can now be fully customised. See Edit &gt; System preferences... &gt; Operations &gt; Archive. When re-downloading a video, Tartube no longer renames the archive file temporarily, just ignores it (Git #[299](https://github.com/axcore/tartube/issues/299))
+- The annoying 'Unable to download video thumbnail: HTTP
+# Error [404](https://github.com/axcore/tartube/issues/404): Not found' messages generated by yt-dlp are now filtered out by default; they can be re-enabled in Edit &gt; System preferences... &gt; Windows &gt; Errors/Warnings
+- On systems that permit it, the main window's icon in the taskbar is now a different colour to the icon used by other Tartube windows
+- During a custom download, if videos are checked before being downloaded individually, you can now right-click any video in the Progress tab to skip the checking phase
+- The standard error and warning icons have been tweaked to make it easier to tell them apart
+- On MS Windows, the setup wizard window now warns users about the size of the youtube-dl/FFmpeg downloads (in case they are installing Tartube on a small device, such as a pen drive)
+- When Tartube loads a database file, it performs various checks. If the checks fail, the file cannot be loaded. There is a new option to extract a list of channels/playlists from a database file that cannot be loaded, as long as the file is not actually corrupted. Click File &gt; Database preferences... &gt; Dump database to JSON. The JSON file can be re-imported into any other database in the normal way. Note that, due to python issues, it is not possible to load or dump any database from Tartube 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
     <projectSourceUrl>https://github.com/axcore/tartube</projectSourceUrl>
