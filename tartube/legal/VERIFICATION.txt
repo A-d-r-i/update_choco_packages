@@ -1,6 +1,17 @@
 VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
- 
-Any binaries will be identical to other package types published by the project, in particular
-the tartube32/64.exe file. It is directly downloaded from the project's github repository.
+
+The installer have been downloaded from their official gitlab repository listed on <https://github.com/axcore/tartube/releases/>
+and can be verified like this:
+
+1. Download the following installer:
+  Version 2.3.447 64 bits : <https://github.com/axcore/tartube/releases/download/v2.3.447/install-tartube-2.3.447-64bit.exe>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: 
+  checksum 64 bits: FDD736C08D4A0E95351520B30AE056650F10C5788AEA149E4164A6D6F35AC698
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> 
