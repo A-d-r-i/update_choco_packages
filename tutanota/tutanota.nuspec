@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.94.1</version>
+    <version>3.94.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -19,15 +19,11 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
     <releaseNotes># Bugfixes
  - No user can be created if it does not change the overall price [#3946](https://github.com/tutao/tutanota/issues/3946)
  - Contact form can not be deleted after deactivating whitelabel [#3747](https://github.com/tutao/tutanota/issues/3747)
-
-# Other
-- Update Electron to 17.1.2 
-
+ - Show buy dialog when there is no price change. [#3949](https://github.com/tutao/tutanota/issues/3949)
+ - 
 # Milestone
 https://github.com/tutao/tutanota/milestone/202?closed=1
 
-# TAR Checksum
-SHA256: 067554e62a5079ef49175ea8ad1dea66480630daba8126cb2ca20f5e3080c184
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
