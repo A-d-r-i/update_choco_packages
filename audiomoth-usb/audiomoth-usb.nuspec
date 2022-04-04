@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>audiomoth-usb</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>AudioMoth USB Microphone App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,11 +15,11 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth-USB-Microphone firmware.</summary>
-    <releaseNotes>* Initial release</releaseNotes>
+    <releaseNotes>* Added support for low gain range</releaseNotes>
     <tags>audiomoth-usb audiomoth usb-microphone-app microphone openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-usb</packageSourceUrl>
-<!-- <docsUrl></docsUrl> -->
+    <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/issues</bugTrackerUrl>
   </metadata>
 </package>
