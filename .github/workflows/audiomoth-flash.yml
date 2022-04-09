@@ -1,7 +1,7 @@
 name: AUDIOMOTH-FLASH
 
 on:
-  schedule:
+  #schedule:
     #- cron:  '10 */6 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

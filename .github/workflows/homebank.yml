@@ -1,7 +1,7 @@
 name: HOMEBANK
 
 on:
-  schedule:
+  #schedule:
     #- cron:  '25 */6 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
