@@ -2,7 +2,7 @@ name: AUDIOMOTH-USB
 
 on:
   schedule:
-    - cron:  '5 */6 * * *'
+    #- cron:  '5 */6 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

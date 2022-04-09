@@ -1,0 +1,331 @@
+name: UPDATE-ALL
+
+on:
+  schedule:
+    - cron:  '0 */6 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+    CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+    ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+    PST_KEY: ${{ secrets.PST_KEY }}
+    PST_SECRET: ${{ secrets.PST_SECRET }}
+    PST_TOKEN: ${{ secrets.PST_TOKEN }}
+    PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+    TELEGRAM: ${{ secrets.TELEGRAM }}
+    CHAT_ID: ${{ secrets.CHAT_ID }}
+
+jobs:
+  UPDATE-ALL:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - shell: pwsh
+        run: choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+          
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: -h
+
+      - name: AUDIOMOTH-CONFIG
+        run:  |
+          $Version = ([xml](Get-Content ./audiomoth-config/audiomoth-config.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_audiomoth-config.ps1
+          }
+
+      - name: AUDIOMOTH-FLASH
+        run:  |
+          $Version = ([xml](Get-Content ./audiomoth-flash/audiomoth-flash.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Flash-App/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_audiomoth-flash.ps1
+          }
+        
+      - name: AUDIOMOTH-TIME
+        run:  |
+          $Version = ([xml](Get-Content ./audiomoth-time/audiomoth-time.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Time-App/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_audiomoth-time.ps1
+          }
+        
+      - name: AUDIOMOTH-USB
+        run:  |
+          $Version = ([xml](Get-Content ./audiomoth-usb/audiomoth-usb.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_audiomoth-usb.ps1
+          }
+        
+      - name: CTEMPLAR
+        run:  |
+          $Version = ([xml](Get-Content ./ctemplar/ctemplar.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/CTemplar/webclient/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_ctemplar.ps1
+          }
+        
+      - name: DOTBROWSER
+        run:  |
+          $Version = ([xml](Get-Content ./dotbrowser/dotbrowser.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].tag_name
+          
+          $tagalpha = $tag -replace '([0-9]*\.[0-9]+)-([0-9]{4})-([0-9]{2})-([0-9]{2})', '$1.$2$3$4'
+          $tagalpha = -join($tagalpha,"-alpha");
+          
+          echo $Version
+          echo $tagalpha
+          
+          if ( $tagalpha -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_dotbrowser.ps1
+          }
+        
+      - name: FIREDM
+        run:  |
+          $Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_firedm.ps1
+          }
+        
+      - name: FLUFFYCHAT
+        run:  |
+          $Version = ([xml](Get-Content ./fluffychat/fluffychat.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
+          $tag = $tag -replace 'v'          
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_fluffychat.ps1
+          }
+        
+      - name: HOMEBANK
+        run:  |
+          $Version = ([xml](Get-Content ./homebank/homebank.nuspec)).package.metadata.version
+          Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"          
+          $Source = Get-Content -path HOMEBANK.html -raw
+          $Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
+          $tag = $matches[1]
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          Remove-Item HOMEBANK.html
+          }
+          else
+          {
+          ./send_homebank.ps1
+          Remove-Item HOMEBANK.html
+          }
+        
+      - name: L0PHTCRACK
+        run:  |
+          $Version = ([xml](Get-Content ./l0phtcrack/l0phtcrack.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/28508791/releases" | ConvertFrom-Json)[0].tag_name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_l0phtcrack.ps1
+          }
+        
+      - name: RAVEN
+        run:  |
+          $Version = ([xml](Get-Content ./raven/raven.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = $tag -replace 'v'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_raven.ps1
+          }
+        
+      - name: SENGI
+        run:  |
+          $Version = ([xml](Get-Content ./sengi/sengi.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" | ConvertFrom-Json)[0].tag_name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_sengi.ps1
+          }
+        
+      - name: TARTUBE
+        run:  |
+          $Version = ([xml](Get-Content ./tartube/tartube.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = $tag -replace 'v'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_tartube.ps1
+          }
+        
+      - name: TUTANOTA
+        run:  |
+          $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = $tag -replace ' \(Desktop\)'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          ./send_tutanota.ps1
+          }
+        
+      - name: MENDELEY-RM
+        run:  |
+          $Version = ([xml](Get-Content ./mendeley-reference-manager/mendeley-reference-manager.nuspec)).package.metadata.version
+          Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
+          $Source = Get-Content -path MRM.html -raw
+          $Source -match 'https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.([a-z\d]*).js'
+          $Sourceurl = $matches[1]
+          
+          Invoke-WebRequest -Uri "https://static.mendeley.com/md-stitch/releases/live/release-notes-reference-manager.$Sourceurl.js" -OutFile "MRM.txt"
+          $Source = Get-Content -path MRM.txt -raw
+          $Source -match 'title:"Mendeley Reference Manager v([0-9]+(\.[0-9]+)+)"'
+          $tag = $matches[1]
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          Remove-Item MRM.txt
+          Remove-Item MRM.html
+          }
+          else
+          {
+          ./send_mendeley-reference-manager.ps1
+          }
+        
+      - name: OPEN-VIDEO-DOWNLOADER
+        run:  |
+          $Version = ([xml](Get-Content ./open-video-downloader/open-video-downloader.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = $tag -replace 'v'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          #run script
+          ./send_open-video-downloader.ps1
+          }
