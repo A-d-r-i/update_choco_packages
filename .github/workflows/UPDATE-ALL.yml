@@ -1,4 +1,4 @@
-name: UPDATE-ALL
+name: UPDATE-ALL-PACKAGES
 
 on:
   schedule:
@@ -22,15 +22,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - shell: pwsh
-        name: Define choco key
+        name: Set choco key
         run: choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
-          
-      #- name: Chocolatey
-        #uses: crazy-max/ghaction-chocolatey@v1
-        #with:
-          #args: -h
 
       - name: AUDIOMOTH-CONFIG
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-config/audiomoth-config.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" | ConvertFrom-Json)[0].name
@@ -49,6 +45,7 @@ jobs:
           }
 
       - name: AUDIOMOTH-FLASH
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-flash/audiomoth-flash.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Flash-App/releases/latest" | ConvertFrom-Json)[0].name
@@ -66,6 +63,7 @@ jobs:
           }
         
       - name: AUDIOMOTH-TIME
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-time/audiomoth-time.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Time-App/releases/latest" | ConvertFrom-Json)[0].name
@@ -83,6 +81,7 @@ jobs:
           }
         
       - name: AUDIOMOTH-USB
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-usb/audiomoth-usb.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/latest" | ConvertFrom-Json)[0].name
@@ -101,6 +100,7 @@ jobs:
           }
         
       - name: CTEMPLAR
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./ctemplar/ctemplar.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/CTemplar/webclient/releases/latest" | ConvertFrom-Json)[0].name
@@ -118,6 +118,7 @@ jobs:
           }
         
       - name: DOTBROWSER
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./dotbrowser/dotbrowser.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].tag_name
@@ -139,6 +140,7 @@ jobs:
           }
         
       - name: FIREDM
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
@@ -156,6 +158,7 @@ jobs:
           }
         
       - name: FLUFFYCHAT
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./fluffychat/fluffychat.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
@@ -174,6 +177,7 @@ jobs:
           }
         
       - name: HOMEBANK
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./homebank/homebank.nuspec)).package.metadata.version
           Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"          
@@ -196,6 +200,7 @@ jobs:
           }
         
       - name: L0PHTCRACK
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./l0phtcrack/l0phtcrack.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/28508791/releases" | ConvertFrom-Json)[0].tag_name
@@ -214,6 +219,7 @@ jobs:
           }
         
       - name: RAVEN
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./raven/raven.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
@@ -232,6 +238,7 @@ jobs:
           }
         
       - name: SENGI
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./sengi/sengi.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" | ConvertFrom-Json)[0].tag_name
@@ -250,6 +257,7 @@ jobs:
           }
         
       - name: TARTUBE
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./tartube/tartube.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
@@ -268,6 +276,7 @@ jobs:
           }
         
       - name: TUTANOTA
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
@@ -286,6 +295,7 @@ jobs:
           }
         
       - name: MENDELEY-RM
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./mendeley-reference-manager/mendeley-reference-manager.nuspec)).package.metadata.version
           Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
@@ -313,6 +323,7 @@ jobs:
           }
         
       - name: OPEN-VIDEO-DOWNLOADER
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./open-video-downloader/open-video-downloader.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
