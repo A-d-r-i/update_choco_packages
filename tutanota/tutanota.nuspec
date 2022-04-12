@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.94.5</version>
+    <version>3.94.9</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,13 +16,14 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Clicking on bottom of text input field does nothing [#3896](https://github.com/tutao/tutanota/issues/3896)
- - Comment field in contact viewer is not selectable [#3895](https://github.com/tutao/tutanota/issues/3895)
- - Importing event with same start and end time is considered as multi day event. [#3764](https://github.com/tutao/tutanota/issues/3764)
+    <releaseNotes># What's new
+ - Handle connection errors [#3813](https://github.com/tutao/tutanota/issues/3813)
+ 
+# Bugfixes
+ - Attachments are opened in the same tab as the web client in firefox [#3983](https://github.com/tutao/tutanota/issues/3983)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/203?closed=1
+https://github.com/tutao/tutanota/milestone/204?closed=1
 
 </releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
