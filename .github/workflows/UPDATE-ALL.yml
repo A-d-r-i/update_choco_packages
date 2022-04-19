@@ -142,20 +142,20 @@ jobs:
       - name: FIREDM
         if: always()
         run:  |
-          $Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
+          #$Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
+          #$tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
+          echo 'FireDM is unable to find on github'
+          #echo $Version
+          #echo $tag
           
-          echo $Version
-          echo $tag
-          
-          if ( $tag -eq $Version )
-          {
-          echo 'Last version already exist'
-          }
-          else
-          {
-          ./send_firedm.ps1
-          }
+          #if ( $tag -eq $Version )
+          #{
+          #echo 'Last version already exist'
+          #}
+          #else
+          #{
+          #./send_firedm.ps1
+          #}
         
       - name: FLUFFYCHAT
         if: always()
