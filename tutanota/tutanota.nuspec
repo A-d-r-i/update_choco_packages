@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.94.9</version>
+    <version>3.95.4</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,15 +17,10 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Handle connection errors [#3813](https://github.com/tutao/tutanota/issues/3813)
- 
-# Bugfixes
- - Attachments are opened in the same tab as the web client in firefox [#3983](https://github.com/tutao/tutanota/issues/3983)
+Upgrades to improve performance in the mid term and to ensure compatibility with new Tutanota server versions.
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/204?closed=1
-
-</releaseNotes>
+https://github.com/tutao/tutanota/milestone/205?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
