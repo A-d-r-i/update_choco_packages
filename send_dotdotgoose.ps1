@@ -1,14 +1,13 @@
 # extract latest version and release
-$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox
 
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "DDG.html"
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -UserAgent $userAgent -OutFile "release.html"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "release.html"
 $Source = Get-Content -path DDG.html
 $text = Get-Content -path release.html
 $Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
 $tag = $matches[1]
 
-#$tag = "1.5.2"
+# $tag = "1.5.3"
 
 $pattern = '<ul class="local-list"> <li>(.*?)</li> </ul> </li>'
 $result = [regex]::match($text, $pattern).Groups[1].Value
@@ -29,7 +28,7 @@ $xml.package.metadata.releaseNotes = "$release"# https://biodiversityinformatics
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -UserAgent $userAgent -OutFile "dotdotgoose.zip"
+Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win" -OutFile "dotdotgoose.zip"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/persts/DotDotGoose/master/LICENSE" -OutFile "./dotdotgoose/legal/LICENSE.txt"
 
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
