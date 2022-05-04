@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotdotgoose</id>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <title>DotDotGoose</title>
     <authors>Peter Ersts</authors>
     <owners>Adri</owners>
@@ -19,7 +19,11 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>DotDotGoose is a free, open source tool to assist with manually counting objects in images </summary>
-    <releaseNotes> https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ </releaseNotes>
+    <releaseNotes>2022-01-03 - version 1.5.3
+* (**Enhancement**) Packaged for OSX 12.0 (Monterey - Apple M1 Chip).
+* (**Bug Fix**) Prevent crash when importing classes and custom fields after images have been loaded.
+
+**Full changelog:** [https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/) </releaseNotes>
     <tags>dotdotgoose tool counting object image</tags>
     <projectSourceUrl>https://github.com/persts/DotDotGoose</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/dotdotgoose</packageSourceUrl>
