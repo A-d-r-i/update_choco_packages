@@ -9,6 +9,7 @@ $Source = Get-Content -path MRM.txt -raw
 $Source -match 'page:new URL\([a-z]\),path:"/v([0-9]+(\.[0-9]+)+)"'
 $tag = $matches[1]
 
+# release notes
 $Sourcerelease = Get-Content -path MRM.txt -raw
 $Sourcerelease -match 'path:"/v([0-9]+(\.[0-9]+)+)"'
 $path = $matches[1]
@@ -18,9 +19,10 @@ $daterelease = -join($daterelease, "_v");
 $idrelease = $matches[2]
 $URLrelease = "https://static.mendeley.com/md-stitch/releases/live/$daterelease$path.$idrelease.html"
 
+Install-Module -Name MarkdownPrince
 Invoke-WebRequest -Uri "$URLrelease" -OutFile "MRM.html"
-$release = Get-Content -path MRM.html -raw
-$release = $release -replace '<div class="content_item">', ''
+ConvertFrom-HTMLToMarkdown -Path "MRM.html" -UnknownTags Drop -GithubFlavored -DestinationPath "MRM.md"
+$release = Get-Content -path MRM.md -raw
 $release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$path) ");
 
 # write new version and release
@@ -36,6 +38,7 @@ Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-referen
 
 Remove-Item MRM.txt
 Remove-Item MRM.html
+Remove-Item MRM.md
 
 # calculation of checksum
 $TABLE = Get-FileHash "./mendeley-reference-manager/tools/mendeley-reference-manager.exe" -Algorithm SHA256
