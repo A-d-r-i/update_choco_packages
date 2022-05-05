@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.95.4</version>
+    <version>3.96.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,11 +16,14 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
-Upgrades to improve performance in the mid term and to ensure compatibility with new Tutanota server versions.
+    <releaseNotes># Bugfixes
+- Hard-to-execute XSS vulnerability in Firefox: https://tutanota.com/blog/posts/user-reported-security-fix
+ - Uploading with slow connection fails on Android [#4035](https://github.com/tutao/tutanota/issues/4035)
+ - Some editor dialogs get closed if a connection error occurs [#4025](https://github.com/tutao/tutanota/issues/4025)
+ - LazyLoaded gets stuck with a ConnectionError even after connection is restored [#3995](https://github.com/tutao/tutanota/issues/3995)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/205?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/206?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
