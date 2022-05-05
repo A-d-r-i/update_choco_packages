@@ -44,7 +44,7 @@ jobs:
           ./send_audiomoth-config.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
 
@@ -67,7 +67,7 @@ jobs:
           ./send_audiomoth-flash.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -90,7 +90,7 @@ jobs:
           ./send_audiomoth-time.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -113,7 +113,7 @@ jobs:
           ./send_audiomoth-usb.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -136,7 +136,7 @@ jobs:
           ./send_ctemplar.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -162,7 +162,7 @@ jobs:
           ./send_dotbrowser.ps1
           #} else {
           #echo 'The version number is not in the correct format'
-          #exit 1
+          ##exit 1
           #}
           }
         
@@ -185,7 +185,7 @@ jobs:
           #./send_firedm.ps1
           #} else {
           #echo 'The version number is not in the correct format'
-          #exit 1
+          ##exit 1
           #}
           #}
         
@@ -209,7 +209,7 @@ jobs:
           ./send_fluffychat.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -237,7 +237,7 @@ jobs:
           Remove-Item HOMEBANK.html
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -260,7 +260,7 @@ jobs:
           ./send_l0phtcrack.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -284,7 +284,7 @@ jobs:
           ./send_raven.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -307,7 +307,7 @@ jobs:
           ./send_sengi.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -331,7 +331,7 @@ jobs:
           ./send_tartube.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -355,7 +355,7 @@ jobs:
           ./send_tutanota.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -388,7 +388,7 @@ jobs:
           ./send_mendeley-reference-manager.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
         
@@ -412,7 +412,7 @@ jobs:
           ./send_open-video-downloader.ps1
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
 
@@ -440,6 +440,6 @@ jobs:
           Remove-Item DDG.html
           } else {
           echo 'The version number is not in the correct format'
-          exit 1
+          #exit 1
           }
           }
