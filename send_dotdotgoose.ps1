@@ -14,9 +14,9 @@ $result = [regex]::match($text, $pattern).Groups[1].Value
 
 $release = $result -replace ' <ul class="local-list"> <li>', "`n* "
 $release = $release -replace '</li> <li>', "`n* "
-$release = $release -replace '(Enhancement)', '**Enhancement**'
-$release = $release -replace '(Bug Fix)', '**Bug Fix**'
-$release = $release -replace '(Bug Fixed)', '**Bug Fixed**'
+$release = $release -replace '\(Enhancement\)', '**Enhancement** -'
+$release = $release -replace '\(Bug Fix\)', '**Bug Fix** -'
+$release = $release -replace '\(Bug Fixed\)', '**Bug Fixed** -'
 $release = -join($release, "`n`n**Full changelog:** [https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/) ");
 
 # write new version and release
@@ -34,9 +34,10 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/persts/DotDotGoose/mas
 Expand-Archive dotdotgoose.zip -DestinationPath .\dotdotgoose\tools\ -Force
 
 Remove-Item dotdotgoose.zip
+
 # calculation of checksum
-#$TABLE = Get-FileHash "./dotdotgoose/tools/dotdotgoose.zip -Algorithm SHA256
-#$SHA = $TABLE.Hash
+$TABLE = Get-FileHash "./dotdotgoose/tools/DotDotGoose.exe" -Algorithm SHA256
+$SHA = $TABLE.Hash
 
 # writing of VERIFICATION.txt
 $content = "VERIFICATION
