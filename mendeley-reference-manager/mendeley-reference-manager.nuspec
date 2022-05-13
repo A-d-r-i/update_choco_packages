@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.69.0</version>
+    <version>2.71.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -17,9 +17,27 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
-    <releaseNotes>&lt;h2&gt;Mendeley Reference Manager v2.69&lt;/h2&gt; &lt;p&gt;We have&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Added a menu option on individual pages within the Notebook, from here you can delete specific Notebook pages&lt;/li&gt; &lt;li&gt;Fixed an issue where the location of the cursor would jump when attempting to edit general notes&lt;/li&gt; &lt;li&gt;Fixed several user interface issues with the search within filters&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;Support&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;If you encounter any problems using Mendeley or have questions to ask please &lt;a href="https://www.mendeley.com/contact-support/" title="Contact support"&gt;contact our support team&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;For news and updates about Mendeley see &lt;a href="http://blog.mendeley.com/"&gt;our blog&lt;/a&gt;.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Released: 19 April 2022&lt;/p&gt; &lt;/div&gt;
+    <releaseNotes>
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.69.0](https://www.mendeley.com/release-notes-reference-manager/v2.69.0) </releaseNotes>
+## Mendeley Reference Manager v2.71.0
+ 
+We have:
+ 
+- Moved the delete and open PDF functions on attached files to a new right-click context menu.
+
+ 
+## Support
+ 
+If you encounter any problems using Mendeley or have questions to ask please [contact our support team](https://www.mendeley.com/contact-support/ "Contact support").
+ 
+For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
+ 
+Released: 2022-05-11
+ 
+
+
+
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.71.0](https://www.mendeley.com/release-notes-reference-manager/v2.71.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
