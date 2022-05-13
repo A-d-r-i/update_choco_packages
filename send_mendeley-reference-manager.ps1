@@ -19,7 +19,7 @@ $daterelease = -join($daterelease, "_v");
 $idrelease = $matches[2]
 $URLrelease = "https://static.mendeley.com/md-stitch/releases/live/$daterelease$path.$idrelease.html"
 
-Install-Module -Name MarkdownPrince
+Install-Module -Name MarkdownPrince -Force
 Invoke-WebRequest -Uri "$URLrelease" -OutFile "MRM.html"
 ConvertFrom-HTMLToMarkdown -Path "MRM.html" -UnknownTags Drop -GithubFlavored -DestinationPath "MRM.md"
 $release = Get-Content -path MRM.md -raw
