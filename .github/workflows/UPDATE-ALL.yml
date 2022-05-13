@@ -317,6 +317,7 @@ jobs:
           $Version = ([xml](Get-Content ./tartube/tartube.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
           $tag = $tag -replace 'v'
+          $name = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -328,7 +329,9 @@ jobs:
           else
           {
           if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ( $name -eq "Stable release" ) {
           ./send_tartube.ps1
+          }
           } else {
           echo 'The version number is not in the correct format'
           #exit 1
