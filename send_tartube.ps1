@@ -46,7 +46,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum 64 bits: $SHA64
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> " | out-file -filepath ./tartube/legal/VERIFICATION.txt

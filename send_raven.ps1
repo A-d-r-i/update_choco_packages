@@ -36,7 +36,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum: $SHA
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/hello-efficiency-inc/raven-reader/master/LICENSE> " | out-file -filepath ./raven/legal/VERIFICATION.txt

@@ -32,7 +32,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum: $SHA
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/master/LICENSE> " | out-file -filepath ./audiomoth-usb/legal/VERIFICATION.txt

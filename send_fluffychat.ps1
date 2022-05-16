@@ -61,7 +61,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum: $SHA
 
 File 'LICENSE.txt' is obtained from <https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE> " | out-file -filepath ./fluffychat/legal/VERIFICATION.txt

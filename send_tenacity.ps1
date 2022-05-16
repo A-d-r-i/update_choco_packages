@@ -77,7 +77,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum 32 bits: $SHA32
   checksum 64 bits: $SHA64
 
