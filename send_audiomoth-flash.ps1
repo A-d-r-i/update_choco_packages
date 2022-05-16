@@ -31,7 +31,7 @@ and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
+  checksum type: SHA256
   checksum: $SHA
 
 File 'LICENSE.txt' is obtained from <https://www.openacousticdevices.info/license> " | out-file -filepath ./audiomoth-flash/legal/VERIFICATION.txt
