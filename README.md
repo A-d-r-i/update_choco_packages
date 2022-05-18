@@ -29,6 +29,7 @@ Here are deposited:
 |**HomeBank**|Every 2 hours|✅|✅|[Link](homebank.free.fr)|[Link](https://community.chocolatey.org/packages/homebank)|
 |**Mendeley Reference Manager**|Every 2 hours|✅|✅|[Link](https://www.mendeley.com/reference-management/reference-manager)|[Link](https://community.chocolatey.org/packages/mendeley-reference-manager)|
 |**FluffyChat**|Every 2 hours|✅|✅|[Link](https://fluffychat.im/)|[Link](https://community.chocolatey.org/packages/fluffychat)|
+|**FireDM**|Unmaintained [^1]|❌|❌|[Link](https://github.com/firedm)|[Link](https://community.chocolatey.org/packages/firedm)|
 |**CTemplar**|Every 2 hours|✅|✅|[Link](https://ctemplar.com)|[Link](https://community.chocolatey.org/packages/ctemplar)|
 |**Raven Reader**|Every 2 hours|✅|✅|[Link](https://ravenreader.app)|[Link](https://community.chocolatey.org/packages/raven)|
 |**Sengi**|Every 2 hours|✅|✅|[Link](https://nicolasconstant.github.io/sengi)|[Link](https://community.chocolatey.org/packages/sengi)|
@@ -36,10 +37,11 @@ Here are deposited:
 |**Open Video Downloader**|Every 2 hours|✅|✅|[Link](https://jely2002.github.io/youtube-dl-gui/)|[Link](https://community.chocolatey.org/packages/open-video-downloader)|
 |**Dot Browser** (*Alpha*)|Every 2 hours|✅|✅|[Link](https://www.dothq.co/)|[Link](https://community.chocolatey.org/packages/dotbrowser)|
 |**Tutanota**|Every 2 hours|✅|✅|[Link](https://tutanota.com)|[Link](https://community.chocolatey.org/packages/tutanota)|
-|**DotDotGoose**|Every 2 hours & Manually [^1]|✅|✅|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|[Link](https://community.chocolatey.org/packages/dotdotgoose)|
-|**Tenacity Audio Editor**|Manually [^2]|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
+|**DotDotGoose**|Every 2 hours & Manually [^2]|✅|✅|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|[Link](https://community.chocolatey.org/packages/dotdotgoose)|
+|**Tenacity Audio Editor**|Manually [^3]|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
 
-[^1]: *DotDotGoose - [Issue 10](https://github.com/A-d-r-i/update_choco_package/issues/10)*  
-[^2]: *Tenacity is still under development without release. So the update must be done manually.*
+[^1]: *FireDM* - Not longer maintained by his creators ([GitHub](https://github.com/firedm))
+[^2]: *DotDotGoose - [Issue 10](https://github.com/A-d-r-i/update_choco_package/issues/10)*  
+[^3]: *Tenacity is still under development without release. So the update must be done manually.*
 
 ![update_choco_packages-3](https://user-images.githubusercontent.com/27277698/134149155-45a89285-542a-4bc8-a9d3-83ce57dc5fe9.png)
