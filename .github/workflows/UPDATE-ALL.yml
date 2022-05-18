@@ -171,7 +171,7 @@ jobs:
         run:  |
           #$Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
           #$tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
-          echo 'FireDM is unable to find on github'
+          echo 'FireDM is unmaintained on GitHub'
           #echo $Version
           #echo $tag
           
