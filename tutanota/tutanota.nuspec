@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.96.1</version>
+    <version>3.96.6</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,14 +16,37 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
-- Hard-to-execute XSS vulnerability in Firefox: https://tutanota.com/blog/posts/user-reported-security-fix
- - Uploading with slow connection fails on Android [#4035](https://github.com/tutao/tutanota/issues/4035)
- - Some editor dialogs get closed if a connection error occurs [#4025](https://github.com/tutao/tutanota/issues/4025)
- - LazyLoaded gets stuck with a ConnectionError even after connection is restored [#3995](https://github.com/tutao/tutanota/issues/3995)
+    <releaseNotes># What's new
+ -  Update electron  [#4140](https://github.com/tutao/tutanota/issues/4140)
+ - Remove RSA signing code and tests for it [#4084](https://github.com/tutao/tutanota/issues/4084)
+ - Add Belarusian language [#4004](https://github.com/tutao/tutanota/issues/4004)
+ - Only store required/desired data in offline cache [#3992](https://github.com/tutao/tutanota/issues/3992)
+ - Offline login process [#3888](https://github.com/tutao/tutanota/issues/3888)
+ - Offline indicator [#3815](https://github.com/tutao/tutanota/issues/3815)
+
+# Bugfixes
+ - Title in agenda view is hard to understand. Thanks to @Jlll1 for this one! [#3564](https://github.com/tutao/tutanota/issues/3564)
+ - Canceling subscription downgrade does not work [#4180](https://github.com/tutao/tutanota/issues/4180)
+ - On mobile platforms, the offline indicator gets rendered next to the injected view [#4178](https://github.com/tutao/tutanota/issues/4178)
+ - search does not work in offline [#4168](https://github.com/tutao/tutanota/issues/4168)
+ - Retry button in mail list breaks if pressed before reconnect [#4165](https://github.com/tutao/tutanota/issues/4165)
+ - [offline] User doesn't get updated in cache when downgrading [#4162](https://github.com/tutao/tutanota/issues/4162)
+ - If premium user downgrade to free, the timerange is not reset [#4159](https://github.com/tutao/tutanota/issues/4159)
+ - Signup doesn't work [#4156](https://github.com/tutao/tutanota/issues/4156)
+ - Free user gets same time range for offline data as premium user when using same dektop client [#4155](https://github.com/tutao/tutanota/issues/4155)
+ - Add spam rule dialog regression [#4152](https://github.com/tutao/tutanota/issues/4152)
+ - offline login fails for saved credentials that already have offline storage enabled [#4150](https://github.com/tutao/tutanota/issues/4150)
+ - Mobile offline indicator might not fit all text [#4148](https://github.com/tutao/tutanota/issues/4148)
+ - Unexpected clipping/margin for folder column in mobile view [#4147](https://github.com/tutao/tutanota/issues/4147)
+ - Websocket might try to reconnect before being logged in [#4143](https://github.com/tutao/tutanota/issues/4143)
+ - [offline] database is not closed if you only do partial login [#4116](https://github.com/tutao/tutanota/issues/4116)
+ - MailBody doesn't show when loading a partially cleared list [#4079](https://github.com/tutao/tutanota/issues/4079)
+ - Update operations (e.g. marking email unread) fail with error offline because we can't encrypt entities [#4078](https://github.com/tutao/tutanota/issues/4078)
+ - Fix out of sync handling [#4067](https://github.com/tutao/tutanota/issues/4067)
+ - Missleading message in shared calendar [#3762](https://github.com/tutao/tutanota/issues/3762) 
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/206?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/207?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
