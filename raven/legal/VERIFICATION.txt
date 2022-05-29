@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.0.72 : <https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.72/Raven-Reader-Setup-1.0.72.exe>
+  Version 1.0.73 : <https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.73/Raven-Reader-Setup-1.0.73.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
-  checksum: 9B552A4848152C4F862AB0327FB54EC934AFA888C1AC7C9C37579C3CC9C91CFD
+  checksum type: SHA256
+  checksum: 692503BFA7951FBEA26B01F8CD9769E57ECE2E5CFDAD7033D53CB4DA42F2DC56
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/hello-efficiency-inc/raven-reader/master/LICENSE> 
