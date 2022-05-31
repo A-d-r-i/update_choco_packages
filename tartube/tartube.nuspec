@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.4.0</version>
+    <version>2.4.065</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -20,34 +20,35 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
 # MAJOR NEW FEATURES
-- YouTube Stream Converter has been deprecated, so Tartube no longer supports it. Instead, Tartube now offers livestream downloads using streamlink (https://streamlink.github.io/) or with the video's .m3u manifest
-- Livestream detection now works on Odysee and Twitch, as well as on YouTube. Detection should work on other websites, if you set the RSS feed for the channel and playlist manually (see the README for details)
-- In the toolbar at the bottom of the Videos tab, you can now filter out downloaded videos, or undownloaded videos. These settings are ignored when a text search/filter is applied; in that situation, the buttons are now greyed out for clarity (Git #[402](https://github.com/axcore/tartube/issues/402))
+- In the Videos tab, you can mark one or more channels/playlists/folders to be downloaded by clicking the checkbuttons next to their names. Tartube can now remember which items have been marked, storing them in a profile: in the main menu, click Media &gt; Profiles &gt; Create profile. You can create as many profiles as you like, and switch between them whenever you like. See the README for more information (Git #[409](https://github.com/axcore/tartube/issues/409))
+- During a download, you can now right-click a channel, playlist or folder to add it to the download; previously, the menu item was greyed out (Git #[430](https://github.com/axcore/tartube/issues/430))
 # MINOR NEW FEATURES
-- When videos are being checked/downloaded, you can now see the amount of free disk space in the bottom-left corner of the Videos tab
-- Added the youtube-dl download options '--no-overwrites', settable from the edit window (Git #[398](https://github.com/axcore/tartube/issues/398))
-- Videos with enormous names, but without any space characters, created a tooltip that was longer than the Tartube window itself. Updated line- wrapping code generally, so that it will wrap on underline (underscore) characters, as well as on whitespace
-- Column headers in the Errors/Warnings tab are now resizeable (Git #[403](https://github.com/axcore/tartube/issues/403))
-- There is now a setting to remove a video from Tartube's database after a certain number of days, complementing the existing setting to delete the video entirely from the user's filesystem. See Edit &gt; System preferences... &gt; Files &gt; Videos. The minimum value is now 0, so users can remove a downloaded video from the database as soon as it has been downloaded, if they want to (Git #[404](https://github.com/axcore/tartube/issues/404))
-- In the download options window, Files &gt; File names tab, the 'autonumber' component has been replaced with 'video_autonumber' and 'playlist_autonumber' components, on the advice of the yt-dlp developers (Git #[406](https://github.com/axcore/tartube/issues/406))
+- During Tartube installation, the user is now prompted to choose how often their database file should be backed up. The default setting has also been changed to 'every time' (Git #[427](https://github.com/axcore/tartube/issues/427))
+- When the user deletes videos, they will now see a prompt asking for confirmation. The user can choose between removing the video from the database, and deleting the video from the filesystem completely. A comparable prompt already appeared when deleting channels, playlists and folders. In all cases, there is now an 'Always show this window' button which can be de-selected, if convenient (Git #[427](https://github.com/axcore/tartube/issues/427))
+- The dropdown box in the 'Add channel' window has been improved to add an explicit item for 'No parent folder', instead of using an empty space. The windows for adding playlists and folders have been updated in the same way. The 'Add video' window has been tweaked to show icons inside the dropdown box, as the other three windows already do
+- In each video's properties window, there is a new button which updates the video's data from its metadata file. Also, when the video's file path is changed (manually by the user), the corresponding metadata is now automatically loaded, updating the video in Tartube's database (Git #[414](https://github.com/axcore/tartube/issues/414))
+- You can update multiple videos from their metadata by right-clicking them and selecting Special &gt; Reload metadata (Git #[420](https://github.com/axcore/tartube/issues/420))
+- The detail of some icons were difficult to make out. They have been replaced with sharper icons
+- The list of videos in the Videos tab shows each video's name (which we call a 'nickname'), which is not necessarily identical to the video's file name. You can now switch to displaying video file names instead: Edit &gt; System preferences... &gt; Windows &gt; Videos &gt; Show nicknames (not video file names) (Git #[417](https://github.com/axcore/tartube/issues/417))
+- Tidied up the layout of the popup menu for videos
+- In the download options window, in the Files &gt; File names tab, you can now set an output template with a date/time in several different formats (Git #[424](https://github.com/axcore/tartube/issues/424))
+- In the same window, added new options for '--live-from-start' and '--wait-for-video' (Git #[431](https://github.com/axcore/tartube/issues/431), yt-dlp only)
 # MAJOR FIXES
-- JSON timeouts were causing havoc when checking a video with lots of comments. Tartube now provides two timeout settings: one for checking videos with comments, and one for checking videos without comments. To set them, click Edit &gt; System preferences... &gt; Operations &gt; Downloads. Also fixed an error that failed to store comments in the database, under certain circumstances. Also added a new setting, so that comments can be stored in the database when checking videos, or when downloading videos (see Edit &gt; System preferences... &gt; Operations &gt; Comments) (Git #[398](https://github.com/axcore/tartube/issues/398))
-- Fixed problems with the Drag and Drop tab, causing python errors on startup (Git #[399](https://github.com/axcore/tartube/issues/399))
-- On running out of disk space, load/save was disabled, so the user could not free up space before saving the Tartube database. This no longer happens, but after such an error, no scheduled downloads are started (this is confirmed by a message in the Errors/Warnings tab). Updated the text in the preferences window for clarity, and to show free space in GB rather than MB (Git #[400](https://github.com/axcore/tartube/issues/400))
-- Fixed failure to extract a video's URL and duration on certain channels, on MS Windows (Git #[373](https://github.com/axcore/tartube/issues/373))
-- Fix inability to load database from an (unspecified) earlier version of Tartube. The error can also be fixed in the existing database integrity check (Git #[405](https://github.com/axcore/tartube/issues/405))
+- In the Videos tab toolbar, when the 'Show downloaded' button is toggled and, as a result, no videos are visible, many of the toolbar icons were greyed out. Fixed (Git #[410](https://github.com/axcore/tartube/issues/410))
+- The video's edit window was unable to open under certain circumstances. Fixed
+- In a separate issue, the video's edit window was unable to open when the video didn't have a file associated with it. Fixed (Git #[421](https://github.com/axcore/tartube/issues/421)/[422](https://github.com/axcore/tartube/issues/422))
+- The list of custom downloads in Tartube's main menu (Operations &gt; Custom download all) was not updated when profiles were added or removed; the list could only be updated by restarting Tartube. Fixed
+- In the channel/playlist properties window, in the Associated Playlists tab, the 'Add all playlists' button was broken. Fixed it
 # MINOR FIXES
-- On MS Windows, the download option '--windows-filenames' is automatically added, but in the edit window, the same option is not selected. Fixed, so that the option is no longer automatically added, but added only when selected
-# (Git #[373](https://github.com/axcore/tartube/issues/373))
-- The download option '--trim-filenames' uses a file length that refers to the absolute path, including the directory. Tartube will now ignore the setting if the length is less than the absolute path of the directory itself, to prevents files being downloaded into the wrong place. Added a warning about the option's unexpected behaviour in the window
-- The installer for MS Windows now starts Tartube with an environment variable, that prevents Gtk from hiding scrollbars (Git #[401](https://github.com/axcore/tartube/issues/401))
-- In the toolbar at the bottom of the Videos tab, the buttons to toggle drawing frames and icons were set the wrong way around. Fixed
-- The YouTube 'This live event will begin in 11 minutes' was not recognised as a livestream notification (in some circumstances). Fixed
-- On startup, in the Classic Mode tab, the 'Convert to this format' and 'Download in this format' buttons were not set or (de)sensitised correctly. Fixed
-- In the download options window, Files &gt; File names tab, the various 'Add' buttons added components to the end of the file extension, rather than the end of the filename. Fixed
-- Videos/channels/playlists/folders can no longer be deleted from the popup menus, when preferences or edit windows are open. This should prevent windows belonging to deleted items being visible
-- Fixed display problems when moving a channel/playlist/folder to the top level, or dragging one onto another
-- All keyboard shortcuts have been checked and updated
+- When setting a custom redirect for Invidious, Tartube added an initial 'www.' which does not always resolve to a valid web address. This no longer happens. Text in the preferences window (Operations &gt; Mirrors) has been updated to reflect this change (Git #[412](https://github.com/axcore/tartube/issues/412))
+- Fixed an error in the code that resets channel/playlist/folder markers (selection buttons) in the Video Index
+- During a refresh operation, a video's URL, ID and duration were not set, if they had not already been set (Git #[414](https://github.com/axcore/tartube/issues/414))
+- When closing a video's properties window, the list of videos in the Video tab was not properly updated when a filter was applied. Fixed (Git #[413](https://github.com/axcore/tartube/issues/413))
+- In a video's properties window, in the General tab, when the video file is changed, the entry boxes at the top of the window were not updated. Fixed (Git #[420](https://github.com/axcore/tartube/issues/420))
+- In the Drag and Drop tab, two icons of different sizes were used beside each other; this has been fixed
+- Fixed missing apostrophes (Git #[411](https://github.com/axcore/tartube/issues/411) and #[416](https://github.com/axcore/tartube/issues/416)), and typos in the download options window (Git #[418](https://github.com/axcore/tartube/issues/418))
+- Tweaked the detection of invalid URLs, for example in the 'Add channel' window
+- In the download options window, in the Name tab, fixed inconsistent widget layout when switching between simple and advanced options
 # 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
