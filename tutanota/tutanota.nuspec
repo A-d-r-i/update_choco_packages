@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.96.7</version>
+    <version>3.96.11</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,14 +16,17 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Can't redeem gift cards [#4194](https://github.com/tutao/tutanota/issues/4194)
- - Uncaught Error: trying to encrypt non-persistent credentials [#4193](https://github.com/tutao/tutanota/issues/4193)
- - Uncaught TypeError: this.mailList is undefined [#4192](https://github.com/tutao/tutanota/issues/4192)
- - Uncaught TypeError: Cannot read properties of undefined (reading 'style') [#4187](https://github.com/tutao/tutanota/issues/4187)
+    <releaseNotes># What's new
+ - Rewrite bubble text fields [#4101](https://github.com/tutao/tutanota/issues/4101)
+ - retry with another node in case of internal server error [#4200](https://github.com/tutao/tutanota/issues/4200)
+ - Change attributes of components to not accept streams [#4043](https://github.com/tutao/tutanota/issues/4043)
+ - Remove indexer debug logger [#3934](https://github.com/tutao/tutanota/issues/3934)
+
+# Bugfixes
+ - Calendar agenda view all day event rendering bug [#4121](https://github.com/tutao/tutanota/issues/4121)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/212?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/210?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
