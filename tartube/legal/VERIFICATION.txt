@@ -6,12 +6,12 @@ The installer have been downloaded from their official gitlab repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 2.4.065 64 bits : <https://github.com/axcore/tartube/releases/download/v2.4.065/install-tartube-2.4.065-64bit.exe>
+  Version 2.4.077 64 bits : <https://github.com/axcore/tartube/releases/download/v2.4.077/install-tartube-2.4.077-64bit.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum 64 bits: F93E98D6656523E60FB663F1546D38785D57256F4D5A44E95BCAC36F17C45B70
+  checksum 64 bits: B5F58DBB5271930FE605D2523ABA3465A62CF32A4A878BDF232E2BD91E18F521
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> 
