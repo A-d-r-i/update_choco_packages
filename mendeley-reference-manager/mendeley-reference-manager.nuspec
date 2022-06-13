@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.71.0</version>
+    <version>2.73.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,25 +19,26 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
 
-## Mendeley Reference Manager v2.71.0
+## Mendeley Reference Manager v2.73.0
  
 We have:
  
-- Moved the delete and open PDF functions on attached files to a new right-click context menu.
+- Added a menu option on groups, from here you can access options such as manage group, new collection etc.
+- Fixed an issue with the 'Copy as formatted citation' feature where references copied after the first attempt would not replace the existing reference
 
  
 ## Support
+
+- If you encounter any problems using Mendeley or have questions to ask please [contact our support team](https://www.mendeley.com/contact-support/ "Contact support").
+- For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
+
  
-If you encounter any problems using Mendeley or have questions to ask please [contact our support team](https://www.mendeley.com/contact-support/ "Contact support").
- 
-For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
- 
-Released: 2022-05-11
+Released: 9th of June 2022
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.71.0](https://www.mendeley.com/release-notes-reference-manager/v2.71.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.73.0](https://www.mendeley.com/release-notes-reference-manager/v2.73.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
