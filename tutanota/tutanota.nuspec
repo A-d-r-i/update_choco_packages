@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.96.12</version>
+    <version>3.98.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,13 +16,15 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Captcha input is broken [#4255](https://github.com/tutao/tutanota/issues/4255)
- - Race condition when inserting ranges [#4248](https://github.com/tutao/tutanota/issues/4248)
- - Uncaught Error: AssertNotNull failed in SelectSuggestion [#4246](https://github.com/tutao/tutanota/issues/4246)
+    <releaseNotes># What's new
+ - Adapt gift cards to multi-purpose gift card [#4206](https://github.com/tutao/tutanota/issues/4206)
+
+# Bugfixes
+ - Accessing more that 250 invoices is not possible [#4139](https://github.com/tutao/tutanota/issues/4139)
+ - Declined event invitations still end up in calendar [#4023](https://github.com/tutao/tutanota/issues/4023)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/213?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/215?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
