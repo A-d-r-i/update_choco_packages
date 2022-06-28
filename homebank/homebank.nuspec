@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.5.5</version>
+    <version>5.5.6</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,24 +17,14 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.5.5 release
-* change: windows: upgraded to GTK 3.24.33
-* wish: #[1960755](https://bugs.launchpad.net/bugs/1960755) add a refresh button in account detail screen
-* wish: #[1960380](https://bugs.launchpad.net/bugs/1960380) void transaction icon improved visibility in dark mode
-* wish: #[1950234](https://bugs.launchpad.net/bugs/1950234) your account show total for single group foreign currency
-* wish: #[1948608](https://bugs.launchpad.net/bugs/1948608) scheduled list (manage/bottom) could show category column
-* wish: #[1945636](https://bugs.launchpad.net/bugs/1945636) detail report list amount sort in base currency
-* bugfix: fixed double trigger on some radiobutton: category, budget, assign, repstats
-* bugfix: #[1968249](https://bugs.launchpad.net/bugs/1968249) templates names not displayed in Transaction dialog
-* bugfix: #[1965594](https://bugs.launchpad.net/bugs/1965594) children windows should be transient for their parents
-* bugfix: #[1964433](https://bugs.launchpad.net/bugs/1964433) 'Top Spending' home chart option button disapear
-* bugfix: #[1963833](https://bugs.launchpad.net/bugs/1963833) window: main window don't open in primary screen
-* bugfix: #[1960750](https://bugs.launchpad.net/bugs/1960750) tooltip is in English even if localization is set to FR
-* bugfix: #[1960745](https://bugs.launchpad.net/bugs/1960745) not showing * after some changes made to manage
-* bugfix: #[1960743](https://bugs.launchpad.net/bugs/1960743) double click payee not working after search
-* bugfix: #[1958767](https://bugs.launchpad.net/bugs/1958767) managing payees search does not refresh after merge
-* bugfix: #[1958145](https://bugs.launchpad.net/bugs/1958145) windows: can't enter specials characters with alt gr
-* bugfix: #[1958001](https://bugs.launchpad.net/bugs/1958001) balance 'Show Empty Line' includes days outside of selected range
+Made 5.5.6 release
+* bugfix: #[1977796](https://bugs.launchpad.net/bugs/1977796) rounding problem for euro minor in deutsche mark
+* bugfix: #[1976138](https://bugs.launchpad.net/bugs/1976138) split amount opposite sign don't work when using + button
+* bugfix: #[1972078](https://bugs.launchpad.net/bugs/1972078) inherit old xfer enable to post to a closed account
+* bugfix: #[1970526](https://bugs.launchpad.net/bugs/1970526) windows do not minimize independently; cannot raise main window above others
+* bugfix: #[1970509](https://bugs.launchpad.net/bugs/1970509) manage scheduled list column hscrollbar
+* bugfix: #[1970020](https://bugs.launchpad.net/bugs/1970020) balance report - toggle detail show no txn
+* bugfix: #[1967708](https://bugs.launchpad.net/bugs/1967708) csv export invalid with semicolon in text
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
