@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotbrowser</id>
-    <version>87.0.20210724-alpha</version>
+    <version>87.0.20210722-alpha</version>
     <title>Dot Browser</title>
     <authors>Dot HQ</authors>
     <owners>Adri</owners>
@@ -33,14 +33,7 @@ Dot Browser is a privacy-conscious web browser with smarts built-in for protecti
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>🌍 Dot Browser is a privacy-conscious web browser based on Firefox, developed for Windows, macOS, and Linux.</summary>
-    <releaseNotes># This build contains known UI bugs. Please read the information below before installing
-
-## ???? Welcome
-You may be a little confused as to why this is the latest build. Dot Browser is currently undergoing a complete rewrite of the frontend. Keeping up with updating patches for newer Firefox versions became near to impossible, so we've decided to rewrite the whole frontend of the browser. Because of this, we've paused builds until we have something a little more stable. 
-
-We hope you understand, and we are hoping to get some builds released very shortly!
-
-## ???? Information
+    <releaseNotes>## ???? Information
 
 This is a Nightly build meaning you will encounter bugs and things that don't seem right. If you ever come across a bug in a nightly build, please [open an issue on our bug tracker](https://github.com/dothq/browser/issues/new).
 
