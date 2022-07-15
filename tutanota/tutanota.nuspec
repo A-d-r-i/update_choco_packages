@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.98.4</version>
+    <version>3.98.12</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,17 +17,19 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Export user list action [#4260](https://github.com/tutao/tutanota/issues/4260)
+ - Support vCard v4 for contact import [#1328](https://github.com/tutao/tutanota/issues/1328)
+ - update DOMPurify [#4318](https://github.com/tutao/tutanota/issues/4318)
+ - Update mithril.js [#4245](https://github.com/tutao/tutanota/issues/4245)
+ - Cleanup unused parts of ClientDetector [#4216](https://github.com/tutao/tutanota/issues/4216)
+ - Update js-yaml to v4 [#3341](https://github.com/tutao/tutanota/issues/3341)
 
 # Bugfixes
- - Passwords aren't filled-in when replying to confidential emails [#4267](https://github.com/tutao/tutanota/issues/4267)
- - Calendar events are not being displayed correctly.  [#4262](https://github.com/tutao/tutanota/issues/4262)
- - No indicator that credentials are stored for external inboxes [#4185](https://github.com/tutao/tutanota/issues/4185)
- - "retry" doesn't load failed inline images [#4146](https://github.com/tutao/tutanota/issues/4146)
- - Calendar invite emails trigger white background [#3851](https://github.com/tutao/tutanota/issues/3851)
+ - Typing email address in mail editor triggers many requests for public key [#4341](https://github.com/tutao/tutanota/issues/4341)
+ - Linux desktop app - Calendar not displaying events (empty) [#4339](https://github.com/tutao/tutanota/issues/4339)
+ - Attachment download is broken with blob store enabled [#4338](https://github.com/tutao/tutanota/issues/4338)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/217?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/219?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
