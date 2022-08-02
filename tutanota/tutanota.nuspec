@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.98.14</version>
+    <version>3.98.17</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,19 +16,11 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Update privacy policy link [#4380](https://github.com/tutao/tutanota/issues/4380)
- - Add sinhala language [#4356](https://github.com/tutao/tutanota/issues/4356)
- - Don't save mail as draft when closing unless changes have been made [#3580](https://github.com/tutao/tutanota/issues/3580)
- - Add keybinding 'u' for toggling read/unread flag on mail [#3318](https://github.com/tutao/tutanota/issues/3318)
- - Allow generating password when signing up for account #327
-
-# Bugfixes
- - Email address validator shows wrong state [#4403](https://github.com/tutao/tutanota/issues/4403)
- - Email address availablility check can get stuck [#4378](https://github.com/tutao/tutanota/issues/4378)
+    <releaseNotes># Bugfixes
+ - Resetting second factor from 2FA prompt does not cancel login properly [#4008](https://github.com/tutao/tutanota/issues/4008)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/221?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/222?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
