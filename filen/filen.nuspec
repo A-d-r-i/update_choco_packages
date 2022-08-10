@@ -10,8 +10,7 @@
     <projectUrl>https://filen.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/FilenCloudDienste/filen-desktop@master/assets/icons/png/256x256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Filen is a fully zero knowledge end-to-end encrypted cloud storage and communication platform. Zero knowledge end-to-end encryption means that there is no intermediary. Filen
-(or any of it’s employees) never has access to the user’s encryption keys and therefore data transmitted or stored on the platform truly remains in the user’s hands. 
+    <description>Filen is a fully zero knowledge end-to-end encrypted cloud storage and communication platform. Zero knowledge end-to-end encryption means that there is no intermediary. Filen (or any of it’s employees) never has access to the user’s encryption keys and therefore data transmitted or stored on the platform truly remains in the user’s hands. 
 
 **32 bit users**: This package is not available for 32 bit users.
 
