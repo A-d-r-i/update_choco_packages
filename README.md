@@ -38,6 +38,7 @@ Here are deposited:
 |**Dot Browser** (*Alpha*)|Every 2 hours|✅|✅|[Link](https://www.dothq.co/)|[Link](https://community.chocolatey.org/packages/dotbrowser)|
 |**Tutanota**|Every 2 hours|✅|✅|[Link](https://tutanota.com)|[Link](https://community.chocolatey.org/packages/tutanota)|
 |**DotDotGoose**|Every 2 hours & Manually [^2]|✅|✅|[Link](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/)|[Link](https://community.chocolatey.org/packages/dotdotgoose)|
+|**Filen**|Every 2 hours|✅|✅|[Link](https://filen.io/)|[Link](https://community.chocolatey.org/packages/filen)|
 |**Tenacity Audio Editor**|Manually [^3]|❌|❌|[Link](https://tenacityaudio.org)|[Link](https://community.chocolatey.org/packages/tenacity)|
 
 [^1]: *FireDM* - Not longer maintained by his creators ([GitHub](https://github.com/firedm))
