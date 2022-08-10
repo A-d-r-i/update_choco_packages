@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>filen</id>
+    <version>2.0.1</version>
+    <title>Filen</title>
+    <authors>Filen Cloud Dienste UG</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/FilenCloudDienste/filen-desktop/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://filen.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/FilenCloudDienste/filen-desktop@master/assets/icons/png/256x256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Filen is a fully zero knowledge end-to-end encrypted cloud storage and communication platform. Zero knowledge end-to-end encryption means that there is no intermediary. Filen
+(or any of it’s employees) never has access to the user’s encryption keys and therefore data transmitted or stored on the platform truly remains in the user’s hands. 
+
+**32 bit users**: This package is not available for 32 bit users.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
+    <releaseNotes></releaseNotes>
+    <tags>filen cloud zero-knoledge encrypted storage</tags>
+    <projectSourceUrl>https://github.com/FilenCloudDienste/filen-desktop</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/filen</packageSourceUrl>
+    <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/FilenCloudDienste/filen-desktop/issues</bugTrackerUrl>
+  </metadata>
+</package>

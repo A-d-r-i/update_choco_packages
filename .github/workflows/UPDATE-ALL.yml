@@ -446,3 +446,26 @@ jobs:
           #exit 1
           }
           }
+
+      - name: FILEN
+        if: always()
+        run:  |
+          $Version = ([xml](Get-Content ./filen/filen.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          ./send_filen.ps1
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
+          }
