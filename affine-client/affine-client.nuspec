@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>affine-client</id>
+    <version>0.0.1</version>
+    <title>Affine Client</title>
+    <authors>m1911star and Affine team</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/m1911star/affine-client/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://affine.pro/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/m1911star/affine-client@main/tauri/icons/128x128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description></description>
+    <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
+    <releaseNotes></releaseNotes>
+    <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
+    <projectSourceUrl>https://github.com/m1911star/affine-client</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/affine-client</packageSourceUrl>
+    <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/m1911star/affine-client/issues</bugTrackerUrl>
+  </metadata>
+</package>

@@ -469,3 +469,27 @@ jobs:
           #exit 1
           }
           }
+          
+      - name: AFFINE-CLIENT
+        if: always()
+        run:  |
+          $Version = ([xml](Get-Content ./affine-client/affine-client.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = $tag -replace 'Affine Client v'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          ./send_affine-client.ps1
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
+          }
