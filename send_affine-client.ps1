@@ -26,7 +26,7 @@ $xml.package.metadata.description = $description
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/m1911star/affine-client/releases/download/affine-client-v$tag/Affine_$tag_x64_en-US.msi" -OutFile "./affine-client/tools/affine-client.msi"
+Invoke-WebRequest -Uri "https://github.com/m1911star/affine-client/releases/download/affine-client-v$tag/Affine_0.1.0_x64_en-US.msi" -OutFile "./affine-client/tools/affine-client.msi"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/m1911star/affine-client/main/LICENSE" -OutFile "./affine-client/legal/LICENSE.txt"
 
 # calculation of checksum
