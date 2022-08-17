@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>audiomoth-config</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <title>AudioMoth Configuration App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,10 +15,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth recording device and setting the onboard clock.</summary>
-    <releaseNotes>* Added downsampling
-* Allowed 1 second split/expansion interval
-* Updated FILE_REGEX to allow filenames without date field for Edge Impulse implementation
-* Fixed bug where life calculations weren't updating</releaseNotes>
+    <releaseNotes>* Added multiple folder selection
+* Added the ability to put expanded/split/downsampled files into subdirectories
+* Scaled error reporting time when running a long process</releaseNotes>
     <tags>audiomoth-config audiomoth config-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/audiomoth-config</packageSourceUrl>
