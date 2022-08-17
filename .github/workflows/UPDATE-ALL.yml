@@ -117,29 +117,6 @@ jobs:
           }
           }
         
-      - name: CTEMPLAR
-        if: always()
-        run:  |
-          $Version = ([xml](Get-Content ./ctemplar/ctemplar.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/CTemplar/webclient/releases/latest" | ConvertFrom-Json)[0].name
-          
-          echo $Version
-          echo $tag
-          
-          if ( $tag -eq $Version )
-          {
-          echo 'Last version already exist'
-          }
-          else
-          {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
-          ./send_ctemplar.ps1
-          } else {
-          echo 'The version number is not in the correct format'
-          #exit 1
-          }
-          }
-        
       - name: DOTBROWSER
         if: always()
         run:  |
@@ -165,29 +142,6 @@ jobs:
           ##exit 1
           #}
           }
-        
-      - name: FIREDM
-        if: always()
-        run:  |
-          #$Version = ([xml](Get-Content ./firedm/firedm.nuspec)).package.metadata.version
-          #$tag = (Invoke-WebRequest "https://api.github.com/repos/firedm/FireDM/releases/latest" | ConvertFrom-Json)[0].tag_name         
-          echo 'FireDM is unmaintained on GitHub'
-          #echo $Version
-          #echo $tag
-          
-          #if ( $tag -eq $Version )
-          #{
-          #echo 'Last version already exist'
-          #}
-          #else
-          #{
-          #if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
-          #./send_firedm.ps1
-          #} else {
-          #echo 'The version number is not in the correct format'
-          ##exit 1
-          #}
-          #}
         
       - name: FLUFFYCHAT
         if: always()
