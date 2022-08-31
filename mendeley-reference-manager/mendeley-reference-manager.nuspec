@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.76.0</version>
+    <version>2.77.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,12 +19,13 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
 
-## Mendeley Reference Manager v2.76.0
+## Mendeley Reference Manager v2.77.0
  
-We have:
+We have fixed:
  
-- Improved how we handle trying to create a new folder with the same name as an existing one
-- Provided a way to download a notebook page as an RTF file
+- Added the ability to download a PDF with Annotations in the files section of the Info panel, using the 3-dot menu.
+- Add the option to download non-PDF files in the files section of the Info panel, using the 3-dot menu.
+- Improved the keyboard navigation of collections in the collections menu.
 
  
 ## Support
@@ -33,12 +34,12 @@ We have:
 - For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
 
  
-Released: 17 August 2022
+Released: 30 August 2022
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.76.0](https://www.mendeley.com/release-notes-reference-manager/v2.76.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.77.0](https://www.mendeley.com/release-notes-reference-manager/v2.77.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/mendeley-reference-manager</packageSourceUrl>
