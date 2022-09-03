@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>notesnook</id>
+    <version>2.1.5</version>
+    <title>Notesnook</title>
+    <authors>Streetwriters Ltd.</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://github.com/streetwriters/notesnook/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://notesnook.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/streetwriters/notesnook@master/apps/web/desktop/assets/icons/256x256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Notesnook is a free (as in speech) and open source note taking app focused on user privacy and ease of use. To ensure zero knowledge principles, Notesnook encrypts everything on your device using `XChaCha20-Poly1305` and `Argon2`.
+
+Notesnook is our **proof** that privacy does _not_ (always) have to come at the cost of convenience. Our goal is to provide users peace of mind and 100% confidence that their notes are safe and secure. The decision to go fully open source is one of the most crucial steps towards that.
+
+**32 bit users**: This package is not available for 32 bit users.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>A fully open source & end-to-end encrypted note taking alternative to Evernote.</summary>
+    <releaseNotes></releaseNotes>
+    <tags>notesnook notes evernote encrypted</tags>
+    <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/notesnook</packageSourceUrl>
+    <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/streetwriters/notesnook/issues</bugTrackerUrl>
+  </metadata>
+</package>
