@@ -283,7 +283,7 @@ jobs:
           else
           {
           if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
-          if ( $name -eq "Stable release" ) {
+          if ( $name -eq "Stable release v$tag" ) {
           ./send_tartube.ps1
           } else { echo 'Not a stable version' }
           } else {
@@ -452,8 +452,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./notesnook/notesnook.nuspec)).package.metadata.version
-          $tag = '2.1.6'
-          #(Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
           
           echo $Version
           echo $tag
