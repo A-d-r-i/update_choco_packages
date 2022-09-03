@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.4.077</version>
+    <version>2.4.093</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,11 +19,18 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
+# MAJOR NEW FEATURES
+- In the menu button in the top-right corner of the Classic Mode tab, there is a new 'Enable one-click downloads' setting. Any valid URLs copied into the box are downloaded automatically (or added to the existing download)
+- Unlisted videos, which youtube-dl can't normally detecT, can now be inserted into a channel. Right-click the channel and select 'Channel actions &gt; Insert videos...'. In order to check or download these unlisted videos, you should either select them, right-click and choose 'Download videos'; or alternatively, set up custom downloads to download each video individually (Git #[445](https://github.com/axcore/tartube/issues/445))
+# MINOR NEW FEATURES
+- In the preferences window, Operations &gt; Livestreams, you can now block all livestreams from being checked/downloaded. This only works when yt-dlp is the downloader (Reddit thread)
+- In the download options window, you can now use the option '--playlist-items' (Git #[438](https://github.com/axcore/tartube/issues/438))
+- In the setup wizard window, the text of the 'Install FFmpeg' button now changes to 'Re-install FFmpeg' after the first installation attempt, successful or not (for clarity). Both the download and install sizes are now visible
+- Tartube translations can now be prepared using Weblate. See https://hosted.weblate.org/projects/tartube/ (Git #[428](https://github.com/axcore/tartube/issues/428))
 # MAJOR FIXES
-- In the download options window, the "Completely reset all download options to their default values" button caused problems with the Drag and Drop tab, which in turn prevented Tartube from finishing loading a database. Fixed, and added some safeguards that would make a similar bug easier to detect, if it were to happen again (Git #[436](https://github.com/axcore/tartube/issues/436))
-- Fixed broken check buttons in the preferences window which could prevent it from opening (Git #[435](https://github.com/axcore/tartube/issues/435))
+- Updated to latest version of MSYS2, with which FFmpeg can be installed correctly (Git #[371](https://github.com/axcore/tartube/issues/371), #[444](https://github.com/axcore/tartube/issues/444))
 # MINOR FIXES
-- In the Video Catalogue (in grid mode), adjusted the maximum length of the channel/playlist/folder name to prevent the right-hand column being only partially visible, under certain circumstances (Git #[433](https://github.com/axcore/tartube/issues/433))
+- Fixed rare Python errors after right-clicking videos in the Progress List and selecting 'Stop now', 'Stop after this video', etc
 # 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
