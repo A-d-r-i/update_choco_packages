@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.98.24</version>
+    <version>3.100.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,28 +17,9 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Add ability to get logs before logging in [#4536](https://github.com/tutao/tutanota/issues/4536)
- - CC and BCC set from a mailto link or draft are not shown by default [#3844](https://github.com/tutao/tutanota/issues/3844)
-
-# Bugfixes
- - Sending blobs doesn't work in the desktop client [#4529](https://github.com/tutao/tutanota/issues/4529)
- - Automatic closing of ephemeral sessions is not working [#4523](https://github.com/tutao/tutanota/issues/4523)
- - List loading indicator is not displayed sometimes [#4515](https://github.com/tutao/tutanota/issues/4515)
- - Multiple Attachment Download/Expand Buttons are in unexpected locations. [#4479](https://github.com/tutao/tutanota/issues/4479)
- - fix: export full contact urls instead of vanity urls [#4470](https://github.com/tutao/tutanota/issues/4470)
- - Deactivating whitelabel children does not work [#4462](https://github.com/tutao/tutanota/issues/4462)
- - Marking multiple emails as unread can send more requests than it should [#4455](https://github.com/tutao/tutanota/issues/4455)
- - MailBody is flashing when mail is updated [#4309](https://github.com/tutao/tutanota/issues/4309)
- - Credential encryption preference doesn't show up when no credentials were stored [#4307](https://github.com/tutao/tutanota/issues/4307)
- - Turning off "pre" formatting with richtext toolbar doesn't reset style properly [#4103](https://github.com/tutao/tutanota/issues/4103)
- - HtmlEditor still highlights border when disabled [#3935](https://github.com/tutao/tutanota/issues/3935)
- - Text overflow in mail authentication InfoBanner [#3910](https://github.com/tutao/tutanota/issues/3910)
- - [iOS] fix safe-area-inset usages [#3738](https://github.com/tutao/tutanota/issues/3738)
- - Spam rule "From" field should be "From/Sender" [#3350](https://github.com/tutao/tutanota/issues/3350)
- - Draft moving is inconsistent [#3241](https://github.com/tutao/tutanota/issues/3241)
-
-# Milestone
-https://github.com/tutao/tutanota/milestone/226?closed=1</releaseNotes>
+ - Signup dropouts usage test
+ - Support for campaigns
+</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
