@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.6.3</version>
+    <version>1.6.4</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,18 +14,21 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.6.3 - 2022-08-25 
+    <releaseNotes>## v1.6.4 - 2022-09-08 
 
  - Translated using Weblate (Chinese (Simplified)) (Eric) 
  - Translated using Weblate (Estonian) (Priit Jõerüüt) 
- - Translated using Weblate (Finnish) (Aminda Suomalainen) 
- - Translated using Weblate (Russian) (Sergey Shavin) 
+ - Translated using Weblate (Galician) (Xosé M) 
+ - Translated using Weblate (Indonesian) (Linerly) 
+ - Translated using Weblate (Slovak) (Marek Ľach) 
  - Translated using Weblate (Turkish) (Oğuz Ersen) 
  - Translated using Weblate (Ukrainian) (Ihor Hordiichuk) 
- - chore: Migrate back to flutter hive collections (Christian Pauly) 
- - chore: Update provider package and remove dep override (Christian Pauly) 
- - fix: Do not display push events for unknown event types (Christian Pauly) 
- - refactor: App widget (Christian Pauly)  
+ - chore: Adjust bubble color in dark mode (Christian Pauly) 
+ - chore: Update matrix sdk (Christian Pauly) 
+ - chore: Update to flutter 3.3.0 (Christian Pauly) 
+ - feat: Automatic key requests and better key error dialog (Christian Pauly) 
+ - fix: Styling and notification settings (Christian Pauly) 
+ - fix: add missing command localizations (Christian Pauly)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
