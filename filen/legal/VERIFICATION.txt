@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 2.0.4 : <https://cdn.filen.io/desktop/release/filen_x64.exe>
+  Version 2.0.5 : <https://cdn.filen.io/desktop/release/filen_x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 2147E7DC8E9077087B739E8C673F677EFA7D02241B2069F17BF6A31296B3BA80
+  checksum: ACD621EAF21C3F0763CA44CC9D31CB2E1C7782EAB3EC298D8E0DD5D040E0BD84
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/FilenCloudDienste/filen-desktop/master/LICENSE.md> 
