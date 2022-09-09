@@ -70,7 +70,7 @@ File 'LICENSE.txt' is obtained from <https://gitlab.com/famedly/fluffychat/-/raw
 choco pack ./fluffychat/fluffychat.nuspec --outputdirectory .\fluffychat
 
 If ($LastExitCode -eq 0) {
-	choco push ./fluffychat/fluffychat.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./fluffychat/fluffychat.1.6.4.20220909.nupkg" --source https://push.chocolatey.org/
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
