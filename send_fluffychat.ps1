@@ -15,7 +15,7 @@ $release = -join($release, "`n`n**Full changelog:** [https://gitlab.com/famedly/
 $file = "./fluffychat/fluffychat.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
-$xml.package.metadata.version = "1.6.4.20220909" #$tag
+$xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
@@ -70,7 +70,7 @@ File 'LICENSE.txt' is obtained from <https://gitlab.com/famedly/fluffychat/-/raw
 choco pack ./fluffychat/fluffychat.nuspec --outputdirectory .\fluffychat
 
 If ($LastExitCode -eq 0) {
-	choco push "./fluffychat/fluffychat.1.6.4.20220909.nupkg" --source https://push.chocolatey.org/
+	choco push "./fluffychat/fluffychat.$tag.nupkg" --source https://push.chocolatey.org/
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
