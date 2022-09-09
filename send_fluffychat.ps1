@@ -15,12 +15,12 @@ $release = -join($release, "`n`n**Full changelog:** [https://gitlab.com/famedly/
 $file = "./fluffychat/fluffychat.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
-$xml.package.metadata.version = $tag
+$xml.package.metadata.version = "1.6.4.20220909" #$tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip" -OutFile "fluffychat.zip"
+Invoke-WebRequest -Uri "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip" -OutFile "fluffychat.zip"
 Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE" -OutFile "./fluffychat/legal/LICENSE.txt"
 
 # calculation of checksum
@@ -35,7 +35,7 @@ $content = "`$ErrorActionPreference = 'Stop';
   packageName   = 'fluffychat'
   checksum = '$SHA'
   checksumType = 'sha256'
-  Url = 'https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip'
+  Url = 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip'
   UnzipLocation = `$toolsDir
 }
 
@@ -56,7 +56,7 @@ The installer have been downloaded from their official gitlab repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag : <https://gitlab.com/famedly/fluffychat/-/archive/v$tag/fluffychat-v$tag.zip>
+  Version $tag : <https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
