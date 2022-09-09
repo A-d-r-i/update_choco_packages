@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>filen</id>
-    <version>2.0.4</version>
+    <version>2.0.5</version>
     <title>Filen</title>
     <authors>Filen Cloud Dienste UG</authors>
     <owners>Adri</owners>
@@ -16,17 +16,16 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
-    <releaseNotes>**Bug fix release**
+    <releaseNotes>**QoL release**
 
-- Fixed a bug that result into sync deltas not being calculated correctly
-- Now acquires sync lock off the worker thread for better consistency
-- Fixed author &amp; publisher name on windows
-- New and better update flow
-- Fixed public link downloads resulting into "Invalid password"
-- Dramatically reduced app size (25-50% on most platforms)
-- Improved loading time for the cloud window
-- Files inside the cloud window are no longer clickable (as it should be, only folders can be navigated into)
-- The client now properly detects if a file/folder has been deleted locally while being uploaded
+- Correctly detect if files/folders are moved between local sync folders
+- Switch to native HTTPS lib for requests
+- New macOS icons (Dock/Launch)
+- Increased max concurrent tasks limit
+- Added Finnish translation
+- Added Spanish translation
+- Fixed automatic logout on email/password change
+- Improved uploads
 
 Windows x86_64: https://cdn.filen.io/desktop/release/filen_x64.exe
 Windows arm64: https://cdn.filen.io/desktop/release/filen_arm64.exe
