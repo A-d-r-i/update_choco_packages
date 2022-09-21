@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.100.0</version>
+    <version>3.100.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,9 +17,20 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Signup dropouts usage test
- - Support for campaigns
-</releaseNotes>
+ - Change picture at final signup step [#3989](https://github.com/tutao/tutanota/issues/3989)
+
+# Bugfixes
+ - Can't open broken email bodies [#4586](https://github.com/tutao/tutanota/issues/4586)
+ - Expired session handling produces an error on no-offline platforms [#4571](https://github.com/tutao/tutanota/issues/4571)
+ - Switching from search to mail viewer produces a silent error [#4570](https://github.com/tutao/tutanota/issues/4570)
+ - Clicking on an Email twice causes Email body to disappear  [#4565](https://github.com/tutao/tutanota/issues/4565)
+ - Switching between emails in search does not update some parts of the email [#4561](https://github.com/tutao/tutanota/issues/4561)
+ - ProgrammingError at signup for paid subscription in desktop client [#4559](https://github.com/tutao/tutanota/issues/4559)
+ - Counter values don't get recalculated anymore after the whole list is loaded. [#4417](https://github.com/tutao/tutanota/issues/4417)
+ - Confidential button in new email tooltip text is always "confidential" [#3254](https://github.com/tutao/tutanota/issues/3254)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/229?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
