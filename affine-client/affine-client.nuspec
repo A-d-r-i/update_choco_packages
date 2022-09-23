@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.1.1</version>
+    <version>0.2.0</version>
     <title>Affine Client</title>
     <authors>m1911star and Affine team</authors>
     <owners>Adri</owners>
@@ -20,8 +20,7 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>- Add linux support bundling.
-- Add github action based bundle workflow</releaseNotes>
+    <releaseNotes>Take a look at the assets to download and install this app.</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/m1911star/affine-client</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/affine-client</packageSourceUrl>
