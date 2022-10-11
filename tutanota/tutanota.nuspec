@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.101.1</version>
+    <version>3.102.3</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,10 +16,17 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes>* User friendly termination form
+    <releaseNotes># What's new
+ - Remove the invoice address field for private users [#4602](https://github.com/tutao/tutanota/issues/4602)
+ - Enable mail body compression [#4573](https://github.com/tutao/tutanota/issues/4573)
+ - Replace round action buttons [#4292](https://github.com/tutao/tutanota/issues/4292)
+ - Show recipient email address in mail viewer [#4290](https://github.com/tutao/tutanota/issues/4290)
+
+# Bugfixes
+ - Audit log is not available for free accounts [#4539](https://github.com/tutao/tutanota/issues/4539)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/232?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/230?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
