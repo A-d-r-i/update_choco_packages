@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.5.7</version>
+    <version>5.5.8</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,15 +17,9 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.5.7 release
-* bugfix: #[1681532](https://bugs.launchpad.net/bugs/1681532) Segfault when pressing escape while editing a new transaction
-* bugfix: #[1981464](https://bugs.launchpad.net/bugs/1981464) "Select among possible transactions" duplicate transfer refactor
-* bugfix: #[1984246](https://bugs.launchpad.net/bugs/1984246) compilation problem on Debian 11
-* bugfix: #[1987975](https://bugs.launchpad.net/bugs/1987975) choose among target xfer faultly propose same sign transaction
-* bugfix: #[1988489](https://bugs.launchpad.net/bugs/1988489) Statistics "total" percentage breakdown incorrect
-* bugfix: #[1988594](https://bugs.launchpad.net/bugs/1988594) edit txn with keyboard ok button (alt) don't update focused amount
-* bugfix: #[1989171](https://bugs.launchpad.net/bugs/1989171) Invalid appdata confuse gnome-software
-* bugfix: #[1991459](https://bugs.launchpad.net/bugs/1991459) register apply type=income + status=uncategorized shows expense
+Made 5.5.8 release
+* bugfix: #[1992548](https://bugs.launchpad.net/bugs/1992548) linking xfers between accounts fails to join correctly
+* bugfix: #[1992284](https://bugs.launchpad.net/bugs/1992284) manage tag edit input is empty
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
