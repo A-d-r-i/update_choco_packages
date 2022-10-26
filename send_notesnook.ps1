@@ -1,7 +1,6 @@
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
 #$tag = $tag -replace 'v'
-$tag = '2.2.3'
 $release = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].body
 
 # write new version and release
