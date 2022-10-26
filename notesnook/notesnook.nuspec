@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.1.6</version>
+    <version>2.2.3</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,7 +18,12 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>- Date is now shown in ISO8601 format</releaseNotes>
+    <releaseNotes>## What's fixed
+- Fix a race condition causing migration to start on app lock screen
+
+## What's changed
+- If automatic backups turn off due to account downgrade, you will get a message in app regarding the change
+- The github release of android app will not send requests to play.google.com to check for new version. Instead new version updates will be fetched from github releases api.</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/notesnook</packageSourceUrl>
