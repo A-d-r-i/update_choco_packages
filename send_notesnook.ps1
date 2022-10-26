@@ -13,7 +13,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/streetwriters/notesnook/releases/download/v$tag/notesnook_x64.exe" -OutFile "./notesnook/tools/notesnook.exe"
+Invoke-WebRequest -Uri "https://github.com/streetwriters/notesnook/releases/download/v$tag/notesnook_win_x64.exe" -OutFile "./notesnook/tools/notesnook.exe"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/streetwriters/notesnook/master/LICENSE" -OutFile "./notesnook/legal/LICENSE.txt"
 
 # calculation of checksum
@@ -29,7 +29,7 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag : <https://github.com/streetwriters/notesnook/releases/download/v$tag/notesnook_x64.exe>
+  Version $tag : <https://github.com/streetwriters/notesnook/releases/download/v$tag/notesnook_win_x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
