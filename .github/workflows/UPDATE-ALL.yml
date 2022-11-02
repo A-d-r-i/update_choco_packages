@@ -430,7 +430,7 @@ jobs:
           $Version = ([xml](Get-Content ./affine-client/affine-client.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
           $tag = $tag -replace 'Affine Client v'
-          
+          if ( $tag -eq '0.1.1') { $tag = '0.2.0' }
           echo $Version
           echo $tag
           
