@@ -1,3 +1,9 @@
+# variables
+$id = "affine-client"
+$name = "Affine-client"
+$accounts = "@AffineOfficial"
+$tags = "#affine #cloud"
+
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
 $tag = $tag -replace 'Affine Client v'
@@ -17,7 +23,7 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 "
 
 # write new version and release
-$file = "./affine-client/affine-client.nuspec"
+$file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
@@ -26,11 +32,11 @@ $xml.package.metadata.description = $description
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/m1911star/affine-client/releases/download/affine-client-v$tag/Affine_0.1.0_x64_en-US.msi" -OutFile "./affine-client/tools/affine-client.msi"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/m1911star/affine-client/main/LICENSE" -OutFile "./affine-client/legal/LICENSE.txt"
+Invoke-WebRequest -Uri "https://github.com/m1911star/affine-client/releases/download/affine-client-v$tag/Affine_0.1.0_x64_en-US.msi" -OutFile "./$id/tools/$id.msi"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/m1911star/affine-client/main/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 # calculation of checksum
-$TABLE = Get-FileHash "./affine-client/tools/affine-client.msi" -Algorithm SHA256
+$TABLE = Get-FileHash "./$id/tools/$id.msi" -Algorithm SHA256
 $SHA = $TABLE.Hash
 
 # writing of VERIFICATION.txt
@@ -50,77 +56,14 @@ and can be verified like this:
   checksum type: SHA256
   checksum: $SHA
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/m1911star/affine-client/main/LICENSE> " | out-file -filepath ./affine-client/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/m1911star/affine-client/main/LICENSE> " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
-choco pack ./affine-client/affine-client.nuspec --outputdirectory .\affine-client
+choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
 If ($LastExitCode -eq 0) {
-	choco push ./affine-client/affine-client.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
-}
-
-If ($LastExitCode -eq 0) {
-
-# git and create tag
-git config --local user.email "a-d-r-i@outlook.fr"
-git config --local user.name "A-d-r-i"
-git add .
-git commit -m "[Bot] Update files - affine-client" --allow-empty
-git tag -a affine-client-v$tag -m "Affine-client- version $tag"
-git push -f && git push --tags
-
-# create release
-Install-Module -Name New-GitHubRelease -Force
-Import-Module -Name New-GitHubRelease
-$newGitHubReleaseParameters = @{
-GitHubUsername = "A-d-r-i"
-GitHubRepositoryName = "update_choco_package"
-GitHubAccessToken = "$env:ACTIONS_TOKEN"
-ReleaseName = "Affine-client v$tag"
-TagName = "affine-client-v$tag"
-ReleaseNotes = "$release"
-AssetFilePaths = ".\affine-client\affine-client.$tag.nupkg"
-IsPreRelease = $false
-IsDraft = $false
-}
-$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
-
-# post tweet
-Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
-$Source = Get-Content -path UCP.html -raw
-$Source -match '<td>twitter</td><td>(.*?)</td>'
-$twitter = $matches[1]
-if ( $twitter -eq "ON" )
-{
-Install-Module PSTwitterAPI -Force
-Import-Module PSTwitterAPI
-$OAuthSettings = @{
-ApiKey = "$env:PST_KEY"
-ApiSecret = "$env:PST_SECRET"
-AccessToken = "$env:PST_TOKEN"
-AccessTokenSecret = "$env:PST_TOKEN_SECRET"
-}
-Set-TwitterOAuthSettings @OAuthSettings
-Send-TwitterStatuses_Update -status "Affine-client v$tag push now on @chocolateynuget! 
-
-Link: https://community.chocolatey.org/packages/affine-client/$tag
-@AffineOfficial
-#affine #cloud #release #opensource
-"
-}
-
-# send telegram notification
-Function Send-Telegram {
-Param([Parameter(Mandatory=$true)][String]$Message)
-$Telegramtoken = "$env:TELEGRAM"
-$Telegramchatid = "$env:CHAT_ID"
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-
-Send-Telegram -Message "[UCP] New update of Affine-client : $tag"
-
-} else {
-	echo "Error in choco push - Exit code: $LastExitCode "
 }

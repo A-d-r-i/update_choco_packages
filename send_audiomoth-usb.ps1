@@ -2,7 +2,7 @@
 $id = "audiomoth-usb"
 $name = "Audiomoth USB Microphone App"
 $accounts = "@AudioMoth @OpenAcoustics"
-$tags ="#audiomoth"
+$tags = "#audiomoth"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/latest" | ConvertFrom-Json)[0].name
