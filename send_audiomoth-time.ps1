@@ -2,7 +2,7 @@
 $id = "audiomoth-time"
 $name = "Audiomoth Time App"
 $accounts = "@AudioMoth @OpenAcoustics"
-$tags ="#audiomoth"
+$tags = "#audiomoth"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Time-App/releases/latest" | ConvertFrom-Json)[0].name
