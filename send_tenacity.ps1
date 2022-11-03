@@ -1,8 +1,8 @@
 # variables
-$id = "homebank"
-$name = "HomeBank"
-$accounts = ""
-$tags = "#homebank"
+$id = "tenacity"
+$name = "Tenacity"
+$accounts = "@TenacityAudio"
+$tags = "#tenacity"
 
 # extract latest version and release
 # $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].name
@@ -15,7 +15,7 @@ $run = $matches[1]
 $tag = "0.1.0.001-alpha"
 
 # write new version and release
-$file = "./tenacity/tenacity.nuspec"
+$file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
@@ -25,17 +25,17 @@ $xml.Save($file)
 # download installer and LICENSE
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-amd64-x64_windows-ninja$run.zip" -OutFile "tenacity64.zip"
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master/Tenacity_windows-server-2019-x86-x86_windows-ninja$run.zip" -OutFile "tenacity32.zip"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt" -OutFile "./tenacity/legal/LICENSE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt" -OutFile "./$id/legal/LICENSE.txt"
 
-Expand-Archive tenacity64.zip -DestinationPath .\tenacity\tools\ -Force
-Expand-Archive tenacity32.zip -DestinationPath .\tenacity\tools\ -Force
-Rename-Item -Path ".\tenacity\tools\tenacity-win-3.0.4-x64.exe" -NewName "tenacity64.exe"
-Rename-Item -Path ".\tenacity\tools\tenacity-win-3.0.4-x86.exe" -NewName "tenacity32.exe"
+Expand-Archive tenacity64.zip -DestinationPath ".\$id\tools\" -Force
+Expand-Archive tenacity32.zip -DestinationPath ".\$id\tools\" -Force
+Rename-Item -Path ".\$id\tools\tenacity-win-3.0.4-x64.exe" -NewName "tenacity64.exe"
+Rename-Item -Path ".\$id\tools\tenacity-win-3.0.4-x86.exe" -NewName "tenacity32.exe"
 
 $content = "`$ErrorActionPreference = 'Stop'
 `$toolsDir = Split-Path `$MyInvocation.MyCommand.Definition
 `$packageArgs = @{
-  packageName    = 'tenacity'
+  packageName    = '$id'
   fileType       = 'exe'
   file           = `"`$toolsDir\tenacity32.exe`"
   file64         = `"`$toolsDir\tenacity64.exe`"
@@ -56,16 +56,16 @@ if (`$installLocation) {
   Register-Application `"`$installLocation\`$packageName.exe`"
   Write-Host `"`$packageName registered as `$packageName`"
 }
-else { Write-Warning `"Can't find `$PackageName install location`" } " | out-file -filepath ./tenacity/tools/chocolateyinstall.ps1
+else { Write-Warning `"Can't find `$PackageName install location`" } " | out-file -filepath "./$id/tools/chocolateyinstall.ps1"
 
 Remove-Item tenacity64.zip
 Remove-Item tenacity32.zip
 
 # calculation of checksum
-$TABLE64 = Get-FileHash "./tenacity/tools/tenacity64.exe" -Algorithm SHA256
+$TABLE64 = Get-FileHash "./$id/tools/tenacity64.exe" -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
 
-$TABLE32 = Get-FileHash "./tenacity/tools/tenacity32.exe" -Algorithm SHA256
+$TABLE32 = Get-FileHash "./$id/tools/tenacity32.exe" -Algorithm SHA256
 $SHA32 = $TABLE32.Hash
 
 # writing of VERIFICATION.txt
@@ -87,77 +87,14 @@ and can be verified like this:
   checksum 32 bits: $SHA32
   checksum 64 bits: $SHA64
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt> " | out-file -filepath ./tenacity/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/tenacityteam/tenacity/master/LICENSE.txt> " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
-choco pack ./tenacity/tenacity.nuspec --outputdirectory .\tenacity
+choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
 If ($LastExitCode -eq 0) {
-	choco push ./tenacity/tenacity.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
-}
-
-If ($LastExitCode -eq 0) {
-
-# git and create tag
-git config --local user.email "a-d-r-i@outlook.fr"
-git config --local user.name "A-d-r-i"
-git add .
-git commit -m "[Bot] Update files - Tenacity" --allow-empty
-git tag -a tenacity-v$tag -m "Tenacity - version $tag"
-git push -f && git push --tags
-
-# create release
-Install-Module -Name New-GitHubRelease -Force
-Import-Module -Name New-GitHubRelease
-$newGitHubReleaseParameters = @{
-GitHubUsername = "A-d-r-i"
-GitHubRepositoryName = "update_choco_package"
-GitHubAccessToken = "$env:ACTIONS_TOKEN"
-ReleaseName = "Tenacity v$tag"
-TagName = "tenacity-v$tag"
-ReleaseNotes = "$release"
-AssetFilePaths = ".\tenacity\tenacity.$tag.nupkg"
-IsPreRelease = $false
-IsDraft = $false
-}
-$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
-
-# post tweet
-Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
-$Source = Get-Content -path UCP.html -raw
-$Source -match '<td>twitter</td><td>(.*?)</td>'
-$twitter = $matches[1]
-if ( $twitter -eq "ON" )
-{
-Install-Module PSTwitterAPI -Force
-Import-Module PSTwitterAPI
-$OAuthSettings = @{
-ApiKey = "$env:PST_KEY"
-ApiSecret = "$env:PST_SECRET"
-AccessToken = "$env:PST_TOKEN"
-AccessTokenSecret = "$env:PST_TOKEN_SECRET"
-}
-Set-TwitterOAuthSettings @OAuthSettings
-Send-TwitterStatuses_Update -status "Tenacity v$tag push now on @chocolateynuget! 
-
-Link: https://community.chocolatey.org/packages/tenacity/$tag
-@TenacityAudio
-#tenacity #release #opensource
-"
-}
-
-# send telegram notification
-Function Send-Telegram {
-Param([Parameter(Mandatory=$true)][String]$Message)
-$Telegramtoken = "$env:TELEGRAM"
-$Telegramchatid = "$env:CHAT_ID"
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-
-Send-Telegram -Message "[UCP] New update of Tenacity : $tag"
-
-} else {
-	echo "Error in choco push - Exit code: $LastExitCode "
 }
