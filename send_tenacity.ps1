@@ -119,8 +119,11 @@ IsDraft = $false
 $resultrelease = New-GitHubRelease @newGitHubReleaseParameters
 
 # post tweet
-$twitter = (Select-String -Path config.txt -Pattern "twitter=(.*)").Matches.Groups[1].Value
-if ( $twitter -eq "y" )
+Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
+$Source = Get-Content -path UCP.html -raw
+$Source -match '<td>twitter</td><td>(.*?)</td>'
+$twitter = $matches[1]
+if ( $twitter -eq "ON" )
 {
 Install-Module PSTwitterAPI -Force
 Import-Module PSTwitterAPI
