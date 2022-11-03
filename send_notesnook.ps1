@@ -1,3 +1,9 @@
+# variables
+$id = "homebank"
+$name = "HomeBank"
+$accounts = ""
+$tags = "#homebank"
+
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
 $tag = $tag -replace 'v'

@@ -1,3 +1,9 @@
+# variables
+$id = "homebank"
+$name = "HomeBank"
+$accounts = ""
+$tags = "#homebank"
+
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
 $tag = $tag -replace 'v'

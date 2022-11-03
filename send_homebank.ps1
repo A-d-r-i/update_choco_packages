@@ -1,3 +1,9 @@
+# variables
+$id = "homebank"
+$name = "HomeBank"
+$accounts = ""
+$tags = "#homebank"
+
 # extract latest version and release
 Invoke-WebRequest -Uri "http://homebank.free.fr/en/downloads.php" -OutFile "HOMEBANK.html"
 Invoke-WebRequest -Uri "http://homebank.free.fr/ChangeLog" -OutFile "release.txt"
@@ -19,7 +25,7 @@ $release = $release -replace $regex, '[${1}](https://bugs.launchpad.net/bugs/${1
 $release = -join($release, "`n**Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)");
 
 # write new version and release
-$file = "./homebank/homebank.nuspec"
+$file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
@@ -27,12 +33,12 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer
-Invoke-WebRequest -Uri "http://homebank.free.fr/public/HomeBank-$tag-setup.exe" -OutFile "./homebank/tools/homebank.exe"
+Invoke-WebRequest -Uri "http://homebank.free.fr/public/HomeBank-$tag-setup.exe" -OutFile "./$id/tools/$id.exe"
 
 Remove-Item release.txt
 
 # calculation of checksum
-$TABLE = Get-FileHash "./homebank/tools/homebank.exe" -Algorithm SHA256
+$TABLE = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
 $SHA = $TABLE.Hash
 
 # writing of VERIFICATION.txt
@@ -52,76 +58,14 @@ and can be verified like this:
   checksum type: SHA256
   checksum: $SHA
 
-File 'LICENSE.txt' is obtained from the official website " | out-file -filepath ./homebank/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from the official website " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
-choco pack ./homebank/homebank.nuspec --outputdirectory .\homebank
+choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
 If ($LastExitCode -eq 0) {
-	choco push ./homebank/homebank.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
-}
-
-If ($LastExitCode -eq 0) {
-
-# git and create tag
-git config --local user.email "a-d-r-i@outlook.fr"
-git config --local user.name "A-d-r-i"
-git add .
-git commit -m "[Bot] Update files - homebank" --allow-empty
-git tag -a homebank-v$tag -m "HomeBank - version $tag"
-git push -f && git push --tags
-
-# create release
-Install-Module -Name New-GitHubRelease -Force
-Import-Module -Name New-GitHubRelease
-$newGitHubReleaseParameters = @{
-GitHubUsername = "A-d-r-i"
-GitHubRepositoryName = "update_choco_package"
-GitHubAccessToken = "$env:ACTIONS_TOKEN"
-ReleaseName = "HomeBank v$tag"
-TagName = "homebank-v$tag"
-ReleaseNotes = "$release"
-AssetFilePaths = ".\homebank\homebank.$tag.nupkg"
-IsPreRelease = $false
-IsDraft = $false
-}
-$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
-
-# post tweet
-Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
-$Source = Get-Content -path UCP.html -raw
-$Source -match '<td>twitter</td><td>(.*?)</td>'
-$twitter = $matches[1]
-if ( $twitter -eq "ON" )
-{
-Install-Module PSTwitterAPI -Force
-Import-Module PSTwitterAPI
-$OAuthSettings = @{
-ApiKey = "$env:PST_KEY"
-ApiSecret = "$env:PST_SECRET"
-AccessToken = "$env:PST_TOKEN"
-AccessTokenSecret = "$env:PST_TOKEN_SECRET"
-}
-Set-TwitterOAuthSettings @OAuthSettings
-Send-TwitterStatuses_Update -status "HomeBank v$tag push now on @chocolateynuget! 
-
-Link: https://community.chocolatey.org/packages/homebank/$tag
-#homebank #release #opensource
-"
-}
-
-# send telegram notification
-Function Send-Telegram {
-Param([Parameter(Mandatory=$true)][String]$Message)
-$Telegramtoken = "$env:TELEGRAM"
-$Telegramchatid = "$env:CHAT_ID"
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-
-Send-Telegram -Message "[UCP] New update of HomeBank : $tag"
-
-} else {
-	echo "Error in choco push - Exit code: $LastExitCode "
 }
