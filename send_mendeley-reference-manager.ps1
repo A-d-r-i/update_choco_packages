@@ -1,8 +1,8 @@
 # variables
-$id = "homebank"
-$name = "HomeBank"
-$accounts = ""
-$tags = "#homebank"
+$id = "mendeley"
+$name = "Mendeley-Reference-Manager"
+$accounts = "@mendeley_com @MendeleyApp @MendeleyTips"
+$tags = "#mendeley"
 
 # extract latest version and release
 Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
@@ -32,7 +32,7 @@ $release = Get-Content -path MRM.md -raw
 $release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$path) ");
 
 # write new version and release
-$file = "./mendeley-reference-manager/mendeley-reference-manager.nuspec"
+$file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
@@ -40,14 +40,14 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer
-Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./mendeley-reference-manager/tools/mendeley-reference-manager.exe"
+Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./$id/tools/$id.exe"
 
 Remove-Item MRM.txt
 Remove-Item MRM.html
 Remove-Item MRM.md
 
 # calculation of checksum
-$TABLE = Get-FileHash "./mendeley-reference-manager/tools/mendeley-reference-manager.exe" -Algorithm SHA256
+$TABLE = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
 $SHA = $TABLE.Hash
 
 # writing of VERIFICATION.txt
@@ -67,76 +67,14 @@ and can be verified like this:
   checksum type: SHA256
   checksum: $SHA
 
-File 'LICENSE.txt' is obtained from the official website " | out-file -filepath ./mendeley-reference-manager/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from the official website " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
-choco pack ./mendeley-reference-manager/mendeley-reference-manager.nuspec --outputdirectory .\mendeley-reference-manager
+choco pack "./$id/$id.nuspec" --outputdirectory .\$id
 
 If ($LastExitCode -eq 0) {
-	choco push ./mendeley-reference-manager/mendeley-reference-manager.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
-}
-
-If ($LastExitCode -eq 0) {
-
-# git and create tag
-git config --local user.email "a-d-r-i@outlook.fr"
-git config --local user.name "A-d-r-i"
-git add .
-git commit -m "[Bot] Update files - Mendeley - RM" --allow-empty
-git tag -a mendeley-rm-v$tag -m "Mendeley-Reference-Manager - version $tag"
-git push -f && git push --tags
-
-# create release
-Install-Module -Name New-GitHubRelease -Force
-Import-Module -Name New-GitHubRelease
-$newGitHubReleaseParameters = @{
-GitHubUsername = "A-d-r-i"
-GitHubRepositoryName = "update_choco_package"
-GitHubAccessToken = "$env:ACTIONS_TOKEN"
-ReleaseName = "Mendeley-Reference-Manager v$tag"
-TagName = "mendeley-rm-v$tag"
-ReleaseNotes = "$release"
-AssetFilePaths = ".\mendeley-reference-manager\mendeley-reference-manager.$tag.nupkg"
-IsPreRelease = $false
-IsDraft = $false
-}
-$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
-
-# post tweet
-Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
-$Source = Get-Content -path UCP.html -raw
-$Source -match '<td>twitter</td><td>(.*?)</td>'
-$twitter = $matches[1]
-if ( $twitter -eq "ON" )
-{
-Install-Module PSTwitterAPI -Force
-Import-Module PSTwitterAPI
-$OAuthSettings = @{
-ApiKey = "$env:PST_KEY"
-ApiSecret = "$env:PST_SECRET"
-AccessToken = "$env:PST_TOKEN"
-AccessTokenSecret = "$env:PST_TOKEN_SECRET"
-}
-Set-TwitterOAuthSettings @OAuthSettings
-Send-TwitterStatuses_Update -status "Mendeley-Reference-Manager v$tag push now on @chocolateynuget! 
-Link: https://community.chocolatey.org/packages/mendeley-reference-manager/$tag
-@mendeley_com @MendeleyApp @MendeleyTips
-#mendeley #release #opensource
-"
-}
-
-# send telegram notification
-Function Send-Telegram {
-Param([Parameter(Mandatory=$true)][String]$Message)
-$Telegramtoken = "$env:TELEGRAM"
-$Telegramchatid = "$env:CHAT_ID"
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-
-Send-Telegram -Message "[UCP] New update of Mendeley-Reference-Manager : $tag"
-
-} else {
-	echo "Error in choco push - Exit code: $LastExitCode "
 }

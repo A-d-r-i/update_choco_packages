@@ -1,8 +1,8 @@
 # variables
-$id = "homebank"
-$name = "HomeBank"
+$id = "tartube"
+$name = "Tartube"
 $accounts = ""
-$tags = "#homebank"
+$tags = "#tartube"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
@@ -21,7 +21,7 @@ $release = $release -replace $regex, '[${1}](https://github.com/axcore/tartube/i
 $release = -join($release, "`n**Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)");
 
 # write new version and release
-$file = "./tartube/tartube.nuspec"
+$file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
 $xml.package.metadata.version = $tag
@@ -29,13 +29,13 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./tartube/tools/tartube64.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./tartube/legal/LICENSE.txt"
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./$id/tools/$id.exe"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 Remove-Item release.txt
 
 # calculation of checksum
-$TABLE64 = Get-FileHash "./tartube/tools/tartube64.exe" -Algorithm SHA256
+$TABLE64 = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
 
 # writing of VERIFICATION.txt
@@ -55,76 +55,14 @@ and can be verified like this:
   checksum type: SHA256
   checksum 64 bits: $SHA64
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> " | out-file -filepath ./tartube/legal/VERIFICATION.txt
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/axcore/tartube/master/LICENSE> " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
-choco pack ./tartube/tartube.nuspec --outputdirectory .\tartube
+choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
 If ($LastExitCode -eq 0) {
-	choco push ./tartube/tartube.$tag.nupkg --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
-}
-
-If ($LastExitCode -eq 0) {
-
-# git and create tag
-git config --local user.email "a-d-r-i@outlook.fr"
-git config --local user.name "A-d-r-i"
-git add .
-git commit -m "[Bot] Update files - Tartube" --allow-empty
-git tag -a tartube-v$tag -m "Tartube - version $tag"
-git push -f && git push --tags
-
-# create release
-Install-Module -Name New-GitHubRelease -Force
-Import-Module -Name New-GitHubRelease
-$newGitHubReleaseParameters = @{
-GitHubUsername = "A-d-r-i"
-GitHubRepositoryName = "update_choco_package"
-GitHubAccessToken = "$env:ACTIONS_TOKEN"
-ReleaseName = "Tartube v$tag"
-TagName = "tartube-v$tag"
-ReleaseNotes = "$release"
-AssetFilePaths = ".\tartube\tartube.$tag.nupkg"
-IsPreRelease = $false
-IsDraft = $false
-}
-$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
-
-# post tweet
-Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
-$Source = Get-Content -path UCP.html -raw
-$Source -match '<td>twitter</td><td>(.*?)</td>'
-$twitter = $matches[1]
-if ( $twitter -eq "ON" )
-{
-Install-Module PSTwitterAPI -Force
-Import-Module PSTwitterAPI
-$OAuthSettings = @{
-ApiKey = "$env:PST_KEY"
-ApiSecret = "$env:PST_SECRET"
-AccessToken = "$env:PST_TOKEN"
-AccessTokenSecret = "$env:PST_TOKEN_SECRET"
-}
-Set-TwitterOAuthSettings @OAuthSettings
-Send-TwitterStatuses_Update -status "Tartube v$tag push now on @chocolateynuget! 
-
-Link: https://community.chocolatey.org/packages/tartube/$tag
-#tartube #release #opensource
-"
-}
-
-# send telegram notification
-Function Send-Telegram {
-Param([Parameter(Mandatory=$true)][String]$Message)
-$Telegramtoken = "$env:TELEGRAM"
-$Telegramchatid = "$env:CHAT_ID"
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-
-Send-Telegram -Message "[UCP] New update of Tartube : $tag"
-
-} else {
-	echo "Error in choco push - Exit code: $LastExitCode "
 }
