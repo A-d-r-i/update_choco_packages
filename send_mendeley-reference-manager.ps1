@@ -1,3 +1,9 @@
+# variables
+$id = "homebank"
+$name = "HomeBank"
+$accounts = ""
+$tags = "#homebank"
+
 # extract latest version and release
 Invoke-WebRequest -Uri "https://www.mendeley.com/release-notes-reference-manager/" -OutFile "MRM.html"
 $Source = Get-Content -path MRM.html -raw
