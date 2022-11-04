@@ -3,7 +3,7 @@ Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -Ou
 $Source = Get-Content -path UCP.html -raw
 
 # send telegram notification
-$Source -match '<td>telegram</td><td>(.*?)</td>'
+$Source -match '<td><b>telegram</b></td><td>(.*?)</td>'
 $telegram = $matches[1]
 
 if ( $telegram -eq "ON" )
