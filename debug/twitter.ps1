@@ -3,7 +3,7 @@ Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -Ou
 $Source = Get-Content -path UCP.html -raw
 
 # post tweet
-$Source -match '<td>twitter</td><td>(.*?)</td>'
+$Source -match '<td><b>twitter</b></td><td>(.*?)</td>'
 $twitter = $matches[1]
 
 if ( $twitter -eq "ON" )
