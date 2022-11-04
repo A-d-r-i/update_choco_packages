@@ -1,4 +1,4 @@
-name: PUSH
+name: NOTIFICATION-DEBUG
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ env:
     CHAT_ID: ${{ secrets.CHAT_ID }}
 
 jobs:
-  PUSH:
+  NOTIFICATION-DEBUG:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
