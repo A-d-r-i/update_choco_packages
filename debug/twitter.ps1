@@ -17,7 +17,7 @@ if ( $twitter -eq "ON" )
 		AccessTokenSecret = "$env:PST_TOKEN_SECRET"
 	}
 	Set-TwitterOAuthSettings @OAuthSettings
-	Send-TwitterStatuses_Update -status "Test sending message on twitter"
+	Send-TwitterStatuses_Update -status "[UCP-debug] Test sending message on twitter"
 	} else {
 	echo "Twitter not enabling" 
 }
