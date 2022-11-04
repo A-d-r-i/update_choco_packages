@@ -48,6 +48,8 @@ Link: https://community.chocolatey.org/packages/$id/$tag
 $accounts
 $tags #release #opensource
 "
+} else {
+echo "Twitter not enabling"
 }
 
 # send telegram notification
@@ -64,6 +66,8 @@ $Telegramchatid = "$env:CHAT_ID"
 $Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
 
 Send-Telegram -Message "[UCP] New update of $name : $tag - https://community.chocolatey.org/packages/$id/$tag"
+} else {
+echo "Telegram not enabling"
 }
 
 } else {
