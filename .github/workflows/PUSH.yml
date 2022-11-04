@@ -39,7 +39,7 @@ jobs:
         Set-TwitterOAuthSettings @OAuthSettings
         Send-TwitterStatuses_Update -status "Test sending message on twitter"
         } else {
-        echo "Twitter not enabling"
+        echo "Twitter not enabling" }
         
       - name: PUSH_TELEGRAM
         if: always()
@@ -59,4 +59,4 @@ jobs:
         
         Send-Telegram -Message "Test sending message on twitter"
         } else {
-        echo "Telegram not enabling"
+        echo "Telegram not enabling" }
