@@ -6,6 +6,8 @@ Github is the perfect Git repository to manage:
 2. regular checking of packages updates
 3. automatic sending of packages to chocolatey as needed
 
+[⏻ Management of notification on twitter/telegram](https://adrisupport.000webhostapp.com/UCP/)
+
 ---
 
 Here are deposited:
