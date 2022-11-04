@@ -1,0 +1,62 @@
+name: PUSH
+
+on:
+  workflow_dispatch:
+
+env:
+    PST_KEY: ${{ secrets.PST_KEY }}
+    PST_SECRET: ${{ secrets.PST_SECRET }}
+    PST_TOKEN: ${{ secrets.PST_TOKEN }}
+    PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+    TELEGRAM: ${{ secrets.TELEGRAM }}
+    CHAT_ID: ${{ secrets.CHAT_ID }}
+
+jobs:
+  PUSH:
+    runs-on: windows-latest
+
+      - name: PUSH_TWITTER
+        if: always()
+        run:  |
+        # push notification messages enabled ?
+        Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
+        $Source = Get-Content -path UCP.html -raw
+        
+        # post tweet
+        $Source -match '<td>twitter</td><td>(.*?)</td>'
+        $twitter = $matches[1]
+        
+        if ( $twitter -eq "ON" )
+        {
+        Install-Module PSTwitterAPI -Force
+        Import-Module PSTwitterAPI
+        $OAuthSettings = @{
+        ApiKey = "$env:PST_KEY"
+        ApiSecret = "$env:PST_SECRET"
+        AccessToken = "$env:PST_TOKEN"
+        AccessTokenSecret = "$env:PST_TOKEN_SECRET"
+        }
+        Set-TwitterOAuthSettings @OAuthSettings
+        Send-TwitterStatuses_Update -status "Test sending message on twitter"
+        } else {
+        echo "Twitter not enabling"
+        
+      - name: PUSH_TELEGRAM
+        if: always()
+        run:  |
+        # send telegram notification
+        $Source -match '<td>telegram</td><td>(.*?)</td>'
+        $telegram = $matches[1]
+        
+        if ( $telegram -eq "ON" )
+        {
+        Function Send-Telegram {
+        Param([Parameter(Mandatory=$true)][String]$Message)
+        $Telegramtoken = "$env:TELEGRAM"
+        $Telegramchatid = "$env:CHAT_ID"
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        $Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
+        
+        Send-Telegram -Message "Test sending message on twitter"
+        } else {
+        echo "Telegram not enabling"
