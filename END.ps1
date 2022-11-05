@@ -27,7 +27,7 @@ If ($LastExitCode -eq 0) {
 	Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
 	$Source = Get-Content -path UCP.html -raw
 	
-	# post tweet
+	# post twitter tweet
 	$Source -match '<td><b>twitter</b></td><td>(.*?)</td>'
 	$twitter = $matches[1]
 	
@@ -68,6 +68,17 @@ If ($LastExitCode -eq 0) {
 		Send-Telegram -Message "[UCP] New update of $name : $tag - https://community.chocolatey.org/packages/$id/$tag"
 		} else {
 		echo "Telegram not enabling"
+	}
+	
+	# post mastodon toot
+	$Source -match '<td><b>mastodon</b></td><td>(.*?)</td>'
+	$mastodon = $matches[1]
+	
+	if ( $mastodon -eq "ON" )
+	{
+		echo "Sending toots on mastodon is not configured yet"
+		} else {
+		echo "Mastodon not enabling"
 	}
 	
 	} else {
