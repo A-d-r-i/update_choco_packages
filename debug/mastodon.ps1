@@ -10,10 +10,10 @@ if ( $mastodon -eq "ON" )
 {
 	$Uri = 'https://mastodon.social/api/v1/statuses'
 	$headers = @{
-		Authorization = "$env:MASTODON"
+		Authorization = "Bearer $env:MASTODON"
 	}
 	$form = @{
-		status = '[UCP-debug] Test sending message on mastodon'
+		status = "[UCP-debug] Test sending message on mastodon"
 	}
 	Invoke-WebRequest -Uri $Uri -Headers $headers -Method Post -Form $form
 	} else {
