@@ -8,7 +8,7 @@ $mastodon = $matches[1]
 
 if ( $mastodon -eq "ON" )
 {
-	$Uri = 'https://mastodon.social/api/v1/statuses'
+	$Uri = 'https://piaille.fr/api/v1/statuses'
 	$headers = @{
 		Authorization = "Bearer $env:MASTODON"
 	}
