@@ -17,7 +17,13 @@ if ( $twitter -eq "ON" )
 		AccessTokenSecret = "$env:PST_TOKEN_SECRET"
 	}
 	Set-TwitterOAuthSettings @OAuthSettings
-	Send-TwitterStatuses_Update -status "[UCP-debug] Test sending message on twitter"
+	Send-TwitterStatuses_Update -status "Here we are on Twitter! In order to avoid overloading @Ad_r_i's account, it was decided to create a separate account for update_choco_packages.
+
+Find us on:
+
+@joinmastodon: @update_choco_packages@piaille.fr ( https://piaille.fr/@update_choco_packages )
+
+@github: https://github.com/A-d-r-i/update_choco_packages"
 	} else {
 	echo "Twitter not enabling" 
 }
