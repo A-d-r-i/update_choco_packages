@@ -19,7 +19,7 @@ Find us on:
 
 Github: https://github.com/A-d-r-i/update_choco_packages
 
-Twitter: @up_choco_pack@twitter.com ( https://piaille.fr/@update_choco_packages )"
+Twitter: @up_choco_pack@twitter.com ( https://twitter.com/up_choco_pack )"
 	}
 	Invoke-WebRequest -Uri $Uri -Headers $headers -Method Post -Form $form
 	} else {
