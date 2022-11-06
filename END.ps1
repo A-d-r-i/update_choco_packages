@@ -76,7 +76,14 @@ If ($LastExitCode -eq 0) {
 	
 	if ( $mastodon -eq "ON" )
 	{
-		echo "Sending toots on mastodon is not configured yet"
+		$Uri = 'https://piaille.fr/api/v1/statuses'
+		$headers = @{
+			Authorization = "Bearer $env:MASTODON"
+		}
+		$form = @{
+			status = "[UCP-debug] Test sending message on mastodon"
+		}
+		Invoke-WebRequest -Uri $Uri -Headers $headers -Method Post -Form $form
 		} else {
 		echo "Mastodon not enabling"
 	}
