@@ -8,14 +8,10 @@ $telegram = $matches[1]
 
 if ( $telegram -eq "ON" )
 {
-	Function Send-Telegram {
-        Param([Parameter(Mandatory=$true)][String]$Message)
-        $Telegramtoken = "$env:TELEGRAM"
-        $Telegramchatid = "$env:CHAT_ID"
-        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-	$Response = Invoke-RestMethod -Uri "https://api.telegram.org/bot$($Telegramtoken)/sendMessage?chat_id=$($Telegramchatid)&text=$($Message)"}
-	
-	Send-Telegram -Message "[UCP-debug] Test sending message on telegram"
+        $tmtext = "[UCP-debug] Test sending message on telegram"
+	$tmtoken = "$env:TELEGRAM"
+        $tmchatid = "$env:CHAT_ID"
+	Invoke-RestMethod -Uri "https://api.telegram.org/bot$tmtoken/sendMessage?chat_id=$tmchatid&text=$tmtext"}
 	} else {
 	echo "Telegram not enabling"
 }
