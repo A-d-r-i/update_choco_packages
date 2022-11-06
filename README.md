@@ -8,6 +8,7 @@ Github is the perfect Git repository to manage:
 
 [⏻ Management of notification on social networks](https://adrisupport.000webhostapp.com/UCP/)
 
+<a href="https://twitter.com/up_choco_pack"><img src="https://img.shields.io/badge/Twitter-update__choco__packages-blue?style=flat-square&amp;logo=twitter"/></a> <a rel="me" href="https://piaille.fr/web/@update_choco_packages"><img src="https://img.shields.io/badge/Mastodon-update__choco__packages-blue?style=flat-square&amp;logo=mastodon"/></a>
 ---
 
 Here are deposited:
