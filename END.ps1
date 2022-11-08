@@ -61,10 +61,10 @@ If ($LastExitCode -eq 0) {
 		$tmtext = "[UCP] New update of $name : $tag - https://community.chocolatey.org/packages/$id/$tag"
 		$tmtoken = "$env:TELEGRAM"
 		$tmchatid = "$env:CHAT_ID"
-		Invoke-RestMethod -Uri "https://api.telegram.org/bot$tmtoken/sendMessage?chat_id=$tmchatid&text=$tmtext"}
+		Invoke-RestMethod -Uri "https://api.telegram.org/bot$tmtoken/sendMessage?chat_id=$tmchatid&text=$tmtext"
 		} else {
-		echo "Telegram not enabling"
-	}
+	echo "Telegram not enabling"}
+	
 	
 	# post mastodon toot
 	$Source -match '<td><b>mastodon</b></td><td>(.*?)</td>'
@@ -74,13 +74,12 @@ If ($LastExitCode -eq 0) {
 	{
 		$mastodonheaders = @{Authorization = "Bearer $env:MASTODON"}
 		$mastodonform = @{status = "$name v$tag push now on @chocolateynuget@twitter.com! 
-		
-		Link: https://community.chocolatey.org/packages/$id/$tag
+			
+			Link: https://community.chocolatey.org/packages/$id/$tag
 		$tags #release #opensource"}
 		Invoke-WebRequest -Uri "https://piaille.fr/api/v1/statuses" -Headers $mastodonheaders -Method Post -Form $mastodonform
 		} else {
-		echo "Mastodon not enabling"
-	}
+	echo "Mastodon not enabling"}
 	
 	} else {
 	echo "Error in choco push - Exit code: $LastExitCode "
