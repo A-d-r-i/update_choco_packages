@@ -48,6 +48,7 @@ choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
 If ($LastExitCode -eq 0) {
 	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
