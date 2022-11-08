@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>saucedacity</id>
+    <version>1.2.0</version>
+    <title>Saucedacity</title>
+    <authors>Tenacity Team (and contributors)</authors>
+    <owners>Adri</owners>
+    <licenseUrl>https://raw.githubusercontent.com/tenacityteam/saucedacity/main/LICENSE.txt</licenseUrl>
+    <projectUrl>https://saucedacity.github.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tenacityteam/saucedacity@main/images/icons/48x48/saucedacity.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description># Saucedacity: A saucy audio editor
+
+**Please Note**: Will be the new future codebase of Tenacity starting with 1.3
+
+**Saucedacity** is an easy-to-use, multi-track audio editor and recorder for Windows, GNU/Linux, and other operating systems*. Saucedacity is open source software licensed under GPL, version 2 or later.
+
+*macOS is unofficially supported (it is buildable). We lack an actual Mac to test our CI builds on to make sure Saucedacity runs properly.
+
+Features:
+
+- **Recording** from any real, or virtual audio device that is available to the host system.
+- **Export / Import** a wide range of audio formats, extendible with FFmpeg.
+- **High quality** using 32-bit float audio processing.
+- **Clip handles** for easy audio editing.
+- **Plug-ins** Support for multiple audio plug-in formats, including VST, LV2, AU.
+- **Macros** for chaining commands and batch processing.
+- **Scripting** in Python, Perl, or any language that supports named pipes.
+- **Nyquist** Very powerful built-in scripting language that may also be used to create plug-ins.
+- **Editing** multi-track editing with sample accuracy and arbitrary sample rates.
+- **Accessibility** for VI users.
+- **Analysis and visualization** tools to analyze audio, or other signal data.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <summary>A free open-source audio editor based on Audacity focusing on general improvements.</summary>
+    <releaseNotes></releaseNotes>
+    <tags>saucedacity audacity tenacity editor audio recorder foss cross-platform</tags>
+    <projectSourceUrl>https://github.com/tenacityteam/saucedacity</projectSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/saucedacity</packageSourceUrl>
+    <!-- <docsUrl></docsUrl> -->
+    <bugTrackerUrl>https://github.com/tenacityteam/saucedacity/issues</bugTrackerUrl>
+  </metadata>
+</package>

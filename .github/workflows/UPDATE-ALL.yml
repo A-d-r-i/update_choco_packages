@@ -454,7 +454,7 @@ jobs:
           $Version = ([xml](Get-Content ./notesnook/notesnook.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
           $tag = $tag -replace 'v'
-
+          
           echo $Version
           echo $tag
           
@@ -471,3 +471,29 @@ jobs:
           #exit 1
           }
           }
+          
+      - name: SAUCEDACITY
+        if: always()
+        run:  |
+          $Version = ([xml](Get-Content ./saucedacity/saucedacity.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = $tag -replace 'v'
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          ./send_saucedacity.ps1
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
+          }
+          
+
