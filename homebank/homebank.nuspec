@@ -25,7 +25,7 @@ Made 5.5.8 release
     <copyright>© Maxime Doyen</copyright>
     <tags>admin homebank finance accounting</tags>
     <projectSourceUrl>https://code.launchpad.net/homebank</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/homebank</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/homebank</packageSourceUrl>
     <docsUrl>http://homebank.free.fr/help/</docsUrl>
     <bugTrackerUrl>https://bugs.launchpad.net/homebank</bugTrackerUrl>
   </metadata>

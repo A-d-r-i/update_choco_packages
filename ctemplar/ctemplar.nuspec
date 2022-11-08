@@ -26,7 +26,7 @@ Our team is passionate about privacy and security. It is what we believe in and 
     <releaseNotes>**!!! Following the [shutting down](https://ctemplar.com/ctemplar-is-shutting-down/) of CTemplar, the package can no longer be maintained or downloaded. If you are using a previous version, updates will not be available. !!!**</releaseNotes>
     <tags>ctemplar mail security e2ee anonymous</tags>
     <projectSourceUrl>https://github.com/CTemplar/webclient</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/ctemplar</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/ctemplar</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/CTemplar/webclient/issues</bugTrackerUrl>
   </metadata>

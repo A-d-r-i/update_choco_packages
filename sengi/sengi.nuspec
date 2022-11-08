@@ -27,7 +27,7 @@ It is released as a **browser webapp** and also packaged as an **cross-platform 
 * Mention missing in some reply coming from Soapbox instances</releaseNotes>
     <tags>sengi mastodon pleroma desktop client</tags>
     <projectSourceUrl>https://github.com/NicolasConstant/sengi</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/sengi</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/sengi</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/NicolasConstant/sengi/issues</bugTrackerUrl>
   </metadata>

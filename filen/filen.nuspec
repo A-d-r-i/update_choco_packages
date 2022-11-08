@@ -35,7 +35,7 @@ Linux x86_64: https://cdn.filen.io/desktop/release/filen_x86_64.AppImage
 Linux arm64: https://cdn.filen.io/desktop/release/filen_arm64.AppImage</releaseNotes>
     <tags>filen cloud zero-knoledge encrypted storage</tags>
     <projectSourceUrl>https://github.com/FilenCloudDienste/filen-desktop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/filen</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/filen</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/FilenCloudDienste/filen-desktop/issues</bugTrackerUrl>
   </metadata>
