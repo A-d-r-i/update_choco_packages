@@ -32,6 +32,9 @@ Rename-Item -Path ".\$id\tools\saucedacity-win-$tag-x86.exe" -NewName "saucedaci
 
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tenacityteam/saucedacity/main/LICENSE.txt" -OutFile "./$id/legal/LICENSE.txt"
 
+Remove-Item "saucedacity64*" -Recurse
+Remove-Item "saucedacity32*" -Recurse
+
 # calculation of checksum
 $TABLE64 = Get-FileHash "./$id/tools/saucedacity64.exe" -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
