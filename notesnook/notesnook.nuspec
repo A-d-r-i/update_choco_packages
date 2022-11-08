@@ -26,7 +26,7 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 - The github release of android app will not send requests to play.google.com to check for new version. Instead new version updates will be fetched from github releases api.</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/notesnook</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/streetwriters/notesnook/issues</bugTrackerUrl>
   </metadata>

@@ -73,7 +73,7 @@ The reason this message appears is because Apple requires software on macOS to b
 </releaseNotes>
     <tags>dotbrowser browser privacy firefox</tags>
     <projectSourceUrl>https://github.com/dothq/browser-desktop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/dotbrowser</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/dotbrowser</packageSourceUrl>
     <docsUrl>https://docs.dothq.co/</docsUrl>
     <bugTrackerUrl>https://github.com/dothq/browser/issues</bugTrackerUrl>
   </metadata>

@@ -44,7 +44,7 @@ d5d6aa02b7a2b6bfc88428e76281c243575312a7c2e4c0f448b4a8f2ddb78a94
 35262337cfcad579cbbdea39dd76019a1861421b375296ba3f8ca4c2174802ca</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/tutanota</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/tutao/tutanota/issues</bugTrackerUrl>
   </metadata>

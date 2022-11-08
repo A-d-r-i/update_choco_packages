@@ -23,7 +23,7 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <releaseNotes>Take a look at the assets to download and install this app.</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/m1911star/affine-client</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/affine-client</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/m1911star/affine-client/issues</bugTrackerUrl>
   </metadata>

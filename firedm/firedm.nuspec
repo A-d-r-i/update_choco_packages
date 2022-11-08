@@ -19,7 +19,7 @@
 		</releaseNotes>
     <tags>firedm download manager youtube_dl</tags>
     <projectSourceUrl>https://github.com/firedm/FireDM</projectSourceUrl>
-    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_package/tree/main/firedm</packageSourceUrl>
+    <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/firedm</packageSourceUrl>
     <docsUrl>https://github.com/firedm/FireDM/blob/master/docs/user_guide.md</docsUrl>
     <bugTrackerUrl>https://github.com/firedm/FireDM/issues</bugTrackerUrl>
   </metadata>
