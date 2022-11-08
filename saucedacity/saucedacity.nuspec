@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>saucedacity</id>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <title>Saucedacity</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -34,7 +34,24 @@ Features:
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A free open-source audio editor based on Audacity focusing on general improvements.</summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>While unexpected, this is a small release intended to bring a few updates to libraries, macOS support, a very slight appearance change, and some project loading performance improvements backported from Audacity.
+
+Note that this release **does not** bring anything from Tenacity. That won't happen until 1.3, which is making some steady changes. If you would like to try out release 1.3, you can check out https://nightly.link/saucedacity/saucedacity/workflows/cmake_build/main.
+
+# Changes compared to 1.2
+* Updated libmad submodule to 0.16.3
+* **macOS specific changes**:
+  * Fixed wrapper failing to launch Saucedacity. Turns out this wrapper hadn't been updated since the project was forked from upstream.
+  * Updated app icon.
+* Removed system border around our numeric text control.
+
+## Changes from Audacity
+* FFmpeg 5.0 is now officially supported
+* Improved project loading performance by ~10x.
+
+# Notes on macOS Binaries
+* macOS is believed to work on macOS Intel. If you're on Apple Silicon, you will need to use Rosetta 2.
+* **Saucedacity binaries for macOS are unsigned.** You will need to go to System Preferences &gt; Security &amp; Privacy &gt; General and click "Open Anyway" if you attempted to run Saucedacity with Gatekeeper enabled.</releaseNotes>
     <tags>saucedacity audacity tenacity editor audio recorder foss cross-platform</tags>
     <projectSourceUrl>https://github.com/tenacityteam/saucedacity</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/saucedacity</packageSourceUrl>

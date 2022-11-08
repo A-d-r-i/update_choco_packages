@@ -1,1 +1,19 @@
 VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official github repository listed on <https://github.com/tenacityteam/saucedacity/releases/>
+and can be verified like this:
+
+1. Download the following installer:
+  Version 1.2.1 64 bits : <https://github.com/tenacityteam/saucedacity/releases/download/v1.2.1/saucedacity-1.2.1-win-x86_64.zip>
+  Version 1.2.1 32 bits : <https://github.com/tenacityteam/saucedacity/releases/download/v1.2.1/saucedacity-1.2.1-win-x86.zip>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: SHA256
+  checksum 64 bits: 0555EA784114EE3E4D4CC2B27CC9F95C1611F7AEF6AD4C559B7F600079B7C6C0
+  checksum 32 bits: 4F6EB64B92550C59085D5EAE6DBAF848C94B8B7A24890335580C4360AD4C60A5
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/tenacityteam/saucedacity/main/LICENSE.txt> 
