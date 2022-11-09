@@ -51,4 +51,21 @@ Here are deposited:
 [^3]: *FireDM* - Not longer maintained by his creators ([GitHub](https://github.com/firedm))  
 [^4]: *Tenacity is still under development without release. So the update must be done manually.*
 
-![update_choco_packages-3](https://user-images.githubusercontent.com/27277698/134149155-45a89285-542a-4bc8-a9d3-83ce57dc5fe9.png)
+```mermaid
+stateDiagram-v2
+    [*] --> extract_nuspec_version
+    [*] --> extract_official_version
+    extract_nuspec_version --> compare
+    extract_official_version --> compare
+
+    compare --> New_version?
+    New_version? --> Yes
+    New_version? --> No
+
+    Yes --> update_nuspec
+    update_nuspec --> push_chocolatey
+    update_nuspec --> push_git
+    update_nuspec --> post_tweet/telegram/toot
+    No --> [*]
+  
+```
