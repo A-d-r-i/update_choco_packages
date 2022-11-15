@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.103.3</version>
+    <version>3.104.5</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,31 +17,24 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Show color of calendar in calendar event editor [#4679](https://github.com/tutao/tutanota/issues/4679)
- - update electron to 21.1.1 [#4623](https://github.com/tutao/tutanota/issues/4623)
-
-## Notes
- - Offline cache will be purged with this release to fix consistency issues
+ - Show multiple news items [#4608](https://github.com/tutao/tutanota/issues/4608)
 
 # Bugfixes
- - Partial loading banner in MailViewer has no margin [#4701](https://github.com/tutao/tutanota/issues/4701)
  - Retry blob uploads in case of a disk failure [#4692](https://github.com/tutao/tutanota/issues/4692)
- - some events are not displayed in the calendar when offline mode is active [#4660](https://github.com/tutao/tutanota/issues/4660)
- - Old links to external confidential Emails don't show an expiry notification [#4184](https://github.com/tutao/tutanota/issues/4184)
- - Deleted group memberships not being handled by cache [#2874](https://github.com/tutao/tutanota/issues/2874)
+ - Select entry not possible in single column layout [#4657](https://github.com/tutao/tutanota/issues/4657)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/233?closed=1
+https://github.com/tutao/tutanota/milestone/235?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-373747014cdecb8a3a499e7936df162236c4a12ca5b7515d1c9371182d192943
+339a8d39c4c82ee5af2fa74e906f97a9a00403d4b39ca13b7fc6a3b85864368a
 
 **tutanota-desktop-win.exe:**
-d5d6aa02b7a2b6bfc88428e76281c243575312a7c2e4c0f448b4a8f2ddb78a94
+08febea2a222e2fa92ff5cfca2da09c696ce21110ee8c9f05b5671865aac0e1b
 
 **tutanota-desktop-mac.dmg:**
-35262337cfcad579cbbdea39dd76019a1861421b375296ba3f8ca4c2174802ca</releaseNotes>
+a610779c23d5fe3841acd61401c8d848bd331800bff2acf6ef7db23014f14a7a</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>

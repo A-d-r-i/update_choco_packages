@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 3.103.3 : <https://mail.tutanota.com/desktop/tutanota-desktop-win.exe>
+  Version 3.104.5 : <https://mail.tutanota.com/desktop/tutanota-desktop-win.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: CC88E04DDFF5675692BBB15689FDA21CA49DFF0EF4C72FEFC735238ED113ED3B
+  checksum: D5D6AA02B7A2B6BFC88428E76281C243575312A7C2E4C0F448B4A8F2DDB78A94
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/tutao/tutanota/master/LICENSE.txt> 
