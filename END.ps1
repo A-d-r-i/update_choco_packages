@@ -12,7 +12,7 @@ If ($LastExitCode -eq 0) {
 	Import-Module -Name New-GitHubRelease
 	$newGitHubReleaseParameters = @{
 		GitHubUsername = "A-d-r-i"
-		GitHubRepositoryName = "update_choco_package"
+		GitHubRepositoryName = "update_choco_packages"
 		GitHubAccessToken = "$env:ACTIONS_TOKEN"
 		ReleaseName = "$name v$tag"
 		TagName = "$id-v$tag"
@@ -22,6 +22,7 @@ If ($LastExitCode -eq 0) {
 		IsDraft = $false
 	}
 	$resultrelease = New-GitHubRelease @newGitHubReleaseParameters
+	$resultrelease.ErrorMessage
 	
 	# push notification messages enabled ?
 	Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
