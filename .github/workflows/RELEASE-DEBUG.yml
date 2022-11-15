@@ -1,0 +1,16 @@
+name: RELEASE-DEBUG
+
+on:
+  workflow_dispatch:
+
+env:
+    ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+
+jobs:
+  RELEASE-DEBUG:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: CREATE_RELEASE
+        if: always()
+        run: ./DEBUG/release.ps1
