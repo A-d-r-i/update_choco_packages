@@ -12,7 +12,7 @@ Install-Module -Name New-GitHubRelease -Force
 		ReleaseName = "$name v$tag"
 		TagName = "$id-v$tag"
 		ReleaseNotes = "$release"
-		AssetFilePaths = ".\debug\$id\$id.$tag.nupkg"
+		AssetFilePaths = ".\debug\$id\$id.$tag.txt"
 		IsPreRelease = $false
 		IsDraft = $false
 	}
