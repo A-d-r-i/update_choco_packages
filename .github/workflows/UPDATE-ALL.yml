@@ -15,6 +15,7 @@ env:
     PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
     TELEGRAM: ${{ secrets.TELEGRAM }}
     CHAT_ID: ${{ secrets.CHAT_ID }}
+    MASTODON: ${{ secrets.MASTODON }}
 
 jobs:
   UPDATE-ALL:
