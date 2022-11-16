@@ -149,7 +149,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./fluffychat/fluffychat.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
-          $tag = $tag -replace 'v'          
+          $tag = $tag.Trim("v")
           
           echo $Version
           echo $tag
@@ -224,7 +224,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./raven/raven.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
-          $tag = $tag -replace 'v'
+          $tag = $tag.Trim("v")
           
           echo $Version
           echo $tag
@@ -271,7 +271,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./tartube/tartube.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
-          $tag = $tag -replace 'v'
+          $tag = $tag.Trim("v")
           $name = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].name
           
           echo $Version
@@ -355,7 +355,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./open-video-downloader/open-video-downloader.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
-          $tag = $tag -replace 'v'
+          $tag = $tag.Trim("v")
           
           echo $Version
           echo $tag
@@ -430,7 +430,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./affine-client/affine-client.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
-          $tag = $tag -replace 'Affine Client v'
+          $tag = $tag.Trim("Affine Client v")
           if ( $tag -eq '0.1.1') { $tag = '0.2.0' }
           echo $Version
           echo $tag
@@ -454,7 +454,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./notesnook/notesnook.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
-          $tag = $tag -replace 'v'
+          $tag = $tag.Trim("v")
           
           echo $Version
           echo $tag
@@ -478,7 +478,7 @@ jobs:
         run:  |
           $Version = ([xml](Get-Content ./saucedacity/saucedacity.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" | ConvertFrom-Json)[0].tag_name
-          $tag = $tag -replace 'v'
+          $tag = $tag.Trim("v")
           
           echo $Version
           echo $tag

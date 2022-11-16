@@ -6,11 +6,11 @@ $tags = "#affine #cloud"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
-$tag = $tag -replace 'Affine Client v'
+$tag = $tag.Trim("Affine Client v")
 $release = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].body
 
 $affinetag = (Invoke-WebRequest "https://api.github.com/repos/toeverything/AFFiNE/tags" | ConvertFrom-Json)[0].name
-$affinetag = $affinetag -replace 'v'
+$affinetag = $affinetag.Trim("v")
 
 $description = "
 Affine is the next-generation collaborative knowledge base for professionals. There can be more than Notion and Miro. Affine is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 

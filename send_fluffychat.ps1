@@ -6,7 +6,7 @@ $tags = "#fluffychat"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://gitlab.com/api/v4/projects/16112282/releases" | ConvertFrom-Json)[0].tag_name
-$tag = $tag -replace 'v'
+$tag = $tag.Trim("v")
 
 Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/CHANGELOG.md" -OutFile "FC.md"
 $text = Get-Content -path FC.md
