@@ -6,7 +6,7 @@ $tags = "#tartube"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
-$tag = $tag -replace 'v'
+$tag = $tag.Trim("v")
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/CHANGES" -OutFile "release.txt"
 $text = Get-Content -path release.txt
 

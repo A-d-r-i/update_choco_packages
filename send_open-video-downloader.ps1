@@ -7,7 +7,7 @@ $tags = "#openvideodownloader #youtubedl #youtubedlgui"
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
 $release = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].body
-$tag = $tag -replace 'v'
+$tag = $tag.Trim("v")
 
 $regex = '([0-9]{3,})'
 $release = $release -replace $regex, '[${1}](https://github.com/jely2002/youtube-dl-gui/issues/${1})'
