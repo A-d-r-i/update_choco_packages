@@ -1,38 +1,31 @@
 name: DOTDOTGOOSE
 
 on:
-  #schedule:
-  #  - cron:  '55 */6 * * *'
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  
+env:
+    CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+    ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+    PST_KEY: ${{ secrets.PST_KEY }}
+    PST_SECRET: ${{ secrets.PST_SECRET }}
+    PST_TOKEN: ${{ secrets.PST_TOKEN }}
+    PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
+    TELEGRAM: ${{ secrets.TELEGRAM }}
+    CHAT_ID: ${{ secrets.CHAT_ID }}
+    MASTODON: ${{ secrets.MASTODON }}
+    
 jobs:
-  build:
+  UPDATE-DOTDOTGOOSE:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - shell: pwsh
-        env:
-          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        name: Set choco key
         run: |
           choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
           
-      - name: Chocolatey
-        uses: crazy-max/ghaction-chocolatey@v1
-        with:
-          args: -h
-
-      - name: Script
-        env:
-          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
-          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
-          PST_KEY: ${{ secrets.PST_KEY }}
-          PST_SECRET: ${{ secrets.PST_SECRET }}
-          PST_TOKEN: ${{ secrets.PST_TOKEN }}
-          PST_TOKEN_SECRET: ${{ secrets.PST_TOKEN_SECRET }}
-          TELEGRAM: ${{ secrets.TELEGRAM }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
+      - name: DOTDOTGOOSE
+        if: always()
         run:  |
           $Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
           Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
@@ -50,6 +43,11 @@ jobs:
           }
           else
           {
+          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
           ./send_dotdotgoose.ps1
           Remove-Item DDG.html
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
           }
