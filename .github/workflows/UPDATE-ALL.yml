@@ -374,7 +374,7 @@ jobs:
           }
           }
 
-      - #name: DOTDOTGOOSE
+      #- name: DOTDOTGOOSE
         #if: always()
         #run:  |
           #$Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
