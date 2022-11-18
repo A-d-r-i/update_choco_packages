@@ -1,1 +1,1 @@
-Example of .nupkg file
+Example of .nupkg file.
