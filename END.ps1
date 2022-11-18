@@ -3,9 +3,9 @@ If ($LastExitCode -eq 0) {
 	git config --local user.email "a-d-r-i@outlook.fr"
 	git config --local user.name "A-d-r-i"
 	git add .
-	git commit -m "[Bot] Update files - $id" --allow-empty
-	git tag -a $id-v$tag -m "$name - version $tag"
-	git push -f && git push --tags
+	git commit -m "[Bot] Update files - $id"
+	#git tag -a $id-v$tag -m "$name - version $tag"
+	git push -f #&& git push --tags
 	
 	# create release
 	Install-Module -Name New-GitHubRelease -Force
