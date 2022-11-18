@@ -51,7 +51,7 @@ Install-ChocolateyShortcut -ShortcutFilePath `"`$(`$env:SystemDrive)\ProgramData
 Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))\FluffyChat.lnk`" -TargetPath `"`$toolsDir\fluffychat.exe`" " | out-file -filepath "./$id/tools/chocolateyinstall.ps1"
 
 Remove-Item FC.md
-Remove-Item $id.zip
+Remove-Item "$id.zip"
 
 # writing of VERIFICATION.txt
 $content = "VERIFICATION
