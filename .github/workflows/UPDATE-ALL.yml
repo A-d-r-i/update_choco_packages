@@ -41,7 +41,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_audiomoth-config.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -64,7 +64,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_audiomoth-flash.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -87,7 +87,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_audiomoth-time.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -110,7 +110,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_audiomoth-usb.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -136,7 +136,7 @@ jobs:
           }
           else
           {
-          #if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          #if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_dotbrowser.ps1
           #} else {
           #echo 'The version number is not in the correct format'
@@ -160,7 +160,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_fluffychat.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -187,7 +187,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_homebank.ps1
           Remove-Item HOMEBANK.html
           } else {
@@ -211,7 +211,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_l0phtcrack.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -235,7 +235,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_raven.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -258,7 +258,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_sengi.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -283,7 +283,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           if ( $name -eq "Stable release v$tag" ) {
           ./send_tartube.ps1
           } else { echo 'Not a stable version' }
@@ -309,7 +309,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_tutanota.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -342,7 +342,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_mendeley-reference-manager.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -366,7 +366,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_open-video-downloader.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -393,7 +393,7 @@ jobs:
           #}
           #else
           #{
-          #if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          #if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           #./send_dotdotgoose.ps1
           #Remove-Item DDG.html
           #} else {
@@ -417,7 +417,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_filen.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -441,7 +441,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_affine-client.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -465,7 +465,7 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_notesnook.ps1
           } else {
           echo 'The version number is not in the correct format'
@@ -489,12 +489,10 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+.[0-9]+$'){
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
           ./send_saucedacity.ps1
           } else {
           echo 'The version number is not in the correct format'
           #exit 1
           }
           }
-          
-
