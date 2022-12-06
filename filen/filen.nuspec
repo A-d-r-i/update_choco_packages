@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>filen</id>
-    <version>2.0.8</version>
+    <version>2.0.10</version>
     <title>Filen</title>
     <authors>Filen Cloud Dienste UG</authors>
     <owners>Adri</owners>
@@ -16,12 +16,26 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
-    <releaseNotes>### Bugfix release
+    <releaseNotes>### Bugfix/QoL/Performance release
 
-- Fixed a bug where sync tasks were not saved correctly
-- Circular dependency fixes
-- Upgraded electron to v21
-- Socket connection fix
+- Fixed a bug where files would not be synced correctly in localToCloud/localBackup mode
+- Fixed a memory leak when syncing a large dataset
+- Huge performance improvements when reading local/remote directory trees
+- Less memory pressure on renderer windows
+- Less memory pressure on DB tasks
+- Less memory pressure on sync tasks
+- Added the ability to directly create public links with a click on a remotely synced item
+- Added the ability to clear the local sync/event log
+- Internal memoization to speed up all tasks by a huge margin
+- Fallback handlers when local directory traversing fails due to EPERM/ELOCKED temporary errors
+- Code cleanup, added more types
+- Faster startup
+- Local/remote directory trees are now traversed in parallel
+- Fixed a bug where the sync would loop indefinitely
+- Fixed a bug where the Linux version would crash due to libappindicator
+- Updated electron version
+- Fixed a bug where the Linux version would not detect local changes
+- Fixed local disk check
 
 Windows x86_64: https://cdn.filen.io/desktop/release/filen_x64.exe
 Windows arm64: https://cdn.filen.io/desktop/release/filen_arm64.exe
