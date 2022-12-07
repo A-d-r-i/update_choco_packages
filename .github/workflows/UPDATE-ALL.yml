@@ -284,7 +284,7 @@ jobs:
           else
           {
           if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
-          if ( $name -eq "Stable release v$tag" ) {
+          if ( $name -match "Stable release( v$tag)?$" ) {
           ./send_tartube.ps1
           } else { echo 'Not a stable version' }
           } else {
