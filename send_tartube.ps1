@@ -29,13 +29,13 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./$id/tools/$id.exe"
+Invoke-WebRequest -Uri "https://github.com/axcore/tartube/releases/download/v$tag/install-tartube-$tag-64bit.exe" -OutFile "./$id/tools/$id64.exe"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/axcore/tartube/master/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 Remove-Item release.txt
 
 # calculation of checksum
-$TABLE64 = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
+$TABLE64 = Get-FileHash "./$id/tools/$id64.exe" -Algorithm SHA256
 $SHA64 = $TABLE64.Hash
 
 # writing of VERIFICATION.txt
