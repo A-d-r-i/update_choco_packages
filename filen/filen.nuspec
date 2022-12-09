@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>filen</id>
-    <version>2.0.11</version>
+    <version>2.0.12</version>
     <title>Filen</title>
     <authors>Filen Cloud Dienste UG</authors>
     <owners>Adri</owners>
@@ -18,9 +18,8 @@
     <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
     <releaseNotes>### Bugfix release
 
-- Multiple regressions fixed
-- DB fixed
-- General bug fixes
+- DB regression fixed
+- Auto updater: Exit app before updating to prevent issues
 
 Windows x86_64: https://cdn.filen.io/desktop/release/filen_x64.exe
 Windows arm64: https://cdn.filen.io/desktop/release/filen_arm64.exe
