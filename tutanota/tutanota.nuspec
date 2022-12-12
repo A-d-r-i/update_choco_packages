@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.104.5</version>
+    <version>3.105.9</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,24 +17,18 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Show multiple news items [#4608](https://github.com/tutao/tutanota/issues/4608)
+ - Improve button state display [#4641](https://github.com/tutao/tutanota/issues/4641)
 
 # Bugfixes
- - Retry blob uploads in case of a disk failure [#4692](https://github.com/tutao/tutanota/issues/4692)
- - Select entry not possible in single column layout [#4657](https://github.com/tutao/tutanota/issues/4657)
+ - make news item take the dialog bg color [#4819](https://github.com/tutao/tutanota/issues/4819)
+ - Campaign discount not shown at signup [#4796](https://github.com/tutao/tutanota/issues/4796)
+ - In single-column mode settings subitems lists, using the browser back button on a details screen leads to an empty list [#4731](https://github.com/tutao/tutanota/issues/4731)
+ - Calendar: Recipients field hidden by auto suggestions [#4725](https://github.com/tutao/tutanota/issues/4725)
+ - mail that contains both external and inline images replaces the inline with a placeholder when "show external" is pressed [#4712](https://github.com/tutao/tutanota/issues/4712)
+ - Overlapping calendar events in day view [#4702](https://github.com/tutao/tutanota/issues/4702)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/235?closed=1
-
-# Asset Checksums (SHA256)
-**tutanota-desktop-linux.AppImage:**
-339a8d39c4c82ee5af2fa74e906f97a9a00403d4b39ca13b7fc6a3b85864368a
-
-**tutanota-desktop-win.exe:**
-08febea2a222e2fa92ff5cfca2da09c696ce21110ee8c9f05b5671865aac0e1b
-
-**tutanota-desktop-mac.dmg:**
-a610779c23d5fe3841acd61401c8d848bd331800bff2acf6ef7db23014f14a7a</releaseNotes>
+https://github.com/tutao/tutanota/milestone/237?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
