@@ -5,8 +5,8 @@ $accounts = "@TenacityAudio"
 $tags = "#tenacity"
 
 # extract latest version and release
-# $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].name
-# $release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" | ConvertFrom-Json)[0].body
+# $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+# $release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/tenacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 Invoke-WebRequest -Uri "https://nightly.link/tenacityteam/tenacity/workflows/cmake_build/master" -OutFile "tenacity.html"
 $Source = Get-Content -path tenacity.html -raw
 $Source -match 'Tenacity_windows-server-2019-amd64-x64_windows-ninja(_[0-9]+_)'

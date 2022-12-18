@@ -5,8 +5,8 @@ $accounts = "@jelleglebbeek"
 $tags = "#openvideodownloader #youtubedl #youtubedlgui"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
-$release = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].body
+$tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+$release = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 $tag = $tag.Trim("v")
 
 $regex = '([0-9]{3,})'
