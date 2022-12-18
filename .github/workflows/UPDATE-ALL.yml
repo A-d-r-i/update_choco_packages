@@ -23,14 +23,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - shell: pwsh
-        name: Set choco key
-        run: choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+        name: PARAMETERS
+        run:  |
+          # CHOCO KEY
+          choco apikey --key $env:CHOCO_API_KEY --source https://push.chocolatey.org/
+          
+          #GITHUB TOKEN
+          $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
 
       - name: AUDIOMOTH-CONFIG
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-config/audiomoth-config.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Configuration-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -53,7 +58,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-flash/audiomoth-flash.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Flash-App/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Flash-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -76,7 +81,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-time/audiomoth-time.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Time-App/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Time-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -99,7 +104,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./audiomoth-usb/audiomoth-usb.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -122,7 +127,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./dotbrowser/dotbrowser.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/dothq/browser-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
           
           $tagalpha = $tag -replace '([0-9]*\.[0-9]+)-([0-9]{4})-([0-9]{2})-([0-9]{2})', '$1.$2$3$4'
           $tagalpha = -join($tagalpha,"-alpha");
@@ -223,7 +228,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./raven/raven.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           $tag = $tag.Trim("v")
           
           echo $Version
@@ -247,7 +252,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./sengi/sengi.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
           
           echo $Version
           echo $tag
@@ -270,9 +275,9 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./tartube/tartube.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
           $tag = $tag.Trim("v")
-          $name = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" | ConvertFrom-Json)[0].name
+          $name = (Invoke-WebRequest "https://api.github.com/repos/axcore/tartube/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -297,7 +302,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           $tag = $tag -replace ' \(Desktop\)'
           
           echo $Version
@@ -354,7 +359,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./open-video-downloader/open-video-downloader.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/jely2002/youtube-dl-gui/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           $tag = $tag.Trim("v")
           
           echo $Version
@@ -406,7 +411,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./filen/filen.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
@@ -429,7 +434,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./affine-client/affine-client.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           $tag = $tag.Trim("Affine Client v")
           if ( $tag -eq '0.1.1') { $tag = '0.2.0' }
           echo $Version
@@ -453,7 +458,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./notesnook/notesnook.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/streetwriters/notesnook/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
           $tag = $tag.Trim("v")
           
           echo $Version
@@ -477,7 +482,7 @@ jobs:
         if: always()
         run:  |
           $Version = ([xml](Get-Content ./saucedacity/saucedacity.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
           $tag = $tag.Trim("v")
           
           echo $Version

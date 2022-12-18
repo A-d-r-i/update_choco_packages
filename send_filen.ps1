@@ -5,8 +5,8 @@ $accounts = "@filen_io"
 $tags = "#filen #cloud"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" | ConvertFrom-Json)[0].name
-$release = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" | ConvertFrom-Json)[0].body
+$tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+$release = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
 # write new version and release
 $file = "./$id/$id.nuspec"

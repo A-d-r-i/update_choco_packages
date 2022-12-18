@@ -5,11 +5,11 @@ $accounts = "@AffineOfficial"
 $tags = "#affine #cloud"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].name
+$tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
 $tag = $tag.Trim("Affine Client v")
-$release = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" | ConvertFrom-Json)[0].body
+$release = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
-$affinetag = (Invoke-WebRequest "https://api.github.com/repos/toeverything/AFFiNE/tags" | ConvertFrom-Json)[0].name
+$affinetag = (Invoke-WebRequest "https://api.github.com/repos/toeverything/AFFiNE/tags" -Headers $headers | ConvertFrom-Json)[0].name
 $affinetag = $affinetag.Trim("v")
 
 $description = "

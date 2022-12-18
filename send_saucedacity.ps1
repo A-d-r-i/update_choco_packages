@@ -5,9 +5,9 @@ $accounts = "@TenacityAudio"
 $tags = "#saucedacity #tenacity"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" | ConvertFrom-Json)[0].tag_name
+$tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
 $tag = $tag.Trim("v")
-$release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" | ConvertFrom-Json)[0].body
+$release = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
 # write new version and release
 $file = "./$id/$id.nuspec"

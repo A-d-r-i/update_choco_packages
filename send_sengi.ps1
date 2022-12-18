@@ -5,8 +5,8 @@ $accounts = ""
 $tags = "#sengi"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" | ConvertFrom-Json)[0].tag_name
-$release = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" | ConvertFrom-Json)[0].body
+$tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
+$release = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
 # write new version and release
 $file = "./$id/$id.nuspec"

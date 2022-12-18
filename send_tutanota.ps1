@@ -5,8 +5,8 @@ $accounts = "@TutanotaTeam"
 $tags = "#tutanota"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].name
-$release = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" | ConvertFrom-Json)[0].body
+$tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+$release = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 $tag = $tag -replace ' \(Desktop\)'
 
 $regex = '#([0-9]{4,})'

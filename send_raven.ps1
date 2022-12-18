@@ -5,9 +5,9 @@ $accounts = "@helloefficiency @mrgodhani"
 $tags = "#raven"
 
 # extract latest version and release
-$tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].name
+$tag = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
 $tag = $tag.Trim("v")
-$release = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" | ConvertFrom-Json)[0].body
+$release = (Invoke-WebRequest "https://api.github.com/repos/hello-efficiency-inc/raven-reader/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
 # $regex = '([0-9]{3,})'
 # $release = $release -replace $regex, '[${1}](https://github.com/hello-efficiency-inc/raven-reader/issues/${1})'
