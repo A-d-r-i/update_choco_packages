@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.7.1</version>
+    <version>1.7.2</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,7 +14,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.7.1 2022 11-23 Minor bugfix release to retrigger build for FlatPak and Android. Fixes some style bugs and updates some translations  
+    <releaseNotes>## v1.7.2 2022-12-19 Update dependencies and translations.  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
