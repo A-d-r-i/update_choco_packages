@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.105.9</version>
+    <version>3.106.4</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,18 +17,18 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Improve button state display [#4641](https://github.com/tutao/tutanota/issues/4641)
+ - Create subfolders [#4829](https://github.com/tutao/tutanota/issues/4829)
+ - show minimized draft even for unchanged drafts [#4396](https://github.com/tutao/tutanota/issues/4396)
 
 # Bugfixes
- - make news item take the dialog bg color [#4819](https://github.com/tutao/tutanota/issues/4819)
- - Campaign discount not shown at signup [#4796](https://github.com/tutao/tutanota/issues/4796)
- - In single-column mode settings subitems lists, using the browser back button on a details screen leads to an empty list [#4731](https://github.com/tutao/tutanota/issues/4731)
- - Calendar: Recipients field hidden by auto suggestions [#4725](https://github.com/tutao/tutanota/issues/4725)
- - mail that contains both external and inline images replaces the inline with a placeholder when "show external" is pressed [#4712](https://github.com/tutao/tutanota/issues/4712)
- - Overlapping calendar events in day view [#4702](https://github.com/tutao/tutanota/issues/4702)
+ - Recovery code news item shows print button on mobile devices [#4851](https://github.com/tutao/tutanota/issues/4851)
+ - Some calendar items are not visible in month view [#4847](https://github.com/tutao/tutanota/issues/4847)
+ - Scrolling bugs in calendar [#4846](https://github.com/tutao/tutanota/issues/4846)
+ - It's not possible to change the sender name on shared mailboxes [#4845](https://github.com/tutao/tutanota/issues/4845)
+ - Search results do not appear when time frame is increased [#4311](https://github.com/tutao/tutanota/issues/4311)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/237?closed=1</releaseNotes>
+https://github.com/tutao/tutanota/milestone/240?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
