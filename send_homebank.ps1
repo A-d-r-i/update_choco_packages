@@ -33,7 +33,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer
-Invoke-WebRequest -Uri "http://homebank.free.fr/public/HomeBank-$tag-setup.exe" -OutFile "./$id/tools/$id.exe"
+Invoke-WebRequest -Uri "http://homebank.free.fr/public/binaries/HomeBank-$tag-setup.exe" -OutFile "./$id/tools/$id.exe"
 
 Remove-Item release.txt
 
@@ -50,7 +50,7 @@ The installer have been downloaded from their official site repository listed on
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag : <http://homebank.free.fr/public/HomeBank-$tag-setup.exe>
+  Version $tag : <http://homebank.free.fr/public/binaries/HomeBank-$tag-setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
