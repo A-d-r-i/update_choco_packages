@@ -1,5 +1,5 @@
 # variables
-$id = "mendeley"
+$id = "mendeley-reference-manager"
 $name = "Mendeley-Reference-Manager"
 $accounts = "@mendeley_com @MendeleyApp @MendeleyTips"
 $tags = "#mendeley"
