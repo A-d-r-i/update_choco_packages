@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.3.0</version>
+    <version>2.4.0</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,42 +20,48 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## :star2: Features &amp; new stuff
 
-### Introducing Notesnook Web Clipper
-
-Notesnook now has its very own web clipper allowing you to quickly save full pages &amp; snippets while scrolling the web. **It is still alpha-beta software so bugs are expected.**
-
-![web-clipper-firefox](https://user-images.githubusercontent.com/7473959/205875235-a1f9bf2e-ee23-49d0-ad42-64d612cec89f.gif)
-
-#### How it works?
-
-- The web clipper communicates directly with the web app to save your clips so you must keep an instance of the Notesnook Web App running in the background.
-- Web clipping is not yet supported on mobile devices (but will be).
-- Currently the extension is not listed on any store (but that'll be happening soon) so you'll have to side load the extension.
-    - **For Google Chrome/Chromium:**
-         - [Download the .zip archive](https://github.com/streetwriters/notesnook/releases/download/v2.3.0/notesnook-web-clipper-chrome-0.1.0.zip)
-         - Go to chrome://extensions/
-         - Turn on Developer Mode (toggle in the top-right corner)
-         - Drag &amp; drop the .zip archive
-    - **For Firefox:**
-         - [Download the .xpi file](https://github.com/streetwriters/notesnook/releases/download/v2.3.0/notesnook-web-clipper-firefox-0.1.0.xpi)
-         - Open about:addons
-         - Drag &amp; drop the .xpi file
-
-### Other features
-1. Task items now show a button on hover to quickly delete them by @alihamuh @thecodrr in [#1423](https://github.com/streetwriters/notesnook/pull/1423)
+1. **Cross-platform reminders** ??? Reminders are finally here! You can set a one-time reminder or daily, monthly &amp; weekly recurring reminders. All reminders are automatically synced to all your devices.
+2. **Sync controls** ??? We are giving you full control over the whole syncing process. Disable auto sync, real-time editor sync or turn it off completely for an offline experience ??? it's up to you.
+3. **Privacy mode on Desktop** ??? The mobile app has had privacy mode for many, many versions and now desktop app gets it too. Privacy mode will exclude Notesnook from all kinds of screen capture i.e., you can safely take notes while sharing your screen; the other person won't be able to see the Notesnook app. (Works only on macOS &amp; Windows)
+4. **Changing your account email** is now possible (and it works just like you expect it to :D).
+5. **New &amp; improved login flow** ??? (this deserves its very own blog post) we are taking Notesnook security up a notch by redesigning how our login works. After much brainstorming, we realized that your account password is the most important credential &amp; keeping it safe should be our foremost priority. To that end, we have moved password entry to be the last step in login. Here's how it works:
+   1. Enter email
+   2. Authenticate second factor (can be email, sms or authenticator app)
+   3. Enter password
+   4. And finally you are logged in.
+6. **Improve PDF &amp; HTML exports** ??? Export formats are finally getting some love in this release. The exported PDFs (and HTML) should now properly format &amp; style your task lists, code blocks, quotes, tables etc.
+7. **Delete notes with a notebook/topic** ??? Deleting a notebook/topic now gives you the option to also delete all the notes inside it.
+8. Images in editor now show a download button on selection (just like in attachments)
+9. Bypass CORS (using a configurable CORS proxy) when downloading &amp; attaching images in editor ??? this allows Notesnook to download any &amp; all external images you throw at it.
+10. **Improved sync status** ??? Sync status now correctly shows offline/disabled sync states. It also doesn't auto reset after a sync failure making it clear to you if a sync has failed.
 
 ## :bug: Fixes &amp; improvements
-* Fixed error when permanently deleting attachments by @thecodrr in [#1388](https://github.com/streetwriters/notesnook/pull/1388)
-* Show custom overlay scrollbar in mobile mode by @alihamuh in [#1389](https://github.com/streetwriters/notesnook/pull/1389)
-* Fixed overlapping text on default home page buttons in settings by @alihamuh in [#1406](https://github.com/streetwriters/notesnook/pull/1406)
-* Fixed persistent editor dropdown toolbar even when changing notes by @alihamuh in [#1413](https://github.com/streetwriters/notesnook/pull/1413)
-* Fixed clear completed tasks button hidden by progress bar by @alihamuh in [#1444](https://github.com/streetwriters/notesnook/pull/1444)
-* Removed line break at the start of copied text by @alihamuh @thecodrr in [#1443](https://github.com/streetwriters/notesnook/pull/1443)
-* Handle crash when sorting lists when an item doesn't have a title by @ammarahm-ed in [#1447](https://github.com/streetwriters/notesnook/pull/1447)
-* Ctrl/Cmd+Click now correctly selects/unselects items (it would just select before) by @alihamuh @thecodrr in [#1433](https://github.com/streetwriters/notesnook/pull/1433)
-* Fonts have been improved to support more glyphs &amp; diacritics by @alihamuh @thecodrr in [#1450](https://github.com/streetwriters/notesnook/pull/1450)
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.2.4...v2.3.0</releaseNotes>
+1. Fixed issue in editor where delete completed tasks button wasn't disabled in readonly mode by @alihamuh in [#1498](https://github.com/streetwriters/notesnook/pull/1498)
+2. Fixed issue where text highlight &amp; text color popups were not opening on mobile by @thecodrr in [#1556](https://github.com/streetwriters/notesnook/pull/1556)
+3. Fixed issue where task list couldn't be collapsed or expanded by @alihamuh in [#1561](https://github.com/streetwriters/notesnook/pull/1561)
+4. Task list UI has been improved by @ammarahm-ed in [#1570](https://github.com/streetwriters/notesnook/pull/1570)
+5. Fixed issue where the current search result wouldn't scroll into view by @alihamuh in [#1578](https://github.com/streetwriters/notesnook/pull/1578)
+6. Properties close button now correctly shows the pointer cursor on hover by @alihamuh in [#1580](https://github.com/streetwriters/notesnook/pull/1580)
+7. Fixed UI glitch in navigation menu when resizing app between tablet &amp; desktop mode by @alihamuh in [#1596](https://github.com/streetwriters/notesnook/pull/1596)
+8. Fixed issue where right clicking on a link opened it by @alihamuh in [#1571](https://github.com/streetwriters/notesnook/pull/1571)
+9. Base64 images (i.e., images copied &amp; pasted directly) are now cached properly by @thecodrr in [#1608](https://github.com/streetwriters/notesnook/pull/1608) (This fixes the issue where images would be broken right after attaching it).
+10. Fixed issue where searched topics couldn't be opened by @alihamuh in [#1593](https://github.com/streetwriters/notesnook/pull/1593)
+11. Fixed issue where line breaks are ignored by the word counter by @alihamuh in [#1625](https://github.com/streetwriters/notesnook/pull/1625)
+12. Backspacing in the first item of a list no longer lifts it out of the list by @alihamuh in [#1630](https://github.com/streetwriters/notesnook/pull/1630)
+13. List selection prompt now closes immediately after inserting a list by @alihamuh in [#1636](https://github.com/streetwriters/notesnook/pull/1636)
+14. Increase y-offset of table column properties menu so its visible in all cases by @alihamuh in [#1648](https://github.com/streetwriters/notesnook/pull/1648)
+15. Fixed sync issue causing unintended merge conflicts
+16. Fixed a lot of issues causing sync to temporarily get stuck (requiring app restart)
+
+## :heavy_plus_sign: Repository health
+
+- Added tests for sorting of notes, notebooks, tags &amp; topics by @alihamuh in [#1490](https://github.com/streetwriters/notesnook/pull/1490)
+- Added tests for ctrl+click selection in list by @alihamuh in [#1510](https://github.com/streetwriters/notesnook/pull/1510)
+- Added tests for creating backups (encrypted &amp; otherwise) by @alihamuh in [#1542](https://github.com/streetwriters/notesnook/pull/1542)
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.3.0...v2.4.0
+</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
