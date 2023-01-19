@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.81.0</version>
+    <version>2.83.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,11 +19,17 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
 
-## Mendeley Reference Manager v2.81.0
+## Mendeley Reference Manager v2.83.0
+ 
+We have added:
+ 
+- Kebab menu in reader toolbar when screen size is reduced
+- An error message when login is inaccessible
+
  
 We have fixed:
- 
-- An issue where the volume field was not displaying an error after DOI lookup in the manual entry form.
+
+- An issue where the PDF has been deleted after a highlight has been added to a note
 
  
 ## Support
@@ -32,12 +38,12 @@ We have fixed:
 - For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
 
  
-Released: 8 December 2022
+Released: 18 January 2023
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.81.0](https://www.mendeley.com/release-notes-reference-manager/v2.81.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.83.0](https://www.mendeley.com/release-notes-reference-manager/v2.83.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
