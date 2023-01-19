@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.106.5</version>
+    <version>3.107.3</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Uncaught NotAuthorizedError on loading mail folders [#4893](https://github.com/tutao/tutanota/issues/4893)
- - Navigation Buttons on CalendarView move around when using keyboard navigation [#4810](https://github.com/tutao/tutanota/issues/4810)
+    <releaseNotes># What's new
+Technical improvements and bugfixes
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/242?closed=1
+https://github.com/tutao/tutanota/milestone/243?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-8ebabbde8110afbf1ecf9887e8176dfc1094db52bca8fbb4692c611dfa87019c
+0ee75c8fb6d59ad799295281298d17f6b153fb2341ebcfcf7bd371a51db0bdb2
 
 **tutanota-desktop-win.exe:**
-8db4bd558e4cab62a9f289519b8af6034420c931f597de43fd166c869030daac
+b3f80d012cef462e6e583ff0fd0892d443fbf319bc68f89a72cb5a200e6291e7
 
 **tutanota-desktop-mac.dmg:**
-12b33714f7c6b7d28fe2c597ef1bcdeba4672b84a0ba8c9aa12db2f176c09ef9</releaseNotes>
+46895fe13ac1d4dcf73b2e3621f6ab5d6650d165db52b9a9c8fb8eeed6ca8a79</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
