@@ -487,12 +487,11 @@ jobs:
           }
           }
           
-      - name: SAUCEDACITY
+      - name: TENACITY
         if: always()
         run:  |
-          $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
-          $Version = ([xml](Get-Content ./saucedacity/saucedacity.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/tenacityteam/saucedacity/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
+          $Version = ([xml](Get-Content ./tenacity/tenacity.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://codeberg.org/api/v1/repos/tenacityteam/tenacity/releases" | ConvertFrom-Json)[0].tag_name
           $tag = $tag.Trim("v")
           
           echo $Version
@@ -504,8 +503,8 @@ jobs:
           }
           else
           {
-          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
-          ./send_saucedacity.ps1
+          if ($tag -match '^[0-9]+.[0-9]+((.[0-9]+)?(-beta)?)?$'){
+          ./send_tenacity.ps1
           } else {
           echo 'The version number is not in the correct format'
           #exit 1

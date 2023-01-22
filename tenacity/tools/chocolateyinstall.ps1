@@ -1,25 +1,18 @@
-$ErrorActionPreference = 'Stop'
-$toolsDir = Split-Path $MyInvocation.MyCommand.Definition
+$ErrorActionPreference = 'Stop';
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$fileLocation = Join-Path $toolsDir 'tenacity32.exe'
+$fileLocation64 = Join-Path $toolsDir 'tenacity64.exe'
+
 $packageArgs = @{
-  packageName    = 'tenacity'
-  fileType       = 'exe'
-  file           = "$toolsDir\tenacity32.exe"
-  file64         = "$toolsDir\tenacity64.exe"
-  silentArgs     = '/VERYSILENT'
-  validExitCodes = @(0, 1223)
+  packageName   = 'tenacity'
+  unzipLocation = $toolsDir
+  file           = $fileLocation
+  file64         = $fileLocation64
+  fileType      = 'EXE'
+  silentArgs     = '/S'
+  softwareName  = 'tenacity*'
+  validExitCodes= @(0)
 }
+
 Install-ChocolateyInstallPackage @packageArgs
-Get-ChildItem "$toolsDir\*.$($packageArgs.fileType)" | ForEach-Object {
-  Remove-Item $_ -ea 0
-  if (Test-Path $_) {
-    Set-Content "$_.ignore"
-  }
-}
-$packageName = $packageArgs.packageName
-$installLocation = Get-AppInstallLocation $packageName
-if ($installLocation) {
-  Write-Host "$packageName installed to '$installLocation'"
-  Register-Application "$installLocation\$packageName.exe"
-  Write-Host "$packageName registered as $packageName"
-}
-else { Write-Warning "Can't find $PackageName install location" } 
+Remove-Item $toolsDir\*.exe -ea 0 -force
