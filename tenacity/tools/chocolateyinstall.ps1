@@ -9,7 +9,7 @@ $packageArgs = @{
   file           = $fileLocation
   file64         = $fileLocation64
   fileType      = 'EXE'
-  silentArgs     = '/S'
+  silentArgs     = '/VERYSILENT'
   softwareName  = 'tenacity*'
   validExitCodes= @(0)
 }
