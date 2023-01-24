@@ -43,13 +43,12 @@ Here are deposited:
 | **Saucedacity** | Every 2 hours | ✅ | ✅ | [Link](https://saucedacity.github.io/) | [Link](https://community.chocolatey.org/packages/saucedacity) |
 | **Sengi** | Every 2 hours | ✅ | ✅ | [Link](https://nicolasconstant.github.io/sengi) | [Link](https://community.chocolatey.org/packages/sengi) |
 | **Tartube** | Every 2 hours | ✅ | ✅ | [Link](https://tartube.sourceforge.io) | [Link](https://community.chocolatey.org/packages/tartube) |
-| **Tenacity Audio Editor** | Manually [^4] | ❌ | ❌ | [Link](https://tenacityaudio.org) | [Link](https://community.chocolatey.org/packages/tenacity) |
+| **Tenacity Audio Editor** | Every 2 hours | ✅ | ✅ | [Link](https://tenacityaudio.org) | [Link](https://community.chocolatey.org/packages/tenacity) |
 | **Tutanota** | Every 2 hours | ✅ | ✅ | [Link](https://tutanota.com) | [Link](https://community.chocolatey.org/packages/tutanota) |
 
 [^1]: *CTemplar* - Not longer maintained by his creators ([CTemplar website](https://ctemplar.com/ctemplar-is-shutting-down/))
 [^2]: *DotDotGoose - [Issue 10](https://github.com/A-d-r-i/update_choco_package/issues/10)*  
-[^3]: *FireDM* - Not longer maintained by his creators ([GitHub](https://github.com/firedm))  
-[^4]: *Tenacity is still under development without release. So the update must be done manually.*
+[^3]: *FireDM* - Not longer maintained by his creators ([GitHub](https://github.com/firedm))
 
 ```mermaid
 stateDiagram-v2
