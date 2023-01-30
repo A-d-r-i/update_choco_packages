@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.1</version>
+    <version>2.4.2</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,7 +18,9 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
+    <releaseNotes>**This release contains a critical bug fix for macOS.**
+
+## :star2: Features &amp; new stuff
 
 1. **Spell checker** is back! You can enable/disable it &amp; select multiple languages as you see fit. by @thecodrr in [#1726](https://github.com/streetwriters/notesnook/pull/1726)
 2. **Editor margins** can now be enabled/disabled as you see fit. by @thecodrr in [#1689](https://github.com/streetwriters/notesnook/pull/1689)
@@ -51,7 +53,7 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 13. Reorder &amp; invert sync toggles in settings by @thecodrr in [#1822](https://github.com/streetwriters/notesnook/pull/1822)
 14. Recovery code input should accept alphanumeric input by @thecodrr in [#1825](https://github.com/streetwriters/notesnook/pull/1825)
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.0...v2.4.1</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.0...v2.4.2</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
