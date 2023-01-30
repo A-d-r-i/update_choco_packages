@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.107.3</version>
+    <version>3.108.10</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,20 +17,43 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-Technical improvements and bugfixes
+ - UI Changes for Subfolders [#4980](https://github.com/tutao/tutanota/issues/4980)
+ - Update DOMPurify [#4976](https://github.com/tutao/tutanota/issues/4976)
+ - Update Typescript [#4950](https://github.com/tutao/tutanota/issues/4950)
+ - Implement Hierarchy Indicators [#4943](https://github.com/tutao/tutanota/issues/4943)
+ - Implement Folder Hierarchy Editor [#4942](https://github.com/tutao/tutanota/issues/4942)
+ - Create subfolders of system folders [#4888](https://github.com/tutao/tutanota/issues/4888)
+ - Delete folder structures  [#4861](https://github.com/tutao/tutanota/issues/4861)
+ - Move subfolders [#4858](https://github.com/tutao/tutanota/issues/4858)
+
+# Bugfixes
+ - Uncaught BadRequestError: final aggregateName firstRecipient is tried to be modified - PUT /rest/tutanota/mail/NDEHZii-0F-2/NM8Uoxy----9/ [#5015](https://github.com/tutao/tutanota/issues/5015)
+ - Monospace text on hovering [#4991](https://github.com/tutao/tutanota/issues/4991)
+ - Downloads will override previously downloaded files with the same name [#4961](https://github.com/tutao/tutanota/issues/4961)
+ - Uncaught Error: EPERM Operation not permitted when trying to directly open attachments (as opposed to download, then open) [#4946](https://github.com/tutao/tutanota/issues/4946)
+ - Uncaught TypeError: Cannot read properties of undefined (reading 'stack') [#4932](https://github.com/tutao/tutanota/issues/4932)
+ - Month view straddling new year's shows confusing time range [#4924](https://github.com/tutao/tutanota/issues/4924)
+ - Uncaught Error: Command failed: powershell.exe [#4884](https://github.com/tutao/tutanota/issues/4884)
+ - Uncaught TypeError: Cannot read property of undefined (reading 'message') [#4882](https://github.com/tutao/tutanota/issues/4882)
+ - Uncaught ProgrammingError: Already opened database! [#4866](https://github.com/tutao/tutanota/issues/4866)
+ - Images not showing in support section [#4855](https://github.com/tutao/tutanota/issues/4855)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/243?closed=1
+https://github.com/tutao/tutanota/milestone/241?closed=1
+
 
 # Asset Checksums (SHA256)
+**tutanota-desktop-3.108.10-unpacked-linux.tar.gz:**
+3ab309fb068d058aee0bfbbf307877485f81ae86260d41f03148a6984e160d24
+
 **tutanota-desktop-linux.AppImage:**
-0ee75c8fb6d59ad799295281298d17f6b153fb2341ebcfcf7bd371a51db0bdb2
+77672cc021336d08e03bf91a7feb444d4948f00d590d1760b62b1cfd9106ef8c
 
 **tutanota-desktop-win.exe:**
-b3f80d012cef462e6e583ff0fd0892d443fbf319bc68f89a72cb5a200e6291e7
+5d882b1e5cccd90e442c40562ef377ebd2ae6e5e7d028313316d8a7b0cde030d
 
 **tutanota-desktop-mac.dmg:**
-46895fe13ac1d4dcf73b2e3621f6ab5d6650d165db52b9a9c8fb8eeed6ca8a79</releaseNotes>
+e16e08c20e79cec312e423ce56c4908b98a4b113f0a1b5c9ed7bba145dafdb3b</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
