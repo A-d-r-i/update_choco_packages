@@ -6,12 +6,12 @@ The installer have been downloaded from their official website listed on <https:
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.5.3 : <https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win>
+  Version 1.6.0 : <https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/ddg.php?op=download-win>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
-  checksum: 
+  checksum type: SHA256
+  checksum: F65DFF3546101754D30F749AAA3445FAEAEAE6E497D89326CA0DEE15ACDFF7E4
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/persts/DotDotGoose/master/LICENSE> 
