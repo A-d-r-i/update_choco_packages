@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,31 +14,44 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.8.0 2022-12-30 
- - Added translation using Weblate (Yue (yue_HK)) (Raatty) 
- - Translated using Weblate (Chinese (Simplified)) (Mike Evans) 
+    <releaseNotes>## v1.9.0 - 2023-01-29 
+
+ - Translated using Weblate (Czech) (Michal Bedáň) 
+ - Translated using Weblate (Czech) (grreby) 
+ - Translated using Weblate (Dutch) (Jelv) 
  - Translated using Weblate (Estonian) (Priit Jõerüüt) 
- - Translated using Weblate (French) (Anne Onyme 017) 
+ - Translated using Weblate (Galician) (josé m) 
+ - Translated using Weblate (German) (Christian) 
+ - Translated using Weblate (German) (Vri 🌈) 
  - Translated using Weblate (Indonesian) (Linerly) 
+ - Translated using Weblate (Korean) (Youngbin Han) 
+ - Translated using Weblate (Polish) (Wiktor) 
  - Translated using Weblate (Turkish) (Oğuz Ersen) 
  - Translated using Weblate (Ukrainian) (Ihor Hordiichuk) 
- - design: New encryption page (Krille Fear) 
- - feat: Add audio message support to linux (Krille Fear) 
- - feat: Use Android system accent color (Krille Fear) 
- - feat: include olm to Windows builds (TheOneWithTheBraid) 
- - feat: Store drafts (Krille) 
- - fix: Android push notification follow-up (TheOneWithTheBraid) 
- - fix: Content banner (Krille Fear) 
- - fix: Correct redacted by username (Krille Fear) 
- - fix: Do not setup push on every app resume (Krille Fear) 
- - fix: Encryption button is orange in public rooms (Krille Fear) 
- - fix: File event design (Krille Fear) 
- - fix: Hide google services warning after marked (Krille Fear) 
- - fix: Improve story page appearance (Reinhart Previano Koentjoro) 
- - fix: Libhandy windows (Krille Fear) 
- - fix: Monochromatic icon rendering for Android 13+ (Reinhart Previano Koentjoro) 
- - fix: homeserver error text not visible in app bar (TheOneWithTheBraid) 
- - fix: minor issues in room list (TheOneWithTheBraid)  
+ - chore: Change invite link textfield label (Krille) 
+ - chore: Remove unused dependency (Krille) 
+ - chore: Remove unused translations (Krille) 
+ - chore: Update Matrix SDK and refactor (Krille) 
+ - chore: Update dependencies (Krille) 
+ - chore: Update flutter_map (Krille) 
+ - chore: add integration tests (TheOneWithTheBraid) 
+ - chore: add integration tests for spaces (TheOneWithTheBraid) 
+ - design: More clear chat background and rounded popup menu (Krille) 
+ - design: Nicer navigationrail (Krille) 
+ - design: Upgrade to Flutter 3.7 
+ - feat: Bring back disabling the header bar on Linux desktop (q234rty) 
+ - feat: Nicer design for abandonded DM rooms (Christian Pauly) 
+ - fix: Archive (Krille) 
+ - fix: Shared preferences package for flutter 3.7 (Christian Pauly) 
+ - fix: permission of web builds (TheOneWithTheBraid) 
+ - fix: Notification Settings (Krille) 
+ - refactor: Migrate to Flutter 3.7.0 (Christian Pauly) 
+ - refactor: Same animations everywhere in app (Krille) 
+ - refactor: Stories header with futurebuilder (Krille) 
+ - refactor: disable some redundant tests (TheOneWithTheBraid) 
+ - style: Animate in out search results (Krille) 
+ - style: New modal bottom sheets (Krille) 
+ - style: Redesign public room bottomsheets (Krille)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
