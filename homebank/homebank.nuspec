@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.6.1</version>
+    <version>5.6.2</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,27 +17,17 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.6.1 release
-* bugfix: #[2001566](https://bugs.launchpad.net/bugs/2001566) vehicule cost report label vehicle while properties label Category
-* bugfix: #[2000834](https://bugs.launchpad.net/bugs/2000834) when fiscal year is not 01 jan last/this/next year is 1 year ahead
-* bugfix: #[2000809](https://bugs.launchpad.net/bugs/2000809) user feedback when create template or assignment
-* bugfix: #[2000760](https://bugs.launchpad.net/bugs/2000760) typo in french translation
-* bugfix: #[2000629](https://bugs.launchpad.net/bugs/2000629) move buttons in Manage Assignments window do not update at ends
-* bugfix: #[2000294](https://bugs.launchpad.net/bugs/2000294) statistics Time 'Balance mode' ignores filters
-* bugfix: #[2000292](https://bugs.launchpad.net/bugs/2000292) week 51/52 display incorrectly in Statistics Report
-* bugfix: #[2000269](https://bugs.launchpad.net/bugs/2000269) quick filter transactions uncleared shows reconciled transactions
-* bugfix: #[2000266](https://bugs.launchpad.net/bugs/2000266) duplicated 'This fortnight' label in date range
-* bugfix: #[1999963](https://bugs.launchpad.net/bugs/1999963) category list with an &amp; show other name
-* bugfix: #[1999879](https://bugs.launchpad.net/bugs/1999879) new assignment by amount do not save the amount
-* bugfix: #[1999322](https://bugs.launchpad.net/bugs/1999322) When I hide a payee, changes are not saved
-* bugfix: #[1999297](https://bugs.launchpad.net/bugs/1999297) win: crash in scheduled transaction
-* bugfix: #[1999265](https://bugs.launchpad.net/bugs/1999265) future/remind list column width to 0 (hidden)
-* bugfix: #[1999250](https://bugs.launchpad.net/bugs/1999250) program crashes exporting Payees to csv
-* bugfix: #[1999243](https://bugs.launchpad.net/bugs/1999243) moving assignment rule is not subject to saving and moving to position&gt;99 fails
-* bugfix: #[1999188](https://bugs.launchpad.net/bugs/1999188) show detail preference is ignored + column width to 0
-* bugfix: #[1999186](https://bugs.launchpad.net/bugs/1999186) void transactions show regardless of preferences setting
-* bugfix: #[1998987](https://bugs.launchpad.net/bugs/1998987) translation is missing for days and transaction status
-* bugfix: #[1998912](https://bugs.launchpad.net/bugs/1998912) translation is missing for the new date selector
+Made 5.6.2 release
+* change: updated the example.xhb file with up to date data
+* change: avoid to call the update currency api unless file last save is less than 24h
+* bugfix: #[2004631](https://bugs.launchpad.net/bugs/2004631) date and column title alignement
+* bugfix: #[2004053](https://bugs.launchpad.net/bugs/2004053) budget manage table view category column no ellipsis nor resizable
+* bugfix: #[2002873](https://bugs.launchpad.net/bugs/2002873) changing a category name do not update the list
+* bugfix: #[2002699](https://bugs.launchpad.net/bugs/2002699) en_GB locale faultly translated to Arabic by a user
+* bugfix: #[2002650](https://bugs.launchpad.net/bugs/2002650) update currency at program start always mark the file changed
+* bugfix: #[2002348](https://bugs.launchpad.net/bugs/2002348) impossible to schedule income template with an amount equal to 0
+* bugfix: #[2000480](https://bugs.launchpad.net/bugs/2000480) crash importing OFX under specific conditions
+* bugfix: #[2000452](https://bugs.launchpad.net/bugs/2000452) vehicle cost report shows duplicated subcats
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
