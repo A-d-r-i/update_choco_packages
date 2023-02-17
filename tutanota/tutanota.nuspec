@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.109.4</version>
+    <version>3.109.5</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,44 +16,12 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Handle HTTP.408 gracefully [#5075](https://github.com/tutao/tutanota/issues/5075)
- - Improve credit card form [#5055](https://github.com/tutao/tutanota/issues/5055)
- - Allow checking arbitrary domain records [#5043](https://github.com/tutao/tutanota/issues/5043)
- - Reminder to configure pin biometrics [#4975](https://github.com/tutao/tutanota/issues/4975)
- - Update Luxon to v2 [#3339](https://github.com/tutao/tutanota/issues/3339)
-
-# Bugfixes
- - AssertNotNull failed inside clearExcludedData -&gt; deleteMailList [#5108](https://github.com/tutao/tutanota/issues/5108)
- - Uncaught SyntaxError: Unterminated string in JSON at position [#5096](https://github.com/tutao/tutanota/issues/5096)
- - Invalid DB state after unsuccessful login [#5094](https://github.com/tutao/tutanota/issues/5094)
- - Should not log the whole request body when request fails [#5092](https://github.com/tutao/tutanota/issues/5092)
- - Spam, Trash and their subfolders are stuck in the loading state [#5081](https://github.com/tutao/tutanota/issues/5081)
- - Calendar event invitation does not show banner if invitee email is not all lowercase [#5079](https://github.com/tutao/tutanota/issues/5079)
- - Uncaught Error: cannot delete mails in folder with type 0 [#5072](https://github.com/tutao/tutanota/issues/5072)
- - Subfolders of system folders are not in alphabetical order [#5070](https://github.com/tutao/tutanota/issues/5070)
- - It's not possible to move any drafts into subfolders of the Drafts folder. [#5067](https://github.com/tutao/tutanota/issues/5067)
- - Offset at the top of the action buttons in MultiSearchViewer [#5045](https://github.com/tutao/tutanota/issues/5045)
- - Shared calendar group names are changed if user name is changed [#4977](https://github.com/tutao/tutanota/issues/4977)
- - App freezes after using the file picker [#4957](https://github.com/tutao/tutanota/issues/4957)
- - Read/Undread keyboard shortcut doen't work in search view [#4686](https://github.com/tutao/tutanota/issues/4686)
- - loginView doesn't respect newAccountData (login form doesn't get prepopulated after signup) [#4630](https://github.com/tutao/tutanota/issues/4630)
- - "Move" shortcut [V] doesn't work in search view [#4510](https://github.com/tutao/tutanota/issues/4510)
- - Preselected date in agenda view is sometimes not the current date [#4253](https://github.com/tutao/tutanota/issues/4253)
+    <releaseNotes># Bugfixes
+ - Uncaught Error: assertNotNull failed in getMailboxDetailsForMailListId [#5149](https://github.com/tutao/tutanota/issues/5149)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/244?closed=1
-
-
-# Asset Checksums (SHA256)
-**tutanota-desktop-linux.AppImage:**
-dbea4bbf5a5ace05dc5953d4f04db419e52776cdb9d5422c9ac4b0ccdb9e14d8
-
-**tutanota-desktop-win.exe:**
-51d7c42fa84d6ef12a40c148c436c9391009cadc881e41dd4722c93c866f7aab
-
-**tutanota-desktop-mac.dmg:**
-9665bc6e4971be83f422de3b0591c50ce2958dc751e52270c148d6c0ec709d49</releaseNotes>
+https://github.com/tutao/tutanota/milestone/246?closed=1
+</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
