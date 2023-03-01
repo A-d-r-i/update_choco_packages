@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.109.5</version>
+    <version>3.109.13</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,12 +16,40 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Uncaught Error: assertNotNull failed in getMailboxDetailsForMailListId [#5149](https://github.com/tutao/tutanota/issues/5149)
+    <releaseNotes># What's new
+ - Show recovery code during signup process [#5120](https://github.com/tutao/tutanota/issues/5120)
+ - Make the name/sender name settings more clear [#5080](https://github.com/tutao/tutanota/issues/5080)
+ - Conversation view in mail viewer [#4979](https://github.com/tutao/tutanota/issues/4979)
+ - replace our per-window ipc with webContents.ipc [#4848](https://github.com/tutao/tutanota/issues/4848)
+ - Improve loading time of worker [#3165](https://github.com/tutao/tutanota/issues/3165)
+
+# Bugfixes
+ - Clicking Save twice while editing a contact results in two PUT/ POST requests being sent [#5193](https://github.com/tutao/tutanota/issues/5193)
+ - SendMailModel will get stuck if resolving recipients fails [#5162](https://github.com/tutao/tutanota/issues/5162)
+ - The news badge is misaligned [#5160](https://github.com/tutao/tutanota/issues/5160)
+ - Adding inline images does not work [#5157](https://github.com/tutao/tutanota/issues/5157)
+ - Deleting an email causes GET 404 error [#5156](https://github.com/tutao/tutanota/issues/5156)
+ - Sharing calendar with contact with uppercase characters doesn't work [#5145](https://github.com/tutao/tutanota/issues/5145)
+ - Event participation reply of a tutanota user will be ignored if the event wasn't created with an all-lowercase mail address for that participant [#5142](https://github.com/tutao/tutanota/issues/5142)
+ - Errors during calendar event creation have bad error messages [#5111](https://github.com/tutao/tutanota/issues/5111)
+ - LockedError is not handled when updating contacts [#5093](https://github.com/tutao/tutanota/issues/5093)
+ - Delete key stops working after clicking on a link [#5050](https://github.com/tutao/tutanota/issues/5050)
+ - Uncaught NotFoundError on CalendarEventUpdate DELETE [#4964](https://github.com/tutao/tutanota/issues/4964)
+ - Sending draft errors when the draft is not there [#2439](https://github.com/tutao/tutanota/issues/2439)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/246?closed=1
-</releaseNotes>
+https://github.com/tutao/tutanota/milestone/247?closed=1
+
+
+# Asset Checksums (SHA256)
+**tutanota-desktop-linux.AppImage:**
+8f0ea1750c1953d25e119023d32798293176a895728a03f211df3eaf8dcb793c
+
+**tutanota-desktop-win.exe:**
+0045a9d4e45518bd127963f113728ffcf524412d829a1f28807f37554c253db0
+
+**tutanota-desktop-mac.dmg:**
+5394a64b090010c87f1081b4abccb3411ca8fd28f709634ce220810a5b1412dc</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
