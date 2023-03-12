@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.9.0</version>
+    <version>1.10.0</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,44 +14,60 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.9.0 - 2023-01-29 
+    <releaseNotes>## v1.10.0 - 2023-02-25 
 
- - Translated using Weblate (Czech) (Michal Bedáň) 
- - Translated using Weblate (Czech) (grreby) 
+ - Added translation using Weblate (Thai) (Wphaoka) 
+ - Added translation using Weblate (Tibetan) (Nathan Freitas) 
+ - Default hardcoded message when l10n is not available (fabienli) 
+ - Fix: The stable repo fingerprint (TODO the qr-code should be updated) (machiav3lli) 
+ - Translated using Weblate (Basque) (xabirequejo) 
  - Translated using Weblate (Dutch) (Jelv) 
  - Translated using Weblate (Estonian) (Priit Jõerüüt) 
+ - Translated using Weblate (French) (Anne Onyme 017) 
  - Translated using Weblate (Galician) (josé m) 
- - Translated using Weblate (German) (Christian) 
- - Translated using Weblate (German) (Vri 🌈) 
+ - Translated using Weblate (Galician) (josé m) 
  - Translated using Weblate (Indonesian) (Linerly) 
- - Translated using Weblate (Korean) (Youngbin Han) 
- - Translated using Weblate (Polish) (Wiktor) 
+ - Translated using Weblate (Japanese) (Suguru Hirahara) 
+ - Translated using Weblate (Persian) (Farooq Karimi Zadeh) 
+ - Translated using Weblate (Swedish) (Joaquim Homrighausen) 
  - Translated using Weblate (Turkish) (Oğuz Ersen) 
  - Translated using Weblate (Ukrainian) (Ihor Hordiichuk) 
- - chore: Change invite link textfield label (Krille) 
- - chore: Remove unused dependency (Krille) 
- - chore: Remove unused translations (Krille) 
- - chore: Update Matrix SDK and refactor (Krille) 
- - chore: Update dependencies (Krille) 
- - chore: Update flutter_map (Krille) 
- - chore: add integration tests (TheOneWithTheBraid) 
- - chore: add integration tests for spaces (TheOneWithTheBraid) 
- - design: More clear chat background and rounded popup menu (Krille) 
- - design: Nicer navigationrail (Krille) 
- - design: Upgrade to Flutter 3.7 
- - feat: Bring back disabling the header bar on Linux desktop (q234rty) 
- - feat: Nicer design for abandonded DM rooms (Christian Pauly) 
- - fix: Archive (Krille) 
- - fix: Shared preferences package for flutter 3.7 (Christian Pauly) 
- - fix: permission of web builds (TheOneWithTheBraid) 
- - fix: Notification Settings (Krille) 
- - refactor: Migrate to Flutter 3.7.0 (Christian Pauly) 
- - refactor: Same animations everywhere in app (Krille) 
- - refactor: Stories header with futurebuilder (Krille) 
- - refactor: disable some redundant tests (TheOneWithTheBraid) 
- - style: Animate in out search results (Krille) 
- - style: New modal bottom sheets (Krille) 
- - style: Redesign public room bottomsheets (Krille)  
+ - chore: Disable stable for web until script is fixed (Krille) 
+ - chore: Display warning when logout without backup (Krille) 
+ - chore: Downgrade flutter CI version (Krille) 
+ - chore: Follow up audioplayer on linux (Krille) 
+ - chore: Follow up chat encryption desgin (Krille) 
+ - chore: Follow up fix audioplayer on android (Christian Pauly) 
+ - chore: Follow up formatting (Christian Pauly) 
+ - chore: Follow up formatting (Krille) 
+ - chore: Follow up remove hero animation (Krille) 
+ - chore: Follow up secrity settings design (Krille) 
+ - chore: Follow up settings page (Krille) 
+ - chore: Follow up settings page design (Christian Pauly) 
+ - chore: Follow up style adjustments (Krille) 
+ - chore: Lookup l10n in pushhelper if null (Krille) 
+ - chore: Update matrix package to 0.17.0 (Krille) 
+ - chore: Update to Flutter 3.7.1 (Krille) 
+ - docs/qr-stable.svg: update the QR code (Aminda Suomalainen) 
+ - feat: Enable audioplayer for web and linux (Christian Pauly) 
+ - fix: Display error when user tries to send too large file (Christian Pauly) 
+ - refactor: Do only instantiate AudioPlayer() object when in use (Christian Pauly) 
+ - refactor: Remove syncstatus verbose logs (Christian Pauly) 
+ - refactor: Store cached files in tmp directory so OS will clear file cache from time to time (Krille) 
+ - style: Adjust key verification dialog (Christian Pauly) 
+ - style: Bootstrap design adjustments (Christian Pauly) 
+ - style: Encryption page adjustments (Christian Pauly) 
+ - style: Enhance user device settings design (Krille) 
+ - style: Enhanced chat details design (Krille) 
+ - style: Give chat list list tiles rounded corners (Krille) 
+ - style: Link underline color (Christian Pauly) 
+ - style: Make adaptive bottom sheets scrollable by default (Krille) 
+ - style: Make invite page more pretty (Krille) 
+ - style: New settings design (Krille) 
+ - style: Nicer chips in encryption settings and icons showing device status (Krille) 
+ - style: Use emojis on web as well (Christian Pauly) 
+ - style: Use robotomono to display device keys (Christian Pauly) 
+ - utils/url_launcher: force opening http(s) links in external browser (Marcus Hoffmann)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
