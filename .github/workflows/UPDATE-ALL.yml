@@ -306,7 +306,8 @@ jobs:
         run:  |
           $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
           $Version = ([xml](Get-Content ./tutanota/tutanota.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+          $tag_releases = (Invoke-WebRequest "https://api.github.com/repos/tutao/tutanota/releases" -Headers $headers | ConvertFrom-Json) | where { $_.name -Match "[0-9]+\.[0-9]+\.[0-9]+ \(Desktop\)" }
+          $tag = $tag_releases[0].name
           $tag = $tag -replace ' \(Desktop\)'
           
           echo $Version
