@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.110.1</version>
+    <version>3.111.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,49 +17,23 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Introduce password confirmation [#5185](https://github.com/tutao/tutanota/issues/5185)
+ - Refer a friend https://github.com/tutao/tutanota/pull/5269
 
 # Bugfixes
- - Fix BlobAccessToken expiration check [#5240](https://github.com/tutao/tutanota/issues/5240)
- - Email Body Missing [#5221](https://github.com/tutao/tutanota/issues/5221)
- - Subject line is not selectable [#5211](https://github.com/tutao/tutanota/issues/5211)
- - Templates appear multiple times in list view [#5173](https://github.com/tutao/tutanota/issues/5173)
- - Wrong message when activating an Alias [#5042](https://github.com/tutao/tutanota/issues/5042)
- - Uncaught PayloadTooLargeError in /rest/sys/alarmservice POST [#4915](https://github.com/tutao/tutanota/issues/4915)
-
-# Other
- - [build] Make building packages faster [#5171](https://github.com/tutao/tutanota/issues/5171)
- - Tests for CoversationViewModel [#5225](https://github.com/tutao/tutanota/issues/5225)
- - Update Electron to 23 [#5238](https://github.com/tutao/tutanota/issues/5238)
-
-# What's new
- - Fix BlobAccessToken expiration check [#5240](https://github.com/tutao/tutanota/issues/5240)
-
- - Tests for CoversationViewModel [#5225](https://github.com/tutao/tutanota/issues/5225)
- - Introduce password confirmation  [#5185](https://github.com/tutao/tutanota/issues/5185)
- - [build] Make building packages faster [#5171](https://github.com/tutao/tutanota/issues/5171)
-
-# Bugfixes
- - Email Body Missing [#5221](https://github.com/tutao/tutanota/issues/5221)
- - subject line is not selectable [#5211](https://github.com/tutao/tutanota/issues/5211)
- - Templates appear multiple times in list view [#5173](https://github.com/tutao/tutanota/issues/5173)
- - Wrong message when activating an Alias [#5042](https://github.com/tutao/tutanota/issues/5042)
- - Uncaught PayloadTooLargeError in /rest/sys/alarmservice POST [#4915](https://github.com/tutao/tutanota/issues/4915)
- - Uncaught PayloadTooLargeError in alarmservice [#4457](https://github.com/tutao/tutanota/issues/4457)
+- Automatic image loading bypass with background-image: image-set
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/249?closed=1
-
+https://github.com/tutao/tutanota/milestone/250?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-bfc393a7c9cd2a5504039398a3dc8aaebe8dd24017902d866a96e045ce5df907
+7007e0f9d5234d4ab5ae80b92d6dadab6155f4c7acb88ae11c582819217efb31
 
 **tutanota-desktop-win.exe:**
-9399edda9f366a17341019acdde1601bf2525251fe473ebf656ade47db115b18
+63d5a408ce64b6597b8ac3845c4118fee5dbd4a67f0a1e814c3d6b8bb04430a1
 
 **tutanota-desktop-mac.dmg:**
-08785071506def6eec467c76285dca524dfb08d5c7e779e2f987c1d7fee907b6</releaseNotes>
+d33867633f0126f2a5a92f2fdc00c5a03f1d0f28ae885190d79832e156c841d8</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
