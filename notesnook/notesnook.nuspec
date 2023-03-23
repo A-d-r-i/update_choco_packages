@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.5</version>
+    <version>2.4.6</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,40 +20,16 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## :star2: Features &amp; new stuff
 
-1. **Topics are now optional** ??? one of the most highly requested changes. You can now add notes directly to notebooks by @thecodrr @ammarahm-ed in [#2124](https://github.com/streetwriters/notesnook/pull/2124)
-2. **Customizable trash cleanup interval** ??? you can now change how often Notesnook auto clears your trash by @alihamuh @thecodrr @ammarahm-ed in [#1940](https://github.com/streetwriters/notesnook/pull/1940)
-3. Tab/window title will now change based on the opened note by @Abdulrehman-Jafer in [#2127](https://github.com/streetwriters/notesnook/pull/2127)
-4. **Arm64** support for Windows &amp; Linux by @thecodrr in [#2158](https://github.com/streetwriters/notesnook/pull/2158)
-5. **Images are now much more stable** ??? more details on specific issues we fixed can be found below but in short, images should work much more reliably after this version by @thecodrr @ammarahm-ed in [#2159](https://github.com/streetwriters/notesnook/pull/2159) [#2169](https://github.com/streetwriters/notesnook/pull/2169)
+1. Search on desktop/web now happens as you type instead of on pressing the Enter key by @Abdulrehman-Jafer in https://github.com/streetwriters/notesnook/pull/2171
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix autocomplete text color for all text inputs by @Abdulrehman-Jafer in [#2057](https://github.com/streetwriters/notesnook/pull/2057) &amp; [#2073](https://github.com/streetwriters/notesnook/pull/2073)
-2. Move cell properties button outside of table settings by @thecodrr in [#2074](https://github.com/streetwriters/notesnook/pull/2074)
-3. Do a healthcheck before logging out user on session revoke by @thecodrr in [#2125](https://github.com/streetwriters/notesnook/pull/2125)
-4. Fix issue where table options are not visible on some tables by @thecodrr in [#2126](https://github.com/streetwriters/notesnook/pull/2126)
-5. Fix issue where dropdown required 2 clicks to open in editor toolbar by @thecodrr in [#2132](https://github.com/streetwriters/notesnook/pull/2132)
-6. Simplify subscription cancellation by @thecodrr in [#2141](https://github.com/streetwriters/notesnook/pull/2141)
-7. Fix monographs and reminders search by @Abdulrehman-Jafer in [#2142](https://github.com/streetwriters/notesnook/pull/2142)
-8. Keep marks when creating new list items in editor by @thecodrr in [#2149](https://github.com/streetwriters/notesnook/pull/2149)
-9. Fix sub checklists not getting sorted by @thecodrr in [#2152](https://github.com/streetwriters/notesnook/pull/2152)
-10. Attachments now automatically infer an extension based on mime type by @ammarahm-ed @thecodrr in [#2159](https://github.com/streetwriters/notesnook/pull/2159)
-11. App version can now be copied on clicking the version item in settings by @Abdulrehman-Jafer in [#2131](https://github.com/streetwriters/notesnook/pull/2131)
-12. A lot of improvements to code blocks (by @thecodrr in [#2072](https://github.com/streetwriters/notesnook/pull/2072)):
-    1. Pasting from VSCode, GitHub, GitLab, MDN, Stackoverflow etc. will now automatically detect &amp; highlight the code blocks
-    2. Typing inside a code block should now be much, much faster (#2058)
-    3. Wrapping has been disabled for all lines in the code block
-13. Many, many fixes to images:
-    1. Fix pasting of images from around another web page
-    2. Improve save performance of notes that have a lot of images in them
-    3. Improve image loading animation (there should be much less jank)
-    4. Fix sizing issues of images (and their placeholders) especially on small devices
-    5. All Notesnook clients now only load newly added images on realtime sync instead of loading all the images. This greatly speeds up things.
+1. Fix crash when creating or searching topics by @thecodrr in https://github.com/streetwriters/notesnook/pull/2183
+2. Improve vertical pane resizing inside notebook (i.e. the notes/topics panes) by @thecodrr in https://github.com/streetwriters/notesnook/pull/2182
+3. Fix auto backup &amp; trash cleanup interval settings getting reset on relaunch by @thecodrr in https://github.com/streetwriters/notesnook/pull/2185
+4. Improve notebook/topic selection in link notebooks dialog by @ammarahm-ed @thecodrr in https://github.com/streetwriters/notesnook/pull/2186
 
-## New Contributors
-* @Abdulrehman-Jafer made their first contribution in [#2057](https://github.com/streetwriters/notesnook/pull/2057)
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.4...v2.4.5</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.5...v2.4.6</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
