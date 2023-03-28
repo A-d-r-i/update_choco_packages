@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'AudioMothConfigurationAppSetup.exe'
+$fileLocation = Join-Path $toolsDir 'audiomoth-config.exe'
 
 
 $packageArgs = @{
