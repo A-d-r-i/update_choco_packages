@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.111.0</version>
+    <version>3.112.5</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,23 +17,31 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Refer a friend https://github.com/tutao/tutanota/pull/5269
+ - Advanced  repeat rule: Exception for repeating events [#4859](https://github.com/tutao/tutanota/issues/4859)
 
 # Bugfixes
-- Automatic image loading bypass with background-image: image-set
+ - Connection issues with 3.110.1+ [#5295](https://github.com/tutao/tutanota/issues/5295)
+ - Instances can get stuck in outdated state when the client is not leader [#5290](https://github.com/tutao/tutanota/issues/5290)
+ - Uncaught NotAuthorizedError for ConversationEntry [#5261](https://github.com/tutao/tutanota/issues/5261)
+ - Sender name and date wrapping problems within the conversation view [#5250](https://github.com/tutao/tutanota/issues/5250)
+ - "New Template" button doesn't work on mobile [#5236](https://github.com/tutao/tutanota/issues/5236)
+ - deactivated alias still shows at the top of the folders column [#5231](https://github.com/tutao/tutanota/issues/5231)
+ - Stored credentials are not updated after changing password [#5166](https://github.com/tutao/tutanota/issues/5166)
+ - Pasting images into mail editor does not work (thanks to @SethFalco) [#5083](https://github.com/tutao/tutanota/issues/5083)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/250?closed=1
+https://github.com/tutao/tutanota/milestone/251?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-7007e0f9d5234d4ab5ae80b92d6dadab6155f4c7acb88ae11c582819217efb31
+351ff4c94371f53be1f120cfa51fe478725c942575d9206faca697b86a286443
 
 **tutanota-desktop-win.exe:**
-63d5a408ce64b6597b8ac3845c4118fee5dbd4a67f0a1e814c3d6b8bb04430a1
+9617d69bbc95518574480679a28b3ad381d3b9bb1763c606da7d049c2d5c0274
 
 **tutanota-desktop-mac.dmg:**
-d33867633f0126f2a5a92f2fdc00c5a03f1d0f28ae885190d79832e156c841d8</releaseNotes>
+974529ae7c1a04f52f150dfed2100b4627b15a122db0110bcb8e196cfd0aad30</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
