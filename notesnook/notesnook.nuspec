@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.6</version>
+    <version>2.4.7</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,18 +18,19 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
+    <releaseNotes>## :bug: Fixes &amp; improvements
 
-1. Search on desktop/web now happens as you type instead of on pressing the Enter key by @Abdulrehman-Jafer in https://github.com/streetwriters/notesnook/pull/2171
+1. Fix crash when trying to open Configure Toolbar dialog by @thecodrr in [#2192](https://github.com/streetwriters/notesnook/pull/2192)
+2. Fix RTL support for outline lists by @alihamuh in [#2175](https://github.com/streetwriters/notesnook/pull/2175)
+3. Fix line spacings of PDF, HTML &amp; TXT exports by @Abdulrehman-Jafer in [#2215](https://github.com/streetwriters/notesnook/pull/2215)
+4. Improve notebook/topic selection in link notebooks dialog by @ammarahm-ed @thecodrr in [#2186](https://github.com/streetwriters/notesnook/pull/2186)
+5. Do not add empty "none" tool in Configure Toolbar dialog by @alihamuh in [#2193](https://github.com/streetwriters/notesnook/pull/2193)
+6. Fix code block text overflow in PDF/HTML exports by @Abdulrehman-Jafer in [#2245](https://github.com/streetwriters/notesnook/pull/2245)
+7. Disable deleting of locked notes by @alihamuh in [#2244](https://github.com/streetwriters/notesnook/pull/2244)
+8. Fix `cannot read property id of undefined` on importing from Evernote by @thecodrr in [#2268](https://github.com/streetwriters/notesnook/pull/2268)
+9. Various fixes in "Link notebooks" dialog by @thecodrr in [#2246](https://github.com/streetwriters/notesnook/pull/2246)
 
-## :bug: Fixes &amp; improvements
-
-1. Fix crash when creating or searching topics by @thecodrr in https://github.com/streetwriters/notesnook/pull/2183
-2. Improve vertical pane resizing inside notebook (i.e. the notes/topics panes) by @thecodrr in https://github.com/streetwriters/notesnook/pull/2182
-3. Fix auto backup &amp; trash cleanup interval settings getting reset on relaunch by @thecodrr in https://github.com/streetwriters/notesnook/pull/2185
-4. Improve notebook/topic selection in link notebooks dialog by @ammarahm-ed @thecodrr in https://github.com/streetwriters/notesnook/pull/2186
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.5...v2.4.6</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.6...v2.4.7</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
