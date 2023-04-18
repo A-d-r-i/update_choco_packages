@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.7</version>
+    <version>2.4.8</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,19 +18,34 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :bug: Fixes &amp; improvements
+    <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Fix crash when trying to open Configure Toolbar dialog by @thecodrr in [#2192](https://github.com/streetwriters/notesnook/pull/2192)
-2. Fix RTL support for outline lists by @alihamuh in [#2175](https://github.com/streetwriters/notesnook/pull/2175)
-3. Fix line spacings of PDF, HTML &amp; TXT exports by @Abdulrehman-Jafer in [#2215](https://github.com/streetwriters/notesnook/pull/2215)
-4. Improve notebook/topic selection in link notebooks dialog by @ammarahm-ed @thecodrr in [#2186](https://github.com/streetwriters/notesnook/pull/2186)
-5. Do not add empty "none" tool in Configure Toolbar dialog by @alihamuh in [#2193](https://github.com/streetwriters/notesnook/pull/2193)
-6. Fix code block text overflow in PDF/HTML exports by @Abdulrehman-Jafer in [#2245](https://github.com/streetwriters/notesnook/pull/2245)
-7. Disable deleting of locked notes by @alihamuh in [#2244](https://github.com/streetwriters/notesnook/pull/2244)
-8. Fix `cannot read property id of undefined` on importing from Evernote by @thecodrr in [#2268](https://github.com/streetwriters/notesnook/pull/2268)
-9. Various fixes in "Link notebooks" dialog by @thecodrr in [#2246](https://github.com/streetwriters/notesnook/pull/2246)
+1.  **Change default font size &amp; font family** in editor from `Settings &gt; Editor settings` on all platforms by @alihamuh @ammarahm-ed @thecodrr in [#1721](https://github.com/streetwriters/notesnook/pull/1721)
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.6...v2.4.7</releaseNotes>
+## :bug: Fixes &amp; improvements
+
+1. Fix issue where notes marked as local only got deleted on sync by @ammarahm-ed in [#2299](https://github.com/streetwriters/notesnook/pull/2299)
+2. Fix issue where remote note was not synced if local note does not exist by @ammarahm-ed in [#2349](https://github.com/streetwriters/notesnook/pull/2349)
+3. Do not show success toast if notebook failed to create by @alihamuh in [#2307](https://github.com/streetwriters/notesnook/pull/2307)
+4. Disable input sanitization when renaming color/tag by @Abdulrehman-Jafer in [#2274](https://github.com/streetwriters/notesnook/pull/2274)
+5. Fix code block syntax highlighting not updating when changing its language by @Abdulrehman-Jafer in [#2267](https://github.com/streetwriters/notesnook/pull/2267)
+6. Fix jumping text/bg color popup in editor by @alihamuh in [#2306](https://github.com/streetwriters/notesnook/pull/2306)
+7. Fix crash while editing links on mobile by @thecodrr in [#2363](https://github.com/streetwriters/notesnook/pull/2363)
+8. All toolbars should scroll if buttons overflow by @thecodrr in [#2375](https://github.com/streetwriters/notesnook/pull/2375)
+
+### :construction_worker: Miscellaneous
+
+1. Fix grammar mistakes in main repo README by @NickThomas20 in [#2342](https://github.com/streetwriters/notesnook/pull/2342)
+2. Fix grammar mistakes in app READMEs by @NedimHodzic in [#2345](https://github.com/streetwriters/notesnook/pull/2345)
+3. Migrate use-is-user-premium.js to Typescript by @Abdulrehman-Jafer in [#2297](https://github.com/streetwriters/notesnook/pull/2297)
+4. Migrate use-database.js to TypeScript by @Abdulrehman-Jafer in [#2287](https://github.com/streetwriters/notesnook/pull/2287)
+5. Migrate use-media-query.js to Typescript by @Abdulrehman-Jafer in [#2326](https://github.com/streetwriters/notesnook/pull/2326)
+
+## New Contributors
+* @NickThomas20 made their first contribution in [#2342](https://github.com/streetwriters/notesnook/pull/2342)
+* @NedimHodzic made their first contribution in [#2345](https://github.com/streetwriters/notesnook/pull/2345)
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.7...v2.4.8</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
