@@ -6,9 +6,9 @@
     <title>Sengi</title>
     <authors>Nicolas Constant (and contributors)</authors>
     <owners>Adri</owners>
-    <licenseUrl>https://github.com/NicolasConstant/sengi/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/NicolasConstant/sengi-electron/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://nicolasconstant.github.io/sengi/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/NicolasConstant/sengi@master/assets/icons/png/1024x1024.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/NicolasConstant/sengi-electron@master/assets/icons/png/1024x1024.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Sengi is a **Mastodon** and **Pleroma** desktop focused client. It takes inspiration from the old Tweetdeck [client](https://static.makeuseof.com/wp-content/uploads/2012/02/muo-tweetdeck2b.png), the new Tweetdeck webapp and Mastodon UI.
 
@@ -31,9 +31,9 @@ It is released as a **browser webapp** and also packaged as an **cross-platform 
 - Autocomplete error on empty hashtag/mention
 </releaseNotes>
     <tags>sengi mastodon pleroma desktop client</tags>
-    <projectSourceUrl>https://github.com/NicolasConstant/sengi</projectSourceUrl>
+    <projectSourceUrl>https://github.com/NicolasConstant/sengi-electron</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/sengi</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
-    <bugTrackerUrl>https://github.com/NicolasConstant/sengi/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/NicolasConstant/sengi-electron/issues</bugTrackerUrl>
   </metadata>
 </package>

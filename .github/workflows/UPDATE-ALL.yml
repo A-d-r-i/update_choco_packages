@@ -254,7 +254,7 @@ jobs:
         run:  |
           $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
           $Version = ([xml](Get-Content ./sengi/sengi.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi/releases/latest" -Headers $headers | ConvertFrom-Json)[0].tag_name
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/NicolasConstant/sengi-electron/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
           
           echo $Version
           echo $tag
