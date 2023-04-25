@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sengi</id>
-    <version>1.2.0</version>
+    <version>1.5.5</version>
     <title>Sengi</title>
     <authors>Nicolas Constant (and contributors)</authors>
     <owners>Adri</owners>
@@ -22,14 +22,8 @@ It is released as a **browser webapp** and also packaged as an **cross-platform 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A FLOSS multi-account Mastodon and Pleroma desktop client.</summary>
-    <releaseNotes>### Added 
-- Hashtag following support
-- Post edition support
-
-### Fix 
-- Wrong slow mode count
-- Autocomplete error on empty hashtag/mention
-</releaseNotes>
+    <releaseNotes>**Fixed**
+* Open external URL in browser</releaseNotes>
     <tags>sengi mastodon pleroma desktop client</tags>
     <projectSourceUrl>https://github.com/NicolasConstant/sengi-electron</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/sengi</packageSourceUrl>
