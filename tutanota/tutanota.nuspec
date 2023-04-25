@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.112.6</version>
+    <version>3.112.9</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,21 +16,42 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Accessibility Improvements 
+    <releaseNotes># What's new
+ - Toolbar [#5383](https://github.com/tutao/tutanota/issues/5383) [#5307](https://github.com/tutao/tutanota/issues/5307) [#5306](https://github.com/tutao/tutanota/issues/5306)
+ - Update electron [#5352](https://github.com/tutao/tutanota/issues/5352)
+ - Multi-select indicator &amp; select all [#5301](https://github.com/tutao/tutanota/issues/5301)
+ - Indication for previous conversation entries [#5252](https://github.com/tutao/tutanota/issues/5252)
+ - Prevent BlobAccessToken expiration errors [#5139](https://github.com/tutao/tutanota/issues/5139)
+ - Update esbuild [#4576](https://github.com/tutao/tutanota/issues/4576)
+
+# Bugfixes
+ - External images are always loaded when replying to a mail [#5384](https://github.com/tutao/tutanota/issues/5384)
+ - free users don't have a FAQ [#5368](https://github.com/tutao/tutanota/issues/5368)
+ - Mobile layout used in Desktop app [#5349](https://github.com/tutao/tutanota/issues/5349)
+ - Uncaught Error: net::ERR_NETWORK_IO_SUSPENDED (and other node:net errors) [#5338](https://github.com/tutao/tutanota/issues/5338)
+ - Bringing up the template popup with # + &lt;tab&gt; does not work anymore [#5332](https://github.com/tutao/tutanota/issues/5332)
+ - Uncaught Error: Invalid unit value NaN [#5330](https://github.com/tutao/tutanota/issues/5330)
+ - Default sender is not updated in MailSettingsViewer after disabling an alias [#5321](https://github.com/tutao/tutanota/issues/5321)
+ - Calendar side menu does not close when selecting "today" [#5263](https://github.com/tutao/tutanota/issues/5263)
+ - wrong message when entering wrong TOTP code [#5258](https://github.com/tutao/tutanota/issues/5258)
+ - creating contact from email view doesn't work [#5232](https://github.com/tutao/tutanota/issues/5232)
+ - Templates appear multiple times in list view [#5173](https://github.com/tutao/tutanota/issues/5173)
+ - Updating calendar event does not properly handle network errors [#5137](https://github.com/tutao/tutanota/issues/5137)
+ - Long attachment file name not visible [#4890](https://github.com/tutao/tutanota/issues/4890)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/254?closed=1
+
 
 # Asset Checksums (SHA256)
-**tutanota-desktop-3.112.6-unpacked-linux.tar.gz:**
-2aa8fa5d09303d4ee9991f0963c7fb88caa93988ef5b14b9622aff61304f5e33
-
 **tutanota-desktop-linux.AppImage:**
-cccb4d6ba6fe01d4d3a343155b918bd926621bc03db724cae28fc068f627ffc5
+24fb9b91d5619647c9bfffeb6033d16b4d5700fc802ed9fcacd50d622106e0d8
 
 **tutanota-desktop-win.exe:**
-f6e963dd3c0a374ef5816c951b379a632d754cb60d05cd1d22d387412f7c16cd
+b2753d9833e1c42cbfc5b31d8356ad1eeaa569ebb8191f599e0895e158b14c35
 
 **tutanota-desktop-mac.dmg:**
-37ae2165fc8f9483299caeab4a0f7ec1d901e9619de55d8d93583d5a2a376091</releaseNotes>
+4be286cd4e6bcdc73e74fddeb4d27ebc3adad6ad175e7df89f6d6a3d6dd47a88</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
