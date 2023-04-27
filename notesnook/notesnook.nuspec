@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.8</version>
+    <version>2.4.10</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,34 +18,20 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
+    <releaseNotes>## :bug: Fixes &amp; improvements
 
-1.  **Change default font size &amp; font family** in editor from `Settings &gt; Editor settings` on all platforms by @alihamuh @ammarahm-ed @thecodrr in [#1721](https://github.com/streetwriters/notesnook/pull/1721)
+1. Fix "Unauthorized" error on subscription cancelation &amp; update by @thecodrr in [#2430](https://github.com/streetwriters/notesnook/pull/2430)
+2. Fix issue where duplicated note remained coupled with the original note by @ammarahm-ed in [#2416](https://github.com/streetwriters/notesnook/pull/2416)
+3. Fix issue where a note with empty content could not be duplicated by @ammarahm-ed in [#2417](https://github.com/streetwriters/notesnook/pull/2417)
+4. Fix obfuscation of short email addresses by @ammarahm-ed in [#2427](https://github.com/streetwriters/notesnook/pull/2427)
+5. Fix issue where YouTube embeds failed with 401 error in desktop app by @alihamuh in [#2426](https://github.com/streetwriters/notesnook/pull/2426)
+6. Prevent already subscribed users from resubscribing by @thecodrr in [#2438](https://github.com/streetwriters/notesnook/pull/2438)
+7. Fix issue where sync stopped working after resume from sleep by @thecodrr in [#2441](https://github.com/streetwriters/notesnook/pull/2441)
 
-## :bug: Fixes &amp; improvements
+**New contributors**
+* @ElminD made their first contribution in [#2384](https://github.com/streetwriters/notesnook/pull/2384)
 
-1. Fix issue where notes marked as local only got deleted on sync by @ammarahm-ed in [#2299](https://github.com/streetwriters/notesnook/pull/2299)
-2. Fix issue where remote note was not synced if local note does not exist by @ammarahm-ed in [#2349](https://github.com/streetwriters/notesnook/pull/2349)
-3. Do not show success toast if notebook failed to create by @alihamuh in [#2307](https://github.com/streetwriters/notesnook/pull/2307)
-4. Disable input sanitization when renaming color/tag by @Abdulrehman-Jafer in [#2274](https://github.com/streetwriters/notesnook/pull/2274)
-5. Fix code block syntax highlighting not updating when changing its language by @Abdulrehman-Jafer in [#2267](https://github.com/streetwriters/notesnook/pull/2267)
-6. Fix jumping text/bg color popup in editor by @alihamuh in [#2306](https://github.com/streetwriters/notesnook/pull/2306)
-7. Fix crash while editing links on mobile by @thecodrr in [#2363](https://github.com/streetwriters/notesnook/pull/2363)
-8. All toolbars should scroll if buttons overflow by @thecodrr in [#2375](https://github.com/streetwriters/notesnook/pull/2375)
-
-### :construction_worker: Miscellaneous
-
-1. Fix grammar mistakes in main repo README by @NickThomas20 in [#2342](https://github.com/streetwriters/notesnook/pull/2342)
-2. Fix grammar mistakes in app READMEs by @NedimHodzic in [#2345](https://github.com/streetwriters/notesnook/pull/2345)
-3. Migrate use-is-user-premium.js to Typescript by @Abdulrehman-Jafer in [#2297](https://github.com/streetwriters/notesnook/pull/2297)
-4. Migrate use-database.js to TypeScript by @Abdulrehman-Jafer in [#2287](https://github.com/streetwriters/notesnook/pull/2287)
-5. Migrate use-media-query.js to Typescript by @Abdulrehman-Jafer in [#2326](https://github.com/streetwriters/notesnook/pull/2326)
-
-## New Contributors
-* @NickThomas20 made their first contribution in [#2342](https://github.com/streetwriters/notesnook/pull/2342)
-* @NedimHodzic made their first contribution in [#2345](https://github.com/streetwriters/notesnook/pull/2345)
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.7...v2.4.8</releaseNotes>
+**Full changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.8...v2.4.10</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
