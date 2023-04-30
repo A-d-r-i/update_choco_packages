@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,36 +14,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.11.0 - 2023-04-14 
+    <releaseNotes>## v1.11.1 - 2023-04-20 
 
- - feat: Add visual read marker (Krille) 
- - feat: Jump to last read event (Krille) 
- - feat: Use fragmented timeline to jump to event (Krille) 
- - feat: change to flutterwebauth2 (ShootingStarDragons) 
- - fix: Join public room (Krille) 
- - fix: Set fcm priority to max on android (Krille) 
- - refactor: CI scripts and old workarounds for build scripts (Krille) 
- - refactor: Client in ChatPage (Krille) 
- - refactor: Not nullable room in ChatPage (Krille) 
- - refactor: Switch to file_picker package and get rid of some dependency overrides (Krille) 
- - refactor: Use correct Matrix instance (Krille) 
- - style: Make emptypage logo bigger (Krille) 
- - style: Minor adjustments for modal bottom sheets (Krille) 
- - style: Move chats to top (Krille) 
- - style: Use SliverList for chatlist (Krille) 
- - refactor: Container -&gt; SizedBox.shrink() (noob_tea) 
- - Translated using Weblate (Chinese (Simplified)) (Eric) 
- - Translated using Weblate (Dutch) (Jelv) 
- - Translated using Weblate (Estonian) (Priit Jõerüüt) 
- - Translated using Weblate (French) (Anne Onyme 017) 
- - Translated using Weblate (Galician) (josé m) 
- - Translated using Weblate (Indonesian) (Linerly) 
- - Translated using Weblate (Persian) (Parsa) 
- - Translated using Weblate (Persian) (Siavash) 
- - Translated using Weblate (Polish) (Luna) 
- - Translated using Weblate (Swedish) (Kristoffer Grundström) 
- - Translated using Weblate (Turkish) (Oğuz Ersen) 
- - Translated using Weblate (Ukrainian) (Ihor Hordiichuk)  
+ - fix: Download files on web and iOS with correct mimetype  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
