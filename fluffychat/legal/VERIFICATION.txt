@@ -6,12 +6,12 @@ The installer have been downloaded from their official gitlab repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.11.0 : <https://gitlab.com/famedly/fluffychat/-/archive/v1.11.0/fluffychat-v1.11.0.zip>
+  Version 1.11.1 : <https://gitlab.com/famedly/fluffychat/-/archive/v1.11.1/fluffychat-v1.11.1.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 3873187956ABC2382889E3620CB4B2C6630376F4911DADE3FD252CD97FA23722
+  checksum: A32F2B1805A2180F732A36CA4F951BD9EDF7B957F307F38EA866EDAB9994AEBF
 
 File 'LICENSE.txt' is obtained from <https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE> 
