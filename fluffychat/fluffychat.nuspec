@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>fluffychat</id>
-    <version>1.11.1</version>
+    <version>1.11.2</version>
     <title>FluffyChat</title>
     <authors>Famedly</authors>
     <owners>Adri</owners>
@@ -14,9 +14,16 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>FluffyChat is a Flutter-based client with a simple and clean UI.</summary>
-    <releaseNotes>## v1.11.1 - 2023-04-20 
-
- - fix: Download files on web and iOS with correct mimetype  
+    <releaseNotes>## v1.11.2 
+ - Translated using Weblate (Croatian) (Milo Ivir) 
+ - Translated using Weblate (Dutch) (Jelv) 
+ - Translated using Weblate (Estonian) (Priit Jõerüüt) 
+ - Translated using Weblate (Galician) (josé m) 
+ - Translated using Weblate (Polish) (Eryk Michalak) 
+ - Translated using Weblate (Turkish) (Oğuz Ersen) 
+ - Translated using Weblate (Ukrainian) (Ihor Hordiichuk) 
+ - feat: Permission dialog before open link in browser (Krille) 
+ - fix: Chats do not load (Krille)  
 
 **Full changelog:** [https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md](https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md) </releaseNotes>
     <tags>fluffychat chat flutter matrix</tags>
