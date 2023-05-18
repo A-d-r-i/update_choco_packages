@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.6.3</version>
+    <version>5.6.4</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,23 +17,14 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.6.3 release
-* change: budget table view is now the default
-* bugfix: scheduled transaction list was not display src/dst account for xfer
-* bugfix: scheduled transaction list total was incorrect
-* bugfix: account future transaction account column was not displayed oblique
-* bugfix: #[2009277](https://bugs.launchpad.net/bugs/2009277) removing tag from multiple transactions
-* bugfix: #[2009250](https://bugs.launchpad.net/bugs/2009250) cannot select Hidden Categories in Statistics Reporting
-* bugfix: #[2008521](https://bugs.launchpad.net/bugs/2008521) account window toggle future transaction is not working
-* bugfix: #[2007947](https://bugs.launchpad.net/bugs/2007947) dropdown boxes in the Edit Transaction dialog box behave inconsistently
-* bugfix: #[2007712](https://bugs.launchpad.net/bugs/2007712) report half-year column header is not translated
-* bugfix: #[2000728](https://bugs.launchpad.net/bugs/2000728) wayland: template window closes only on third attempt
-* bugfix: #[1999699](https://bugs.launchpad.net/bugs/1999699) wayland: click on schedule button select first item and don't open popover
-* wish: #[2007714](https://bugs.launchpad.net/bugs/2007714)	table budget dialog view improvements
-* wish: #[2000290](https://bugs.launchpad.net/bugs/2000290)	Fortnight interval in Reports
-* wish: #[1996505](https://bugs.launchpad.net/bugs/1996505)	Sum SELECTED scheduled transaction at main window
-* wish: #[1956060](https://bugs.launchpad.net/bugs/1956060)	sort by amount in statistics report to take sign into consideration
-* wish: #[1886123](https://bugs.launchpad.net/bugs/1886123)	Remind status transactions not calculated in reports despite include preference
+Made 5.6.4 release
+* bugfix: #[2012576](https://bugs.launchpad.net/bugs/2012576) statistics Report using Balance Mode by time shows odd "total" column
+* bugfix: #[2012999](https://bugs.launchpad.net/bugs/2012999) one transaction Imported from QFX file no longer matches
+* bugfix: #[2017435](https://bugs.launchpad.net/bugs/2017435) posting both sides of a scheduled internal transfer posts 2 occurrence
+* bugfix: #[2018145](https://bugs.launchpad.net/bugs/2018145) rate calculation on total report values
+* bugfix: #[2018206](https://bugs.launchpad.net/bugs/2018206) balance sometimes displays -0.00
+* bugfix: #[2018414](https://bugs.launchpad.net/bugs/2018414) tags edit/import faultly enable space and may cause report crash
+* bugfix: #[2019876](https://bugs.launchpad.net/bugs/2019876) balance report allow max &lt; min date (crash) and ignore input with All dates range set
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
