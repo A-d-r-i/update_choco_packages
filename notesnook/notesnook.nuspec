@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.4.10</version>
+    <version>2.5.0</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,20 +18,45 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :bug: Fixes &amp; improvements
+    <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Fix "Unauthorized" error on subscription cancelation &amp; update by @thecodrr in [#2430](https://github.com/streetwriters/notesnook/pull/2430)
-2. Fix issue where duplicated note remained coupled with the original note by @ammarahm-ed in [#2416](https://github.com/streetwriters/notesnook/pull/2416)
-3. Fix issue where a note with empty content could not be duplicated by @ammarahm-ed in [#2417](https://github.com/streetwriters/notesnook/pull/2417)
-4. Fix obfuscation of short email addresses by @ammarahm-ed in [#2427](https://github.com/streetwriters/notesnook/pull/2427)
-5. Fix issue where YouTube embeds failed with 401 error in desktop app by @alihamuh in [#2426](https://github.com/streetwriters/notesnook/pull/2426)
-6. Prevent already subscribed users from resubscribing by @thecodrr in [#2438](https://github.com/streetwriters/notesnook/pull/2438)
-7. Fix issue where sync stopped working after resume from sleep by @thecodrr in [#2441](https://github.com/streetwriters/notesnook/pull/2441)
+### Attachment previews
 
-**New contributors**
-* @ElminD made their first contribution in [#2384](https://github.com/streetwriters/notesnook/pull/2384)
+&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/8accd69a-a14d-4c00-86f7-76dabad85a13" width="768px" /&gt;
 
-**Full changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.8...v2.4.10</releaseNotes>
+You can now preview PDFs &amp; all kinds of images directly inside Notesnook. No need for long &amp; tedious process of downloading &amp; opening the attachments separately. Eventually, we will add support for more attachment types.
+
+### New attachment manager
+
+&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/4764518d-033e-4e9e-9d01-857f2f1a3b14" width="768px" /&gt;
+
+Managing your attachments will now be super easy with quick filters for different types of files. We have also improved support for performing bulk actions like deleting, downloading &amp; rechecking attachments.
+
+### Web clipper on Chrome Web Store
+
+I am really excited to announce that Notesnook Web Clipper is now officially available from the Chrome Web Store!
+
+[&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/443bd6d1-0d1c-4682-bbc0-3f3349461ac5" width="200px" /&gt;](https://chrome.google.com/webstore/detail/notesnook-web-clipper/kljhpemdlcnjohmfmkogahelkcidieaj)
+
+### Other
+
+1. Add support for **link markdown syntax** by @alihamuh in [#2576](https://github.com/streetwriters/notesnook/pull/2576)
+2. Add support for **printing notes** by @alihamuh in [#2551](https://github.com/streetwriters/notesnook/pull/2551)
+3. Set tags on multiple notes at once by @alihamuh @thecodrr in [#2328](https://github.com/streetwriters/notesnook/pull/2328)
+4. It is now also possible to **download &amp; save all your attachments** quickly from within the attachments manager
+
+## :bug: Fixes &amp; improvements
+
+1. Fix position of outline list bullet/arrow by @alihamuh in [#2555](https://github.com/streetwriters/notesnook/pull/2555)
+2. Fix duplication of note that is directly inside a notebook by @alihamuh in [#2552](https://github.com/streetwriters/notesnook/pull/2552)
+3. Make cell properties work with header cells by @alihamuh in [#2506](https://github.com/streetwriters/notesnook/pull/2506)
+4. Do not open links twice in readonly mode by @thecodrr in [#2593](https://github.com/streetwriters/notesnook/pull/2593)
+5. Prevent table column size reset in readonly mode by @alihamuh in [#2586](https://github.com/streetwriters/notesnook/pull/2586)
+6. Close deleted note on sync by @alihamuh in [#2580](https://github.com/streetwriters/notesnook/pull/2580)
+7. Fix search inside notebooks by @thecodrr in [#2597](https://github.com/streetwriters/notesnook/pull/2597)
+8. Fix list crash on shift+click when there's no selection by @thecodrr in [#2610](https://github.com/streetwriters/notesnook/pull/2610)
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.11...v2.5.0</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
