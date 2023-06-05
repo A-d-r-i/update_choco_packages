@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.5.0</version>
+    <version>2.5.1</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,43 +20,26 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## :star2: Features &amp; new stuff
 
-### Attachment previews
+1. **Configurable date format** ??? You can now change date &amp; time format across the app from `Settings` &gt; `Behaviour`
+2. **Default note title** ??? Changing the default note title for new notes is now possible!
+3. **Default notebook/topic** ??? set a default notebook/topic and all new notes will get linked to it automatically.
+4. **Marketing emails opt-out** ??? we take our users' privacy very seriously and giving them full control over their data is our first priority. From this release onwards, you'll be able to opt-out of all kinds of marketing emails directly from inside the app.
 
-&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/8accd69a-a14d-4c00-86f7-76dabad85a13" width="768px" /&gt;
-
-You can now preview PDFs &amp; all kinds of images directly inside Notesnook. No need for long &amp; tedious process of downloading &amp; opening the attachments separately. Eventually, we will add support for more attachment types.
-
-### New attachment manager
-
-&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/4764518d-033e-4e9e-9d01-857f2f1a3b14" width="768px" /&gt;
-
-Managing your attachments will now be super easy with quick filters for different types of files. We have also improved support for performing bulk actions like deleting, downloading &amp; rechecking attachments.
-
-### Web clipper on Chrome Web Store
-
-I am really excited to announce that Notesnook Web Clipper is now officially available from the Chrome Web Store!
-
-[&lt;img src="https://github.com/streetwriters/notesnook/assets/7473959/443bd6d1-0d1c-4682-bbc0-3f3349461ac5" width="200px" /&gt;](https://chrome.google.com/webstore/detail/notesnook-web-clipper/kljhpemdlcnjohmfmkogahelkcidieaj)
-
-### Other
-
-1. Add support for **link markdown syntax** by @alihamuh in [#2576](https://github.com/streetwriters/notesnook/pull/2576)
-2. Add support for **printing notes** by @alihamuh in [#2551](https://github.com/streetwriters/notesnook/pull/2551)
-3. Set tags on multiple notes at once by @alihamuh @thecodrr in [#2328](https://github.com/streetwriters/notesnook/pull/2328)
-4. It is now also possible to **download &amp; save all your attachments** quickly from within the attachments manager
+![ezgif com-video-to-gif](https://github.com/streetwriters/notesnook/assets/7473959/6d8afbf6-a651-468c-9c3e-c537276f04ba)
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix position of outline list bullet/arrow by @alihamuh in [#2555](https://github.com/streetwriters/notesnook/pull/2555)
-2. Fix duplication of note that is directly inside a notebook by @alihamuh in [#2552](https://github.com/streetwriters/notesnook/pull/2552)
-3. Make cell properties work with header cells by @alihamuh in [#2506](https://github.com/streetwriters/notesnook/pull/2506)
-4. Do not open links twice in readonly mode by @thecodrr in [#2593](https://github.com/streetwriters/notesnook/pull/2593)
-5. Prevent table column size reset in readonly mode by @alihamuh in [#2586](https://github.com/streetwriters/notesnook/pull/2586)
-6. Close deleted note on sync by @alihamuh in [#2580](https://github.com/streetwriters/notesnook/pull/2580)
-7. Fix search inside notebooks by @thecodrr in [#2597](https://github.com/streetwriters/notesnook/pull/2597)
-8. Fix list crash on shift+click when there's no selection by @thecodrr in [#2610](https://github.com/streetwriters/notesnook/pull/2610)
+1. Allow download &amp; preview of attachments in readonly mode by @RamiroPruis in [#2621](https://github.com/streetwriters/notesnook/pull/2621)
+2. Enable search in readonly mode by @ammarahm-ed in [#2659](https://github.com/streetwriters/notesnook/pull/2659)
+3. Enable tools on images &amp; links in readonly mode  by @alihamuh in [#2637](https://github.com/streetwriters/notesnook/pull/2637)
+4. Allow starting lists with arbitrary number by @thecodrr in [#2660](https://github.com/streetwriters/notesnook/pull/2660)
+5. Fix start as minimized on Windows by @thecodrr in [#2636](https://github.com/streetwriters/notesnook/pull/2636)
+6. Fix the blank/black window on startup in Windows by @thecodrr
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.4.11...v2.5.0</releaseNotes>
+**New Contributors**
+* @RamiroPruis made their first contribution in [#2621](https://github.com/streetwriters/notesnook/pull/2621)
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.0...v2.5.1</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
