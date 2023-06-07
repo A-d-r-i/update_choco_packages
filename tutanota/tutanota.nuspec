@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.112.15</version>
+    <version>3.113.3</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,27 +16,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Change mobile layouts &amp; improve the design [#5408](https://github.com/tutao/tutanota/issues/5408)
-
-# Bugfixes
- - UI feedback improvements [#5467](https://github.com/tutao/tutanota/issues/5467)
- - Prevent white background from appearing on dragged mail in dark theme [#5468](https://github.com/tutao/tutanota/issues/5468)
- - Collapsed mails in the conversation cannot be focused with keyboard [#5416](https://github.com/tutao/tutanota/issues/5416)
+    <releaseNotes># Bugfixes
+ - New pricing
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/256?closed=1
-
+https://github.com/tutao/tutanota/milestone/258?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-8d44a9031db07482a7a225542909990632de3593a1fffc3b5fec9f90e0de5936
+6c26558e8acdef07a091b700112ff1e9c82ebf3e87594228433c207d75e5fd60
 
 **tutanota-desktop-win.exe:**
-eabaa7896649e7b6a72c25cc7f83d958c57b126a6c3371bfe3b5760016463282
+ce476b70507ecee88a5d5022bcde2b6aea00a6f49f967a0c7ee481d198a7217b
 
 **tutanota-desktop-mac.dmg:**
-58732f7949cc6db6a7dd9fe1d58d5c03364a59446203d64f4855f94724960858</releaseNotes>
+b7d2aad6db29582ce28f854284b2ee54919d306fc3c1a037517c4052b50f7014</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
