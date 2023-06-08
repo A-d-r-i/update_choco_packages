@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.2.0 : <https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/download/1.2.0/AudioMothUSBMicrophoneAppSetup1.2.0.exe>
+  Version 1.2.1 : <https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/releases/download/1.2.1/AudioMothUSBMicrophoneAppSetup1.2.1.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 5FC06BCDA769D9A11D731C5B2C0FD0A209BB3BFD7432C9C2D1F00FEFD4A40845
+  checksum: CC06CFFDC780E7D3975D3B8485C9910D2D275A9CB43E7E81F4AA3C5F4EBDB9C1
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App/master/LICENSE> 
