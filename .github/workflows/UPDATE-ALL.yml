@@ -162,7 +162,7 @@ jobs:
           if ( $tag -eq $Version ) { echo 'Last version already exist' } else {
           if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$') {
           $url_test = (Invoke-Webrequest -uri 'https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip' -SkipHttpErrorCheck)
-          $url_test.StatusCode
+          echo "StatusCode ZIP file : $url_test.StatusCode"
           if ( $url_test.StatusCode -ne '200' ) { echo 'No ZIP file for this version' } else {
           Invoke-WebRequest -Uri "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip" -OutFile "fluffychat.zip"
           mkdir fc
