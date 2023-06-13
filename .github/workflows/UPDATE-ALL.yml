@@ -172,12 +172,12 @@ jobs:
           ./send_fluffychat.ps1
           Remove-Item "fluffychat.zip"
           Remove-Item -Recurse -Force ./fc
-          }} else {
+          }}} else {
           echo 'The version number is not in the correct format'
           Remove-Item "fluffychat.zip"
           Remove-Item -Recurse -Force ./fc
           #exit 1
-          }}}
+          }}
         
       - name: HOMEBANK
         if: always()
