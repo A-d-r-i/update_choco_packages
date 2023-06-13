@@ -27,13 +27,6 @@ $xml.Save($file)
 
 # download installer and LICENSE
 Invoke-WebRequest -Uri "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$tag/fluffychat-windows.zip" -OutFile "$id.zip"
-mkdir fc
-Expand-Archive test.zip -DestinationPath ./fc/
-$gci = (Get-ChildItem -Path ./fc/ -Filter fluffychat.exe -Recurse -ErrorAction SilentlyContinue -Force)
-if (!$gci.name) { 
-  Write-Host "The executable does not exist" 
-  }else{
-
 Invoke-WebRequest -Uri "https://gitlab.com/famedly/fluffychat/-/raw/main/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 # calculation of checksum
@@ -59,7 +52,6 @@ Install-ChocolateyShortcut -ShortcutFilePath `"`$([System.Environment]::GetFolde
 
 Remove-Item FC.md
 Remove-Item "$id.zip"
-Remove-Item -Recurse -Force ./fc
 
 # writing of VERIFICATION.txt
 $content = "VERIFICATION
@@ -89,4 +81,3 @@ If ($LastExitCode -eq 0) {
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
 }
-} # end of download installer and LICENSE
