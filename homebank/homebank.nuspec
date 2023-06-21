@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.6.4</version>
+    <version>5.6.5</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,14 +17,12 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.6.4 release
-* bugfix: #[2012576](https://bugs.launchpad.net/bugs/2012576) statistics Report using Balance Mode by time shows odd "total" column
-* bugfix: #[2012999](https://bugs.launchpad.net/bugs/2012999) one transaction Imported from QFX file no longer matches
-* bugfix: #[2017435](https://bugs.launchpad.net/bugs/2017435) posting both sides of a scheduled internal transfer posts 2 occurrence
-* bugfix: #[2018145](https://bugs.launchpad.net/bugs/2018145) rate calculation on total report values
-* bugfix: #[2018206](https://bugs.launchpad.net/bugs/2018206) balance sometimes displays -0.00
-* bugfix: #[2018414](https://bugs.launchpad.net/bugs/2018414) tags edit/import faultly enable space and may cause report crash
-* bugfix: #[2019876](https://bugs.launchpad.net/bugs/2019876) balance report allow max &lt; min date (crash) and ignore input with All dates range set
+Made 5.6.5 release
+* bugfix: #[2024243](https://bugs.launchpad.net/bugs/2024243)	when creating splits for income transactions, expenses are added as incomes regardless of amount sign
+* bugfix: #[2023388](https://bugs.launchpad.net/bugs/2023388)	account cannot be deleted message is not precise enough
+* bugfix: #[2022049](https://bugs.launchpad.net/bugs/2022049)	windows: displayed values overflow int32 in 5.6.4
+* bugfix: #[2019312](https://bugs.launchpad.net/bugs/2019312)	status column included in export detail txn from report break re-import
+* bugfix: #[2018039](https://bugs.launchpad.net/bugs/2018039)	lock icon for reconciled txn is not displayed in report detail
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
