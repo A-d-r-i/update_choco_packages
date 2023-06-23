@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.5.3</version>
+    <version>2.5.4</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,37 +18,19 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
-
-1. **Native encryption/decryption on desktop** ??? we have rewritten the desktop side of things to add support for 100% native encryption using libsodium. On users' side, this means faster syncing, attachment uploading, login &amp; everything else encryption related.
-2. **New UI for Settings** ??? Notesnook Settings have been revamped to better confirm with the desktop form factor. There's now a search too!
-3. **Automatic backups are now disabled by default** ??? this was a potential security risk where logging in on a public device would download a backup to the users' device. This now requires manually turning on automatic backups for each device.
-4. **Encrypted backups for all** ??? we are enabling encrypted backups for all Pro &amp; Basic users by default!
-5. Web Clipper has been updated to v0.2.2 fixing a very critical bug. Download the update from [here](notesnook.com/notesnook-web-clipper/).
+    <releaseNotes>_Note: This release fixes a couple of very critical bugs that started appearing after the 2.5.3 release. It is recommended that you upgrade to v2.5.4 ASAP!_
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix editor theme not changing with app theme by @thecodrr in [#2716](https://github.com/streetwriters/notesnook/pull/2716)
-2. Fix search in topic/notebook return incomplete results by @ammarahm-ed in [#2742](https://github.com/streetwriters/notesnook/pull/2742)
-3. Fix/trial expired notice shows on app restart for new users by @ammarahm-ed in [#2691](https://github.com/streetwriters/notesnook/pull/2691)
-4. Persist text alignment &amp; direction on heading creation by @thecodrr in [#2718](https://github.com/streetwriters/notesnook/pull/2718)
-5. Fix pane sizes getting reset randomly on startup by @thecodrr in [#2753](https://github.com/streetwriters/notesnook/pull/2753)
-6. Allow focusing editor by clicking at the bottom by @thecodrr in [#2757](https://github.com/streetwriters/notesnook/pull/2757)
-7. Fix crash on viewing a merge conflict by @thecodrr in [#2756](https://github.com/streetwriters/notesnook/pull/2756)
-8. Do not include trashed notes in total notebook notes by @thecodrr in [#2755](https://github.com/streetwriters/notesnook/pull/2755)
-9. Fix navigation on small screens &amp; mobiles by @thecodrr in [#2754](https://github.com/streetwriters/notesnook/pull/2754)
-10. Fix issue where editor theme would not changing with app theme
-11. Images are now cached by the editor resulting in faster reloads &amp; much smoother experience during real-time editor syncing (it also now consumes much less memory).
+1. Fix black squares in outline lists by @thecodrr in [#2795](https://github.com/streetwriters/notesnook/pull/2795)
+2. Fix a lot of issues with new Settings by @thecodrr in [#2794](https://github.com/streetwriters/notesnook/pull/2794)
+3. Fix desktop app crashes due to undici fetch by @thecodrr in [#2799](https://github.com/streetwriters/notesnook/pull/2799)
+4. Fix 'c must be...' error when adding an attachment by @thecodrr in [#2811](https://github.com/streetwriters/notesnook/pull/2811)
+5. Fix PDF attachments cannot be opened in editor by @thecodrr in [#2810](https://github.com/streetwriters/notesnook/pull/2810)
+6. Fix issue where a search query with "-" in it returned nothing by @ammarahm-ed in [#2813](https://github.com/streetwriters/notesnook/pull/2813)
+7. Fix selected image/attachment getting replaced on adding a new image/attachment by @thecodrr in [#2815](https://github.com/streetwriters/notesnook/pull/2815)
 
-## :rescue_worker_helmet: Repository health
-
-1. Update Electron to v24.4.0
-2. Migrate to Vite from Webpack
-3. Create a new subproject `@notesnook/common` which will contain all common, frequently used utilities &amp; other code
-4. Navigation code in the web app has been 100% ported to Typescript
-5. Notesnook is now majority Typescript so YAY!
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.2...v2.5.3</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.3...v2.5.4</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
