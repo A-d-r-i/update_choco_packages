@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.5.4</version>
+    <version>2.5.5</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,19 +18,18 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>_Note: This release fixes a couple of very critical bugs that started appearing after the 2.5.3 release. It is recommended that you upgrade to v2.5.4 ASAP!_
+    <releaseNotes>## :star2: Features &amp; new stuff
+
+1. Add support for exporting locked notes by @thecodrr in [#2841](https://github.com/streetwriters/notesnook/pull/2841)
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix black squares in outline lists by @thecodrr in [#2795](https://github.com/streetwriters/notesnook/pull/2795)
-2. Fix a lot of issues with new Settings by @thecodrr in [#2794](https://github.com/streetwriters/notesnook/pull/2794)
-3. Fix desktop app crashes due to undici fetch by @thecodrr in [#2799](https://github.com/streetwriters/notesnook/pull/2799)
-4. Fix 'c must be...' error when adding an attachment by @thecodrr in [#2811](https://github.com/streetwriters/notesnook/pull/2811)
-5. Fix PDF attachments cannot be opened in editor by @thecodrr in [#2810](https://github.com/streetwriters/notesnook/pull/2810)
-6. Fix issue where a search query with "-" in it returned nothing by @ammarahm-ed in [#2813](https://github.com/streetwriters/notesnook/pull/2813)
-7. Fix selected image/attachment getting replaced on adding a new image/attachment by @thecodrr in [#2815](https://github.com/streetwriters/notesnook/pull/2815)
+1. Fix invalid zip error when downloading attachments in bulk by @thecodrr in [#2834](https://github.com/streetwriters/notesnook/pull/2834)
+2. Fix error when downloading large attachments/images by @thecodrr in [#2826](https://github.com/streetwriters/notesnook/pull/2826)
+3. Fix account deletion by @ammarahm-ed in [#2825](https://github.com/streetwriters/notesnook/pull/2825)
+4. Fix various issues with exporting notes by @thecodrr in [#2841](https://github.com/streetwriters/notesnook/pull/2841)
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.3...v2.5.4</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.4...v2.5.5</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
