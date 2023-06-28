@@ -73,7 +73,11 @@ jobs:
           #exit 1
           }
           }
-        
+
+      - name: AUDIOMOTH-LIVE
+        if: always()
+        run: |
+
       - name: AUDIOMOTH-TIME
         if: always()
         run:  |
