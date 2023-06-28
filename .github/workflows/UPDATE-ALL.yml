@@ -76,7 +76,27 @@ jobs:
 
       - name: AUDIOMOTH-LIVE
         if: always()
-        run: |
+        run:  |
+          $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
+          $Version = ([xml](Get-Content ./audiomoth-live/audiomoth-live.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-Live-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
+          ./send_audiomoth-live.ps1
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
+          }
 
       - name: AUDIOMOTH-TIME
         if: always()
