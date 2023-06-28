@@ -10,10 +10,11 @@
     <projectUrl>https://www.openacousticdevices.info/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/OpenAcousticDevices/AudioMoth-Live-App@main/assets/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
+    <description>The AudioMoth Live App takes audio from any USB microphone and displays a live scrolling waveform and spectrogram, with options to make continuous recordings, monitor the audio input, or apply a heterodyne bat detector to the input.
+    The AudioMoth Live App works with all USB microphones but is specifically designed to work with AudioMoth USB Microphone firmware, which allows all existing AudioMoth hardware versions to be used as configurable USB microphones.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
-    <summary></summary>
+    <summary>An Electron-based application for recording and analysing live audio from high sample rate microphones, including the AudioMoth USB Microphone.</summary>
     <releaseNotes></releaseNotes>
     <tags>audiomoth-live audiomoth live-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Live-App</projectSourceUrl>
