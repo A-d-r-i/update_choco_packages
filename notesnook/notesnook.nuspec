@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.5.6</version>
+    <version>2.5.7</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,12 +18,27 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :bug: Fixes &amp; improvements
+    <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Fix subscription plan not changing from monthly by @thecodrr in https://github.com/streetwriters/notesnook/pull/2863
-2. Fix backups not getting saved on desktop app
+1. **Faster app startup** ??? _in Notesnook performance is a feature_. The desktop app now starts up in 0.2 seconds and becomes fully functional &amp; ready in ~2.3 seconds. That's down from ~3.9 seconds. Here's a comparison:
+![ezgif com-optimize](https://github.com/streetwriters/notesnook/assets/7473959/711b452d-a3f3-4edf-a477-60ae0ed961a7)
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.5...v2.5.6</releaseNotes>
+3. **Copy to clipboard on codeblocks** ??? All codeblocks now show a copy to clipboard button on hover (always visible on mobiles).
+4. **No more update notices on startup** ??? starting from this release, you will no longer see update notices whenever you start the app.
+
+## :bug: Fixes &amp; improvements
+
+1. Fix toolbar button alignment in editor by @ammarahm-ed in [#2876](https://github.com/streetwriters/notesnook/pull/2876)
+2. Fix gray placeholder shown on re-inserting an already uploaded image by @thecodrr in [#2878](https://github.com/streetwriters/notesnook/pull/2878)
+3. Force upate token if email is already confirmed by @thecodrr in [#2879](https://github.com/streetwriters/notesnook/pull/2879). This will get rid of the "Please confirm your email..." error even though you already confirmed your email.
+5. Do not cache images without an hash i.e. pasted images by @thecodrr in [#2881](https://github.com/streetwriters/notesnook/pull/2881). This fixes the bug where pasting different images consistently showed the same image until you restarted the app.
+6. Changing account password is now possible again from web/desktop Settings by @thecodrr in [#2880](https://github.com/streetwriters/notesnook/pull/2880)
+
+**New Contributors**
+
+* @FMMazur made their first contribution in [#2710](https://github.com/streetwriters/notesnook/pull/2710)
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.6...v2.5.7</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
