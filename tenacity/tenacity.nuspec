@@ -116,6 +116,8 @@ clip.
 
 ## Changes
 
+- On macOS, 10.15 is now the minimum required version. This only matters if you are building Tenacity from source on macOS.
+
 - The buffer length preference is now in samples by default. You can switch to milliseconds if you are unfamiliar with samples.
 
   - Buffer lengths now have a minimum requirement 32 samples, even if using milliseconds. (Tenacity converts this value internally based on the current sample rate).
