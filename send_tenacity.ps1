@@ -19,7 +19,8 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-#$urltag = $tag -replace "-beta",".0"
+$urltag = $tag + ".0"
+#$urltag = $urltag -replace "-beta",".0"
 $url64 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x86_64.exe" }).browser_download_url
 $url32 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x86.exe" }).browser_download_url
 
