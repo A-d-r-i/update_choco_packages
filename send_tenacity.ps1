@@ -7,10 +7,10 @@ $tags = "#tenacity"
 # extract latest version and release
 $json = (Invoke-WebRequest "https://codeberg.org/api/v1/repos/tenacityteam/tenacity/releases" | ConvertFrom-Json)[0]
 $tag = $json.tag_name
+$tag = $tag.Trim("v")
 if ($tag -match '^[0-9]+.[0-9]+$'){
 	$tag = $tag + ".0"
 }
-$tag = $tag.Trim("v")
 $release = $json.body
 
 # write new version and release
