@@ -7,6 +7,9 @@ $tags = "#tenacity"
 # extract latest version and release
 $json = (Invoke-WebRequest "https://codeberg.org/api/v1/repos/tenacityteam/tenacity/releases" | ConvertFrom-Json)[0]
 $tag = $json.tag_name
+if ($tag -match '^[0-9]+.[0-9]+$'){
+	$tag = $tag + ".0"
+}
 $tag = $tag.Trim("v")
 $release = $json.body
 
@@ -19,7 +22,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-$urltag = $json.tag_name + ".0"
+$urltag = "v" + $tag
 #$urltag = $urltag -replace "-beta",".0"
 $url64 = ($json.assets | where { $_.name -eq "tenacity-win-$urltag-x86_64.exe" }).browser_download_url
 $url32 = ($json.assets | where { $_.name -eq "tenacity-win-$urltag-x86.exe" }).browser_download_url
