@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>1.3-beta</version>
+    <version>1.3.0</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -27,62 +27,131 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tenacity is an easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor for Windows, macOS, Linux, and other operating systems https://tenacityaudio.org</summary>
-    <releaseNotes>A day in Tenacity project history has been made: our very first beta release has been made! While we've had nightly builds out before, this marks our first release in a while, and it's a significant step forward.
+    <releaseNotes>Today marks a day that will last forever in project history: Tenacity's first ever stable version was released. And before we get to anything, we do recognize odd version number due to historical technicalities with the codebase (Tenacity development was restarted using Saucedacity's codebase, which was at version 1.3 alpha). The work of many contributors has finally been brought to fruition with this latest stable release, and the more than a year long wait for a stable release of Tenacity is finally over.
 
-It took over a year to get to our first release. Since then, we've encountered many hardships as it's not easy maintaining software, especially an open source project. (We can definitely tell you that first hand ;). However, the most important thing we had as a project is the inherit perseverance: if one could not take the project through, they could easily fork it and continue the project in spirit. And that's why we're here: the natural perseverance of an open source project allowed us to carry these changes to a new codebase and restart development.
+# Contributors
+We want to first start off with those that have contributed to Tenacity. Many different people were involved in adding new features, fixing bugs, enhancing existing features, changing things, and overall just making Tenacity better. Without them, we wouldn't have gotten as far as we did. All of your contributions are invaluable, and we can't express how grateful we are for them.
 
-Inspiration talk aside, we have a lot to go over this release, both in changelog and implications for other similar forks. First, we'll go over the release notes in order to get what's new out of the way.
+We'd like to thank the following, in alphabetical order of (user)name, for contributing to Tenacity to help make a better audio editor:
 
-# Changelog
-**This changelog is going to be different from most because it depends where you're coming from**. In order to keep our changelog short and simple as much as possible, we have some of the most common and important changes.
+- [abb128](https://github.com/abb128)
+- @akleja
+- @AnErrupTion
+- @Be
+- @davidkaroly
+- @generic-pers0n (Fine, I'll put myself on the list too :P)
+- @jamesp
+- [Mart Raudsepp](https://github.com/leio) (for help with HiDPI issues and past work)
+- [Max Maisel](https://github.com/mmmaisel)
+- @n0toose
+- @nyanpasu64
+- @orowith2os
+- @robUx4
+- @TheEvilSkeleton (for Flatpak)
+- ...and many more, past, present, and future!
 
-* **Saucedacity's codebase is now used instead of Tenacity's original codebase.** It has been maintained and has had several crucial updates that keep it building and working on recent platforms.
+Finally, we'd like to thank the previous maintainers of Tenacity for their hard work in maintaining Tenacity and allowing Tenacity to be what it is: Tenacious.
 
-* **The dark theme is now the default theme**. We still have plenty of other themes, light, dark, or in between, available in Tenacity. We have 17 total themes, in fact!
+## Release Advisories
 
-* **Shadows have been removed from tracks.** We're trying to make the UI more modern :P
+We're adding this section to document important issues that you may encounter with upgrading from previous Tenacity betas to this stable release. We have a few advisories below. We will 
 
-* **On Windows, the modern file dialog is used**. This should help with Tenacity blending in with dark mode better for those concerned about theming; relatedly, this will be an improvement if you simply liked the newer file dialog better (or a downgrade if you liked the old one better).
+1. **Problem**: After upgrading, it is possible that all your effects, generators, tools, and any other plugins might disappear completely from their respective menus.
 
-  * As a result of code cleanups, **there is a new export options dialog that shows after the file dialog**. This is similar to Audacium's implementation except that you can't change the format from the dialog.
+    - **Solution**: delete `pluginregistry.cfg` and `pluginsettings.cfg` from your configuration directory (`~/.var/app/org.tenacityaudio.Tenacity/config` on Linux under Flatpak, `C:\Users\&lt;username&gt;\AppData\Roaming\Tenacity` under Windows). You will need to re-enable any plugins you had enabled previously.
 
-* **Clip features from Audacity have been implemented**. This includes clip handles, clip titles, and clip trimming. Simply drag a clip in the timeline to move it. Double click on its handle to rename it. Move your cursor to the edge of a clip and drag to trim it.
+2. **Problem**: your latency setting reads as samples instead of milliseconds in preferences.
 
-  * As a result of implementing these features, **the timeshift tool has been removed in favor of clips**. This tool has been made redundant because you can now move audio via a clip handle.
+    - **Solution**: change the unit back to milliseconds. Alternatively, you can use the new default of 512 samples. See the changelog for more details.
 
-# Known Issues
-* Some links still point to Audacity resources, like the Audacity manual. Because we either don't have the resources yet or they are not mature enough, we haven't updated them. **This will be resolved before the final release**.
+If you only use the default settings, it is generally recommended that you reset you preferences.
 
-  * If you want to contribute to the Tenacity manual, please visit https://codeberg.org/tenacityteam/tenacity-manual to submit PRs. The manual is written in reStructuredText and is built using Sphinx.
+3. **Problem**: On Linux, JACK isn't available using the Flatpak but the appropriate packages are installed.
 
-* On Windows, LAME must be manually loaded. We intend to change this behavior so that LAME no longer needs to be loaded manually and is either enabled or disabled at compile time.
+    - **Solution**: JACK is supported via Pipewire through the Flatpak. If your distro uses PulseAudio, consider setting up Pipewire if you can. Please consult your distro's documentation on how to setup Pipewire.
 
-# Supported Platforms
-* **Windows**: Windows 7 and later, both 32-bit (if applicable) and 64-bit, are supported for now. For versions prior to Windows 10, you will need to install the [Microsoft Visual Studio 2015-2022 redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) for your appropriate architecture. If you are using the 32-bit version, install the 'x86' version. If you're using the 64-bit version, install the 'x64' version.
+      - If your distro already has Pipewire setup by default but you still don't see the JACK option, try installing your distro's Pipewire JACK support package.
 
-* **Linux**: Ubuntu 20.04 or similar _at minimum_ should work. The AppImage was built on Ubuntu 20.04 and works on Pop!_OS 22.04
+4. **Problem**: Some help buttons point to nonexistent documentation.
 
-  * **Note that the final release will be distributed in the form of a Flatpak**. The AppImage is only provided for convenience purposes. Additionally, we do not support building AppImages, but it is possible.
-
-* **Haiku**: While we don't have downloads for Haiku, Tenacity now builds on Haiku thanks to the work of @davidkaroly.
-
-# FFmpeg
-Version shipped at the time of this release: **5.1.2**
-
-Tenacity provides FFmpeg libraries for Windows, both 32-bit and 64-bit, in case you want to use additional formats Tenacity doesn't natively support. These libraries are licensed under LGPL v3 (as per our configuration; GPL code is disabled).
-
-Our FFmpeg libraries will always be the latest version at the time a stable release is made. This means we ship the latest fixes and features from FFmpeg. However, because this is our very first release, we will provide these libraries as an initial Tenacity FFmpeg distribution.
-
-You are free to use these libraries in applications other than Tenacity, even in Audacity if you want to use newer FFmpeg libraries than what is provided for Audacity (which is 5.0.0, at the time of this writing). However, **this is not a full distribution**; it only includes libavformat, libavcodec, and libavutil. Additionally, we only support using these libraries with Tenacity and not in any other application (including Audacity).
-
-There is also no need to install these libraries. In Tenacity, go to Preferences &gt; Library &gt; FFmpeg Import/Export Library &gt; Locate to point Tenacity to the downloaded location of the libraries.
-
-# Thanks
-Thanks to everyone involved in the development of Tenacity, past, present, and future! Without your work, we wouldn't have made it here to our first beta.
+    - **Solution**: Unfortunately, there is none. We haven't been able to update all help buttons because we are still developing the manual. If interested, you can help us develop the manual here: https://codeberg.org/tenacityteam/tenacity-manual.
 
 ---
 
-Enjoy! :)</releaseNotes>
+Now, let's get to the change log:
+
+# Changelog
+
+**Note**: this changelog tries to compare against Audacity 3.1.x, which is what this release is most similar too. Future changelogs will compare against previous versions of Tenacity. The next changelog will compare against this release.
+
+## UI/UX
+- Added new themes. We have new light, dark, and high contrast themes in addition to other themes, like the new Pro Tools theme.
+
+  - If you are coming from either Saucedacity or Audacium, you may notice that some of these themes are slightly different as we've updated them for Tenacity.
+
+  - Saucedacity's theme was modified to use Tenacity's icon set.
+
+- Replace custom cursors with more modern ones.
+
+- Added a new toolbar edit mode, which hides toolbar handles if disabled. This mode is enabled by default.
+
+- Flattened borders around toolbar handles.
+
+- Fixed visibility of the edit cursor when using dark themes.
+
+- The edit cursor is now drawn over the entire TrackPanel rather than a single track.
+
+- Remove 'Add/Remove Plugins...' from the Generate, Effect, and Analyze menus. Under 'Tools', the option remains but is now named 'Manage Plug-ins...'.
+
+## Features
+
+- Implement context menus for label tracks.
+
+- Clips can now be snapped to the edit cursor. This applies when moving or resizing a 
+clip.
+
+- Added horizontal scrolling in the Frequency Analysis window (#135). Thanks @nyanpasu64!
+
+- Native (i.e., without FFmpeg) Matroska importing and exporting with PCM and FLAC codecs is now possible in addition to importing Matroska chapters as label tracks (#175, #188, #189, #205, and #210). Thanks @robUx4!
+
+## Changes
+
+- The buffer length preference is now in samples by default. You can switch to milliseconds if you are unfamiliar with samples.
+
+  - Buffer lengths now have a minimum requirement 32 samples, even if using milliseconds. (Tenacity converts this value internally based on the current sample rate).
+
+  - The default buffer length is now 512 samples.
+
+- The default sample rate is now 48 kHz.
+
+## Effects
+
+- Added new Dynamic Compressor effect by Max Maisel. Thank you for your awesome contribution!
+
+## Technical
+
+- Rewrote build system, resulting in all dependencies being devendored except for libnyquist. Thanks @Be!
+
+  - Replace Conan with optional vcpkg for dependency management. vcpkg is enabled by default only on Windows &amp; macOS. We also disable vcpkg telemetry when enabled.
+
+- Added Haiku support (#108, #118, and #119). Thanks @davidkaroly.
+
+- Tenacity now sets the number of frames per buffer instead of suggested device latency. It also uses this value to allocate temporary buffers for its audio engine.
+
+# FFmpeg
+**Version:** 6.0
+**License:** GPL v3 or later
+
+FFmpeg releases provided for 1.3 are the same ones as provided for 1.3 beta 3.
+
+# One More Thing...
+
+We have one more thing to say...
+
+# Thank you
+Thank you for taking the time to look at this page. We don't expect you to read it all because it's a very long page, and this bit only makes it longer. However, we'll keep it short and sweet: your interest in Tenacity, whether it be downloading it, using it, even just looking at our website or Fediverse posts helps keep us motivated. It reassures us that there are people who care about the project, and that there is a community around it, even if it's just people who look at the project. To you, we say thank you.
+
+Until the next release! :D</releaseNotes>
     <tags>tenacity editor audio recorder foss cross-platform</tags>
     <projectSourceUrl>https://codeberg.org/tenacityteam/tenacity</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tenacity</packageSourceUrl>
