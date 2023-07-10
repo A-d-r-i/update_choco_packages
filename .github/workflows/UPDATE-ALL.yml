@@ -524,6 +524,9 @@ jobs:
           $Version = ([xml](Get-Content ./tenacity/tenacity.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://codeberg.org/api/v1/repos/tenacityteam/tenacity/releases" | ConvertFrom-Json)[0].tag_name
           $tag = $tag.Trim("v")
+          if ($tag -match '^[0-9]+.[0-9]+$'){
+          $tag = $tag + ".0"
+          }
           
           echo $Version
           echo $tag
