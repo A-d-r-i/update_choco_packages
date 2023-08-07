@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.6.3 : <https://github.com/NicolasConstant/sengi-electron/releases/download/v1.6.3/Sengi-1.6.3-win.exe>
+  Version 1.7.0 : <https://github.com/NicolasConstant/sengi-electron/releases/download/v1.7.0/Sengi-1.7.0-win.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 567CDC5A0EF4FC916DBCF8CFFE48537E68298B7119402289E943D90F39B3D37A
+  checksum: CE6A6B5905E5298384C285DA74052DE8C2B4FE7CB277879F425EFA8C082E4D6C
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/NicolasConstant/sengi-electron/master/LICENSE> 
