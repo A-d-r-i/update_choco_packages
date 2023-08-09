@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.0</version>
+    <version>2.6.1</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,68 +18,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
+    <releaseNotes>## :bug: Fixes &amp; improvements
 
-### Custom themes
+1. Fix error when installing a theme from JSON file by @thecodrr in https://github.com/streetwriters/notesnook/pull/3115
+2. Fix error when exporting a note containing a codeblock as PDF/HTML by @thecodrr in https://github.com/streetwriters/notesnook/pull/3117
+3. Fix issue where the editor caused the app to hang when it had a codeblock with `xml-doc` as the language
 
-We have redesigned the Notesnook theme engine to add support for user specified custom themes. That means you, me, or anyone else can now easily change how Notesnook looks!
-
-![pika-1691391098738-1x](https://github.com/streetwriters/notesnook/assets/7473959/e1e948ce-a1dc-433a-b52a-64a4530f3b69)
-
-_Here's how the Monokai theme looks._
-
-&gt; **Note:**
-&gt;
-&gt; We are still working on documentation &amp; tooling around how to create your own theme. Give us a [follow on Twitter/X](https://twitter.com/notesnook) so you can know about it as soon as it lands!
-
-### Vericrypt is open source again!
-
-Vericrypt source code was unpublished when we open sourced Notesnook last year. However, due to recent demand it has been updated and made open source again. Yay to transparency and privacy! Check out the code [here](https://github.com/streetwriters/notesnook/tree/master/apps/vericrypt).
-
-_If you don't know what Vericrypt is: it's a very user friendly way to very all the encryption claims of Notesnook fully offline and in your browser. It provides step-by-step instructions on how to extract raw data from your browser's database &amp; then decrypt is using your very own encryption key. All in the browser. You can [try it out here!](https://vericrypt.notesnook.com/)_
-
-### Much, much improved copy/pasting
-
-Before this release, copying or pasting anything into or out of Notesnook would result in unpredictable and weird formatting. All that has now been fixed. Notesnook now tries very, very hard to preserve the source formatting of the copied or pasted content. To give you a few examples:
-
-1. Copying a single list item no longer copies it as a list but as a paragraph
-2. Copying multiple list items no longer add empty lines around each list item
-3. Copying content to &amp; from Notesnook now follows the `Double spaced paragraph` setting. In English this means that, people who have disabled double spaced paragraphs will no longer see paragraphs with double the spacing when pasting content into Notesnook and vice versa.
-
-### Syntax highlighting and rendered Math in exports
-
-Starting from this version, whenever you print or export a note that has Math Blocks or Codeblocks, Notesnook will automatically pre-render it so it looks awesome everywhere.
-
-![image](https://github.com/streetwriters/notesnook/assets/7473959/e8b347d6-7b2a-467d-9f93-3da3464f7c43)
-
-### Other features
-
-1. Make uploading of attachments much more reliable on web/desktop by @thecodrr in https://github.com/streetwriters/notesnook/pull/3075
-2. Show keyboard shortcuts for editor tools where possible by @thecodrr
-3. Add support for copying link &amp; link text in directly from the Link toolbar in the editor (and also from the context menu on the desktop app) by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/2986
-
-## :bug: Fixes &amp; improvements
-
-1. Fixed issue where entering Monograph password closed the Publish dialog by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/2969
-2. Copy button on code blocks will no longer be disabled in readonly mode by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/2970
-3. Fixed color picker height when the editor toolbar is at the bottom by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/2976
-4. Pressing the `Tab` key in the Title will now move the focus to the editor by @alihamuh in https://github.com/streetwriters/notesnook/pull/2983
-5. Respect empty paragraph lines when printing or exporting to PDF/HTML by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3001
-6. Don't show "Failed to unlock vault" error when exporting a single unlocked note by @thecodrr
-7. All input fields now follow the current color scheme by @alihamuh in https://github.com/streetwriters/notesnook/pull/3039
-8. Prevent unintentional saving when opening a note by @thecodrr in https://github.com/streetwriters/notesnook/pull/3021
-9. Respect text direction when adding blocks like heading, lists etc. by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3014
-10. Fix "Dynamic module import is disabled" error when logging in on Firefox ESR &amp; Tor Browser by @thecodrr in https://github.com/streetwriters/notesnook/pull/3017
-11. Prevent scroll jump &amp; selection loss when toggling focus mode by @thecodrr in https://github.com/streetwriters/notesnook/pull/3073
-12. Fixed issue where caret would keep jumping to the end when making edits in the sticky editor title by @alihamuh in https://github.com/streetwriters/notesnook/pull/3028
-13. Overhaul the logger implementation to be less IO intensive by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/3074
-14. Fix spell checker on desktop app by @thecodrr in https://github.com/streetwriters/notesnook/pull/3086
-15. Fixed issue where embeds would not render in readonly mode by @thecodrr
-16. Format time &amp; date on reminders according to the format specified in the Settings by @thecodrr
-17. bring app to front if user tries to start a new instance of Notesnook by @thecodrr
-18. Show progress when restoring large encrypted backups by @thecodrr
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.5.8...v2.6.0</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.0...v2.6.1</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
