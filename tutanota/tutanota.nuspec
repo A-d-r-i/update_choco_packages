@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.115.2</version>
+    <version>3.116.8</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,27 +17,32 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Filter for emails [#5431](https://github.com/tutao/tutanota/issues/5431)
- - Improved calendar eve
- - New search in settings, search for templates [#5406](https://github.com/tutao/tutanota/issues/5406)nt viewer and editor [#5437](https://github.com/tutao/tutanota/issues/5437)
+ - Improve handling of alias limits [#5510](https://github.com/tutao/tutanota/issues/5510)
+ - Advanced repeat rule: Reschedule occurrence of a repeating event [#4860](https://github.com/tutao/tutanota/issues/4860)
 
 # Bugfixes
- - Scrollbars in desktop client/blink/webkit are too thin [#5498](https://github.com/tutao/tutanota/issues/5498)
- - Can't edit contacts after search [#5483](https://github.com/tutao/tutanota/issues/5483)
+ - Calendar not default using custom email  [#5665](https://github.com/tutao/tutanota/issues/5665)
+ - Missing ResizeObserver is not handled [#5661](https://github.com/tutao/tutanota/issues/5661)
+ - Ctrl+Shift+A conflicting with Chrome Tab Switcher Shortcut [#5652](https://github.com/tutao/tutanota/issues/5652)
+ - cannot click on template links from the knowledge base [#5640](https://github.com/tutao/tutanota/issues/5640)
+ - Non-admin users cannot add templates [#5632](https://github.com/tutao/tutanota/issues/5632)
+ - Error on resize: getOwnerBrowserWindow() [#5630](https://github.com/tutao/tutanota/issues/5630)
+ - Attachment popup is not displayed on some systems [#5587](https://github.com/tutao/tutanota/issues/5587)
+ - Can't redeem gift cards in Safari  [#4564](https://github.com/tutao/tutanota/issues/4564)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/260?closed=1
+https://github.com/tutao/tutanota/milestone/261?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-6bf57617e90060135e0988b9819ecebfe4a1069f05f4a532c8d953d16116f59e
+2a18aa0f34460f800100d929bdc848e3cd6b03eb3e1c042bec7e3acfbd6b660e
 
 **tutanota-desktop-win.exe:**
-5cd0ffb7a15682fe6b7e6ba6aa7dd9cf445dba8da570c6d3ce3e3199cde40365
+44a456551666d831d78c45f2a39fcb92e6ca2aad66e19901dedcae50b98e5f6a
 
 **tutanota-desktop-mac.dmg:**
-9da98760f537ed0bdbca4c61011bdfbd2c498f49a244c15449c3ebfc5c42c72f</releaseNotes>
+aa14b8aa6f1062e22eebf6663720de4e405efd95b8e4ee51fabdf4caae04b3f0</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
