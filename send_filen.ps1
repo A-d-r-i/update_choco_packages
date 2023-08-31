@@ -6,6 +6,7 @@ $tags = "#filen #cloud"
 
 # extract latest version and release
 $tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+$tag = $tag.Trim("v")
 $release = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].body
 
 # write new version and release

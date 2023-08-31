@@ -450,7 +450,8 @@ jobs:
           $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
           $Version = ([xml](Get-Content ./filen/filen.nuspec)).package.metadata.version
           $tag = (Invoke-WebRequest "https://api.github.com/repos/FilenCloudDienste/filen-desktop/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
-          
+          $tag = $tag.Trim("v")
+
           echo $Version
           echo $tag
           
