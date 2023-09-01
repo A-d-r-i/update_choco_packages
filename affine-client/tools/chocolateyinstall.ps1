@@ -1,13 +1,13 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'affine-client.msi'
+$fileLocation = Join-Path $toolsDir 'affine-client.exe'
 
 
 $packageArgs = @{
   packageName   = 'affine-client'
   unzipLocation = $toolsDir
   file           = $fileLocation
-  fileType      = 'MSI'
+  fileType      = 'EXE'
   silentArgs     = '/S'
   softwareName  = 'affine-client*'
   validExitCodes= @(0)

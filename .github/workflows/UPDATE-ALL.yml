@@ -474,9 +474,8 @@ jobs:
         run:  |
           $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
           $Version = ([xml](Get-Content ./affine-client/affine-client.nuspec)).package.metadata.version
-          $tag = (Invoke-WebRequest "https://api.github.com/repos/m1911star/affine-client/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
-          $tag = $tag.Trim("Affine Client v")
-          if ( $tag -eq '0.1.1') { $tag = '0.2.0' }
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/toeverything/AFFiNE/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+
           echo $Version
           echo $tag
           

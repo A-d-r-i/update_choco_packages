@@ -12,8 +12,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
 Affine is the next-generation collaborative knowledge base for professionals. There can be more than Notion and Miro. Affine is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 
-	
-**The Affine project is still in development (so it is not recommended to use it in production), the current version is: 0.0.1-alpha.0.4.1**
 
 **32 bit users**: This package is not available for 32 bit users.
 
