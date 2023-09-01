@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'affine-client*'
-  fileType      = 'MSI'
+  fileType      = 'EXE'
   silentArgs    = "/qn /norestart"
   validExitCodes= @(0)
 }
