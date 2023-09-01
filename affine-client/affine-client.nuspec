@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.8.3</version>
-    <title>Affine Client</title>
-    <authors>m1911star and Affine team</authors>
+    <version>0.8.1</version>
+    <title>AFFiNE Client</title>
+    <authors>Toeverything & AFFiNE contributors</authors>
     <owners>Adri</owners>
-    <licenseUrl>https://github.com/m1911star/affine-client/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/toeverything/AFFiNE/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://affine.pro/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/m1911star/affine-client@main/tauri/icons/128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/toeverything/AFFiNE@master/apps/core/public/favicon-192.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
 Affine is the next-generation collaborative knowledge base for professionals. There can be more than Notion and Miro. Affine is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 
@@ -22,9 +22,9 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 
 **Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.8.2...v0.8.3</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
-    <projectSourceUrl>https://github.com/m1911star/affine-client</projectSourceUrl>
+    <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
     <!-- <docsUrl></docsUrl> -->
-    <bugTrackerUrl>https://github.com/m1911star/affine-client/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/toeverything/AFFiNE/issues</bugTrackerUrl>
   </metadata>
 </package>
