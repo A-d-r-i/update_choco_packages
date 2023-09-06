@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.117.0</version>
+    <version>3.118.4</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,32 +17,32 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Improve handling of alias limits [#5510](https://github.com/tutao/tutanota/issues/5510)
- - Advanced repeat rule: Reschedule occurrence of a repeating event [#4860](https://github.com/tutao/tutanota/issues/4860)
+ - Contact lists [#5407](https://github.com/tutao/tutanota/issues/5407), [#5432](https://github.com/tutao/tutanota/issues/5432), [#5433](https://github.com/tutao/tutanota/issues/5433)
+ - Use system preference for light/dark theme [#3006](https://github.com/tutao/tutanota/issues/3006)
+ - Update default email signature [#5616](https://github.com/tutao/tutanota/issues/5616)
+ - Remove usages of deprecated KeyboardEvent properties in KeyManager [#4221](https://github.com/tutao/tutanota/issues/4221)
+ - Update vendor desktop libraries [#4213](https://github.com/tutao/tutanota/issues/4213)
+ 
+ # Bugfixes
+ - Uncaught SqliteError: too many SQL variables [#5174](https://github.com/tutao/tutanota/issues/5174)
+ - Add missing kdfVersion migration [#5818](https://github.com/tutao/tutanota/issues/5818)
 
-# Bugfixes
- - Calendar not default using custom email  [#5665](https://github.com/tutao/tutanota/issues/5665)
- - Missing ResizeObserver is not handled [#5661](https://github.com/tutao/tutanota/issues/5661)
- - Ctrl+Shift+A conflicting with Chrome Tab Switcher Shortcut [#5652](https://github.com/tutao/tutanota/issues/5652)
- - cannot click on template links from the knowledge base [#5640](https://github.com/tutao/tutanota/issues/5640)
- - Non-admin users cannot add templates [#5632](https://github.com/tutao/tutanota/issues/5632)
- - Error on resize: getOwnerBrowserWindow() [#5630](https://github.com/tutao/tutanota/issues/5630)
- - Attachment popup is not displayed on some systems [#5587](https://github.com/tutao/tutanota/issues/5587)
- - Can't redeem gift cards in Safari  [#4564](https://github.com/tutao/tutanota/issues/4564)
+# Removed
+- Contact forms are no longer supported 
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/261?closed=1
-
+https://github.com/tutao/tutanota/milestone/264?closed=1
+https://github.com/tutao/tutanota/milestone/263?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-2a18aa0f34460f800100d929bdc848e3cd6b03eb3e1c042bec7e3acfbd6b660e
+f89f1b5f7f8ae44078c8958c0f45dd99755d6fed1b3074f1606e67c8a2d76c67
 
 **tutanota-desktop-win.exe:**
-44a456551666d831d78c45f2a39fcb92e6ca2aad66e19901dedcae50b98e5f6a
+0f832d652b07c5fc409e4601ac990bc1e5d5df3390253e35809fab5296881e29
 
 **tutanota-desktop-mac.dmg:**
-aa14b8aa6f1062e22eebf6663720de4e405efd95b8e4ee51fabdf4caae04b3f0</releaseNotes>
+8d42fe191b7e49c054615c645b8e66c7b0be328fa8605c4156ecc13278afbf68</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
