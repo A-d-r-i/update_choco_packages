@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.6.6</version>
+    <version>5.7</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,15 +17,45 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.6.6 release
-* bugfix: #[2027201](https://bugs.launchpad.net/bugs/2027201) when ordering the transaction list by category, split ones are not ordered
-* bugfix: #[2026641](https://bugs.launchpad.net/bugs/2026641) anonymise does not deal with account notes, start balance, overdraft and automatic assignment notes
-* bugfix: #[2026626](https://bugs.launchpad.net/bugs/2026626) anonymise feature doesn't fully anonymise accounts name
-* bugfix: #[2026594](https://bugs.launchpad.net/bugs/2026594) changing currency account with xfer faulty change target account currency
-* bugfix: #[2026184](https://bugs.launchpad.net/bugs/2026184) statistics report doesn't always show total for parent category
-* bugfix: #[2024940](https://bugs.launchpad.net/bugs/2024940) statistics faulty hide items with data when result is 0.0
-* bugfix: #[2024389](https://bugs.launchpad.net/bugs/2024389) filter Status always show section should always be visible
-* bugfix: #[2019312](https://bugs.launchpad.net/bugs/2019312) status column included in export detail txn from report break re-import
+Made 5.7 release
+* new: added balance mode for statistics total report
+* new: added fulfilled column for budget report
+* new: added back the Custom indicator in Date Range widget
+* new: added the date as last sort in case of prior equality for transaction list
+* new: added two preferences parameters to be more flexible with currency rate api
+* new: added abbreviated weekday in date input widget
+* change: migrating to GTK4 preparation (GtkContainer/GdkEvent/...)
+* change: the currency rate api to exchangerate.host
+* change: numerous optimization and refactoring for report computing
+* change: home scheduled: moved the maximum post date to an info icon tooltip
+* change: avoid refreshing undisplayed items on the home main window
+* change: chart legend is hidden when not enough space to display chart
+* change: export PDF of transaction migrated to a standard print feature
+* wish: #[2030322](https://bugs.launchpad.net/bugs/2030322) add weekday display in date input
+* wish: #[2024956](https://bugs.launchpad.net/bugs/2024956) sort the scheduled transaction by date order
+* wish: #[2028464](https://bugs.launchpad.net/bugs/2028464) manage account add sort header, search and website
+* wish: #[2023477](https://bugs.launchpad.net/bugs/2023477) stack chart to display income above and expense below
+* wish: #[2019193](https://bugs.launchpad.net/bugs/2019193) preference to sync transfer status by default
+* wish: #[2018680](https://bugs.launchpad.net/bugs/2018680) replace **PREFILLED** for new assignement/archive from register with added icon
+* wish: #[2018174](https://bugs.launchpad.net/bugs/2018174) change currency rate api to a more fulfilled one
+* wish: #[2008641](https://bugs.launchpad.net/bugs/2008641) add a duplicate assignment action
+* wish: #[2004078](https://bugs.launchpad.net/bugs/2004078) print option missing in Show all
+* wish: #[1964434](https://bugs.launchpad.net/bugs/1964434) optimize the legend position to maximize chart size
+* wish: #[1933165](https://bugs.launchpad.net/bugs/1933165) budget report includes Category &amp; Subcategory
+* wish: #[1932198](https://bugs.launchpad.net/bugs/1932198) pdf print txn report, custom title, total and portrait/paysage
+* wish: #[1918459](https://bugs.launchpad.net/bugs/1918459) adding pdf print function - show the result as a list
+* wish: #[1912973](https://bugs.launchpad.net/bugs/1912973) ability to print "Your accounts" list in main window
+* wish: #[1909851](https://bugs.launchpad.net/bugs/1909851) filter scheduled operations add Next payout (max post date)
+* wish: #[1857890](https://bugs.launchpad.net/bugs/1857890) home chart to show account balance total/time
+* wish: #[1816389](https://bugs.launchpad.net/bugs/1816389) home chart to show spending by month
+* wish: #[1783645](https://bugs.launchpad.net/bugs/1783645) chart drill down for categories
+* wish:
+#588864 budget report over time (month)
+* wish:
+#121510 cash flow forecast
+* bugfix: #[2030333](https://bugs.launchpad.net/bugs/2030333) account not sorted by position in import assistant
+* bugfix: #[2024322](https://bugs.launchpad.net/bugs/2024322) currency online update not working
+* bugfix: #[2018726](https://bugs.launchpad.net/bugs/2018726) budget report should be bounded to month
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
