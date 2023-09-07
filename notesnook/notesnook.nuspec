@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.1</version>
+    <version>2.6.2</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,13 +18,81 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :bug: Fixes &amp; improvements
+    <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Fix error when installing a theme from JSON file by @thecodrr in https://github.com/streetwriters/notesnook/pull/3115
-2. Fix error when exporting a note containing a codeblock as PDF/HTML by @thecodrr in https://github.com/streetwriters/notesnook/pull/3117
-3. Fix issue where the editor caused the app to hang when it had a codeblock with `xml-doc` as the language
+### Introducing Sync v2
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.0...v2.6.1</releaseNotes>
+Sync is one of the most fragile yet important pieces of Notesnook. In this release, we have overhauled all the old logic to make it faster &amp; more reliable. Why is it v2? Because we had to break compatibility with old versions of the app in order to make some changes. **This means that all clients must be at v2.6.2 or later for sync to work between them. Older versions won't be able to sync with the newer versions, and vice versa.** Here's a summary of why this was necessary:
+
+1. The old sync worked serially &amp; operated on a single item one by one. This did not affect smaller accounts with a few MBs of data but it made Notesnook almost unusable for accounts that have 5000+ items since it'd all need to be downloaded on every login resulting in 10 minutes to many hours of wait. It did not matter how fast your Internet was because we'd be processing items one by one, not really making use of all the bandwidth.
+2. Sync v2 overhauls this architecture to batch and paralellize everything. Everything gets downloaded, decrypted, processed, and saved in 7-10 MB chunks. This makes the sync almost 10x faster, and much less resource intensive. Technically, the sync speed is now limited by your Internet bandwidth so a faster Internet will experience faster sync.
+3. Sync v2 now allows users with GBs of old data (coming from Evernote or some other note taking app) to actually be able to use Notesnook across their devices.
+4. While overhauling the old sync mechanism, we also got rid of a couple of really annoying (but persistent) bugs:
+    1. Settings will no longer get overwritten on login (this is a temporary fix until we restructure our settings to be more granular)
+    2. A lot of issues with sync getting stuck (until the app restarted) were also fixed.
+    3. Realtime editor sync should now be much faster &amp; nicer to use.
+
+Sync v2 was tested on a variety of devices including an old iPhone 6s, a really old Android phone with only 2 GB of RAM, emulators etc., in order to ensure that sync continues to work reliably &amp; without crashes even when RAM &amp; CPU is less powerful.
+
+In our testing (with a locally hosted Sync server to exclude network latency), sync times went down from 4+ minutes to 20-30 seconds on iPhone 6s. Similarly, on a modern i7 10th Gen laptop, the sync time went down from 30 - 40 seconds to 4 - 6 seconds.
+
+#### Drawbacks
+
+While Sync v2 is really, really fast there were a few sacrifices we had to make in order to ensure maximum performance. This includes getting rid of a percentage based progress while sync is happening. Instead, the clients now show an incrementing counter that represents the total number of items processed i.e., there's no way to figure out how much time is left before sync completes.
+
+### Theme Engine
+
+1. `homepage` property is now optional
+2. Context menus now correctly use the `border` color for borders (instead of `separator` color)
+3. Navigation menu &amp; editor toolbar separators now correctly use the `separator` color (instead of `border` color)
+4. Placeholder color of all inputs now use `placeholder` color
+5. Selected list item now uses all the colors from `selected` variant (e.g. heading &amp; paragraph color)
+6. Separators between different scopes (navigation menu, list, status bar, editor etc.) now use the scope's respective `separator` color instead of using the `base.border` color. This will allow theme developers to have different color for each of the separator.
+
+#### New colors
+
+1. `accentForeground` used for all text &amp; icons shown on the `accent` background
+
+#### Deprecated colors
+
+1. `shade` has been deprecated in favor of a fixed derived color based on `accent` color
+2. `textSelection` has been deprecated in favor of using the `selected` variant of colors (`selected.paragraph` for text color &amp; `selected.background` for the background color of selected text)
+
+## :bug: Fixes &amp; improvements
+
+### Editor pasting improvements
+
+1. Editor will now preserve formatting when pasting plain text (e.g. from notepad)
+2. Improve code block detection when pasting from vscode
+3. Pasting a single line of code will now paste it as inline code (instead of a code block)
+4. Fix formatting issues when pasting from ChatGPT
+5. Fix weird inclusion of XML tags &amp; code when pasting from OneNote (it's still not perfect but it works)
+
+More details in PR: https://github.com/streetwriters/notesnook/pull/3216
+
+### General editor fixes
+
+1. Fix alignment of outline list indicator
+2. Fix sub outline lists not getting outdented on pressing Enter (mobile)
+3. Fix editor crash on adding a task list
+4. Fix blockquote padding &amp; margin on mobile
+5. Add support for using Arrow Up key to easily escape from nodes when they are at the very beginning of a note
+6. Pressing Backspace in an empty code block, task list or table will remove it
+
+More details in PR: https://github.com/streetwriters/notesnook/pull/3218
+
+### Other fixes &amp; improvements
+
+1. Fix color of icons in Colors menu by @alihamuh in https://github.com/streetwriters/notesnook/pull/3170
+2. Fix regression causing image shuffling on real-time editor sync by @thecodrr in https://github.com/streetwriters/notesnook/pull/3242
+3. Scroll to top when navigating within settings by @alihamuh in https://github.com/streetwriters/notesnook/pull/3223
+4. Fix crash on uploading attachments by @thecodrr in https://github.com/streetwriters/notesnook/pull/3214
+5. Allow encrypted backups for basic users by @thecodrr in https://github.com/streetwriters/notesnook/pull/3213
+6. Fix multi-select menu not showing multi-select actions by @alihamuh in https://github.com/streetwriters/notesnook/pull/3159
+7. Add support for aligning images in PDF/HTML exports by @alihamuh in https://github.com/streetwriters/notesnook/pull/3197
+8. Fix autocomplete hint in signup form password fields by @alihamuh in https://github.com/streetwriters/notesnook/pull/3272
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.1...v2.6.2</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
