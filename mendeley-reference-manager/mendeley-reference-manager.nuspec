@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.98.0</version>
+    <version>2.99.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,19 +19,19 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
  
-## Mendeley Reference Manager v2.98.0
+## Mendeley Reference Manager v2.99.0
  
 We have:
  
-- Added the ability to mark references as read/unread to the bulk action panel
-- Made the reader background dark to help with focussed reading
+- Added keyboard navigation for PDF reader search results
+- Enabled sorting of duplicates by latest added date
+- Introduced drag and drop into the favorites smart collection
+- Introduced Copy as LaTeX citation command to the right click menu
 
  
 We have fixed:
 
-- An issue where the last reference in the references list was not visible when the scroll bar was shown
-- An issue where the PDF reader went unresponsive when trying to open more than three files at once
-- An issue where changes to annotations in exported and reimported PDF affected the original PDF
+- An issue where the Windows auto-update uninstalled the application from users computers
 
  
 ## Support
@@ -40,12 +40,12 @@ We have fixed:
 - For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
 
  
-Released: 16 August 2023
+Released: 30 August 2023
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.98.0](https://www.mendeley.com/release-notes-reference-manager/v2.98.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.99.0](https://www.mendeley.com/release-notes-reference-manager/v2.99.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
