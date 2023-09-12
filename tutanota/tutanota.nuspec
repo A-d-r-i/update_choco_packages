@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.118.4</version>
+    <version>3.118.6</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,32 +17,28 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Contact lists [#5407](https://github.com/tutao/tutanota/issues/5407), [#5432](https://github.com/tutao/tutanota/issues/5432), [#5433](https://github.com/tutao/tutanota/issues/5433)
- - Use system preference for light/dark theme [#3006](https://github.com/tutao/tutanota/issues/3006)
- - Update default email signature [#5616](https://github.com/tutao/tutanota/issues/5616)
- - Remove usages of deprecated KeyboardEvent properties in KeyManager [#4221](https://github.com/tutao/tutanota/issues/4221)
- - Update vendor desktop libraries [#4213](https://github.com/tutao/tutanota/issues/4213)
- 
- # Bugfixes
- - Uncaught SqliteError: too many SQL variables [#5174](https://github.com/tutao/tutanota/issues/5174)
- - Add missing kdfVersion migration [#5818](https://github.com/tutao/tutanota/issues/5818)
+ - Shared mailboxes #903
+ - Unlimited custom domain mail addresses for new plans (Revolutionary, Legend, Essential, Advanced, Unlimited) [#5584](https://github.com/tutao/tutanota/issues/5584)
+ - Password strength checker should check for email address on signup [#5787](https://github.com/tutao/tutanota/issues/5787)
 
-# Removed
-- Contact forms are no longer supported 
+# Bugfixes
+ - Error: Cannot read properties of undefined (reading 'toLowerCase') [#5870](https://github.com/tutao/tutanota/issues/5870)
+ - Email address table closes automatically when adding alias [#5858](https://github.com/tutao/tutanota/issues/5858)
+ - Not Authorized error when creating contact list as a non admin user on Premium/Custom Plan [#5857](https://github.com/tutao/tutanota/issues/5857)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/264?closed=1
-https://github.com/tutao/tutanota/milestone/263?closed=1
+https://github.com/tutao/tutanota/milestone/265?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-f89f1b5f7f8ae44078c8958c0f45dd99755d6fed1b3074f1606e67c8a2d76c67
+e0712210a840721258937ba3f057d71e5c3b0e77c3c9524014168dc5ee20712e
 
 **tutanota-desktop-win.exe:**
-0f832d652b07c5fc409e4601ac990bc1e5d5df3390253e35809fab5296881e29
+3c765b2764cf76c53137ee473c80fb7f2aa941ef0f3bc219e65c53801dc2dae6
 
 **tutanota-desktop-mac.dmg:**
-8d42fe191b7e49c054615c645b8e66c7b0be328fa8605c4156ecc13278afbf68</releaseNotes>
+babb0f434dfb64e8ea6e56164ee5176b71cd319b31d83c3bb3796e87e312e08b</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
