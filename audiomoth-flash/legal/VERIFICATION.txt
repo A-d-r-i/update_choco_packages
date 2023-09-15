@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.4.1 : <https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/releases/download/1.4.1/AudioMothFlashAppSetup1.4.1.exe>
+  Version 1.5.0 : <https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/releases/download/1.5.0/AudioMothFlashAppSetup1.5.0.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: 
-  checksum: B4385FD7E54F01B864F7753FA532628B040EC761FBA5113340C9FAD56BA9E022
+  checksum type: SHA256
+  checksum: F83CA264D72D0DC53B205DBA28DE395A7D1BD2DE956382605EED6041F49C2DB8
 
 File 'LICENSE.txt' is obtained from <https://www.openacousticdevices.info/license> 
