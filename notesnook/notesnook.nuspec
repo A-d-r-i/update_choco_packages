@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.4</version>
+    <version>2.6.5</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,24 +18,7 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
-
-### New backup format (.nnbackupz)
-
-After the introduction of Sync v2, we realized that our backup format was not really suitable for huge amounts of data. A single JSON file works for a few thousand items but fails quite miserably after 10K items mark. With this release, we are introducing a new format for backups.
-
-**Note: all old backups can still be imported without issues.**
-
-The new format (.nnbackupz) is a chunked ZIP based format containing multiple .nnbackup files allowing users to backup millions of notes without issues. We have also added support for streaming during backup creation &amp; restore to prevent any OOM (out of memory) issues on low-end devices. An added benefit of this new format is smaller backups due to ZIP compression. I have personally noticed upto 90% reduction in size of backups (YMMV).
-
-## :bug: Fixes &amp; improvements
-
-1. Fixed a bunch of sync related issues produced after Sync v2 causing some items to never sync
-2. Fix login form shown for split second before login completes
-3. Fix issue where app wouldn't ask for verification before creating a backup with backup encryption turned off
-4. Improve UI of code blocks &amp; language selection popup
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.3...v2.6.4</releaseNotes>
+    <releaseNotes>1. Fixes a critical security vulnerability in Electron/Chromium (CVE-2023-4863)</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
