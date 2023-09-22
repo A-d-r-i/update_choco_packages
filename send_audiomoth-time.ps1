@@ -1,6 +1,6 @@
 # variables
 $id = "audiomoth-time"
-$name = "Audiomoth Time App"
+$name = "AudioMoth Time App"
 $accounts = "@AudioMoth @OpenAcoustics"
 $tags = "#audiomoth"
 

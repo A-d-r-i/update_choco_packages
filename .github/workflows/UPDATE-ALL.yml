@@ -145,7 +145,31 @@ jobs:
           #exit 1
           }
           }
-        
+
+      - name: AUDIOMOTH-GPS-SYNC
+        if: always()
+        run:  |
+          $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
+          $Version = ([xml](Get-Content ./audiomoth-gps-sync/audiomoth-gps-sync.nuspec)).package.metadata.version
+          $tag = (Invoke-WebRequest "https://api.github.com/repos/OpenAcousticDevices/AudioMoth-GPS-Sync-App/releases/latest" -Headers $headers | ConvertFrom-Json)[0].name
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
+          ./send_audiomoth-gps-sync.ps1
+          } else {
+          echo 'The version number is not in the correct format'
+          #exit 1
+          }
+          }
+
       - name: DOTBROWSER
         if: always()
         run:  |

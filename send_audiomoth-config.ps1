@@ -1,6 +1,6 @@
 # variables
 $id = "audiomoth-config"
-$name = "Audiomoth Config App"
+$name = "AudioMoth Config App"
 $accounts = "@AudioMoth @OpenAcoustics"
 $tags = "#audiomoth"
 
