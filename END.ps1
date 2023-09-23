@@ -1,7 +1,7 @@
 If ($LastExitCode -eq 0) {
 	# git and create tag
-	git config --local user.email "a-d-r-i@outlook.fr"
-	git config --local user.name "A-d-r-i"
+	git config user.name github-actions[bot]
+	git config user.email github-actions[bot]@users.noreply.github.com
 	git add .
 	git commit -m "[Bot] Update files - $id"
 	git tag -a $id-v$tag -m "$name - version $tag"
