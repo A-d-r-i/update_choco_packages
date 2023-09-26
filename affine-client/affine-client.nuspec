@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.8.3</version>
+    <version>0.8.4</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,9 +18,32 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>We upgrade blocksuite editor in this version
+    <releaseNotes>## What's Changed
+### Fixes
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.8.2...v0.8.3</releaseNotes>
+- fix: electron whitescreen #4013 @pengx17 
+- fix: shortcut key style #4072 @QiShaoXuan 
+- fix: the web version should not display client borders #4040 @JimmFly 
+- feat: icon not align center in filter button #3938  @QiShaoXuan 
+- fix: corrected the preposition in "Save As New Collection" #4070 @pranay101 
+- fix: show border around pagetitle when renaming #4080 @ideakaran 
+- fix: preload typo #4096 @doodlewind 
+- fix(core): sort tags by count #4122 @lawvs 
+- fix: filter of tags does not work #4138 @zzj3720 
+- fix: sidebar ui fix #4187 @pengx17 
+- style: add hover style to the setting button in workspace card #4193 @JimmFly 
+- fix: workspace list dnd issues #4219 @pengx17 
+- fix: disable simutanous updater download #4254 @pengx17 
+- fix: better transition #4267 @pengx17 
+- fix: disable set-db-location step #4263 @pengx17 
+- SES upgrade, fix browser compatible issue https://github.com/toeverything/AFFiNE/pull/4352
+
+### Misc
+- chore(i18n): fix nx config #4249 @himself65 
+- chore: modify code style #3914 @Garfield550 
+
+
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.8.3...v0.8.4</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
