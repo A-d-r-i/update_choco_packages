@@ -1,6 +1,17 @@
-﻿VERIFICATION
+VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
- 
-Any binaries will be identical to other package types published by the project, in particular
-the AudioMothTimeAppSetup.exe file. It is directly downloaded from the project's github repository.
+
+The installer have been downloaded from their official github repository listed on <https://github.com/OpenAcousticDevices/AudioMoth-Time-App/releases/>
+and can be verified like this:
+
+1. Download the following installer:
+  Version 1.1.1 : <https://github.com/OpenAcousticDevices/AudioMoth-Time-App/releases/download/1.1.1/AudioMothTimeAppSetup1.1.1.exe>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: SHA256
+  checksum: 73D03A8F311F00D1073F1C1F579F43B0F74AAA688123CEAE1DB90259D9A842F0
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Time-App/master/LICENSE> 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>audiomoth-time</id>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <title>AudioMoth Time App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,15 +15,11 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of setting the on-board clock of the AudioMoth recording device.</summary>
-    <releaseNotes>* Improved accuracy of AudioMoth clock by sending time packet at second boundaries
-* Tweaked UI to match AudioMoth Configuration App
-* Updated JQuery
-* Removed ripple effect on UI on startup
-* Increased clock update frequency</releaseNotes>
+    <releaseNotes>* Changed communication pattern to support slower computers</releaseNotes>
     <tags>audiomoth-time audiomoth time-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/audiomoth-time</packageSourceUrl>
-<!-- <docsUrl></docsUrl> -->
+    <!-- <docsUrl></docsUrl> -->
     <bugTrackerUrl>https://github.com/OpenAcousticDevices/AudioMoth-Time-App/issues</bugTrackerUrl>
   </metadata>
 </package>
