@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.118.8</version>
+    <version>3.118.12</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,20 +17,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Bugfixes and improved security
+ - Handle arbitrary alarm durations [#5711](https://github.com/tutao/tutanota/issues/5711)
+ - Add message when opening some links in desktop client [#5932](https://github.com/tutao/tutanota/issues/5932)
+ - Update electron to 26.2.2 [#5921](https://github.com/tutao/tutanota/issues/5921)
+ - Forbid the usage of foreach [#5869](https://github.com/tutao/tutanota/issues/5869)
+ - Remind users to switch to new plans [#5710](https://github.com/tutao/tutanota/issues/5710)
+
+# Bugfixes
+ - Event sometimes not displaying fully after an update [#5896](https://github.com/tutao/tutanota/issues/5896)
+ - Calendar invitation is faulty [#5883](https://github.com/tutao/tutanota/issues/5883)
+ - Error after creating contact list with entries [#5875](https://github.com/tutao/tutanota/issues/5875)
+ - Notification mail for outdated client has wrong link [#5874](https://github.com/tutao/tutanota/issues/5874)
+ - Exported mails have inconsistent line endings [#5553](https://github.com/tutao/tutanota/issues/5553)
+ - App gets slow while indexing [#5112](https://github.com/tutao/tutanota/issues/5112)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/266?closed=1
+https://github.com/tutao/tutanota/milestone/267?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-2d23e42b24ecbc182548d6a734fe5110c488bb16bb7952224e700c37b784a4b9
+88ccf886b28611dd1ee158fe0d2cccedaf2c3a2b229cecca267a845dfc7b27ae
 
 **tutanota-desktop-win.exe:**
-2fad15accfc4a91524a06f9196777ec8e69c6a6eee67df2c68340ee72e4cb73c
+074b4eace6f63849ded440d5408c7430a7e95ff20ca656c5c8c6f00ccb4f9df5
 
 **tutanota-desktop-mac.dmg:**
-9b6d8793c0515b3cd7221435bbe4a9688901a287595ff5981933708fe536b3a7</releaseNotes>
+69660b517cef945ac6f9bae8789991eff9efa1dd951b58895b6b09e2166490e3</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
