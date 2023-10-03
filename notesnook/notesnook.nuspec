@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.6</version>
+    <version>2.6.7</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,27 +18,23 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>**Note for desktop app users: you will need to restart the desktop app a few times for the auto update to trigger. If that doesn't work, please download the latest version from https://notesnook.com/downloads**
+    <releaseNotes>## :star2: Features &amp; new stuff
 
-## :star2: Features &amp; new stuff
-
-1. Add support for write protecting a specific task lists by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3285
-2. 100% Native Encryption is back on desktop! by @thecodrr in https://github.com/streetwriters/notesnook/pull/3418
-3. Notesnook now automatically runs any pending syncs by @thecodrr @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/3417
-4. Add drag/drop support for attachments by @alihamuh in https://github.com/streetwriters/notesnook/pull/3325
-5. Improve drag/drop in task lists on mobile by @thecodrr in https://github.com/streetwriters/notesnook/pull/3450
-6. Desktop &amp; web apps now use OPFS/Cache Storage by default for storing attachments instead of IndexedDB ??? this means much more reliable attachments caching
+1. Add `Copy as Markdown` and `Copy as Text` to easily copy a note content
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix automatic updates on desktop by @thecodrr in https://github.com/streetwriters/notesnook/pull/3397
-2. Fix plain text pasting on Windows (or text with CRLF line endings) by @alihamuh in https://github.com/streetwriters/notesnook/pull/3402
-3. Fix attachment downloads cancellation &amp; progress by @thecodrr in https://github.com/streetwriters/notesnook/pull/3416
-4. Fix upcoming reminder time calculation when reminder is set to weekly repeat by @alihamuh in https://github.com/streetwriters/notesnook/pull/3341
-5. Fix "Cannot find property type of undefined" error when importing notes by @thecodrr in https://github.com/streetwriters/notesnook/pull/3341
-6. Fix backup restore on web/desktop apps by @thecodrr
+1. Fix issue where Close to System Tray only worked once per app launch
+2. Fix issue where opening a locked note immediately locked it again
+3. Fix `undefined is not an object` error when publishing an empty note
+4. Math nodes no longer show a vertical scrollbar
+5. Web app no longer opens the Save dialog when Ctrl/Cmd+S is pressed
+6. Fix `require('prismjs'` error when exporting a note with code block in the desktop app
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.5...v2.6.6</releaseNotes>
+**New Contributors**
+* @midhun3301 made their first contribution in https://github.com/streetwriters/notesnook/pull/3477
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.6...v2.6.7</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
