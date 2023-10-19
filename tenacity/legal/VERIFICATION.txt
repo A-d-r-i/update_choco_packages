@@ -6,14 +6,14 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.3.1 64 bits : <https://codeberg.org/tenacityteam/tenacity/releases/tag/v1.3.1>
-  Version 1.3.1 32 bits : <https://codeberg.org/tenacityteam/tenacity/releases/tag/v1.3.1>
+  Version 1.3.2 64 bits : <https://codeberg.org/tenacityteam/tenacity/releases/tag/v1.3.2>
+  Version 1.3.2 32 bits : <https://codeberg.org/tenacityteam/tenacity/releases/tag/v1.3.2>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum 64 bits: 623B30816E828D56704D8E42FCE209F05244F294E054A50396FA6BFC7BF3EFBE
-  checksum 32 bits: 831041F4FD07EFB7CC93B18410838C6D7A9892E4609A92F208FB2D99E890878B
+  checksum 64 bits: 3910D1205060769778AA412426AD21632ABDE0C6AA13B82CE5390C08963724B7
+  checksum 32 bits: 538B62F956013719290746055544C2D998ED1B47EFBDE3015A2C9198C5518261
 
 File 'LICENSE.txt' is obtained from <https://codeberg.org/tenacityteam/tenacity/raw/branch/main/LICENSE.txt> 
