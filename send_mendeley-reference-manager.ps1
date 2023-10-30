@@ -31,6 +31,10 @@ ConvertFrom-HTMLToMarkdown -Path "MRM.html" -UnknownTags Drop -GithubFlavored -D
 $release = Get-Content -path MRM.md -raw
 $release = -join($release, "`n`n**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v$tag](https://www.mendeley.com/release-notes-reference-manager/v$path) ");
 
+Remove-Item MRM.txt
+Remove-Item MRM.html
+Remove-Item MRM.md
+
 # write new version and release
 $file = "./$id/$id.nuspec"
 $xml = New-Object XML
@@ -41,10 +45,6 @@ $xml.Save($file)
 
 # download installer
 Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./$id/tools/$id.exe"
-
-Remove-Item MRM.txt
-Remove-Item MRM.html
-Remove-Item MRM.md
 
 # calculation of checksum
 $TABLE = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
