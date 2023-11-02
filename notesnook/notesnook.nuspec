@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.7</version>
+    <version>2.6.8</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,21 +20,29 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Add `Copy as Markdown` and `Copy as Text` to easily copy a note content
+1. Hide unnecessary items from status bar in focus mode by @alihamuh in https://github.com/streetwriters/notesnook/pull/3577
+2. Grouping by month now adds year to the groups by @alihamuh in https://github.com/streetwriters/notesnook/pull/3630
+3. Add privacy setting to hide note title from Window/Tab title by @johnny-2123 in https://github.com/streetwriters/notesnook/pull/3480
+4. Notesnook now tries to preserve date edited time for exported notes by @thecodrr
 
 ## :bug: Fixes &amp; improvements
 
-1. Fix issue where Close to System Tray only worked once per app launch
-2. Fix issue where opening a locked note immediately locked it again
-3. Fix `undefined is not an object` error when publishing an empty note
-4. Math nodes no longer show a vertical scrollbar
-5. Web app no longer opens the Save dialog when Ctrl/Cmd+S is pressed
-6. Fix `require('prismjs'` error when exporting a note with code block in the desktop app
+1. Disallow links in inline code by @thecodrr in https://github.com/streetwriters/notesnook/pull/3620
+2. Fix logout from all other devices by @thecodrr in https://github.com/streetwriters/notesnook/pull/3649
+3. Update vault settings page immediately after vault creation by @alihamuh in https://github.com/streetwriters/notesnook/pull/3542
+4. Change pwa theme color according to current theme by @thecodrr in https://github.com/streetwriters/notesnook/pull/3621
+5. Make duplicate filenames in attachments unique on download by @thecodrr in https://github.com/streetwriters/notesnook/pull/3678
+6. Do not show auto update toggle for flatpak users by @thecodrr 
+7. Fix sync progress during account recovery by @thecodrr 
+8. Fix notes &amp; other data restored from a backup file would never sync by @thecodrr 
+9. Fix issue where pasting link in editor replaced selected text by @thecodrr 
+10. Fix issue where many attachments with the same name would export as a single attachment by @thecodrr 
+11. Fix crash when opening note properties in editor by @thecodrr 
 
 **New Contributors**
-* @midhun3301 made their first contribution in https://github.com/streetwriters/notesnook/pull/3477
+* @johnny-2123 made their first contribution in https://github.com/streetwriters/notesnook/pull/3480
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.6...v2.6.7</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.7...v2.6.8</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
