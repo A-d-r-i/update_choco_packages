@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.118.22</version>
+    <version>3.118.25</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,26 +17,38 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Fix decrypt file [#6008](https://github.com/tutao/tutanota/issues/6008)
- - Encryption error hardening [#5996](https://github.com/tutao/tutanota/issues/5996)
- - Wait until ownerEncSessionKey is set before processing calendar event updates [#5981](https://github.com/tutao/tutanota/issues/5981)
+ - Flexible reminder times [#5712](https://github.com/tutao/tutanota/issues/5712)
+ - Website on new domain [#5929](https://github.com/tutao/tutanota/issues/5929)
+ - Replace absolute links [#5962](https://github.com/tutao/tutanota/issues/5962)
+
+# Bugfixes
+ - "Yesterday" label wrong due to daylight savings [#6054](https://github.com/tutao/tutanota/issues/6054)
+ - NotAuthorizedError when adding a guest as a non-admin user on legacy plan without invites feature [#5997](https://github.com/tutao/tutanota/issues/5997)
+ - Uncaught ProgrammingError: must provide contact with Id to edit or listId for the new contact [#5959](https://github.com/tutao/tutanota/issues/5959)
+ - File attachment popup does not fit the screen [#5919](https://github.com/tutao/tutanota/issues/5919)
+ - Adding external image rule fails when IndexedDB is disabled [#5915](https://github.com/tutao/tutanota/issues/5915)
+ - empty lines are duplicated when copied from composer [#5912](https://github.com/tutao/tutanota/issues/5912)
+ - Email address is not put into the login field after signup [#5810](https://github.com/tutao/tutanota/issues/5810)
+ - Newly created event not rendered in day view [#5716](https://github.com/tutao/tutanota/issues/5716)
+ - Signup UI button misplacement [#5552](https://github.com/tutao/tutanota/issues/5552)
+ - Email link to any settings view navigates to the login settings [#5515](https://github.com/tutao/tutanota/issues/5515)
+ - Uncaught Error: start index not found [#5340](https://github.com/tutao/tutanota/issues/5340)
+ - Indexing MailDetails: assertNotNull failed [#6051](https://github.com/tutao/tutanota/issues/6051)
+ - Do not use the whole buffer for sjcl toBits() [#5980](https://github.com/tutao/tutanota/issues/5980)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/271?closed=1
+https://github.com/tutao/tutanota/milestone/269?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-4f48d463697f3ac987fdec33759ac03332123d437ddcbedc0ac5eb7aefd45596
+778a7fd02df1676aaeb32c7ec4b93420a3ef7fc15e3a89ab53866dcefda4c6e8
 
 **tutanota-desktop-win.exe:**
-3b4d2e23bcf23d6f01996888699a108410281165a5bb0cdde15f53ed786f87fe
+a1fe532fa664d49812dd4ca97e6f41f18d59bdb8f6cc52dac6c76b2254ed2e9b
 
 **tutanota-desktop-mac.dmg:**
-2b8922c1a2b917288c1b490286a6f2c193f5b051596f1fbf5fd9b673d423ac04
-
-**tutanota-desktop-3.118.2-unpacked-linux.tar.gz**
-856dc9af48add8c2a4d290e4e32b70d6c8b194067fe9484c83ab259265af45a8</releaseNotes>
+ea3c9f98d8619c109ff2a12e8daa7080fa43bc58b82dd548ca26278d2be22b00</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
