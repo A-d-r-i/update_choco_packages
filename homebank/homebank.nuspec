@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.7.1</version>
+    <version>5.7.2</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,28 +17,20 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.7.1 release
-* new: split dialog: add a confirm dialog before delete all split lines
-* new: dateentry only rely on token and date order detection, glib failover
-* change: split dialog: add info+tooltip icon next to the amount input
-* change: split dialog: amount input is named according transaction type
-* bugfix: dateentry d, dm, md was sometimes wrong
-* bugfix: dateentry 2 year digits fix with 40/60 windowing
-* bugfix: #[2037597](https://bugs.launchpad.net/bugs/2037597) top 10 Spending Category chart legend labels sometimes ellipsized
-* bugfix: #[2037468](https://bugs.launchpad.net/bugs/2037468) "All Transactions" CSV export no longer includes account
-* bugfix: #[2037132](https://bugs.launchpad.net/bugs/2037132) cannot create assignments from a transaction with empty memo
-* bugfix: #[2036703](https://bugs.launchpad.net/bugs/2036703) budget report shows wrong Spent and Budget totals
-* bugfix: #[2036290](https://bugs.launchpad.net/bugs/2036290) migrate libsoup-2.4 to libsoup-3.0
-* bugfix: #[2036270](https://bugs.launchpad.net/bugs/2036270) no message when split limit is reached
-* bugfix: #[2036228](https://bugs.launchpad.net/bugs/2036228) forecast only limited to time span set in preferences
-* bugfix: #[2036097](https://bugs.launchpad.net/bugs/2036097) budget report date range from/to does not localized month name
-* bugfix: #[2035401](https://bugs.launchpad.net/bugs/2035401) Main panel size not retained; account info concealed on start
-* bugfix: #[2035129](https://bugs.launchpad.net/bugs/2035129) incorrect values in "tooltip" message for forcast view (subcategory)
-* bugfix: #[2034764](https://bugs.launchpad.net/bugs/2034764) statistics Report Total Row not reflecting displayed amounts
-* bugfix: #[2034647](https://bugs.launchpad.net/bugs/2034647) trend time Report Title does not match Interval
-* bugfix: #[2034618](https://bugs.launchpad.net/bugs/2034618)	statistics report sometimes crashes with half year interval
-* wish: #[2038601](https://bugs.launchpad.net/bugs/2038601) "Schedule" and "Template" linked togglebuttons are not mutually exclusive (don't act like switchers)
-* wish: #[2034625](https://bugs.launchpad.net/bugs/2034625)	statistics Reportsorting by expense or income when using the Time Mode
+Made 5.7.2 release
+* bugfix: crash was possible when no file loaded and change to main chart
+* bugfix: #[2043152](https://bugs.launchpad.net/bugs/2043152)	lock icon for transaction sometime disapear due to column resize
+* bugfix: #[2042771](https://bugs.launchpad.net/bugs/2042771)	currency don't update due to wrong api url since 5.7
+* bugfix: #[2042770](https://bugs.launchpad.net/bugs/2042770)	HomeBank closes after leaving "preferences" menu with no file open.
+* bugfix: #[2042668](https://bugs.launchpad.net/bugs/2042668)	remove/sanitize GTK listview quicksearch
+* bugfix: #[2042484](https://bugs.launchpad.net/bugs/2042484)	category popoverlist shows subcat income standalone its expense parent
+* bugfix: #[2042463](https://bugs.launchpad.net/bugs/2042463)	manage categories add subcategory fail after a search
+* bugfix: #[2042035](https://bugs.launchpad.net/bugs/2042035)	assign edit cancel faultly persist the rule search
+* bugfix: #[2040494](https://bugs.launchpad.net/bugs/2040494)	App crashes when exporting a report after I delete a category that contained data
+* bugfix: #[2040010](https://bugs.launchpad.net/bugs/2040010)	ISO 8601 date format not respected when exporting to clipboard or CSV
+* bugfix: #[2039995](https://bugs.launchpad.net/bugs/2039995)	budget by time do not filter txn type exp/inc
+* bugfix: #[2039493](https://bugs.launchpad.net/bugs/2039493)	statistics report crash when opened with a too wide date range
+* wish: #[2042692](https://bugs.launchpad.net/bugs/2042692)	count and show number of selected transactions when suppressing them
 
 **Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
