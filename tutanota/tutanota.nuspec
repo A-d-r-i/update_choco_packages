@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.118.27</version>
+    <version>3.118.30</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,25 +17,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - tuta.com email addresses [#5961](https://github.com/tutao/tutanota/issues/5961)
-- Update translations for the new name [#6113](https://github.com/tutao/tutanota/issues/6113)
+ - Show progress when exporting emails [#5546](https://github.com/tutao/tutanota/issues/5546)
 
 # Bugfixes
- - Logo uses two different fonts [#6109](https://github.com/tutao/tutanota/issues/6109)
+ - &lt; becomes &amp;lt in event title [#5897](https://github.com/tutao/tutanota/issues/5897)
+ - Translation bug on login screen for Tuta [#6138](https://github.com/tutao/tutanota/issues/6138)
+ - link tooltip z-index too low [#6124](https://github.com/tutao/tutanota/issues/6124)
+ - More issues with yesterday label on mails [#6117](https://github.com/tutao/tutanota/issues/6117)
+ - Plan options boxes are not expanded to the same height [#6087](https://github.com/tutao/tutanota/issues/6087)
+ - Excessive handshakes in desktop client [#6053](https://github.com/tutao/tutanota/issues/6053)
+ - Pressing enter on free signup bypasses the checkboxes [#5169](https://github.com/tutao/tutanota/issues/5169)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/274?closed=1
+https://github.com/tutao/tutanota/milestone/273?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-232a89e76c4d9bd91ae9fcc9c766ad2a5e9bf68bfb22b5ec92d6aa0e2aa6de6d
+bdb030fc830530c220e020800e59187a526db577dddff035881bf3ba9c39e963
 
 **tutanota-desktop-win.exe:**
-862c4f159852f3a39176cdcf6501ea732f3bba70e91510c636ab2ae1f45b48a1
+2e792aa483a125125c00d3b6823edbc7b5336f4870e18e59995e116f3f914e05
 
 **tutanota-desktop-mac.dmg:**
-58fb9af48a5f5f6e0a8be0986fee975a82d045a0df3191ee29766e13bd2e187a</releaseNotes>
+0ede75cc7ee51c69c1dd0e4fe4d3b4d94c8928931307a647e20b7189de4015b7
+
+**tutanota-desktop-3.118.30-unpacked-linux.tar.gz**
+dcdbdd0de2e6903220a347a494d0c64654885d0bc110597f0b0dbc7502125cbd</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
