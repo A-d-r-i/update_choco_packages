@@ -25,7 +25,7 @@ If ($LastExitCode -eq 0) {
 	$resultrelease.ErrorMessage
 	
 	# push notification messages enabled ?
-	Invoke-WebRequest -Uri "https://adrisupport.000webhostapp.com/UCP/index.php" -OutFile "UCP.html"
+	Invoke-WebRequest -Uri "http://adrisupport.free.nf/UCP/index.php" -OutFile "UCP.html"
 	$Source = Get-Content -path UCP.html -raw
 	
 	# post twitter tweet
