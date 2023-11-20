@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.9</version>
+    <version>2.6.10</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,33 +20,14 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## :star2: Features &amp; new stuff
 
-1. Menu bar is now disabled by default on the desktop app by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3728
-2. Add support for date time shortcuts (`/now`, `/time`, and `/date`) in task list title &amp; note title by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3746
-3. Desktop &amp; web apps now use modern Origin Private File System for storing attachments by @thecodrr in https://github.com/streetwriters/notesnook/pull/3722
-4. Add link to source code in About Section in Settings by @inumaki in https://github.com/streetwriters/notesnook/pull/3683
-5. Floating images can no longer be resized using mouse drag (you can still resize them using height/width values) by @thecodrr
-6. Tags are now visible in readonly mode by @thecodrr in https://github.com/streetwriters/notesnook/pull/3765
-7. You can now restore backups without logging in by @thecodrr @ammarahm-ed
+1. SVG images are now rendered interactively in the editor
+![ezgif com-video-to-gif](https://github.com/streetwriters/notesnook/assets/7473959/edb26b8f-8a94-4c1e-afc8-56354f75d4c9)
 
-## :bug: Fixes &amp; improvements
+## ???? Fixes &amp; improvements
 
-1. Fix minimize to system tray not working immediately after enabling by @alihamuh in https://github.com/streetwriters/notesnook/pull/3734
-2. Get rid of "Login Item Added" prompt on launch by @thecodrr in https://github.com/streetwriters/notesnook/pull/3691
-3. Fix issue where task list parent item remains unchecked after moving the last unchecked sub-item outside via drag drop by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3252
-4. Fix issue where checked/unchecked count in task list did not update by @alihamuh @thecodrr in https://github.com/streetwriters/notesnook/pull/3252
-5. Make table header row immovable by @alihamuh in https://github.com/streetwriters/notesnook/pull/3459
-6. Fix pressing enter to add a new tag from list of suggestion fails by @alihamuh in https://github.com/streetwriters/notesnook/pull/3548
-7. Fix issue where restoring a backup with attachments created duplicate attachments by @thecodrr in https://github.com/streetwriters/notesnook/pull/3771
-8. Adding an attachment that is broken/missing will now automatically reupload it by @thecodrr in https://github.com/streetwriters/notesnook/pull/3771
-9. Fix issue where Math nodes would be missing when exporting/printing a note as PDF by @thecodrr in https://github.com/streetwriters/notesnook/pull/3773
-10. Image loading has been improved A LOT! You will no longer see "Skip downloading" button when pasting images
-
-**New Contributors**
-* @inumaki made their first contribution in https://github.com/streetwriters/notesnook/pull/3683
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.8...v2.6.9
-
-</releaseNotes>
+1. Fixed task list titles getting reset when creating a new item in task list by @thecodrr in #3812
+2. Fixed sub task list items getting unchecked on sort by @thecodrr in #3812
+3. Fixed "Upload verification failed" error by @thecodrr</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
