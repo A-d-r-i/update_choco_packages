@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>1.3.2</version>
+    <version>1.3.3</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -27,73 +27,23 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tenacity is an easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor for Windows, macOS, Linux, and other operating systems https://tenacityaudio.org</summary>
-    <releaseNotes>This release contains a few minor changes. It was originally intended as a bug-fix-only release, but we ended up making a few small external changes as well. It also appears that the longer release time was actually beneficial for us because we were able to address more issues.
+    <releaseNotes>This is a quick minor release fixing compatibility with wxWidgets 3.2.4. Our PortAudio vckpg port has also been updated to revision 8a9ebfd29f2818d6ce6e8b6c3b9e3cccce0e0691, which brings support for PulseAudio as a direct backend on Linux if you build Tenacity with vcpkg manually (we use a git version in vcpkg for Windows).
 
-This release contains the following bug fixes and enhancements:
+**Note**: FFmpeg for Windows is still on 6.0. The next release, 1.3.4, will feature FFmpeg 6.1 if testing goes well. As always, if you find a bug, [please report it](https://codeberg.org/tenacityteam/tenacity/issues).
 
-- #178: AppImages are back for now as we address issues with our Flatpak. We will continue to recommend installation of the Flatpak. **Keep in mind that the AppImage is provided as-is. If it does not work, we recommend you try another way of installation**. You might be interested in reading the Release Advisories section below for addressing an issue you may encounter.
-- #229: Tenacity remains in English despite the user's language settings.
-- #240 (resolving #35 and maybe #293), #241: Wayland improvements: the playback cursor and custom tooltips now work properly.
-- #281: Fix latency preference saving incorrectly in milliseconds.
-- #294: Installer enhancements: fix 32-bit Windows installation path, allow unprivileged installations.
-- #300: Fix clip titles not visible on screen.
-- #303: Enable SBSMS in release builds. Currently, the AppImage doesn't have SBSMS enabled as it was built on Rocky Linux, which does not have libsbsms, but the Flatpak has libsbsms enabled.
-- Fix a crash when changing the buffer length while monitoring was enabled.
-- Increased the default latency to 2048 samples.
-
-Additionally, there are the following changes in this release:
-- Due to demand from users, the AppImages are back temporarily. Flatpak will continue to be our primary installation method for installing Tenacity. Note that the AppImages are provided "as-is" and your mileage may vary.
-- Because of limited resources and changes in the installer, we no longer ship Windows ZIP archives containing Tenacity itself. Instead, the installer can be used to extract copies of Tenacity to create your own ZIP archives.
-
-# Unresolved
-A few things are unresolved as of this release:
-
-- #220: recording under MME produces choppy audio. PR #251 has a possible fix, but for some reason it doesn't compile under Windows. The moment we are able to verify this fix is when it will be merged.
-
-- **No mixer toolbar**. [This actually got attention on Reddit](https://www.reddit.com/r/opensource/comments/168pz6q/tenacity_is_an_easytouse_multitrack_audio_editor/jyx6css), so I'll address it here too. We plan to re-add the mixer toolbar in 1.4, although I presume its function under-the-hood will work a little differently. This was the result of a major build system refactor that dropped the functionality required for the mixer toolbar.
-
-# NEW! Verifying Binaries
-New in this release are signatures for both Tenacity and our FFmpeg distribution. These are what those '.asc' files are for. We also have a new release signing key available at MIT's PGP server, https://pgp.mit.edu.
-
-The main reason we are doing this is to provide a way to ensure that any downloads of Tenacity and our FFmpeg binaries are unmodified, safe, and malware-free. **We are aware that Tenacity is flagged by some AVs on VirusTotal; these are FALSE POSITIVES**. You can now check the integrity of your downloads to make sure they are clean, and you can also check Tenacity's source code yourself for any malicious activity (spoiler alert: there is none).
-
-To verify your downloads, download the appropriate signature first, and import our release signing key with the following command:
-
-```
-gpg --keyserver pgp.mit.edu --recv-keys 7685f5079808a518
-```
-
-Then, run the command to verify the downloaded binaries:
-
-```
-gpg --verify /path/to/signature /path/to/corresponding/binary
-```
-
-To verify our FFmpeg 64-bit download, for example, you'd run this command:
-
-```
-gpg --verify /path/to/tenacity-ffmpeg-6.0-win-x86_64.zip.asc /path/to/tenacity-ffmpeg-6.0-win-x86_64.zip
-```
-
-The output will look something like this:
-
-```
-gpg: Signature made Sun 15 Oct 2023 11:12:57 AM PDT
-gpg:                using RSA key 2EE804C98DC98503C240D2DD7685F5079808A518
-gpg: Good signature from "The Tenacity Team (Release Signing Key) &lt;avery98@pm.me&gt;" [ultimate]
-```
+**Note 2**: The AppImage targets Rocky Linux 9, so any equivalent distro should work fine with the AppImage. Be aware that Arch and its derivatives might have problems. See below for more details.
 
 # Release Advisories
 
 We're adding this section to document important issues that you may encounter. We have a few advisories below:
 
-## When launching the AppImage, I get "`symbol lookup error: /usr/lib/libjack.so.0: undefined symbol: pw_thread_fill_attr`"
+## When launching the AppImage, I get `symbol lookup error: /usr/lib/libjack.so.0: undefined symbol: pw_thread_fill_attr`
 
-Tenacity's bundled version of JACK, used only if a system version of JACK isn't found, might not work on every distro. To work around this, install your systems _regular_ JACK dependencies. For example, on Arch Linux and Manjaro, install the `jack2` package.
+You might see this error on Arch Linux, Manjaro, or any other Arch-based system. Tenacity's bundled version of JACK, used only if a system version of JACK isn't found, might not work on every distro. To work around this, install your systems regular JACK dependencies. For example, on Arch Linux and Manjaro, install the `jack2` package.
 
-## All of Tenacity's plugins are disabled, and enabling them doesn't work
+## All plugins are disabled, and enabling them doesn't work
 
-As a workaround, delete `pluginregistry.cfg` and `pluginsettings.cfg` from your configuration directory (`~/.var/app/org.tenacityaudio.Tenacity/config` on Linux under Flatpak, `C:\Users\&lt;username&gt;\AppData\Roaming\Tenacity` under Windows). You will need to re-enable any plugins you had enabled previously.
+As a workaround, delete pluginregistry.cfg and pluginsettings.cfg from your configuration directory (~/.var/app/org.tenacityaudio.Tenacity/config on Linux under Flatpak, C:\Users\&lt;username&gt;\AppData\Roaming\Tenacity under Windows). You will need to re-enable any plugins you had enabled previously.
 
 ## Your latency setting reads as samples instead of milliseconds in preferences
 
