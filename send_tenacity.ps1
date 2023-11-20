@@ -22,10 +22,11 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-$urltag = "v" + $tag
+#$urltag = "v" + $tag
 #$urltag = $urltag -replace "-beta",".0"
-$url64 = ($json.assets | where { $_.name -eq "tenacity-win-$urltag-x64.exe" }).browser_download_url
-$url32 = ($json.assets | where { $_.name -eq "tenacity-win-$urltag-x86.exe" }).browser_download_url
+
+$url64 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x64.exe" }).browser_download_url
+$url32 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x86.exe" }).browser_download_url
 
 Invoke-WebRequest -Uri $url64 -OutFile ".\$id\tools\tenacity64.exe"
 Invoke-WebRequest -Uri $url32 -OutFile ".\$id\tools\tenacity32.exe"
