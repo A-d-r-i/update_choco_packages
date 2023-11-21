@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>1.3.2</version>
+    <version>1.3.3</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
