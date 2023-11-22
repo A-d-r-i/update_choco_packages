@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.10</version>
+    <version>2.6.11</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,16 +18,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## :star2: Features &amp; new stuff
+    <releaseNotes>## ???? Fixes &amp; improvements
 
-1. SVG images are now rendered interactively in the editor
-![ezgif com-video-to-gif](https://github.com/streetwriters/notesnook/assets/7473959/edb26b8f-8a94-4c1e-afc8-56354f75d4c9)
+1. Fix weird janky animation when opening dialogs by @alihamuh in https://github.com/streetwriters/notesnook/pull/3826
+2. Close reminder dialog on setting snooze time by @alihamuh in https://github.com/streetwriters/notesnook/pull/3842
+3. Fix images not loading after pasting by @thecodrr in https://github.com/streetwriters/notesnook/pull/3851
 
-## ???? Fixes &amp; improvements
-
-1. Fixed task list titles getting reset when creating a new item in task list by @thecodrr in #3812
-2. Fixed sub task list items getting unchecked on sort by @thecodrr in #3812
-3. Fixed "Upload verification failed" error by @thecodrr</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.10...v2.6.11</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
