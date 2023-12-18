@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.119.3</version>
+    <version>3.119.8</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,46 +17,45 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Remove contact forms [#6174](https://github.com/tutao/tutanota/issues/6174)
- - Provide option to protect saved credentials with application password [#3853](https://github.com/tutao/tutanota/issues/3853)
- - Calendar Navigation Improvements [#3508](https://github.com/tutao/tutanota/issues/3508)
+ - Adapt calendar navigation improvements for larger screens [#6253](https://github.com/tutao/tutanota/issues/6253)
+ - optimize the ordering of the mail action menu [#6196](https://github.com/tutao/tutanota/issues/6196)
 
 # Bugfixes
- - Email folder name popup does not fit on screen [#6162](https://github.com/tutao/tutanota/issues/6162)
- - Mail exporter does not handle errors [#6131](https://github.com/tutao/tutanota/issues/6131)
- - Adding a template with non-admin user throws an error [#6128](https://github.com/tutao/tutanota/issues/6128)
- - Extra empty page when printing an email [#6120](https://github.com/tutao/tutanota/issues/6120)
- - Printing an emails show a grey vertical line [#6119](https://github.com/tutao/tutanota/issues/6119)
- - Using Field/Email Folder filter in Search to return nothing results in odd behaviour  [#6082](https://github.com/tutao/tutanota/issues/6082)
- - Event reminders use old event name [#6075](https://github.com/tutao/tutanota/issues/6075)
- - Segfault on old macOS versions [#6050](https://github.com/tutao/tutanota/issues/6050)
- - redeeming gift card process while having a registered U2F key gets stuck [#6022](https://github.com/tutao/tutanota/issues/6022)
- - MAPI does not attach files unless already logged in [#5850](https://github.com/tutao/tutanota/issues/5850)
- - agenda dates changing with same events [#5778](https://github.com/tutao/tutanota/issues/5778)
- - Sender and recipient names of email can not be copied [#5748](https://github.com/tutao/tutanota/issues/5748)
- - "..." button on email folder disappears [#5517](https://github.com/tutao/tutanota/issues/5517)
- - External images are not preserved in the draft when not loaded [#5405](https://github.com/tutao/tutanota/issues/5405)
- - day name wrong when exporting sent emails [#5282](https://github.com/tutao/tutanota/issues/5282)
- - Long email folder names are not identifiable in edit mode [#5167](https://github.com/tutao/tutanota/issues/5167)
- - Checkbox is not accessible [#4607](https://github.com/tutao/tutanota/issues/4607)
- - Account for mime type parameters when validating mime types [#6170](https://github.com/tutao/tutanota/issues/6170) 
+ - adding an event in agenda view does not respect selected day [#6294](https://github.com/tutao/tutanota/issues/6294)
+ - edit/more button is not clickable for push identifiers [#6293](https://github.com/tutao/tutanota/issues/6293)
+ - Back navigation in Calendar is working incorrectly [#6280](https://github.com/tutao/tutanota/issues/6280)
+ - Creating or extending search index is slow [#6278](https://github.com/tutao/tutanota/issues/6278)
+ - SessionKeyNotFoundError for File [#6276](https://github.com/tutao/tutanota/issues/6276)
+ - TypeError Cannot read properties of undefined (reading 'details') at MailFacade.getReplyTos() [#6274](https://github.com/tutao/tutanota/issues/6274)
+ - Inbox rules do not match BCC for MailDetails emails  [#6267](https://github.com/tutao/tutanota/issues/6267)
+ - DeviceStorageUnavailableError: safeStorage API is not available - 'Could not access secret storage' in Tuta Mail for linux [#6265](https://github.com/tutao/tutanota/issues/6265)
+ - unable to store permanent content rules for maildetails mail [#6255](https://github.com/tutao/tutanota/issues/6255)
+ - Team badge still says Tutanota [#6246](https://github.com/tutao/tutanota/issues/6246)
+ - folder name tooltip can be cut off  [#6228](https://github.com/tutao/tutanota/issues/6228)
+ - cannot create addresses during custom domain setup [#6222](https://github.com/tutao/tutanota/issues/6222)
+ - Error: Update failed 5 times [#6140](https://github.com/tutao/tutanota/issues/6140)
+ - ics descriptions are corrupted on import [#4685](https://github.com/tutao/tutanota/issues/4685)
+ - Bad formatting in calendar event invitation description sent from Microsoft Teams [#3507](https://github.com/tutao/tutanota/issues/3507)
+ - Selected email text is deleted after closing email template popup [#3263](https://github.com/tutao/tutanota/issues/3263)
+ - Tray icon is displayed even if it's disabled in Settings [#2173](https://github.com/tutao/tutanota/issues/2173)
+ - Escape/unescape special characters with ics export/import [#2164](https://github.com/tutao/tutanota/issues/2164)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/277?closed=1
+https://github.com/tutao/tutanota/milestone/279?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-9d12e875fc67f301182aad38c266d9a537818f3684d24bf345ad029cdbe962be
+2b504b619cedf3747ce7afa6ec672abadf42bf84581b88fbdde9acb5f8346c30
 
 **tutanota-desktop-win.exe:**
-e43da4a742c6853c2b68a01f401fc2abe8c27fa88486f3f8f1b462b36ec2cce7
+758761d6194a248eefb8231318af65c7b5f2bf79ab7a33a30077ccb81af3f392
 
 **tutanota-desktop-mac.dmg:**
-0605150b4ebf71485906e91ea2c719511358785291ef71404378bfdc5e5529db
+7cfca06b9a98054f6d2a7aece2a2c899bae07bf7c908a4aa0a6d4eae29635bec
 
-**tutanota-desktop-3.119.3-unpacked-linux.tar.gz**
-4dd8ef535da7875b137c64dd067fbb75b12e9da177f188c3bdc7849ece2245b0</releaseNotes>
+**tutanota-desktop-3.119.8-unpacked-linux.tar.gz**
+91f312205a3c83d0c69f3634ae45f4052ba34a02453555a94cfd953c803dab95</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
