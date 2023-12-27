@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.11.0</version>
+    <version>0.11.1</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,217 +18,20 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## What's Changed
-* fix(core): nx cache configuration by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5065
-* ci: always perform fresh build in deployment job by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5066
-* fix(core): should not refetch avatar when url does not change by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5070
-* style: add no-self-compare rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5092
-* feat(component): default collapse and float sidebar on mobile by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5077
-* feat(core): show searched result with results group and add duplicate commands by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5073
-* chore: upgrade typescript-eslint by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5110
-* fix: resolve cycle imports and prevent it by oxlint by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5103
-* fix: add eqeqeq lint rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5106
-* fix: add prefer-dom-node-dataset rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5107
-* fix: add prefer-dom-node-append rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5108
-* fix: add prefer-array-some rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5109
-* fix: add no-useless-promise-resolve-reject rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5111
-* fix: add prefer-dom-node-remove rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5112
-* fix: add prefer-date-now rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5113
-* fix: add no-typeof-undefined rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5114
-* fix: add new-for-builtins rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5116
-* fix: add no-new-array rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5117
-* fix: add prefer-blob-reading-methods rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5118
-* fix: add require-array-sort-compare rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5119
-* fix: add unified-signatures rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5120
-* fix: add prefer-for-of rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5121
-* fix: add prefer-readonly rule by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5122
-* refactor(server): simplify metrics creation and usage by @forehalo in https://github.com/toeverything/AFFiNE/pull/5115
-* ci: pr title lint job does not need to install all dependencies by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5124
-* ci: upgrade setup-node action by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5125
-* chore: add lint-staged command to pre-commit file by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5126
-* chore: remove useless circular command by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5127
-* chore: add rust-toolchain file by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5129
-* chore(native): fix useless import by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5130
-* feat(core): add manual check for updates by @JimmFly in https://github.com/toeverything/AFFiNE/pull/4957
-* fix(core): language display names by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5123
-* fix(core): adjust ui styles by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5094
-* ci: remove publish job by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5135
-* fix(core): implement editor timeout and report error from boundary (#5105) by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5151
-* chore: bump @adobe/css-tools from 4.3.1 to 4.3.2 by @dependabot in https://github.com/toeverything/AFFiNE/pull/5154
-* fix(electron): do not restore window on get window by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5163
-* style(core): add page list header emptypage by @rakheesingh in https://github.com/toeverything/AFFiNE/pull/5162
-* fix(workspace): fix svg display on browser by @EYHN in https://github.com/toeverything/AFFiNE/pull/5158
-* chore: move cargo fmt to lint-staged from pre-commit by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5150
-* refactor(component): migrate design components by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5000
-* feat(core): remove all imports from design/component by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5078
-* feat(component): add storybook by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5079
-* fix(server): avoid snapshot write conflict by @forehalo in https://github.com/toeverything/AFFiNE/pull/5174
-* feat(workspace): priority load opened page by @EYHN in https://github.com/toeverything/AFFiNE/pull/5156
-* chore: bump blocksuite by @Flrande in https://github.com/toeverything/AFFiNE/pull/5138
-* chore: bump @adobe/css-tools from 4.3.1 to 4.3.2 by @dependabot in https://github.com/toeverything/AFFiNE/pull/5181
-* ci: use renovate to replace dependabot since depedabot has never worked by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5182
-* ci: exclude @blocksuite/icons from blocksuite nightly update group by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5184
-* ci: add electron-forge deps group by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5185
-* chore: bump up @opentelemetry/instrumentation-ioredis version to ^0.36.0 by @renovate in https://github.com/toeverything/AFFiNE/pull/5186
-* chore: bump up @dnd-kit/modifiers version to v7 by @renovate in https://github.com/toeverything/AFFiNE/pull/5189
-* chore: bump up Helm release postgresql to v13 by @renovate in https://github.com/toeverything/AFFiNE/pull/5190
-* feat: add new page to the sidebar #5095 by @OiAnthony in https://github.com/toeverything/AFFiNE/pull/5128
-* chore: bump up ava version to v6 by @renovate in https://github.com/toeverything/AFFiNE/pull/5195
-* chore: bump up actions/labeler action to v5 by @renovate in https://github.com/toeverything/AFFiNE/pull/5192
-* fix(component): clear page list operation's link style by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5148
-* fix(core): unable to create share page link by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5175
-* chore: bump up idb version to v8 by @renovate in https://github.com/toeverything/AFFiNE/pull/5198
-* fix(component): modal blurness by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5177
-* ci: fix auto labeler job by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5206
-* fix(core): error page 500 status dark mode by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5180
-* ci: refactor workflow by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5139
-* chore: adjust banner content text by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5153
-* feat(server): events system by @forehalo in https://github.com/toeverything/AFFiNE/pull/5145
-* refactor(server): do not force init binary when creating workspace by @forehalo in https://github.com/toeverything/AFFiNE/pull/5146
-* feat(core): allow core modules to import itself by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5207
-* chore: bump up vite version to v4.5.1 [SECURITY] by @renovate in https://github.com/toeverything/AFFiNE/pull/5211
-* chore: bump up google-github-actions/auth action to v2 by @renovate in https://github.com/toeverything/AFFiNE/pull/5197
-* feat: bump blocksuite by @doodlewind in https://github.com/toeverything/AFFiNE/pull/5194
-* ci: reduce cache pressure on non-Linux platform by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5213
-* ci: remove cache cleanup job because we are sharing cache cross branches by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5214
-* feat(core): add responsive styles to registration page by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5044
-* test(server): remove flaky assertion by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5224
-* ci: fix ts-node scripts by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5225
-* feat: bump blocksuite by @doodlewind in https://github.com/toeverything/AFFiNE/pull/5218
-* feat: bump blocksuite by @doodlewind in https://github.com/toeverything/AFFiNE/pull/5228
-* chore(core): skip cloud migration testing until page level upgrade implemented by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5227
-* fix(electron): only update db after data changed by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5226
-* fix(core): update noise image by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5219
-* fix(core): remove duplicate loading component by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5168
-* fix(electron): add debug flag for helper process by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5223
-* feat(component): new right sidebar by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5169
-* feat(core): added new filter for last n days by @rakheesingh in https://github.com/toeverything/AFFiNE/pull/5167
-* fix: close font calt to avoid render twinkle by @umar23faiz in https://github.com/toeverything/AFFiNE/pull/4969
-* fix(electron): sync settings from localStorage -&gt; atom -&gt; electron by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5020
-* fix(core): flaky local avartar test by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5229
-* feat(core): add present to edgeless sharing by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5140
-* refactor(server): use events system by @forehalo in https://github.com/toeverything/AFFiNE/pull/5149
-* fix(core): add requestidlecallback polyfill for safari by @EYHN in https://github.com/toeverything/AFFiNE/pull/5231
-* chore: also set version to helm charts in set-version.sh by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5100
-* chore: bump up rollup version to v4 by @renovate in https://github.com/toeverything/AFFiNE/pull/5202
-* ci: fix rust build during deployment by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5233
-* chore: bump up undici version to v6 by @renovate in https://github.com/toeverything/AFFiNE/pull/5204
-* chore: bump up p-queue version to v8 by @renovate in https://github.com/toeverything/AFFiNE/pull/5235
-* chore: bump up vite version to v5 by @renovate in https://github.com/toeverything/AFFiNE/pull/5203
-* fix(component): theme flickering by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5238
-* chore(env): fix lint error by @EYHN in https://github.com/toeverything/AFFiNE/pull/5240
-* chore: add sha512sum for the released files by @Zheaoli in https://github.com/toeverything/AFFiNE/pull/5242
-* refactor(core): use debug log replace console when command registry by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5237
-* chore: bump up @opentelemetry/host-metrics version to ^0.34.0 by @renovate in https://github.com/toeverything/AFFiNE/pull/5234
-* chore: bump up google-github-actions/setup-gcloud action to v2 by @renovate in https://github.com/toeverything/AFFiNE/pull/5241
-* fix(electron): use tree-kill for electron dev by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5252
-* fix(component): revert theme flickering (#5238) by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5256
-* feat(core): adjust empty collection style by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5239
-* chore: bump up vite-plugin-static-copy version to v1 by @renovate in https://github.com/toeverything/AFFiNE/pull/5205
-* chore: bump up marked version to v11 by @renovate in https://github.com/toeverything/AFFiNE/pull/5200
-* chore: upgrade to yarn@4.0.2 by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5245
-* chore: upgrade rustup toolchain by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5246
-* chore: bump up @electron-forge/maker-base version to v7.2.0 by @renovate in https://github.com/toeverything/AFFiNE/pull/5191
-* fix(cli): fix storybook build error by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5257
-* fix(server): avoid updates persist forever by @forehalo in https://github.com/toeverything/AFFiNE/pull/5258
-* fix(core): adjust share edgeless display error by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5263
-* fix(core): fix editor sidebar open on resize by @EYHN in https://github.com/toeverything/AFFiNE/pull/5262
-* fix(server): use last update creating time as snasphot update timestamp by @forehalo in https://github.com/toeverything/AFFiNE/pull/5266
-* feat: bump blocksuite by @Flrande in https://github.com/toeverything/AFFiNE/pull/5267
-* fix(core): polling to search in cmdk by @EYHN in https://github.com/toeverything/AFFiNE/pull/5274
-* feat(core): support sidebar page item dnd by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5132
-* fix(server): avoid repeatly register providers by @forehalo in https://github.com/toeverything/AFFiNE/pull/5265
-* fix(edgeless): remove stale template by @regischen in https://github.com/toeverything/AFFiNE/pull/5275
-* fix(core): page header style changes by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5279
-* fix(electron): use dynamic load for exposed meta by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5251
-* fix(core): fix window cannot be dragged on the collection page by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5269
-* fix(core): bg color issues in transparent mode by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5278
-* chore: bump up @endo/static-module-record version to v1 by @renovate in https://github.com/toeverything/AFFiNE/pull/5281
-* fix(core): simple history entry position by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5290
-* test(core): rewrite some flaky assertions by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5287
-* refactor(core): side bar resizing by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5280
-* chore: remove react-resizable-panels by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5284
-* fix(core): collection modal position after modal style changes by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5289
-* feat: user usage init by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5074
-* feat(server): independent websocket room for block and awareness by @EYHN in https://github.com/toeverything/AFFiNE/pull/5285
-* feat: only follow `serverUrlPrefix` at redirect to client by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5295
-* fix: page title too long style by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5302
-* fix: detail page missing background by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5303
-* fix: add sidebar toggle and windows controls for empty collections page by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5304
-* feat(core): add useQueryImmutable by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5299
-* fix: width blink in side bar by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5291
-* feat: integrate user usage into apis by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5075
-* feat: user usage gql &amp; test case improve by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5076
-* feat: integrate new modules by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5087
-* feat: struct type feature config by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5142
-* feat: add cache for blob query by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5178
-* chore: bump up github/codeql-action action to v3 by @renovate in https://github.com/toeverything/AFFiNE/pull/5298
-* feat: bump blocksuite by @doodlewind in https://github.com/toeverything/AFFiNE/pull/5286
-* refactor: workspace manager by @EYHN in https://github.com/toeverything/AFFiNE/pull/5060
-* fix(core): page mode switch sometimes not working by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5306
-* chore(server): split gcloud sql proxy into a separate deployment by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5101
-* ci: fix oxlint version by @EYHN in https://github.com/toeverything/AFFiNE/pull/5328
-* ci: fix e2e by @EYHN in https://github.com/toeverything/AFFiNE/pull/5329
-* fix(storybook): fix test by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5325
-* chore: bump up vitest monorepo to v1 (major) by @renovate in https://github.com/toeverything/AFFiNE/pull/5217
-* fix(storybook): disable cloud for storybook by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5330
-* feat(core): ai poc by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5317
-* chore(server): remove early access tips from invitation emails by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5314
-* feat: add quota for old users by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5318
-* feat(electron): onboarding at first launch logic for client and web by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5183
-* feat(core): onboarding paper enter animation by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5248
-* feat(core): onboarding paper unfolding animation by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5264
-* fix(component): fix incorrect input component width and height styling by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5292
-* feat(core): adjust empty favourites style by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5323
-* feat(core): basic page/edgeless toggle animation by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5283
-* fix(core): collections initialized logic by @zzj3720 in https://github.com/toeverything/AFFiNE/pull/5310
-* feat(core): add toggle workspace dialog by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5312
-* fix(electron): main window should be opened first before destroying onboard window by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5319
-* fix(electron): onboarding display issue on Windows by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5320
-* chore: bump up ses version to v1 by @renovate in https://github.com/toeverything/AFFiNE/pull/5282
-* fix: cargo deps security alert by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5340
-* feat(core): adjust ui for new design by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5322
-* fix(core): dedupe ses versions by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5342
-* feat: bump blocksuite by @doodlewind in https://github.com/toeverything/AFFiNE/pull/5343
-* feat: onboarding page by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5277
-* feat: onboarding electron redirect by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5327
-* fix(core): downgrade ses by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5347
-* feat: bump bs by @doouding in https://github.com/toeverything/AFFiNE/pull/5346
-* fix(core): remove ses lockdown by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5350
-* feat: only follow `serverUrlPrefix` at redirect to client (#5295) by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5354
-* chore: update basic version to 0.11.0 by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5355
-* fix(core): escape special characters for cmdk item values by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5353
-* feat(core): add syncing progress by @EYHN in https://github.com/toeverything/AFFiNE/pull/5356
-* fix(storybook): disable onboarding for storybook by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5351
-* feat: bump blocksuite by @donteatfriedrice in https://github.com/toeverything/AFFiNE/pull/5357
-* feat(core): responsive for onboarding by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5361
-* chore(core): temporarily hide export png and pdf in edgeless by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5364
-* chore: bump up eslint-plugin-unicorn version to v50 by @renovate in https://github.com/toeverything/AFFiNE/pull/5362
-* feat(electron): handle onboarding-window moved between screens by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5345
-* chore: bump up @react-hookz/web version to v24 by @renovate in https://github.com/toeverything/AFFiNE/pull/5359
-* ci: use setup version action to init version by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5365
-* fix(core): onboading tooltip next button always shows by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5363
-* ci: set version correctly and remove nightly build workflow by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5367
-* feat: use baseurl from server config by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5369
-* chore: fix about version in client by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5371
-* chore: catch and ignore page upgrade error by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5373
-* fix: websocket prefix by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5372
-* feat: bump blocksuite by @Flrande in https://github.com/toeverything/AFFiNE/pull/5374
-* fix(core): maxWait for sync progress debounce by @EYHN in https://github.com/toeverything/AFFiNE/pull/5377
-* fix: input style priority by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5383
-* fix(workspace): dont upgrade subdoc on cloud by @EYHN in https://github.com/toeverything/AFFiNE/pull/5382
-* fix(core): hide onboarding paper segments gap by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5384
-* fix(workspace): leave workspace correctly by @EYHN in https://github.com/toeverything/AFFiNE/pull/5379
-* fix(component): fix workspace input by @EYHN in https://github.com/toeverything/AFFiNE/pull/5381
-
-## New Contributors
-* @rakheesingh made their first contribution in https://github.com/toeverything/AFFiNE/pull/5162
-* @renovate made their first contribution in https://github.com/toeverything/AFFiNE/pull/5186
-* @OiAnthony made their first contribution in https://github.com/toeverything/AFFiNE/pull/5128
-* @umar23faiz made their first contribution in https://github.com/toeverything/AFFiNE/pull/4969
-* @donteatfriedrice made their first contribution in https://github.com/toeverything/AFFiNE/pull/5357
-
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.10.3...v0.11.0</releaseNotes>
+    <releaseNotes>fix(core): enable page history for beta/stable (#5415) @pengx17 
+fix(component): fix font display on safari (#5393) @EYHN 
+fix(core): avatars are not aligned (#5404) @JimmFly 
+fix(core): trash page footer display issue (#5402) @pengx17 
+fix(electron): set stable base url to app.affine.pro (#5401) @joooye34 
+fix(core): about setting blink issue (#5399) @pengx17 
+fix(core): workpace list blink issue on open (#5400) @pengx17 
+chore(core): add background color to questionnaire (#5396) @JimmFly 
+fix(core): correct title of onboarding article-2 (#5387) @CatsJuice 
+fix: use prefix in electron to prevent formdata bug (#5395) @darkskygit 
+fix(core): fix flickering workspace list (#5391) @EYHN 
+fix(workspace): fix svg file with xml header (#5388) @EYHN 
+feat: bump blocksuite (#5386) @regischen 
+</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
