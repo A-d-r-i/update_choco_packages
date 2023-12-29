@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.11.1</version>
+    <version>0.11.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,20 +18,11 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>fix(core): enable page history for beta/stable (#5415) @pengx17 
-fix(component): fix font display on safari (#5393) @EYHN 
-fix(core): avatars are not aligned (#5404) @JimmFly 
-fix(core): trash page footer display issue (#5402) @pengx17 
-fix(electron): set stable base url to app.affine.pro (#5401) @joooye34 
-fix(core): about setting blink issue (#5399) @pengx17 
-fix(core): workpace list blink issue on open (#5400) @pengx17 
-chore(core): add background color to questionnaire (#5396) @JimmFly 
-fix(core): correct title of onboarding article-2 (#5387) @CatsJuice 
-fix: use prefix in electron to prevent formdata bug (#5395) @darkskygit 
-fix(core): fix flickering workspace list (#5391) @EYHN 
-fix(workspace): fix svg file with xml header (#5388) @EYHN 
-feat: bump blocksuite (#5386) @regischen 
-</releaseNotes>
+    <releaseNotes>## What's Changed
+* fix: use absolute path in gql client (#5454) by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5462
+
+
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.11.1...v0.11.2</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
