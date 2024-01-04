@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.0.0 : <https://github.com/OpenAcousticDevices/AudioMoth-GPS-Sync-App/releases/download/1.0.0/AudioMothGPSSyncAppSetup1.0.0.exe>
+  Version 1.0.1 : <https://github.com/OpenAcousticDevices/AudioMoth-GPS-Sync-App/releases/download/1.0.1/AudioMothGPSSyncAppSetup1.0.1.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: EB93C300B198860C7FA9EAED03D87CF991668E1E47104DB939747C95C8BAEE70
+  checksum: 474843E89D689070160112844CDD640D9E666B1C2E949CCDB0F1B7782198F8D1
 
 File 'LICENSE.txt' is obtained from <https://www.openacousticdevices.info/license> 
