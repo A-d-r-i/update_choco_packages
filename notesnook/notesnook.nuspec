@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.13</version>
+    <version>2.6.14</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,27 +20,21 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## ???? Features &amp; new stuff
 
-1. Add support for checking/unchecking all items in a task list by @alihamuh in https://github.com/streetwriters/notesnook/pull/3975
-2. Add support for converting md link syntax to link on paste by @alihamuh in https://github.com/streetwriters/notesnook/pull/3919
-3. Add `Ctrl/Cmd+\` keyboard shortcut for "Clear all formatting" by @alihamuh in https://github.com/streetwriters/notesnook/pull/3989
-4. Use symbols for indicating shortcut keys on macOS by @thecodrr
+1. Exported notes now contain date created in the zip file metadata along with date modified (useful if you rely on file system dates for sorting etc.)
+2. Add license button in Settings &gt; About by @alihamuh in https://github.com/streetwriters/notesnook/pull/4020
+3. Add support for +/- font-size using shortcut keys  by @alihamuh in https://github.com/streetwriters/notesnook/pull/4029
 
 ##  ???? Fixes &amp; improvements
 
-1. Fix going back in search after editing a notebook opens notebook edit dialog again by @alihamuh in https://github.com/streetwriters/notesnook/pull/3979
-2. Fix code blocks pasting in a single line without formatting by @alihamuh in https://github.com/streetwriters/notesnook/pull/3910
-3. Fix styling of other types of lists in outline list by @alihamuh in https://github.com/streetwriters/notesnook/pull/3889
-4. Fix parsing of md links with parentheses in them by @thecodrr in https://github.com/streetwriters/notesnook/pull/3996
-6. Make importer error resistant by @thecodrr in https://github.com/streetwriters/notesnook/pull/3994
-7. Disable invalid tools when inside a code block by @alihamuh in https://github.com/streetwriters/notesnook/pull/3997
-8. Code blocks now follow the default font size by @alihamuh in https://github.com/streetwriters/notesnook/pull/3997
-9. Fix pasting a word inside list adds newlines around it by @alihamuh in https://github.com/streetwriters/notesnook/pull/3843
-10. Fix attachment dialog not opening if an error occurs during upload/download @thecodrr 
-11. Add `Markdown + frontmatter` to export all options by @thecodrr
-12. Correctly handle file picker dialog cancelation by @thecodrr
-13. Fix Cmd-a not working on macOS for selecting all items in list by @thecodrr 
+1. The importer now supports files bigger than 6 GB by @thecodrr
+2. Fix math/formula block getting cut off on mobile by @alihamuh in https://github.com/streetwriters/notesnook/pull/4023
+3. Fix editor header title input not becoming readonly by @alihamuh in https://github.com/streetwriters/notesnook/pull/4064
+4. Fix font size changes back after exiting list by @alihamuh
+5. Support underline when exporting as md by @thecodrr
+6. Show resubscribe button if user's subscription is canceled by @thecodrr
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.12...v2.6.13</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.13...v2.6.14
+</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
