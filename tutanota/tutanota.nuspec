@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.119.10</version>
+    <version>3.120.4</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,26 +16,24 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Checkbox misplaced when paired with a long label [#6309](https://github.com/tutao/tutanota/issues/6309)
- - Fix Websocket updates and mail loading getting stuck after errors
+    <releaseNotes># What's new
+ - Added tuta-crypt (PQ) support [#6349](https://github.com/tutao/tutanota/issues/6349), [#6351](https://github.com/tutao/tutanota/issues/6351), [#6261](https://github.com/tutao/tutanota/issues/6261), [#6353](https://github.com/tutao/tutanota/issues/6353)
+ - Aes256 is now used by default [#6259](https://github.com/tutao/tutanota/issues/6259)
+ - Argon2id is now used by default [#6202](https://github.com/tutao/tutanota/issues/6202)
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/280?closed=1
-
+https://github.com/tutao/tutanota/milestone/281?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-cb18f6dd2982ce02ea180020cbb5f34185dc20214d6c305942bf032482bea0fb
+ea39fcb15dfab083b6e1bd7b59d8a778254d60aedad9bb403f51f74eab4a3de1
 
 **tutanota-desktop-win.exe:**
-505a1ab5e529e67b927f2ddcad4341d1f7a755924ccd5a633b8a79952ce445a6
+e77e7d21f6e50058168bd5cd1b57c22fac22cb3362e609d5e7a99324aab9dd98
 
 **tutanota-desktop-mac.dmg:**
-aae34a9bb2f2d98ae9052d1e24a47568851abf23b09aa0b990f51a24ee498b1a
-
-**tutanota-desktop-3.119.10-unpacked-linux.tar.gz**
-50809e4867073389f2ed22855db77f608c6ebddd2728fd07f57c0dd9bbc2cef9</releaseNotes>
+40b2324fffe9011250b569ced8948bf6581ffb70ef52ee5e5f2e424d34982629</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
