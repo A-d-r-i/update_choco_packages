@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>audiomoth-config</id>
-    <version>1.10.1</version>
+    <version>1.10.2</version>
     <title>AudioMoth Configuration App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,10 +15,8 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth recording device and setting the onboard clock.</summary>
-    <releaseNotes>* Added custom inputs for certain UI elements
-* Fixed version checking bug
-* Updated AudioMoth-HID
-* Fixed summarise window error</releaseNotes>
+    <releaseNotes>* Removed low voltage cut-off setting (now always enabled)
+* Moved some settings</releaseNotes>
     <tags>audiomoth-config audiomoth config-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/audiomoth-config</packageSourceUrl>
