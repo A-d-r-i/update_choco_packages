@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.11.2</version>
+    <version>0.11.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,11 +18,120 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## What's Changed
-* fix: use absolute path in gql client (#5454) by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5462
+    <releaseNotes># Overview
+This release, which is upper publish for our 0.12 version iteration, includes some feature enhancements, bug fixes, and architecture refactors.
 
+# Updated Features
+* **Workspace Creation**: Used new transformer API of blocksuite to initialize workspace onboarding pages.
+* **Page History**: Optimized list item UI.
+* **i18n**: Update Korean translation.
+* **Free Limit**: Implemented cloud workspace member invite limitation. The free user just can invite 3 members to the workspace now.
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.11.1...v0.11.2</releaseNotes>
+# Fixed Issues
+* The client on windows will upgrade all the time. https://github.com/toeverything/AFFiNE/pull/5507
+* Some accounts have no display name, and use the email prefix as the display name for them. https://github.com/toeverything/AFFiNE/pull/5434
+* Quick search will pop when the link-popup is visitable. https://github.com/toeverything/AFFiNE/pull/5409
+* Long page title issue in page history. https://github.com/toeverything/AFFiNE/pull/5436
+* The page content is blurry in Safari. https://github.com/toeverything/AFFiNE/pull/5393
+
+# Editor
+* Persist last editing state during session (toeverything/blocksuite#5804)
+* Support double click to disable note sorting (toeverything/blocksuite#5861)
+* Improved shift-selection UX for multiple elements (toeverything/blocksuite#5843)
+* Fix performance regression in frame order menu (toeverything/blocksuite#5825)
+* Add more templates (toeverything/blocksuite#5888)
+
+# Engineering
+* **AFFiNE Architecture**: The refactoring of architecture in the AFFiNE repository will continue in the next serial iterations and versions, to make the architecture more clear, stable, and easy to code.
+
+  * create electron api package
+
+  - remove plugin system
+
+  * remove adapter login
+
+  - let infra package no bundle when local develop
+
+  * move currentPageAtom, hooks, and workspace atom to core to prepare for biz modules
+* **Cloud Object Storage**: Use AWS S3 object storage to store blob data.
+* **Experimental Features**: AFFiNE will have experimental features in the future, like AI, this version adds experimental features APIs and the next version will implement the front UI to manage experimental features.
+
+# Thanks
+* Thanks to "?????????" "fuwh" "Probgoblin" "kirklazarus" for reporting client always upgrade issue in Discord and "Anwar" in Community Forum.
+* Thanks to @NavyStack for Korean translation.
+
+# Commit Changes
+## What's Changed
+* feat: bump blocksuite by @regischen in https://github.com/toeverything/AFFiNE/pull/5386
+* refactor(core): remove outline plugin and layout atom by @EYHN in https://github.com/toeverything/AFFiNE/pull/5326
+* refactor(core): remove adapter by @EYHN in https://github.com/toeverything/AFFiNE/pull/5324
+* refactor(infra): move currentPageAtom to core by @EYHN in https://github.com/toeverything/AFFiNE/pull/5332
+* fix(workspace): fix svg file with xml header by @EYHN in https://github.com/toeverything/AFFiNE/pull/5388
+* fix(core): fix flickering workspace list by @EYHN in https://github.com/toeverything/AFFiNE/pull/5391
+* fix: use prefix in electron to prevent formdata bug by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5395
+* fix(core): remove plugins settings by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5337
+* fix(core): correct title of onboarding article-2 by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5387
+* fix(core): workpace list blink issue on open by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5400
+* fix(core): about setting blink issue by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5399
+* fix(electron): set stable base url to app.affine.pro by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5401
+* fix(core): trash page footer display issue by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5402
+* fix(core): avatars are not aligned by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5404
+* fix(infra): workaround for self-referencing in storybook by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5406
+* refactor(infra): remove old plugin system by @EYHN in https://github.com/toeverything/AFFiNE/pull/5411
+* fix(component): fix font display on safari by @EYHN in https://github.com/toeverything/AFFiNE/pull/5393
+* fix(core): enable page history for beta/stable by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5415
+* refactor(electron): create electron api package by @EYHN in https://github.com/toeverything/AFFiNE/pull/5334
+* refactor(infra): no bundle infra by @EYHN in https://github.com/toeverything/AFFiNE/pull/5414
+* fix(infra): remove unused svg loader by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5398
+* feat(core): set document title when detail page render by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5418
+* style(core): add font smoothing and optimize legibility globally by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5417
+* refactor(core): adjust graphql hook by @EYHN in https://github.com/toeverything/AFFiNE/pull/5339
+* feat(server): upgrade prisma to use native relation joins and distinct by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5420
+* feat: add useBlocksuiteEditor hooks by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5366
+* refactor(component): make component pure by @EYHN in https://github.com/toeverything/AFFiNE/pull/5427
+* fix(storybook): storybook flaky by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5430
+* feat: add migration for rename unamed accounts by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5434
+* refactor(core): onboarding using new transformer api by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5412
+* fix: use absolute path in gql client by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5454
+* fix(core): upgrade page when previewing/reverting page snapshot by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5435
+* fix(core): long page title issue in page history by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5436
+* feat(electron): use release api to filter draft release by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5443
+* feat(core): optimize history list item ui by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5440
+* refactor(server): object storages by @forehalo in https://github.com/toeverything/AFFiNE/pull/5405
+* feat(server): new storage provider by @forehalo in https://github.com/toeverything/AFFiNE/pull/5410
+* refactor(component): adjust active editor atom by @EYHN in https://github.com/toeverything/AFFiNE/pull/5457
+* refactor(core): move hooks to core by @EYHN in https://github.com/toeverything/AFFiNE/pull/5458
+* refactor(core): move workspace atoms to core by @EYHN in https://github.com/toeverything/AFFiNE/pull/5459
+* refactor(workspace): split workspace interface and implementation by @EYHN in https://github.com/toeverything/AFFiNE/pull/5463
+* fix(workspace): make ci stable by @EYHN in https://github.com/toeverything/AFFiNE/pull/5496
+* fix(core): adjust error boundary level by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5493
+* fix(core): add free plan prompt by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5441
+* feat: bump blocksuite by @regischen in https://github.com/toeverything/AFFiNE/pull/5453
+* feat(core): page preview ui optimize by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5442
+* refactor(server): use new storage providers by @forehalo in https://github.com/toeverything/AFFiNE/pull/5433
+* feat(server): blob data migration by @forehalo in https://github.com/toeverything/AFFiNE/pull/5461
+* feat(core): add cloud workspace member limit by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5500
+* fix(electron): client always update cause by version not update correctly by @joooye34 in https://github.com/toeverything/AFFiNE/pull/5507
+* feat: add copilot feature type by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5465
+* fix(core): disable quick search when the link-popup is visitable by @JimmFly in https://github.com/toeverything/AFFiNE/pull/5409
+* feat: workspace level feature schema by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5466
+* feat: add workspace feature tests by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5501
+* feat: add workspace level feature apis by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5503
+* feat: upgrade to rust 1.75.0 by @Brooooooklyn in https://github.com/toeverything/AFFiNE/pull/5515
+* fix(core): sidebar extension sometimes not show by @pengx17 in https://github.com/toeverything/AFFiNE/pull/5513
+* feat: use relative path for worker api by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5520
+* feat: add workspace experimental features api by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5525
+* fix(server): backward compatibility for beta+stable envs by @forehalo in https://github.com/toeverything/AFFiNE/pull/5510
+* fix: only return activated features by @darkskygit in https://github.com/toeverything/AFFiNE/pull/5536
+* fix: add missing Korean translations for updated English text by @NavyStack in https://github.com/toeverything/AFFiNE/pull/5534
+* fix: properly split dep and dev deps, fix phantom deps by @lewisl9029 in https://github.com/toeverything/AFFiNE/pull/5527
+* fix(component): app sidebar will never float when menu not opened by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/5529
+
+## New Contributors
+* @NavyStack made their first contribution in https://github.com/toeverything/AFFiNE/pull/5534
+* @lewisl9029 made their first contribution in https://github.com/toeverything/AFFiNE/pull/5527
+
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.11.2...v0.11.3</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
