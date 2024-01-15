@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.120.4</version>
+    <version>3.120.6</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,23 +17,26 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Added tuta-crypt (PQ) support [#6349](https://github.com/tutao/tutanota/issues/6349), [#6351](https://github.com/tutao/tutanota/issues/6351), [#6261](https://github.com/tutao/tutanota/issues/6261), [#6353](https://github.com/tutao/tutanota/issues/6353)
- - Aes256 is now used by default [#6259](https://github.com/tutao/tutanota/issues/6259)
- - Argon2id is now used by default [#6202](https://github.com/tutao/tutanota/issues/6202)
+ - Updates after security review of recently added crypto dependencies [#6359](https://github.com/tutao/tutanota/issues/6359)
 
+# Bugfixes
+ - Gift cards can not be displayed and used [#6375](https://github.com/tutao/tutanota/issues/6375)
+ - Opening draft with migrated MailDetails results in ProgrammingError [#6370](https://github.com/tutao/tutanota/issues/6370)
+ - Using incorrect key results in invalid mac errors  [#6377](https://github.com/tutao/tutanota/issues/6377)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/281?closed=1
+https://github.com/tutao/tutanota/milestone/282?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-ea39fcb15dfab083b6e1bd7b59d8a778254d60aedad9bb403f51f74eab4a3de1
+08cb23efa5f337a56377402670c59fb76ae26cab26f601f9b55f5ced959890d8
 
 **tutanota-desktop-win.exe:**
-e77e7d21f6e50058168bd5cd1b57c22fac22cb3362e609d5e7a99324aab9dd98
+e20b42f97e700b2c673309ff127f570b70fe1cb7a7f08e347b2ee2e7a5ab2898
 
 **tutanota-desktop-mac.dmg:**
-40b2324fffe9011250b569ced8948bf6581ffb70ef52ee5e5f2e424d34982629</releaseNotes>
+8d4e6ec3833bd86eb08fb7a39860deb9d94f1c582c390f135025c80cbc8cdc84</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
