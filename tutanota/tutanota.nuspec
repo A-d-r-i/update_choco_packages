@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.122.4</version>
+    <version>3.122.5</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,21 +17,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># Bugfixes
- - Pasting text in the editor doesn't work or stops working [#6519](https://github.com/tutao/tutanota/issues/6519)
+ - Fix uncaught error when logging in on windows (Uncaught Error: EBUSY: resource busy or locked, unlink offline.sqlite) [#5063](https://github.com/tutao/tutanota/issues/5063)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/286?closed=1
+https://github.com/tutao/tutanota/milestone/285?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-ee77d01c71d8b2d6fdd957b5b9dc5c7edea3927f044f6a64ad1df0eae0382053
+dcce7745ee856f11171c19792812c38d9834b9322ff09213d0395ac0d44f5c17
 
 **tutanota-desktop-win.exe:**
-7d7ebe6e82456c885a8904d21e6d39229e590761b8d75bb51280631a3e795e58
+043bab80c91c1da1d1fd599af65b3165becfb26de6a108be603bf67ffd273d37
 
 **tutanota-desktop-mac.dmg:**
-19110e8131cdd49275283c700d6798b862da91d9af6646845979c97e2be5d59b</releaseNotes>
+21528f8794d03fc7c0a8dd0506c0a7149c3f2b2a1ec55a13b2b9a6805988c38a</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
