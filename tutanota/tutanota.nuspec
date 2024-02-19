@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>3.122.5</version>
+    <version>218.240219.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,29 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Fix uncaught error when logging in on windows (Uncaught Error: EBUSY: resource busy or locked, unlink offline.sqlite) [#5063](https://github.com/tutao/tutanota/issues/5063)
+    <releaseNotes># What's new
+ - Improved screen reader support
+ - Change default domain order 
+ - Leaving users survey
+ - Support for Argon2id migration 
+
+# Bugfixes
+ - fix invoice pdf download 
+ - fix overlay elements flickeing
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/285?closed=1
-
+https://github.com/tutao/tutanota/milestone/284?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-dcce7745ee856f11171c19792812c38d9834b9322ff09213d0395ac0d44f5c17
+b0c086575aaf67e000873ff7b62268a3bed36851dbe95b16c0dbfc7ad1aacfe6
 
 **tutanota-desktop-win.exe:**
-043bab80c91c1da1d1fd599af65b3165becfb26de6a108be603bf67ffd273d37
+c3961b97ab6b2cdb20d1fe8092a70c56ace87004889820ca4e82fa140a7b15f4
 
 **tutanota-desktop-mac.dmg:**
-21528f8794d03fc7c0a8dd0506c0a7149c3f2b2a1ec55a13b2b9a6805988c38a</releaseNotes>
+5bcffb9073c351c6f42a2078afa1dd70e744a90fc57573b746e724392ee132c3</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
