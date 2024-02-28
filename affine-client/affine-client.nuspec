@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.12.0</version>
+    <version>0.12.1</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,209 +18,26 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## Highlights
-### The Journals: Tracking Your Daily Routine and Ideas
+    <releaseNotes>## Highlights 
 
-https://github.com/toeverything/AFFiNE/assets/3468483/d3018fe4-90e6-4cf6-8c2f-82694cd9733c
+This release fixes several configurations about our selfhost Docker image. Follow this guide and you can start your own AFFiNE server and web version https://docs.affine.pro/docs/self-host-affine.
 
-With our new **Journals**, you can keep track of your daily thoughts, ideas, and experiences. You can find the feature in the left sidebar, and click on **dates** in the right sidebar to easily view documents created and updated on that day
+## [0.12.1] - 2024-02-27
+### Details
 
-### Enhanced Linked Docs: New Stylish Card Views for Selective Display
-Our enhanced Linked Doc allows you to easily input or create links within your documents. This update offers the choice about how these links and their view are displayed, enabling a more personalized touch to your documents. Especially useful on the whiteboard, it supports a more flexible document organization and improved visualization process.
+#### Feat
+- Allow customize mailer server by @forehalo  (#5835)
 
-https://github.com/toeverything/AFFiNE/assets/3468483/fefa388b-4862-4e0b-ba18-fa754117becf
+#### Build
+- Fix selfhost config by @Brooooooklyn 
 
-### Collections &amp; Tags: Your Recipe for Document Organization
-Now 0.12.0 version has added a page, **collection and tag**, to enhance your document management in Affine. These features allow you to organize your documents in two distinct ways. With an **expanded space in the paging area**, you can quickly locate and retrieve files, streamlining the search process. The introduction of these new filters significantly increases the flexibility of the All Pages view, offering you a more efficient and user-friendly document management experience. This update is designed to adapt to your unique organizational needs, making document handling more intuitive and effective.
+#### Fix
+- Apply env overrides after all config merged by @forehalo  (#5795)
 
-https://github.com/toeverything/AFFiNE/assets/3468483/27d33bf6-5420-40e6-a7d9-38130c7f31e6
+#### Refactor
+- Reorganize server configs  by @forehalo  (#5753)
 
-### Control Your Own Content: The Ability to Decide The Visibility of Content
-With our newly introduced Display Mode function, you can display certain content selectively. All you need to do is switch to the Edgeless Mode and choose your preferred **Display Mode** option. You can showcase more flexible and differentiated content structures tailored to various needs then!
-
-https://github.com/toeverything/AFFiNE/assets/3468483/d9f5d084-f722-46b3-a6a5-97f3d602a373
-
-
-## Details
-
-### Features
-- Adapted user quota for member api (#5521) by @darkskygit in [#5521](https://github.com/toeverything/AFFiNE/pull/5521)
-- Add unlimited workspace support (#5523) by @darkskygit in [#5523](https://github.com/toeverything/AFFiNE/pull/5523)
-- Support self-host docker build (#5506) by @Brooooooklyn in [#5506](https://github.com/toeverything/AFFiNE/pull/5506)
-- Blob size limit with quota (#5524) by @darkskygit in [#5524](https://github.com/toeverything/AFFiNE/pull/5524)
-- Bump blocksuite (#5575) by @regischen in [#5575](https://github.com/toeverything/AFFiNE/pull/5575)
-- Update nx config (#5597) by @darkskygit in [#5597](https://github.com/toeverything/AFFiNE/pull/5597)
-- Get cloud workspace usage limit from user quota (#5518) by @JimmFly in [#5518](https://github.com/toeverything/AFFiNE/pull/5518)
-- Add query quota of workspace (#5603) by @darkskygit in [#5603](https://github.com/toeverything/AFFiNE/pull/5603)
-- New free plan (#5604) by @darkskygit in [#5604](https://github.com/toeverything/AFFiNE/pull/5604)
-- Make password sigin default if user has one (#5577) by @forehalo in [#5577](https://github.com/toeverything/AFFiNE/pull/5577)
-- Use `SafeInt` replace `Float` (#5613) by @darkskygit in [#5613](https://github.com/toeverything/AFFiNE/pull/5613)
-- New week-date-picker component (#5477) by @CatsJuice in [#5477](https://github.com/toeverything/AFFiNE/pull/5477)
-- New inline-edit component (#5517) by @CatsJuice in [#5517](https://github.com/toeverything/AFFiNE/pull/5517)
-- Add document title for shared page (#5596) by @CatsJuice in [#5596](https://github.com/toeverything/AFFiNE/pull/5596)
-- Journal hooks and page header layout (#5549) by @CatsJuice in [#5549](https://github.com/toeverything/AFFiNE/pull/5549)
-- Experimental features ui (#5338) by @pengx17 in [#5338](https://github.com/toeverything/AFFiNE/pull/5338)
-- Use nx cloud runner (#5626) by @darkskygit in [#5626](https://github.com/toeverything/AFFiNE/pull/5626)
-- Bump blocksuite (#5624) by @regischen in [#5624](https://github.com/toeverything/AFFiNE/pull/5624)
-- Journal extension loader (#5557) by @CatsJuice in [#5557](https://github.com/toeverything/AFFiNE/pull/5557)
-- Journal sidebar dater-picker navigation (#5558) by @CatsJuice in [#5558](https://github.com/toeverything/AFFiNE/pull/5558)
-- Add daily count for journal sidebar (#5559) by @CatsJuice in [#5559](https://github.com/toeverything/AFFiNE/pull/5559)
-- Journal sidebar conflict block (#5574) by @CatsJuice in [#5574](https://github.com/toeverything/AFFiNE/pull/5574)
-- Add experimental flag for journal (#5578) by @CatsJuice in [#5578](https://github.com/toeverything/AFFiNE/pull/5578)
-- Add journal entrance for app-sidebar (#5579) by @CatsJuice in [#5579](https://github.com/toeverything/AFFiNE/pull/5579)
-- Upgrade electron and playwright (#5632) by @Brooooooklyn in [#5632](https://github.com/toeverything/AFFiNE/pull/5632)
-- Skip update quota if same as latest activated quota (#5631) by @darkskygit in [#5631](https://github.com/toeverything/AFFiNE/pull/5631)
-- Page info adapter for journal (#5561) by @pengx17 in [#5561](https://github.com/toeverything/AFFiNE/pull/5561)
-- React wrapper for blocksuite editor (#5606) by @pengx17 in [#5606](https://github.com/toeverything/AFFiNE/pull/5606)
-- Adopt editor features for journal (#5638) by @pengx17 in [#5638](https://github.com/toeverything/AFFiNE/pull/5638)
-- Bump blocksuite (#5642) by @joooye34 in [#5642](https://github.com/toeverything/AFFiNE/pull/5642)
-- Use custom image/preview link (#5584) by @darkskygit in [#5584](https://github.com/toeverything/AFFiNE/pull/5584)
-- Add blob and storage limit (#5535) by @JimmFly in [#5535](https://github.com/toeverything/AFFiNE/pull/5535)
-- Adjust member order (#5685) by @JimmFly in [#5685](https://github.com/toeverything/AFFiNE/pull/5685)
-- Optimize week-date-picker keyboard navigation (#5684) by @CatsJuice in [#5684](https://github.com/toeverything/AFFiNE/pull/5684)
-- Add collection and tag filters to all pages (#5567) by @JimmFly in [#5567](https://github.com/toeverything/AFFiNE/pull/5567)
-- Bump blocksuite (#5720) by @doodlewind in [#5720](https://github.com/toeverything/AFFiNE/pull/5720)
-- Impl unlimited features (#5659) by @darkskygit in [#5659](https://github.com/toeverything/AFFiNE/pull/5659)
-- Generate blocksuite changelog (#5724) by @Brooooooklyn in [#5724](https://github.com/toeverything/AFFiNE/pull/5724)
-- Add business blob limit (#5734) by @darkskygit in [#5734](https://github.com/toeverything/AFFiNE/pull/5734)
-- Bump blocksuite (#5735) by @doodlewind in [#5735](https://github.com/toeverything/AFFiNE/pull/5735)
-- Ignore empty journals for page lists (#5744)
-- Allow pass coupon to checkout session (#5749)
-- Support sign-in with subscription coupon (#5768)
-- Refresh new workspace feature (#5834)
-- Use custom verify token policy (#5836)
-- Duplicate page in page list and clone naming improvements by @golok727 (#5818)
-- Add starAFFiNE and issueFeedback modal (#5718)
-- Add loading to quick search modal (#5785)
-- Move templates into AFFiNE  (#5750)
-- Blocksuite integration for pageMode &amp; pageUpdatedAt (#5849)
-
-### Fix
-- Return empty resp if user not exists in login preflight (#5588)
-- Standalone early access users detection (#5601)
-- Del staled update count cache if unmatch (#5674)
-- Workspace not found after import (#5571) by @EYHN in [#5571](https://github.com/toeverything/AFFiNE/pull/5571)
-- Remove cors headers hack (#5581) by @pengx17 in [#5581](https://github.com/toeverything/AFFiNE/pull/5581)
-- Return empty resp if user not exists in login preflight (#5588) by @darkskygit in [#5588](https://github.com/toeverything/AFFiNE/pull/5588)
-- Node imports order (#5583) by @forehalo in [#5583](https://github.com/toeverything/AFFiNE/pull/5583)
-- Add field polyfill for old feature (#5586) by @darkskygit in [#5586](https://github.com/toeverything/AFFiNE/pull/5586)
-- Improve self-host convenience (#5582) by @forehalo in [#5582](https://github.com/toeverything/AFFiNE/pull/5582)
-- Standalone early access users detection (#5601) by @forehalo in [#5601](https://github.com/toeverything/AFFiNE/pull/5601)
-- Add back lottie color hack for dark mode (#5576) by @pengx17 in [#5576](https://github.com/toeverything/AFFiNE/pull/5576)
-- Remove hash prefix from cdn path (#5509) by @Brooooooklyn in [#5509](https://github.com/toeverything/AFFiNE/pull/5509)
-- Check session before get workspaces (#5621) by @EYHN in [#5621](https://github.com/toeverything/AFFiNE/pull/5621)
-- Should not listen on user defined host (#5622) by @forehalo in [#5622](https://github.com/toeverything/AFFiNE/pull/5622)
-- Selfhost issues (#5623) by @Brooooooklyn in [#5623](https://github.com/toeverything/AFFiNE/pull/5623)
-- Reserve space for the editor scrollbar (#5625) by @JimmFly in [#5625](https://github.com/toeverything/AFFiNE/pull/5625)
-- Missing google oauth in auth providers (#5656) by @Brooooooklyn in [#5656](https://github.com/toeverything/AFFiNE/pull/5656)
-- Adjust the style of Switch to match the design (#5636) by @CatsJuice in [#5636](https://github.com/toeverything/AFFiNE/pull/5636)
-- Remove incorrect commit (#5660) by @pengx17 in [#5660](https://github.com/toeverything/AFFiNE/pull/5660)
-- Properties adapter reactivitiy issue (#5661) by @pengx17 in [#5661](https://github.com/toeverything/AFFiNE/pull/5661)
-- Correct typo in onboarding 'get start' (#5666) by @CatsJuice in [#5666](https://github.com/toeverything/AFFiNE/pull/5666)
-- Del staled update count cache if unmatch (#5674) by @forehalo in [#5674](https://github.com/toeverything/AFFiNE/pull/5674)
-- Should set lang when locale changes (#5679) by @pengx17 in [#5679](https://github.com/toeverything/AFFiNE/pull/5679)
-- Create page button offset issue on non-windows desktop app (#5669) by @pengx17 in [#5669](https://github.com/toeverything/AFFiNE/pull/5669)
-- Storybook story load issue (#5672) by @pengx17 in [#5672](https://github.com/toeverything/AFFiNE/pull/5672)
-- Workspace feature should be workspace specific (#5677) by @pengx17 in [#5677](https://github.com/toeverything/AFFiNE/pull/5677)
-- Disable payment module requirements temporarily (#5683) by @forehalo in [#5683](https://github.com/toeverything/AFFiNE/pull/5683)
-- Add metrics missing attributes (#5682) by @forehalo in [#5682](https://github.com/toeverything/AFFiNE/pull/5682)
-- Change journal header week-date-picker's max-width (#5688) by @CatsJuice in [#5688](https://github.com/toeverything/AFFiNE/pull/5688)
-- Modify journal page title today style, add weekday tag (#5687) by @CatsJuice in [#5687](https://github.com/toeverything/AFFiNE/pull/5687)
-- Consume blob stream correctly (#5706) by @darkskygit in [#5706](https://github.com/toeverything/AFFiNE/pull/5706)
-- Bidi links rendering issue (#5707) by @pengx17 in [#5707](https://github.com/toeverything/AFFiNE/pull/5707)
-- Add padding between editor and link panel (#5713) by @pengx17 in [#5713](https://github.com/toeverything/AFFiNE/pull/5713)
-- Journal title's day tag may be invalid (#5703) by @CatsJuice in [#5703](https://github.com/toeverything/AFFiNE/pull/5703)
-- Path issue on Windows (#5725) by @Brooooooklyn in [#5725](https://github.com/toeverything/AFFiNE/pull/5725)
-- Static resource not found in web server (#5745)
-- Set createDate to journal's date when journal created (#5701)
-- Doc upsert race condition (#5755)
-- Fix sync stuck (#5762) (#5772)
-- Prevent data loss (hot-fix) (#5798)
-- Fix sync handshake (hot-fix) (#5797)
-- Doc upsert without row lock (#5765)
-- Consume blob stream correctly (#5706)
-- Doc upsert race condition (#5755)
-- Doc upsert without row lock (#5765)
-- Selfhost build (#5833)
-- Linux login issues (#5821)
-- Cards overlapping issue (#5727)
-- Match page preview and page title in page list (#5840)
-- Resolve deps and types issues after cherry-pick
-- Linux AppImage output path
-- Window.open to a new origin will be blocked by browser (#5856)
-- Fix 404 after signout (hotfix) (#5865)
-- Fix desktop e2e (#5867)
-- The pitch zooming function incorrectly zooms the toolbar by @umar23faiz (#5456)
-- Disable sidebar user select (#5862)
-
-### Refactor
-- Move page list to core (#5556) by @EYHN in [#5556](https://github.com/toeverything/AFFiNE/pull/5556)
-- Folder structure (#5573) by @forehalo in [#5573](https://github.com/toeverything/AFFiNE/pull/5573)
-- Replace WorkspaceSubPath in env package with the one in core package (#5537) by @JimmFly in [#5537](https://github.com/toeverything/AFFiNE/pull/5537)
-- Move date-picker to ui, add story, support responsive (#5468) by @CatsJuice in [#5468](https://github.com/toeverything/AFFiNE/pull/5468)
-- Adapt the questionnaire component to the desktop client (#5514) by @JimmFly in [#5514](https://github.com/toeverything/AFFiNE/pull/5514)
-- Plugin modules (#5630) by @forehalo in [#5630](https://github.com/toeverything/AFFiNE/pull/5630)
-
-### Build
-- Generate latest-linux.yml (#5822)
-
-### Chore
-- Remove affine/cmdk package (#5552) by @pengx17 in [#5552](https://github.com/toeverything/AFFiNE/pull/5552)
-- Bump up source-map-loader version to v5 (#5599) by @Brooooooklyn in [#5599](https://github.com/toeverything/AFFiNE/pull/5599)
-- Update favicon (#5566) by @joooye34 in [#5566](https://github.com/toeverything/AFFiNE/pull/5566)
-- Bump up @blocksuite/icons version to v2.1.41 (#5580) by @Brooooooklyn in [#5580](https://github.com/toeverything/AFFiNE/pull/5580)
-- Bump up happy-dom version to v13 (#5569) by @Brooooooklyn in [#5569](https://github.com/toeverything/AFFiNE/pull/5569)
-- Bump up copy-webpack-plugin version to v12 (#5568) by @Brooooooklyn in [#5568](https://github.com/toeverything/AFFiNE/pull/5568)
-- Bump up postcss-loader version to v8 (#5609) by @Brooooooklyn in [#5609](https://github.com/toeverything/AFFiNE/pull/5609)
-- Remove octobase storage usage (#5594) by @forehalo in [#5594](https://github.com/toeverything/AFFiNE/pull/5594)
-- Remove too verbose logs (#5555) by @forehalo in [#5555](https://github.com/toeverything/AFFiNE/pull/5555)
-- Bump up actions/cache action to v4 (#5616) by @Brooooooklyn in [#5616](https://github.com/toeverything/AFFiNE/pull/5616)
-- Add port to host if it is 0.0.0.0 (#5619) by @forehalo in [#5619](https://github.com/toeverything/AFFiNE/pull/5619)
-- Remove useless log (#5620) by @forehalo in [#5620](https://github.com/toeverything/AFFiNE/pull/5620)
-- Upgrade perfsee sdk (#5629) by @Brooooooklyn in [#5629](https://github.com/toeverything/AFFiNE/pull/5629)
-- Bump up vite version to v5.0.12 [SECURITY] (#5648) by @Brooooooklyn in [#5648](https://github.com/toeverything/AFFiNE/pull/5648)
-- Decrease the instances count on gcp (#5658) by @Brooooooklyn in [#5658](https://github.com/toeverything/AFFiNE/pull/5658)
-- Bump up @blocksuite/icons version to v2.1.42 (#5668) by @Brooooooklyn in [#5668](https://github.com/toeverything/AFFiNE/pull/5668)
-- Bump @toeverything/theme, add cssVar use case (#5667) by @CatsJuice in [#5667](https://github.com/toeverything/AFFiNE/pull/5667)
-- Bump @toeverything/theme (#5680) by @pengx17 in [#5680](https://github.com/toeverything/AFFiNE/pull/5680)
-- Recover yarn.lock
-- Update base version to 0.12.0 (#5695) by @joooye34 in [#5695](https://github.com/toeverything/AFFiNE/pull/5695)
-- Remove journal experimental flag (#5698) by @CatsJuice in [#5698](https://github.com/toeverything/AFFiNE/pull/5698)
-- Bump up @blocksuite/icons version to v2.1.43 (#5702) by @Brooooooklyn in [#5702](https://github.com/toeverything/AFFiNE/pull/5702)
-- Bump up @reforged/maker-appimage version to v4 (#5709) by @Brooooooklyn in [#5709](https://github.com/toeverything/AFFiNE/pull/5709)
-- Bump up husky version to v9 (#5694) by @Brooooooklyn in [#5694](https://github.com/toeverything/AFFiNE/pull/5694)
-- Remove unused blocksuite deps in e2e (#5717) by @joooye34 in [#5717](https://github.com/toeverything/AFFiNE/pull/5717)
-- Upgrade husky to latest (#5719) by @Brooooooklyn in [#5719](https://github.com/toeverything/AFFiNE/pull/5719)
-- Bump up @blocksuite/icons version to v2.1.44 (#5732) by @Brooooooklyn in [#5732](https://github.com/toeverything/AFFiNE/pull/5732)
-- Revert "chore: bump up @reforged/maker-appimage version to v4" (#5736) by @Brooooooklyn in [#5736](https://github.com/toeverything/AFFiNE/pull/5736)
-- Bump y-octo (#5751)
-- Skip sync when offline (#5786)
-- Bump blocksuite (#5852)
-- Bump electron dependencies (#5770)
-- Bump blocksuite (#5868)
-
-### CI
-- Deploy ui storybook (#5655) by @CatsJuice in [#5655](https://github.com/toeverything/AFFiNE/pull/5655)
-- Check yarn dedupe in ci lint stage (#5678) by @joooye34 in [#5678](https://github.com/toeverything/AFFiNE/pull/5678)
-- Add postUpdateOptions to renovate (#5714) by @Brooooooklyn in [#5714](https://github.com/toeverything/AFFiNE/pull/5714)
-
-#### Docs
-- Update readme (#5637) by @HeJiachen-PM in [#5637](https://github.com/toeverything/AFFiNE/pull/5637)
-
-### Style
-- Import from './index' instead of '.' (#5590) by @lewisl9029 in [#5590](https://github.com/toeverything/AFFiNE/pull/5590)
-- Apply prefer-node-protocol lint rule (#5627) by @Brooooooklyn in [#5627](https://github.com/toeverything/AFFiNE/pull/5627)
-
-### Test
-- Avoid progress get hold after tests finished (#5522) by @forehalo in [#5522](https://github.com/toeverything/AFFiNE/pull/5522)
-- Make server testing utils (#5544) by @forehalo in [#5544](https://github.com/toeverything/AFFiNE/pull/5544)
-
-## New Contributors
-* @umar23faiz made their first contribution in https://github.com/toeverything/AFFiNE/pull/5456
-* @golok727 made their first contribution in https://github.com/toeverything/AFFiNE/pull/5818
-
-
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.11.3...v0.12.0</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.12.0...v0.12.1</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
