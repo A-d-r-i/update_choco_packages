@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.12.1</version>
+    <version>0.12.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,26 +18,11 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## Highlights 
+    <releaseNotes>## What's Changed
+* feat(core): new onboarding template (hotfix) by @EYHN in https://github.com/toeverything/AFFiNE/pull/5952
 
-This release fixes several configurations about our selfhost Docker image. Follow this guide and you can start your own AFFiNE server and web version https://docs.affine.pro/docs/self-host-affine.
 
-## [0.12.1] - 2024-02-27
-### Details
-
-#### Feat
-- Allow customize mailer server by @forehalo  (#5835)
-
-#### Build
-- Fix selfhost config by @Brooooooklyn 
-
-#### Fix
-- Apply env overrides after all config merged by @forehalo  (#5795)
-
-#### Refactor
-- Reorganize server configs  by @forehalo  (#5753)
-
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.12.0...v0.12.1</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.12.1...v0.12.2</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
