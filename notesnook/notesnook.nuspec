@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.15</version>
+    <version>2.6.16</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,35 +20,29 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## ???? Features &amp; new stuff
 
-1. **Code signed binaries for Windows** ??? starting from this release all setup files (and actual app binaries after installation) will be code signed on Windows. In other words, you will no longer see this Blue Popup (Windows Defender Smart Screen) when installing Notesnook:
-    ![189387744-c795d45d-b69c-4c9a-87fc-32f5041dd6d8](https://github.com/streetwriters/notesnook/assets/7473959/28a473a9-f8b1-4075-89de-918464184d8c)
-2. **Organized bulk exports** ???
-
-    ![image](https://github.com/streetwriters/notesnook/assets/7473959/67e82848-1ebe-4544-97e6-664f33df2783)
-3. **Daily trash cleanup interval** ??? you can now set the trash clean up interval to Daily in addition to Weekly, Monthly, and Yearly.
-4. **New domain for Monographs** ??? we are moving Monographs to their own domain ([monogr.ph](https://monogr.ph)) from [monograph.notesnook.com](https://monograph.notesnook.com). Starting from today, all links going to `monograph.notesnook.com` will be automatically redirected to https://monogr.ph.
-5. Add support for moving locked notes to trash  by @alihamuh in https://github.com/streetwriters/notesnook/pull/4134
+1. Toggle highlight/text color in the editor directly by clicking on it by @alihamuh in https://github.com/streetwriters/notesnook/pull/4330
+2. Copy images by right clicking in the desktop app (just like in browsers) by @alihamuh in https://github.com/streetwriters/notesnook/pull/4373
+3. View and remove custom dictionary words in `Settings &gt; Editor &gt; Spell check` by @alihamuh in https://github.com/streetwriters/notesnook/pull/4362
+4. Configure custom proxy URL to route all network traffic via a proxy (desktop only) by @alihamuh in https://github.com/streetwriters/notesnook/pull/4196
+5. Sort reminders based on their due date by @alihamuh in https://github.com/streetwriters/notesnook/pull/3394
+7. Restore backups using encryption key in addition to password by @thecodrr in https://github.com/streetwriters/notesnook/pull/4355
+8. Checklists from Google Docs are now preserved on paste by @alihamuh in https://github.com/streetwriters/notesnook/pull/3456
+9. Toggle markdown shortcuts in the editor by @alihamuh in https://github.com/streetwriters/notesnook/pull/4041
 
 ##  ???? Fixes &amp; improvements
 
-1. Fix real time sync cannot be disabled by @alihamuh in https://github.com/streetwriters/notesnook/pull/4140
-2. Fix subtasks getting unchecked on drag/drop reorder by @alihamuh in https://github.com/streetwriters/notesnook/pull/4135
-3. Fix input rules (i.e. markdown shortcuts) not working at the end of note by @alihamuh in https://github.com/streetwriters/notesnook/pull/4130
-4. Fix link pasting in editor by @thecodrr in https://github.com/streetwriters/notesnook/pull/4178
-5. Fix incorrect title on scrolling note by @Parthiv-M in https://github.com/streetwriters/notesnook/pull/4137
-6. Improve image loading by @thecodrr in https://github.com/streetwriters/notesnook/pull/4177
-7. Fix formatting of single spaced paragarphs in markdown exports by @thecodrr in https://github.com/streetwriters/notesnook/pull/4186
-8. Fix crash if note title only contains whitespace by @thecodrr
-9. Fix attachment download cancellation on switching a note by @thecodrr
-10. Fix attachments not syncing after backup restore by @thecodrr
-11. Do not show success prompt on canceling the unlock note dialog by @thecodrr
-12. Fix title-only notes getting omitted when exporting as TXT
+1. Fix app autostart for AppImage on Linux by @alihamuh in https://github.com/streetwriters/notesnook/pull/4223
+2. Fix editor text is not selectable from margins by @alihamuh in https://github.com/streetwriters/notesnook/pull/4292
+3. Fix some characters not rendering correctly in math blocks by @alihamuh in https://github.com/streetwriters/notesnook/pull/4353
+4. Fix column toolbar position when table is scrolled horizontally by @alihamuh in https://github.com/streetwriters/notesnook/pull/4366
+5. Fix new lines from google docs not being preserved on paste by @alihamuh in https://github.com/streetwriters/notesnook/pull/3988
+6. Improve reliability when changing account password by @thecodrr in https://github.com/streetwriters/notesnook/pull/3689
+7. Fix login stuck after an error
+8. Fix very rare data corruption during sync due to a bug in the SignalR MessagePack protocol
+9. Fix issue where locking a note did not update its status in the list
 
-**New Contributors**
-
-* @Parthiv-M made their first contribution in https://github.com/streetwriters/notesnook/pull/4137
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.14...v2.6.15</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.15...v2.6.16
+</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
