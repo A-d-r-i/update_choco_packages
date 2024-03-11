@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>218.240305.0</version>
+    <version>218.240307.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,20 +16,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Other
- - Update electron-builder to  24.13.3 [#6657](https://github.com/tutao/tutanota/issues/6657)
+    <releaseNotes># What's new
+ - enable tuta-crypt protocol
+
 # Milestone
-https://github.com/tutao/tutanota/milestone/289?closed=1
+https://github.com/tutao/tutanota/milestone/290?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-8ab53106c7bc3fbe137f642f42f1742067ca661f0361bc34c897fdfa94d5eb18
+4ddb1cd7a3f3cd9efc9522af44ef9c7457957645bae24fd9daed568c875a8b51
 
 **tutanota-desktop-win.exe:**
-8babb96df7135cbea72b9e42328b9bb3c7acb7d53c43169ba126cd354b58fce5
+3cce60369ff14d93229f739ad53771691424ba0248c380fcab9f087ee4634c6e
 
 **tutanota-desktop-mac.dmg:**
-dce1e50292d65455cc665e339e1e1865276d0c2f3380afd67d9f60623eb32710</releaseNotes>
+7d448e3ce173dd0e8c54688b775a3c3b880d43220cf0205b462ba6456caf0f04</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
