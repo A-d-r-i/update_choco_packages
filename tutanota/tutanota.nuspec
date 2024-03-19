@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>218.240307.1</version>
+    <version>220.240319.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,20 +17,24 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - enable tuta-crypt protocol
+ - Dompurify 3.0.10 [#6746](https://github.com/tutao/tutanota/issues/6746)
+
+# Bugfixes
+ - Uncaught error on moving mail [#6748](https://github.com/tutao/tutanota/issues/6748)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/290?closed=1
+https://github.com/tutao/tutanota/milestone/292?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-4ddb1cd7a3f3cd9efc9522af44ef9c7457957645bae24fd9daed568c875a8b51
+78ac4281cf22d9aae3b4545a48c1f19d36939db37c6b47bc3919887ff6d41705
 
 **tutanota-desktop-win.exe:**
-3cce60369ff14d93229f739ad53771691424ba0248c380fcab9f087ee4634c6e
+6de9ac5d0508e67fabffc7926d29ef082fe5ae12366d80fde9e5a3fe96ee6486
 
 **tutanota-desktop-mac.dmg:**
-7d448e3ce173dd0e8c54688b775a3c3b880d43220cf0205b462ba6456caf0f04</releaseNotes>
+918391113badbef2c1649f16db6a7f2373b3269008a98fcd28d810b5f73f0bbf</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
