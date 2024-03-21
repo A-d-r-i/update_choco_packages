@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.16</version>
+    <version>2.6.17</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,31 +18,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## ???? Features &amp; new stuff
+    <releaseNotes>##  ???? Fixes &amp; improvements
 
-1. Toggle highlight/text color in the editor directly by clicking on it by @alihamuh in https://github.com/streetwriters/notesnook/pull/4330
-2. Copy images by right clicking in the desktop app (just like in browsers) by @alihamuh in https://github.com/streetwriters/notesnook/pull/4373
-3. View and remove custom dictionary words in `Settings &gt; Editor &gt; Spell check` by @alihamuh in https://github.com/streetwriters/notesnook/pull/4362
-4. Configure custom proxy URL to route all network traffic via a proxy (desktop only) by @alihamuh in https://github.com/streetwriters/notesnook/pull/4196
-5. Sort reminders based on their due date by @alihamuh in https://github.com/streetwriters/notesnook/pull/3394
-7. Restore backups using encryption key in addition to password by @thecodrr in https://github.com/streetwriters/notesnook/pull/4355
-8. Checklists from Google Docs are now preserved on paste by @alihamuh in https://github.com/streetwriters/notesnook/pull/3456
-9. Toggle markdown shortcuts in the editor by @alihamuh in https://github.com/streetwriters/notesnook/pull/4041
-
-##  ???? Fixes &amp; improvements
-
-1. Fix app autostart for AppImage on Linux by @alihamuh in https://github.com/streetwriters/notesnook/pull/4223
-2. Fix editor text is not selectable from margins by @alihamuh in https://github.com/streetwriters/notesnook/pull/4292
-3. Fix some characters not rendering correctly in math blocks by @alihamuh in https://github.com/streetwriters/notesnook/pull/4353
-4. Fix column toolbar position when table is scrolled horizontally by @alihamuh in https://github.com/streetwriters/notesnook/pull/4366
-5. Fix new lines from google docs not being preserved on paste by @alihamuh in https://github.com/streetwriters/notesnook/pull/3988
-6. Improve reliability when changing account password by @thecodrr in https://github.com/streetwriters/notesnook/pull/3689
-7. Fix login stuck after an error
-8. Fix very rare data corruption during sync due to a bug in the SignalR MessagePack protocol
-9. Fix issue where locking a note did not update its status in the list
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.15...v2.6.16
-</releaseNotes>
+1. Make opfs safer by allowing only 1 operation at a time
+2. Make attachment downloading more resilient to errors
+3. Fix `pull failed` error when downloading attachments
+4. Fix `cannot read properties of undefined (reading 'hash')` error on sync
+5. Fix `cannot read property integration of undefined` in web app</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
