@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>220.240321.0</version>
+    <version>220.240403.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,21 +17,32 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># Bugfixes
-- DOMPurify 3.0.11 [#6762](https://github.com/tutao/tutanota/issues/6762)
+ - fix 404 page not shown for paths with more than one slash [#6791](https://github.com/tutao/tutanota/issues/6791)
+ - Importing Calendar Events with unparsable alarm trigger time results in misleading error [#6753](https://github.com/tutao/tutanota/issues/6753)
+ - Sporadic behaviour in calendar views. [#6784](https://github.com/tutao/tutanota/issues/6784)
+ - resuming domain setup stuck in a specific case [#6775](https://github.com/tutao/tutanota/issues/6775)
+ - Tabbing in the editor breaks navigation and templates [#6759](https://github.com/tutao/tutanota/issues/6759)
+ - Non-editable events are draggable on Calendar View [#6735](https://github.com/tutao/tutanota/issues/6735)
+ - Tab order is broken in the event editor [#6656](https://github.com/tutao/tutanota/issues/6656)
+ - Repeatedly Switching Between Search Types Results in Incorrect Views Being Displayed [#6627](https://github.com/tutao/tutanota/issues/6627)
+ - some html emails cause rendering issues [#6581](https://github.com/tutao/tutanota/issues/6581)
+ - Notifications resize incorrectly [#6430](https://github.com/tutao/tutanota/issues/6430)
+ - Typing enter doesn't scroll the mail editor. [#3893](https://github.com/tutao/tutanota/issues/3893)
+ - Not possible to scroll calendar without gestures in mobile layout [#1719](https://github.com/tutao/tutanota/issues/1719)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/293?closed=1
+https://github.com/tutao/tutanota/milestone/294?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-2dbbe576786f287bc111a3b093103669cb9428c7188b5e9c7983ee316ef7a8bb
+956b9361ce2f7716e1dee88ed7489667c01c81f1aedeef17ff2898ac8e5230fb
 
 **tutanota-desktop-win.exe:**
-9fadc46e5d454e013fbbce5930104beb6dbb7e96206053222b43fc26759424dc
+1c23bda6e4be2638f7259fcbbed1282e97ea106e74b0d7e6d854ce4350e4103a
 
 **tutanota-desktop-mac.dmg:**
-b38264909750aed31ba6ff81b98ad741d176bb99f8d7906dd9ffa098aa43fba3</releaseNotes>
+31f21833dfa199335cfbd070feecf33506b31c825ab9620aec173162ecba1c2f</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
