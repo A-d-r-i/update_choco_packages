@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>2.6.17</version>
+    <version>3.0.0</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,13 +18,11 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>##  ???? Fixes &amp; improvements
+    <releaseNotes>### [Read Notesnook v3.0.0's release notes on Notesnook's blog](https://blog.notesnook.com/introducing-notesnook-v3)
 
-1. Make opfs safer by allowing only 1 operation at a time
-2. Make attachment downloading more resilient to errors
-3. Fix `pull failed` error when downloading attachments
-4. Fix `cannot read properties of undefined (reading 'hash')` error on sync
-5. Fix `cannot read property integration of undefined` in web app</releaseNotes>
+---
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v2.6.17...v3.0.0</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.12.3</version>
+    <version>0.13.5</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -19,11 +19,9 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>## What's Changed
-* fix(workspace): data loss (hot-fix) by @EYHN in https://github.com/toeverything/AFFiNE/pull/6110
-* fix(workspace): avoid data loss (hot-fix) by @EYHN in https://github.com/toeverything/AFFiNE/pull/6114
+* fix(infra): fix sync issues on old ids (https://github.com/toeverything/AFFiNE/pull/6474) by @EYHN
 
-
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.12.2...v0.12.3</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.13.4...v0.13.5</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
