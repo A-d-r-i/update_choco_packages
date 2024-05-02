@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>227.240429.0</version>
+    <version>227.240502.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,31 +17,22 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- update DOMPurify
+ - Dompurify 3.1.2 [#6910](https://github.com/tutao/tutanota/issues/6910)
 
-# Bugfixes
- - Fix dictionaries being downloaded too late [#6886](https://github.com/tutao/tutanota/issues/6886)
- - Opening the news as an external user causes an error [#6845](https://github.com/tutao/tutanota/issues/6845)
- - Move setup/onboarding wizard out of "main" chunk [#6844](https://github.com/tutao/tutanota/issues/6844)
- - Label overflows icon [#5685](https://github.com/tutao/tutanota/issues/5685)
- - External users can create folders [#5457](https://github.com/tutao/tutanota/issues/5457)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/299?closed=1
+https://github.com/tutao/tutanota/milestone/300?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-0701b665bea7451cbc21f8471b42163e8c00ed5805e7aa081f0258d914eeaa17
+0fba96c0816e089981bdf7607f80ec776fe3be2dfdb5b02db5a1cec0b343e036
 
 **tutanota-desktop-win.exe:**
-62a195cec1514333a83e8ac1a5bf13ffd90d03802d50db9103fd1e07cc6bcc56
+78b88c0f6f563a94c0073a74c1b732cf32225975237df1b742703fae58426fcc
 
 **tutanota-desktop-mac.dmg:**
-10aba809dda1055abf2b629a559e3d627b9fdece384a8b338aec06cc56621ad5
-
-**tutanota-desktop-227.240429.0-unpacked-linux.tar.gz**
-421309dfbbf07a9d86b89040a39dec536b36d4d53972bf939751ceb53a5b6b1b</releaseNotes>
+8948b20d35511249fe78881acf8b2504556db632e1f281fd947d51b2a4008379</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
