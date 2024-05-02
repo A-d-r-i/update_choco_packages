@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>audiomoth-usb</id>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
     <title>AudioMoth USB Microphone App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,8 +15,8 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application capable of configuring the functionality of the AudioMoth-USB-Microphone firmware.</summary>
-    <releaseNotes>* Updated Electron
-* Matched UI to other AudioMoth apps</releaseNotes>
+    <releaseNotes>* Added device ID display
+* Matched filter slider functionality to the AudioMoth Configuration App</releaseNotes>
     <tags>audiomoth-usb audiomoth usb-microphone-app microphone openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-USB-Microphone-App</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/audiomoth-usb</packageSourceUrl>
