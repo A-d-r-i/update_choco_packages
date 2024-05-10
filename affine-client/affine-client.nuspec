@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.13.5</version>
+    <version>0.14.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -19,9 +19,13 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>## What's Changed
-* fix(infra): fix sync issues on old ids (https://github.com/toeverything/AFFiNE/pull/6474) by @EYHN
+* feat: bump blocksuite by @donteatfriedrice in https://github.com/toeverything/AFFiNE/pull/6852
+* fix(core): mixpanel error when opt-out by @EYHN in https://github.com/toeverything/AFFiNE/pull/6861
+* Revert "chore: bump @pengx17/electron-forge-maker-appimage (#6726)" by @pengx17 in https://github.com/toeverything/AFFiNE/pull/6859
+* chore: bump up all non-major dependencies by @renovate in https://github.com/toeverything/AFFiNE/pull/6856
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.13.4...v0.13.5</releaseNotes>
+
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.14.2...v0.14.3</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
