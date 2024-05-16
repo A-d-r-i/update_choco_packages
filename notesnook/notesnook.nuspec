@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.4</version>
+    <version>3.0.5</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,13 +18,11 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>This release fixes a critical issue where 2FA login codes were not being sent to email/phone. Everything else is exactly the same as v3.0.3.
-
-### [Read Notesnook v3.0.3's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.3/)
+    <releaseNotes>### [Read Notesnook v3.0.5's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.5/)
 
 ---
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.3...v3.0.4</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.4...v3.0.5</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>

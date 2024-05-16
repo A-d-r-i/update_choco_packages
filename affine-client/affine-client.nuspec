@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.14.3</version>
+    <version>0.14.6</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,14 +18,19 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## What's Changed
-* feat: bump blocksuite by @donteatfriedrice in https://github.com/toeverything/AFFiNE/pull/6852
-* fix(core): mixpanel error when opt-out by @EYHN in https://github.com/toeverything/AFFiNE/pull/6861
-* Revert "chore: bump @pengx17/electron-forge-maker-appimage (#6726)" by @pengx17 in https://github.com/toeverything/AFFiNE/pull/6859
-* chore: bump up all non-major dependencies by @renovate in https://github.com/toeverything/AFFiNE/pull/6856
+    <releaseNotes>## Highlight
+
+This release brings [`gpt4-o`](https://openai.com/index/hello-gpt-4o/) for AFFiNE AI
+
+## What's Changed
+* chore: bump up nx-cloud version to v19 by @renovate in https://github.com/toeverything/AFFiNE/pull/6937
+* chore: bump up @aws-sdk/client-s3 version to v3.576.0 by @renovate in https://github.com/toeverything/AFFiNE/pull/6936
+* fix(core): unexpected history preview style by @JimmFly in https://github.com/toeverything/AFFiNE/pull/6944
+* fix(core): add affine.pro to trustedDomain by @JimmFly in https://github.com/toeverything/AFFiNE/pull/6943
+* feat: renew models by @darkskygit in https://github.com/toeverything/AFFiNE/pull/6934
 
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.14.2...v0.14.3</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.14.5...v0.14.6</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
