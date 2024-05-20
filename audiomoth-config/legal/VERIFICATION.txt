@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.10.2 : <https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases/download/1.10.2/AudioMothConfigurationAppSetup1.10.2.exe>
+  Version 1.11.0 : <https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App/releases/download/1.11.0/AudioMothConfigurationAppSetup1.11.0.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: C964AECDC9E68D9E178CBDFCD2DE33CCDD5443718FF8314594333F6A098D3FE8
+  checksum: BAEA1541D1F9A04778C2CA8535EFE2F3ABF3EF964EF0AE1502A0AEB8A224F564
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Configuration-App/master/LICENSE> 
