@@ -17,7 +17,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer and LICENSE
-Invoke-WebRequest -Uri "https://github.com/toeverything/AFFiNE/releases/download/v$tag/affine-stable-windows-x64.exe" -OutFile "./$id/tools/$id.exe"
+Invoke-WebRequest -Uri "https://github.com/toeverything/AFFiNE/releases/download/v$tag/affine-$tag-stable-windows-x64.exe" -OutFile "./$id/tools/$id.exe"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/toeverything/AFFiNE/master/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 # calculation of checksum
@@ -33,7 +33,7 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag : <https://github.com/toeverything/AFFiNE/releases/download/v$tag/affine-stable-windows-x64.exe>
+  Version $tag : <https://github.com/toeverything/AFFiNE/releases/download/v$tag/affine-$tag-stable-windows-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
