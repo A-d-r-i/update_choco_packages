@@ -44,7 +44,7 @@ $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
 # download installer
-Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe" -OutFile "./$id/tools/$id.exe"
+Invoke-WebRequest -Uri "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag-x64.exe" -OutFile "./$id/tools/$id.exe"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
