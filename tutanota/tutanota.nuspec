@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>230.240603.0</version>
+    <version>232.240626.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,37 +16,32 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Preview in email notification: sender &amp; recipient [#6608](https://github.com/tutao/tutanota/issues/6608)
- - Fix appearances of new logo [#6972](https://github.com/tutao/tutanota/issues/6972)
- - Allow selecting contacts in import dialog [#6876](https://github.com/tutao/tutanota/issues/6876)
- - Make the calendar navigatable by keyboard [#6870](https://github.com/tutao/tutanota/issues/6870)
- - Use build plugins to generate wasm glue &amp; fallback [#6835](https://github.com/tutao/tutanota/issues/6835)
- - Add JS fallback for WASM components [#6768](https://github.com/tutao/tutanota/issues/6768)
- - Handle wasm loading from Node process [#7011](https://github.com/tutao/tutanota/issues/7011)
-
-# Bugfixes
- - Old tuta logo is shown on braintree payment verification page [#6982](https://github.com/tutao/tutanota/issues/6982)
- - PDF Invoices don't show VatID number and text overflows [#6947](https://github.com/tutao/tutanota/issues/6947)
- - Incorrect HTML email rendering [#6930](https://github.com/tutao/tutanota/issues/6930)
- - Have custom domain always be first when adding email address [#6890](https://github.com/tutao/tutanota/issues/6890)
- - Mail Folder Tooltip Obscures Full Name in Certain Cases [#6302](https://github.com/tutao/tutanota/issues/6302)
- - Cannot open message with keyboard shortcut [#5361](https://github.com/tutao/tutanota/issues/5361)
- - Preshared password field in Contact editor is not a password field [#4617](https://github.com/tutao/tutanota/issues/4617)
+    <releaseNotes># Bugfixes
+ - Deleting calendar event in the event popup does not close the popup [#7107](https://github.com/tutao/tutanota/issues/7107)
+ - Invalid state: not connecting [#7097](https://github.com/tutao/tutanota/issues/7097)
+ - Whitelabel colors are not available on native clients [#7090](https://github.com/tutao/tutanota/issues/7090)
+ - Unexpected error on login when safeStorage is not available [#7077](https://github.com/tutao/tutanota/issues/7077)
+ - PDF invoices do not render special characters [#7075](https://github.com/tutao/tutanota/issues/7075)
+ - Leaving survey images are embedded into Icons.ts [#7060](https://github.com/tutao/tutanota/issues/7060)
+ - Icons in mail actions bar do not have tooltip on hover [#7031](https://github.com/tutao/tutanota/issues/7031)
+ - No navigation buttons in calendar view [#7005](https://github.com/tutao/tutanota/issues/7005)
+ - downgrading with contact list throws error [#6998](https://github.com/tutao/tutanota/issues/6998)
+ - setting negative reminder times in calendar [#6951](https://github.com/tutao/tutanota/issues/6951)
+ - In calendar navigation to next month via month picker only navigates to previous month [#6860](https://github.com/tutao/tutanota/issues/6860)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/305?closed=1
+https://github.com/tutao/tutanota/milestone/307?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-a6046a95a51b1031007787eba284a5a1e88d117d3654448f86a233448b90b212
+2ec2e1b16ac7fa145cc7b863c7619bb433047f5a00ca04b0b6c0b1a669d939f1
 
 **tutanota-desktop-win.exe:**
-aaa63550094f6339988340824a169a6d411e6c5b6bb06975e25c74fb87edb11d
+9772a48e069401a0f4086d508423115c588a685bd69d7ae602584d72a5fe80d5
 
 **tutanota-desktop-mac.dmg:**
-e2f4a0cd7ac13b07855359a3463ec1ad32dcd647e1657dd66a9d22cd1121e685</releaseNotes>
+390121b0d62059978047cab206cf2c058b908bb3623a0197967dedef1632760e</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
