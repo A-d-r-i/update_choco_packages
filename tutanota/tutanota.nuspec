@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>232.240626.0</version>
+    <version>234.240627.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,32 +16,29 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Deleting calendar event in the event popup does not close the popup [#7107](https://github.com/tutao/tutanota/issues/7107)
- - Invalid state: not connecting [#7097](https://github.com/tutao/tutanota/issues/7097)
- - Whitelabel colors are not available on native clients [#7090](https://github.com/tutao/tutanota/issues/7090)
- - Unexpected error on login when safeStorage is not available [#7077](https://github.com/tutao/tutanota/issues/7077)
- - PDF invoices do not render special characters [#7075](https://github.com/tutao/tutanota/issues/7075)
- - Leaving survey images are embedded into Icons.ts [#7060](https://github.com/tutao/tutanota/issues/7060)
- - Icons in mail actions bar do not have tooltip on hover [#7031](https://github.com/tutao/tutanota/issues/7031)
- - No navigation buttons in calendar view [#7005](https://github.com/tutao/tutanota/issues/7005)
- - downgrading with contact list throws error [#6998](https://github.com/tutao/tutanota/issues/6998)
- - setting negative reminder times in calendar [#6951](https://github.com/tutao/tutanota/issues/6951)
- - In calendar navigation to next month via month picker only navigates to previous month [#6860](https://github.com/tutao/tutanota/issues/6860)
+    <releaseNotes># What's new
+ - Add base url to EntityClient update [#7132](https://github.com/tutao/tutanota/issues/7132)
+ - Shared group key rotation [#7100](https://github.com/tutao/tutanota/issues/7100)
+ - Introduce SystemModelV102 [#7093](https://github.com/tutao/tutanota/issues/7093)
+ - Send user group key version when re-encrypting it [#7092](https://github.com/tutao/tutanota/issues/7092)
+ - Remove special handling for case that former group key list is not set [#7079](https://github.com/tutao/tutanota/issues/7079)
+
+
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/307?closed=1
+https://github.com/tutao/tutanota/milestone/309?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-2ec2e1b16ac7fa145cc7b863c7619bb433047f5a00ca04b0b6c0b1a669d939f1
+0539990a7a1338968530201ca741406e2c8dcfc4345858a23d5ca1ea77c84b1c
 
 **tutanota-desktop-win.exe:**
-9772a48e069401a0f4086d508423115c588a685bd69d7ae602584d72a5fe80d5
+e3c643bc45cdc5e291cf9910389ab4e81ba84b911e292662b34e53d35932db9b
 
 **tutanota-desktop-mac.dmg:**
-390121b0d62059978047cab206cf2c058b908bb3623a0197967dedef1632760e</releaseNotes>
+6e4ebd04475cafbc867683cba917f8660b907acd9bb3969dfc84e54d56c14f03</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
