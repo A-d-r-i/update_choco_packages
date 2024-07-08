@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>filen</id>
-    <version>2.0.24</version>
+    <version>0.1.22</version>
     <title>Filen</title>
     <authors>Filen Cloud Dienste UG</authors>
     <owners>Adri</owners>
@@ -16,19 +16,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
-    <releaseNotes>### QoL/Bugfix release
-
-- Fixed a bug that would cause the client to crash when syncing really large datasets
-- Fixed edge case sync issues when moving/renaming items
-- Re-enabled dir watcher on Linux with polling fallback
-- General bug fixes and performance improvements
-
-Windows x86_64: https://cdn.filen.io/desktop/release/filen_x64.exe
-Windows arm64: https://cdn.filen.io/desktop/release/filen_arm64.exe
-MacOS x86_64 (Intel): https://cdn.filen.io/desktop/release/filen_x64.dmg
-MacOS arm64 (Apple Silicon): https://cdn.filen.io/desktop/release/filen_arm64.dmg
-Linux x86_64: https://cdn.filen.io/desktop/release/filen_x86_64.AppImage
-Linux arm64: https://cdn.filen.io/desktop/release/filen_arm64.AppImage</releaseNotes>
+    <releaseNotes>**Full Changelog**: https://github.com/FilenCloudDienste/filen-desktop/commits/v0.1.22</releaseNotes>
     <tags>filen cloud zero-knoledge encrypted storage</tags>
     <projectSourceUrl>https://github.com/FilenCloudDienste/filen-desktop</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/filen</packageSourceUrl>
