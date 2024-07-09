@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.15.3</version>
+    <version>0.15.4</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -51,9 +51,14 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 * feat: add prompt level config by @darkskygit in https://github.com/toeverything/AFFiNE/pull/7445
 * feat: update ppt prompt by @darkskygit in https://github.com/toeverything/AFFiNE/pull/7446
 * feat(core): believer subscription UI by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/7431
+* chore: revert back electron to v30 by @pengx17 in https://github.com/toeverything/AFFiNE/pull/7453
+* feat(core): adjust search strategy by @EYHN in https://github.com/toeverything/AFFiNE/pull/7447
+* feat(core): add doc info modal by @JimmFly in https://github.com/toeverything/AFFiNE/pull/7409
+* feat: bump bs by @doouding in https://github.com/toeverything/AFFiNE/pull/7430
+* fix(core): impl ai-island animation via css transform by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/7458
 
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.15.2...v0.15.3</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.15.2...v0.15.4</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
