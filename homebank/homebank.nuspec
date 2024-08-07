@@ -7,8 +7,8 @@
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
-    <projectUrl>http://homebank.free.fr/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/dbkblk/chocolatey_packages/master/ico/homebank.png</iconUrl>
+    <projectUrl>https://www.gethomebank.org/</projectUrl>
+    <iconUrl>https://www.gethomebank.org/img/favicon-96x96.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>HomeBank is a free software (as in "free speech" and also as in "free beer") that will assist you to manage your personal accounting.
 It is designed to easy to use and be able to analyse your personal finance and budget in detail using powerful filtering tools and beautiful charts.
@@ -37,7 +37,7 @@ Made 5.7.2 release
     <tags>admin homebank finance accounting</tags>
     <projectSourceUrl>https://code.launchpad.net/homebank</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/homebank</packageSourceUrl>
-    <docsUrl>http://homebank.free.fr/help/</docsUrl>
+    <docsUrl>https://www.gethomebank.org/en/support.php</docsUrl>
     <bugTrackerUrl>https://bugs.launchpad.net/homebank</bugTrackerUrl>
   </metadata>
 </package>
