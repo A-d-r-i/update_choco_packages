@@ -19,7 +19,7 @@ $xml.Save($file)
 
 # download installer and LICENSE
 Invoke-WebRequest -Uri "https://cdn.filen.io/desktop/release/filen_x64.exe" -OutFile "./$id/tools/$id.exe"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FilenCloudDienste/filen-desktop/master/LICENSE.md" -OutFile "./$id/legal/LICENSE.txt"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FilenCloudDienste/filen-desktop/main/LICENSE" -OutFile "./$id/legal/LICENSE.txt"
 
 # calculation of checksum
 $TABLE = Get-FileHash "./$id/tools/$id.exe" -Algorithm SHA256
@@ -42,7 +42,7 @@ and can be verified like this:
   checksum type: SHA256
   checksum: $SHA
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/FilenCloudDienste/filen-desktop/master/LICENSE.md> " | out-file -filepath "./$id/legal/VERIFICATION.txt"
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/FilenCloudDienste/filen-desktop/main/LICENSE> " | out-file -filepath "./$id/legal/VERIFICATION.txt"
 
 # packaging
 choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
