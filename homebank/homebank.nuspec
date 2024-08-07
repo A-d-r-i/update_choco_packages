@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.7.4</version>
+    <version>5.8.1</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,22 +17,21 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.7.2 release
-* bugfix: crash was possible when no file loaded and change to main chart
-* bugfix: #[2043152](https://bugs.launchpad.net/bugs/2043152)	lock icon for transaction sometime disapear due to column resize
-* bugfix: #[2042771](https://bugs.launchpad.net/bugs/2042771)	currency don't update due to wrong api url since 5.7
-* bugfix: #[2042770](https://bugs.launchpad.net/bugs/2042770)	HomeBank closes after leaving "preferences" menu with no file open.
-* bugfix: #[2042668](https://bugs.launchpad.net/bugs/2042668)	remove/sanitize GTK listview quicksearch
-* bugfix: #[2042484](https://bugs.launchpad.net/bugs/2042484)	category popoverlist shows subcat income standalone its expense parent
-* bugfix: #[2042463](https://bugs.launchpad.net/bugs/2042463)	manage categories add subcategory fail after a search
-* bugfix: #[2042035](https://bugs.launchpad.net/bugs/2042035)	assign edit cancel faultly persist the rule search
-* bugfix: #[2040494](https://bugs.launchpad.net/bugs/2040494)	App crashes when exporting a report after I delete a category that contained data
-* bugfix: #[2040010](https://bugs.launchpad.net/bugs/2040010)	ISO 8601 date format not respected when exporting to clipboard or CSV
-* bugfix: #[2039995](https://bugs.launchpad.net/bugs/2039995)	budget by time do not filter txn type exp/inc
-* bugfix: #[2039493](https://bugs.launchpad.net/bugs/2039493)	statistics report crash when opened with a too wide date range
-* wish: #[2042692](https://bugs.launchpad.net/bugs/2042692)	count and show number of selected transactions when suppressing them
+Made 5.8.1 release
+* bugfix: #[2066161](https://bugs.launchpad.net/bugs/2066161) "Raw amount" check menu is not saved
+* bugfix: #[2065955](https://bugs.launchpad.net/bugs/2065955) scheduled transactions not automatically posted before weekend
+* bugfix: #[2065929](https://bugs.launchpad.net/bugs/2065929) saved filter does not show txn with remind status
+* bugfix: #[2065781](https://bugs.launchpad.net/bugs/2065781) balance not updated after edit a transaction in ledger
+* bugfix: #[2065770](https://bugs.launchpad.net/bugs/2065770) display bug of next date column in template dialog
+* bugfix: #[2065758](https://bugs.launchpad.net/bugs/2065758) incorrect window title for credit card type
+* bugfix: #[2065740](https://bugs.launchpad.net/bugs/2065740) scheduled transactions are broken for "Next Payout"
+* bugfix: #[2065628](https://bugs.launchpad.net/bugs/2065628) windows: crash after open recent file no more existing
+* bugfix: #[2065625](https://bugs.launchpad.net/bugs/2065625) save button stay disabled after edit a transaction
+* bugfix: #[2065592](https://bugs.launchpad.net/bugs/2065592) changing status to none from txn dialog fail
+* bugfix: #[2065551](https://bugs.launchpad.net/bugs/2065551) embedded help file misses some new files and images
+* bugfix: #[2065531](https://bugs.launchpad.net/bugs/2065531) statistics report with tags filter show extra tags
 
-**Full changelog:** [http://homebank.free.fr/ChangeLog](http://homebank.free.fr/ChangeLog)</releaseNotes>
+**Full changelog:** [https://www.gethomebank.org/ChangeLog](https://www.gethomebank.org/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
     <tags>admin homebank finance accounting</tags>
     <projectSourceUrl>https://code.launchpad.net/homebank</projectSourceUrl>

@@ -2,16 +2,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official site repository listed on <http://homebank.free.fr/fr/downloads.php>
+The installer have been downloaded from their official site repository listed on <https://www.gethomebank.org/en/downloads.php>
 and can be verified like this:
 
 1. Download the following installer:
-  Version 5.7.4 : <http://homebank.free.fr/public/binaries/HomeBank-5.7.4-setup.exe>
+  Version 5.8.1 : <https://www.gethomebank.org/public/binaries/HomeBank-5.8.1-setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 478D69D096BD42ED113396E2FA08607F2E2558ACFF810717BB5FBD1C6B594740
+  checksum: 622FE28F8537DBAE2A203BDCC4DF2B2244AC57908BB4E886267E03777D56AC5A
 
 File 'LICENSE.txt' is obtained from the official website 
