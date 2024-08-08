@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.8.1</version>
+    <version>5.8.2</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,19 +17,18 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.8.1 release
-* bugfix: #[2066161](https://bugs.launchpad.net/bugs/2066161) "Raw amount" check menu is not saved
-* bugfix: #[2065955](https://bugs.launchpad.net/bugs/2065955) scheduled transactions not automatically posted before weekend
-* bugfix: #[2065929](https://bugs.launchpad.net/bugs/2065929) saved filter does not show txn with remind status
-* bugfix: #[2065781](https://bugs.launchpad.net/bugs/2065781) balance not updated after edit a transaction in ledger
-* bugfix: #[2065770](https://bugs.launchpad.net/bugs/2065770) display bug of next date column in template dialog
-* bugfix: #[2065758](https://bugs.launchpad.net/bugs/2065758) incorrect window title for credit card type
-* bugfix: #[2065740](https://bugs.launchpad.net/bugs/2065740) scheduled transactions are broken for "Next Payout"
-* bugfix: #[2065628](https://bugs.launchpad.net/bugs/2065628) windows: crash after open recent file no more existing
-* bugfix: #[2065625](https://bugs.launchpad.net/bugs/2065625) save button stay disabled after edit a transaction
-* bugfix: #[2065592](https://bugs.launchpad.net/bugs/2065592) changing status to none from txn dialog fail
-* bugfix: #[2065551](https://bugs.launchpad.net/bugs/2065551) embedded help file misses some new files and images
-* bugfix: #[2065531](https://bugs.launchpad.net/bugs/2065531) statistics report with tags filter show extra tags
+Made 5.8.2 release
+* bugfix: #[2073805](https://bugs.launchpad.net/bugs/2073805) switching saved filter with same date range doesn't refresh
+* bugfix: #[2073233](https://bugs.launchpad.net/bugs/2073233) vehicle cost distance/volume is rounded to distance and always xx,0
+* bugfix: #[2071648](https://bugs.launchpad.net/bugs/2071648) possibility for positive or negative budget values gone
+* bugfix: #[2069152](https://bugs.launchpad.net/bugs/2069152) windows: CFA protected folder save fail with no dialog warning
+* bugfix: #[2068825](https://bugs.launchpad.net/bugs/2068825) budget report type filter do not work anymore
+* bugfix: #[2068664](https://bugs.launchpad.net/bugs/2068664) filter text option only work when both memo and number are filled
+* bugfix: #[2068634](https://bugs.launchpad.net/bugs/2068634) copy/paste a txn do not enable save
+* bugfix: #[2067855](https://bugs.launchpad.net/bugs/2067855) transfer from one account to another does not sync statuse even with "Sync transfer Status" checked
+* bugfix: #[2067440](https://bugs.launchpad.net/bugs/2067440) payment settings not retained
+* bugfix: #[2066539](https://bugs.launchpad.net/bugs/2066539) budget Report - unbudgeted includes transactions for subcats where main cat has a budget
+* bugfix: #[2062021](https://bugs.launchpad.net/bugs/2062021) transaction date may change if system shortdate is not dd/MM/yy
 
 **Full changelog:** [https://www.gethomebank.org/ChangeLog](https://www.gethomebank.org/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
