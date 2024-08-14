@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.16.2</version>
+    <version>0.16.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -20,37 +20,28 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>### ???? Features
 
-- Bump bs - by **Lye Hongtao** in https://github.com/toeverything/AFFiNE/issues/7836 [&lt;samp&gt;(dc519)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dc519348c)
-- **admin**:
-  - Add self-host setup and user management page - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7537 [&lt;samp&gt;(ccf22)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ccf225c8f)
-  - Add config page to admin - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7619 [&lt;samp&gt;(7f7c0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7f7c0519a)
-  - Add server runtime config settings - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7618 [&lt;samp&gt;(bf6e3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bf6e36de3)
-  - Add prompt management page - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7611 [&lt;samp&gt;(b2140)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b21400396)
-- **core**:
-  - Rewrite page-mode-switch with RadioGroup, bind hotkey with cmdk - by **CatsJuice** in https://github.com/toeverything/AFFiNE/issues/7758 [&lt;samp&gt;(75e02)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/75e02bb08)
-  - New theme editor poc - by **CatsJuice** in https://github.com/toeverything/AFFiNE/issues/7810 [&lt;samp&gt;(6228b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6228b2727)
-  - Add configuration for experimental features - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7699 [&lt;samp&gt;(9037e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9037e6695)
-- **i18n**:
-  - Fix i18n en-Us &amp; en json english style - by **hwangdev97** in https://github.com/toeverything/AFFiNE/issues/7834 [&lt;samp&gt;(4ac9b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4ac9bd779)
+- Bump bs - by **doouding** in https://github.com/toeverything/AFFiNE/issues/7866 [&lt;samp&gt;(05ac3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/05ac3dbdc)
 
 ### ???? Bug Fixes
 
-- Center peek responsiveness update - by **pengx17** in https://github.com/toeverything/AFFiNE/issues/7814 [&lt;samp&gt;(d82f4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d82f4b546)
-- Do not use globalShortcut for tab switching - by **pengx17** in https://github.com/toeverything/AFFiNE/issues/7827 [&lt;samp&gt;(a6169)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a6169ab26)
+- Center peek support open in new tab - by **pengx17** in https://github.com/toeverything/AFFiNE/issues/7848 [&lt;samp&gt;(d86f7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d86f7f41d)
+- Admin panel schema - by **DarkSky** in https://github.com/toeverything/AFFiNE/issues/7851 [&lt;samp&gt;(24c34)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/24c34eb3f)
 - **admin**:
-  - Handle error login status - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7646 [&lt;samp&gt;(6dea8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6dea831d8)
-  - Organize admin panel - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/7840 [&lt;samp&gt;(0ec19)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0ec1995ad)
-- **core**:
-  - Wrong color of ai-subscribe button - by **CatsJuice** in https://github.com/toeverything/AFFiNE/issues/7816 [&lt;samp&gt;(06d5d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/06d5d9719)
-  - Some doc missing in search result - by **EYHN** in https://github.com/toeverything/AFFiNE/issues/7818 [&lt;samp&gt;(b993a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b993ab04d)
-  - Better search result - by **EYHN** in https://github.com/toeverything/AFFiNE/issues/7819 [&lt;samp&gt;(a579c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a579cc771)
-  - Checkout event - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/7844 [&lt;samp&gt;(69c64)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/69c64b2fc)
+  - Avoid frequent refetch - by **forehalo** in https://github.com/toeverything/AFFiNE/issues/7863 [&lt;samp&gt;(f69f0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f69f026ac)
+  - Frequent query requests in the search - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7854 [&lt;samp&gt;(05247)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/05247bb24)
+  - User form not dynamically updating as expected - by **JimmFly** in https://github.com/toeverything/AFFiNE/issues/7858 [&lt;samp&gt;(994b5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/994b53950)
 - **electron**:
-  - App got deleted when auto update on windows - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/7820 [&lt;samp&gt;(83a9b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/83a9beed8)
+  - Adjust app-tabs-header styles - by **pengx17** in https://github.com/toeverything/AFFiNE/issues/7849 [&lt;samp&gt;(d4065)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d4065fee7)
+  - Cmd+num not working on mac - by **pengx17** in https://github.com/toeverything/AFFiNE/issues/7865 [&lt;samp&gt;(d5eda)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d5edadabe)
 - **server**:
-  - Use timestamp with timezone - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/7847 [&lt;samp&gt;(171a9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/171a97490)
+  - Prelude should load both local and remote config file - by **forehalo** in https://github.com/toeverything/AFFiNE/issues/7852 [&lt;samp&gt;(7afba)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7afba6b8b)
+  - Change password with token should be public - by **forehalo** in https://github.com/toeverything/AFFiNE/issues/7855 [&lt;samp&gt;(0ba51)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0ba516866)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.16.1...v0.16.2)</releaseNotes>
+### ???? Performance
+
+- **core**: Avoid page init when only id required - by **forehalo** in https://github.com/toeverything/AFFiNE/issues/7867 [&lt;samp&gt;(99e70)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/99e70c91e)
+
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.16.2...v0.16.3)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
