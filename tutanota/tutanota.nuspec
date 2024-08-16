@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>240.240813.0</version>
+    <version>240.240816.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,28 +16,27 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Update Electron to 31.3.1 [#7347](https://github.com/tutao/tutanota/issues/7347)
- - Promote notification [#7292](https://github.com/tutao/tutanota/issues/7292)
-
-# Bugfixes
- - Payment verification is broken - Braintree API call always fails due to disallowed characters in `amount` parameter [#7370](https://github.com/tutao/tutanota/issues/7370)
- - Clicking twice on a Search category causes the app to logout [#7319](https://github.com/tutao/tutanota/issues/7319)
- - Clicking "show contact" on a mail does not redirect to the selected contact. [#7256](https://github.com/tutao/tutanota/issues/7256)
- - /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found [#7133](https://github.com/tutao/tutanota/issues/7133)
+    <releaseNotes># Bugfixes
+ - always initialize kdfVersion and passphrase when resuming session [#7400](https://github.com/tutao/tutanota/issues/7400)
+ - Rich notification news item appears on desktop [#7392](https://github.com/tutao/tutanota/issues/7392)
+ - fix delete account dialog asking for a new password [#7391](https://github.com/tutao/tutanota/issues/7391)
+ - App password has to be entered three times to login [#7382](https://github.com/tutao/tutanota/issues/7382)
+ - Enabling the App Password unlock method does not work [#7377](https://github.com/tutao/tutanota/issues/7377)
+ - Only catch LockedErrors and throw anything else in KeyRotationFacade [#7375](https://github.com/tutao/tutanota/issues/7375)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/316?closed=1
+https://github.com/tutao/tutanota/milestone/317?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-cce7d7bd6c135640a46c855de89ac1963f73220b2e453acc7ee1cee489bdc1a8
+7f2dc0a8df974c4303e2b20af7f378a4ad4c20d86d198581526053c6127f5199
 
 **tutanota-desktop-win.exe:**
-2a282fea572e101e3b1150ae8441863ca322ce40a2791804c9e5c5778b720b48
+42a6b0ddf41735723a37ea1bdcf898f7a47037ad462742330c7067774f42beb9
 
 **tutanota-desktop-mac.dmg:**
-ffe6c8942da2955e4c3c2c25d29552791b6c85b2c3dff4328cfb6271d20affa0</releaseNotes>
+ae71fb5d91ce352412267620536d2aef155e826b7d2afc6616bbfef59fa245df</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
