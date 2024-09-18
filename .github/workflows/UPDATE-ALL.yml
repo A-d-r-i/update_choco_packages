@@ -439,34 +439,34 @@ jobs:
           }
           }
 
-      #- name: DOTDOTGOOSE
-        #if: always()
-        #run:  |
-          #$headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
-          #$Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
-          #Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
-          #$Source = Get-Content -path DDG.html
-          #$Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
-          #$tag = $matches[1]
-          #
-          #echo $Version
-          #echo $tag
-          #
-          #if ( $tag -eq $Version )
-          #{
-          #echo 'Last version already exist'
-          #Remove-Item DDG.html
-          #}
-          #else
-          #{
-          #if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
-          #./send_dotdotgoose.ps1
-          #Remove-Item DDG.html
-          #} else {
-          #echo 'The version number is not in the correct format'
-          #exit 1
-          #}
-          #}
+      - name: DOTDOTGOOSE
+        if: always()
+        run:  |
+          $headers = @{Authorization="Bearer $env:ACTIONS_TOKEN"}
+          $Version = ([xml](Get-Content ./dotdotgoose/dotdotgoose.nuspec)).package.metadata.version
+          Invoke-WebRequest -Uri "https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/index.html" -OutFile "DDG.html"
+          $Source = Get-Content -path DDG.html
+          $Source -match '<ul class="local-list"> <li>[0-9]{4}-[0-9]{2}-[0-9]{2} - version ([0-9]+(\.[0-9]+)+) '
+          $tag = $matches[1]
+          
+          echo $Version
+          echo $tag
+          
+          if ( $tag -eq $Version )
+          {
+          echo 'Last version already exist'
+          Remove-Item DDG.html
+          }
+          else
+          {
+          if ($tag -match '^[0-9]+.[0-9]+(.[0-9]+)?$'){
+          ./send_dotdotgoose.ps1
+          Remove-Item DDG.html
+          } else {
+          echo 'The version number is not in the correct format'
+          exit 1
+          }
+          }
 
       - name: FILEN
         if: always()
