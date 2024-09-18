@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dotdotgoose</id>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
     <title>DotDotGoose</title>
     <authors>Peter Ersts</authors>
     <owners>Adri</owners>
@@ -19,15 +19,13 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>DotDotGoose is a free, open source tool to assist with manually counting objects in images </summary>
-    <releaseNotes>2023-01-31 - version 1.6.0
-* **Enhancement** - Internationalization: Translations for Chinese, French, Spanish, Vietnamese.
-* **Enhancement** - Undo and redo capabilities.
-* **Enhancement** - Export image display area (image, points, grid) to new jpg.
-* **Enhancement** - Dirty data check on close to prevent loss of unsaved changes.
-* **Enhancement** - Export point coordinates as geographic coordinates (command line only).
-* **Enhancement** - Certificate signed Windows binary to help prevent false positives from virus/malware scanners.
-* **Enhancement** - Support for INTEL - Big Sur (11.0) Montery (12.0) Ventura (13.0)
-* **Enhancement** - Support for ARM - Montery (12.0) Ventura (13.0)
+    <releaseNotes>2024-01-02 - version 1.7.0
+* **Bug Fix** - Prevent crash during export when images are missing.
+* **Bug Fix** - Renaming point in some situations could cause crash.
+* **Enhancement** - Better dark mode support.
+* **Enhancement** - Rescan working directory for new or missing images on loading existing pnt file.
+* **Enhancement** - Interactive image enhancement.
+* **Enhancement** - Experimental support for external polygon annotations to highlight counting boundary in overlapping images. Contact us for more information.
 
 **Full changelog:** [https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/](https://biodiversityinformatics.amnh.org/open_source/dotdotgoose/) </releaseNotes>
     <tags>dotdotgoose tool counting object image</tags>
