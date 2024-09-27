@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.17.1</version>
+    <version>0.17.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,32 +18,20 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>
-### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+    <releaseNotes>### ???? Features
 
-- Collect workflow's assistant content &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/8373 [&lt;samp&gt;(ed8e4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ed8e4e30f)
+- Add open info button to doc center peek - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8388 [&lt;samp&gt;(76ff5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/76ff56a71)
+- Improve markdown formatting - by @darkskygit in https://github.com/toeverything/AFFiNE/issues/8398 [&lt;samp&gt;(a9b29)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a9b29d24f)
+
+### ???? Bug Fixes
+
+- Incorrect app sidebar fallback - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8392 [&lt;samp&gt;(abd57)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/abd57484b)
 - **core**:
-  - Circular dependency &amp;nbsp;-&amp;nbsp; by @forehalo [&lt;samp&gt;(39f60)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/39f60145f)
-  - Remove openInfoModalAtom to avoid multiple modal opened in split-view &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8329 [&lt;samp&gt;(f9e0c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f9e0c1e57)
-  - Fix preview mode &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8349 [&lt;samp&gt;(d0f04)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d0f04d22f)
-  - Unexpected routing history appears on the shared page &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8356 [&lt;samp&gt;(75bc6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/75bc6df91)
-  - Handle composition event for Input component &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8351 [&lt;samp&gt;(2df20)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2df2003bd)
-  - Block link recognition in self-hosted &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/8340 [&lt;samp&gt;(4daa9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4daa95989)
-  - Can not scroll when backlink list is too long &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8370 [&lt;samp&gt;(45f5c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/45f5c89cd)
-- **electron**:
-  - Cookie redirecting issue &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8347 [&lt;samp&gt;(503e0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/503e02041)
-  - Workaround for unstable e2e &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8357 [&lt;samp&gt;(61107)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6110767fa)
-  - Remove active tab shadow &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8284 [&lt;samp&gt;(a4303)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a430367c3)
-  - Enable WAL mode for sqlite &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8336 [&lt;samp&gt;(e8399)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e839947dd)
-- **mobile**:
-  - Scroll optimization &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8362 [&lt;samp&gt;(9eae3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9eae3de1a)
-  - Cannot run locally &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8383 [&lt;samp&gt;(e6feb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e6feb17ac)
-- **server**:
-  - Sign out &amp;nbsp;-&amp;nbsp; by @forehalo [&lt;samp&gt;(2cabc)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2cabc2dd5)
-  - Remove unused admin environment &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/8378 [&lt;samp&gt;(cb402)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cb4020569)
-  - Handle hanging workspace after user account deleted &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/8377 [&lt;samp&gt;(1d75d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1d75d97a8)
+  - Adjust the tracking point for copy sharing link - by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8395 [&lt;samp&gt;(bd9ae)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bd9ae3d80)
+  - Open page info modal error - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8396 [&lt;samp&gt;(4295f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4295f5e7c)
 
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.17.0...v0.17.1)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.17.1...v0.17.2)
+</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
