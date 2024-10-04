@@ -6,12 +6,12 @@ The installer have been downloaded from their official site repository listed on
 and can be verified like this:
 
 1. Download the following installer:
-  Version 5.8.3 : <https://www.gethomebank.org/public/binaries/HomeBank-5.8.3-setup.exe>
+  Version 5.8.4 : <https://www.gethomebank.org/public/binaries/HomeBank-5.8.4-setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 3F5858FF5388438D572B79ECB8C1F0F826C3A42C72FCB8B63184BEABF8DACDD9
+  checksum: 2C7F277685979CE9F2E7312B02981F3C260A36E6C4A551338640705ADAA0A564
 
 File 'LICENSE.txt' is obtained from the official website 
