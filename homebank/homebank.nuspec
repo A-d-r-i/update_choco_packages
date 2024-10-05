@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.8.4</version>
+    <version>5.8.5</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,16 +17,8 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.8.4 release
-* bugfix: prevent some problems with xfer and both legder window opened
-* bugfix: #[2083124](https://bugs.launchpad.net/bugs/2083124) account rename doesn't allow case correction
-* bugfix: #[2081574](https://bugs.launchpad.net/bugs/2081574) windows: budget report date fields not showing in their entirety
-* bugfix: #[2081379](https://bugs.launchpad.net/bugs/2081379) planned split operations are not modified after a category merge
-* bugfix: #[2080864](https://bugs.launchpad.net/bugs/2080864) HomeBank CLI --version or -V no longer works in linux
-* bugfix: #[2080756](https://bugs.launchpad.net/bugs/2080756) balance change from ledger toolbar not updated for xfer target
-* bugfix: #[2080032](https://bugs.launchpad.net/bugs/2080032) your accounts print/export hidden columns
-* bugfix: #[2079884](https://bugs.launchpad.net/bugs/2079884) ledger window snap half left oversize
-* bugfix: #[2036404](https://bugs.launchpad.net/bugs/2036404) grouped budget categories not showing total amount
+Made 5.8.5 release
+* bugfix: date button shortened in ledger book
 
 **Full changelog:** [https://www.gethomebank.org/ChangeLog](https://www.gethomebank.org/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
