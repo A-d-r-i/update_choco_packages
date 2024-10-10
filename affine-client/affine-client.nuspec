@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.17.2</version>
+    <version>0.17.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -20,18 +20,23 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>### ???? Features
 
-- Add open info button to doc center peek - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8388 [&lt;samp&gt;(76ff5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/76ff56a71)
-- Improve markdown formatting - by @darkskygit in https://github.com/toeverything/AFFiNE/issues/8398 [&lt;samp&gt;(a9b29)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a9b29d24f)
+- Ctrl click to open embeded doc in new tab - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8401 [&lt;samp&gt;(a3dc0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a3dc07457)
+- **core**: Show floating sidebar when hovering sidebar swtich - by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8393 [&lt;samp&gt;(52134)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5213431d5)
+- **electron**: Ctrl+= to zoomin on linux - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8412 [&lt;samp&gt;(6b263)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6b263d144)
+- **infra**: Doc properties by orm - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8382 [&lt;samp&gt;(c26df)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c26df2e06)
 
 ### ???? Bug Fixes
 
-- Incorrect app sidebar fallback - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8392 [&lt;samp&gt;(abd57)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/abd57484b)
 - **core**:
-  - Adjust the tracking point for copy sharing link - by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8395 [&lt;samp&gt;(bd9ae)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bd9ae3d80)
-  - Open page info modal error - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8396 [&lt;samp&gt;(4295f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4295f5e7c)
+  - Fix position of toc in peekview - by @L-Sun in https://github.com/toeverything/AFFiNE/issues/8441 [&lt;samp&gt;(afb21)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/afb21f734)
+  - Avoid using serverUrlPrefix config - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8448 [&lt;samp&gt;(e61ed)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e61ed98ac)
+  - Data loss on enable cloud - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8452 [&lt;samp&gt;(bfeb0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bfeb05ca4)
+- **electron**:
+  - Screen resize sometimes does not work well after maximize - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8413 [&lt;samp&gt;(f5c49)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f5c49a6ac)
+  - Fix windows userspace loss - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8450 [&lt;samp&gt;(67f7a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/67f7a4de9)
+  - Missing sidebar module for shell - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8447 [&lt;samp&gt;(ccd1a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ccd1ad617)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.17.1...v0.17.2)
-</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.17.2...v0.17.3)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
