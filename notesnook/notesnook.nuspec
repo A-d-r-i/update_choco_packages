@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.18</version>
+    <version>3.0.19</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,16 +18,12 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>### [Read Notesnook v3.0.18's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.18/)
+    <releaseNotes>## What's fixed
 
-**New Contributors**
-* @stevesbrain made their first contribution in https://github.com/streetwriters/notesnook/pull/6505
-* @seanwynwins made their first contribution in https://github.com/streetwriters/notesnook/pull/6435
-
----
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.17...v3.0.18
-</releaseNotes>
+1. Fix heading and paragraph overlap in editor
+2. Fix some math glyps not rendering correctly (#6762) by @alihamuh 
+3. Fix invalid ObjectIDs getting generated on desktop causing issues with monograph publishing
+4. Fix editing note link replaces link text with note name (#6768) by @alihamuh </releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
