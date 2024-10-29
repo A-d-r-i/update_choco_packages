@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>246.241008.0</version>
+    <version>250.241025.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,42 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Emails hang forever and do not send. Drafts to not save either [#7686](https://github.com/tutao/tutanota/issues/7686)
+    <releaseNotes># What's new
+ - Update icons, add note to icon files [#7751](https://github.com/tutao/tutanota/issues/7751)
+ - [tutasdk] sdk should be able to make service calls [#7708](https://github.com/tutao/tutanota/issues/7708)
+ - Support loading encrypted entities w/ former group key in SDK [#7679](https://github.com/tutao/tutanota/issues/7679)
+ - Show contact preview for birthday events [#7672](https://github.com/tutao/tutanota/issues/7672)
+ - Search for birthday events [#7671](https://github.com/tutao/tutanota/issues/7671)
+ - Improve birthday calendar events [#7670](https://github.com/tutao/tutanota/issues/7670)
+ - Move time fields in search view out of dialog [#7565](https://github.com/tutao/tutanota/issues/7565)
+ - Actions in notification [#7157](https://github.com/tutao/tutanota/issues/7157)
+ - User story: SDK functions for mutations of Mail [#6960](https://github.com/tutao/tutanota/issues/6960)
+ - Missing import vCard on mobile [#6891](https://github.com/tutao/tutanota/issues/6891)
+ - allow deleting credentials when offline [#5954](https://github.com/tutao/tutanota/issues/5954)
+ - Recovery code should be copied with spaces included [#5944](https://github.com/tutao/tutanota/issues/5944)
+ - Birthdays of contacts in calendar [#1352](https://github.com/tutao/tutanota/issues/1352)
+
+# Bugfixes
+ - [Regression] Newly created folders cannot receive action [#7687](https://github.com/tutao/tutanota/issues/7687)
+ - a11y: Accent color not AA-accessible according to WCAG 2.1 in dark mode [#7680](https://github.com/tutao/tutanota/issues/7680)
+ - Birthdays not rendered before 1970 [#7676](https://github.com/tutao/tutanota/issues/7676)
+ - ICS import stuck on Loading [#7656](https://github.com/tutao/tutanota/issues/7656)
+ - Display language select items in its native language on "Appearance" [#7508](https://github.com/tutao/tutanota/issues/7508)
+ - Removing Sender Name doesn't work [#7254](https://github.com/tutao/tutanota/issues/7254)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/329?closed=1
+https://github.com/tutao/tutanota/milestone/330?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-411bed009371dd0cd640b26972b82ef3438ff5050065bd4d61f266423993710a
+3e172b0e3a91991d4d5412d50ae8f975c73e5ac916799f5d25776d394bdec8bd
 
 **tutanota-desktop-win.exe:**
-00697b6eaad936904e62c2adf2bc2eab85e21d4235c586ccafee87cf225cdd9e
+8cc436d72e59e871228a91b697079c21e2103f93c1d058a00a48cb7f5941204f
 
 **tutanota-desktop-mac.dmg:**
-52c74c46436b6dc2ecb782457c770a9287b1e540376f485c38b47e171622dc71</releaseNotes>
+69b864be1df68db86eb058f30409589c05ebee715052abf815c3d2d7af1c8e47</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
