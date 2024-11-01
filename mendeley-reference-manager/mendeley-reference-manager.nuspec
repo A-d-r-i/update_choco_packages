@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.124.0</version>
+    <version>2.125.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,25 +19,17 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
  
-## Mendeley Reference Manager v2.124.0
+## Mendeley Reference Manager v2.125.0
  
 We have:
  
-- updated the sorting icon in tables to clearly indicate the selected column order.
-- updated the blank library interface for new users.
-- updated the ‘Add New’ import menu interface.
-- increased the speed of indexing references in the library.
-- increased the speed of opening PDF files.
-- increased the speed of opening the application from startup.
+- improved the empty state message UI (e.g., the import button) when there are no references in the library.
 
  
 We have fixed:
 
-- an issue where the “Open containing folder” option for PDFs did not work on Windows.
-- an issue preventing the Ctrl+F keyboard shortcut from functioning when a search term was already present in the search box.
-- an issue that caused the sort order in tables to reset unexpectedly.
-- an issue where “Skip to main content” button would appear after closing menus or toast notifications.
-- an issue that prevented adding spaces in input text fields on the add references manual import form.
+- a XSS vulnerability in the PDF reader;
+- an issue where opening the right side panel would crash the application.
 
  
 ## Support
@@ -46,12 +38,12 @@ We have fixed:
 - For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
 
  
-Released: 24 October 2024
+Released: 31 October 2024
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.124.0](https://www.mendeley.com/release-notes-reference-manager/v2.124.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.125.0](https://www.mendeley.com/release-notes-reference-manager/v2.125.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
