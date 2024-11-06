@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.125.0</version>
+    <version>2.125.2</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,17 +19,11 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
  
-## Mendeley Reference Manager v2.125.0
- 
-We have:
- 
-- improved the empty state message UI (e.g., the import button) when there are no references in the library.
-
+## Mendeley Reference Manager v2.125.2
  
 We have fixed:
-
-- a XSS vulnerability in the PDF reader;
-- an issue where opening the right side panel would crash the application.
+ 
+- Fixed a bug that would cause the search to stop working
 
  
 ## Support
@@ -38,12 +32,12 @@ We have fixed:
 - For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
 
  
-Released: 31 October 2024
+Released: 05 November 2024
  
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.125.0](https://www.mendeley.com/release-notes-reference-manager/v2.125.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.125.2](https://www.mendeley.com/release-notes-reference-manager/v2.125.2) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
