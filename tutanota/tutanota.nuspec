@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>250.241025.0</version>
+    <version>251.241108.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,41 +17,38 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Update icons, add note to icon files [#7751](https://github.com/tutao/tutanota/issues/7751)
- - [tutasdk] sdk should be able to make service calls [#7708](https://github.com/tutao/tutanota/issues/7708)
- - Support loading encrypted entities w/ former group key in SDK [#7679](https://github.com/tutao/tutanota/issues/7679)
- - Show contact preview for birthday events [#7672](https://github.com/tutao/tutanota/issues/7672)
- - Search for birthday events [#7671](https://github.com/tutao/tutanota/issues/7671)
- - Improve birthday calendar events [#7670](https://github.com/tutao/tutanota/issues/7670)
- - Move time fields in search view out of dialog [#7565](https://github.com/tutao/tutanota/issues/7565)
- - Actions in notification [#7157](https://github.com/tutao/tutanota/issues/7157)
- - User story: SDK functions for mutations of Mail [#6960](https://github.com/tutao/tutanota/issues/6960)
- - Missing import vCard on mobile [#6891](https://github.com/tutao/tutanota/issues/6891)
- - allow deleting credentials when offline [#5954](https://github.com/tutao/tutanota/issues/5954)
- - Recovery code should be copied with spaces included [#5944](https://github.com/tutao/tutanota/issues/5944)
- - Birthdays of contacts in calendar [#1352](https://github.com/tutao/tutanota/issues/1352)
-
+ - Change CalendarEventBubble to clip instead of ... [#7852](https://github.com/tutao/tutanota/issues/7852)
+ - [tutasdk] use new module structure [#7878](https://github.com/tutao/tutanota/issues/7878)
+ - Sdk blobs [#7868](https://github.com/tutao/tutanota/issues/7868)
+ -  Remove local admin groups [#7739](https://github.com/tutao/tutanota/issues/7739)
 # Bugfixes
- - [Regression] Newly created folders cannot receive action [#7687](https://github.com/tutao/tutanota/issues/7687)
- - a11y: Accent color not AA-accessible according to WCAG 2.1 in dark mode [#7680](https://github.com/tutao/tutanota/issues/7680)
- - Birthdays not rendered before 1970 [#7676](https://github.com/tutao/tutanota/issues/7676)
- - ICS import stuck on Loading [#7656](https://github.com/tutao/tutanota/issues/7656)
- - Display language select items in its native language on "Appearance" [#7508](https://github.com/tutao/tutanota/issues/7508)
- - Removing Sender Name doesn't work [#7254](https://github.com/tutao/tutanota/issues/7254)
+ - app password is required twice to use access/use the mailbox [#7873](https://github.com/tutao/tutanota/issues/7873)
+ - Wrong sort order when sorting with sortCompareMailSetMails [#7838](https://github.com/tutao/tutanota/issues/7838)
+ - Tables are not respecting the given column width [#7800](https://github.com/tutao/tutanota/issues/7800)
+ - Opening a mail from the notification does not highlight mail in list [#7585](https://github.com/tutao/tutanota/issues/7585)
+ - dns records for custom domain setup are not displayed fully [#7726](https://github.com/tutao/tutanota/issues/7726)
+ - refresh user after kdf migration [#7888](https://github.com/tutao/tutanota/issues/7888)
+ - 7246 fix calendar nav tooltip [#7851](https://github.com/tutao/tutanota/issues/7851)
+ - Fix Mailto when previewing contact [#7850](https://github.com/tutao/tutanota/issues/7850)
+ - Fix Highlighted Day on Desktop view [#7849](https://github.com/tutao/tutanota/issues/7849)
+ - Fix sort order of mails with mailSet in MailViewModel [#7839](https://github.com/tutao/tutanota/issues/7839)
+ - Fix keyboard navigation inside dialogs stuck at disabled elements [#7835](https://github.com/tutao/tutanota/issues/7835)
+ - Fix CompressedString in RustGenerator.js [#7824](https://github.com/tutao/tutanota/issues/7824)
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/330?closed=1
+https://github.com/tutao/tutanota/milestone/331?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-3e172b0e3a91991d4d5412d50ae8f975c73e5ac916799f5d25776d394bdec8bd
+877b8275650eac225348644501a2ea428bca6992d483eb375963bfc992742afd
 
 **tutanota-desktop-win.exe:**
-8cc436d72e59e871228a91b697079c21e2103f93c1d058a00a48cb7f5941204f
+2acebf8c0152b53b5daee1c3792556a0aa06e3ca233628fa6c60726bd32a26bc
 
 **tutanota-desktop-mac.dmg:**
-69b864be1df68db86eb058f30409589c05ebee715052abf815c3d2d7af1c8e47</releaseNotes>
+9d9f6db0fe569219fb665ce202b3623e9292542d77c057fab08aa72ac6247366</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
