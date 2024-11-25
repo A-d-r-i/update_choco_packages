@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>251.241112.0</version>
+    <version>252.241122.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,24 +17,31 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Cyber monday [#7927](https://github.com/tutao/tutanota/issues/7927)
- - Remove new domain notice [#7895](https://github.com/tutao/tutanota/issues/7895)
+ - Label support [#7752](https://github.com/tutao/tutanota/issues/7752) [#7723](https://github.com/tutao/tutanota/issues/7723) [#7755](https://github.com/tutao/tutanota/issues/7755) [#7756](https://github.com/tutao/tutanota/issues/7756) [#7757](https://github.com/tutao/tutanota/issues/7757) [#7758](https://github.com/tutao/tutanota/issues/7758) [#7759](https://github.com/tutao/tutanota/issues/7759) [#7760](https://github.com/tutao/tutanota/issues/7760) [#7761](https://github.com/tutao/tutanota/issues/7761)
+ - Electron 33.2.0 [#7994](https://github.com/tutao/tutanota/issues/7994)
+ - Show Native File Picker as file only picker for vcf import [#7919](https://github.com/tutao/tutanota/issues/7919)
+ - New Color Picker [#7754](https://github.com/tutao/tutanota/issues/7754) [#7842](https://github.com/tutao/tutanota/issues/7842)
 
-
+# Bugfixes
+ - [desktop] fix not sending Content-Length header in native file upload [#7956](https://github.com/tutao/tutanota/issues/7956)
+ - Body mail text in black color over dark mode bg [#7820](https://github.com/tutao/tutanota/issues/7820)
+ - Support entries language is not changed when switching language [#7335](https://github.com/tutao/tutanota/issues/7335)
+ - "safeStorage API is not available" persists [#7257](https://github.com/tutao/tutanota/issues/7257)
+ - Replying to an email with inline images removes inline images from the viewer [#6523](https://github.com/tutao/tutanota/issues/6523)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/335?closed=1
+https://github.com/tutao/tutanota/milestone/334?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-8219ce8bd7e662b70bb6fd1dd90c0600ede275d6977072b8904c0a0127390a05
+977fcc86bb5a78763d4d27bc317183698259a1b3e36482219afacb6e2931c1b9
 
 **tutanota-desktop-win.exe:**
-a1385c12211b1dd5da6907b2ce620da0ff84a9c1b11714f6fa46ac4a75383984
+00ea74291c61a2a8c75109c820f64374ad58a48f3c0e3ea1c45deec3595fe272
 
 **tutanota-desktop-mac.dmg:**
-8cd09cf99dc3fc74e722fad3741c265afa141da232e02cf8857e63c8068710b2</releaseNotes>
+8e87af1ca507f622010fb95790ec148c47932fb387b7c9743cd131be813da959</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
