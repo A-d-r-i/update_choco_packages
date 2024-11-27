@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.5.040</version>
+    <version>2.5.059</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,26 +19,19 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
+# WARNING:
+- yt-dlp users are experiencing various issues when they try to download certain YouTube videos, particularly age-restricted videos. For a list of known issues, please read this page:
+# https://github.com/yt-dlp/yt-dlp/issues/[3766](https://github.com/axcore/tartube/issues/3766) 
+- Tartube users will now see a warning in certain situations (for example, Edit &gt; General download options &gt; Advanced &gt; Authentication) (Git #[662](https://github.com/axcore/tartube/issues/662))
 # MAJOR FIXES
-- Fixed rare crashes caused by the system tray icon (Git #[577](https://github.com/axcore/tartube/issues/577))
-- Fixed failure to add videos/channels/playlists to the Progress List (the top half of the Progress tab) in certain circumstances (Git #[651](https://github.com/axcore/tartube/issues/651))
-- In the Classic Mode tab, livestreams would not download when the 'is a livestream' button was selected, but they downloaded just fine when it wasn't selected. Fixed (Git #[643](https://github.com/axcore/tartube/issues/643))
+- Fixed failure to embed thumbnails in downloaded vidoes, if the thumbnails were set to be deleted after the download. Thumbnails, and other metadata files, are now deleted only at the end of the entire download operations, which should resolve this and all similar problems, both in the Videos tab and the Classic Mode tab (Git #[626](https://github.com/axcore/tartube/issues/626))
+- Fixed rare error when trying to load the Tartube database (Git #[653](https://github.com/axcore/tartube/issues/653))
+- Fixed crash when the matplotlib is unable to start on the user's system (Git #[592](https://github.com/axcore/tartube/issues/592), #[663](https://github.com/axcore/tartube/issues/663))
 # MINOR FIXES
-- Fixed incorrect sorting of videos whose names begin/end with whitespace characters or quotes (Git #[611](https://github.com/axcore/tartube/issues/611))
-- In the preferences window, Downloaders &gt; Forks tab, fixed the broken button 'When using other downloaders, filter out youtube-dl options' (Git #[614](https://github.com/axcore/tartube/issues/614))
-- Fixed inability to re-download videos when the youtube-dl archive file is enabled (Git #[613](https://github.com/axcore/tartube/issues/613), #[623](https://github.com/axcore/tartube/issues/623))
-- In the Classic Mode tab, the 'Clear downloaded' button didn't work for any videos which were not downloaded because of the youtube-dl archive file, when use of that file was enabled. Fixed (Git #[621](https://github.com/axcore/tartube/issues/621))
-- In the Custom Download Settings window, the spinbutton to set the maximum delay did not work. Fixed it (Reddit)
-- When using the 'strict' installers, it was not possible to set the path to the youtube-dl executable due to more broken buttons. Fixed (Git #[633](https://github.com/axcore/tartube/issues/633))
-- Fixed various python errors and warnings generated only by the most recent versions of Python
-- In the setup wizard, removed the FFmpeg installation page for users who should not have been able to see it
-- While downloading Odysee videos, "Pre-processing" is seen in the Progress tab both before AND after the actual video download. Fixed it
-- When DEBUG_FUNC flags are enabled (by editing the source code), tweaked the code so that text is not constantly sent to STDOUT while Tartube is idle
-- When changing Tartube's locale in the preferences window, the message 'The new setting will be applied when Tartube restarts" appears in the wrong place, messing up the formatting. Fixed
+- When a scheduled download starts and the Tartube main window is minimised, it automatically un-minimises itself. Fixed (Git #[664](https://github.com/axcore/tartube/issues/664))
+- In the preferences window, Options &gt; Download options tab, fixed the broken 'Refresh List' button
 # MINOR NEW FEATURES
-- Added (traditional) Chinese translation. Thanks to hugoalh
-- In the Video Index (the left-hand column in the Videos tab), you can now disable dialogue windows when moving videos/channels/playlists/folders. Click Edit &gt; System preferences &gt; Windows &gt; Dialogues, and deselect the 'Prompt the user..." buttons (Git #[624](https://github.com/axcore/tartube/issues/624))
-- Linux users can now use both pip3 or pipx to install or update youtube-dl and other components
+- You can now re-check a video that has been downloaded (by right-clicking the video and selecting 'Re-check video'. Re-checking will re-download all metatdata files (including the thumbnail), but won't replace the video file itself (Git #[661](https://github.com/axcore/tartube/issues/661))
 # 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
