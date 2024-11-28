@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.18.1</version>
+    <version>0.18.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -21,33 +21,15 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <releaseNotes>### ???? Bug Fixes
 
 - **core**:
-  - Center peek can't open in firefox and safari - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8816 [&lt;samp&gt;(87520)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/87520e9bf)
-  - Center peek zoomIn animation not work in firefox - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8817 [&lt;samp&gt;(34315)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/343152e16)
-  - Warning when open center peek - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8819 [&lt;samp&gt;(c712e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c712e8711)
-  - Auth fail reason should be error.name - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8822 [&lt;samp&gt;(6a640)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6a6405588)
-  - Polyfill iterator helper for safari - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8824 [&lt;samp&gt;(055fa)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/055fa0a8b)
-  - Wrong title field from editor container proxy - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8826 [&lt;samp&gt;(54c51)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/54c51225e)
-  - Make right-sidebar scrollable - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8830 [&lt;samp&gt;(96425)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/964256608)
-  - Cloud pricing plan cards can not scroll - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8851 [&lt;samp&gt;(abaea)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/abaea9e60)
-  - Emoji doc name rendering on windows - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8857 [&lt;samp&gt;(56a3f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/56a3f054f)
-  - Peek view animation - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8858 [&lt;samp&gt;(e200e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e200e0a1a)
-  - Info modal style issue - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8842 [&lt;samp&gt;(40110)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/401106203)
-  - Doc info event tracking issues - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8868 [&lt;samp&gt;(3f5da)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3f5dadb4f)
-  - Ai subscribe button is not show in ai usage page - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8869 [&lt;samp&gt;(2e949)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2e94944d2)
-  - Linked doc named input box has excessive desire to select all - by @akumatus in https://github.com/toeverything/AFFiNE/issues/8861 [&lt;samp&gt;(b0ca3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b0ca3c6d5)
-  - Auth events are not continuous - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8874 [&lt;samp&gt;(8b066)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8b066a4b3)
-- **electron**:
-  - Potential crash on quit - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8829 [&lt;samp&gt;(df99e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/df99e2ca9)
-  - Potential crash on quit - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8855 [&lt;samp&gt;(86894)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8689465e0)
-  - Respect locale for spellchecker - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/8844 [&lt;samp&gt;(47243)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/47243247b)
-- **mobile**:
-  - Correct doc card title display - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8836 [&lt;samp&gt;(5fade)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5fade7aaf)
-  - Correct search &amp; home-header bg color - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8835 [&lt;samp&gt;(1f71e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1f71e8746)
-  - Use mobile app-fallback in app-container - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8804 [&lt;samp&gt;(ffa4d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ffa4d5422)
+  - Wrong app scheme fallback - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8914 [&lt;samp&gt;(a73c0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a73c08ff2)
+  - Improve doc meta performance - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8913 [&lt;samp&gt;(dea05)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dea0574a8)
+  - Image block size limits were not enforced as expected - by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8908 [&lt;samp&gt;(2abf4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2abf40b46)
+  - Cannot view pricing page if not logged in - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8907 [&lt;samp&gt;(1623f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1623f5d82)
 - **server**:
-  - Should not enable experimental mobile version in selfhost - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8840 [&lt;samp&gt;(84cfc)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/84cfcb193)
+  - Ignore invalid subscription variant - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8892 [&lt;samp&gt;(47899)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/47899a7ea)
+  - Ignore invalid subscription variant for subscriptinos query as well - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8894 [&lt;samp&gt;(c4410)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c4410751e)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.18.0...v0.18.1-beta.1)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.18.1...v0.18.2)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
