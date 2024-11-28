@@ -59,7 +59,7 @@ The installer have been downloaded from their official site repository listed on
 and can be verified like this:
 
 1. Download the following installer:
-  Version $tag : <https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag.exe>
+  Version $tag : <https://static.mendeley.com/bin/desktop/mendeley-reference-manager-$tag-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'

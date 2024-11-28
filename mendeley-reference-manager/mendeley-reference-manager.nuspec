@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.127.1</version>
+    <version>2.127.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
