@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>253.241126.2</version>
+    <version>253.241203.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,24 +17,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># Bugfixes
- - Labels might be enabled before they should be [#8029](https://github.com/tutao/tutanota/issues/8029)
- - Default label might be created twice [#8028](https://github.com/tutao/tutanota/issues/8028)
- - ProgrammingError when updating TutanotaProperties [#8022](https://github.com/tutao/tutanota/issues/8022)
- - BadRequestError when applying labels to emails in different lists [#8020](https://github.com/tutao/tutanota/issues/8020)
+ - make Cyber Monday a day longer [#8076](https://github.com/tutao/tutanota/issues/8076)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/339?closed=1
+https://github.com/tutao/tutanota/milestone/343?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-33a994bf4830268b4577c6377936de52ea53c3ff6cfbbc9d67d77a4361c2f6b8
+52daf24f99ddf33650e01cf70417ace1e2ff01c844a08544e816796471bff3be
 
 **tutanota-desktop-win.exe:**
-b0fda1489ccf84ac3c24ca0e8d0b9fb9fbcd40faafa6c5f7f85dfb4edaba7211
+cb923d1e87d8fa49586e8e71fa11b261e488181054a9c4f5c9a26db6235e089b
 
 **tutanota-desktop-mac.dmg:**
-80e17fdcf67501b67001f054b5ee95b539470a4bcbec579783f2efd330264b94</releaseNotes>
+f9fb3758cebca2691ff02065ade4c123af15bdcef71197529d628b8bc251353e</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
