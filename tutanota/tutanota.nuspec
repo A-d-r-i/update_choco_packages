@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>253.241203.1</version>
+    <version>259.241213.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,34 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - make Cyber Monday a day longer [#8076](https://github.com/tutao/tutanota/issues/8076)
+    <releaseNotes># What's new
+ - Keyboard shortcut for applying labels [#8007](https://github.com/tutao/tutanota/issues/8007)
+ - Gift card rebranding [#7975](https://github.com/tutao/tutanota/issues/7975)
+ - Password confirmation when changing second factor configuration [#5986](https://github.com/tutao/tutanota/issues/5986)
+ - Offer XRechnung for invoices [#3357](https://github.com/tutao/tutanota/issues/3357)
+ - "Paste without formatting" entry in context menu [#3018](https://github.com/tutao/tutanota/issues/3018)
+
+# Bugfixes
+ - calendar selector in event editor has no scrolling option [#8050](https://github.com/tutao/tutanota/issues/8050)
+ - Toggling email selection after deleting email [#8031](https://github.com/tutao/tutanota/issues/8031)
+ - Forwarding an email with inline images removes images from viewer [#8003](https://github.com/tutao/tutanota/issues/8003)
+ - It is not possible to close the dropdown without selecting an option with keyboard/screen reader [#7999](https://github.com/tutao/tutanota/issues/7999)
+ - Next year price shown if it is the same price as the first year [#7935](https://github.com/tutao/tutanota/issues/7935)
+ - printing email in dark mode results in gray text color [#5781](https://github.com/tutao/tutanota/issues/5781)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/343?closed=1
+https://github.com/tutao/tutanota/milestone/342?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-52daf24f99ddf33650e01cf70417ace1e2ff01c844a08544e816796471bff3be
+3b99130d3399c47fc7eb239188c1079f9e40a2e39a4ba8ce0123d9fa250599f5
 
 **tutanota-desktop-win.exe:**
-cb923d1e87d8fa49586e8e71fa11b261e488181054a9c4f5c9a26db6235e089b
+fc3dbe41aee2e73c7f63cc1d0cce3225169ade6633a938f5b98afb294cd47bc3
 
 **tutanota-desktop-mac.dmg:**
-f9fb3758cebca2691ff02065ade4c123af15bdcef71197529d628b8bc251353e</releaseNotes>
+1187aa8ceb72a0ceebf0f003defbadcad957d5545d26070229ab4e17d31d9402</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
