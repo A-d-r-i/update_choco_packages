@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.22</version>
+    <version>3.0.23</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,20 +18,16 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>This is another **minor release** fixing a bunch of issues with v3.0.20:
+    <releaseNotes>### [Read Notesnook v3.0.23's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.23/)
 
-1. Fix setting item width (#6909) by @01zulfi &amp; @thecodrr in https://github.com/streetwriters/notesnook/pull/6935
-2. Fix issue where editor tabs weren't persisted across app restart
-3. Fix editor zoom on trackpads/touchpads
-4. Fix one-time discounts wrongly shown as recurring
+**New Contributors**
 
----
-
-### [Read Notesnook v3.0.20's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.20/)
+* @Leviob made their first contribution in https://github.com/streetwriters/notesnook/pull/6990
+* @luis-411 made their first contribution in https://github.com/streetwriters/notesnook/pull/7018
 
 ---
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.21...v3.0.22</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.22...v3.0.23</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
