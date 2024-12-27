@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.18.2</version>
+    <version>0.19.1</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -20,16 +20,20 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>### ???? Bug Fixes
 
+- **component**:
+  - Lit portal not re-rendering in inline links case - by @fundon in https://github.com/toeverything/AFFiNE/issues/9321 [&lt;samp&gt;(6fcdd)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6fcdd015a)
 - **core**:
-  - Wrong app scheme fallback - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8914 [&lt;samp&gt;(a73c0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a73c08ff2)
-  - Improve doc meta performance - by @EYHN in https://github.com/toeverything/AFFiNE/issues/8913 [&lt;samp&gt;(dea05)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dea0574a8)
-  - Image block size limits were not enforced as expected - by @JimmFly in https://github.com/toeverything/AFFiNE/issues/8908 [&lt;samp&gt;(2abf4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2abf40b46)
-  - Cannot view pricing page if not logged in - by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/8907 [&lt;samp&gt;(1623f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1623f5d82)
+  - Optimize at menu config loading 2 - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9366 [&lt;samp&gt;(6977b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6977b0a94)
+  - Cmdk command highlight - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9390 [&lt;samp&gt;(8bcee)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8bceece5b)
+- **editor**:
+  - Throttle render linked doc card when blockUpdated - by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/9361 [&lt;samp&gt;(835e7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/835e7c434)
+  - Move insert link command to bookmark to remove ts ignore - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9370 [&lt;samp&gt;(1fbb4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1fbb46238)
+  - Dnd lag - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9378 [&lt;samp&gt;(5c405)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5c4058cd7)
 - **server**:
-  - Ignore invalid subscription variant - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8892 [&lt;samp&gt;(47899)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/47899a7ea)
-  - Ignore invalid subscription variant for subscriptinos query as well - by @forehalo in https://github.com/toeverything/AFFiNE/issues/8894 [&lt;samp&gt;(c4410)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c4410751e)
+  - End_session_endpoint is not required for oidc - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9381 [&lt;samp&gt;(64827)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/64827f771)
+  - Selfhost startup - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9386 [&lt;samp&gt;(a1647)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a16471c18)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.18.1...v0.18.2)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.0...v0.19.1)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
