@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.19.1</version>
+    <version>0.19.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,22 +18,31 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### ???? Bug Fixes
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Features
 
-- **component**:
-  - Lit portal not re-rendering in inline links case - by @fundon in https://github.com/toeverything/AFFiNE/issues/9321 [&lt;samp&gt;(6fcdd)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6fcdd015a)
 - **core**:
-  - Optimize at menu config loading 2 - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9366 [&lt;samp&gt;(6977b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6977b0a94)
-  - Cmdk command highlight - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9390 [&lt;samp&gt;(8bcee)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8bceece5b)
+  - Info modal should render backlinks with preview &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9387 [&lt;samp&gt;(70e4c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/70e4c8fea)
 - **editor**:
-  - Throttle render linked doc card when blockUpdated - by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/9361 [&lt;samp&gt;(835e7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/835e7c434)
-  - Move insert link command to bookmark to remove ts ignore - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9370 [&lt;samp&gt;(1fbb4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1fbb46238)
-  - Dnd lag - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9378 [&lt;samp&gt;(5c405)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5c4058cd7)
-- **server**:
-  - End_session_endpoint is not required for oidc - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9381 [&lt;samp&gt;(64827)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/64827f771)
-  - Selfhost startup - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9386 [&lt;samp&gt;(a1647)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a16471c18)
+  - Update edgeless color palette &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/9243 [&lt;samp&gt;(a5641)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a5641ae60)
+  - Store real color values in edgeless &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/9254 [&lt;samp&gt;(b9f26)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b9f265036)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.0...v0.19.1)</releaseNotes>
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+
+- **core**:
+  - Fix create workspace force cloud &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/9382 [&lt;samp&gt;(cff3a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cff3a73db)
+  - Wrong editor version number &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9403 [&lt;samp&gt;(89030)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/89030f308)
+- **editor**:
+  - Sentry-b0cfc9953ff64c53b9994697171bb91a &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9396 [&lt;samp&gt;(5e1d9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5e1d936c2)
+  - Prevent errors from isStrictUrl &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9419 [&lt;samp&gt;(6b186)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6b1865ff9)
+  - Tooltip styles when having span tags &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9422 [&lt;samp&gt;(ea6fe)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ea6fed127)
+  - Should delete collapsed siblings when delete heading &amp;nbsp;-&amp;nbsp; by @Flrande in https://github.com/toeverything/AFFiNE/issues/9376 [&lt;samp&gt;(4fee0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4fee0e2eb)
+  - Undefined selected elements &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9429 [&lt;samp&gt;(08ebf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/08ebfb6e7)
+- **server**:
+  - Avoid get object content when syncing &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9402 [&lt;samp&gt;(378db)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/378db1054)
+  - Cluster metrics duplicate &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9416 [&lt;samp&gt;(e6302)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e630290e7)
+  - Same identify across pods &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9428 [&lt;samp&gt;(47ba0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/47ba0a8a3)
+
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.1...v0.19.2)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
