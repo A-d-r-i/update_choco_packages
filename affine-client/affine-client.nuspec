@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.19.2</version>
+    <version>0.19.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,31 +18,23 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Features
+    <releaseNotes>### ???? Bug Fixes
 
 - **core**:
-  - Info modal should render backlinks with preview &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9387 [&lt;samp&gt;(70e4c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/70e4c8fea)
+  - Should sync name after renaming in pdf embed view - by @fundon in https://github.com/toeverything/AFFiNE/issues/9398 [&lt;samp&gt;(569e6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/569e63377)
+  - Split view solo view crash - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9432 [&lt;samp&gt;(79e00)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/79e006467)
 - **editor**:
-  - Update edgeless color palette &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/9243 [&lt;samp&gt;(a5641)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a5641ae60)
-  - Store real color values in edgeless &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/9254 [&lt;samp&gt;(b9f26)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b9f265036)
+  - Missing dependencies - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9436 [&lt;samp&gt;(a9f89)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a9f890017)
+  - Caret can be null in firefox - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9438 [&lt;samp&gt;(ade31)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ade317d26)
+  - Touch event browser copability - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9437 [&lt;samp&gt;(8d269)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8d269c838)
+- **electron**:
+  - Page history api fetch issue - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9440 [&lt;samp&gt;(6883c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6883cc2de)
 
-### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+### ???? Performance
 
-- **core**:
-  - Fix create workspace force cloud &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/9382 [&lt;samp&gt;(cff3a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cff3a73db)
-  - Wrong editor version number &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9403 [&lt;samp&gt;(89030)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/89030f308)
-- **editor**:
-  - Sentry-b0cfc9953ff64c53b9994697171bb91a &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9396 [&lt;samp&gt;(5e1d9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5e1d936c2)
-  - Prevent errors from isStrictUrl &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9419 [&lt;samp&gt;(6b186)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6b1865ff9)
-  - Tooltip styles when having span tags &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9422 [&lt;samp&gt;(ea6fe)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ea6fed127)
-  - Should delete collapsed siblings when delete heading &amp;nbsp;-&amp;nbsp; by @Flrande in https://github.com/toeverything/AFFiNE/issues/9376 [&lt;samp&gt;(4fee0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4fee0e2eb)
-  - Undefined selected elements &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9429 [&lt;samp&gt;(08ebf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/08ebfb6e7)
-- **server**:
-  - Avoid get object content when syncing &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9402 [&lt;samp&gt;(378db)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/378db1054)
-  - Cluster metrics duplicate &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9416 [&lt;samp&gt;(e6302)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e630290e7)
-  - Same identify across pods &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9428 [&lt;samp&gt;(47ba0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/47ba0a8a3)
+- **editor**: Reduce per frame viewport dom ops - by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9431 [&lt;samp&gt;(d4053)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d4053a345)
 
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.1...v0.19.2)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.2...v0.19.3)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
