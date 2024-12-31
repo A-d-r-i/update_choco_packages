@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.19.3</version>
+    <version>0.19.4</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -21,20 +21,20 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
     <releaseNotes>### ???? Bug Fixes
 
 - **core**:
-  - Should sync name after renaming in pdf embed view - by @fundon in https://github.com/toeverything/AFFiNE/issues/9398 [&lt;samp&gt;(569e6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/569e63377)
-  - Split view solo view crash - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9432 [&lt;samp&gt;(79e00)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/79e006467)
+  - Wrong auth i18n keys - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9455 [&lt;samp&gt;(87328)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8732801f0)
+  - Wrong fetch injected to snapshot downloader - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9460 [&lt;samp&gt;(43adb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/43adb85e7)
+  - Split view reordering crash - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9461 [&lt;samp&gt;(e3d68)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e3d681306)
+  - Should use doc index for at menu config - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9430 [&lt;samp&gt;(1c6c2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1c6c2194c)
 - **editor**:
-  - Missing dependencies - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9436 [&lt;samp&gt;(a9f89)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a9f890017)
-  - Caret can be null in firefox - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9438 [&lt;samp&gt;(ade31)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ade317d26)
-  - Touch event browser copability - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9437 [&lt;samp&gt;(8d269)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8d269c838)
-- **electron**:
-  - Page history api fetch issue - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9440 [&lt;samp&gt;(6883c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6883cc2de)
+  - Chat panel render warning - by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9446 [&lt;samp&gt;(adf14)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/adf14d11d)
+  - Missing resource files in exported snapshot zip - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9450 [&lt;samp&gt;(0f03c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f03c3fc5)
+  - White-space should be set to normal in tooltip - by @fundon in https://github.com/toeverything/AFFiNE/issues/9454 [&lt;samp&gt;(83915)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/83915c2e9)
+  - Add index checking to selected elements array - by @L-Sun in https://github.com/toeverything/AFFiNE/issues/9453 [&lt;samp&gt;(b51de)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b51de2ac4)
+- **server**:
+  - Cant specify subscription to onetime payment - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9448 [&lt;samp&gt;(7aba8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7aba836db)
+  - Distinguish local mutex correctly - by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9444 [&lt;samp&gt;(f64d6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f64d62d86)
 
-### ???? Performance
-
-- **editor**: Reduce per frame viewport dom ops - by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9431 [&lt;samp&gt;(d4053)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d4053a345)
-
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.2...v0.19.3)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.3...v0.19.4)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
