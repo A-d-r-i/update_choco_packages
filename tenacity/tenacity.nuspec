@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>1.3.3</version>
+    <version>1.3.4</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -27,39 +27,123 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tenacity is an easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor for Windows, macOS, Linux, and other operating systems https://tenacityaudio.org</summary>
-    <releaseNotes>This is a quick minor release fixing compatibility with wxWidgets 3.2.4. Our PortAudio vckpg port has also been updated to revision 8a9ebfd29f2818d6ce6e8b6c3b9e3cccce0e0691, which brings support for PulseAudio as a direct backend on Linux if you build Tenacity with vcpkg manually (we use a git version in vcpkg for Windows).
+    <releaseNotes>Happy new year everyone! Sometimes, the best things come to those that wait. While we apologize to have kept you waiting this long, it's certainly paid off, and we want to thank you for waiting for 1.3.4!
 
-**Note**: FFmpeg for Windows is still on 6.0. The next release, 1.3.4, will feature FFmpeg 6.1 if testing goes well. As always, if you find a bug, [please report it](https://codeberg.org/tenacityteam/tenacity/issues).
+This is a minor release that is focused primarily on refinements and a few backported changes from 1.4. The most notable changes of this release include the integration of patches from MacPorts, courtesy of @ryandesign, which improves macOS support, a bunch of bug fixes, and updated credits in the About Dialog. Speaking of improved macOS support, if you want to try Tenacity on macOS, you should try out the MacPorts package as that is currently the best way to use Tenacity on macOS while we figure out how to get CI working again.
 
-**Note 2**: The AppImage targets Rocky Linux 9, so any equivalent distro should work fine with the AppImage. Be aware that Arch and its derivatives might have problems. See below for more details.
+Fun fact: this release was supposed to be made a lot sooner, but unfortunately, scheduling conflicts came and went, plus the amount of issues that needed fixing took a little while to investigate and fix with our current resources. We hope that the large number of bug fixes helps improve the overall experience and was worth the wait.
 
-# Release Advisories
+The full changelog for this release is below.
+
+# Changelog
+
+- Increased default maximum spectrogram frequency to 20 kHz.
+- Tenacity now warns you if you save to a FAT32 drive on FreeBSD.
+- Enabled drag-and-drop project importing.
+- Fix sync-lock drawing.
+- Update about dialog to add new contributors plus Matroska info (#226).
+- Updated manual packaging (#406).
+- Added FFmpeg 7 support (#484; an accidental backport believe it or not but why not ;)
+- Windows: Fixed some flickering issues.
+- Windows: Fixed issues when building Tenacity for ARM.
+- Windows: Fixed issues with garbled text in the installer (#486, #509).
+- Windows: Fixed OGG imports causing crashes (#311, #511)
+- Windows: Changed EXE description to reduce confusion in Task Manager (#510).
+- macOS: Applied patches from @ryandesign to improve macOS support.
+- Haiku: Applied patches from @davidkalory to improve Haiku support.
+- Linux: remove unused launcher script (#358, #513).
+- Some error help buttons and preferences no longer point to broken links (#519).
+- Removed some overhead on initialization (#526).
+
+## For packagers and other advanced users
+
+- Updated vcpkg to 2024.12.16 (our fork).
+- Enable SBSMS timestretching by default in vcpkg builds.
+- musl libc builds should now be less susceptible to breakage, although you will see new output if ran from the terminal.
+- Build times should be much faster with vcpkg (#483) and slightly faster without it (#405).
+- Due to its use of VLAs and a recent update, lilv is no longer built on Windows. LV2 isn't supported on Windows currently either, but will be once vcpkg has `suil`.
+- Tenacity can now be built against a more minimal wxWidgets configuration. It only requires the `base`, `core`, `html`, and `net` wxWidgets libraries now (#525). To see this in action, view [our Flatpak maniefst](https://github.com/flathub/org.tenacityaudio.Tenacity/blob/master/org.tenacityaudio.Tenacity.yaml).
+
+## FFmpeg
+
+Following through what we said in the previous release, we are providing FFmpeg 6.1.2 for Windows 32-bit and 64-bit. Note that this release, if not the next one, will likely be the last to ship 32-bit FFmpeg for Windows. Previous versions of FFmpeg will still be usable going forward until Tenacity drops support for those versions of FFmpeg.
+
+## Flatpak Users
+
+Note that these updates came before this release and were available before this release. If you haven't updated your Tenacity Flatpak yet, do it now to get these features.
+
+- Enabled native Matroska importing and exporting (https://github.com/flathub/org.tenacityaudio.Tenacity/pull/31).
+- Slimmed down Flatpak builds a little bit (https://github.com/flathub/org.tenacityaudio.Tenacity/pull/21)
+- Updated dependencies (wxWidgets, suil, etc.).
+
+## How to Verify your Downloads
+
+### Using `gpg` and Our (New) Release Signing Key
+
+**IMPORTANT**: Our release signing key has changed. The new fingerprint is 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB28. If you are using `gpg`, you can import it like so:
+
+```bash
+$ gpg --keyserver pgp.mit.edu --recv-keys 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB28
+```
+
+Then you can verify your download like so:
+
+```bash
+$ gpg --verify /path/to/download-signature.asc /path/to/download
+```
+
+For example, to verify the AppImage using `gpg`:
+
+```bash
+# Receive the key first if you haven't done so
+$ gpg --keyserver pgp.mit.edu --recv-keys 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB28
+
+# Then verify the release like so
+$ gpg --verify tenacity-linux-v1.3.4.AppImage.asc tenacity-linux-v1.3.4.AppImage
+gpg: Signature made Tue 31 Dec 2024 08:45:52 PM PST
+gpg:                using EDDSA key 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB28
+gpg: Good signature from "Tenacity Release Signing &lt;avery98@pm.me&gt;" [ultimate]
+```
+
+If it says there's a bad signature, your download may have been tampered with. Try checking against the SHA256 hash (down below) for additional verification. If the hash doesn't match, try redownloading your download. If it does match, please open an issue so we can correct the signature.
+
+### Using the SHA256 Hash
+
+Using any SHA 256 hashing utility of our choice, you can get the SHA 256 hash of your download and compare it to the appropriate hash in the list below:
+
+**tenacity-linux-v1.3.4.AppImage**: a319018969bda4864cb737e0bd94a19b3ff9affa104c5099e349bc1442766ea4
+**tenacity-win-1.3.4-x64.exe**: 1d85cc706752b9d0f39e72d1a84412addd2242ffad7580ebed488cd9cf758b72
+**tenacity-win-1.3.4-x86.exe**: 5aa6e535545618589a6138921efe30e8826b49cd13da02ff055d7e92c09c98a5
+**tenacity-ffmpeg-6.1.2-win-x64.zip**: 814bf89a093a87ebbd6c368b30bed0519050bf28885aaa765bd2cab384997299
+**tenacity-ffmpeg-6.1.2-win-x86.zip**: bb9537ca11038eb5da2eea308df77b1ce6283f8d0a3bd231934d0ff9edbab449
+
+## Release Advisories
 
 We're adding this section to document important issues that you may encounter. We have a few advisories below:
 
-## When launching the AppImage, I get `symbol lookup error: /usr/lib/libjack.so.0: undefined symbol: pw_thread_fill_attr`
+### Launching the AppImage Results In `symbol lookup error: /usr/lib/libjack.so.0: undefined symbol: pw_thread_fill_attr`
 
 You might see this error on Arch Linux, Manjaro, or any other Arch-based system. Tenacity's bundled version of JACK, used only if a system version of JACK isn't found, might not work on every distro. To work around this, install your systems regular JACK dependencies. For example, on Arch Linux and Manjaro, install the `jack2` package.
 
-## All plugins are disabled, and enabling them doesn't work
+### All plugins are disabled, and enabling them doesn't work
 
-As a workaround, delete pluginregistry.cfg and pluginsettings.cfg from your configuration directory (~/.var/app/org.tenacityaudio.Tenacity/config on Linux under Flatpak, C:\Users\&lt;username&gt;\AppData\Roaming\Tenacity under Windows). You will need to re-enable any plugins you had enabled previously.
+As a workaround, delete pluginregistry.cfg and pluginsettings.cfg from your configuration directory (~/.var/app/org.tenacityaudio.Tenacity/config on Linux under Flatpak, C:\Users\&lt;username&gt;\AppData\Roaming\Tenacity under Windows). You will need to re-enable any plugins you had enabled previously if Tenacity doesn't automatically do so.
 
-## Your latency setting reads as samples instead of milliseconds in preferences
+### Your latency setting reads as samples instead of milliseconds in preferences
 
 Change the unit back to milliseconds. Alternatively, you can use the new default of 512 samples. See the changelog for more details. If you only use the default settings, it is generally recommended that you reset you preferences.
 
-## On Linux, JACK isn't available using the Flatpak but the appropriate packages are installed
+### On Linux, JACK isn't available using the Flatpak but the appropriate packages are installed
 
 JACK is supported via Pipewire through the Flatpak. If your distro uses PulseAudio, consider setting up Pipewire if you can. Please consult your distro's documentation on how to setup Pipewire. Alternatively, you can use the AppImages, but those are provided as-is.
 
 If your distro already has Pipewire setup by default but you still don't see the JACK option, try installing your distro's Pipewire JACK support package.
 
-## On Linux Mint, the Flatpak doesn't start
+### On Linux Mint, the Flatpak doesn't start
 
 Follow the instructions here: https://github.com/audacity/audacity/issues/3332. The instructions refer to Audacity but they also apply to Tenacity.
 
-## Some help buttons point to nonexistent documentation
+### Some help buttons point to nonexistent documentation
 
 We haven't been able to update all help buttons because we are still developing the manual. Whenever we update the manual to cover new content, we will update these broken links. If interested, you can help us develop the manual here: https://codeberg.org/tenacityteam/tenacity-manual.</releaseNotes>
     <tags>tenacity editor audio recorder foss cross-platform</tags>
