@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.19.4</version>
+    <version>0.19.5</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,23 +18,12 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### ???? Bug Fixes
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
 
-- **core**:
-  - Wrong auth i18n keys - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9455 [&lt;samp&gt;(87328)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8732801f0)
-  - Wrong fetch injected to snapshot downloader - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9460 [&lt;samp&gt;(43adb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/43adb85e7)
-  - Split view reordering crash - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9461 [&lt;samp&gt;(e3d68)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e3d681306)
-  - Should use doc index for at menu config - by @pengx17 in https://github.com/toeverything/AFFiNE/issues/9430 [&lt;samp&gt;(1c6c2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1c6c2194c)
-- **editor**:
-  - Chat panel render warning - by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9446 [&lt;samp&gt;(adf14)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/adf14d11d)
-  - Missing resource files in exported snapshot zip - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/9450 [&lt;samp&gt;(0f03c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f03c3fc5)
-  - White-space should be set to normal in tooltip - by @fundon in https://github.com/toeverything/AFFiNE/issues/9454 [&lt;samp&gt;(83915)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/83915c2e9)
-  - Add index checking to selected elements array - by @L-Sun in https://github.com/toeverything/AFFiNE/issues/9453 [&lt;samp&gt;(b51de)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b51de2ac4)
-- **server**:
-  - Cant specify subscription to onetime payment - by @forehalo in https://github.com/toeverything/AFFiNE/issues/9448 [&lt;samp&gt;(7aba8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7aba836db)
-  - Distinguish local mutex correctly - by @darkskygit in https://github.com/toeverything/AFFiNE/issues/9444 [&lt;samp&gt;(f64d6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f64d62d86)
+- **editor**: Blur in edgeless content zooming &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9496 [&lt;samp&gt;(bbe88)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bbe88c57b)
+- **server**: Fail to load custom config &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9485 [&lt;samp&gt;(28f0d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/28f0dad3f)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.3...v0.19.4)</releaseNotes>
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.4...v0.19.5)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
