@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>259.241223.2</version>
+    <version>259.250108.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,18 +16,23 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - import beta allows you to import EML and MBOX files
+    <releaseNotes># Bugfixes
+- improve user experience when import is disabled server-side
+- make the desktop main process quit when requested
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/348?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-55e01738276fcbd96208904d31d3dcea221eb8ebada90f6c4a17385f2b40a47e
+5571e137eea4d4977fe2d3f1c4bc1735860f8e997ec819fc8110cb95fbc24b88
 
 **tutanota-desktop-win.exe:**
-112bfb78160727ba8d8c87c15dd6171e53fc1502853e40e3b9ce970b03831d5f
+37db360148e5dfc65c2b337a263e78f01bfb5761a04a65ba08b5a5bb63228fb3
 
 **tutanota-desktop-mac.dmg:**
-439087daf31f83f13dc51e38edca0d5a1838b11c6afc6429cf3550e3389f2875</releaseNotes>
+7c858ad5a4f7c181f856a459bef9e47f5ec6bd1987b6686dd4dadf080bdfd189</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
