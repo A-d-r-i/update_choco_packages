@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>259.250108.1</version>
+    <version>259.250113.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,23 +16,31 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
-- improve user experience when import is disabled server-side
-- make the desktop main process quit when requested
+    <releaseNotes># What's new
+ - Release labels for everyone [#8221](https://github.com/tutao/tutanota/issues/8221)
+ - Apply the labels of the previous email to the new email in the chain [#8225](https://github.com/tutao/tutanota/issues/8225)
+ - Update Electron to 33.3.1 [#8255](https://github.com/tutao/tutanota/issues/8255)
+ - Refactor ListModel to separate Entity concerns from List concerns [#8222](https://github.com/tutao/tutanota/issues/8222)
+ - Use Rolldown instead of esbuild [#8219](https://github.com/tutao/tutanota/issues/8219)
+ - Update eslint to v9, typescript-eslint to v6 [#7506](https://github.com/tutao/tutanota/issues/7506)
+
+# Bugfixes
+ - Small Improvement: Close Edit Folder Dialogue while pressing Esc Button [#8246](https://github.com/tutao/tutanota/issues/8246)
+ - It is possible to open Labels dropdown even when there are no labels  [#8141](https://github.com/tutao/tutanota/issues/8141)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/348?closed=1
+https://github.com/tutao/tutanota/milestone/349?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-5571e137eea4d4977fe2d3f1c4bc1735860f8e997ec819fc8110cb95fbc24b88
+0b89eda55aee974db8bd5f62ada3676def031845418f1eee7014384eb052cd90
 
 **tutanota-desktop-win.exe:**
-37db360148e5dfc65c2b337a263e78f01bfb5761a04a65ba08b5a5bb63228fb3
+bc8015c7c515ca8b2d96091e54be485bae73657c4509711605ccdd131b6e62d6
 
 **tutanota-desktop-mac.dmg:**
-7c858ad5a4f7c181f856a459bef9e47f5ec6bd1987b6686dd4dadf080bdfd189</releaseNotes>
+774308c78d76c087fb54126730b285e9d6490f620462724c2455c1cbe0d1988c</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
