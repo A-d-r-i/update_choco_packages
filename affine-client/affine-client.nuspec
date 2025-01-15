@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.19.5</version>
+    <version>0.19.6</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,12 +18,11 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+    <releaseNotes>## What's Changed
+* fix(core): ai send button not work by @akumatus in https://github.com/toeverything/AFFiNE/pull/9688
 
-- **editor**: Blur in edgeless content zooming &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/9496 [&lt;samp&gt;(bbe88)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bbe88c57b)
-- **server**: Fail to load custom config &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/9485 [&lt;samp&gt;(28f0d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/28f0dad3f)
 
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.19.4...v0.19.5)</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.19.4...v0.19.6</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
