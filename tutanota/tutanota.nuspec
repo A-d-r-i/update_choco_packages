@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>259.250113.0</version>
+    <version>261.250116.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,31 +16,26 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Release labels for everyone [#8221](https://github.com/tutao/tutanota/issues/8221)
- - Apply the labels of the previous email to the new email in the chain [#8225](https://github.com/tutao/tutanota/issues/8225)
- - Update Electron to 33.3.1 [#8255](https://github.com/tutao/tutanota/issues/8255)
- - Refactor ListModel to separate Entity concerns from List concerns [#8222](https://github.com/tutao/tutanota/issues/8222)
- - Use Rolldown instead of esbuild [#8219](https://github.com/tutao/tutanota/issues/8219)
- - Update eslint to v9, typescript-eslint to v6 [#7506](https://github.com/tutao/tutanota/issues/7506)
-
-# Bugfixes
- - Small Improvement: Close Edit Folder Dialogue while pressing Esc Button [#8246](https://github.com/tutao/tutanota/issues/8246)
- - It is possible to open Labels dropdown even when there are no labels  [#8141](https://github.com/tutao/tutanota/issues/8141)
+    <releaseNotes># Bugfixes
+ - Fix unexpected error during signup for paid account [#8272](https://github.com/tutao/tutanota/issues/8272)
+ - Fix not authorized error after login [#8267](https://github.com/tutao/tutanota/issues/8267)
+ - "Search has been disabled" + Settings reverting to default, due to Windows app improper shut down of multiple windows [#8281](https://github.com/tutao/tutanota/issues/8281)
+ - New emails don't appear in the inbox if the inbox is in view [#8277](https://github.com/tutao/tutanota/issues/8277)
+ - LabelsPopup "Apply" button label does not use translation [#8273](https://github.com/tutao/tutanota/issues/8273)
+ - NotFoundError  404:  DELETE /rest/tutanota/calendarevent [#8262](https://github.com/tutao/tutanota/issues/8262)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/349?closed=1
-
+https://github.com/tutao/tutanota/milestone/350?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-0b89eda55aee974db8bd5f62ada3676def031845418f1eee7014384eb052cd90
+6247ebedfab6cdd97141b3c67de8e73c9a3774e2a3dc55d6cdb9a1f13abf4c7f
 
 **tutanota-desktop-win.exe:**
-bc8015c7c515ca8b2d96091e54be485bae73657c4509711605ccdd131b6e62d6
+9a8198f01ab2bb6c189a6bf26fc0e2b6d40b5f5fa82947797c70a51214ae099d
 
 **tutanota-desktop-mac.dmg:**
-774308c78d76c087fb54126730b285e9d6490f620462724c2455c1cbe0d1988c</releaseNotes>
+25eae6df28a08e6c7b797e506e9b56f313050822eac0ac20316db92b9e77739e</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
