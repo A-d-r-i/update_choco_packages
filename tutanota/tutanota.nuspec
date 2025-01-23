@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>261.250116.0</version>
+    <version>262.250122.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,26 +16,24 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Fix unexpected error during signup for paid account [#8272](https://github.com/tutao/tutanota/issues/8272)
- - Fix not authorized error after login [#8267](https://github.com/tutao/tutanota/issues/8267)
- - "Search has been disabled" + Settings reverting to default, due to Windows app improper shut down of multiple windows [#8281](https://github.com/tutao/tutanota/issues/8281)
- - New emails don't appear in the inbox if the inbox is in view [#8277](https://github.com/tutao/tutanota/issues/8277)
- - LabelsPopup "Apply" button label does not use translation [#8273](https://github.com/tutao/tutanota/issues/8273)
- - NotFoundError  404:  DELETE /rest/tutanota/calendarevent [#8262](https://github.com/tutao/tutanota/issues/8262)
+    <releaseNotes># What's new
+ - re-enable mail import
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/350?closed=1
+https://github.com/tutao/tutanota/milestone/351?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-6247ebedfab6cdd97141b3c67de8e73c9a3774e2a3dc55d6cdb9a1f13abf4c7f
+f43c60d477d96d98f47c4dbdda567c7f8fdd3d3d97cc4931a70905438e1e9f47
 
 **tutanota-desktop-win.exe:**
-9a8198f01ab2bb6c189a6bf26fc0e2b6d40b5f5fa82947797c70a51214ae099d
+13f107cf3a48230e7c03e53f1138fcf16831be7261a8dd55999963a0e5aad1a9
 
 **tutanota-desktop-mac.dmg:**
-25eae6df28a08e6c7b797e506e9b56f313050822eac0ac20316db92b9e77739e</releaseNotes>
+93bd96c9dcde590f86df1df66cc432c05d730bed23da4404bc6c98b0fe916a7d
+
+**tutanota-desktop-262.250122.0-unpacked-linux.tar.gz**
+6e256ca4f430461842058d5e476f4dc11bac7afbae0570c9d4dce8a3d450488d</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
