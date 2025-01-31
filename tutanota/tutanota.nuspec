@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>262.250122.0</version>
+    <version>264.250130.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,23 +17,37 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - re-enable mail import
+ - Single-click Mail Export [#1292](https://github.com/tutao/tutanota/issues/1292)
+ - Dompurify 3.2.4 [#8429](https://github.com/tutao/tutanota/issues/8429)
+ - Electron 34.0.1 [#8368](https://github.com/tutao/tutanota/issues/8368)
+ - Don't delete outdated external calendar events in parallel [#8390](https://github.com/tutao/tutanota/issues/8390)
+ - Some build improvements, dependency updates, removed unused code [#8369](https://github.com/tutao/tutanota/issues/8369)
+ - (importer) Minor performance improvements for FileNameProducer [#8353](https://github.com/tutao/tutanota/issues/8353)
+ - Small import improvements [#8352](https://github.com/tutao/tutanota/issues/8352)
+ - Rust cleanup and testing ci improvements [#8360](https://github.com/tutao/tutanota/issues/8360)
+ - Add tests for MailListModel [#8340](https://github.com/tutao/tutanota/issues/8340)
+
+# Bugfixes
+ - Folder move target's label shows {folderName} instead of actual folder name [#8397](https://github.com/tutao/tutanota/issues/8397)
+ - Email opened from notifications disappears briefly [#8313](https://github.com/tutao/tutanota/issues/8313)
+ - Cannot fold email in conversation if sender name is missing [#8309](https://github.com/tutao/tutanota/issues/8309)
+ - ImportMailState CREATE event not updating the search indexer [#8372](https://github.com/tutao/tutanota/issues/8372)
+ - ImportMailState CREATE event not downloading imported mails [#8367](https://github.com/tutao/tutanota/issues/8367)
+ - Missing translations [#8295](https://github.com/tutao/tutanota/issues/8295)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/351?closed=1
+https://github.com/tutao/tutanota/milestone/341?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-f43c60d477d96d98f47c4dbdda567c7f8fdd3d3d97cc4931a70905438e1e9f47
+45f0f23b237b3512bf558f4465f51d6230f7a2d546437406e0fdbc72fb20dadb
 
 **tutanota-desktop-win.exe:**
-13f107cf3a48230e7c03e53f1138fcf16831be7261a8dd55999963a0e5aad1a9
+c835c5c282055c59b79c34905a285fcf52e06c3cbba24cc7d354f9cb399c64e9
 
 **tutanota-desktop-mac.dmg:**
-93bd96c9dcde590f86df1df66cc432c05d730bed23da4404bc6c98b0fe916a7d
-
-**tutanota-desktop-262.250122.0-unpacked-linux.tar.gz**
-6e256ca4f430461842058d5e476f4dc11bac7afbae0570c9d4dce8a3d450488d</releaseNotes>
+bc56bcfe265740e019555e6b88ec07a46d1b3e34d4f62c22481a9609846c94c9</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
