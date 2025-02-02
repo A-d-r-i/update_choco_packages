@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.5.062</version>
+    <version>2.5.100</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,20 +19,11 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
-# WARNING:
-- yt-dlp users are experiencing various issues when they try to download certain YouTube videos, particularly age-restricted videos. For a list of known issues, please read this page:
-# https://github.com/yt-dlp/yt-dlp/issues/[3766](https://github.com/axcore/tartube/issues/3766) 
-- Tartube users will now see a warning in certain situations (for example, Edit &gt; General download options &gt; Advanced &gt; Authentication) (Git #[662](https://github.com/axcore/tartube/issues/662))
 # MAJOR FIXES
-- Fixed failure to embed thumbnails in downloaded vidoes, if the thumbnails were set to be deleted after the download. Thumbnails, and other metadata files, are now deleted only at the end of the entire download operations, which should resolve this and all similar problems, both in the Videos tab and the Classic Mode tab (Git #[626](https://github.com/axcore/tartube/issues/626))
-- Fixed rare error when trying to load the Tartube database (Git #[653](https://github.com/axcore/tartube/issues/653))
-- Fixed crash when the matplotlib is unable to start on the user's system (Git #[592](https://github.com/axcore/tartube/issues/592), #[663](https://github.com/axcore/tartube/issues/663))
-# MINOR FIXES
-- When a scheduled download starts and the Tartube main window is minimised, it automatically un-minimises itself. Fixed (Git #[664](https://github.com/axcore/tartube/issues/664))
-- In the preferences window, Options &gt; Download options tab, fixed the broken 'Refresh List' button
-# MINOR NEW FEATURES
-- You can now re-check a video that has been downloaded (by right-clicking the video and selecting 'Re-check video'. Re-checking will re-download all metatdata files (including the thumbnail), but won't replace the video file itself (Git #[661](https://github.com/axcore/tartube/issues/661))
-# 
+- In the download options window, 'Formats' tab, fixed the incorrect handling of multiple formats: multiple formats should of course be specified with '-f [100](https://github.com/axcore/tartube/issues/100)/[101](https://github.com/axcore/tartube/issues/101)/[102](https://github.com/axcore/tartube/issues/102)', not '-f [100](https://github.com/axcore/tartube/issues/100)+[101](https://github.com/axcore/tartube/issues/101)+[102](https://github.com/axcore/tartube/issues/102)'. Also added special handling when all specified formats are either video-only or audio-only, so that yt-dlp receives '-f ([137](https://github.com/axcore/tartube/issues/137)/[136](https://github.com/axcore/tartube/issues/136))+([140](https://github.com/axcore/tartube/issues/140)/[139](https://github.com/axcore/tartube/issues/139))'. (Note that double quotes would be required if using this pattern in the 'Additional download options' box, i.e. '-f "([137](https://github.com/axcore/tartube/issues/137)/[136](https://github.com/axcore/tartube/issues/136))+([140](https://github.com/axcore/tartube/issues/140)/[139](https://github.com/axcore/tartube/issues/139))"' (Git #[680](https://github.com/axcore/tartube/issues/680))
+- In the Classic Mode tab, fixed the broken 'Download in this format/Convert to this format' combo (Git #[672](https://github.com/axcore/tartube/issues/672))
+- Fixed several issues to do with broken locales, some of which affected all locales, some of which affected only the German locale (Git #[670](https://github.com/axcore/tartube/issues/670))
+- Fixed inability to install yt-dlp and/or FFmpeg on MS Windows (this fix was rolled out to MS Windows users as 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
     <projectSourceUrl>https://github.com/axcore/tartube</projectSourceUrl>
