@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>filen</id>
-    <version>3.0.44</version>
+    <version>3.0.47</version>
     <title>Filen</title>
     <authors>Filen Cloud Dienste UG</authors>
     <owners>Adri</owners>
@@ -16,7 +16,7 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Zero knowledge end-to-end encrypted cloud storage</summary>
-    <releaseNotes>**Full Changelog**: https://github.com/FilenCloudDienste/filen-desktop/compare/v3.0.43...v3.0.44</releaseNotes>
+    <releaseNotes>**Full Changelog**: https://github.com/FilenCloudDienste/filen-desktop/compare/v3.0.44...v3.0.47</releaseNotes>
     <tags>filen cloud zero-knoledge encrypted storage</tags>
     <projectSourceUrl>https://github.com/FilenCloudDienste/filen-desktop</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/filen</packageSourceUrl>
