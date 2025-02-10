@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>266.250202.0</version>
+    <version>267.250206.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,26 +17,23 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Make the support dialog entry more prominent [#8361](https://github.com/tutao/tutanota/issues/8361)
- - Add label feature in the pricing selector [#8288](https://github.com/tutao/tutanota/issues/8288)
- - Support overhaul [#8162](https://github.com/tutao/tutanota/issues/8162)
- - Update pqcrypto library to fix side channel
-
-
+- Allow accounts with multiple admin to upgrade to quantum-safe state
+- Update liboqs and pqcrypto libs, use ml-kem instead of kyber
+- Deprecate RSA encryption for mails
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/352?closed=1
+https://github.com/tutao/tutanota/milestone/353?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-375265e2dda819029c0370a105f487b0a445749620d9c9ece4c095a1bef263e7
+906a3ac9c5136fd58848af4f1d5d1406f0ddfa85f943b5d57921304e8225cc96
 
 **tutanota-desktop-win.exe:**
-29a80deff9ad568d95c74c3c48128ed2cd69cf699beccf08ff8105b04b9af83e
+115ecc02e5a389841254b498e41be5108b6a667a4882bc3842f93d9262ea2ad8
 
 **tutanota-desktop-mac.dmg:**
-4f4a9b2850b198c575e7885cb6be4e45968dbc648513ee30f50a48711a3540bc</releaseNotes>
+4b172ba02b9de3db7533cc13bea02f664be9489bac7e47b162197442a5f4bcba</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
