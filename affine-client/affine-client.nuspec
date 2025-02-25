@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.20.1</version>
+    <version>0.20.2</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,30 +18,22 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Features
-
-- **core**: Add resetSync button &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10404 [&lt;samp&gt;(0e581)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0e581c915)
-- **editor**: Update footnote node style and config &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/10392 [&lt;samp&gt;(1b2a4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1b2a4377f)
-
-### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
 
 - **core**:
-  - Remove tag page semicolon &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/10379 [&lt;samp&gt;(5fe4b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5fe4b2b3e)
-  - Version control session &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/10384 [&lt;samp&gt;(b71fe)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b71fe291d)
-  - Remove unnecessary doc loading &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10395 [&lt;samp&gt;(da7ab)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/da7ab51e2)
-- **editor**:
-  - Turbo renderer stale frame lag on zooming &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/10376 [&lt;samp&gt;(67889)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/67889d936)
-  - Should check text length and stop event propagation when adding a link &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/10391 [&lt;samp&gt;(162b7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/162b7adc1)
-  - Drag connector and group element &amp;nbsp;-&amp;nbsp; by @doouding in https://github.com/toeverything/AFFiNE/issues/10385 [&lt;samp&gt;(a0a97)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a0a97d075)
-  - Drag bookmark from note to edgeless &amp;nbsp;-&amp;nbsp; by @doouding in https://github.com/toeverything/AFFiNE/issues/10389 [&lt;samp&gt;(9bb74)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9bb74bce6)
+  - Fix permission checks for export workspace &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/10401 [&lt;samp&gt;(abda7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/abda70d2c)
+  - Reorder plan card action button conditions &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/10387 [&lt;samp&gt;(dee6b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dee6be11f)
+  - Close popover after successful invite in member editor &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/10388 [&lt;samp&gt;(84814)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/848145150)
+  - Unused blobs query &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/10399 [&lt;samp&gt;(7e892)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7e892b3a7)
+  - Add linked doc button &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10417 [&lt;samp&gt;(2ec7d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2ec7de7e3)
 - **nbstore**:
-  - Leave awareness when destroy &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10394 [&lt;samp&gt;(a59e6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a59e64042)
-  - Fix doc sync logic &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10400 [&lt;samp&gt;(59a79)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/59a791fe1)
-- **server**:
-  - Too much redundant updates events &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/10383 [&lt;samp&gt;(f02b5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f02b57d58)
-  - Include check of prerelease versions &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/10386 [&lt;samp&gt;(b9e3f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b9e3fc54f)
+  - Local doc update lost &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10422 [&lt;samp&gt;(c644a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c644a46b8)
 
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.20.0...v0.20.1)</releaseNotes>
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Performance
+
+- **core**: Only full sync before exporting &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/10408 [&lt;samp&gt;(e5e5c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e5e5c0a8b)
+
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.20.1...v0.20.2)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
