@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.27</version>
+    <version>3.0.28</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,18 +18,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>### [Read Notesnook v3.0.27's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.27/)
+    <releaseNotes>### What's fixed
 
----
+1. Fixed attachment table height for few items by @01zulfi in https://github.com/streetwriters/notesnook/pull/7662
+2. Fixed `Applying mismatched transaction` error on loading notes
+3. Fixed links not opening inside `iframe` embeds
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.26...v3.0.27
-
----
-
-**New Contributors**
-
-* @Waqar144 made their first contribution in https://github.com/streetwriters/notesnook/pull/7605
-* @three-b0dy made their first contribution in https://github.com/streetwriters/notesnook/pull/7622</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.27...v3.0.28</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
