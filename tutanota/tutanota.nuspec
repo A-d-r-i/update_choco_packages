@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>270.250219.0</version>
+    <version>271.250224.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,29 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
--  fix mails disappearing from folders
+    <releaseNotes># What's new
+ - Handle "Could not access secret storage" error gracefully [#8380](https://github.com/tutao/tutanota/issues/8380)
+ - Changed app icon [#8503](https://github.com/tutao/tutanota/issues/8503)
+
+# Bugfixes
+ - Window client spams logs with SQLCipher errors [#8589](https://github.com/tutao/tutanota/issues/8589)
+ - Inline replies no longer work [#8544](https://github.com/tutao/tutanota/issues/8544)
+ - Refine support dialog [#8458](https://github.com/tutao/tutanota/issues/8458)
+ - zoom factor resets in the macOS deskop app [#5441](https://github.com/tutao/tutanota/issues/5441)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/357?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-e2721739404c71b73d986545ae366b1d0f18ff33413b023896e85fcf8e39bfcc
+6fb53806287ee2443eb72dd6c365e8e82eb876dc13379c723a3f8ea41c7ecb23
 
 **tutanota-desktop-win.exe:**
-f41f6583260d99509f95a5ac75377138c72a32afc470cbcf26eef7757ed2df7e
+bc4520a902cf69833e5e93e9bcae9dd8cb8b78d476b7da4ca19f0a1d0e2c8388
 
 **tutanota-desktop-mac.dmg:**
-6b9c7572271f169308fc1500b3901b2cde96f8df9a9c5bb0fc0273230385c3e5
-
-**tutanota-desktop-270.250219.0-unpacked-linux.tar.gz**
-2e0570dc39d2962c390134fe5b4c50e1261761679d95796e13873e42d898a05d</releaseNotes>
+7ce1a0f7d5b96853cf8195663f1a5db48b6c816da45df3f97463a848d33d1a90</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
