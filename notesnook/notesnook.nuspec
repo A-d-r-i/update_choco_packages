@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.29</version>
+    <version>3.0.30</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,11 +18,16 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>### [Read Notesnook v3.0.29's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.0.29/)
+    <releaseNotes>## What's Changed
+* Fixed title not aligned with rest of the UI in editor by @01zulfi in https://github.com/streetwriters/notesnook/pull/7731
+* When default notebook is set, adding notes in tag and color context should also add that note to default notebook by @01zulfi in https://github.com/streetwriters/notesnook/pull/7732
+* Fixed issues related to command palette by @01zulfi in https://github.com/streetwriters/notesnook/pull/7669
+* Fixed image loses top and bottom padding in read-only mode by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7743
+* Fixed task list components improperly aligned in editor
+* Fixed padding issues in different editor blocks
 
----
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.28...v3.0.29</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.29...v3.0.30</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
