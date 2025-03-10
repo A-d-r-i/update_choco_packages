@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.20.4</version>
+    <version>0.20.5</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,13 +18,12 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### ???? Bug Fixes
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
 
-- **editor**: Table collab - by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/10489 [&lt;samp&gt;(cbef6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cbef68112)
-- **server**: Limit max batch pulled doc updates - by @forehalo [&lt;samp&gt;(bf42a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bf42a4ddb)
+- **core**: Fix awareness send message repeatedly &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/10643 [&lt;samp&gt;(b427a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b427a89c9)
+- **server**: Reschedule busy doc merging &amp;nbsp;-&amp;nbsp; by @forehalo [&lt;samp&gt;(00398)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/00398fc63)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.20.3...v0.20.4)
-</releaseNotes>
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.20.4...v0.20.5)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
