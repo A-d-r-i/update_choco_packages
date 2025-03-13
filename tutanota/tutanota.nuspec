@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>271.250227.0</version>
+    <version>274.250312.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,39 +17,27 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - New setting: Scroll time on three days and week view [#8481](https://github.com/tutao/tutanota/issues/8481)
- - Three days view [#8324](https://github.com/tutao/tutanota/issues/8324)
- - Create/Edit events with Advanced Repeat Rules [#8047](https://github.com/tutao/tutanota/issues/8047)
- - Parse Advanced Repeat Rules on Import [#8046](https://github.com/tutao/tutanota/issues/8046)
- - Calendar events show which calendar they belong to [#7209](https://github.com/tutao/tutanota/issues/7209)
+ - Actions on conversations [#8224](https://github.com/tutao/tutanota/issues/8224)
+ - Improve mail loading during indexing [#8564](https://github.com/tutao/tutanota/issues/8564) [#8599](https://github.com/tutao/tutanota/issues/8599)
+ - Better Inform Users of Outdated Clients [#8373](https://github.com/tutao/tutanota/issues/8373)
 
 # Bugfixes
- - Fix empty categories shown in support section [#8610](https://github.com/tutao/tutanota/issues/8610)
- - External calendar might get synchronized multiple times in parallel [#8447](https://github.com/tutao/tutanota/issues/8447)
- - External calendar is added multiple times [#8446](https://github.com/tutao/tutanota/issues/8446)
- - Errors when unsubscribing from a calendar while it's syncing [#8439](https://github.com/tutao/tutanota/issues/8439)
- - Subscribing to an external calendar causes newly added calendar to show in internal calendars section on all logged in clients (except the one used to add it) [#8437](https://github.com/tutao/tutanota/issues/8437)
- - 404 PUT /rest/tutanota/calendarevent/ [#8414](https://github.com/tutao/tutanota/issues/8414)
- - Accessibility issues with new Calendar date/time picker [#8193](https://github.com/tutao/tutanota/issues/8193)
- - ParsingError: Invalid birthday format [#8051](https://github.com/tutao/tutanota/issues/8051)
- - Events that repeat Weekly on weekdays (on subscription calendars) only repeat weekly, not on weekdays [#7858](https://github.com/tutao/tutanota/issues/7858)
- - URL removed from calendar description after being invited and editing (Outlook invite) [#7814](https://github.com/tutao/tutanota/issues/7814)
- - When a longer calendar event ends on the first day of the next week, the pointer is not rendered [#7780](https://github.com/tutao/tutanota/issues/7780)
- - All day events created near the end of a day default to two days [#7723](https://github.com/tutao/tutanota/issues/7723)
+ - Move mails to inbox shortcut clashes with view email source [#8573](https://github.com/tutao/tutanota/issues/8573)
+ - Search extension dialog can be triggered multiple times [#8560](https://github.com/tutao/tutanota/issues/8560)
+ - Skipping to success page after IP timeout and captcha failure during signup [#7234](https://github.com/tutao/tutanota/issues/7234)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/358?closed=1
-
+https://github.com/tutao/tutanota/milestone/359?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-d3744d20663d813baf1eead55f55226446709c1a31acbe067ec10c76837f8ab3
+df4f992aa6c8114be65a143766b0d991930151cee52a4bf4d956eb6aaf6f3eb5
 
 **tutanota-desktop-win.exe:**
-b4b80116d0ba1e57e839af794875a9478ef74f43a09723e4ab6e6f454a923a8b
+ea724754ef1813b665db67f33cffc2f127841853c659a5f888a609532d7b4f2d
 
 **tutanota-desktop-mac.dmg:**
-8f594038c136dd142d78d38e7acb6d810c42f29ce363707b7cff32002d1d3960</releaseNotes>
+6501f0a169a9542637006171ed1da2a181d939a6a15b911eaf663978c3a713cc</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
