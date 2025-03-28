@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.31</version>
+    <version>3.0.32</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -19,17 +19,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## What's Changed
-* editor: ensure consistent gap between heading and first element in callout by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7757
-* web: fix ui flicker in editor when creating new note by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7761
-* editor: fix scroll into view when used by toc by @01zulfi in https://github.com/streetwriters/notesnook/pull/7764
-* web: fix editor rerendering on session type change from new to default by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7759
-* web: increase reminder dialog width by @01zulfi in https://github.com/streetwriters/notesnook/pull/7767
-* Fix creating backups ios by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7777
-* web: mask email in session expired page description by @01zulfi in https://github.com/streetwriters/notesnook/pull/7783
-* web: add reset zoom button by @01zulfi in https://github.com/streetwriters/notesnook/pull/7750
 
+* Add toggle focus mode command by @01zulfi in https://github.com/streetwriters/notesnook/pull/7736
+* Pinned tab fixes by @01zulfi in https://github.com/streetwriters/notesnook/pull/7692
+* Do not use look behind regex in editor for detecting markdown by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7809
+* Fix app switching to stable track on reload
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.30...v3.0.31</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.31...v3.0.32</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
