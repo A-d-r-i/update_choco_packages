@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>275.250326.0</version>
+    <version>277.250409.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,39 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Recovery code not fully visible [#8784](https://github.com/tutao/tutanota/issues/8784)
+    <releaseNotes># What's new
+ - Mark suddenly unverified recipients after hitting "send" [#8783](https://github.com/tutao/tutanota/issues/8783)
+ - Add first month for free option [#8720](https://github.com/tutao/tutanota/issues/8720) 
+ - Mailbox export load not distributed for mail details [#8411](https://github.com/tutao/tutanota/issues/8411)
+ - consider changing the attachment actions in the mail editor to "remove" and "open" [#4371](https://github.com/tutao/tutanota/issues/4371)
+
+# Bugfixes
+ - Cannot trash or move mails opened from notification using the actions bar [#8775](https://github.com/tutao/tutanota/issues/8775)
+ - Showing Customized date picker instead of native datepicker on mobile [#8765](https://github.com/tutao/tutanota/issues/8765)
+ - Duplicate Upgrade dialogue in search indexing for free users [#8755](https://github.com/tutao/tutanota/issues/8755)
+ - AssertNotNull is getLatestMailForConversation [#8717](https://github.com/tutao/tutanota/issues/8717)
+ - Clicking on an email notification in a group shows the latest one instead of the one clicked on [#8333](https://github.com/tutao/tutanota/issues/8333)
+ - Event Preview uses the wrong translation for "Third {WEEK_DAY}"
+ - Month name still intractable on Three days view expanding/collapsing the day selector in other views
+ - Changing date for monthly repeating events throws error [#8796](https://github.com/tutao/tutanota/issues/8796)
+ - Advanced repeat rules: event on last Friday does not show up on some months [#8660](https://github.com/tutao/tutanota/issues/8660)
+ - Fixes Week View Icon
+ - Handle invalid birthday errors
+ - Opens mini-calendar only when return is pressed
+ - Fixes focus when opening New Dropdowns
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/365?closed=1
-
+https://github.com/tutao/tutanota/milestone/366?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-e927342aa74427bbfd4c11beb77c5c0e92bdebfe038afc1e33f175936e7b7180
+9e154cc808cde1906b9f70ad6e351167208e0a4a138f2aea65da093f6f0d0add
 
 **tutanota-desktop-win.exe:**
-0b4a9a2526cb8f625a020f9fb0f30a87736d1dbe2e3ad92ce32dfa3f3369788a
+eb54e5509a1d498aedec844b09b932cf0087db0e14aede0c510851adfd3a26ff
 
 **tutanota-desktop-mac.dmg:**
-47f5cd9db718dfd6dcee6b0dae079cd4efd3fb9991e5fa701eac81a2af969451</releaseNotes>
+4bcc44c5ab3812901e96d36fbb992b3a02785e7990d5f8bd35f1d537adc908fc</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
