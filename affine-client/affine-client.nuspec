@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.21.0</version>
+    <version>0.21.1</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,53 +18,26 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>![image](https://github.com/user-attachments/assets/1be44d84-fa11-488a-b4aa-8455e13fa6ba)
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
 
-We've shipped AFFiNE 0.21!
+- **editor**:
+  - Improve link popup positioning with autoUpdate &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11510 [&lt;samp&gt;(e927d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e927d02c9)
+  - Allow copy in readonly mode &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/11538 [&lt;samp&gt;(bda55)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bda5562f9)
+  - Text overflow in journal card &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/11537 [&lt;samp&gt;(ca751)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ca75162fc)
+  - Image icon color &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/11536 [&lt;samp&gt;(238ec)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/238ec59dd)
+  - Disable mention node select &amp;nbsp;-&amp;nbsp; by @Flrande in https://github.com/toeverything/AFFiNE/issues/11512 [&lt;samp&gt;(8c87d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8c87d2a39)
+  - Prevent Tab key propagation outside editor &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/11531 [&lt;samp&gt;(780c3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/780c35eab)
+  - Incorrect brush bound with rotation and line width &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11524 [&lt;samp&gt;(38201)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/382018651)
+  - Paste to code block should delete selected text &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11546 [&lt;samp&gt;(e4e3d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e4e3d8ef5)
+  - Should auto close dropdown menus on toolbar &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11522 [&lt;samp&gt;(c57f4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c57f41805)
+- **electron**:
+  - Use another origin for popup to disable zoom in/out issue of the popup window &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11506 [&lt;samp&gt;(a2125)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a2125787c)
+  - Cannot restart recording the same app again &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11498 [&lt;samp&gt;(f0aaf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f0aafda50)
+- **server**:
+  - Early exit in doc parse &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11507 [&lt;samp&gt;(37924)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3792464fa)
+  - Duplicate registered otel providers &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/11513 [&lt;samp&gt;(64618)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/646182ea2)
 
-&gt;
-&gt; We are in the progress of fully rewriting our docs site. It's planed to be shiped with v0.22.0, so the current content might be outdated.
-&gt; Feel to raise issues against the docs or the product.
-&gt;
-
-## Breaking changes
-
-### Server config system
-
-We've introduced a brand new config system to make updating configs of servers much easier. The Admin panel got little refactor as well. Now you can update well noted configs in it and all config mutated in Admin panel will take effects immediately(No reboot required).
-
-&lt;img width="1188" alt="image" src="https://github.com/user-attachments/assets/9dc844de-fc79-40ce-b805-f59a647d4262" /&gt;
-
-The new config system is based on JSON and we provide a fully documented schema to make it even more clear. [Check it out](https://github.com/toeverything/affine/releases/latest/download/config.schema.json).
-You can configure your instance it the way like:
-
-&lt;img width="1237" alt="image" src="https://github.com/user-attachments/assets/44b25e50-e8ee-40a5-83d8-e6bdaaafbd90" /&gt;
-
-Then import your update through instance's command line:
-
-```shell
-node --import ./scripts/register.js ./dist/data/index.js import-config ./path/to/config.json
-```
-&gt; Importing by command line requires a reboot.
-&gt; We will provide an import/export GUI on admin panel in 0.22, which will not require reboot.
-
-The old way to config AFFiNE instances by affine.js now is deprecated and will not take effect anymore. Some of the Environment Variables may still work, check the `@environment` annotation in schema.
-
-## Features
-
-??? Meta info for blocks
-??? Notification
-??? Doc Permissions
-??? Database - member &amp; attachment property
-??? Iframe embed block
-??? Edgeless alignment
-??? Edgeless highlighter
-??? Readwise highlight integration
-??? Web clipper
-??? Improved Selfhosted admin panel
-
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.20.5...v0.21.0
-</releaseNotes>
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.0...v0.21.1)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
