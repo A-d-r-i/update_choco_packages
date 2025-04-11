@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.8.6</version>
+    <version>5.9</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,21 +17,56 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.8.6 release
-* bugfix: fix crash when print your accounts
-* bugfix: ledger similar marked txn were persisted after close
-* bugfix: ledger similair marked txn now display their group
-* bugfix: repbalance first column title was not set to interval
-* bugfix: #[2091004](https://bugs.launchpad.net/bugs/2091004) statistics time report totals line with exact 0 is not displayed
-* bugfix: #[2090668](https://bugs.launchpad.net/bugs/2090668) close after start wizard not not let choose filename to save
-* bugfix: #[2090183](https://bugs.launchpad.net/bugs/2090183) the export CSV functionality does not take into account the frac digits property of the currency
-* bugfix: #[2089407](https://bugs.launchpad.net/bugs/2089407) trendtime/balance report clear filter don't clear properly
-* bugfix: #[2087750](https://bugs.launchpad.net/bugs/2087750) save indicator (*) not showing after editing multiple transfert
-* bugfix: #[2085376](https://bugs.launchpad.net/bugs/2085376) future/remind main window bottom list column not updated
-* bugfix: #[2083127](https://bugs.launchpad.net/bugs/2083127) inherit operations should not preserve colour flags
-* bugfix: #[2079801](https://bugs.launchpad.net/bugs/2079801) alert about budget usage when move/delete a category
-* bugfix: #[2060159](https://bugs.launchpad.net/bugs/2060159) window width and height size is reset to a small size after demaximizing on startup
-* wish: #[2086475](https://bugs.launchpad.net/bugs/2086475) add menu keyboard shortcut to import files
+Made 5.9 release
+* new: new svg default iconset
+* new: new symbolic svg iconset
+* new: budget tabview: added import/export menu
+* new: budget tabview: added clearall menu
+* new: reinforced error handling when loading a .xhb file
+* new: preference: amount color can be herited from chart palette
+* new: added a ledger tool to mark category sign with amount don't match
+* change: xhb data file format (v1.6)
+* change: internal data/display flag separation
+* change: icon name rework
+* change: simplified ledger icon status column (reconciled merged with lock)
+* change: manage account icons was moved to a left column for consistency
+* change: the preference pages have been organized on 2 levels
+* change: the last used preferences page is remembered during the session
+* change: relayout of edit assignment dialog
+* wish: #[2101100](https://bugs.launchpad.net/bugs/2101100) budget report option to exclude subcat from unbudgeted line
+* wish: #[2089475](https://bugs.launchpad.net/bugs/2089475) inherit while managing scheduled transactions
+* wish: #[2083175](https://bugs.launchpad.net/bugs/2083175) balance report to propose an option to include/exclude transfer
+* wish: #[2079857](https://bugs.launchpad.net/bugs/2079857) budget report option to restrict &lt;= today
+* wish: #[2073032](https://bugs.launchpad.net/bugs/2073032) statistic time report detail to focus on row or cell (specific month)
+* wish: #[2070444](https://bugs.launchpad.net/bugs/2070444) possibility to print/export scheduled transactions
+* wish: #[2068845](https://bugs.launchpad.net/bugs/2068845) duplicate a transaction split line
+* wish: #[2068663](https://bugs.launchpad.net/bugs/2068663) include split transaction memos in completion
+* wish: #[2067399](https://bugs.launchpad.net/bugs/2067399) Schedule Transaction for the nth weekday of a Month
+* wish: #[2066993](https://bugs.launchpad.net/bugs/2066993) scheduled payment on last day of month
+* wish: #[2066110](https://bugs.launchpad.net/bugs/2066110) refactor EUR feature for future euro adopters
+* wish: #[2065633](https://bugs.launchpad.net/bugs/2065633) option to keep internal transfer date sync
+* wish: #[2065355](https://bugs.launchpad.net/bugs/2065355) making “remind” status independent of “reconciled” status
+* wish: #[2064958](https://bugs.launchpad.net/bugs/2064958) "Period to date" date range
+* wish: #[2061227](https://bugs.launchpad.net/bugs/2061227) a feature to prevent add/import prior last reconciled date
+* wish: #[2052314](https://bugs.launchpad.net/bugs/2052314) option of background color for future transactions
+* wish: #[2042038](https://bugs.launchpad.net/bugs/2042038) assignment more visible search option (case and regex)
+* wish: #[2042037](https://bugs.launchpad.net/bugs/2042037) manage assignment list search option icons (case and regex)
+* wish: #[1938412](https://bugs.launchpad.net/bugs/1938412) inline calculation in txn/split amount field
+* wish: #[1875100](https://bugs.launchpad.net/bugs/1875100) option to import in pending status and approve later
+* wish: #[1756407](https://bugs.launchpad.net/bugs/1756407) remove -|+ of amount widget + empty if focus
+* bugfix: post scheduled from main window do not enable save
+* bugfix: #[2106307](https://bugs.launchpad.net/bugs/2106307) broken link in the Preferences Dialog
+* bugfix: #[2106027](https://bugs.launchpad.net/bugs/2106027) delete then show usage make a crash in tags manage
+* bugfix: #[2105387](https://bugs.launchpad.net/bugs/2105387) no changes in manage accounts faulty count changes
+* bugfix: #[2104162](https://bugs.launchpad.net/bugs/2104162) Wrong balance values in Balance Report after changing the interval
+* bugfix: #[2102726](https://bugs.launchpad.net/bugs/2102726) Unexpected dates from 'Next payout' automatic posting
+* bugfix: #[2101050](https://bugs.launchpad.net/bugs/2101050) transaction sign change with a transfer between accounts
+* bugfix: #[2100875](https://bugs.launchpad.net/bugs/2100875) payment filter revert to mobile phone after reopen saved file
+* bugfix: #[2100731](https://bugs.launchpad.net/bugs/2100731) budget report time list print result label are incorrect
+* bugfix: #[2100489](https://bugs.launchpad.net/bugs/2100489) windows: date problem if you change the short format in regional settings
+* bugfix: #[2099918](https://bugs.launchpad.net/bugs/2099918) scheduled with week-end before/after gap post date is incorrect
+* bugfix: #[2099843](https://bugs.launchpad.net/bugs/2099843) budget chart wrong color when spend = budget
+* bugfix: #[2098359](https://bugs.launchpad.net/bugs/2098359) portable version truncate recently-used.xbel
 
 **Full changelog:** [https://www.gethomebank.org/ChangeLog](https://www.gethomebank.org/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
