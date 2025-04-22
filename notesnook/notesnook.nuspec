@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.0.32</version>
+    <version>3.1.0</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,14 +18,11 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## What's Changed
+    <releaseNotes>### [Read Notesnook v3.1.0's release notes on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.1.0/)
 
-* Add toggle focus mode command by @01zulfi in https://github.com/streetwriters/notesnook/pull/7736
-* Pinned tab fixes by @01zulfi in https://github.com/streetwriters/notesnook/pull/7692
-* Do not use look behind regex in editor for detecting markdown by @ammarahm-ed in https://github.com/streetwriters/notesnook/pull/7809
-* Fix app switching to stable track on reload
+---
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.31...v3.0.32</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.0.32...v3.1.0</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
