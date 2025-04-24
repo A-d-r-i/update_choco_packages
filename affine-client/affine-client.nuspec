@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.21.3</version>
+    <version>0.21.4</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -19,79 +19,23 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>## &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+
 - **core**:
-  - Not revalidate notification count when logged out &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/11617 [&lt;samp&gt;(0f39a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f39ab4ea4)
-  - Replace zero-width non-ioiner for editor content??? &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/11591 [&lt;samp&gt;(25418)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/25418b402a)
-  - Fix event timing in storage &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/11628 [&lt;samp&gt;(16d5b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/16d5b0df95)
-  - Cannot focus inside shape in test &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/11630 [&lt;samp&gt;(14943)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/149433b8d0)
-  - Ask AI input box in the whiteboard is blocked by the menu &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/11634 [&lt;samp&gt;(883b1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/883b1d50f2)
-  - Hide start-with-ai if service feature is not enabled &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/11633 [&lt;samp&gt;(9c6d9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9c6d94f597)
-  - Audio player ux &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11685 [&lt;samp&gt;(46f3d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/46f3dfc64c)
-  - Database backlink row visibility &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11706 [&lt;samp&gt;(db2a8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/db2a8fd509)
-  - Adjust recording user-select none style &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11735 [&lt;samp&gt;(ef7a8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ef7a82d6e6)
-  - Appcontainer fallback display issue &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11669 [&lt;samp&gt;(268c3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/268c34e8b5)
-  - Avatar cannot load google user content url image &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11733 [&lt;samp&gt;(e8d2b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e8d2b0114b)
-  - Ai history of new users is always loading, enable online search by default &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/11741 [&lt;samp&gt;(50b3f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/50b3f5f7df)
-  - Ask ai loses user selected context &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/11767 [&lt;samp&gt;(e577b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e577bb7aa9)
-  - Transcription block styls &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11772 [&lt;samp&gt;(75df2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/75df27a145)
-  - Fix ai with multiple server &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/11570 [&lt;samp&gt;(a9e46)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a9e4690d2d)
-  - Filter embedding results to return only user-selected tags and documents &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/11770 [&lt;samp&gt;(203e9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/203e931e30)
-  - Handle incorrect style of the confirm delete button &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/11725 [&lt;samp&gt;(17895)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/178954a18c)
-  - Add tooltip to cloud server selector &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/11755 [&lt;samp&gt;(37e07)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/37e07e91a3)
-  - Confirm the tag name before creating a new tag &amp;nbsp;-&amp;nbsp; by @JimmFly in https://github.com/toeverything/AFFiNE/issues/11724 [&lt;samp&gt;(9f59d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9f59d5e941)
-- **editor**:
-  - Enhance markdown latex preprocessing &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11597 [&lt;samp&gt;(d5aeb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d5aebc1421)
-  - Connector target position NaN &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11606 [&lt;samp&gt;(58865)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/588659ef67)
-  - Fix overlay of tool is not shown or repeated when switching tool &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11575 [&lt;samp&gt;(823bf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/823bf40a57)
-  - The switch button style set in the TOC does not effect &amp;nbsp;-&amp;nbsp; by @cuikaipeng and **Chen** in https://github.com/toeverything/AFFiNE/issues/11622 [&lt;samp&gt;(bcd1c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bcd1cd2629)
-  - Surface-ref refFlavour should be affine:frame when reference to a frame &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11632 [&lt;samp&gt;(74ebe)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/74ebec007d)
-  - Use img tag for link preview icon and banner &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/11637 [&lt;samp&gt;(2f564)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2f5647ac77)
-  - Ime input error at empty line &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11636 [&lt;samp&gt;(aabb0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/aabb09b31f)
-  - Cut and paste surface-ref to same doc should remain surface-ref &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11639 [&lt;samp&gt;(4da00)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4da00eba0d)
-  - Can not query in mobile at menu &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11649 [&lt;samp&gt;(f860f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f860f77a24)
-  - Repeat trigger keys of at-menu was added &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11631 [&lt;samp&gt;(076c5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/076c5ba044)
-  - Android bs keyboard provider error &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/11647 [&lt;samp&gt;(e1cb8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e1cb8198f1)
-  - Markdown code preprocessor should handle link correctly &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11671 [&lt;samp&gt;(7aa87)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7aa87de5f7)
-  - Integration vitest config warning &amp;nbsp;-&amp;nbsp; by @doodlewind [&lt;samp&gt;(e6894)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e68947c792)
-  - Rework disable middle click settings for linux &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11556 [&lt;samp&gt;(575aa)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/575aa3c1c1)
-  - V-element may get undefined inline editor &amp;nbsp;-&amp;nbsp; by @Flrande in https://github.com/toeverything/AFFiNE/issues/11697 [&lt;samp&gt;(fd6c3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fd6c34cfa3)
-  - Improve pdf embed viewer UX &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11641 [&lt;samp&gt;(8ca67)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8ca675b2ec)
-  - Missing copy as png implementation &amp;nbsp;-&amp;nbsp; by @Saul-Mirone in https://github.com/toeverything/AFFiNE/issues/11716 [&lt;samp&gt;(b2694)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b2694003c9)
-  - Markdown html and image import &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11712 [&lt;samp&gt;(bfec5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bfec5dd594)
-  - Link popover title overflow &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11704 [&lt;samp&gt;(79c94)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/79c9425df6)
-  - Add code block clipboard extension &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11731 [&lt;samp&gt;(212c1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/212c13f843)
-  - Update embed iframe block event tracker &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11736 [&lt;samp&gt;(022e5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/022e5f2c93)
-  - Clicking footnote node should not open doc when readonly &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11749 [&lt;samp&gt;(d6287)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d6287fd7b0)
-  - Should keep color on custom color button &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11773 [&lt;samp&gt;(a46bb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a46bb446e2)
-  - Footnote popup style and position issues &amp;nbsp;-&amp;nbsp; by @donteatfriedrice in https://github.com/toeverything/AFFiNE/issues/11771 [&lt;samp&gt;(a555d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a555df0200)
-  - Remove redundant subtraction &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11781 [&lt;samp&gt;(1ae36)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1ae36d4b3e)
-  - Chevron down icon on toolbar &amp;nbsp;-&amp;nbsp; by @fundon in https://github.com/toeverything/AFFiNE/issues/11803 [&lt;samp&gt;(9c025)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9c02512d7c)
+  - Subscribe search not unsubscribe &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/11929 [&lt;samp&gt;(8b486)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8b486b483)
+  - Action items in the ai response are not optimized for dark mode &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/11839 [&lt;samp&gt;(e32d6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e32d6b934)
+  - Should not limit the number of docs of at menu &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11889 [&lt;samp&gt;(61e33)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/61e336471)
+  - Remove image proxy in onboarding snapshots &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11954 [&lt;samp&gt;(ab3f0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ab3f05692)
+  - Sidebar audio player seek position issue &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11844 [&lt;samp&gt;(9982e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9982e0ea4)
+  - Audio job submittion timeout too short &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11918 [&lt;samp&gt;(bb606)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bb606ac3e)
 - **electron**:
-  - Use CG* instead of NS* &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11668 [&lt;samp&gt;(ee15b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ee15b364d1)
-  - Browserwindow creationis  sometimes too early &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11787 [&lt;samp&gt;(3772a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3772a4700e)
-- **ios**:
-  - Avoid keyboard covering dialog &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/11681 [&lt;samp&gt;(40112)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4011214451)
-- **mobile**:
-  - Cannot change tag color &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11708 [&lt;samp&gt;(22008)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/220087c172)
-  - Tab is not at bottom in tag detail page when empty &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/11723 [&lt;samp&gt;(d0456)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d045651a03)
-  - New doc in explorer folder &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/11682 [&lt;samp&gt;(1c6ee)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1c6eea21df)
-- **native**:
-  - Invalid call to set mute behavior &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11764 [&lt;samp&gt;(04c0f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/04c0fa3de1)
+  - Sometimes pops up failed to save dialog &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11925 [&lt;samp&gt;(07d7a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/07d7a6207)
+  - Use askForMeetingPermission for asking microphone permission &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/11792 [&lt;samp&gt;(58f7a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/58f7a6166)
+- **nbstore**:
+  - Fix indexer cache not working &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/11922 [&lt;samp&gt;(075a2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/075a2e9f9)
 - **server**:
-  - Initial user plan &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11687 [&lt;samp&gt;(f2f1a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f2f1a10715)
-  - Slide audio override &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11688 [&lt;samp&gt;(ad712)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ad712da07f)
-  - Subscription delete race condition &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/11729 [&lt;samp&gt;(bfb94)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bfb94acc42)
-  - Relax global embedding condition &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11791 [&lt;samp&gt;(a33b8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a33b82e8b1)
+  - Empty mimetype attachments fallback &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11869 [&lt;samp&gt;(21b7f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/21b7f02b0)
 
-### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Performance
-
-- **editor**:
-  - Dispose input event handler for removed blocks &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/11734 [&lt;samp&gt;(b2186)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b21864cf63)
-  - Avoid redundant dom query when editing single block &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/11732 [&lt;samp&gt;(16f7b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/16f7be7f0b)
-- **native**:
-  - Use simd to speedup audio buffer mix &amp;nbsp;-&amp;nbsp; by @Brooooooklyn in https://github.com/toeverything/AFFiNE/issues/11717 [&lt;samp&gt;(fe867)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fe86722845)
-
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.2...v0.21.3)</releaseNotes>
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.3...v0.21.4)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
