@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.21.5</version>
+    <version>0.21.6</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,19 +18,13 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Features
+    <releaseNotes>
+### ???? Bug Fixes
 
-- **server**:
-  - Adapt 4o image &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11956 [&lt;samp&gt;(743e2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/743e2eb8d)
-  - Find transcript actions &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11890 [&lt;samp&gt;(d5a45)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d5a45c677)
-  - Add time context for chat &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11933 [&lt;samp&gt;(0ab86)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0ab86552f)
+- **nbstore**: Wrong order of socketio transports - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/12077 [&lt;samp&gt;(113c5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/113c501e94)
 
-### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
-
-- **core**: Better search result &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12015 [&lt;samp&gt;(a8c2b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a8c2ba81d)
-- **server**: Filter out attachment in pplx provider &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/11986 [&lt;samp&gt;(c34d7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c34d7dc67)
-
-##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.4...v0.21.5)</releaseNotes>
+##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.5...v0.21.6)
+</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
