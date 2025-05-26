@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>284.250513.1</version>
+    <version>287.250523.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,27 +17,44 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- offline storage performance improvements
+ - Show shared Calendars on the Widget [#8992](https://github.com/tutao/tutanota/issues/8992)
+ - Improve plan selector page [#8927](https://github.com/tutao/tutanota/issues/8927)
+ - Add test ids for conversation actions UI tests [#8925](https://github.com/tutao/tutanota/issues/8925)
+ - Open support dialog from `supportMail` action [#8847](https://github.com/tutao/tutanota/issues/8847)
+ - Include customer ID in support request [#8841](https://github.com/tutao/tutanota/issues/8841)
+ - Add usage tests for support section [#8802](https://github.com/tutao/tutanota/issues/8802)
+ - Improve support section [#8791](https://github.com/tutao/tutanota/issues/8791)
+ - Allow Zoom in/out using keyboard shortcuts `Ctrl +/-` on linux and windows [#8749](https://github.com/tutao/tutanota/issues/8749)
 
 # Bugfixes
-- [mimimi] fix invalid dates breaking the importer [#8766](https://github.com/tutao/tutanota/issues/8766)
+ - External Calendar sync throws an error [#9020](https://github.com/tutao/tutanota/issues/9020)
+ - Unexpected error: console.table is not a function [#9012](https://github.com/tutao/tutanota/issues/9012)
+ - [SDK] Week out of range during Alarm Scheduling [#8984](https://github.com/tutao/tutanota/issues/8984)
+ - Fix contact support page [#8975](https://github.com/tutao/tutanota/issues/8975)
+ - Wrong text in perma delete confirmation dialog when deleting from Spam folder [#8936](https://github.com/tutao/tutanota/issues/8936)
+ - Birthday not removed when deleting contact [#8916](https://github.com/tutao/tutanota/issues/8916)
+ - Calendar widget says "No events" even though upcoming events are scheduled. [#8872](https://github.com/tutao/tutanota/issues/8872)
+ - Permanent delete confirmation dialog appears even when nothing is selected [#8844](https://github.com/tutao/tutanota/issues/8844)
+ - Clicking on "View event" does not show event and can break other UI elements [#8801](https://github.com/tutao/tutanota/issues/8801)
+ - Received Plain Text emails missing automatic link highlight [#8568](https://github.com/tutao/tutanota/issues/8568)
+ - Update browser version checks [#8451](https://github.com/tutao/tutanota/issues/8451)
+ - Email shift multiselect doesn't work with checkboxes [#8344](https://github.com/tutao/tutanota/issues/8344)
+ - Imported mails are deleted too late from the offline storage [#8304](https://github.com/tutao/tutanota/issues/8304)
+ - Forwarding gmail email to an external address doesn't include attachments [#4549](https://github.com/tutao/tutanota/issues/4549)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/371?closed=1
+https://github.com/tutao/tutanota/milestone/372?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-5ce9ca857d51c0958e551083405718a23dfc04adb1f8eeb2500649aa47e3db50
+eedb74c32d5bdec0ff0ca694aaf96d49f9b5dd8b084cdbfce5243072f50a8a98
 
 **tutanota-desktop-win.exe:**
-573a3e9205103a53c8ca780d70c51e00ac316cd2b740c42003718f3259f6111b
+098c3058ce0f976939f43d80950f94c879797483c202243bd563d54779c746f5
 
 **tutanota-desktop-mac.dmg:**
-2d5cdfe5fab40abf68398bef6c28bd7bc7a474702f05944b322fb08cdc948d50
-
-**tutanota-desktop-284.250513.1-unpacked-linux.tar.gz**
-e572a378b2345ee1e7a2db25ea0ac415149ecbc61056af901bd9eb1b09b0ca00</releaseNotes>
+e6371308c128b589bedcab2ca56873988ceacd24f6814a34e5ea3a64cdf80f65</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
