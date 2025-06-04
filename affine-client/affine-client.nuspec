@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.21.6</version>
+    <version>0.22.0</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,13 +18,26 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>
-### ???? Bug Fixes
+    <releaseNotes>## What's New
 
-- **nbstore**: Wrong order of socketio transports - by **liuyi** in https://github.com/toeverything/AFFiNE/issues/12077 [&lt;samp&gt;(113c5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/113c501e94)
+![image](https://github.com/user-attachments/assets/450af39b-7227-4dc5-a681-ddb979e4ae84)
 
-##### [View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.21.5...v0.21.6)
-</releaseNotes>
+We've shipped 0.22 ????
+
+With enhanced AI capabilities, more integrated features, and extra optimizations, AFFiNE becomes an even more valuable part of your workflow. Plus, this release brings important user experience improvements and adds some of the most requested features
+
+- Code block &amp; HTML block
+- AI workspace embedding
+- AI search &amp; reason
+- New all doc &amp; collection
+- Embed doc with alias
+- Calendar integrations
+- Database
+- Clipboard blob &amp; loading block
+- Android Test
+
+
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.21.6...v0.22.0</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
