@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 0.22.0 : <https://github.com/toeverything/AFFiNE/releases/download/v0.22.0/affine-0.22.0-stable-windows-x64.exe>
+  Version 0.22.2 : <https://github.com/toeverything/AFFiNE/releases/download/v0.22.2/affine-0.22.2-stable-windows-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 235B74CCF48E1EA1D7FA21D994FA77BDE234FD4A4F546BFC2D0064B95EB01BBB
+  checksum: 76F03404E991B71464E2A695E7C6DAD2EAF1DE2836260386450CC93670FE401A
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/toeverything/AFFiNE/master/LICENSE> 
