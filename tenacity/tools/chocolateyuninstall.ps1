@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'tenacity*'
   fileType      = 'EXE'
-  silentArgs    = "/qn /norestart"
+  silentArgs    = "/VERYSILENT /norestart"
   validExitCodes= @(0)
 }
 

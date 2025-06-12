@@ -17,7 +17,7 @@ $release = $json.body
 $file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
-$xml.package.metadata.version = $tag
+$xml.package.metadata.version = $tag + "20250612"
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
@@ -64,8 +64,10 @@ File 'LICENSE.txt' is obtained from <https://codeberg.org/tenacityteam/tenacity/
 # packaging
 choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
+$tag_temp = $tag + "20250612"
+
 If ($LastExitCode -eq 0) {
-	choco push "./$id/$id.$tag.nupkg" --source https://push.chocolatey.org/
+	choco push "./$id/$id.$tag_temp.nupkg" --source https://push.chocolatey.org/
 	./END.ps1
 } else {
 	echo "Error in introduction - Exit code: $LastExitCode "
