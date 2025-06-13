@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tenacity</id>
-    <version>1.3.3</version>
+    <version>1.3.4.20250612</version>
     <title>Tenacity Audio Editor</title>
     <authors>Tenacity Team (and contributors)</authors>
     <owners>Adri</owners>
@@ -102,7 +102,7 @@ $ gpg --keyserver pgp.mit.edu --recv-keys 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB
 $ gpg --verify tenacity-linux-v1.3.4.AppImage.asc tenacity-linux-v1.3.4.AppImage
 gpg: Signature made Tue 31 Dec 2024 08:45:52 PM PST
 gpg:                using EDDSA key 59E790FEC63109BF22BD35ABEA9D8C8A6F75CB28
-gpg: Good signature from "Tenacity Release Signing &lt;avery98@pm.me&gt;" [ultimate]
+gpg: Good signature from "Tenacity Release Signing " [ultimate]
 ```
 
 If it says there's a bad signature, your download may have been tampered with. Try checking against the SHA256 hash (down below) for additional verification. If the hash doesn't match, try redownloading your download. If it does match, please open an issue so we can correct the signature.
