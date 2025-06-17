@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>287.250602.0</version>
+    <version>287.250616.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,22 +16,43 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
-Fix expanding mail search index
+    <releaseNotes># What's new
+ - Use new plan selector [#9099](https://github.com/tutao/tutanota/issues/9099)
+ - Add keyboard shortcut to create new folder [#8922](https://github.com/tutao/tutanota/issues/8922)
+ - Search for tokens using SQLite [#8550](https://github.com/tutao/tutanota/issues/8550)
+ - Tokenizing for CJK languages in sqlite-based search [#8950](https://github.com/tutao/tutanota/issues/8950)
+ - Highlight search results [#8883](https://github.com/tutao/tutanota/issues/8883)
+ - Update Electron to 35.5.0
+ - Update DOMPurify to 3.2.6
+
+# Bugfixes
+ - Contact list invitations not displayed on first load [#9114](https://github.com/tutao/tutanota/issues/9114)
+ - Typing Enter in date search closes dialog without updating date [#9097](https://github.com/tutao/tutanota/issues/9097)
+ - Cannot downgrade to Free plan when having Three Labels [#9071](https://github.com/tutao/tutanota/issues/9071)
+ - MailSetEntry with `null` owner group when labeling a draft through sticky label [#9065](https://github.com/tutao/tutanota/issues/9065)
+ - Mail list filters only work on the latest mail in the conversation when list grouping is enabled [#8989](https://github.com/tutao/tutanota/issues/8989)
+ - Search list is not sorted correctly [#8903](https://github.com/tutao/tutanota/issues/8903)
+ - MailOfflineCleaner Should not clear out trash and spam folder [#8837](https://github.com/tutao/tutanota/issues/8837)
+ - Make sure purgeStorage does not drop unrelated data [#9048](https://github.com/tutao/tutanota/issues/9048)
+ - Upgrade Electron (&gt;= v35.1.0) to address the broken Wayland window resizing [#8938](https://github.com/tutao/tutanota/issues/8938)
+ - ConversationListModel is trying to load items in a loop while offline [#9122](https://github.com/tutao/tutanota/issues/9122)
+ - LockedError: PUT /rest/tutanota/usersettingsgrouproot [#8052](https://github.com/tutao/tutanota/issues/8052)
+ - Emails opened from notifications should still be displayed after they are moved with inbox rules [#8393](https://github.com/tutao/tutanota/issues/8393)
+ - BulkMailLoader should resolve sessionKey correctly for attachments [#8816](https://github.com/tutao/tutanota/issues/8816)
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/374?closed=1
-
+https://github.com/tutao/tutanota/milestone/363?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-1c7af65da558cb4a3f1dd55cc868b5fb98870e1aa5905a74c25469afbbfad4e0
+ed002129c88d44d978398031140ee7b78e0a022062feb77e7e30e98c91d67e30
 
 **tutanota-desktop-win.exe:**
-3317c47e36f4b6f5ff8adc8c05597eed47491514a34743cf6c351dec2b70ed35
+d1b139fdc1229645e5c33a6852ab2ca2ed7e01d94fbeca68415e05de26bdd57c
 
 **tutanota-desktop-mac.dmg:**
-26a2b5a5a481cd2eb4bce3cd4a30c11dd26dad6090faf16f7831ef4628f3127d</releaseNotes>
+fd2590e4810fce38fbecdfc4b8ff7128eec1ec730aa1db502647a7a082a2859c</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
