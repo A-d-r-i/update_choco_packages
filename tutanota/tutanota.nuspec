@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>293.250624.0</version>
+    <version>293.250630.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,30 +17,31 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Disable password inputs on signup form until valid mail address selected [#9173](https://github.com/tutao/tutanota/issues/9173)
+ - Align search bar to the list column [#9119](https://github.com/tutao/tutanota/issues/9119)
+ - Order labels alphabetically instead of by creation date [#8988](https://github.com/tutao/tutanota/issues/8988)
+ - Conversation list model improvements [#9189](https://github.com/tutao/tutanota/issues/9189)
 
 # Bugfixes
- - AssertNotNull failed : missing mail in conversation [#9165](https://github.com/tutao/tutanota/issues/9165)
- - fix version null check when loading public encryption keys  [#9164](https://github.com/tutao/tutanota/issues/9164)
- - Duplicated results for contacts birthdays during event search [#9149](https://github.com/tutao/tutanota/issues/9149)
- - Birthdays from Tuta Mail Contacts do not show in Tuta Calendar [#8220](https://github.com/tutao/tutanota/issues/8220)
+ - Conversation list doesn't respect "Behavior after moving an email" preference [#9199](https://github.com/tutao/tutanota/issues/9199)
+ - The conversation's latest mail isn't updated when there's a new conversation entry while the conversation is open [#9196](https://github.com/tutao/tutanota/issues/9196)
+ - Unrecoverable state in login screen [#9160](https://github.com/tutao/tutanota/issues/9160)
+ - When highlighting search, word is only partially highlighted if partially matched by a preceding token [#9142](https://github.com/tutao/tutanota/issues/9142)
+ - When shrinking the offline range, the updated range isn't reflected in search range after re-login. [#9140](https://github.com/tutao/tutanota/issues/9140)
+ - Imported mails cannot be selected with loadAndSelect in MailViewModel [#8305](https://github.com/tutao/tutanota/issues/8305)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/377?closed=1
+https://github.com/tutao/tutanota/milestone/368?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-76bb79442932e4285e7d96ff6880888fb61f4a363e5af2a268cb9f64b8f55075
+512c8d338710b3eba0c240f0b28a24477ac39f6fbaba2afa3672fae758ccf392
 
 **tutanota-desktop-win.exe:**
-89a153beb79513023069fa4bbef3b9c47eb9f5e96a890302d01b2842a8b5b42c
+f13ce84457651fe550f65fa9a2918abbb97041ddcd38b46003bd6ec3acf60457
 
 **tutanota-desktop-mac.dmg:**
-b6aad42a1bb3d98ebb2f092134d0207b1bfb5ef18297a15047df77ede87843a8
-
-**tutanota-desktop-293.250624.0-unpacked-linux.tar.gz**
-35f39542953cecb257cd4c54083a2628203ac5a69135bd787c04be93142a8716</releaseNotes>
+7c003f3ef2dd97d59d33414a4a0cc2a5c143568bb9a41a4afeb76806fbecedba</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
