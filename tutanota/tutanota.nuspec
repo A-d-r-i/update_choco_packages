@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>293.250630.0</version>
+    <version>296.250708.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,31 +17,25 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Align search bar to the list column [#9119](https://github.com/tutao/tutanota/issues/9119)
- - Order labels alphabetically instead of by creation date [#8988](https://github.com/tutao/tutanota/issues/8988)
- - Conversation list model improvements [#9189](https://github.com/tutao/tutanota/issues/9189)
+ - Faster sync process after login
 
 # Bugfixes
- - Conversation list doesn't respect "Behavior after moving an email" preference [#9199](https://github.com/tutao/tutanota/issues/9199)
- - The conversation's latest mail isn't updated when there's a new conversation entry while the conversation is open [#9196](https://github.com/tutao/tutanota/issues/9196)
- - Unrecoverable state in login screen [#9160](https://github.com/tutao/tutanota/issues/9160)
- - When highlighting search, word is only partially highlighted if partially matched by a preceding token [#9142](https://github.com/tutao/tutanota/issues/9142)
- - When shrinking the offline range, the updated range isn't reflected in search range after re-login. [#9140](https://github.com/tutao/tutanota/issues/9140)
- - Imported mails cannot be selected with loadAndSelect in MailViewModel [#8305](https://github.com/tutao/tutanota/issues/8305)
-
-# Milestone
-https://github.com/tutao/tutanota/milestone/368?closed=1
+ - Search bar doesn't span entire available width on mobile
+ - Free accounts do not cache mails
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-512c8d338710b3eba0c240f0b28a24477ac39f6fbaba2afa3672fae758ccf392
+8f553b090022226690aabc83bbdcd5cd5edb6e6a5061fb348182033af351e2ab
 
 **tutanota-desktop-win.exe:**
-f13ce84457651fe550f65fa9a2918abbb97041ddcd38b46003bd6ec3acf60457
+df5bf3ef1fbeae35bff207ffbe7e9dc3b9bf5d28f8798cc2e63fef19dc5c166d
 
 **tutanota-desktop-mac.dmg:**
-7c003f3ef2dd97d59d33414a4a0cc2a5c143568bb9a41a4afeb76806fbecedba</releaseNotes>
+6b9318a88630f97e8210766940c5c0f971634378abece7b482d1a3766628f171
+
+**tutanota-desktop-296.250708.0-unpacked-linux.tar.gz**
+f5d4ab368c7c2a3dc3c89ac61e1ee624a14d75ef9dae118e665e86ff56363c22</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
