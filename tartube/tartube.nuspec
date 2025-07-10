@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.5.100</version>
+    <version>2.5.145</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -19,11 +19,21 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
+# MAJOR NEW FEATURES
+- Added new Japanese and Tamil translation; thanks to 福居那祐太 and தமிழ்நேரம்!
+- On MS Windows, Tartube installations have been updated to use virtual environments. As a result, if you are re-installing Tartube, you will need to re-install yt-dlp before you can use it. Note that the procedure for performing a manual installation has changed; see the updated notes in the README
+# MINOR NEW FEATURES
+- When fetching a list of videos formats or subtitles (for example, by right- clicking and selecting Fetch &gt; Available formats), you can now specify additional options to pass to yt-dlp. See Edit &gt; General download options &gt; Advanced &gt; Fetch (Git #[712](https://github.com/axcore/tartube/issues/712))
 # MAJOR FIXES
-- In the download options window, 'Formats' tab, fixed the incorrect handling of multiple formats: multiple formats should of course be specified with '-f [100](https://github.com/axcore/tartube/issues/100)/[101](https://github.com/axcore/tartube/issues/101)/[102](https://github.com/axcore/tartube/issues/102)', not '-f [100](https://github.com/axcore/tartube/issues/100)+[101](https://github.com/axcore/tartube/issues/101)+[102](https://github.com/axcore/tartube/issues/102)'. Also added special handling when all specified formats are either video-only or audio-only, so that yt-dlp receives '-f ([137](https://github.com/axcore/tartube/issues/137)/[136](https://github.com/axcore/tartube/issues/136))+([140](https://github.com/axcore/tartube/issues/140)/[139](https://github.com/axcore/tartube/issues/139))'. (Note that double quotes would be required if using this pattern in the 'Additional download options' box, i.e. '-f "([137](https://github.com/axcore/tartube/issues/137)/[136](https://github.com/axcore/tartube/issues/136))+([140](https://github.com/axcore/tartube/issues/140)/[139](https://github.com/axcore/tartube/issues/139))"' (Git #[680](https://github.com/axcore/tartube/issues/680))
-- In the Classic Mode tab, fixed the broken 'Download in this format/Convert to this format' combo (Git #[672](https://github.com/axcore/tartube/issues/672))
-- Fixed several issues to do with broken locales, some of which affected all locales, some of which affected only the German locale (Git #[670](https://github.com/axcore/tartube/issues/670))
-- Fixed inability to install yt-dlp and/or FFmpeg on MS Windows (this fix was rolled out to MS Windows users as 
+- Updated code to replace use of pip3 with pipx (Git #[684](https://github.com/axcore/tartube/issues/684))
+- Fixed issues with the yt-dlp download option "--match-filter" (Git #[687](https://github.com/axcore/tartube/issues/687), #[586](https://github.com/axcore/tartube/issues/586))
+- Renamed tartube's utils.py file to avoid a reported filename clash on MS Windows (Git #[693](https://github.com/axcore/tartube/issues/693))
+- In the download options window, some buttons in the the Advanced &gt; Workaround tab were broken; fixed them (Git #[707](https://github.com/axcore/tartube/issues/707))
+- Tartube did not detect the download of a remuxed video, instead adding the video in its original format to the Tartube database. Fixed (Git #[714](https://github.com/axcore/tartube/issues/714))
+# MINOR FIXES
+- Tweaked text in the README in a few places (Git #[689](https://github.com/axcore/tartube/issues/689), #[700](https://github.com/axcore/tartube/issues/700), #[702](https://github.com/axcore/tartube/issues/702), #[703](https://github.com/axcore/tartube/issues/703))
+- When fetching a list of videos formats or subtitles (for example, by right- clicking and selecting Fetch &gt; Available formats), MS Windows users saw a non-monospace font, which messed up the formatting of the text returned by yt-dlp. Tartube now enforces a monospace font in these situations (Git #[712](https://github.com/axcore/tartube/issues/712))
+# 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
     <projectSourceUrl>https://github.com/axcore/tartube</projectSourceUrl>
