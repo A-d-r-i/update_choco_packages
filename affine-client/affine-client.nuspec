@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.22.4</version>
+    <version>0.23.0</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,47 +18,268 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## What's Changed
-* fix(server): oidc registration by @forehalo in https://github.com/toeverything/AFFiNE/pull/12723
-* fix(core): generate the image cannot enter text prompt by @akumatus in https://github.com/toeverything/AFFiNE/pull/12717
-* fix(editor): support copying single image from edgeless and pasting to page by @fundon in https://github.com/toeverything/AFFiNE/pull/12709
-* chore: bump up @googleapis/androidpublisher version to v28 by @renovate in https://github.com/toeverything/AFFiNE/pull/12713
-* fix(electron): increase recording timeout by @pengx17 in https://github.com/toeverything/AFFiNE/pull/12733
-* chore(ios): update ios app version by @EYHN in https://github.com/toeverything/AFFiNE/pull/12734
-* chore: bump up nestjs to v11.1.3 by @renovate in https://github.com/toeverything/AFFiNE/pull/12737
-* fix(editor): pasting into database multiselect input auto adds a new tag by @golok727 in https://github.com/toeverything/AFFiNE/pull/12693
-* fix: size of canvas in `PDFPageRenderer` by @mkihr-ojisan in https://github.com/toeverything/AFFiNE/pull/12722
-* fix(editor): toolbar shaking when setting inline style by @fundon in https://github.com/toeverything/AFFiNE/pull/12765
-* refactor(core): hide emebedding status tip if completed by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/pull/12720
-* fix(editor): add title to edgeless page block ai context by @L-Sun in https://github.com/toeverything/AFFiNE/pull/12763
-* fix(server): list context status by @darkskygit in https://github.com/toeverything/AFFiNE/pull/12771
-* fix(editor): support markdown transform when using IME by @L-Sun in https://github.com/toeverything/AFFiNE/pull/12778
-* chore(editor): remove unused codes by @L-Sun in https://github.com/toeverything/AFFiNE/pull/12784
-* feat(editor): add replace action in attachment toolbar by @fundon in https://github.com/toeverything/AFFiNE/pull/12512
-* fix(editor): can not clear embed card alias description by @L-Sun in https://github.com/toeverything/AFFiNE/pull/12794
-* fix: memory leak due to missing unsubscribe by @CatsJuice in https://github.com/toeverything/AFFiNE/pull/12777
-* feat(server): improve rerank performance by @darkskygit in https://github.com/toeverything/AFFiNE/pull/12775
-* feat(server): improve prompts by @darkskygit in https://github.com/toeverything/AFFiNE/pull/12788
-* fix(electron): web dev server ws does not work for electron renderer by @pengx17 in https://github.com/toeverything/AFFiNE/pull/12711
-* fix(editor): behavior of deleting at the start of line by @L-Sun in https://github.com/toeverything/AFFiNE/pull/12787
-* fix(component): fix storybook migration v9 by @pengx17 in https://github.com/toeverything/AFFiNE/pull/12797
-* fix(editor): remove duplicate event listeners by @golok727 in https://github.com/toeverything/AFFiNE/pull/12735
-* chore(server): bump model version by @darkskygit in https://github.com/toeverything/AFFiNE/pull/12798
-* fix(nbstore): fix search slow by @EYHN in https://github.com/toeverything/AFFiNE/pull/12800
-* fix(editor): firefox can't paste image in edgeless by @golok727 in https://github.com/toeverything/AFFiNE/pull/12729
-* fix(editor): cursor not visible on empty line when line numbers are disabled in code block by @golok727 in https://github.com/toeverything/AFFiNE/pull/12694
-* fix(editor): unable to delete content backward in database title cell by @golok727 in https://github.com/toeverything/AFFiNE/pull/12738
-* fix(editor): show added or deleted rows immediately in grouped table and Kanban views by @NorkzYT in https://github.com/toeverything/AFFiNE/pull/12731
-* fix(server): increase doc-service liveness probe timeout from 1s to 5s by @fengmk2 in https://github.com/toeverything/AFFiNE/pull/12804
-* feat(core): update build in server config by @EYHN in https://github.com/toeverything/AFFiNE/pull/12807
-* fix(server): use Query instead of Args by @fengmk2 in https://github.com/toeverything/AFFiNE/pull/12813
-* feat(server): split embedding client by @darkskygit in https://github.com/toeverything/AFFiNE/pull/12809
+    <releaseNotes>### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Features
 
-## New Contributors
-* @mkihr-ojisan made their first contribution in https://github.com/toeverything/AFFiNE/pull/12722
-* @NorkzYT made their first contribution in https://github.com/toeverything/AFFiNE/pull/12731
+- **core**:
+  - Adjust the layout, style, and structure of the AI chat input &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12828 [&lt;samp&gt;(2366c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2366c1aba6)
+  - Enable socket cors &amp;nbsp;-&amp;nbsp; by @EYHN and @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12823 [&lt;samp&gt;(c1691)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c1691157f9)
+  - Linked doc visiblity setting and new sidebar layout &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12836 [&lt;samp&gt;(dfe4c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dfe4c22a75)
+  - Moving in affine-reader doc parsers &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12840 [&lt;samp&gt;(f4c20)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f4c20056a0)
+  - Allow importing affine file within import dialog &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12850 [&lt;samp&gt;(e0462)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e046260deb)
+  - Add stream object api &amp;nbsp;-&amp;nbsp; by @akumatus and @darkskygit in https://github.com/toeverything/AFFiNE/issues/12841 [&lt;samp&gt;(6169c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6169cdab3a)
+  - Add ai web-search and web-crawl tools ui components &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12854 [&lt;samp&gt;(3886b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3886babcf4)
+  - Enable quick select for trash page &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12878 [&lt;samp&gt;(3a124)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3a124b67bd)
+  - Ai tools css style adjustment &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12891 [&lt;samp&gt;(12fce)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/12fce1f21a)
+  - Limit visible doc inline stack tags &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12647 [&lt;samp&gt;(8754d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8754d1b164)
+  - Support objects render in ai chat block &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12906 [&lt;samp&gt;(63de2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/63de20c3d5)
+  - Use cloud indexer for search &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12899 [&lt;samp&gt;(aa487)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/aa4874a55c)
+  - Add ai playground feature flag and remove model switch feature flag &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12934 [&lt;samp&gt;(2171d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2171d1bfe2)
+  - Add ai tool call error type and ui &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12941 [&lt;samp&gt;(a7185)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a7185e419c)
+  - Add allowGuestDemoWorkspace flag to force login &amp;nbsp;-&amp;nbsp; by @NorkzYT in https://github.com/toeverything/AFFiNE/issues/12779 [&lt;samp&gt;(82b3c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/82b3c0d264)
+  - Remove chat-panel component's dependency on doc &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12975 [&lt;samp&gt;(6e948)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6e9487a9e1)
+  - Add missing affine version header to server config &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12986 [&lt;samp&gt;(3d12b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3d12bb2adf)
+  - Add a resizeable split view for ai chat &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12896 [&lt;samp&gt;(a5944)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a59448ec4b)
+  - Comment panel &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12989 [&lt;samp&gt;(a21f1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a21f1c943e)
+  - Make editor host optional &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/12990 [&lt;samp&gt;(3e035)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3e03599d11)
+  - Quick search support search locally &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12987 [&lt;samp&gt;(4641b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4641b080f2)
+  - Bettery save mode &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12996 [&lt;samp&gt;(b2bf5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b2bf591463)
+  - Support mentions in comments &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13000 [&lt;samp&gt;(532ea)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/532ea6af07)
+  - Support ai chat add, pin and unpin &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13002 [&lt;samp&gt;(134e6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/134e62a0fa)
+  - Support compose a doc tool &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13013 [&lt;samp&gt;(cfc10)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cfc108613c)
+  - Code artifact tool &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13015 [&lt;samp&gt;(8ed7d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8ed7dea823)
+  - Add an independent AI panel &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13004 [&lt;samp&gt;(64fb3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/64fb3a7243)
+  - Add ai-chat-toolbar for independent chat &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13021 [&lt;samp&gt;(2b0b2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2b0b20cdd4)
+  - Support ai recent session history &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13025 [&lt;samp&gt;(24f11)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/24f1181069)
+  - Add comment notification settings &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13029 [&lt;samp&gt;(29608)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/296089efc9)
+  - Markdown-diff &amp; patch apply &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/12844 [&lt;samp&gt;(c882a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c882a8c5da)
+  - Support open doc in ai session history &amp;nbsp;-&amp;nbsp; by @akumatus and @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13035 [&lt;samp&gt;(2f9a9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2f9a96f1c5)
+  - Auto expand workbench sidebar when opening ai preview panel &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13058 [&lt;samp&gt;(563a1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/563a14d0b3)
+  - Remove auto-scroll when chatting and display down-arrow instead &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13066 [&lt;samp&gt;(f78e0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f78e0c06ac)
+  - Reply actions &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13071 [&lt;samp&gt;(0833d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0833d0314c)
+  - Hide model switch menu &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13070 [&lt;samp&gt;(ce679)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ce679af7df)
+  - Comment with attachment uploads &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13089 [&lt;samp&gt;(83970)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/839706cf65)
+  - Add ai history loading placeholder &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13092 [&lt;samp&gt;(d5c95)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d5c959a83f)
+  - Show ai-island and navigate to chat page if not available  in sidebar &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13085 [&lt;samp&gt;(e04d4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e04d407b2f)
+  - Completely remove the dependence on EditorHost &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13110 [&lt;samp&gt;(d10e5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d10e5ee92f)
+  - Support normal attachments &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13112 [&lt;samp&gt;(d4c90)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d4c905600b)
+  - Add onOpenDoc handler for AFFiNE Intelligence page &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13118 [&lt;samp&gt;(1f87c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1f87cd8752)
+  - Remove scrollable-text-renderer's dependency on editor host &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13123 [&lt;samp&gt;(11a9e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/11a9e67bc1)
+  - Disable pin chat while generating AI answers &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13131 [&lt;samp&gt;(fe002)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fe00293e3e)
+  - Apply model tracking &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13128 [&lt;samp&gt;(6b7d1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6b7d1e91e0)
+  - Clear all notifications &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13144 [&lt;samp&gt;(d98b4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d98b45ca3d)
+  - Render session title in ai session history &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13147 [&lt;samp&gt;(e0f88)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e0f88451e1)
+  - Restore pinned chat for independent chat &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13154 [&lt;samp&gt;(2dacb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2dacba9011)
+  - Update ai add context button ui &amp;nbsp;-&amp;nbsp; by @akumatus and @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13172 [&lt;samp&gt;(93f13)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/93f13e9e01)
+  - Show server name when delete account &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13175 [&lt;samp&gt;(33f64)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/33f6496d79)
+  - Add basic ui for doc search related tool calling &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13176 [&lt;samp&gt;(3dbdb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3dbdb99435)
+  - Ai intelligence track &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13187 [&lt;samp&gt;(65453)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/65453c31c6)
+  - Do not show AI actions in history &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13198 [&lt;samp&gt;(b2c09)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b2c09825ac)
+  - Display doc title with display-config for semantic result &amp;nbsp;-&amp;nbsp; by @CatsJuice and @akumatus in https://github.com/toeverything/AFFiNE/issues/13194 [&lt;samp&gt;(3948b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3948b8eada)
+  - Remount ai-chat-content when session changed &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13200 [&lt;samp&gt;(de8fe)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/de8feb98a3)
+- **editor**:
+  - By default render code iframe for html preview &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12848 [&lt;samp&gt;(ce951)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ce951ec316)
+  - Support connector dom renderer &amp;nbsp;-&amp;nbsp; by @doodlewind in https://github.com/toeverything/AFFiNE/issues/12505 [&lt;samp&gt;(76568)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/76568bae9f)
+  - Streamline cell editing and navigation with improved keyboard support &amp;nbsp;-&amp;nbsp; by @NorkzYT in https://github.com/toeverything/AFFiNE/issues/12770 [&lt;samp&gt;(a8c18)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a8c18cd631)
+  - Use affine container url in preview &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12919 [&lt;samp&gt;(320d2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/320d2f5bdf)
+  - Allow embedding any iframes &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12895 [&lt;samp&gt;(f80b6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f80b69273f)
+  - Comment extension &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12948 [&lt;samp&gt;(8ce85)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8ce85f708d)
+  - Block comment extension &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12980 [&lt;samp&gt;(d768a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d768ad4af0)
+  - Resolve unassociated comments on init &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13008 [&lt;samp&gt;(55827)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/558279da29)
+  - Comment for edgeless element &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13098 [&lt;samp&gt;(1d865)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1d865f16fe)
+  - Can highlight resolved comment &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13122 [&lt;samp&gt;(1fe07)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1fe07410c0)
+- **electron**:
+  - Upgrade flatpak runtimeversion &amp;nbsp;-&amp;nbsp; by @doufa and @pengx17 in https://github.com/toeverything/AFFiNE/issues/12025 [&lt;samp&gt;(3186f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3186fb8306)
+- **ios**:
+  - Update code sign identity script &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12938 [&lt;samp&gt;(f3a2a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f3a2a75743)
+  - Update code sign identity script &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12942 [&lt;samp&gt;(eef2e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/eef2e05d83)
+  - Hidden version variant &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13019 [&lt;samp&gt;(d0d94)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d0d94066f7)
+- **mobile**:
+  - Add delete operation for detail page menu &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12900 [&lt;samp&gt;(24b20)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/24b205ae83)
+- **native**:
+  - Windows audio monitoring &amp; recording &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12615 [&lt;samp&gt;(899ff)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/899ffd1ad3)
+- **nbstore**:
+  - Add more data to indexer &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12815 [&lt;samp&gt;(04f3d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/04f3d88e2c)
+- **server**:
+  - Search blob names from indexer &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12822 [&lt;samp&gt;(c0c81)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c0c813edfd)
+  - Embedding search tool &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12810 [&lt;samp&gt;(cdaaa)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/cdaaa52845)
+  - Parse ydoc to markdown &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12812 [&lt;samp&gt;(73402)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/73402c8447)
+  - Parse ydoc to ai editable markdown format &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12846 [&lt;samp&gt;(d80bf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d80bfac1d2)
+  - Allow chat session dangling &amp; pin session support &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12849 [&lt;samp&gt;(bd049)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bd04930560)
+  - Get recently updated docs &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12861 [&lt;samp&gt;(ad572)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ad5722f637)
+  - Add pinned &amp; action filter for session query &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12876 [&lt;samp&gt;(c7113)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c7113b0195)
+  - Search docs by keywork from indexer &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12863 [&lt;samp&gt;(62d74)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/62d74de810)
+  - Add doc keyword search tool &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12837 [&lt;samp&gt;(e9781)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e978147a16)
+  - Add search docs by keyword gql api &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12866 [&lt;samp&gt;(011f9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/011f92f7da)
+  - Improve session modify &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12928 [&lt;samp&gt;(e32c9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e32c9a814a)
+  - Allow multiple session attach to doc &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12933 [&lt;samp&gt;(06f27)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/06f27e8d6a)
+  - Support multiple hosts in one deployment &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12950 [&lt;samp&gt;(dc555)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dc55518c5b)
+  - Remove context prefetch &amp; integrate context search &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12956 [&lt;samp&gt;(e6f91)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e6f91cced6)
+  - Faster reranking based on confidence &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12957 [&lt;samp&gt;(9b881)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9b881eb59a)
+  - Comment model &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12760 [&lt;samp&gt;(e2a79)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e2a799c70a)
+  - Add morph doc edit tool &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12789 [&lt;samp&gt;(1c1da)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1c1dade2d5)
+  - Add comment-attachment model &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12909 [&lt;samp&gt;(e7739)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e773930256)
+  - Add read doc tool &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12811 [&lt;samp&gt;(5599c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5599c39e97)
+  - Add comment-attachment storage &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12911 [&lt;samp&gt;(e8bc8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e8bc8f2d63)
+  - Add typed list session gql &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12979 [&lt;samp&gt;(0326d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0326da0806)
+  - Comment service and resolver &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12761 [&lt;samp&gt;(2aa5c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2aa5c13082)
+  - Support comment notification type &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12924 [&lt;samp&gt;(7ed72)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7ed72ed1d0)
+  - Send comment notifications &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12925 [&lt;samp&gt;(a2810)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a2810f3f61)
+  - Deprecate blob id provide by client &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12991 [&lt;samp&gt;(2ae3c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2ae3c3e2cd)
+  - Expose reuse latest chat &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12999 [&lt;samp&gt;(2ea3c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2ea3c3da9d)
+  - Add Blob Model &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12894 [&lt;samp&gt;(06253)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/062537c2cf)
+  - Edit tool intent collect &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12998 [&lt;samp&gt;(53968)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/53968f6f8c)
+  - Use new content reader &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13007 [&lt;samp&gt;(2b7a8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2b7a8dcd8a)
+  - Update session after doc deletion &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13028 [&lt;samp&gt;(b9c4d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b9c4d7230e)
+  - Update tool descriptions and AI prompt &amp;nbsp;-&amp;nbsp; by @hwangdev97 in https://github.com/toeverything/AFFiNE/issues/13032 [&lt;samp&gt;(a485a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a485ad5c45)
+  - Add apple-itunes-app meta tag on shage page &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13065 [&lt;samp&gt;(7dc10)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7dc103ffe6)
+  - Support read all notifications &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13083 [&lt;samp&gt;(db79c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/db79c00ea7)
+  - Paginated list endpoint &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13026 [&lt;samp&gt;(6dac9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6dac94d90a)
+  - Use faster model in ci test &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13038 [&lt;samp&gt;(c4c11)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c4c11da976)
+  - Summary tools &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13133 [&lt;samp&gt;(ad5a1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ad5a122391)
+  - Export title and summary on doc resolver &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13139 [&lt;samp&gt;(f655e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f655e6e8bf)
+  - Add process memory usage metrics &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13148 [&lt;samp&gt;(af9c4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/af9c455ee0)
+  - Add doc meta for semantic search &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13174 [&lt;samp&gt;(847ef)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/847ef00a75)
+  - Add cron job for session cleanup &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13181 [&lt;samp&gt;(b6187)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b6187718ea)
+  - Add generate title cron resolver &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13189 [&lt;samp&gt;(9a3e4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9a3e44c6d6)
+  - Allow fork session to other doc &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13199 [&lt;samp&gt;(bcf6b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bcf6bd1dfc)
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.22.2...v0.22.4</releaseNotes>
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;???? Bug Fixes
+
+- ???? compiler issue on newer syntax &amp;nbsp;-&amp;nbsp; by @Lakr233 in https://github.com/toeverything/AFFiNE/issues/12974 [&lt;samp&gt;(2be3f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2be3f84196)
+- ???? build on Xcode 16.2 &amp;nbsp;-&amp;nbsp; by @Lakr233 in https://github.com/toeverything/AFFiNE/issues/12981 [&lt;samp&gt;(6a04f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6a04fbe335)
+- ???? compiler issue &amp;nbsp;-&amp;nbsp; by @Lakr233 in https://github.com/toeverything/AFFiNE/issues/13114 [&lt;samp&gt;(ecea7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ecea7bd825)
+- Hide embedding status tip if embedding completed &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13156 [&lt;samp&gt;(58dc5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/58dc53581f)
+- Ai artifact preview styles &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13203 [&lt;samp&gt;(7cff8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7cff8091e4)
+- **android**:
+  - Graphql service type error &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12858 [&lt;samp&gt;(2edc8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2edc8e43e2)
+  - Fix android build error &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13117 [&lt;samp&gt;(f54cb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f54cb5c296)
+- **core**:
+  - Iframe rendering issue for youtube videos &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12880 [&lt;samp&gt;(da980)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/da980876cb)
+  - Adjust new doc list filter style &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12629 [&lt;samp&gt;(ea92e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ea92e2291d)
+  - Show toolbar when quick select doc explorer &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12601 [&lt;samp&gt;(dd1b8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dd1b8ff920)
+  - Remove list view doc preview skeleton &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12621 [&lt;samp&gt;(4507c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4507c88792)
+  - Persist sidebar open state and width to prevent flash on load &amp;nbsp;-&amp;nbsp; by @NorkzYT in https://github.com/toeverything/AFFiNE/issues/12743 [&lt;samp&gt;(74106)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/74106ba7c6)
+  - Center align user avatar in doc property &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12908 [&lt;samp&gt;(616e7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/616e755dde)
+  - Adjust workspace selector style in import page &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12916 [&lt;samp&gt;(6813d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6813d84deb)
+  - Correct workspace selector position in sidebar fallback &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12945 [&lt;samp&gt;(5c45c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5c45c66ce8)
+  - Persist right sidebar open state correctly for desktop &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12953 [&lt;samp&gt;(ad306)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ad306edcf1)
+  - Ai make it real ci timeout &amp;nbsp;-&amp;nbsp; by @akumatus and @darkskygit in https://github.com/toeverything/AFFiNE/issues/12954 [&lt;samp&gt;(a4680)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a4680d236d)
+  - Fix ai input style in chat block and simply img rendering &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12943 [&lt;samp&gt;(32787)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/32787bc88b)
+  - Fix client crash &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12966 [&lt;samp&gt;(f46d2)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f46d288b1b)
+  - Adjust ai chat tool calling style &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12985 [&lt;samp&gt;(423c5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/423c5bd711)
+  - Dedicated link config for comments &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13003 [&lt;samp&gt;(81f54)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/81f542a4da)
+  - Some artifact styles &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13020 [&lt;samp&gt;(fe8cb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fe8cb6bb44)
+  - Fix migrate filter list error &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13022 [&lt;samp&gt;(f961d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f961d9986f)
+  - Re-layout ai-chat-content to display preview panel &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13030 [&lt;samp&gt;(882d0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/882d06b359)
+  - List comment changes usage &amp;nbsp;-&amp;nbsp; by @pengx17 and @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13036 [&lt;samp&gt;(1452f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1452f77c85)
+  - Some style issues &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13039 [&lt;samp&gt;(ec510)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ec510bc140)
+  - Timezone aware datetime display &amp;nbsp;-&amp;nbsp; by @yifeiyin in https://github.com/toeverything/AFFiNE/issues/13055 [&lt;samp&gt;(2df4a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2df4a60c44)
+  - Some ux issues related to comments &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13057 [&lt;samp&gt;(0d2fb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0d2fbaf3ea)
+  - Border color for embed-linked-doc-block and others &amp;nbsp;-&amp;nbsp; by @yifeiyin in https://github.com/toeverything/AFFiNE/issues/13056 [&lt;samp&gt;(0be63)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0be63d6e0e)
+  - Should not be able to comment with empty content &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13061 [&lt;samp&gt;(90b2b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/90b2b33dde)
+  - Comment mention filters &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13062 [&lt;samp&gt;(6175b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6175bde86e)
+  - Opt doc edit prompt &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13054 [&lt;samp&gt;(5a81c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5a81c0ab98)
+  - Chat history not show in independent page &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13069 [&lt;samp&gt;(f8be0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f8be0cc465)
+  - Should be able to unresolve a resolved comment &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13078 [&lt;samp&gt;(81014)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/810143be87)
+  - Show actions only if docId equals session.docId &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13080 [&lt;samp&gt;(afb39)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/afb3907efa)
+  - Shared mode permission check &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13087 [&lt;samp&gt;(f6a45)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f6a45ae20b)
+  - Insert diff not displayed after the expected block &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13086 [&lt;samp&gt;(8c49a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8c49a45162)
+  - Ai tool calling explanation &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13097 [&lt;samp&gt;(3226a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3226a0a3fe)
+  - Long words will overflow in chat panel &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13101 [&lt;samp&gt;(81a76)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/81a76634f2)
+  - Some editor issues &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13096 [&lt;samp&gt;(072ff)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/072fff1460)
+  - Apply model ui &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13084 [&lt;samp&gt;(3cc33)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/3cc33bd40f)
+  - Avoid shared page to fetch workspace info &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13104 [&lt;samp&gt;(ce7ff)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ce7fffda08)
+  - Some ux enhancements on comments &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13105 [&lt;samp&gt;(a5027)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a50270fc03)
+  - Should not be able to commit comments when uploading images &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13108 [&lt;samp&gt;(9071c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9071c5032d)
+  - Should show delete permanently for trash page multi-select &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13111 [&lt;samp&gt;(dace1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dace1d1738)
+  - Should use sonnet 4 for make it real &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13106 [&lt;samp&gt;(f839e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f839e5c136)
+  - Code block artifact styles &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13116 [&lt;samp&gt;(38537)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/38537bf310)
+  - Old ai messages not cleared before retrying &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13119 [&lt;samp&gt;(89958)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/899585ba7f)
+  - Some comment editor ux enhancements &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13126 [&lt;samp&gt;(ed6fd)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ed6fde550f)
+  - Disable comment in local workspace &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13124 [&lt;samp&gt;(5b027)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5b027f7986)
+  - Add missing tooltip effect for independent chat &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13127 [&lt;samp&gt;(0f9b9)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f9b9789da)
+  - Cannot download comment files &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13136 [&lt;samp&gt;(7d527)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7d527c7f3a)
+  - Doc reference error in ai answer &amp;nbsp;-&amp;nbsp; by @akumatus in https://github.com/toeverything/AFFiNE/issues/13141 [&lt;samp&gt;(9d5c7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9d5c7dd1e9)
+  - Empty style for comment &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13142 [&lt;samp&gt;(46901)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/46901c472c)
+  - Ensure new chat when entering chat page &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13146 [&lt;samp&gt;(8b579)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8b579e3a92)
+  - Load chat history content correctly &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13149 [&lt;samp&gt;(aba0a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/aba0a3d485)
+  - Remove scroller visiblility test &amp;nbsp;-&amp;nbsp; by @yoyoyohamapi in https://github.com/toeverything/AFFiNE/issues/13159 [&lt;samp&gt;(b23f3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b23f380539)
+  - Artifact rendering issue in standalone ai chat panel &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13164 [&lt;samp&gt;(fef4a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fef4a9eeb6)
+  - Some artifact tools styling &amp;nbsp;-&amp;nbsp; by @pengx17 and @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13152 [&lt;samp&gt;(d65a7)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d65a7494a4)
+  - Artifact rendering issue in standalone ai chat panel &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13166 [&lt;samp&gt;(9cda6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/9cda655c9e)
+  - Avoid infinite sign in with selfhost &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/13169 [&lt;samp&gt;(0e8ff)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0e8ffce126)
+  - Update code artifact tool prompt &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13171 [&lt;samp&gt;(aee7a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/aee7a8839e)
+  - Hide footer actions for independent ai chat &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13177 [&lt;samp&gt;(6f87c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6f87c1ca50)
+  - Right sidebar switching not work after switching workspace &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13179 [&lt;samp&gt;(0d414)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0d414d914a)
+  - Artifact panel theme &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13186 [&lt;samp&gt;(4d7d8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4d7d8f215f)
+  - Prevent creating session every time in chat page &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13190 [&lt;samp&gt;(ebefb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ebefbeefc8)
+  - Loading spinner color issue &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13192 [&lt;samp&gt;(d9e8c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d9e8ce802f)
+  - Disable creating linked doc in sidebar when show linked is off &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13191 [&lt;samp&gt;(7b536)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7b53641a94)
+  - Comment empty style issue &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13208 [&lt;samp&gt;(8ec4b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8ec4bbb298)
+  - Electron storage sync &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/13213 [&lt;samp&gt;(2a8f1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/2a8f18504b)
+- **editor**:
+  - FilterableList - prevent undefined item selection in keyboard nav &amp;nbsp;-&amp;nbsp; by @golok727 in https://github.com/toeverything/AFFiNE/issues/12818 [&lt;samp&gt;(1fb68)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1fb68e3933)
+  - Unexpectedly update edgeless note in readonly mode &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12839 [&lt;samp&gt;(ba718)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ba718b955a)
+  - Middle click open new tab &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12902 [&lt;samp&gt;(1686b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1686b92adb)
+  - Improve performence of link card render &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/12937 [&lt;samp&gt;(a6edb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a6edb6192f)
+  - Peekable conditions for edgeless note block &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12969 [&lt;samp&gt;(03aeb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/03aeb44dc9)
+  - Comment style and creation issues &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13006 [&lt;samp&gt;(7879e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/7879e12718)
+  - Time issues of comment initialization &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13031 [&lt;samp&gt;(eb56a)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/eb56adea46)
+  - Adjust highlght style of comment and comment editor flickering &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13040 [&lt;samp&gt;(eb965)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/eb9652ed4c)
+  - Keyboard can not open after closing input modal &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13041 [&lt;samp&gt;(6f9c1)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6f9c1554b7)
+  - Focus comment editor after click its bottom area &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13060 [&lt;samp&gt;(75f2e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/75f2eecbbb)
+  - Centerize iframe modal in mobile &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13073 [&lt;samp&gt;(339bf)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/339bfdae0f)
+  - Can not create surface block comment &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13115 [&lt;samp&gt;(39abd)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/39abd1bbb8)
+  - Commented heading style &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13140 [&lt;samp&gt;(46a9d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/46a9d0f7fe)
+  - Missing viewport selector in editor setting &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13168 [&lt;samp&gt;(15726)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/15726bd522)
+  - Use inline-block style for inline comment &amp;nbsp;-&amp;nbsp; by @L-Sun in https://github.com/toeverything/AFFiNE/issues/13204 [&lt;samp&gt;(fbd6e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/fbd6e8fa97)
+  - Memory leak caused by missing unsubscription from autoUpdate &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/13205 [&lt;samp&gt;(36bd8)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/36bd8f645a)
+- **electron**:
+  - Embeded youtube videos not playable &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12892 [&lt;samp&gt;(e00a3)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e00a37cd00)
+  - Adjust some command line flags &amp;nbsp;-&amp;nbsp; by @pengx17 in https://github.com/toeverything/AFFiNE/issues/12597 [&lt;samp&gt;(ec66b)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ec66b6d660)
+- **ios**:
+  - Fix xcode marketing version &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12963 [&lt;samp&gt;(6b263)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/6b2639cbbb)
+  - Fix testflight &amp;nbsp;-&amp;nbsp; by @EYHN in https://github.com/toeverything/AFFiNE/issues/12964 [&lt;samp&gt;(bbafc)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bbafce2c40)
+- **mobile**:
+  - Change mobile docs display config and prevent opening doc when close menu &amp;nbsp;-&amp;nbsp; by @CatsJuice in https://github.com/toeverything/AFFiNE/issues/12903 [&lt;samp&gt;(d7430)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d743082d83)
+- **server**:
+  - Should save end date of subscription in db &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/12814 [&lt;samp&gt;(a1abb)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/a1abb60dec)
+  - Ci nextest &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12851 [&lt;samp&gt;(31e65)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/31e65d96d4)
+  - Session unique index conflict &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12865 [&lt;samp&gt;(dfaf6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/dfaf69475b)
+  - Set empty embedding on empty doc &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12857 [&lt;samp&gt;(5623d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5623d808bf)
+  - Don't use global AFFiNELogger &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12871 [&lt;samp&gt;(5a87d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5a87d3d9f6)
+  - Save snapshot and delete updates in the same transaction &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12856 [&lt;samp&gt;(c6262)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/c62627427c)
+  - Session update check &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12877 [&lt;samp&gt;(13b64)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/13b64c6780)
+  - Convert date and timestamp value to Date instance &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12867 [&lt;samp&gt;(bebe4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/bebe4349a9)
+  - Use job queue instead event on doc indexing changes &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12893 [&lt;samp&gt;(862a5)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/862a50c982)
+  - Should check doc public attribute when snapshot not exists &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12913 [&lt;samp&gt;(f0671)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/f0671cf2dd)
+  - Copilot permission check &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12923 [&lt;samp&gt;(07ec4)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/07ec427021)
+  - Allow fork empty session in playground &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12940 [&lt;samp&gt;(5e193)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5e193b58c0)
+  - Disable Apple oauth on client version &lt; 0.22.0 &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/12984 [&lt;samp&gt;(facf6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/facf6ee28b)
+  - Model mistakenly thinks the edit failed &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12997 [&lt;samp&gt;(4fd42)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/4fd42a8461)
+  - Incorrect list condition &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13005 [&lt;samp&gt;(41524)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/41524425bc)
+  - Send comment mention to comment author by default &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13018 [&lt;samp&gt;(1b9ed)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/1b9ed2fb6d)
+  - Abort behavior in sse stream &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/12211 [&lt;samp&gt;(5a49d)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/5a49d5cd24)
+  - Allow MS Office365 / Azure compatibility by making OIDC.preferred_username optional &amp;nbsp;-&amp;nbsp; by @chief-nerd in https://github.com/toeverything/AFFiNE/issues/13027 [&lt;samp&gt;(eb73c)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/eb73c90b2e)
+  - Only send comment mention notification when comment author is doc owner &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13033 [&lt;samp&gt;(831da)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/831da01432)
+  - Doc embedding crash with transaction &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13042 [&lt;samp&gt;(e8857)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e8857d51b1)
+  - Rerank scores calc &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13016 [&lt;samp&gt;(181cc)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/181ccf5a45)
+  - Separate active subscriptions &amp;nbsp;-&amp;nbsp; by @forehalo in https://github.com/toeverything/AFFiNE/issues/13077 [&lt;samp&gt;(61da6)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/61da63a4a0)
+  - Get pending embedding docs in event handler &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13095 [&lt;samp&gt;(d2f01)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d2f016c628)
+  - Incorrect abort condition &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13100 [&lt;samp&gt;(e0275)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/e027564d2a)
+  - Session updated at &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13099 [&lt;samp&gt;(0bd1f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0bd1f10498)
+  - Use new LocalWorkspace ServerFeature instead &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13091 [&lt;samp&gt;(95f88)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/95f88c378c)
+  - Chunk session in migration &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13107 [&lt;samp&gt;(8236e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/8236ecf486)
+  - Should use signed url first &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13109 [&lt;samp&gt;(ae74f)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/ae74f4ae51)
+  - Add user id to comment-attachment model &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13113 [&lt;samp&gt;(45c01)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/45c016af8b)
+  - Batch size in gemini embedding &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13120 [&lt;samp&gt;(0f306)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f3066f7d0)
+  - Sse abort behavior &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13153 [&lt;samp&gt;(b7943)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/b79439b01d)
+  - Ignore 409 status error on es delete query &amp;nbsp;-&amp;nbsp; by @fengmk2 in https://github.com/toeverything/AFFiNE/issues/13162 [&lt;samp&gt;(0f74e)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/0f74e1fa0f)
+  - Recent session missing params &amp;nbsp;-&amp;nbsp; by @darkskygit in https://github.com/toeverything/AFFiNE/issues/13188 [&lt;samp&gt;(d5f63)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d5f63b9e43)
+- **web**:
+  - Adjust sign-in panel height &amp;nbsp;-&amp;nbsp; by @hwangdev97 in https://github.com/toeverything/AFFiNE/issues/12976 [&lt;samp&gt;(d49a0)&lt;/samp&gt;](https://github.com/toeverything/AFFiNE/commit/d49a069351)
+
+##### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[View changes on GitHub](https://github.com/toeverything/AFFiNE/compare/v0.22.4...canary)</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
