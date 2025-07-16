@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>296.250709.0</version>
+    <version>299.250715.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,25 +17,38 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - faster sync process after login
+ - Order Labels in Label  Dropdown Alphabetically [#9207](https://github.com/tutao/tutanota/issues/9207)
+ - Time Overview - Event Invitation [#9043](https://github.com/tutao/tutanota/issues/9043)
+ - Allow changing primary email address [#8933](https://github.com/tutao/tutanota/issues/8933)
 
 # Bugfixes
- - search bar doesn't span entire available width on mobile
- - free accounts do not cache mails
+ - Sidebar hidden on tablets with desktop layout [#9288](https://github.com/tutao/tutanota/issues/9288)
+ - Inbox rules' move up/down doesn't work [#9286](https://github.com/tutao/tutanota/issues/9286)
+ - Select component scrolling on click [#9284](https://github.com/tutao/tutanota/issues/9284)
+ - Uncaught conversation entry NotFoundError [#9270](https://github.com/tutao/tutanota/issues/9270)
+ - Mail disappears after being marked read when filtering for unread mail [#9239](https://github.com/tutao/tutanota/issues/9239)
+ - Signup form does not respect the URL parameters [#9219](https://github.com/tutao/tutanota/issues/9219)
+ - Calendar selector dropdown in event editor does recognize first click with many calendars [#9039](https://github.com/tutao/tutanota/issues/9039)
+ - Keyboard up/down keys in agenda view do not allow moving to all events [#8659](https://github.com/tutao/tutanota/issues/8659)
+ - Anti-bot captcha: blind customers can't sign up because it's just visual [#8287](https://github.com/tutao/tutanota/issues/8287)
+ - on linux, the client will delete itself if auto updates are turned off after an update was already downloaded [#4705](https://github.com/tutao/tutanota/issues/4705)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/381?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-a393ce39c30aac7814256a8c1801c048d73f7725df4c45b06d27643ab40608c4
+f1a453de40b259ef0873a81234e7ce92cf96d48bc832a062584dd9383ff25193
 
 **tutanota-desktop-win.exe:**
-3b6b515919563f3cf3a3f504674803523b180f0bcc33e93ae747ea2f453c20bb
+d0c9d85f733f818d737eef3c2a058b0f66732d054152a7339248b7a85f12a671
 
 **tutanota-desktop-mac.dmg:**
-a5c7a84f5e2890d9446cfca0c0997f336a1ddf155f6a5588f4685f5997a7a573
+07f6e2877329773b5aaf3a2b140214f16e3f2ceb9fc99e7c68db467ca56f08a4
 
-**tutanota-desktop-296.250709.0-unpacked-linux.tar.gz**
-d7e7e64bd9b29d13ef8a2dae059887a66950b3b81d4ea0cb12628576f52218a5</releaseNotes>
+**tutanota-desktop-299.250715.0-unpacked-linux.tar.gz**
+ec1117f2cf0d264b98e752583d5e0de03c3af9c7f21cedc2b727531057e885bc</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
