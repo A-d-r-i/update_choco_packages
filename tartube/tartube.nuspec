@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.5.145</version>
+    <version>2.5.156</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -20,19 +20,10 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
 # MAJOR NEW FEATURES
-- Added new Japanese and Tamil translation; thanks to 福居那祐太 and தமிழ்நேரம்!
-- On MS Windows, Tartube installations have been updated to use virtual environments. As a result, if you are re-installing Tartube, you will need to re-install yt-dlp before you can use it. Note that the procedure for performing a manual installation has changed; see the updated notes in the README
+- Fixed broken virtual environment configuration on some MS Windows systems
+- Also added a 'repair' shell script which will repair the configuration, in case you tweak the settings yourself. The existing shell scripts will also 'repair' the configuration, every time Tartube starts, but they do that silently; the 'repair' script displays output in the terminal window, and does not actually start Tartube (Git #[715](https://github.com/axcore/tartube/issues/715), #[716](https://github.com/axcore/tartube/issues/716))
 # MINOR NEW FEATURES
-- When fetching a list of videos formats or subtitles (for example, by right- clicking and selecting Fetch &gt; Available formats), you can now specify additional options to pass to yt-dlp. See Edit &gt; General download options &gt; Advanced &gt; Fetch (Git #[712](https://github.com/axcore/tartube/issues/712))
-# MAJOR FIXES
-- Updated code to replace use of pip3 with pipx (Git #[684](https://github.com/axcore/tartube/issues/684))
-- Fixed issues with the yt-dlp download option "--match-filter" (Git #[687](https://github.com/axcore/tartube/issues/687), #[586](https://github.com/axcore/tartube/issues/586))
-- Renamed tartube's utils.py file to avoid a reported filename clash on MS Windows (Git #[693](https://github.com/axcore/tartube/issues/693))
-- In the download options window, some buttons in the the Advanced &gt; Workaround tab were broken; fixed them (Git #[707](https://github.com/axcore/tartube/issues/707))
-- Tartube did not detect the download of a remuxed video, instead adding the video in its original format to the Tartube database. Fixed (Git #[714](https://github.com/axcore/tartube/issues/714))
-# MINOR FIXES
-- Tweaked text in the README in a few places (Git #[689](https://github.com/axcore/tartube/issues/689), #[700](https://github.com/axcore/tartube/issues/700), #[702](https://github.com/axcore/tartube/issues/702), #[703](https://github.com/axcore/tartube/issues/703))
-- When fetching a list of videos formats or subtitles (for example, by right- clicking and selecting Fetch &gt; Available formats), MS Windows users saw a non-monospace font, which messed up the formatting of the text returned by yt-dlp. Tartube now enforces a monospace font in these situations (Git #[712](https://github.com/axcore/tartube/issues/712))
+- The settings to download comments, when videos are downloaded, have been moved. You can now find them in Edit &gt; General download options... &gt; Downloads &gt; Comments (Git #[703](https://github.com/axcore/tartube/issues/703))
 # 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
