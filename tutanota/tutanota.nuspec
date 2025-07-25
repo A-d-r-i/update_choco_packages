@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>299.250722.0</version>
+    <version>299.250725.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,29 +16,27 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Allow single-user accounts to change their default sender name in the settings [#9273](https://github.com/tutao/tutanota/issues/9273)
- - Switch to ESM build of DOMPurify [#6763](https://github.com/tutao/tutanota/issues/6763)
- - Update Electron to 37.2.3 [#9335](https://github.com/tutao/tutanota/issues/9335)
- - Update JS Deps [#9316](https://github.com/tutao/tutanota/issues/9316)
-
-# Bugfixes
- - Notifications in Windows Action Center don't open the app [#6946](https://github.com/tutao/tutanota/issues/6946)
- - Search index can miss some entries [#9295](https://github.com/tutao/tutanota/issues/9295)
- - Drop offline search indices to fix broken state caused by [#9295](https://github.com/tutao/tutanota/issues/9295) [#9314](https://github.com/tutao/tutanota/issues/9314)
+    <releaseNotes># Bugfixes
+ - Fix abuse prevention dialog during signup [#9365](https://github.com/tutao/tutanota/issues/9365)
+ - Progress Bar terminates before all events are processed [#9375](https://github.com/tutao/tutanota/issues/9375)
+ - Patch failures [#9372](https://github.com/tutao/tutanota/issues/9372)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/380?closed=1
+https://github.com/tutao/tutanota/milestone/383?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-16610184f592e525b6400411dcd4bdc8d15d568104eb863b58f7a813d400c617
+9d9f4b757a8600478233fd6dcdfcf48e7aba0326a6a1b98ffef3602681e37e1b
 
 **tutanota-desktop-win.exe:**
-5ad152f051ca4311fdc31e62c97c4accc86ee4313fd827522527be8a6f6f8621
+49810a2b290dba642d9b93927ade341c9a6f6766c13565c6f9e75fc921d5a3c2
 
 **tutanota-desktop-mac.dmg:**
-a64a49f42caadebc55379af5d2ac8567a32c83c1c96e7e9e99f894e79ec752d0</releaseNotes>
+a0df6272d97a9a20b8c6b252df65e8cfe1b9ac3119a5fb6a6cd0ded65804525e
+
+**tutanota-desktop-299.250725.1-unpacked-linux.tar.gz**
+340bb387e100e158174607af060d407dd2f88881e031229e30346ba8fcece5f2</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
