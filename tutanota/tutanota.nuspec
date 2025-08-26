@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>301.250806.1</version>
+    <version>304.250825.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,44 +17,27 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Remove Undo Reporting Snackbar [#9428](https://github.com/tutao/tutanota/issues/9428)
- - App name changed from "Tuta Mail" to "tutanota-desktop" on MacOS [#9389](https://github.com/tutao/tutanota/issues/9389)
- - Increase limit on notification emails in Desktop app [#9340](https://github.com/tutao/tutanota/issues/9340)
- - Undo move mail [#9205](https://github.com/tutao/tutanota/issues/9205)
- - Drag and drop mails to add label [#9161](https://github.com/tutao/tutanota/issues/9161)
+ - Key Verification
 
 # Bugfixes
- - More Button for Folder shows even when the Folder is not hovered [#9351](https://github.com/tutao/tutanota/issues/9351)
- - Remove reporting mail snackbar if the Report spam is set to 'Never Report' [#9454](https://github.com/tutao/tutanota/issues/9454)
- - Mail list is invalidated at every render [#9404](https://github.com/tutao/tutanota/issues/9404)
- - "The notification platform is unavailable." on Windows [#9399](https://github.com/tutao/tutanota/issues/9399)
- - saving contact with shortcut (ctrl + s) does not work when a contact field is in focus [#9387](https://github.com/tutao/tutanota/issues/9387)
- - Quick search displays mails in descending order [#9342](https://github.com/tutao/tutanota/issues/9342)
- - Recipient dropdown does not scroll selected item into the view [#9333](https://github.com/tutao/tutanota/issues/9333)
- - Unread mail counter badge inconsistent [#9258](https://github.com/tutao/tutanota/issues/9258)
- - Exporting an imported email adds an empty line above the "Content-Type" header [#9255](https://github.com/tutao/tutanota/issues/9255)
- - Able to print empty screen without opening an email [#9246](https://github.com/tutao/tutanota/issues/9246)
- - 403 NotAuthorizedError when Logging after removing self from a shared mailbox [#9143](https://github.com/tutao/tutanota/issues/9143)
- - [SDK] Week out of range during Alarm Scheduling [#8984](https://github.com/tutao/tutanota/issues/8984)
- - Enter doesn't work at the 2FA code prompt [#8982](https://github.com/tutao/tutanota/issues/8982)
- - DnsCheckDialog resets a LazyLoaded and then immediately gets the (nonexistent) value [#6818](https://github.com/tutao/tutanota/issues/6818)
+ - HTMLSanitizer test failiures due to serialization changes [#9465](https://github.com/tutao/tutanota/issues/9465)
+ - sqlite error(1): no such table: search_metadata [#9494](https://github.com/tutao/tutanota/issues/9494)
+ - AlarmInfo Inconsistences [#9447](https://github.com/tutao/tutanota/issues/9447)
+ - Problems with Belarusian Language in Tutanota [#4590](https://github.com/tutao/tutanota/issues/4590)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/385?closed=1
+https://github.com/tutao/tutanota/milestone/386?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-be71f0d5c3af2ee2596318ac55a17ab21e5706a94389a092dcf2ee81b6cd68a9
+e67102f734e63e196ff3eedad9402e66919298e0be94c3f309b736227bc0a369
 
 **tutanota-desktop-win.exe:**
-6e7bd5a3d1c362b24c1c978d56e11d889039102afaeb4b0675e04c2630ef407c
+0cbcb5aaae74d2f52471d0a1af2619edb60764fd384d67dce1e5236099866b89
 
 **tutanota-desktop-mac.dmg:**
-36b0b9ff7efa5b33f39bf4c426470b1bb523f8e32eaef146a5eca81715dc4c2c
-
-**tutanota-desktop-301.250806.1-unpacked-linux.tar.gz**
-3fd46abbed139b4699aca3b4a5c7bc6b931403e575485c44420081edab42e1b3</releaseNotes>
+a3833cefe39d53a63e73d562d81279e8d7c2ba9a8c048a9867c03913363f46b9</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
