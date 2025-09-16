@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.137.0</version>
+    <version>2.138.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -18,29 +18,41 @@
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
- 
-## Mendeley Reference Manager v2.137.0
- 
-We have:
- 
-- fixed an issue where mouse interactions with annotations were incorrectly positioned after toggling the right hand side panel
-- fixed an issue where the order of collections would change when child collections were opened
-- fixed an issue where newly created text highlights would disappear when switching to another PDF
-- fixed an issue where PDFs would fail to load, requiring a restart of the application
 
- 
+## Mendeley Reference Manager v2.138.0
+
+We have:
+
+- improved the table view of the library so that it resizes with your window
+      and also made it more responsive
+- introduced the ability to create underline annotations in the PDF reader
+- added options to the right-click and highlight menus in the PDF reader,
+      including copy
+- added a ‘back’ button to the PDF reader that takes you back to the
+      previous location after having clicked a link
+
+
+We have fixed:
+
+- an issue preventing you closing the app with command/Ctrl+Q
+- the command/Ctrl+C shortcut on text and underline highlights
+
+
 ## Support
 
-- If you encounter any problems using Mendeley or have questions to ask please [contact our support team](https://www.mendeley.com/contact-support/ "Contact support").
-- For news and updates about Mendeley see [our blog](http://blog.mendeley.com/).
-
- 
-Released: 14 August 2025
- 
-
+- If you encounter any problems using Mendeley or have questions to ask
+      please
+      [contact our support team](https://www.mendeley.com/contact-support/ "Contact support").
+- For news and updates about Mendeley see
+      [our blog](http://blog.mendeley.com/).
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.137.0](https://www.mendeley.com/release-notes-reference-manager/v2.137.0) </releaseNotes>
+Released: 16 September 2025
+
+
+
+
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.138.0](https://www.mendeley.com/release-notes-reference-manager/v2.138.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
