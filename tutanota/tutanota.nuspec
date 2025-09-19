@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>308.250911.0</version>
+    <version>309.250918.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,27 +17,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Improve suspension handling [#9613](https://github.com/tutao/tutanota/issues/9613)
- - Improve visual captcha [#9610](https://github.com/tutao/tutanota/issues/9610)
- - Show user satisfaction dialog for the web and desktop clients [#9609](https://github.com/tutao/tutanota/issues/9609)
- - Use new plan selector for plan switching [#9607](https://github.com/tutao/tutanota/issues/9607)
+ - Allow changing of shared group name by owner [#8639](https://github.com/tutao/tutanota/issues/8639)
 
 # Bugfixes
- - Registered mail address is not automatically filled after signup [#9608](https://github.com/tutao/tutanota/issues/9608)
+ - Edit this and future events for Events with guests fails to update old series [#9658](https://github.com/tutao/tutanota/issues/9658)
+ - Calendar indicator shrinks when calendar title is too big [#9627](https://github.com/tutao/tutanota/issues/9627)
+ - iPad Air Landscape - Missing delete event button on agenda view [#9626](https://github.com/tutao/tutanota/issues/9626)
+ - Failing sync for external calendars due missing Header [#9583](https://github.com/tutao/tutanota/issues/9583)
+ - Long text overflows EventDetailsView and becomes scrollable [#9563](https://github.com/tutao/tutanota/issues/9563)
+ - Opening an event not available in the app from the widget gets stuck in loop [#9558](https://github.com/tutao/tutanota/issues/9558)
+ - Undo move mail shortcut doesn't work in SearchView [#9532](https://github.com/tutao/tutanota/issues/9532)
+ - Can not open birthday event details from search or agenda view when offline [#9529](https://github.com/tutao/tutanota/issues/9529)
+ - Can not access event details while offline [#9456](https://github.com/tutao/tutanota/issues/9456)
+ - Adding a guest to an already existing calendar entry with guests, does throw several exceptions (on Mobile?) [#9323](https://github.com/tutao/tutanota/issues/9323)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/388?closed=1
+https://github.com/tutao/tutanota/milestone/389?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-5a8e41675b72a4610d2b0340bb13f0b51910740f34ea440855f03764ad77a16f
+70bf50d9ded4df59e1ae147aa072f095bfc7241fc67c90de1f41ba24df9f2236
 
 **tutanota-desktop-win.exe:**
-62b4b2ac24a0e96913cddc6d8c8c8b8a6213265fa863d0b2ccc023e15a4638d5
+428187ac8163ebc5d43fcad60a1530ea4b0129fbdd5f27b5701cb0b2033055a0
 
 **tutanota-desktop-mac.dmg:**
-6bfa960dada146eb7f27789b75c8a4f14efaecb31461b82de16ad01262637e76</releaseNotes>
+90db37eb8a9bf33701bf2638c75c6ac56937e9b207fcf79fc9f9cec468ff81f5</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
