@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.2.4</version>
+    <version>3.3.0</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,44 +18,13 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## Keyboard shortcuts
+    <releaseNotes>### [Read about the upcoming pricing changes on Notesnook's blog](https://blog.notesnook.com/introducing-new-pricing-plans/)
 
-You can now view all supported keyboard shortcuts by pressing `Ctrl + /`. Keyboard shortcuts are also available in our [docs](https://help.notesnook.com/keyboard-shortcuts).
+### [Read about what's new in v3.3 on Notesnook's blog](https://blog.notesnook.com/notesnook-v3.3.0/)
 
-This release also changes a few common keyboard shortcuts:
+---
 
-- To open command palette press `Ctrl + Shift + P` instead of `Ctrl + k`
-- Insert link using `Ctrl + k`
-
-## What's fixed
-
-* Fix toolbar crash by @01zulfi in https://github.com/streetwriters/notesnook/pull/8345
-* Create new tab on create note button's middle click by @01zulfi in https://github.com/streetwriters/notesnook/pull/8346
-* Fix github link in importer setting by @01zulfi in https://github.com/streetwriters/notesnook/pull/8348
-* Hide spell checker language selector on mac os by @01zulfi in https://github.com/streetwriters/notesnook/pull/8350
-* Fix internal links opening in new tab in readonly notes by @01zulfi in https://github.com/streetwriters/notesnook/pull/8364
-* Maintain relative cursor location when list is sorted by @Scott-will in https://github.com/streetwriters/notesnook/pull/8366
-* Remove standard notes and one note importer docs by @thecodrr in https://github.com/streetwriters/notesnook/pull/8379
-* Run tests on pr ref instead of base branch by @thecodrr in https://github.com/streetwriters/notesnook/pull/8380
-* Email should not be required on session expiry by @thecodrr in https://github.com/streetwriters/notesnook/pull/8381
-* Fix nav pane on small screens by @01zulfi in https://github.com/streetwriters/notesnook/pull/8365
-* Migrate note linking dialog lists from tanstack virtual to virtuoso by @01zulfi in https://github.com/streetwriters/notesnook/pull/8382
-* Update theme builder to new UI by @thecodrr in https://github.com/streetwriters/notesnook/pull/8384
-* Add missing instruction in desktop app dev setup by @01zulfi in https://github.com/streetwriters/notesnook/pull/8391
-* Handle pasting urls in html by @Scott-will in https://github.com/streetwriters/notesnook/pull/8385
-* Fix open settings shortcut interfering with editor shortcut by @01zulfi in https://github.com/streetwriters/notesnook/pull/8392
-* Increase list pane max size to 1000 for large screens by @01zulfi in https://github.com/streetwriters/notesnook/pull/8466
-* Don't show open &amp; copy tools for empty links by @01zulfi in https://github.com/streetwriters/notesnook/pull/8509
-* Fix deleting a reminder not removing from search list by @01zulfi in https://github.com/streetwriters/notesnook/pull/8487
-* If selected text is link, autofill url field in insert link popup by @01zulfi in https://github.com/streetwriters/notesnook/pull/8542
-* Show image dimensions during drag resizing by @01zulfi in https://github.com/streetwriters/notesnook/pull/8395
-* Fix crash when shift+click on toc item by @01zulfi in https://github.com/streetwriters/notesnook/pull/8549
-* Fix theming related issues by @thecodrr in https://github.com/streetwriters/notesnook/pull/8388 
-
-## New Contributors
-* @Scott-will made their first contribution in https://github.com/streetwriters/notesnook/pull/8366
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.2.3...v3.2.4</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.2.4...v3.3.0</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
