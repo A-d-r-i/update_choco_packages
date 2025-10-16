@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.25.0</version>
+    <version>0.25.1</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,23 +18,14 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>![Day1](https://github.com/user-attachments/assets/b9d011fd-ac95-4b58-91ee-3b0ba63492e3)
+    <releaseNotes>## What's Changed
+* chore: bump up happy-dom version to v20 [SECURITY] by @renovate[bot] in https://github.com/toeverything/AFFiNE/pull/13726
+* fix(editor): text align not work by @L-Sun in https://github.com/toeverything/AFFiNE/pull/13740
+* fix(core): can not scroll all page list in MacOS 26 by @L-Sun in https://github.com/toeverything/AFFiNE/pull/13763
+* fix(editor): missing signal of optional flat props by @L-Sun in https://github.com/toeverything/AFFiNE/pull/13762
 
-### 1. Doc icon
 
-This is a feature long anticipated by our users, and the doc icon has now officially launched. You can now add various emojis to different documents, and also choose from our carefully curated icon collection, with support for multiple color options. We believe this feature will help users organize and manage their documents more efficiently.
-
-### 2. MCP
-
-To further enhance the collaborative efficiency between AFFiNE and other products in your workflow, we have launched the brand new MCP feature. You simply need to select MCP in the integration settings and copy the generated JSON code into tools like Cursor. This will enable Cursor to read the content of your AFFiNE workspace documents, thereby achieving efficient collaboration between documents and code.
-
-### 3. Claude Sonnet 4.5 / Gemini 2.5 Pro
-
-To enhance your AI experience, we have simultaneously updated the latest Claude and Gemini models. You can now select and use these new models from the model list.
-
-### 4. Insert AI block
-
-Now you can directly insert AI-generated blocks into the main text.</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.25.0...v0.25.1</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
