@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.3.1</version>
+    <version>3.3.2</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,14 +18,20 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>* Don't show auto-backup notice again after dismissal by @01zulfi in https://github.com/streetwriters/notesnook/pull/8711
-* Fix insert paragraph keybinding by @01zulfi in https://github.com/streetwriters/notesnook/pull/8734
-* Fix discounted price in checkout by @thecodrr in https://github.com/streetwriters/notesnook/pull/8751
-* Restrict pasting premium features by @01zulfi in https://github.com/streetwriters/notesnook/pull/8735
-* Make table width adjustable by @thecodrr in https://github.com/streetwriters/notesnook/pull/8753
+    <releaseNotes>## Notesnook Circle
+Notesnook Circle brings together trusted partners who share our commitment to privacy, transparency, and user freedom. As a member you get exclusive discounts and offers from our partners. More details will be announced in a dedicated blog post soon. Check it out in `Settings &gt; Notesnook Circle`.
 
+### Other changes
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.0...v3.3.1</releaseNotes>
+1. Update electron to v37 by @thecodrr in https://github.com/streetwriters/notesnook/pull/8767
+2. Fix inserting images in outline lists by @01zulfi in https://github.com/streetwriters/notesnook/pull/8772
+3. Improve checklist styling by @01zulfi in https://github.com/streetwriters/notesnook/pull/8457
+4. Disable in-app noticies (temporarily) by @thecodrr in https://github.com/streetwriters/notesnook/pull/8797
+5. Handle attachment errors on export by @thecodrr in https://github.com/streetwriters/notesnook/pull/8798
+6. Fix html entities in markdown import by @thecodrr in https://github.com/streetwriters/notesnook/pull/8799
+7. Allow discounts in overlay checkout by @thecodrr in https://github.com/streetwriters/notesnook/pull/8800
+
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.1...v3.3.2</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
