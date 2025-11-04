@@ -6,12 +6,12 @@ The installer have been downloaded from their official site repository listed on
 and can be verified like this:
 
 1. Download the following installer:
-  Version 2.138.0 : <https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.138.0-x64.exe>
+  Version 2.139.0 : <https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.139.0-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: AC07F0143290BD4DB70A0D6A6DEC47B3F85804C71BE05196EBC3000F9EFA7AE6
+  checksum: 7A5AEB1E57F679797AD9579C545C5BD3389B74B7A4A2E823555E7C194C117D76
 
 File 'LICENSE.txt' is obtained from the official website 
