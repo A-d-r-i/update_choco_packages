@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.3.4</version>
+    <version>3.3.5</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -20,12 +20,9 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
     <releaseNotes>## What's Changed
 
-* Update Web Clipper to 0.4.0 by @thecodrr in https://github.com/streetwriters/notesnook/pull/8896
-* editor: fix crash in heading plugin when pasting markdown content by @01zulfi in https://github.com/streetwriters/notesnook/pull/8904
-* core: escape paranthesis in notes search query by @01zulfi in https://github.com/streetwriters/notesnook/pull/8857
-* editor: fix old inline images in bullet,numbered,task&amp;check lists by @01zulfi in https://github.com/streetwriters/notesnook/pull/8905
+* editor: fix checklist parsing as bulletlist by @01zulfi in https://github.com/streetwriters/notesnook/pull/8913
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.3...v3.3.4</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.4...v3.3.5</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
