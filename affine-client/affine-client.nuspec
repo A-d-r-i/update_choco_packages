@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.25.5</version>
+    <version>0.25.7</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -19,27 +19,18 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
     <releaseNotes>## What's Changed
-* feat(editor): add collapse/expand toggle for groups with caching by @NorkzYT in https://github.com/toeverything/AFFiNE/pull/12671
-* fix: config escape error by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13936
-* fix(server): doc squash timeout by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13939
-* fix(server): config typo by @moogle19 in https://github.com/toeverything/AFFiNE/pull/13913
-* feat(editor): import docs from docx by @UNIDY2002 in https://github.com/toeverything/AFFiNE/pull/11774
-* chore: bump electron by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13935
-* feat: improve sub sync by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13932
-* chore(i18n): sync translations by @github-actions[bot] in https://github.com/toeverything/AFFiNE/pull/13949
-* fix(editor): date picker in year by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13948
-* fix(editor): mermaid style pollution by @darkskygit in https://github.com/toeverything/AFFiNE/pull/13950
-* feat(i18n): korean translation by @arksky1 in https://github.com/toeverything/AFFiNE/pull/13733
-* feat(i18n): add missing catalan strings by @rogerclotet in https://github.com/toeverything/AFFiNE/pull/13914
-* feat(editor): add font size adjustment in editor settings by @maunguyengit in https://github.com/toeverything/AFFiNE/pull/13549
+* fix(editor): use onBlur for input handling in property menu by @lawvs in https://github.com/toeverything/AFFiNE/pull/14049
+* fix(server): apple sign by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14053
+* feat(i18n): update FR translate &amp; corrections by @Zegnos in https://github.com/toeverything/AFFiNE/pull/14052
+* feat(native): native reader for indexer by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14055
+* fix(core): handle image-blob reduce errors more gracefully by @ddybing in https://github.com/toeverything/AFFiNE/pull/14056
+* feat(server): improve oauth by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14061
+* chore: bump up nodemailer version to v7.0.11 [SECURITY] by @renovate[bot] in https://github.com/toeverything/AFFiNE/pull/14062
 
 ## New Contributors
-* @moogle19 made their first contribution in https://github.com/toeverything/AFFiNE/pull/13913
-* @arksky1 made their first contribution in https://github.com/toeverything/AFFiNE/pull/13733
-* @rogerclotet made their first contribution in https://github.com/toeverything/AFFiNE/pull/13914
-* @maunguyengit made their first contribution in https://github.com/toeverything/AFFiNE/pull/13549
+* @Zegnos made their first contribution in https://github.com/toeverything/AFFiNE/pull/14052
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.25.4...v0.25.5</releaseNotes>
+**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.25.6...v0.25.7</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
