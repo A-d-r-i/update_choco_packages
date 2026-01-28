@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>322.260120.0</version>
+    <version>325.260127.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -19,21 +19,17 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
     <releaseNotes># What's new
  - Send later [#9542](https://github.com/tutao/tutanota/issues/9542)
  - Write icon files without preserving attributes [#9979](https://github.com/tutao/tutanota/issues/9979)
-
-
-# Milestone
-https://github.com/tutao/tutanota/milestone/397?closed=1
-
+ - Better decryption error handling and less unnecessary public (encryption/identity) key requests [#10100](https://github.com/tutao/tutanota/issues/10100)
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-4dff3b11817a3a80ff68a66d1e670acecc87d33179fd14a1a650ad854594c6f8
+599609e42f315680fe5cc6e370a708430dc2f1839b8a72bac0158131de9bb2c5
 
 **tutanota-desktop-win.exe:**
-511b0c073be24254554d7b737cf49695a07cab4b17582834aac2ba7d3c711a60
+69f673cb475f0043271666e8e20ef970af75e612a7a37980a70a6697b4e5edbf
 
 **tutanota-desktop-mac.dmg:**
-e29d5c519eb008f1d11c751ef0758c3323dc3a98c3e8227c7df5cfd8b4f62b31</releaseNotes>
+69d974fd53d21df58441b202861af029555bab5ca0c2ed8d45b4d44711ea9871</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
