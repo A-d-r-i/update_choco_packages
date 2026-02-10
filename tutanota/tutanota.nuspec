@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>325.260127.0</version>
+    <version>327.260209.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,19 +17,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Send later [#9542](https://github.com/tutao/tutanota/issues/9542)
- - Write icon files without preserving attributes [#9979](https://github.com/tutao/tutanota/issues/9979)
- - Better decryption error handling and less unnecessary public (encryption/identity) key requests [#10100](https://github.com/tutao/tutanota/issues/10100)
+ - AEAD in Typescript [#10154](https://github.com/tutao/tutanota/issues/10154)
+ - Make the selected gift card option more obvious
+ - See progress when downloading attachments
+
+# Bugfixes
+ - Name gets not replaced in calendar invitation reply [#10253](https://github.com/tutao/tutanota/issues/10253)
+ - Wrong line count in address field
+ - Allow shortcut usage during signup
+ - Fix aria-current in MailFolderRow
+ - Set "Accept-Language" request header when synchronizing external calendars [#10244](https://github.com/tutao/tutanota/issues/10244)
+ - Prevent that long dialog titles can shift dialog buttons [#10238](https://github.com/tutao/tutanota/issues/10238)
+ - Fix keyboard input for start and end time in calendar event editor [#10237](https://github.com/tutao/tutanota/issues/10237)
+ - Do not compute patches for final attributes
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/411?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-599609e42f315680fe5cc6e370a708430dc2f1839b8a72bac0158131de9bb2c5
+d769ebabd85937b29c0f0d80a406911dbf1c84a76f75e581dff7750e6d1cc15b
 
 **tutanota-desktop-win.exe:**
-69f673cb475f0043271666e8e20ef970af75e612a7a37980a70a6697b4e5edbf
+f38cc2a961f335cc37a65a645b51922130d3a7b7f96b4e1983e41fd16c3309d4
 
 **tutanota-desktop-mac.dmg:**
-69d974fd53d21df58441b202861af029555bab5ca0c2ed8d45b4d44711ea9871</releaseNotes>
+0289acf83edcd84e72c80b0689ee1924766274a380f88b8cc92c286cb5433db9</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
