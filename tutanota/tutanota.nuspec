@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>327.260209.1</version>
+    <version>327.260210.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -22,6 +22,7 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
  - See progress when downloading attachments
 
 # Bugfixes
+ - Fix assertNotNull issue on login
  - Name gets not replaced in calendar invitation reply [#10253](https://github.com/tutao/tutanota/issues/10253)
  - Wrong line count in address field
  - Allow shortcut usage during signup
@@ -37,13 +38,13 @@ https://github.com/tutao/tutanota/milestone/411?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-d769ebabd85937b29c0f0d80a406911dbf1c84a76f75e581dff7750e6d1cc15b
+e817a954f73823dabc4e07076531d9167bc47a3093f29343b6147e33ca2918e6
 
 **tutanota-desktop-win.exe:**
-f38cc2a961f335cc37a65a645b51922130d3a7b7f96b4e1983e41fd16c3309d4
+ed888eaf217e03d440435242e39bfdf21fd081e9be558616df64140104553606
 
 **tutanota-desktop-mac.dmg:**
-0289acf83edcd84e72c80b0689ee1924766274a380f88b8cc92c286cb5433db9</releaseNotes>
+28d065494c62426446cf06378d142325986ee41d4c91caa67d19e53da1aa8a4b</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
