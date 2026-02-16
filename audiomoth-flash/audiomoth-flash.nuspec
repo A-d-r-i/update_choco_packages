@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>audiomoth-flash</id>
-    <version>1.7.0</version>
+    <version>1.7.1</version>
     <title>AudioMoth Flash App</title>
     <authors>OpenAcousticDevices</authors>
     <owners>Adri</owners>
@@ -15,8 +15,9 @@
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>An Electron-based application designed to flash the AudioMoth recording device with new firmware.</summary>
-    <releaseNotes>* Added USB HID flashing
-* Reduced UI lag when device changes status</releaseNotes>
+    <releaseNotes>* Added ability to manually clear activity log
+* Fixed intermittent crash when closing progress bar on Windows
+* Added additional attempts to clear user data</releaseNotes>
     <tags>audiomoth-flash audiomoth flash-app openacousticdevices</tags>
     <projectSourceUrl>https://github.com/OpenAcousticDevices/AudioMoth-Flash-App/</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/audiomoth-flash</packageSourceUrl>
