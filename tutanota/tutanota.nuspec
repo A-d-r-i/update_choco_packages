@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>327.260210.0</version>
+    <version>328.260224.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,35 +16,46 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - AEAD in Typescript [#10154](https://github.com/tutao/tutanota/issues/10154)
- - Make the selected gift card option more obvious
- - See progress when downloading attachments
+    <releaseNotes>
+# What's new
+ - EditAll non-reschedule operations propagate to altered instances [#10389](https://github.com/tutao/tutanota/issues/10389)
+ - Memory leaks when resizing the client [#10050](https://github.com/tutao/tutanota/issues/10050)
+ - Update Calendar Service to handle default calendars [#10018](https://github.com/tutao/tutanota/issues/10018)
+ - Add policy to avoid flooding calendar with pending invitaitons E.g: Display only invites from Tuta contacts [#9765](https://github.com/tutao/tutanota/issues/9765)
+ - Unacknowledged events as ghost bubbles [#5755](https://github.com/tutao/tutanota/issues/5755)
+ - Same contacts can be imported multiple times [#3707](https://github.com/tutao/tutanota/issues/3707)
 
 # Bugfixes
- - Fix assertNotNull issue on login
- - Name gets not replaced in calendar invitation reply [#10253](https://github.com/tutao/tutanota/issues/10253)
- - Wrong line count in address field
- - Allow shortcut usage during signup
- - Fix aria-current in MailFolderRow
- - Set "Accept-Language" request header when synchronizing external calendars [#10244](https://github.com/tutao/tutanota/issues/10244)
- - Prevent that long dialog titles can shift dialog buttons [#10238](https://github.com/tutao/tutanota/issues/10238)
- - Fix keyboard input for start and end time in calendar event editor [#10237](https://github.com/tutao/tutanota/issues/10237)
- - Do not compute patches for final attributes
+ - Fix electron deprecations and keyboard navigaiton shortcut [#10357](https://github.com/tutao/tutanota/issues/10357)
+ - All day altered instances become normal events when there is any update to the original series [#10344](https://github.com/tutao/tutanota/issues/10344)
+ - Fix bugs with outdated cache after key rotation [#10321](https://github.com/tutao/tutanota/issues/10321)
+ - Text Labels are not read by screen readers [#10274](https://github.com/tutao/tutanota/issues/10274)
+ - Handle exclusions when turn normal series into all-day series [#10261](https://github.com/tutao/tutanota/issues/10261)
+ - Process new all-day Altered Instance [#10260](https://github.com/tutao/tutanota/issues/10260)
+ - sent emails are duplicated into draft [#10220](https://github.com/tutao/tutanota/issues/10220)
+ - Attachment names are not displayed when printing email [#10218](https://github.com/tutao/tutanota/issues/10218)
+ - Crypto error when decrypting contact fields with a cardinality of ZeroOrOne and an empty value [#10204](https://github.com/tutao/tutanota/issues/10204)
+ - The mail editor doesn't fallback to default sender when the sender alias is deactivated while the editor is open or minimized [#10186](https://github.com/tutao/tutanota/issues/10186)
+ - Accepted events can be edited on guest's calendar by dragging and dropping, but this should not be possible [#10177](https://github.com/tutao/tutanota/issues/10177)
+ - AssertNotNull failed : You can't get server time if no rest requests were made [#10176](https://github.com/tutao/tutanota/issues/10176)
+ - Cannot unassign label from mail when: mailbox labels count &gt; MAX_NBR_OF_MAILS_SYNC_OPERATION [#10166](https://github.com/tutao/tutanota/issues/10166)
+ - Cannot download uploaded attachment from the mail editor [#10120](https://github.com/tutao/tutanota/issues/10120)
+ - Reply is not filling the recipient address in To field automatically [#10016](https://github.com/tutao/tutanota/issues/10016)
+ - Aliases form is not updated after upgrade [#2464](https://github.com/tutao/tutanota/issues/2464)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/411?closed=1
+https://github.com/tutao/tutanota/milestone/416?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-e817a954f73823dabc4e07076531d9167bc47a3093f29343b6147e33ca2918e6
+434b05273da56f15b7f0af13bcfd7f8c5edb2316de1e9c3d3852a07f293b8561
 
 **tutanota-desktop-win.exe:**
-ed888eaf217e03d440435242e39bfdf21fd081e9be558616df64140104553606
+c4f132d21b0e43570a3f98898b555a0d21290f620cd4c9353d011920bbec7b2c
 
 **tutanota-desktop-mac.dmg:**
-28d065494c62426446cf06378d142325986ee41d4c91caa67d19e53da1aa8a4b</releaseNotes>
+c6f1e0a4a54b7d10c78834500818e56ed318a049cacbaf202dded737f5972966</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
