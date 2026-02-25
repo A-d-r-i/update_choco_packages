@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.25.7</version>
+    <version>0.26.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,19 +18,34 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>## What's Changed
-* fix(editor): use onBlur for input handling in property menu by @lawvs in https://github.com/toeverything/AFFiNE/pull/14049
-* fix(server): apple sign by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14053
-* feat(i18n): update FR translate &amp; corrections by @Zegnos in https://github.com/toeverything/AFFiNE/pull/14052
-* feat(native): native reader for indexer by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14055
-* fix(core): handle image-blob reduce errors more gracefully by @ddybing in https://github.com/toeverything/AFFiNE/pull/14056
-* feat(server): improve oauth by @darkskygit in https://github.com/toeverything/AFFiNE/pull/14061
-* chore: bump up nodemailer version to v7.0.11 [SECURITY] by @renovate[bot] in https://github.com/toeverything/AFFiNE/pull/14062
+    <releaseNotes>&lt;img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/cf94711b-e2f0-4e6d-90b3-e752725383e5" /&gt;
 
-## New Contributors
-* @Zegnos made their first contribution in https://github.com/toeverything/AFFiNE/pull/14052
+## What's new
 
-**Full Changelog**: https://github.com/toeverything/AFFiNE/compare/v0.25.6...v0.25.7</releaseNotes>
+### Web &amp; Editor
+
+- Improved the performance of edgeless during dragging and zooming
+- Improved key mapping for  non-U.S. keyboard layouts
+- Improve database filter, callout default style and dark mode visibility
+- Fix MCP token cannot display
+
+### Native Client
+
+- Support lazy loading of blobs to avoid OOM issues in certain scenarios on mobile devices
+- Improve the self-hosted login error handle, distinguish between login failure and network issues
+- Fix an issue where window rendering could be abnormal when idle on Windows/Linux
+- Fix an issue where remaining files might not be cleaned up properly when deleting a workspace
+- Reduce the client size using a new compression algorithm
+
+### Backend
+
+- Improve some S3 provider compatibility
+- Improve admin panel design, a better dashboard and settings interface
+- Fix the issue where history could be created repeatedly during concurrent operations
+
+## Breaking change
+
+Starting from server version 0.26, only clients at version 0.25 or higher are supported to connect and sync.</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
