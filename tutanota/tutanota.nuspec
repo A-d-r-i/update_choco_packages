@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>335.260306.0</version>
+    <version>335.260310.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -29,19 +29,20 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
  - Check for `structuredClone` support [#9705](https://github.com/tutao/tutanota/issues/9705)
  - Opening Notification Targets is very laggy when expanded [#4230](https://github.com/tutao/tutanota/issues/4230)
  - Undo deleting inline image does not work [#1822](https://github.com/tutao/tutanota/issues/1822)
+ - Show warning dialog when moving mail with existing contact to spam
 
 # Milestone
 https://github.com/tutao/tutanota/milestone/407?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-c0f0c329a78322373c0d365a8b54411701cfab19e395ea70de807dab581900be
+3eb82edd6b0607f7761f7497ff222e79925b8345d755ff6dd44103e26cf88792
 
 **tutanota-desktop-win.exe:**
-9e6727e436a3fecf5a60d2258e31d77d637a5998fabcbe646d396a8d96951adc
+ae4e781ef22f54de6557a2773c19019f1c1bb1498c5e33b5f6926b2ac6cda9d6
 
 **tutanota-desktop-mac.dmg:**
-86408ff89bede64ef6f33353f11707d8173c9587f30886d034025dd6f0e3fc77</releaseNotes>
+31e363482e1c1df5affdb70a7491fdc03573610d387460954e841e1347399aad</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
