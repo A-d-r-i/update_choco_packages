@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>332.260303.0</version>
+    <version>335.260306.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,25 +17,31 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-Improved UI for accounts under review
-Allow downloading the recovery kit pdf from the settings
+- Undo sending email action [#9543](https://github.com/tutao/tutanota/issues/9543)
+ - Update DOMPurify to 3.3.2 [#10451](https://github.com/tutao/tutanota/issues/10451)
+- Update Electron to 40.8.0
+
+# Bugfixes
+ - `show more text` option in conversation is not visible when we enable `view in light mode` [#10412](https://github.com/tutao/tutanota/issues/10412)
+ - Mail editor's recipient fields contain elements that are not shown but navigable by screen readers [#10396](https://github.com/tutao/tutanota/issues/10396)
+ - Uncaught BadRequestError when trying to send an already scheduled mail [#10354](https://github.com/tutao/tutanota/issues/10354)
+ - Selecting multiple mails with active conversation grouping, shows wrong email count [#10302](https://github.com/tutao/tutanota/issues/10302)
+ - Check for `structuredClone` support [#9705](https://github.com/tutao/tutanota/issues/9705)
+ - Opening Notification Targets is very laggy when expanded [#4230](https://github.com/tutao/tutanota/issues/4230)
+ - Undo deleting inline image does not work [#1822](https://github.com/tutao/tutanota/issues/1822)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/419?closed=1
-
+https://github.com/tutao/tutanota/milestone/407?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-960c7585792ae94c5af267da1f21083b9d91a761583c10c08c9297821d3697c5
+c0f0c329a78322373c0d365a8b54411701cfab19e395ea70de807dab581900be
 
 **tutanota-desktop-win.exe:**
-24404b863a8793f67a30368e69461ba0000b1fc7e9beb6d5927ee6ef16378e54
+9e6727e436a3fecf5a60d2258e31d77d637a5998fabcbe646d396a8d96951adc
 
 **tutanota-desktop-mac.dmg:**
-6d88d3a52e7a727cd9cee9959208a13120c676f83f7f91b3d080c206bbb4d8a4
-
-**tutanota-desktop-332.260303.0-unpacked-linux.tar.gz:**
-a9c651d209c367ff5391c07dec9bd35099072675830aaa18278f472eb2acac52</releaseNotes>
+86408ff89bede64ef6f33353f11707d8173c9587f30886d034025dd6f0e3fc77</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
