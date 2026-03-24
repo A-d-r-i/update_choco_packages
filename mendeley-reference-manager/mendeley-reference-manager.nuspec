@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mendeley-reference-manager</id>
-    <version>2.143.0</version>
+    <version>2.144.0</version>
     <title>Mendeley Reference Manager</title>
     <authors>Mendeley Ltd.</authors>
     <owners>Adri</owners>
@@ -19,23 +19,15 @@
     <summary>Considerable time and effort can be spent building and organizing your reference library, finding your references and notes when you need them and formatting citations correctly. The new Mendeley Reference Manager helps simplify these tasks, leaving you time to focus on achieving your goals.</summary>
     <releaseNotes>
 
-## Mendeley Reference Manager v2.143.0
-
-We have:
-
-- reduced the disk size required by the application
-- improved the security and performance of the application
-
+## Mendeley Reference Manager v2.144.0
 
 We have fixed:
 
-- an error when dragging and dropping references into a group
-- the "Back to Home" button on error pages redirecting to the web
-      app instead of the desktop dashboard
-- annotations not syncing correctly between the desktop application and web
-      browser
-- document rows being hidden behind the bulk action panel after selecting
-      them
+- an issue with PDF loading on the MRM Desktop PDF Reader
+- an issue causing a blank screen during Ask My Library answer generation
+- an issue with the drag and drop of PDFs into the library view
+- an issue that was causing MRM Desktop to display a blank screen upon
+      opening
 
 
 ## Support
@@ -47,12 +39,12 @@ We have fixed:
       [our blog](http://blog.mendeley.com/).
 
 
-Released: 02 March 2026
+Released: 23 March 2026
 
 
 
 
-**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.143.0](https://www.mendeley.com/release-notes-reference-manager/v2.143.0) </releaseNotes>
+**Full changelog:** [https://www.mendeley.com/release-notes-reference-manager/v2.144.0](https://www.mendeley.com/release-notes-reference-manager/v2.144.0) </releaseNotes>
     <tags>mendeley reference manager citation bibliography</tags>
     <projectSourceUrl>https://github.com/Mendeley</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/mendeley-reference-manager</packageSourceUrl>
