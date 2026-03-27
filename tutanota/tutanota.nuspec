@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>338.260318.0</version>
+    <version>340.260326.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,21 +17,37 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- Improvements for payment method management for users that use their account on iOS devices
-- Improvements to the support dialog
+ - Update libs [#10540](https://github.com/tutao/tutanota/issues/10540)
+ - Change plans with Drive support [#10537](https://github.com/tutao/tutanota/issues/10537)
+ - Fix DriveMoveItemDialog height [#10534](https://github.com/tutao/tutanota/issues/10534)
+ - Fix font icon sizes [#10532](https://github.com/tutao/tutanota/issues/10532)
+ - drive: improved mime type processing and colorful file icons [#10529](https://github.com/tutao/tutanota/issues/10529)
+ - [build] Update undici to 7.24.4 [#10517](https://github.com/tutao/tutanota/issues/10517)
+ - use new icon naming conventions [#10513](https://github.com/tutao/tutanota/issues/10513)
+ - Various Drive-related improvements [#10448](https://github.com/tutao/tutanota/issues/10448)
+ - Improve blob decryption speed in browser [#10434](https://github.com/tutao/tutanota/issues/10434)
+ - Drive: drag-and-drop improvements [#10433](https://github.com/tutao/tutanota/issues/10433)
+ - Drive: deselect items by clicking on empty space [#10319](https://github.com/tutao/tutanota/issues/10319)
+ - More sensible context menu and action bar entries [#10315](https://github.com/tutao/tutanota/issues/10315)
+ - Drive: Show UserError for copy/move item to Trash [#10307](https://github.com/tutao/tutanota/issues/10307)
+
+# Bugfixes
+ - Older repeating events do not show up in calendar widget [#10427](https://github.com/tutao/tutanota/issues/10427)
+ - Overflowing repeating event doensnt show up on the next [#10241](https://github.com/tutao/tutanota/issues/10241)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/423?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-5437541d3bce06e0bb4cd1a7271351900811b1cd3290a55351214ed84d40f210
+f50b6207857292d52022d26438875e198b611711adf11b0d94015ff444680048
 
 **tutanota-desktop-win.exe:**
-c0d2b9f71621d4ae2e443dd476c8f2b66d845e86ba0744e46520166dbf9c934c
+e89f003bd7179362ee8f6c0816f6b78c169962b97fc229181df2b06af4ef5ac6
 
 **tutanota-desktop-mac.dmg:**
-8b01081dd7a7360e4fcd52a02c82cca23a42e01c7715d0076718cfd003bf27de
-
-**tutanota-desktop-338.260318.0-unpacked-linux.tar.gz**
-3bb4f0f7b5e4d0f3da5891251a97cb74537c76148c54d964421afdc19e142836</releaseNotes>
+a4c2e5f10d98208a8604e5228515223d834f585464c6757bcd4f8d8c639a789c</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
