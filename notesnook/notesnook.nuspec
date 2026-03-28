@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.3.11</version>
+    <version>3.3.12</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,11 +18,8 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>### [Read about what's new in v3.3.11 on Notesnook's blog](https://blog.notesnook.com/notesnook-desktop-v3.3.11/)
-
----
-
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.10...v3.3.11</releaseNotes>
+    <releaseNotes>## [Read about what's new in v3.3.12 on Notesnook's blog](https://blog.notesnook.com/notesnook-desktop-v3.3.12/)
+</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
