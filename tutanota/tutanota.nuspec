@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>341.260417.0</version>
+    <version>345.260421.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,32 +17,26 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Update search indexing UI [#10350](https://github.com/tutao/tutanota/issues/10350)
- - Implement non-blocking search index extension [#10349](https://github.com/tutao/tutanota/issues/10349)
- - Allow easy extension of search index range [#10351](https://github.com/tutao/tutanota/issues/10351)
- - Allow easy index recreation on locally stored data [#10381](https://github.com/tutao/tutanota/issues/10381)
- - Change default offline range to two years for paid users [#10348](https://github.com/tutao/tutanota/issues/10348)
- - Update local offline range when indexing is cancelled [#10567](https://github.com/tutao/tutanota/issues/10567)
- - Allow filtering spam mails in search view [#10521](https://github.com/tutao/tutanota/issues/10521)
- - Rework search index warning [#10520](https://github.com/tutao/tutanota/issues/10520)
+This is just laying the foundations for some cryptography improvements.
 
-# Bugfixes
- - Print function can't be triggered [#10628](https://github.com/tutao/tutanota/issues/10628)
- - Extending the mail index range while already indexing start a concurrent indexing without cancelling the first one [#10581](https://github.com/tutao/tutanota/issues/10581)
+
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/417?closed=1
+https://github.com/tutao/tutanota/milestone/425?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-cdfe376f0df1259e8bd875b18843e523df8f5c6f076251bf32f1bfa49547fd01
+7287a5201de527225fc3276e91fc343f338eb4d407d7abef96e3e511a049cd95
 
 **tutanota-desktop-win.exe:**
-bdd46effc35bd683fd34ac8eef56b71cbddb841be2fc5765d290e9ea6d24b3fc
+3d94bbb1fa126e36e0cf093180c20139d4ba74aa1539dbc330edc68b613cc339
 
 **tutanota-desktop-mac.dmg:**
-0aee90105d4d22f93f1a80299620718ce2905487e3f0626cddd606877e2f0e9b</releaseNotes>
+f2863e2c97e2f84dc184957ab685c14079056df91ed32686272332ba1197c1ca
+
+**tutanota-desktop-345.260421.2-unpacked-linux.tar.gz**
+609f6423433b8c1a4968ceef80443d46a96c7f3641f8358dc5fac1d5f57e22eb</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
