@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>345.260421.2</version>
+    <version>345.260424.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,26 +17,22 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-This is just laying the foundations for some cryptography improvements.
+- Drive: explicit download action
+- Add support for upload progress &amp; cancellation (not available for attachments yet)
 
-
-
-# Milestone
-https://github.com/tutao/tutanota/milestone/425?closed=1
+## Bugfixes
+- Drive: UI fixes
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-7287a5201de527225fc3276e91fc343f338eb4d407d7abef96e3e511a049cd95
+074617a49ef96fa37650d2523b00ddd1b82c338ab32467d85ff10b424f8840ee
 
 **tutanota-desktop-win.exe:**
-3d94bbb1fa126e36e0cf093180c20139d4ba74aa1539dbc330edc68b613cc339
+bba9d381e6d66889cb4b62fbf5b7f4c8b78e99b56a6d78375e29380b07efb9ec
 
 **tutanota-desktop-mac.dmg:**
-f2863e2c97e2f84dc184957ab685c14079056df91ed32686272332ba1197c1ca
-
-**tutanota-desktop-345.260421.2-unpacked-linux.tar.gz**
-609f6423433b8c1a4968ceef80443d46a96c7f3641f8358dc5fac1d5f57e22eb</releaseNotes>
+6da3983e0c725798c058fdc90fb23a3ec81af1e07bbae18e0ec994f2d4db950b</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
