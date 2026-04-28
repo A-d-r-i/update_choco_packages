@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>notesnook</id>
-    <version>3.3.15</version>
+    <version>3.3.16</version>
     <title>Notesnook</title>
     <authors>Streetwriters Ltd.</authors>
     <owners>Adri</owners>
@@ -18,9 +18,18 @@ Notesnook is our **proof** that privacy does _not_ (always) have to come at the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>A fully open source and end-to-end encrypted note taking alternative to Evernote.</summary>
-    <releaseNotes>## [Read about what's new in v3.3.15 on Notesnook's blog](https://blog.notesnook.com/notesnook-desktop-v3.3.15/)
+    <releaseNotes>## What's Changed
+* Use newer appimage bundler by @thecodrr in https://github.com/streetwriters/notesnook/pull/9744
+* web: fix scrollbar blocking date in compact note list item by @01zulfi in https://github.com/streetwriters/notesnook/pull/9719
+* ui: fix submenu cutting off when there are a lot of lazy items by @01zulfi in https://github.com/streetwriters/notesnook/pull/9739
+* Fix crash on non-paddle related iframe events by @thecodrr in https://github.com/streetwriters/notesnook/pull/9747
+* desktop: Stop urgent reminder causes segfault &amp; app freeze on Linux. by @NeedsChloesure in https://github.com/streetwriters/notesnook/pull/9737
+* web: show titlebar on auth pages by @01zulfi in https://github.com/streetwriters/notesnook/pull/9093
+* core: Limit note subtitle length. by @NeedsChloesure in https://github.com/streetwriters/notesnook/pull/9732
+* Small refactor to make the web build pass by @thecodrr in https://github.com/streetwriters/notesnook/pull/9761
+* editor: fix crash in backspace handler by @01zulfi in https://github.com/streetwriters/notesnook/pull/9740
 
-**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.14...v3.3.15</releaseNotes>
+**Full Changelog**: https://github.com/streetwriters/notesnook/compare/v3.3.15...v3.3.16</releaseNotes>
     <tags>notesnook notes evernote encrypted</tags>
     <projectSourceUrl>https://github.com/streetwriters/notesnook</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/notesnook</packageSourceUrl>
