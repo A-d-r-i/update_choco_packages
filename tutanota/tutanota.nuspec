@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>348.260506.0</version>
+    <version>348.260518.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,49 +17,29 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- Change mark unread behavior to only mark the latest mail in the current list when list is set to group by conversation [#9545](https://github.com/tutao/tutanota/issues/9545)
-- Add "Reapply inbox rules" action to `Settings &gt; Email &gt; Inbox rules` [#10461](https://github.com/tutao/tutanota/issues/10461)
-- Enforcing password change should apply to new users [#10458](https://github.com/tutao/tutanota/issues/10458)
-- Allow navigating to `Settings &gt; Email &gt; Undo send` using Quick Actions [#10492](https://github.com/tutao/tutanota/issues/10492)
-- Improvements to similar contact name comparison [#10497](https://github.com/tutao/tutanota/issues/10497)
-- Ignore extra whitespace when comparing contacts for merging [#10497](https://github.com/tutao/tutanota/issues/10497)
-- Too much empty space in the MailViewerHeader when the sender name isn't set [#9547](https://github.com/tutao/tutanota/issues/9547)
-- Always pass id encoding when comparing ids of entities [#10746](https://github.com/tutao/tutanota/issues/10746)
-- Update Request Size Limit Map [#10523](https://github.com/tutao/tutanota/issues/10523)
-- Update Electron to v42.0.0
+ - Re-enable outline for more UI components
+ - Drive for Desktop app
+ - Faster file uploads (parallel encryption &amp; upload) [#10749](https://github.com/tutao/tutanota/issues/10749)
+ - Update electron-updater [#9259](https://github.com/tutao/tutanota/issues/9259)
 
 # Bugfixes
-- Incorrect counters caused by counter fixup while client is still syncing [#10761](https://github.com/tutao/tutanota/issues/10761)
-- Index quick extend action does nothing on Free Accounts [#10700](https://github.com/tutao/tutanota/issues/10700)
-- Search URL is not updated when viewing different mails in the list [#10674](https://github.com/tutao/tutanota/issues/10674)
-- Cannot set offline range date more than 20 years from settings [#10673](https://github.com/tutao/tutanota/issues/10673)
-- Uncaught Illegal key length error when entering incorrect Recovery Key [#10602](https://github.com/tutao/tutanota/issues/10602)
-- Inbox rule priority not respected when "Never send it to spam" is unchecked [#10598](https://github.com/tutao/tutanota/issues/10598)
-- Drafted email will not delete [#10522](https://github.com/tutao/tutanota/issues/10522)
-- No contact found when viewing a contact list entry if the contact's email address has uppercase characters [#10499](https://github.com/tutao/tutanota/issues/10499)
-- Invalid SpellCheckerDictionaryDownloadURL when updateUrl isn't set [#10490](https://github.com/tutao/tutanota/issues/10490)
-- Spellchecker doesn't work on first launch until spellcheck language is changed [#10487](https://github.com/tutao/tutanota/issues/10487)
-- ProgrammingError when loading mailDetailsBlob immediately after sending a draft [#10476](https://github.com/tutao/tutanota/issues/10476)
-- Be able to properly undo deleted inline image [#10468](https://github.com/tutao/tutanota/issues/10468)
-- Check for email count text is not correct [#10467](https://github.com/tutao/tutanota/issues/10467)
-- [windows] EPERM, Permission denied error when setting Default mail handler [#10435](https://github.com/tutao/tutanota/issues/10435)
-- Mac client update fails when the client is ran from a read-only volume [#10185](https://github.com/tutao/tutanota/issues/10185)
-- Unset repository url error during custom desktop release [#10465](https://github.com/tutao/tutanota/issues/10465)
+ - Fix download all action for some file names [#10803](https://github.com/tutao/tutanota/issues/10803)
+ - Fix sync not displaying the finished state [#10825](https://github.com/tutao/tutanota/issues/10825)
+ - MIME type is not correctly determined when extension is not lowercase [#10735](https://github.com/tutao/tutanota/issues/10735)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/422?closed=1
+https://github.com/tutao/tutanota/milestone/430?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-4b3842d9917ad127d7ba0a5be11187576ea3b5746aaaece7cef82bfe1f225327
+065fe9a31107db4805176a94f15df90664d807d57ffa7078f8667b4f4ce61e91
 
 **tutanota-desktop-win.exe:**
-6a0b4b4e3d13959e24b732ae358993d8cf8ffa3b09735086dee6804058843972
+199f9419ca8ed2227af9c2076911cd06d141a57405a9441bef5f123e47870df1
 
 **tutanota-desktop-mac.dmg:**
-240f49ee8bc9b00e80454b8e8645c8cb65146d2d851646766bc97eed4c003ea8
-</releaseNotes>
+626c7510e1515b82132ca4029769d48a02f272644f7daae1e06cd6a2243cb540</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
