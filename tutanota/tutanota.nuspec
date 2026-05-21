@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>348.260518.0</version>
+    <version>348.260519.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,29 +17,26 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Re-enable outline for more UI components
- - Drive for Desktop app
- - Faster file uploads (parallel encryption &amp; upload) [#10749](https://github.com/tutao/tutanota/issues/10749)
- - Update electron-updater [#9259](https://github.com/tutao/tutanota/issues/9259)
+ - Always allow creating event repeating on the fourth occurrence of a weekday [#10833](https://github.com/tutao/tutanota/issues/10833)
+ - Handle event and alarm creation as one seamless operation [#10568](https://github.com/tutao/tutanota/issues/10568)
 
 # Bugfixes
- - Fix download all action for some file names [#10803](https://github.com/tutao/tutanota/issues/10803)
- - Fix sync not displaying the finished state [#10825](https://github.com/tutao/tutanota/issues/10825)
- - MIME type is not correctly determined when extension is not lowercase [#10735](https://github.com/tutao/tutanota/issues/10735)
+ - Error when duplicating events with alarms [#9887](https://github.com/tutao/tutanota/issues/9887)
+ - Editing Altered Event choosing this and the future throws an error [#9665](https://github.com/tutao/tutanota/issues/9665)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/430?closed=1
+https://github.com/tutao/tutanota/milestone/432?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-065fe9a31107db4805176a94f15df90664d807d57ffa7078f8667b4f4ce61e91
+4aa0faa44ad451eabf9b421d84be04572608366c88304ea9b9c187dec0142f98
 
 **tutanota-desktop-win.exe:**
-199f9419ca8ed2227af9c2076911cd06d141a57405a9441bef5f123e47870df1
+fec79a406ab8797fdea429b990e27a487a24b3a475de9f1c02a855ca30234239
 
 **tutanota-desktop-mac.dmg:**
-626c7510e1515b82132ca4029769d48a02f272644f7daae1e06cd6a2243cb540</releaseNotes>
+4c418b30716b8ca15fd49fc5edb603f64fe6d99956f85ffb1a23779923b39280</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
