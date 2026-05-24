@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tartube</id>
-    <version>2.5.197</version>
+    <version>2.5.231</version>
     <title>Tartube</title>
     <authors>A. S. Lewis (and contributors)</authors>
     <owners>Adri</owners>
@@ -20,18 +20,24 @@ It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube
     <summary>A GUI front-end for youtube-dl, partly based on youtube-dl-gui and written in Python 3 / Gtk 3</summary>
     <releaseNotes>
 # MAJOR NEW FEATURES
-- The installers for MS Windows now include Deno, so there's no need to install it yourself. (Deno is now yt-dlp's recommended Javascript runtime, so users on other platforms should probably install it too) (Git #[749](https://github.com/axcore/tartube/issues/749))
-- Videos added to Tartube's database now include the name of the video's author (i.e. the uploader, or the channel name if the uploader is not available). You can re-check your existing videos to automatically update the database. In the toolbar at the bottom of the Videos tab, you can now search videos by author (as well as by video name, etc) (Git #[719](https://github.com/axcore/tartube/issues/719))
-- The toolbar at the bottom of the Videos tab has been improved, so that searching for videos (i.e. applying a filter) is much more convenient. A number of explanatory tooltips have also been added there (Git #[719](https://github.com/axcore/tartube/issues/719))
+- Downloads from YouTube now require that you install Deno or some other compatible JavaScript runtime. The MS Windows installer includes a copy of Deno; users on Linux should install Deno using their normal package manager. Tartube is now configured by default to specify Deno in all video downloads; you can modify this behaviour, if you like, by clicking Edit &gt; System preferences... &gt; Downloaders &gt; JavaScript
+- For some time, the alarm that should be played when a livestream started (if you've enabled that behaviour) did not play, because the Python playsound module has been abandoned and is not available to most users. Tartube now supports the playsound3 module instead; it's included in the MS Windows installer
 # MINOR NEW FEATURES
-- You can now auto-delete videos by upload dates, as well as by download date. Click Edit &gt; System preferences... &gt; Files &gt; Delete, where you can now select 'days since download' or 'days since upload' (Git #[743](https://github.com/axcore/tartube/issues/743))
-- Improved the layout of the grid in the Videos tab, making it much more likely that users will see multiple columns (as intended), rather than a single one. This should help (for example) users downloading videos with Japanese- language titles, which take up more horizontal space than expected; video titles are now line-wrapped more efficiently. There is also a new button at the bottom of the Videos tab, which can be clicked to force the grid into 2, 3 or 4 columns (depending on the window size) (Git #[751](https://github.com/axcore/tartube/issues/751))
-- Added new menu options for checking/downloading the selected video (Git #[740](https://github.com/axcore/tartube/issues/740))
+- Added an option to disable the monospace fonts in the Output tab, for the benefit of a small number of users for whom the fonts are illegible. To set it, click Edit &gt; System preferences &gt; Output &gt; Output tab, and select 'Disable monospace fonts in the Output tab' (Git #[766](https://github.com/axcore/tartube/issues/766))
+- The Output tab (and Classic Mode tab) now show the time at which a download finished, which is useful for scheduled downloads (Git #[783](https://github.com/axcore/tartube/issues/783))
+- In the Videos tab, you can now mark multiple videos as downloaded (or not downloaded), for example by right-clicking a channel and selecting 'Channel contents &gt; Mark as downloaded'. You can also select multiple videos, and then right-click them before selecting 'Mark videos &gt; Downloaded'. This feature should be used with caution (Git #[783](https://github.com/axcore/tartube/issues/783))
+- When updating yt-dlp, you can now update using the nightly build, instead of the main release (if you want to). This works on all systems, but only for PIP installs (so it's available for all MS Windows users). To enable it, click Edit &gt; System preferences... &gt; Downloaders &gt; Forks, and enable the 'Install nightly build' option
 # MAJOR FIXES
-- Fixed Tartube's failure to start and/or load the database, when loading data from a (much) earlier version (Git #[733](https://github.com/axcore/tartube/issues/733), #[737](https://github.com/axcore/tartube/issues/737))
-- Fixed code handling temporary downloads (Git #[740](https://github.com/axcore/tartube/issues/740))
+- Fixed a crash when preparing yt-dlp download options (Git #[778](https://github.com/axcore/tartube/issues/778))
+- Added a workaround for a crash observed when re-downloading a video; more detail is required for a permanent fix (Git #[779](https://github.com/axcore/tartube/issues/779))
+- In the Videos tab, the search feature did not work when the 'Authors' button was selected. Another user reported crashes when using the search feature. Fixed (Git #[761](https://github.com/axcore/tartube/issues/761), #[784](https://github.com/axcore/tartube/issues/784))
+- In the download options window, in the Files &gt; Cookies tab, the entry box above the 'Browser' dropdown box was not updated, when the dropdown box itself was updated. Fixed (Git #[774](https://github.com/axcore/tartube/issues/774))
+- Also in the Files &gt; Cookies tab, if the user de-selected 'Do not load cookies from this browser (having earlier selected it), then '--no-cookies-from-browser' was added to the yt-dlp command. Fixed (Git #[768](https://github.com/axcore/tartube/issues/768))
+- Also in the Files &gt; Cookies tab, when the user selected 'Firefox' in the 'Browser' dropdown box, and then reset that box, and then clicked 'Apply', the 'Firefox' option was automatically re-enabled. Fixed (Git #[776](https://github.com/axcore/tartube/issues/776))
 # MINOR FIXES
-- Improved anti-aliasing and fonts on MS Windows (Git #[730](https://github.com/axcore/tartube/issues/730))
+- In the Classic Mode tab, when the user changed the 'Download in this format' box to 'Convert to this form', the choice was not remembered. Fixed (Git #[759](https://github.com/axcore/tartube/issues/759))
+- Minor updates to the MS Windows installer (Git #[760](https://github.com/axcore/tartube/issues/760))
+- Updated MacOS installation instructions (Git #[764](https://github.com/axcore/tartube/issues/764))
 # 
 **Full changelog:** [https://raw.githubusercontent.com/axcore/tartube/master/CHANGES](https://raw.githubusercontent.com/axcore/tartube/master/CHANGES)</releaseNotes>
     <tags>tartube youtube-dl gui download youtube-dl-gui</tags>
