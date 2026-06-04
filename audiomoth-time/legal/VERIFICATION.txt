@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 1.1.4 : <https://github.com/OpenAcousticDevices/AudioMoth-Time-App/releases/download/1.1.4/AudioMothTimeAppSetup1.1.4.exe>
+  Version 1.1.5 : <https://github.com/OpenAcousticDevices/AudioMoth-Time-App/releases/download/1.1.5/AudioMothTimeAppSetup1.1.5.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 81F0F119164E232AEF1BB6C77BE8936C0F7B85DA2D61823CD65CD71D1F912112
+  checksum: A2E1813BFF64F81669AF27E041C1D6D718636F213A13888701E1E2B053CDAD3E
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/OpenAcousticDevices/AudioMoth-Time-App/master/LICENSE> 
