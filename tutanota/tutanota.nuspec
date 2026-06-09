@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>349.260602.1</version>
+    <version>350.260608.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,28 +17,25 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- UI Improvments around signups and upgrades
+
+- Drive: use Ctrl-A and ESC to select/deselect files [#10839](https://github.com/tutao/tutanota/issues/10839)
+- Drive: implement redesigned DriveTransferStack [#10835](https://github.com/tutao/tutanota/issues/10835)
+- Drive: show file size also on mobile layout [#10830](https://github.com/tutao/tutanota/issues/10830)
+- Drive: support big file upload and improve disk usage for uploading [#10878](https://github.com/tutao/tutanota/issues/10878)
+- Drive: offline login [#10852](https://github.com/tutao/tutanota/issues/10852)
 
 # Bugfixes
-- Fixed some smaller issues with invalid UI states
- - Cannot save draft after login [#10884](https://github.com/tutao/tutanota/issues/10884)
+
+- fixed continue button on plan selector [#10905](https://github.com/tutao/tutanota/issues/10905)
+- Drive: reset progress for each batch of transfers [#10882](https://github.com/tutao/tutanota/issues/10882)
+- fix snackbar position [#10867](https://github.com/tutao/tutanota/issues/10867)
+- extract calendar-related post-login action from PostLoginActions [#10864](https://github.com/tutao/tutanota/issues/10864)
+- Drive/3439 fab only in apps [#10821](https://github.com/tutao/tutanota/issues/10821)
+- Drive: fix operation updates showing again after switching to drive [#10820](https://github.com/tutao/tutanota/issues/10820)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/436?closed=1
 
-
-# Asset Checksums (SHA256)
-**tutanota-desktop-linux.AppImage:**
-4cd66fabb67333b1dbb10a760d8683ed598b0d8ef269bbd2190e75cbe4ec3fb4
-
-**tutanota-desktop-win.exe:**
-65300ac3585f643689b029f8e2607f6410f108cb7411e708386f55387689ac78
-
-**tutanota-desktop-mac.dmg:**
-bf2b13727b692425a0e7fae7b1d50037d85615e174f425699ad1226642bfc2a9
-
-**tutanota-desktop-349.260602.1-unpacked-linux.tar.gz**
-642a5739ebe04673f73899c34bb98f9fa43e14e88103ae7171c1c769adb5db4b</releaseNotes>
+https://github.com/tutao/tutanota/milestone/439?closed=1</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
