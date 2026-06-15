@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>350.260608.0</version>
+    <version>351.260612.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,25 +17,30 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-
-- Drive: use Ctrl-A and ESC to select/deselect files [#10839](https://github.com/tutao/tutanota/issues/10839)
-- Drive: implement redesigned DriveTransferStack [#10835](https://github.com/tutao/tutanota/issues/10835)
-- Drive: show file size also on mobile layout [#10830](https://github.com/tutao/tutanota/issues/10830)
-- Drive: support big file upload and improve disk usage for uploading [#10878](https://github.com/tutao/tutanota/issues/10878)
-- Drive: offline login [#10852](https://github.com/tutao/tutanota/issues/10852)
+ - Calendar default view [#10895](https://github.com/tutao/tutanota/issues/10895)
+ - Calendar Settings [#10893](https://github.com/tutao/tutanota/issues/10893)
 
 # Bugfixes
-
-- fixed continue button on plan selector [#10905](https://github.com/tutao/tutanota/issues/10905)
-- Drive: reset progress for each batch of transfers [#10882](https://github.com/tutao/tutanota/issues/10882)
-- fix snackbar position [#10867](https://github.com/tutao/tutanota/issues/10867)
-- extract calendar-related post-login action from PostLoginActions [#10864](https://github.com/tutao/tutanota/issues/10864)
-- Drive/3439 fab only in apps [#10821](https://github.com/tutao/tutanota/issues/10821)
-- Drive: fix operation updates showing again after switching to drive [#10820](https://github.com/tutao/tutanota/issues/10820)
+ - Calendar event from invite does not update [#10963](https://github.com/tutao/tutanota/issues/10963)
+ - First 100 mails disappear from conversation list after list reload [#10959](https://github.com/tutao/tutanota/issues/10959)
+ - Improve support for same event in different calendars [#10883](https://github.com/tutao/tutanota/issues/10883)
+ - importing ics files with duplicate altered instances throws an error, and import fails [#10851](https://github.com/tutao/tutanota/issues/10851)
+ - Delete an event after importing it in different calendars deletes the wrong entity [#10711](https://github.com/tutao/tutanota/issues/10711)
+ - Cannot send event update without organizer [#3288](https://github.com/tutao/tutanota/issues/3288)
 
 # Milestone
+https://github.com/tutao/tutanota/milestone/438?closed=1
 
-https://github.com/tutao/tutanota/milestone/439?closed=1</releaseNotes>
+
+# Asset Checksums (SHA256)
+**tutanota-desktop-linux.AppImage:**
+b1de458e79cc1bcc452624fb50009d5a143da0726e802c7372226a9752f24cb5
+
+**tutanota-desktop-win.exe:**
+dcd7be56f60acc1e27440a3d3900d9e656c3ae5705a68f6ce1f5b7c9f883b5b6
+
+**tutanota-desktop-mac.dmg:**
+010ec8e0860ee53486eee21758adce1195eae065cf8c66e154dcd8b07f49599a</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
