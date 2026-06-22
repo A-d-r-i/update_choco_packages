@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>351.260612.0</version>
+    <version>352.260618.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,30 +17,30 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Calendar default view [#10895](https://github.com/tutao/tutanota/issues/10895)
- - Calendar Settings [#10893](https://github.com/tutao/tutanota/issues/10893)
+ - Expand folder when dragging mail [#10796](https://github.com/tutao/tutanota/issues/10796)
+ - Show failed-to-delete orphaned custom folders [#10836](https://github.com/tutao/tutanota/issues/10836)
 
 # Bugfixes
- - Calendar event from invite does not update [#10963](https://github.com/tutao/tutanota/issues/10963)
- - First 100 mails disappear from conversation list after list reload [#10959](https://github.com/tutao/tutanota/issues/10959)
- - Improve support for same event in different calendars [#10883](https://github.com/tutao/tutanota/issues/10883)
- - importing ics files with duplicate altered instances throws an error, and import fails [#10851](https://github.com/tutao/tutanota/issues/10851)
- - Delete an event after importing it in different calendars deletes the wrong entity [#10711](https://github.com/tutao/tutanota/issues/10711)
- - Cannot send event update without organizer [#3288](https://github.com/tutao/tutanota/issues/3288)
+ - Error when clicking on elements in mail editor with an id that has the word "align" [#10826](https://github.com/tutao/tutanota/issues/10826)
+ - Can't use email import feature [#10818](https://github.com/tutao/tutanota/issues/10818)
+ - Use appropriate label for showQuickActionBar shortcut [#10865](https://github.com/tutao/tutanota/issues/10865)
+ - creating inbox rules through clicking on to,bcc,sender etc. does not autofill value [#10605](https://github.com/tutao/tutanota/issues/10605)
+ - Squeezed image rendering in some html mails, when max-width: 100% css property is set [#8957](https://github.com/tutao/tutanota/issues/8957)
+ - Mail opened from notification is re-opened after being moved [#10828](https://github.com/tutao/tutanota/issues/10828)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/438?closed=1
+https://github.com/tutao/tutanota/milestone/433?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-b1de458e79cc1bcc452624fb50009d5a143da0726e802c7372226a9752f24cb5
+b4bad266c1089a5baa396382f7cd8ab8c8a4a13af918aeef96f3aa3972debec3
 
 **tutanota-desktop-win.exe:**
-dcd7be56f60acc1e27440a3d3900d9e656c3ae5705a68f6ce1f5b7c9f883b5b6
+4c70f09d2daba6aceac274d428526ae620926d48b40383a5ee5d9a292bf2cd0a
 
 **tutanota-desktop-mac.dmg:**
-010ec8e0860ee53486eee21758adce1195eae065cf8c66e154dcd8b07f49599a</releaseNotes>
+c57cc98827c664d89b71380f1ae23de036714395688ad7eedbc4b5829d522bcf</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
