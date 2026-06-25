@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>352.260618.0</version>
+    <version>353.260624.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,30 +17,25 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - Expand folder when dragging mail [#10796](https://github.com/tutao/tutanota/issues/10796)
- - Show failed-to-delete orphaned custom folders [#10836](https://github.com/tutao/tutanota/issues/10836)
+ - Add subscription revocation form [#11041](https://github.com/tutao/tutanota/issues/11041)
+ - Revert "Show orphaned custom folder" [#11035](https://github.com/tutao/tutanota/issues/11035)
 
 # Bugfixes
- - Error when clicking on elements in mail editor with an id that has the word "align" [#10826](https://github.com/tutao/tutanota/issues/10826)
- - Can't use email import feature [#10818](https://github.com/tutao/tutanota/issues/10818)
- - Use appropriate label for showQuickActionBar shortcut [#10865](https://github.com/tutao/tutanota/issues/10865)
- - creating inbox rules through clicking on to,bcc,sender etc. does not autofill value [#10605](https://github.com/tutao/tutanota/issues/10605)
- - Squeezed image rendering in some html mails, when max-width: 100% css property is set [#8957](https://github.com/tutao/tutanota/issues/8957)
- - Mail opened from notification is re-opened after being moved [#10828](https://github.com/tutao/tutanota/issues/10828)
+ - Mail list breaks after web socket reconnect [#11026](https://github.com/tutao/tutanota/issues/11026)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/433?closed=1
+https://github.com/tutao/tutanota/milestone/442?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-b4bad266c1089a5baa396382f7cd8ab8c8a4a13af918aeef96f3aa3972debec3
+4f2e37b9e622c887a3f92ec3c46acd9b16aec3a85fcea48352d8f0a0a4ed47a5
 
 **tutanota-desktop-win.exe:**
-4c70f09d2daba6aceac274d428526ae620926d48b40383a5ee5d9a292bf2cd0a
+fc79d8778f2ccb29a3c1c2114deb4f7af1ce7b298d420ff094d3f72a2553a0f9
 
 **tutanota-desktop-mac.dmg:**
-c57cc98827c664d89b71380f1ae23de036714395688ad7eedbc4b5829d522bcf</releaseNotes>
+459938e27fb7d86e7b08f70d55078a87ca2a6989c42c13a8a5ca1dcf3d25b0d8</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
