@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>open-video-downloader</id>
-    <version>2.4.0</version>
+    <version>3.2.1</version>
     <title>Open Video Downloader</title>
     <authors>Jelle Glebbeek (and contributors)</authors>
     <owners>Adri</owners>
@@ -22,18 +22,40 @@
 - Shows how much size the download will use up on your system
 - The app automatically keeps ytdl up-to-date</description>
     <summary>A cross-platform GUI for youtube-dl made in Electron and node.js</summary>
-    <releaseNotes>### **Changelog:**
+    <releaseNotes>### Changelog
 
-**Features**
--  Use yt-dlp instead of youtube-dl (#[151](https://github.com/jely2002/youtube-dl-gui/issues/151))
--  Sponsorblock support (#[183](https://github.com/jely2002/youtube-dl-gui/issues/183))
-- Add option to use empty user-agent string for downloading certain VR videos. (#[213](https://github.com/jely2002/youtube-dl-gui/issues/213))
--  No longer ship with binaries, download them on first launch
+#### New &amp; improved features:
+- Add input filters: (#[113](https://github.com/jely2002/youtube-dl-gui/issues/113), #[291](https://github.com/jely2002/youtube-dl-gui/issues/291))
+    - Filter by date, size or custom yt-dlp match filters.
+    - Select specific playlist items, including ranges.
+- Add new ways to add to the queue: (#[505](https://github.com/jely2002/youtube-dl-gui/issues/505), #[322](https://github.com/jely2002/youtube-dl-gui/issues/322))
+    - Import URLs from .txt or .csv files.
+    - Paste multiple URLs in the input box.
+    - Watch the clipboard to automatically add copied links.
+- Improve output and post-processing settings. (#[691](https://github.com/jely2002/youtube-dl-gui/issues/691), #[708](https://github.com/jely2002/youtube-dl-gui/issues/708), #[753](https://github.com/jely2002/youtube-dl-gui/issues/753))
+    - Re-encode videos to 30 fps.
+    - Set the mp4 brand to mp42.
+    - Save thumbnails as separate files. @wjx9
+- Pass arbitrary yt-dlp extractor arguments. (#[709](https://github.com/jely2002/youtube-dl-gui/issues/709))
+- Improve subtitle settings and selection. (#[766](https://github.com/jely2002/youtube-dl-gui/issues/766), #[779](https://github.com/jely2002/youtube-dl-gui/issues/779))
+    - Separate creator-provided and auto-generated subtitles.
+    - Choose subtitle formats and embedding per video.
+- Split the settings page into multiple tabs.
+- Improve codec selection to better match the selected quality. (#[756](https://github.com/jely2002/youtube-dl-gui/issues/756))
+- Add a precise cut mode for partial downloads and SponsorBlock cuts. (#[763](https://github.com/jely2002/youtube-dl-gui/issues/763), #[765](https://github.com/jely2002/youtube-dl-gui/issues/765))
+- Add an option to reverse playlist numbering. (#[783](https://github.com/jely2002/youtube-dl-gui/issues/783))
 
-**Bugfixes**
-- Ignore youtube-dl config file (#[190](https://github.com/jely2002/youtube-dl-gui/issues/190))
-- Only set the default format if there are any (#[212](https://github.com/jely2002/youtube-dl-gui/issues/212), #[197](https://github.com/jely2002/youtube-dl-gui/issues/197))
-- Fix chmod command on linux systems</releaseNotes>
+#### Bug fixes:
+- Fix downloads failing when "Download all available subtitles" is enabled. (#[754](https://github.com/jely2002/youtube-dl-gui/issues/754))
+- Fix some 4K videos not downloading correctly. (#[749](https://github.com/jely2002/youtube-dl-gui/issues/749))
+- Use an empty string instead of None when metadata is missing in filename templates. (#[780](https://github.com/jely2002/youtube-dl-gui/issues/780))
+- Fix the URL input not clearing after adding a link.
+- Prevent HTML injection (mitigated by CSP) in clickable links and prevent sensitive yt-dlp arguments from being logged. (#[795](https://github.com/jely2002/youtube-dl-gui/issues/795)) @independent-arg
+
+#### Languages:
+- Add the Portuguese (Portugal) language. (#[729](https://github.com/jely2002/youtube-dl-gui/issues/729)) @BlackSpirits
+- Improve the Spanish language. (#[801](https://github.com/jely2002/youtube-dl-gui/issues/801), #[808](https://github.com/jely2002/youtube-dl-gui/issues/808)) @independent-arg
+- Update the Italian language. (#[725](https://github.com/jely2002/youtube-dl-gui/issues/725), #[733](https://github.com/jely2002/youtube-dl-gui/issues/733), #[767](https://github.com/jely2002/youtube-dl-gui/issues/767)) @bovirus</releaseNotes>
     <tags>open-video-downloader youtube-dl youtube-dl-gui youtube-dlp youtube-dlp-gui video</tags>
     <projectSourceUrl>https://github.com/jely2002/youtube-dl-gui</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/open-video-downloader</packageSourceUrl>
