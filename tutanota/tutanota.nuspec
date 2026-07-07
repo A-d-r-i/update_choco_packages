@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>353.260630.0</version>
+    <version>354.260707.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -18,35 +18,26 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
 
-- Drive: paste item on context menu [#10987](https://github.com/tutao/tutanota/issues/10987)
-- Drive: folder uploads [#10976](https://github.com/tutao/tutanota/issues/10976)
-- Drive: keyboard shortcut for renaming [#10910](https://github.com/tutao/tutanota/issues/10910)
+- Tuta One-Click Migration in beta: first beta release of Tuta's email migration feature
+- Sync improvements
 
 # Bugfixes
 
-- Drive: fix error at cancelling folder chooser [#11029](https://github.com/tutao/tutanota/issues/11029)
-- Drive: fix finished transfers disappearing on cancel
-- Drive: creating a folder in Trash will instead put it into Home
-
-# Dependencies
-
-- updated DOMPurify to 3.4.11
-- updated undici to 7.28.0
-- updated Electron to 42.5.0
+- Some imported mails do not render correctly [#10975](https://github.com/tutao/tutanota/issues/10975)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/443?closed=1
+https://github.com/tutao/tutanota/milestone/444?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-649762b9fa32650c599dcc72259775ae157204c9647a9fbcbaf7213bf0ff2abb
+5a50299cd59e01be8735ba0282b674d39edf70f95567087dae1243e163ac9936
 
 **tutanota-desktop-win.exe:**
-e7ad868bd3a5d2dbb00022887b8cfc10e894d13f62b71030c0afbecc49fecb89
+6334d671b574bcedec756f54d80bd11ee09b2c6e6669fdc98c2aaef166f2858d
 
 **tutanota-desktop-mac.dmg:**
-62e6ae199eba72774f00f21de7605fb042956a99a77144630df38c1828669be9</releaseNotes>
+1823f0552cc9ae937db24f2b3df6cdb743592cb412931d4bb56949f275563c79</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
