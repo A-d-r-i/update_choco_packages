@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>354.260707.0</version>
+    <version>355.260710.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -18,26 +18,21 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
 
-- Tuta One-Click Migration in beta: first beta release of Tuta's email migration feature
-- Sync improvements
-
-# Bugfixes
-
-- Some imported mails do not render correctly [#10975](https://github.com/tutao/tutanota/issues/10975)
+- Improvements for Tuta One-Click Migration beta
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/444?closed=1
+https://github.com/tutao/tutanota/milestone/447?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-5a50299cd59e01be8735ba0282b674d39edf70f95567087dae1243e163ac9936
+1e547d7575f19d7c144ccd17968beed7e1b9ae01fcedd6312e06e9daac8015b3
 
 **tutanota-desktop-win.exe:**
-6334d671b574bcedec756f54d80bd11ee09b2c6e6669fdc98c2aaef166f2858d
+1ffc62fc3cd7a41dafb0fd706fc33171b3bef219bd2f1d5e8721a1dbbd0b93bf
 
 **tutanota-desktop-mac.dmg:**
-1823f0552cc9ae937db24f2b3df6cdb743592cb412931d4bb56949f275563c79</releaseNotes>
+7f957fccdc20ead233eb2d6c13b31409e794833809339e18dc16bfd3b1818c2c</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
