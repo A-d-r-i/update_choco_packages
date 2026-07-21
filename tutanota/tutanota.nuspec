@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>355.260710.0</version>
+    <version>355.260720.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,22 +17,42 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
+ - Timezones for events [#10493](https://github.com/tutao/tutanota/issues/10493)
+ - Update search results list after partially indexed and fully indexed [#11196](https://github.com/tutao/tutanota/issues/11196)
+ - Update `reIndexLocalData_msg` for full-archive-download indexing [#11131](https://github.com/tutao/tutanota/issues/11131)
+ - Add logging to failed-to-export mail [#11125](https://github.com/tutao/tutanota/issues/11125)
+ - Show reminders in event preview [#11124](https://github.com/tutao/tutanota/issues/11124)
+ - Re-add "Failed-to-delete folders" section [#11081](https://github.com/tutao/tutanota/issues/11081)
+ - Offline migration for new indexer [#11015](https://github.com/tutao/tutanota/issues/11015)
+ - Implement Resume Indexing [#10969](https://github.com/tutao/tutanota/issues/10969)
+ - Change how websocket close event is logged to better see information [#10967](https://github.com/tutao/tutanota/issues/10967)
+ - Implement cancelMailIndexing for OfflineStorageIndexer [#10920](https://github.com/tutao/tutanota/issues/10920)
+ - Allow clearing cache without clearing credentials [#10919](https://github.com/tutao/tutanota/issues/10919)
+ - Remove Local data's offline range section from setting [#10917](https://github.com/tutao/tutanota/issues/10917)
+ - Improve drag and drop indication [#10914](https://github.com/tutao/tutanota/issues/10914)
 
-- Improvements for Tuta One-Click Migration beta
+# Bugfixes
+ - BadRequestError when searching for contacts using OfflineDB [#11050](https://github.com/tutao/tutanota/issues/11050)
+ - repeatRules.excludedDates does not contain synthetic entries from altered instances when syncing external calendar [#11034](https://github.com/tutao/tutanota/issues/11034)
+ - timeZone not set on repeat rule causes many request on first sync [#11025](https://github.com/tutao/tutanota/issues/11025)
+ - Event invitation shows as ghost bubble even for the organiser when its part of a shared calendar [#11011](https://github.com/tutao/tutanota/issues/11011)
+ - [web] Web Socket closed by SleepDetector when indexing a lot of large mails received on the same day [#10973](https://github.com/tutao/tutanota/issues/10973)
+ - Importing events with alarms setup for notifications and email can result and duplicated alarms [#10972](https://github.com/tutao/tutanota/issues/10972)
+ - Clicking open on attachment bubble in the mail editor downloads attachment [#10915](https://github.com/tutao/tutanota/issues/10915)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/447?closed=1
+https://github.com/tutao/tutanota/milestone/446?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-1e547d7575f19d7c144ccd17968beed7e1b9ae01fcedd6312e06e9daac8015b3
+b1d2ad87db32e7243d72ce31420e3fcec81dbe2b710722a5f0d089828de52f8a
 
 **tutanota-desktop-win.exe:**
-1ffc62fc3cd7a41dafb0fd706fc33171b3bef219bd2f1d5e8721a1dbbd0b93bf
+e8b6a1842e338361711e62ba2d1d0e625639e7a1548806891b26a5194e99ab98
 
 **tutanota-desktop-mac.dmg:**
-7f957fccdc20ead233eb2d6c13b31409e794833809339e18dc16bfd3b1818c2c</releaseNotes>
+a158a97965fa92ecb426a941f768637159774b3c2f7bb2f3e6077f982ee27958</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
