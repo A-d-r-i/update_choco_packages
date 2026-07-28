@@ -6,12 +6,12 @@ The installer have been downloaded from their official github repository listed 
 and can be verified like this:
 
 1. Download the following installer:
-  Version 3.4.4 : <https://github.com/streetwriters/notesnook/releases/download/v3.4.4/notesnook_win_x64.exe>
+  Version 3.4.5 : <https://github.com/streetwriters/notesnook/releases/download/v3.4.5/notesnook_win_x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: SHA256
-  checksum: 1FCB981F246181B682756DEE4C3E72CED207F22F158B039FEFC5BD6A5ECB48C6
+  checksum: 1C487EAB412C101D6F82D3E1718BB3D9CF13508A664ABDDD8CA7247A594DC6FA
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/streetwriters/notesnook/master/LICENSE> 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.26.3</version>
+    <version>0.27.3</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -18,34 +18,35 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <summary>Client fort Affine : the next-gen knowledge base to replace Notion and Miro. </summary>
-    <releaseNotes>&lt;img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/cf94711b-e2f0-4e6d-90b3-e752725383e5" /&gt;
+    <releaseNotes>&lt;img width="960" height="504" alt="1" src="https://github.com/user-attachments/assets/77a95b3f-c04f-4c1a-85fb-a6d1eb9de3c0" /&gt;
 
 ## What's new
 
 ### Web &amp; Editor
 
-- Improved the performance of edgeless during dragging and zooming
-- Improved key mapping for  non-U.S. keyboard layouts
-- Improve database filter, callout default style and dark mode visibility
-- Fix MCP token cannot display
+- Improve the AI BYOK configuration interface
+- Fix loading of share page options
+- Fix kanban status updates
 
 ### Native Client
 
-- Support lazy loading of blobs to avoid OOM issues in certain scenarios on mobile devices
-- Improve the self-hosted login error handle, distinguish between login failure and network issues
-- Fix an issue where window rendering could be abnormal when idle on Windows/Linux
-- Fix an issue where remaining files might not be cleaned up properly when deleting a workspace
-- Reduce the client size using a new compression algorithm
+- Improve Obsidian importor
+- Improve mobile ui performance
+- Fixed an issue where the login status might not be readable after restart
+- Fix incomplete mobile login process
+- Fix the style of the delete popup for overly long titles
 
 ### Backend
 
-- Improve some S3 provider compatibility
-- Improve admin panel design, a better dashboard and settings interface
-- Fix the issue where history could be created repeatedly during concurrent operations
+- Support GC of outdated documents
 
 ## Breaking change
 
-Starting from server version 0.26, only clients at version 0.25 or higher are supported to connect and sync.</releaseNotes>
+Starting from client version 0.27, only server at version 0.27 or higher are supported to connect and sync.
+
+Starting from server version 0.27, only clients at version 0.26 or higher are supported to connect and sync.
+
+Starting from server version 0.27, environment variables are no longer the server???s preferred source for reading configuration, and some environment variables are no longer available. Please refer to https://docs.affine.pro/self-host-affine/install/configuration to migrate the configuration to `config.json`.</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
