@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>357.260818.1</version>
+    <version>357.260824.1</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,7 +16,32 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes>General improvements and bug fixes</releaseNotes>
+    <releaseNotes># What's new
+ - unsupported TZID in iCal causes entire import to fail [#11325](https://github.com/tutao/tutanota/issues/11325)
+ - Handle redundant time zone info UTC and timestamp with Z at the end [#11248](https://github.com/tutao/tutanota/issues/11248)
+
+# Bugfixes
+ - If start date is before given end date due to time zone difference, date displayed in event preview is misleading [#11276](https://github.com/tutao/tutanota/issues/11276)
+ - when end date is in a different time zone, user cannot specify a valid date in the event editor date picker [#11266](https://github.com/tutao/tutanota/issues/11266)
+ - When importing many events, only one event gets imported, with error message "ownerEncSessionKey already set" [#11246](https://github.com/tutao/tutanota/issues/11246)
+ - Events at midnight at event banner don't show up [#11213](https://github.com/tutao/tutanota/issues/11213)
+ - No error popup after setting end time before start time by selecting different start and end time zones [#11210](https://github.com/tutao/tutanota/issues/11210)
+ - Calendar does not update to reflect updated invitations to events from Google Calendar [#11148](https://github.com/tutao/tutanota/issues/11148)
+ - End date flickers and rapidly cycles through dates in event editor [#10548](https://github.com/tutao/tutanota/issues/10548)
+
+# Milestone
+https://github.com/tutao/tutanota/milestone/453?closed=1
+
+
+# Asset Checksums (SHA256)
+**tutanota-desktop-linux.AppImage:**
+14a80ae1e1d5fd9a80fcb32e1473ba41315a91fb0fca7db5cfa98ab5cb9fdb11
+
+**tutanota-desktop-win.exe:**
+4cf9e9ede1fa3fca51ca92117bba834489e204363327ecf0c60a32dd1c16d798
+
+**tutanota-desktop-mac.dmg:**
+d1ae7cdc0839f817165a17a41536b198effbd49eddd26f040f38bf02e9068121</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
