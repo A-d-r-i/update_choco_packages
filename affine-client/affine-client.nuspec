@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>affine-client</id>
-    <version>0.27.3</version>
+    <version>0.27.4</version>
     <title>AFFiNE Client</title>
     <authors>Toeverything and AFFiNE contributors</authors>
     <owners>Adri</owners>
@@ -24,21 +24,21 @@ Affine is the next-generation collaborative knowledge base for professionals. Th
 
 ### Web &amp; Editor
 
-- Improve the AI BYOK configuration interface
-- Fix loading of share page options
-- Fix kanban status updates
+- Improve byok model editing
+- Fix code block line number trigger
+- Fix journal can see trashed docs
 
 ### Native Client
 
-- Improve Obsidian importor
-- Improve mobile ui performance
-- Fixed an issue where the login status might not be readable after restart
-- Fix incomplete mobile login process
-- Fix the style of the delete popup for overly long titles
+- Improve OnoNote importor
+- Mac client can hide the tray icon after the window is closed
+- Fix Android client keyboard compatibility
 
 ### Backend
 
-- Support GC of outdated documents
+- Add support for GPT 5.6/Gemini 3.7
+- Improve stability for long records
+- Fix high memory usage during server-side GC
 
 ## Breaking change
 
@@ -46,7 +46,9 @@ Starting from client version 0.27, only server at version 0.27 or higher are sup
 
 Starting from server version 0.27, only clients at version 0.26 or higher are supported to connect and sync.
 
-Starting from server version 0.27, environment variables are no longer the server???s preferred source for reading configuration, and some environment variables are no longer available. Please refer to https://docs.affine.pro/self-host-affine/install/configuration to migrate the configuration to `config.json`.</releaseNotes>
+Starting from server version 0.27, environment variables are no longer the server???s preferred source for reading configuration, and some environment variables are no longer available. Please refer to https://docs.affine.pro/self-host-affine/install/configuration to migrate the configuration to `config.json`.
+
+The BYOK feature is in an experimental stage and may need to be reconfigured when upgrading versions.</releaseNotes>
     <tags>editor rust semantic affine collaborative knowledge-base notion miro</tags>
     <projectSourceUrl>https://github.com/toeverything/AFFiNE</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/affine-client</packageSourceUrl>
