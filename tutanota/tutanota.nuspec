@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>357.260824.1</version>
+    <version>357.260901.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,31 +17,40 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
- - unsupported TZID in iCal causes entire import to fail [#11325](https://github.com/tutao/tutanota/issues/11325)
- - Handle redundant time zone info UTC and timestamp with Z at the end [#11248](https://github.com/tutao/tutanota/issues/11248)
 
-# Bugfixes
- - If start date is before given end date due to time zone difference, date displayed in event preview is misleading [#11276](https://github.com/tutao/tutanota/issues/11276)
- - when end date is in a different time zone, user cannot specify a valid date in the event editor date picker [#11266](https://github.com/tutao/tutanota/issues/11266)
- - When importing many events, only one event gets imported, with error message "ownerEncSessionKey already set" [#11246](https://github.com/tutao/tutanota/issues/11246)
- - Events at midnight at event banner don't show up [#11213](https://github.com/tutao/tutanota/issues/11213)
- - No error popup after setting end time before start time by selecting different start and end time zones [#11210](https://github.com/tutao/tutanota/issues/11210)
- - Calendar does not update to reflect updated invitations to events from Google Calendar [#11148](https://github.com/tutao/tutanota/issues/11148)
- - End date flickers and rapidly cycles through dates in event editor [#10548](https://github.com/tutao/tutanota/issues/10548)
+- app has been renamed to "Tuta" (was: Tuta Mail) [#11153](https://github.com/tutao/tutanota/issues/11153)
+- Drive: basic search [#11344](https://github.com/tutao/tutanota/issues/11344)
+- Drive: show remaining time for transfers [#11114](https://github.com/tutao/tutanota/issues/11114)
+- Drive: show dialog for file name conflicts during upload [#11104](https://github.com/tutao/tutanota/issues/11104)
+- Drive: ask for confirmation when closing the window while there are active transfers [#11174](https://github.com/tutao/tutanota/issues/11174)
+- Drive: retry failed transfers [#11348](https://github.com/tutao/tutanota/issues/11348)
+
+# Bugfixes and Improvements
+
+- Drive: NaN shown in percentage indicator for empty file transfers [#11103](https://github.com/tutao/tutanota/issues/11103)
+- Drive: improve preselection when renaming files [#11042](https://github.com/tutao/tutanota/issues/11042)
+- Drive: more intuitive context menu handling [#11118](https://github.com/tutao/tutanota/issues/11118)
+- Drive: fix rename sometimes not showing up in context menu
+
+# Dependencies
+
+- updated DOMPurify to 3.4.14
+- updated undici to 8.10.0
+- updated Electron to 44.1.0
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/453?closed=1
 
+https://github.com/tutao/tutanota/milestone/454?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-14a80ae1e1d5fd9a80fcb32e1473ba41315a91fb0fca7db5cfa98ab5cb9fdb11
+ba605c7dd7f33eb90939cf6c3fce05417dd2b68f69337d86499843aa743f019e
 
 **tutanota-desktop-win.exe:**
-4cf9e9ede1fa3fca51ca92117bba834489e204363327ecf0c60a32dd1c16d798
+7d91a2670daaf21eab601c9ccc1d1dbb1d0c1bd5d422e4a70ff701b0ee9b1e69
 
 **tutanota-desktop-mac.dmg:**
-d1ae7cdc0839f817165a17a41536b198effbd49eddd26f040f38bf02e9068121</releaseNotes>
+2d049b5320a70f923a2f763bd26ec9c3e4d44f9398cff9dd96701fcd54c6080d</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
