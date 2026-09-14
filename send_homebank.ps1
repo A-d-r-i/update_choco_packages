@@ -9,7 +9,7 @@ Invoke-WebRequest -Uri "https://www.gethomebank.org/en/downloads.php" -OutFile "
 Invoke-WebRequest -Uri "https://www.gethomebank.org/ChangeLog" -OutFile "release.txt"
 $Source = Get-Content -path HOMEBANK.html -raw
 $text = Get-Content -path release.txt
-$Source -match 'The latest <b>([0-9]+(\.[0-9]+)+) stable</b>'
+$Source -match 'Latest version is <b>([0-9]+(\.[0-9]+)+)</b>,'
 $tag = $matches[1]
 
 
