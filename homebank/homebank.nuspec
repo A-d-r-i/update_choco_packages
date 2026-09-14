@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>homebank</id>
-    <version>5.10.2</version>
+    <version>5.10.3</version>
     <title>HomeBank</title>
     <authors>Maxime Doyen (and contributors)</authors>
     <owners>Hadrien Dussuel, Adri</owners>
@@ -17,12 +17,33 @@ If you are looking for a completely free and easy application to manage your per
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Free personal finance, Free money management, Free personal accounting.</summary>
     <releaseNotes>
-Made 5.10.2 release
-* bugfix: #[2156412](https://bugs.launchpad.net/bugs/2156412) safety approve option mixup
-* bugfix: #[2156372](https://bugs.launchpad.net/bugs/2156372) currency modification date is not persisted due to extra space in code
-* bugfix: #[2155966](https://bugs.launchpad.net/bugs/2155966) main window different colours for 0.00 account balances
-* bugfix: #[2155959](https://bugs.launchpad.net/bugs/2155959) cannot inherit a locked reconciled transaction
-* bugfix: #[2155844](https://bugs.launchpad.net/bugs/2155844) quick search no longer works in account window (ledger)
+Made 5.10.3 release
+* new: factorised some pickers
+* new: ledger quicksearch support multi terms search
+* new: ledger quicksearch support " for exact search (terms with space)
+* new: completed translation of 60 languages using Claude AI
+* new: full available languages rise from 20 to 80
+* change: code naming sanitize &gt; *item to *abvtype
+* change: code naming sanitize &gt; *entry to *abvtype
+* change: code naming sanitize &gt; archive to template
+* change: code naming sanitize &gt; operation to transaction
+* change: speed optimisation with file of 14M txn, 60k acc/pay/cat/tag/tpl/sch/asg
+* change: account manager could be slow due to template ComboBoxText in Behavior tab
+* change: template manager merge dialog could be slow due to template ComboBoxText
+* change: removed the date exclusion for filter
+* bugfix: duplicate a template was not changing its key
+* bugfix: #[2162840](https://bugs.launchpad.net/bugs/2162840) exclude date filter in statistics report does not work
+* bugfix: #[2162690](https://bugs.launchpad.net/bugs/2162690) filter transaction type do not fully separate normal/transfer
+* bugfix: #[2162642](https://bugs.launchpad.net/bugs/2162642) balance report list shows incomes in red
+* bugfix: #[2161855](https://bugs.launchpad.net/bugs/2161855) "This Year" preset date filter fail when fiscal year is set to Aug 1st
+* bugfix: #[2161830](https://bugs.launchpad.net/bugs/2161830) Bugdet option "Include transfer" is not persisted
+* bugfix: #[2161453](https://bugs.launchpad.net/bugs/2161453) changes not always propagate when multiple ledger are opened
+* bugfix: #[2161266](https://bugs.launchpad.net/bugs/2161266) "Result" and "Detail" to clipboard and CSV menu items are missing verbs and "…"
+* bugfix: #[2161226](https://bugs.launchpad.net/bugs/2161226) Remove G_GNUC_CONST from *get_type declarations
+* bugfix: #[2160080](https://bugs.launchpad.net/bugs/2160080) inherit always enabled and crash if no transaction selected
+* bugfix: #[2159561](https://bugs.launchpad.net/bugs/2159561) slowness of dialog to appear when edit a transaction
+* bugfix: #[2159560](https://bugs.launchpad.net/bugs/2159560) ledger quicksearch match unwanted transaction
+* bugfix: #[2159010](https://bugs.launchpad.net/bugs/2159010) summary page shows account in red
 
 **Full changelog:** [https://www.gethomebank.org/ChangeLog](https://www.gethomebank.org/ChangeLog)</releaseNotes>
     <copyright>© Maxime Doyen</copyright>
