@@ -12,6 +12,8 @@ if ($tag -match '^[0-9]+.[0-9]+$'){
 	$tag = $tag + ".0"
 }
 $release = $json.body -replace("<avery98@pm.me>","")
+$release = $release -replace("<gperson@disroot.org>","")
+$release = $release -replace("<emilymabrey93@gmail.com>","")
 
 # write new version and release
 $file = "./$id/$id.nuspec"
