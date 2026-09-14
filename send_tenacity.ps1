@@ -17,7 +17,7 @@ $release = $json.body -replace("<avery98@pm.me>","")
 $file = "./$id/$id.nuspec"
 $xml = New-Object XML
 $xml.Load($file)
-$xml.package.metadata.version = $tag + ".20250612"
+$xml.package.metadata.version = $tag
 $xml.package.metadata.releaseNotes = $release
 $xml.Save($file)
 
@@ -25,7 +25,7 @@ $xml.Save($file)
 #$urltag = "v" + $tag
 #$urltag = $urltag -replace "-beta",".0"
 
-$url64 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x64.exe" }).browser_download_url
+$url64 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x86_64.exe" }).browser_download_url
 $url32 = ($json.assets | where { $_.name -eq "tenacity-win-$tag-x86.exe" }).browser_download_url
 
 Invoke-WebRequest -Uri $url64 -OutFile ".\$id\tools\tenacity64.exe"
@@ -64,7 +64,7 @@ File 'LICENSE.txt' is obtained from <https://codeberg.org/tenacityteam/tenacity/
 # packaging
 choco pack "./$id/$id.nuspec" --outputdirectory ".\$id"
 
-$tag_temp = $tag + ".20250612"
+$tag_temp = $tag
 
 If ($LastExitCode -eq 0) {
 	choco push "./$id/$id.$tag_temp.nupkg" --source https://push.chocolatey.org/
