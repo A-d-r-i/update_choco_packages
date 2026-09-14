@@ -13,7 +13,7 @@ $Source -match 'Latest version is <b>([0-9]+(\.[0-9]+)+)</b>,'
 $tag = $matches[1]
 
 
-$search = "[0-9]{4}-[0-9]{2}-[0-9]{2}  Maxime Doyen"
+$search = "[0-9]{4}-[0-9]{2}-[0-9]{2}  Maxime DOYEN"
 $pattern = "$search(.*?)$search"
 $result = [regex]::Match($text,$pattern).Groups[1].Value
 $release = $result -replace '   :', ':'
