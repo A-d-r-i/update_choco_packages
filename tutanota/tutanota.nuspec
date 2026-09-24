@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>360.260921.0</version>
+    <version>360.260922.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,25 +16,30 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># Bugfixes
- - Uncaught Error: NotAuthorizedError [#11537](https://github.com/tutao/tutanota/issues/11537)
+    <releaseNotes>## What's new
+ - The folder column on the mail view can now be resized
+ - Enable HTTP/2 [#11432](https://github.com/tutao/tutanota/issues/11432)
+
+# Bugfixes
+ - Remove "mail-editor" chunk dependence on "date" chunk [#11391](https://github.com/tutao/tutanota/issues/11391)
+ - "GMT Standard Time" time zone not mapped to "Europe/London" [#11509](https://github.com/tutao/tutanota/issues/11509)
+ - Using date-picker to move event from 31. to date in next month that does not have 31 days selects wrong day [#11470](https://github.com/tutao/tutanota/issues/11470)
+ - Improve connection reliability with autoselect family - [#11508](https://github.com/tutao/tutanota/issues/11508) [#11402](https://github.com/tutao/tutanota/issues/11402) [#9536](https://github.com/tutao/tutanota/issues/9536) [#8921](https://github.com/tutao/tutanota/issues/8921) [#8635](https://github.com/tutao/tutanota/issues/8635) [#8488](https://github.com/tutao/tutanota/issues/8488) [#8311](https://github.com/tutao/tutanota/issues/8311) [#7709](https://github.com/tutao/tutanota/issues/7709) [#11378](https://github.com/tutao/tutanota/issues/11378) [#11286](https://github.com/tutao/tutanota/issues/11286) [#10410](https://github.com/tutao/tutanota/issues/10410) [#5889](https://github.com/tutao/tutanota/issues/5889) thanks @ArminShupuk for investigation
+ - Clear entry from KeyCache if KeyLoader fails - [#11501](https://github.com/tutao/tutanota/issues/11501)
+ - Restore compatibility with web views not supporting Intl.DurationFormat
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/458?closed=1
-
+https://github.com/tutao/tutanota/milestone/457?closed=1
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-d6f23b4998b6fd58a9924d231fb95207cd8d14617aa96770b339225e578eb313
+dfc6a4fc16e812ab82de0f60cb76b9bba816f7199c910436f3a37ff9838ee83e
 
 **tutanota-desktop-win.exe:**
-07dc631f3f4b3aad4f3f828da6ee4cd71ba37e17fa5aea5206b2e6ef1f4bbf97
+d3f1c1b9a0cf7bab3dedc50d9d7b0db142edd3f68f68e8ced77bec254fb305c6
 
 **tutanota-desktop-mac.dmg:**
-a1d1489a77923369c99192e5d8451362131fe8d9fc8547fab9a0bb0265cf4056
-
-**tutanota-desktop-360.260921.0-unpacked-linux.tar.gz**
-4a6c5f903e402de12e429c9889a081e692478759a981e843d8ea081df9db0061</releaseNotes>
+336e37a0531f081cea51e664755fd4a58d36ac653f97943cf0c17e3ef7a59ba3</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
