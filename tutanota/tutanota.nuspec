@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>361.260929.0</version>
+    <version>361.261006.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -17,22 +17,33 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
     <releaseNotes># What's new
-- Introduce Plugins in Tuta
-- Nextcloud plugin inside all tuta clients
-- Allow for Tutamail to run inside Nextcloud
+ - Improve progress indicator when indexing mails [#11492](https://github.com/tutao/tutanota/issues/11492)
+ - Download all mail details archives (one at a time) first, then download and index mails [#11417](https://github.com/tutao/tutanota/issues/11417)
+ - Add delay before expanding folders during drag-and-drop [#11329](https://github.com/tutao/tutanota/issues/11329)
+
+# Bugfixes
+ - Logged errors retrieved as `?` when getting logs [#11582](https://github.com/tutao/tutanota/issues/11582)
+ - Mail Details are not being cached and are deleted after indexing [#11422](https://github.com/tutao/tutanota/issues/11422)
+ - Colors for labels cannot be edited [#11575](https://github.com/tutao/tutanota/issues/11575)
+ - Mail ReplyType updated before the reply is sent [#11545](https://github.com/tutao/tutanota/issues/11545)
+ - [mac]Date picker in search view is not fully visible [#11513](https://github.com/tutao/tutanota/issues/11513)
+ - [WebApp] Cannot enable mail indexing from SearchView in Two/One column layout [#11499](https://github.com/tutao/tutanota/issues/11499)
+ - External Content Blocked Banner always shown even when external content is allowed for sender [#11474](https://github.com/tutao/tutanota/issues/11474)
+ - Search input loses focus after edit when searching for contact [#11451](https://github.com/tutao/tutanota/issues/11451)
 
 # Milestone
-https://github.com/tutao/tutanota/milestone/459
+https://github.com/tutao/tutanota/milestone/456?closed=1
+
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-71d93b167f23e669b587cb5615517c018b01bd647710b95f0e5ebe063cb0f184
+4240458e85fd0dc7351abe94026317e0698cd0730dc16f642b9cbec723aa1468
 
 **tutanota-desktop-win.exe:**
-170d50ea0e5468960383e2d79f775284b3f8862369a2f64a6bb9be678aa55809
+837c031150768aaa4f4ef10c3f1c0621cc4664d7d32d913e828a53a800538981
 
 **tutanota-desktop-mac.dmg:**
-6c0a49b8719307d2371b4a46ff7b94d0c6210a0038b80ceb7dedf58b3cd8eb92</releaseNotes>
+31e8f0e38e713311bee58f80162cf2d89c0615d931acab0f09c85c07546b6fbe</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
