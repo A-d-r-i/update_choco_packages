@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>362.261020.0</version>
+    <version>362.261023.2</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,38 +16,20 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
-
-Drive: save and send small files via email [#11480](https://github.com/tutao/tutanota/issues/11480)
-
-# Bugfixes and Improvements
-
-Drive: remember current folder in same session
-Drive: bug fixes for cancelling transfers
-Drive: fix exiting multiselect on mobile [#11463](https://github.com/tutao/tutanota/issues/11463)
-Drive: increase replace-on-upload robustness [#11457](https://github.com/tutao/tutanota/issues/11457)
-Drive: skip duplicate files while uploading [#11572](https://github.com/tutao/tutanota/issues/11572)
+    <releaseNotes>Apply certificate SPKI blocklist (see https://github.com/electron/electron/pull/55126)
 
 # Dependencies
-
-- updated undici to 8.11.2
-- updated Electron to 44.7.0
-- updated electron-updater to 6.8.10
-
-# Milestone
-
-https://github.com/tutao/tutanota/milestone/461?closed=1
-
+- Updated Electron to 44.9.3
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-8ddaa365bcf1adb3bde37a730fc7e5930fda0df1bdc33198990ef9c5957c8a08
+4a5bde8bc3f76c1f9b0dcd2acc2e46e3af2ab4540694357b5a1a05562f39649f
 
 **tutanota-desktop-win.exe:**
-575fbedc4d9324bbae75ccfe2ce185bf92e54cf529e90f618a3893f387ce7183
+a3347c825aeec2fa15899aee1350f8677a50d69d8180657d5ed3835ddc811ade
 
 **tutanota-desktop-mac.dmg:**
-febd10f48f5bbc4510740422bba457af2540488edf695830f44439351647ac48</releaseNotes>
+2528faab941eb95aa7670547742b3de4904bcd3496031dca8b2df9d30a9e8cd2</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
