@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tutanota</id>
-    <version>369.261117.1</version>
+    <version>369.261119.0</version>
     <title>Tutanota</title>
     <authors>Tutao GmbH</authors>
     <owners>Adri</owners>
@@ -16,40 +16,22 @@ With end-to-end encryption and 2FA, your emails have never been more secure. The
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <summary>Tutanota is an email client with a strong focus on security and privacy that lets you encrypt emails on all your devices.</summary>
-    <releaseNotes># What's new
- - Extend Inbox Rule Functionality (client able to handle Extended Inbox Rules) [#11201](https://github.com/tutao/tutanota/issues/11201)
- - Add OLED Dark Theme (Thanks @its-me-kyro) [#11779](https://github.com/tutao/tutanota/issues/11779)
- - Use ArchiveEnumerationService to get `calculatedSize` for MailDetailsBlob archives to be downloaded for indexing [#11649](https://github.com/tutao/tutanota/issues/11649)
- - Implement downloading encrypted MailDetails archives natively [#11496](https://github.com/tutao/tutanota/issues/11496)
- - Search for contacts using more fields [#9170](https://github.com/tutao/tutanota/issues/9170)
- - Make ConfigurationDatabase available offline [#11570](https://github.com/tutao/tutanota/issues/11570)
- - Add exceptions required for tranformation [#11770](https://github.com/tutao/tutanota/issues/11770)
+    <releaseNotes># Bugfixes
+ - CryptoError when migrating config database to OfflineDB [#11859](https://github.com/tutao/tutanota/issues/11859)
 
-# Bugfixes
- - TutaSseFacade may attempt to fetch notifications while suspended on desktop [#11723](https://github.com/tutao/tutanota/issues/11723)
- - Folder does not display any mails when it contains one incoming mail with a `null` MailDetailsBlob [#11703](https://github.com/tutao/tutanota/issues/11703)
- - Mail indexing fails with single `null` mailDetailsBlob [#11750](https://github.com/tutao/tutanota/issues/11750)
- - Corrupted drafts stall mail indexing [#11685](https://github.com/tutao/tutanota/issues/11685)
- - Show more button is not showing when the search list is empty [#11607](https://github.com/tutao/tutanota/issues/11607)
- - Clearing Cache does not cancel indexing [#11705](https://github.com/tutao/tutanota/issues/11705)
- - Inconsistent behavior in Trash vs its subfolders [#11571](https://github.com/tutao/tutanota/issues/11571)
- - Checkbox is not checked when selecting multiple mails in the maillist. [#11709](https://github.com/tutao/tutanota/issues/11709)
- - Handle deleting range while extending it [#11696](https://github.com/tutao/tutanota/issues/11696)
- - Adjust the colours of the draft conflict dialogue to conform to the specification [#11616](https://github.com/tutao/tutanota/issues/11616)
- - Make mail-body a class, not id [#11759](https://github.com/tutao/tutanota/issues/11759)
 # Milestone
-https://github.com/tutao/tutanota/milestone/460?closed=1
+https://github.com/tutao/tutanota/milestone/469?closed=1
 
 
 # Asset Checksums (SHA256)
 **tutanota-desktop-linux.AppImage:**
-878b1eb6528e44ae73bf696bab9af3edf6f08448a249204de06d5fc29c32de1d
+989ca2f6771ffb0b5fba0e0f179cd62af219063fffcc038f9d5a288057a45377
 
 **tutanota-desktop-win.exe:**
-9636fe9ecaf19c41ff023e692db82f64b1b80bbf41a6878e1e5b9cf88ae92cff
+6b1c4316a29d56563c856987de04c477dc8fc2d2918c27476bcd79be4770e739
 
 **tutanota-desktop-mac.dmg:**
-d9841167b8acd923f6260391b42c3acf9f2d96e2c8fd29f8c3fe61e6f3e1c5f9</releaseNotes>
+dbffcdfcf869b7e65ba5374e3ace3eccb5b8cd2b47a3cc1b050d139cdc0e50d8</releaseNotes>
     <tags>tutanota email calendar secure private encryption</tags>
     <projectSourceUrl>https://github.com/tutao/tutanota</projectSourceUrl>
     <packageSourceUrl>https://github.com/A-d-r-i/update_choco_packages/tree/main/tutanota</packageSourceUrl>
